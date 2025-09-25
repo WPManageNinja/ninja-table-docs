@@ -1,0 +1,19 @@
+---
+title: "Export Ninja Tables (CSV/JSON)"
+description: "Export Ninja Tables (CSV/JSON)"
+---
+
+# Export Ninja Tables (CSV/JSON)
+
+It is quite easy & straightforward to export table data from **Ninja Tables**. This plugin is designed to make things simpler for the users & improve the overall user experience.
+Let's dive into the article to learn how the Ninja Tables export works.
+- First, navigate to **All Tables **in the Ninja tables. Pick the preferred table you want to export.
+- Then move to the **Import-Export** tab.
+![](https://ninjatables.com/wp-content/uploads/2022/09/01-3-scaled.webp)<figcaption class="wp-element-caption">Import - Export</figcaption>
+- The **Export Data **option can be found below the **Import Data **option, on the **Import-Export **menu.
+![](https://ninjatables.com/wp-content/uploads/2022/09/02-3-scaled.webp)<figcaption class="wp-element-caption">Export Data</figcaption>
+- There are two export file formats provided by Ninja Tables. **CSV **& **JSON, **now you just need to choose the option.
+![](https://ninjatables.com/wp-content/uploads/2022/09/03-3-scaled.webp)<figcaption class="wp-element-caption">File Format</figcaption>
+- Lastly, save the table data on your computer by clicking on the **Export **button.
+When you export a particular table in CSV format, you'll just export the table data. However, exporting the JSON file lets you export the Table Styling with the table data. So there's no need to customize your table from scratch.
+Export table data from Ninja Tables and use it in a new table or simply send the CSV/JSON file to someone who needs it.

@@ -1,0 +1,55 @@
+---
+title: "Transform Value"
+description: "Transform Value"
+---
+
+# Transform Value
+
+A WordPress table is engaging when the data is dynamic. Using the Transform Value feature in Ninja Tables you can concat any column value easily into any valid HTML and show it as a computed value.
+Let's dive into this simple guide that’ll teach you how to **Transform** **Values** easily in any specific table’s column.
+Transform Value is HTML, CSS & Excel supported!
+- Go to the **Table Configuration** tab **→** Click on the **Edit** icon (Pencil Icon) on the right side of the column and you will notice a drop-down.
+![transform value in ninja tables](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-1.png)
+- 
+Let's go over the **Transform** **Value** functionality step by step.
+## **Transform Value Box**
+This box is where you will type your HTML code or use the Excel formula to transform the data value of the corresponding column.
+You can use any HTML, CSS & Excel formula in the transform value box.
+## **Show Formulas**
+When you click on the** Enable Excel Formula Support for Transform Value**, you will get a **Show** **Formulas** button, which you may click to acquire the formulas you want.
+![use Excel formula for value transformation](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-3.png)
+## **Reference Shortcode**
+There will be a **Column** **Title** and a **Reference** **Shortcode**. Reference shortcodes will generate automatically based on the **Column** **name**.
+You can use the following Reference Shortcode Values to transform your cell value.
+- Here, there are three steps to complete. Look at the example below to learn about these steps.
+![reference shortcode in transform value](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-4.png)
+## Turn Text Into Hyperlink
+- Write the HTML code (< a href= ……….) on the transform value box.
+![HTML in transform value](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-5.png)
+- You don’t have to modify the first piece of the code. But the 2nd part can be changed to whatever suits your needs.
+- Custom words can also be written for the second part. Copy & paste the email shortcode inside the anchor tag, and do the same for the email shortcode.
+![email in transform value](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-6.webp)
+See the example below for viewing the output of the transform value.
+- In this case, the **Email Name **has been used before the closing tag of the HTML. You can also transform values for all the other columns similarly. In the example below, Contact No. is used to call people directly by clicking on the link -
+![HTML in transform value](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-7.webp)
+Let's go with another example for better understanding.
+- If you want to replace the cell value **Female** from the **gender** **column **with** **a link (for example, https://google.com), you can follow the formula -
+=IF("{{row.gender}}"="Female","<a href='https://google.com'>{{row.gender}}</a>","{{row.gender}}")
+where **reference** **shortcode** for the **gender** column is -** {{row.gender}}**
+Note that you can use as many IF Formulas as you want in the transform value box.
+![Excel If formula in transform value](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-8.png)
+- See the below screenshot to get how it works-
+![add link to cell value](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-9.png)
+## **Number Calculation**
+- To execute number calculations, we must pick the number fields for each column, and the Data Type for each column must be a **Numeric** **Value**.
+- See the screenshot below, where Product 1 and Product 2 are numeric fields, and the third column is utilized to display their results.
+![sum total of data](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-10.png)
+- Now, go to the **Transform** **Value** of the third column if you want to add column 1 and column 2 together and display the result in the third column (Data type must have a Numeric Value).
+- Give this below formula to the transform value box to add the cell value of column 1 and column 2.
+=SUM({{row.product_1}},{{row.product_2}})
+where **reference** **shortcode** for the **product 1 and product 2** columns is -** {{row.product_1}}** and **{{row.product_2}}**
+- Lastly, click on the **Update** button when you are done with your configuration.
+![use excel sum formula](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-11.png)
+- Below is a screenshot of the Preview Table that will show how it works -
+![sum total of 2 columns](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-12.png)
+By following this easy and simple guide, anyone can work with **Transform Value**!
