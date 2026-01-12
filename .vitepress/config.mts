@@ -26,6 +26,7 @@ export default defineConfig({
           { text: 'Create Your First Table', link: '/guide/creating-tables/create-your-first-table' },
           {
             text: 'Drag & Drop Tables',
+            collapsed: true,
             items: [
               { text: 'How to Create Drag & Drop Tables', link: '/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables' },
               { text: 'Table Settings', link: '/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings' },
@@ -35,6 +36,7 @@ export default defineConfig({
               { text: 'Manage Cells', link: '/guide/drag-drop-settings/manage-cells-in-ninja-tables-drag-and-drop' },
               {
                 text: 'Drag & Drop Elements',
+                collapsed: true,
                 items: [
                   { text: 'Text Element', link: '/guide/drag-drop-elements/text-element' },
                   { text: 'Button Element', link: '/guide/drag-drop-elements/button-element' },
@@ -71,6 +73,7 @@ export default defineConfig({
         items: [
           {
             text: 'Column Settings',
+            collapsed: true,
             items: [
               { text: 'Basic Settings', link: '/guide/column-settings/basic-settings' },
               { text: 'Advanced Settings', link: '/guide/column-settings/advanced-settings' },
@@ -80,6 +83,7 @@ export default defineConfig({
           },
           {
             text: 'Field Types',
+            collapsed: true,
             items: [
               { text: 'Text Field', link: '/guide/field-types/single-line-text-field' },
               { text: 'Text Area', link: '/guide/field-types/text-area' },
@@ -93,6 +97,7 @@ export default defineConfig({
           },
           {
             text: 'Table Settings',
+            collapsed: true,
             items: [
               { text: 'Language Settings', link: '/guide/table-settings/language-settings' },
               { text: 'Custom Filters', link: '/guide/table-settings/custom-filters' },
@@ -115,6 +120,7 @@ export default defineConfig({
           { text: 'Search & Filter', link: '/guide/styling-design/add-or-remove-search-or-filter-functionality' },
           {
             text: 'Responsive Design',
+            collapsed: true,
             items: [
               { text: 'Column Breakpoints', link: '/guide/responsive-design/column-responsive-breakpoints' },
               { text: 'Stackable Table', link: '/guide/responsive-design/stackable-table' }
@@ -165,6 +171,7 @@ export default defineConfig({
           { text: 'Data Filtering Shortcode', link: '/guide/advanced-features/default-data-filtering-shortcode' },
           {
             text: 'Table Formatting',
+            collapsed: true,
             items: [
               { text: 'Cell Merge (Colspan)', link: '/guide/table-formatting/colspan-cell-merge' },
               { text: 'Rowspan', link: '/guide/table-formatting/rowspan' },
