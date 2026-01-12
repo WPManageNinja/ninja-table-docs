@@ -12,7 +12,15 @@ Let’s add the image element in the drag and drop mode to show you how it works
 ![Image element in tables](https://ninjatables.com/wp-content/uploads/2023/08/Image-element-in-tables-1024x509.png)
 When you drag the element on the table, it will show a default image. Change it to whatever you want.
 ## **Properties of Image Element**
-<table><thead><tr><th scope="col">**Option Name**</th><th scope="col">**Type**</th></tr></thead><tbody><tr><td>Replace Image</td><td>Media Upload</td></tr><tr><td>Alignment</td><td>Left, Center, or Right</td></tr><tr><td>Image Size</td><td>Numeric Value</td></tr><tr><td>Image Shape</td><td>Square or Round</td></tr><tr><td>Image Alternative Text</td><td>Text Edit</td></tr><tr><td>Image Link</td><td>Text Edit for URL</td></tr></tbody></table>
+
+| **Option Name** | **Type** |
+|-----------------|----------|
+| Replace Image | Media Upload |
+| Alignment | Left, Center, or Right |
+| Image Size | Numeric Value |
+| Image Shape | Square or Round |
+| Image Alternative Text | Text Edit |
+| Image Link | Text Edit for URL |
 - **Replace Image:** Replace the default image with your own image with the Media Upload button from your computer.
 - **Alignment:** Align the Image to either Left, Center, or Right. By default, it is set to Center.
 - **Image Size:** Change the size of the Image. By default, it is set to 50.

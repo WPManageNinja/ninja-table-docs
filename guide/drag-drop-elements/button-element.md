@@ -9,7 +9,22 @@ Whether it's sales, subscriptions, or any other opt-in actions, tables play a pi
 With Ninja Tables' fully customizable CTA button element, you have the tools to design compelling pricing tables, comparison tables, and WooCommerce product tables that drive results.
 Let’s add a Button element to our Ninja Tables!
 ## **Properties of Button Element**
-<table><thead><tr><th scope="col">**Scope**</th><th scope="col">**Option Name**</th><th scope="col">**Type**</th></tr></thead><tbody><tr><td>**General**</td><td>Editor box</td><td>Text Editor</td></tr><tr><td></td><td>Background Color</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Border Color</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Border Size</td><td>Numeric Value</td></tr><tr><td></td><td>Border Radius</td><td>Numeric Value</td></tr><tr><td></td><td>Full Width</td><td>Toggle On or Off</td></tr><tr><td></td><td>URL</td><td>Text Field for Link of the Button</td></tr><tr><td></td><td>Open in another tab</td><td>Toggle On or Off</td></tr><tr><td>**Text**</td><td>Font Color</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Font Size</td><td>Numeric Value</td></tr><tr><td></td><td>Font Style</td><td>Bold, Italic & Underline</td></tr><tr><td>**Icon**</td><td>Enable Icon</td><td>Toggle On or Off</td></tr><tr><td>**Hover**</td><td>Button Hover</td><td>Toggle On or Off</td></tr></tbody></table>
+
+| **Scope** | **Option Name** | **Type** |
+|-----------|-----------------|----------|
+| **General** | Editor box | Text Editor |
+| | Background Color | Graphical Color Selection |
+| | Border Color | Graphical Color Selection |
+| | Border Size | Numeric Value |
+| | Border Radius | Numeric Value |
+| | Full Width | Toggle On or Off |
+| | URL | Text Field for Link of the Button |
+| | Open in another tab | Toggle On or Off |
+| **Text** | Font Color | Graphical Color Selection |
+| | Font Size | Numeric Value |
+| | Font Style | Bold, Italic & Underline |
+| **Icon** | Enable Icon | Toggle On or Off |
+| **Hover** | Button Hover | Toggle On or Off |
 ### **General**
 ![Button element in drag and drop](https://ninjatables.com/wp-content/uploads/2023/08/Button-element-in-drag-and-drop-1-1024x598.png)
 - **Button Text Editor: **You can either click on the button element or edit the text in this Editor Box.
@@ -29,7 +44,7 @@ Let’s add a Button element to our Ninja Tables!
 ![Button with icon](https://ninjatables.com/wp-content/uploads/2023/08/Button-with-icon-1024x546.png)
 Enable the icon** **option for more customization like below.
 - **Icon Color:** You can change the color of the Icon. By default, it is set to Black.
-- **Icon Size:** You can change the color of the Icon. By default, it is set to 15.
+- **Icon Size:** You can change the size of the Icon. By default, it is set to 15.
 - **Item Spacing:** You can control the space between the Icon and the Text of the Button.
 - **Choose Icon:** You can upload any image as an icon for your “Text icon” element.
 - **Search Icon Library:** There are plenty of Icons to choose from in the library.

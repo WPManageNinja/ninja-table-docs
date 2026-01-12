@@ -30,4 +30,4 @@ If you enable this option, then the **time** **picker** will be available. It in
 It shows the first day of the week. For instance, Sunday, Monday, etc.
 Note that the Date Field data type is **HTML** supported.
 Add Date Field to your table columns easily with Ninja Tables!
-Let us know you thoughts.
+Let us know your thoughts.

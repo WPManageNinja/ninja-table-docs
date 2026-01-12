@@ -10,7 +10,11 @@ Even though a shortcode looks like a single line of text, this will not work in 
 That’s why Ninja Tables offers a free shortcode element separately to let you add your shortcode to the table.
 Let’s add a Shortcode element to Ninja Tables.
 ## **Properties of Shortcode Element**
-<table><thead><tr><th scope="col">**Option Name**</th><th scope="col">**Type**</th></tr></thead><tbody><tr><td>Shortcode Box</td><td>Text Editor Box</td></tr><tr><td>Alignment</td><td>Left, Center, and Right</td></tr></tbody></table>
+
+| **Option Name** | **Type** |
+|-----------------|----------|
+| Shortcode Box | Text Editor Box |
+| Alignment | Left, Center, and Right |
 ![Fluent Forms shortcode](https://ninjatables.com/wp-content/uploads/2023/08/Fluent-Forms-shortcode-1024x369.png)
 - **Shortcode Box:** Place your shortcode inside this field. In the example, we used a Fluent Forms shortcode for an Email Submission form.
 - **Alignment:** You can align the shortcode-generated content on either the Left, Center, or Right side of the cell.

@@ -11,7 +11,16 @@ It shows progress status, availability, reviews, and statistical values in linea
 You can add such a beautiful element by dragging it to your desired cell in Ninja Tables drag and drop.
 Let’s add the Progress Bar element to our table.
 ## **Properties of Progress Bar Element**
-<table><tbody><tr><td>Progress Type</td><td>Linear, Circular, and Dashboard.</td></tr><tr><td>Color</td><td>Graphical Color Select</td></tr><tr><td>Text Font Size</td><td>Numeric Value, drag bar</td></tr><tr><td>Progress Bar Percentage</td><td>Numeric Value, drag bar</td></tr><tr><td>Progress Bar Width</td><td>Numeric Value, drag bar</td></tr><tr><td>Progress Bar Thickness</td><td>Numeric Value, drag bar</td></tr><tr><td>Alignment</td><td>Left, Center, and Right</td></tr></tbody></table>
+
+| **Option Name** | **Type** |
+|-----------------|----------|
+| Progress Type | Linear, Circular, and Dashboard |
+| Color | Graphical Color Select |
+| Text Font Size | Numeric Value, drag bar |
+| Progress Bar Percentage | Numeric Value, drag bar |
+| Progress Bar Width | Numeric Value, drag bar |
+| Progress Bar Thickness | Numeric Value, drag bar |
+| Alignment | Left, Center, and Right |
 - **Progress Type: **You can change the type of the Progress Element style. Available options are Linear, Circular, and Dashboard. The most used version is circular. By default, it is set to Circle.
 - **Color: **You can change the Color of the Progress Element. By default, it is set to Black.
 - **Text Font Size: **You can change the Text Size of the Progress Element. By default, it is set to 15

@@ -22,8 +22,11 @@ Let's look at how to create a table.
 - Initially, in the **Table Rows** tab, you will find only the "**+ Add** **Column**" button to create columns. And several other tabs to configure the table. We'll get to that later.
 - After clicking the button, a popup will appear with Column Name, Column Key (Column key will automatically generate based on your given column name), Data Type, Responsive Breakpoint for the "Basic Settings," and some more configuration tabs above.
 ![New UI table column](https://ninjatables.com/wp-content/uploads/2025/05/New-UI-table-column-1024x461.webp)
-- Add the first column primary properties from here - column name and data type. Hit the blue button below to "**Add Column**."<br>
-- After this, you will get two buttons in the top right corner of a new window.<br><br>"**Add Data**" is for data input into the column and "**+ Add Column**" is for creating new columns.
+- Add the first column primary properties from here - column name and data type. Hit the blue button below to "**Add Column**."
+
+- After this, you will get two buttons in the top right corner of a new window.
+
+"**Add Data**" is for data input into the column and "**+ Add Column**" is for creating new columns.
 ![New Ui add data add column](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-add-data-add-column-1024x344.webp)
 - Here you also have Bulk Actions, Compact View, and Sort Manually options. You can use the **Search Field** to find the rows you're looking for (if you already have table entries).
 - You may quickly drag and drop table rows and arrange them as needed by enabling the **Sort Manually** option.

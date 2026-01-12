@@ -12,7 +12,20 @@ Follow this path- **Elements >> Advanced >> Text Icon**.
 ![Text Icon Drag and Drop](https://ninjatables.com/wp-content/uploads/2023/08/Text-Icon-Drag-and-Drop-1024x567.png)
 You can click the "Text Icon" cell and customize the icon and text both.
 ## **Properties of Text Icon Element**
-<table><thead><tr><th scope="col">**Scope**</th><th scope="col">**Option Name**</th><th scope="col">**Type**</th></tr></thead><tbody><tr><td>General</td><td>Editor Box</td><td>Text Editor</td></tr><tr><td></td><td>Item Spacing</td><td>Numeric Value, drag bar</td></tr><tr><td></td><td>Alignment</td><td>Left, Center, and Right</td></tr><tr><td>Text</td><td>Font Color</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Font Size</td><td>Numeric Value, drag bar</td></tr><tr><td></td><td>Font Style</td><td>Bold, Italic & Underline</td></tr><tr><td>Icon</td><td>Color</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Icon Size</td><td>Numeric Value, drag bar</td></tr><tr><td></td><td>Choose Icon</td><td>Upload from Computer</td></tr><tr><td></td><td>Icon Library</td><td>Selection from Library</td></tr><tr><td></td><td>Icon Position</td><td>Left & Right</td></tr></tbody></table>
+
+| **Scope** | **Option Name** | **Type** |
+|-----------|-----------------|----------|
+| General | Editor Box | Text Editor |
+| | Item Spacing | Numeric Value, drag bar |
+| | Alignment | Left, Center, and Right |
+| Text | Font Color | Graphical Color Selection |
+| | Font Size | Numeric Value, drag bar |
+| | Font Style | Bold, Italic & Underline |
+| Icon | Color | Graphical Color Selection |
+| | Icon Size | Numeric Value, drag bar |
+| | Choose Icon | Upload from Computer |
+| | Icon Library | Selection from Library |
+| | Icon Position | Left & Right |
 ### **General**
 ![Text Icon element](https://ninjatables.com/wp-content/uploads/2023/08/Text-Icon-element-2-1024x436.png)
 - **Editor box: **A text editor where you can edit your element text.
@@ -26,7 +39,7 @@ You can click the "Text Icon" cell and customize the icon and text both.
 ### **Icon**
 ![text icon color](https://ninjatables.com/wp-content/uploads/2023/08/text-icon-color-1024x512.png)
 - **Color:** You can change the color of the Icon. By default, it is set to Black.
-- **Icon Size:** You can change the color of the Icon. By default, it is set to 10.
+- **Icon Size:** You can change the size of the Icon. By default, it is set to 10.
 - **Choose Icon:** You can upload any image as an icon for your “Text icon” element.
 - **Icon Library:** There are plenty of Icons to choose from in the library. By default, it is set to a black Ninja Tables logo.
 - **Icon Position:** You can position the icon left or right to the text. By default, it is set to left.

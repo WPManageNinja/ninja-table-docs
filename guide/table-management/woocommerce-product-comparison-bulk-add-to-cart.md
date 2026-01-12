@@ -8,8 +8,8 @@ description: "WooCommerce: Bulk Add to Cart &amp; Product Comparison"
 Give your customers a better shopping experience with two powerful features built right into your WooCommerce tables: **Bulk Add to Cart** and **Product Comparison**.
 With **Bulk Add to Cart**, your customers can select several products from your table and add them all to their cart with a single click. This saves them time by not having to visit each product page individually, which is especially useful for wholesale buyers or anyone purchasing multiple items at once.
 The **Product Comparison** feature lets shoppers select a few items and view their details side-by-side in a simple pop-up window. This helps them easily decide between similar products, like different smartphone models or pricing plans, leading to faster and more confident buying decisions.
-> 
-Note: To get the Bulk Add to Cart and Product Comparison features, you must build your table using the **WooCommerce Table** option.
+
+> Note: To get the Bulk Add to Cart and Product Comparison features, you must build your table using the **WooCommerce Table** option.
 ## **How to Enable the Feature**
 This functionality is automatically enabled when you create a product table using the built-in WooCommerce integration.
 - First, create your table using the **WooCommerce Table** option. If you need a complete walkthrough, please follow our guide on [how to create a WooCommerce table](https://ninjatables.com/docs/woocommerce-integration/#create-woocommerce-tables).
@@ -32,4 +32,3 @@ This allows customers to see a direct comparison between products.
 - A pop-up window will appear, displaying a side-by-side comparison of the selected products' details.
 - Click the **Close** button to exit the comparison view and return to the product table.
 ![NinjaTable frontend compare_bulk](https://ninjatables.com/wp-content/uploads/2025/08/NinjaTable-frontend-compare_bulk-3.webp)
->

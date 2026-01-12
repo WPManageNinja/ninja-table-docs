@@ -21,5 +21,5 @@ This data type supports two types of Separator Styles- US Style and European Sty
 If you input 123,234,01 and use the **European style**, Ninja Tables will maintain its sorting based on that and show the numeric values with a **decimal comma**.
 Whereas in the **US style**, the separator will be a **decimal point** and it will be 123,234.01.
 ![Separator style in numeric value](https://ninjatables.com/wp-content/uploads/2023/09/Separator-style-in-numeric-value-1024x392.png)
-This setting is for maintaining numeric calculations and logic around tables. It does not change the 
+This setting is for maintaining numeric calculations and logic around tables. It does not change the display format of the numbers in the table.
 This is how you can add **Numeric** **Values** to your column easily!

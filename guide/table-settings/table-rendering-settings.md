@@ -13,8 +13,14 @@ Go to the **Table** **Configuration** tab and you'll see Rendering Settings o
 ## **Ajax Table**
 You should use the **Ajax** **Rendering** **Method** when your table has a large amount of data. Here, data will load as a chunk.
 Also, you can change the minimum chunk size by adding some code to the theme's functions.php file. For example, we have set the minimum chunk size at 100.
-`add_filter('ninja_table_per_chunk', function($limit) {<br>return 100;<br>});`</pre>
-<p class="has-kb-palette-12-background-color has-background has-small-font-size">In this mode, you can't use the cell merge/split feature or shortcodes in cells.
+
+```php
+add_filter('ninja_table_per_chunk', function($limit) {
+    return 100;
+});
+```
+
+In this mode, you can't use the cell merge/split feature or shortcodes in cells.
 ## **Legacy** Table
 In the **Legacy Rendering Mode**, the table loads in full HTML format and is totally readable by Google. But Google readable doesn't mean that the data will show precisely in Google search rather, it depends on how you have set the table data in SEO.
 Advanced Table (Legacy) is a Pro Feature!

@@ -9,7 +9,18 @@ A list element in a table is used to show a list of items in either ordered or u
 Ninja Tables offers a free “List” item to add lists and organize the data of your tables. This helps users list the product features or any data that requires listing.
 Let’s add a list element in table.
 ## **Properties of List Element**
-<table><thead><tr><th scope="col">**Scope**</th><th scope="col">**Option Name**</th><th scope="col">**Type**</th></tr></thead><tbody><tr><td>**General**</td><td>Item Spacing Vertically</td><td>Numeric Value</td></tr><tr><td></td><td>Space Between Icon and Text</td><td>Numeric Value</td></tr><tr><td></td><td>Alignment</td><td>Left, Center, and Right</td></tr><tr><td>**Text**</td><td>Font Color</td><td>Numeric Value</td></tr><tr><td></td><td>Font Size</td><td>Numeric Value</td></tr><tr><td></td><td>Font Style</td><td>Bold, Italic, and Underline</td></tr><tr><td>**List**</td><td>List Type</td><td>Unordered or Ordered</td></tr><tr><td></td><td>List Icon (Unordered)</td><td>Circle, Square, Disc, and None</td></tr><tr><td></td><td>List Icon (Ordered)</td><td>Upper-Roman, Lower-Roman, Upper-Alpha, Lower-Alpha, and Decimal</td></tr></tbody></table>
+
+| **Scope** | **Option Name** | **Type** |
+|-----------|-----------------|----------|
+| **General** | Item Spacing Vertically | Numeric Value |
+| | Space Between Icon and Text | Numeric Value |
+| | Alignment | Left, Center, and Right |
+| **Text** | Font Color | Numeric Value |
+| | Font Size | Numeric Value |
+| | Font Style | Bold, Italic, and Underline |
+| **List** | List Type | Unordered or Ordered |
+| | List Icon (Unordered) | Circle, Square, Disc, and None |
+| | List Icon (Ordered) | Upper-Roman, Lower-Roman, Upper-Alpha, Lower-Alpha, and Decimal |
 ### **General**
 ![List element general options](https://ninjatables.com/wp-content/uploads/2023/08/List-element-general-options-1024x443.png)
 - **Item Spacing Vertically: **Space between lists vertically. By default, it is set to 20.

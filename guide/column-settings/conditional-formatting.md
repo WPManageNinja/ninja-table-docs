@@ -11,20 +11,28 @@ The cell value of the table changes in response to the conditions.
 ## **Applying Conditional Formatting in Ninja Tables**
 Read this simple guide to learn how to apply this feature.
 - Firstly, you need to have a table designed beforehand.
-- There are two methods to configure **Conditional Formatting**.<br><br>Go to the **Table Configuration** tab **→** Click on the **Edit** icon (Pencil Icon) on the right side of the tables columns and you will notice a drop-down.
+- There are two methods to configure **Conditional Formatting**.
+
+Go to the **Table Configuration** tab **→** Click on the **Edit** icon (Pencil Icon) on the right side of the tables columns and you will notice a drop-down.
 ![New Ui conditional formatting tab](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-conditional-formatting-tab-1024x712.webp)
-- Or you can do it by going over any column name and pressing the **Edit** icon from the **Table** **Rows** tab.<br>
+- Or you can do it by going over any column name and pressing the **Edit** icon from the **Table** **Rows** tab.
 ![New Ui All tables configuration icon](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-All-tables-configuration-icon-1024x467.webp)
 - After that, a pop-up window will appear with various interactive options. Go to the top bar for **Conditional Formatting**.
-- Click on the **Conditional Formatting** tab. When you click the **Add** **Condition** button, multiple options to set conditions will appear with-<br><br>**If Cell Value** [Select] [Enter Value] **Then** [Select] [Enter Value].
+- Click on the **Conditional Formatting** tab. When you click the **Add** **Condition** button, multiple options to set conditions will appear with-
+
+**If Cell Value** [Select] [Enter Value] **Then** [Select] [Enter Value].
 ![Ninja Tables Add Condition](https://ninjatables.com/wp-content/uploads/2023/03/Ninja-Tables-Add-Condition-1024x210.png)
 - Let’s set the conditions differently as **Equal, Not Equal, Contains, **and** Does not Contain**. Then, you need to set some trigger values and then set options for which conditions will be applied.
 ![Ninja Tables Conditions](https://ninjatables.com/wp-content/uploads/2023/03/Ninja-Tables-Conditions-1024x240.png)
-- From the 3rd box, you can set **Cell Options, Row Options, **and **Column Options **and apply the desired condition.<br><br>-If you select Cell Options, the condition will only apply to cells<br>-If you select Row Options, the condition will apply to the corresponding row<br>-And if you select Column Options, the conditions will change the corresponding column.
-<div class="wp-block-column">
+- From the 3rd box, you can set **Cell Options, Row Options, **and **Column Options **and apply the desired condition.
+
+- If you select Cell Options, the condition will only apply to cells
+- If you select Row Options, the condition will apply to the corresponding row
+- And if you select Column Options, the conditions will change the corresponding column
+
 ![Set-cell-css-class](https://ninjatables.com/wp-content/uploads/2023/03/Set-cell-css-class.png)
+
 ![Ninja Tables column and row options](https://ninjatables.com/wp-content/uploads/2023/03/Ninja-Tables-column-and-row-options-1024x333.png)
-</div>
 ![Conditional formatting column options](https://ninjatables.com/wp-content/uploads/2023/03/Conditional-formatting-column-options.png)
 Let's see how the conditions work.
 - In this case, **If Cell Value** is Equal to **Male,** Then the **Set cell color** to red.

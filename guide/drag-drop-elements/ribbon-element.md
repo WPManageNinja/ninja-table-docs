@@ -11,7 +11,21 @@ Ninja Tables offer 4 types of ribbons- Side, Bookmark, Corner, and Horizontal.
 ![Ribbon element in table](https://ninjatables.com/wp-content/uploads/2023/08/Ribbon-element-in-table-1024x681.png)
 Let’s see how it works.
 ## **Properties of Ribbon Element**
-<table><thead><tr><th scope="col">**Scope**</th><th scope="col">**Option Name**</th><th scope="col">**Type**</th></tr></thead><tbody><tr><td>General</td><td>Ribbon type</td><td>Side, Bookmark, Corner, and Horizontal</td></tr><tr><td></td><td>Ribbon Position</td><td>Left and Right</td></tr><tr><td></td><td>Ribbon Width</td><td>Numeric Value, drag bar</td></tr><tr><td></td><td>Ribbon Height</td><td>Numeric Value, drag bar</td></tr><tr><td></td><td>X Offset</td><td>Numeric Value, drag bar</td></tr><tr><td></td><td>Y Offset</td><td>Numeric Value, drag bar</td></tr><tr><td>Text</td><td>Ribbon Text</td><td>Text Field, drag bar</td></tr><tr><td></td><td>Font Color</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Font Size</td><td>Numeric Value, drag bar</td></tr><tr><td></td><td>Font X Offset</td><td>Numeric Value, drag bar</td></tr><tr><td></td><td>Font Y Offset</td><td>Numeric Value, drag bar</td></tr><tr><td>Background</td><td>Background Color</td><td>Graphical Color Selection</td></tr></tbody></table>
+
+| **Scope** | **Option Name** | **Type** |
+|-----------|-----------------|----------|
+| General | Ribbon type | Side, Bookmark, Corner, and Horizontal |
+| | Ribbon Position | Left and Right |
+| | Ribbon Width | Numeric Value, drag bar |
+| | Ribbon Height | Numeric Value, drag bar |
+| | X Offset | Numeric Value, drag bar |
+| | Y Offset | Numeric Value, drag bar |
+| Text | Ribbon Text | Text Field, drag bar |
+| | Font Color | Graphical Color Selection |
+| | Font Size | Numeric Value, drag bar |
+| | Font X Offset | Numeric Value, drag bar |
+| | Font Y Offset | Numeric Value, drag bar |
+| Background | Background Color | Graphical Color Selection |
 ### **General**
 ![Ribbon element](https://ninjatables.com/wp-content/uploads/2023/08/Ribbon-element-1024x554.png)
 - **Ribbon type:** Change the ribbon type to position in a corner or a rectangular format. By default, it is set to corner.
@@ -32,5 +46,5 @@ Let’s see how it works.
 ![Ribbon background color](https://ninjatables.com/wp-content/uploads/2023/08/Ribbon-background-color-1024x488.png)
 **Background Color:** You can change the background color of the ribbon.
 ## **Conclusion**
-If a cell or column has a ribbon or badge, it shows the item is on sale or is an exclusive product. The ribbon element in Ninja Tables drag and drop 
+If a cell or column has a ribbon or badge, it shows the item is on sale or is an exclusive product. The ribbon element in Ninja Tables drag and drop mode helps you create visually appealing pricing and product tables.
 Let us know your thoughts and questions in the comment box.

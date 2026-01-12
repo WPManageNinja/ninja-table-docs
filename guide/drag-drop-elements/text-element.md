@@ -12,7 +12,13 @@ Let’s add a Text element to our Ninja Tables!
 ![Drag cell element and drop on table](https://ninjatables.com/wp-content/uploads/2023/08/Drag-cell-element-1024x453.png)
 All you need to do is drag the element from the left menu and drop it on the table.
 ## **Properties of Text Element**s
-<table><thead><tr><th scope="col">**Scope**</th><th scope="col">**Option Name**</th><th scope="col">**Type**</th></tr></thead><tbody><tr><td>Text Options</td><td>Font Color</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Font Size</td><td>Numeric Value</td></tr><tr><td></td><td>Alignment</td><td>Left, Center, Right</td></tr><tr><td></td><td>Font Weight</td><td>Bold, Italic, Underline</td></tr></tbody></table>
+
+| **Scope** | **Option Name** | **Type** |
+|-----------|-----------------|----------|
+| Text Options | Font Color | Graphical Color Selection |
+| | Font Size | Numeric Value |
+| | Alignment | Left, Center, Right |
+| | Font Weight | Bold, Italic, Underline |
 ![Customize table cell element](https://ninjatables.com/wp-content/uploads/2023/08/Customize-table-cell-element-1024x583.png)
 ### Customize Text Elements in Tables
 - **Editor Box:** You can edit the text of the Text Element. (Or, type in the cell)

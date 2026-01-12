@@ -9,7 +9,36 @@ You already know Ninja Tables is a great WordPress table builder plugin. This pl
 In this document, we will discuss the table settings and customization options and see what they can do.
 ![Data Table Settings](https://ninjatables.com/wp-content/uploads/2023/08/Data-Table-Settings-1024x688.png)
 ## **Properties of Table Settings**
-<table><tbody><tr><td></td><td>**Option Name**</td><td>**Type**</td></tr><tr><td>**General**</td><td>Cell Padding</td><td>Numeric Value</td></tr><tr><td></td><td>Table Alignment</td><td>Left, Center, and Right</td></tr><tr><td></td><td>Separate Column/Rows</td><td>Toggle On or Off</td></tr><tr><td></td><td>Space Between Columns</td><td>Numeric Value</td></tr><tr><td></td><td>Space Between Rows</td><td>Numeric Value</td></tr><tr><td></td><td>Table Container Max Width</td><td>Toggle On or Off</td></tr><tr><td></td><td>Table Cell Min Auto Width</td><td>Numeric Value</td></tr><tr><td></td><td>Table Container Max Height</td><td>Numeric Value</td></tr><tr><td>**Background**</td><td>Header Background</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Even Row Background</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Odd Row Background</td><td>Graphical Color Selection</td></tr><tr><td>**Custom CSS**</td><td>Add custom CSS</td><td></td></tr><tr><td>**Custom JS**</td><td>Add custom JS</td><td></td></tr><tr><td>**Sticky**</td><td>First Row Sticky</td><td>Toggle On or Off</td></tr><tr><td></td><td>First Column Sticky</td><td>Toggle On or Off</td></tr><tr><td>**Accessibility**</td><td>Table Role</td><td>Dropdown Selection</td></tr><tr><td>**Border**</td><td>Table Border</td><td>Numeric Value</td></tr><tr><td></td><td>Border Color</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Apply Inner Border</td><td>Toggle On or Off</td></tr><tr><td></td><td>Header Inner Border</td><td>Toggle On or Off</td></tr><tr><td></td><td>Inner Border Color</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Inner Border Size</td><td>Numeric Value</td></tr><tr><td>**Global Styl**e</td><td>Margin Top</td><td>Numeric Value</td></tr><tr><td></td><td>Font Size</td><td>Numeric Value</td></tr><tr><td></td><td>Color</td><td>Graphical Color Selection</td></tr><tr><td></td><td>Font Family</td><td>Dropdown Selection</td></tr><tr><td>**Export Table**</td><td>Select Format</td><td>Dropdown Selection</td></tr></tbody></table>
+
+| **Scope** | **Option Name** | **Type** |
+|-----------|-----------------|----------|
+| **General** | Cell Padding | Numeric Value |
+| | Table Alignment | Left, Center, and Right |
+| | Separate Column/Rows | Toggle On or Off |
+| | Space Between Columns | Numeric Value |
+| | Space Between Rows | Numeric Value |
+| | Table Container Max Width | Toggle On or Off |
+| | Table Cell Min Auto Width | Numeric Value |
+| | Table Container Max Height | Numeric Value |
+| **Background** | Header Background | Graphical Color Selection |
+| | Even Row Background | Graphical Color Selection |
+| | Odd Row Background | Graphical Color Selection |
+| **Custom CSS** | Add custom CSS | |
+| **Custom JS** | Add custom JS | |
+| **Sticky** | First Row Sticky | Toggle On or Off |
+| | First Column Sticky | Toggle On or Off |
+| **Accessibility** | Table Role | Dropdown Selection |
+| **Border** | Table Border | Numeric Value |
+| | Border Color | Graphical Color Selection |
+| | Apply Inner Border | Toggle On or Off |
+| | Header Inner Border | Toggle On or Off |
+| | Inner Border Color | Graphical Color Selection |
+| | Inner Border Size | Numeric Value |
+| **Global Style** | Margin Top | Numeric Value |
+| | Font Size | Numeric Value |
+| | Color | Graphical Color Selection |
+| | Font Family | Dropdown Selection |
+| **Export Table** | Select Format | Dropdown Selection |
 ### **General**
 **Cell Padding:** Cell padding controls the space between the element and the cell area. By default, it is set to 10.
 **Table Alignment:** You can align the whole table on the page's left, Center, or Right side.

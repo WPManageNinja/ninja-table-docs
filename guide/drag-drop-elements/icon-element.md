@@ -13,7 +13,7 @@ Add an Icon element to Ninja Tables and customize the color, size, or anything.
 Once you pick the icon element and drop it on a cell, Ninja Tables shows you a default icon of the logo. Of course, it's customizable.
 ## **Icon Element Specific Properties**
 - **Color:** You can change the color of the Icon. By default, it is set to Black.
-- **Icon Size:** You can change the color of the Icon. By default, it is set to 15.
+- **Icon Size:** You can change the size of the Icon. By default, it is set to 15.
 - **Alignment:** You can align the icon to the left, right, or center. By default, it is set to Center.
 - **Choose Icon:** You can upload your own image as an icon to add to the table.
 - **Icon Library:** A library of Icons to choose from.
