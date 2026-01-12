@@ -12,7 +12,9 @@ As usual, start by selecting chart renderer (Charts Js or Google Charts) in Ninj
 ![Create a chart](https://ninjatables.com/wp-content/uploads/2023/10/Create-a-chart-01-1024x580.webp)
 ### Select Ninja Tables as Chart Data Source
 Just like the usual data source layout, you can see 3 data source options to create your chart.
--Manual Input: Users can input their own data manually<br>-Ninja Tables: Create chart using a table<br>-Fluent Forms: Create chart using form entries
+- Manual Input: Users can input their own data manually
+- Ninja Tables: Create chart using a table
+- Fluent Forms: Create chart using form entries
 We’ll select Ninja Tables as the chart data source.
 ![Select Ninja Tables as chart data source](https://ninjatables.com/wp-content/uploads/2025/08/Select-Ninja-Tables-as-chart-data-source-1024x400.webp)
 Once you select the source, you can select the table data you want to turn into a chart.

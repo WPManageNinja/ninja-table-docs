@@ -10,7 +10,7 @@ Let's dive into this simple guide to learn about Table Titles and Descriptions.
 In Ninja Tables, the table title is mandatory but the description is optional.
 - First, go to the** Ninja Tables dashboard →** click on the **Add Table **button** **(top right corner of the screen).
 - Then, a pop-up will appear with information on how to **Manually Create a Table**, as well as the Table Title and Table Description boxes.
-![](https://ninjatables.com/wp-content/uploads/2022/09/Manually-create-a-table-1024x575.webp)<figcaption class="wp-element-caption">Popup</figcaption>
+![Popup](https://ninjatables.com/wp-content/uploads/2022/09/Manually-create-a-table-1024x575.webp)
 You can see on the right-hand side there are 2 empty boxes- Table Title and Table Description.
 Fill these boxes up with a title and a description. The table description is optional, but you must name the table.
 ## **Table Title**

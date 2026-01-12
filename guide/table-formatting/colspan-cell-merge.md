@@ -9,7 +9,7 @@ This function joins multiple neighboring cells into a single larger cell. To mer
 *******Please note that this function will operate with **Advanced Table (Legacy) only.**
 ## How to Merge Table Cells
 - To apply this Cell Merge feature, you have to create a table. Or you can edit any of the existing tables.
-- First, select a table and find the cells you want to merge.<br>
+- First, select a table and find the cells you want to merge.
 - Remember that when you merge columns, the cell merge option always takes the** **corresponding cell value into one single row.
 ![](https://ninjatables.com/wp-content/uploads/2022/09/add-colspan-01.webp)
 - As you can see in the image above, we here want to merge some cells right below the header to create a separate header and another one in the middle of the table. Also, 2 cells at the end of the table will be merged into one using the same #colspan#.

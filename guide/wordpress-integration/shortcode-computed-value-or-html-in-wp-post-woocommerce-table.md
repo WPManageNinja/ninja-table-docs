@@ -16,7 +16,7 @@ We've used the WP Posts table option for the demonstration.
 - Create a new column by clicking on the **Add Column** at the top of the table to use the Shortcodes / Computed Value in Ninja Tables.
 ![](https://ninjatables.com/wp-content/uploads/2022/09/Shortcode-Table-2-scaled.webp)
 - Now, go to Dynamic Data Settings and click Field Type. There will be a drop-down option. From there, click on the Shortcode / Computed Value or HTML.
-![](https://ninjatables.com/wp-content/uploads/2022/09/Shortcode-Table-3-scaled.webp)<figcaption class="wp-element-caption">Shortcode / Computed Value or HTML</figcaption>
+![Shortcode / Computed Value or HTML](https://ninjatables.com/wp-content/uploads/2022/09/Shortcode-Table-3-scaled.webp)
 - By clicking the Shortcode / Computed Value or HTML option, you must use a shortcode to fill in the field input value field.
 ![](https://ninjatables.com/wp-content/uploads/2022/09/Shortcode-Table-4-scaled.webp)
 - Follow the instructions given under Field Value until entering the value. Then, place the shortcode needed in the input fields. You can get the pre-built shortcodes from the docs.woocommerce.com website, or you can get those pre-defined shortcodes from various sources that are allowed in WordPress.

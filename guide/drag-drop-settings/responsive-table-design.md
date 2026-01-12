@@ -10,7 +10,15 @@ Ninja Tables gives you control of your table’s responsiveness, so you don't ha
 You can find this option on the leftmost side of the Table Editor and see the responsiveness setting is turned on by default.
 ![responsiveness](https://ninjatables.com/wp-content/uploads/2023/08/responsiveness-1024x428.png)
 ## Properties of Responsive Table Design
-<table><tbody><tr><td class="has-text-align-center" data-align="center"></td><td class="has-text-align-center" data-align="center">**Option Name**</td><td class="has-text-align-center" data-align="center">**Type**</td></tr><tr><td class="has-text-align-center" data-align="center">**General**</td><td class="has-text-align-center" data-align="center">Enable Responsive Table</td><td class="has-text-align-center" data-align="center">Toggle on or off</td></tr><tr><td class="has-text-align-center" data-align="center">**Mode Options**</td><td class="has-text-align-center" data-align="center">Mobile</td><td class="has-text-align-center" data-align="center">Toggle, dropdown, numeric</td></tr><tr><td class="has-text-align-center" data-align="center"></td><td class="has-text-align-center" data-align="center">Tablet</td><td class="has-text-align-center" data-align="center">Toggle, dropdown, numeric</td></tr><tr><td class="has-text-align-center" data-align="center"></td><td class="has-text-align-center" data-align="center">Desktop</td><td class="has-text-align-center" data-align="center">Toggle, dropdown, numeric</td></tr><tr><td class="has-text-align-center" data-align="center">**Responsive Settings**</td><td class="has-text-align-center" data-align="center">Mobile</td><td class="has-text-align-center" data-align="center">Numeric & radio button</td></tr><tr><td class="has-text-align-center" data-align="center"></td><td class="has-text-align-center" data-align="center">Tablet</td><td class="has-text-align-center" data-align="center">Numeric & radio button</td></tr></tbody></table>
+
+| **Scope** | **Option Name** | **Type** |
+|-----------|-----------------|----------|
+| **General** | Enable Responsive Table | Toggle on or off |
+| **Mode Options** | Mobile | Toggle, dropdown, numeric |
+| | Tablet | Toggle, dropdown, numeric |
+| | Desktop | Toggle, dropdown, numeric |
+| **Responsive Settings** | Mobile | Numeric & radio button |
+| | Tablet | Numeric & radio button |
 ### General
 Enable the table to be responsive by toggling the button on.
 ![Responsivenss of a table](https://ninjatables.com/wp-content/uploads/2023/08/Responsivenss-of-a-table-1024x408.png)

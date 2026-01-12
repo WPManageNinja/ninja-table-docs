@@ -5,7 +5,9 @@ description: "Pagination"
 
 # Pagination
 
-The last feature among the three styling tabs is the **Other **option. You can control table data **Pagination** from here.<br><br>**Pagination Items Per Page **and** Pagination Position**- These options are included in the pagination section.
+The last feature among the three styling tabs is the **Other** option. You can control table data **Pagination** from here.
+
+**Pagination Items Per Page** and **Pagination Position** - These options are included in the pagination section.
 ![New Ui pagination](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-pagination-1024x363.webp)
 ***Must hit "**Save**" to save your settings!
 The **Pagination Items Per Page** allows you to restrict the number of rows you want to view in the table. It's an input field. You can type in the number of rows.

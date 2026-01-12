@@ -6,7 +6,7 @@ description: "Styled List Element (Pro)"
 # Styled List Element (Pro)
 
 Ninja Tables Drag and Drop has a list element in the free version. It’s enough to create simple lists. But if you want a more attractive list, you will need more customization options. Ninja Tables offers an advanced element called “Styled List,” which is only available as a **pro** element.
-Let’s add a Styled List element to our Ninja Tables!<br> <br>Just drag and drop the element in your table, and that’s it.
+Let’s add a Styled List element to our Ninja Tables! Just drag and drop the element in your table, and that’s it.
 From the menu on the left side, you can see multiple customization options for this element.
 ## **Properties of Styled List**
 

@@ -10,7 +10,7 @@ WooCommerce Integration is a Pro Feature.
 ## Create WooCommerce Tables
 - Click on **Add Table** from the upper right corner to create a new table.
 - Go to the **WooCommerce** **Table** from the left sidebar.
-![](https://ninjatables.com/wp-content/uploads/2022/10/WooCommerce-Table-1-scaled.webp)<figcaption class="wp-element-caption">WooCommerce Table</figcaption>
+![WooCommerce Table](https://ninjatables.com/wp-content/uploads/2022/10/WooCommerce-Table-1-scaled.webp)
 - Add the **table name** & then filter the **products**. Choose the **product categories **& **tags** you wish to include in the table.
 - From product type, filter your desired products from simple, variable, and grouped products options.
 - In this case, suppose you have selected the clothing category from the categories tab and simply from the product type tags. All of the single clothing products will be displayed in the table.

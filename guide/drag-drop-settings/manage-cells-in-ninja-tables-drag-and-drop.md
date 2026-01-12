@@ -41,10 +41,9 @@ With this option, you can control the width of a column by increasing or decreas
 #### Merge and Split
 Another important feature of Ninja Tables is to merge neighboring cells in the table.
 Select a cell and then press **SHIFT**, and select another neighboring cell. Now click on the “Merge” button.
-<div class="wp-block-column">
 ![merge table cells in Ninja Tables Drag and drop table](https://ninjatables.com/wp-content/uploads/2023/08/merge-data-table-cells-1024x784.png)
+
 ![Split table cells in Ninja Tables Drag and drop table](https://ninjatables.com/wp-content/uploads/2023/08/Split-merged-cells-1024x780.png)
-</div>
 If you want the merged cells to get back to how they were as single separate cells, click the “Split” button.
 ### Table Row Customization
 To customize or to make adjustments to your rows, select a cell and click the **small expandable arrow** on the left.

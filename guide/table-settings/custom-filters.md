@@ -12,7 +12,7 @@ Custom Filter is a Pro Feature!
 ![New Ui custom filter tab](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-custom-filter-tab-1024x322.webp)
 ## Add Custom Filters
 - Click on the **Custom** **Filters**, there a new tab will open with an **Add New Filter** button.
-- Now, click the **Add** **New** **Filter** button, then a pop-up form with a set of configuration options will appear.<br>
+- Now, click the **Add** **New** **Filter** button, then a pop-up form with a set of configuration options will appear.
 ![New Ui add custom filter](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-add-custom-filter-1024x610.webp)
 This pop-up has various options to choose from to make your table’s filter more interactive. The following options can be found in the custom filter pop-up form -
 ### **Filter Title**
@@ -21,7 +21,15 @@ This input field is for the filter title, which determines the filter name.
 This input field is used if you want to add a label to your filter. Keep it blank if you don’t need any filter instructions in the frontend.
 ### **Filter UI Type**
 You can choose the filter type to display the filter's base in the frontend. There are 8 subsets in the Filter UI type.
-Such as:<br>-Select Dropdown<br>-Radio<br>-Checkbox<br>-Text Input<br>-Date Picker<br>-Date Range<br>-Number Range<br>-Reset Filter Button.
+Such as:
+- Select Dropdown
+- Radio
+- Checkbox
+- Text Input
+- Date Picker
+- Date Range
+- Number Range
+- Reset Filter Button
 ![New Ui custom filter ui type](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-custom-filter-ui-type-1024x574.webp)
 ### **Placeholder**
 The default placeholder is **All**. But if you want to change the text, you can type in your desired text.

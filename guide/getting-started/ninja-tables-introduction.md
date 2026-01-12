@@ -7,9 +7,8 @@ description: "Introduction- Getting Started with Ninja Tables"
 
 Creating stunning responsive tables was always a struggle. And customizing those was an even bigger dispute. So here we are with all the solutions. It will give you the easiest way of making different types of WordPress tables within minutes and even without writing a single line of code!
 If you want to check out if this plugin fulfills your requirements for a WordPress table plugin, check out the [feature page.](https://ninjatables.com/features/)
-<div class="wp-block-column">
+
 [Watch Video](https://youtu.be/GXqaXMVsnl8)
-</div>
 As soon as you install and activate Ninja Tables, you'll be welcomed with a short intro. You can start creating tables manually right from there or you can start practicing with an imported file.
 ![Welcome to Ninja Tables UI](https://ninjatables.com/wp-content/uploads/2025/05/Welcome-to-Ninja-Tables-UI-1024x536.png)
 Follow the documentations to get started. You can also go to the templates or the dmeo page for inspirations.

@@ -8,7 +8,7 @@ description: "Table Rendering Settings"
 Ninja Tables offers **Table** **Rendering Settings** which is used for the table render method.
 You can select between two- Ajax table & Advanced table (Legacy).
 Table Rendering Settings **Advanced Table (Legacy)** is a Pro Feature!
-Go to the **Table** **Configuration** tab and you'll see Rendering Settings on the left menubar.<br>
+Go to the **Table** **Configuration** tab and you'll see Rendering Settings on the left menubar.
 ![New Ui table rendering settings](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-table-rendering-settings-1024x467.webp)
 ## **Ajax Table**
 You should use the **Ajax** **Rendering** **Method** when your table has a large amount of data. Here, data will load as a chunk.

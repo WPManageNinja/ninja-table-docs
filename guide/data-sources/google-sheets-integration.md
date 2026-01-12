@@ -21,7 +21,7 @@ We'll explain the process here, using the following dummy Google Sheet.
 - Make sure that in the **Published content and settings** option, the **automatically republish when changes are made** is **checked**.
 - Then copy the link, go back to the dashboard of your Ninja Tables, and paste it into the** Data Source URL**. Once you’re done, proceed to the **Next** button.
 - Choose and save the entry fields you wish to add to. This is how all your data will be imported here automatically.
-![](https://ninjatables.com/wp-content/uploads/2022/09/Google-Sheet-Integration-2-scaled.webp)<figcaption class="wp-element-caption">Select Entry Fields</figcaption>
+![Select Entry Fields](https://ninjatables.com/wp-content/uploads/2022/09/Google-Sheet-Integration-2-scaled.webp)
 - Now, go to your Google Sheet again, add some other data here, and check if the modified data is automatically applied to your Ninja Tables.
 - However, in this case, after you're finished adding the details, you have to wait 5 minutes. This is because Google updates the table data cache every 5 minutes. Let's push forward through the waiting period.
 - Go back to your Ninja Tables after 5 minutes, and reload the page. Then at the bottom of the table are the data rows you added 5 minutes ago.

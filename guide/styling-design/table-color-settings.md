@@ -9,7 +9,7 @@ Customize table colors with Ninja Tables efficiently with the Table Color Settin
 You can make your data tables more engaging and captivating using colors.
 ## How to Customize Table Color
 - First, you must set up a Table using the Ninja Tables plugin.
-- Select a table to customize its colors and click on the** **"**Table Design**" tab.<br>
+- Select a table to customize its colors and click on the** **"**Table Design**" tab.
 - On the right side, a sidebar appears with 3 separate segments. Select **Table Colors** from the second segment.
 - The** Table Color** tab appears with its functions. You will notice a dropdown list of various preset colors in the **Pre-Defined Scheme** option. And a **Custom Scheme** option.
 ![New Ui table color options](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-table-color-options-1024x536.webp)

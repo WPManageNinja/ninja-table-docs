@@ -22,7 +22,7 @@ Then you will notice a new field group has been added to the plugin dashboard.
 ![ACF new field group](https://ninjatables.com/wp-content/uploads/2023/01/ACF-field-integration-5.png)
 - Afterward, move to the post where you want to show your custom field using ACF.
 - Then, right below the post section, you’ll notice the custom field with an input field from the post page. Add the value that you want to show on the input field on your table. Then, click on the post page’s update button after adding the value.
-![ACF add value to input field](https://ninjatables.com/wp-content/uploads/2023/09/ACF-field-integration-7.png)<figcaption class="wp-element-caption">Update Post</figcaption>
+![Update Post](https://ninjatables.com/wp-content/uploads/2023/09/ACF-field-integration-7.png)
 - Then, go to the plugin Ninja Tables and click on the Post table generated using the WP Post feature. Select the post table to edit.
 - You’ll then be taken to the table interface, where you press the Add Column icon.
 ![ACF add new column](https://ninjatables.com/wp-content/uploads/2023/01/ACF-field-integration-9-1024x718.png)
@@ -32,5 +32,5 @@ Then you will notice a new field group has been added to the plugin dashboard.
 *Remember that in the **Field Value** input area, enter the value from the **Name** column in the **Advanced Custom Fields** plugin dashboard according to your created **Field Group**.*
 ![ACF new custom column](https://ninjatables.com/wp-content/uploads/2023/01/ACF-field-integration-11-1024x255.png)
 - After clicking the preview button, you will notice a new custom column, along with its value, gets added to the table.
-![new column with ACF](https://ninjatables.com/wp-content/uploads/2023/01/ACF-field-integration-12.png)<figcaption class="wp-element-caption">Preview</figcaption>
+![Preview](https://ninjatables.com/wp-content/uploads/2023/01/ACF-field-integration-12.png)
 This is how you can use the **Advanced Custom Fields(ACF)** option of the **Ninja Tables** plugin.

@@ -9,7 +9,7 @@ Ninja Tables offers you an amazing feature that is CSV Export / Print Button Set
 Buttons (CSV / Print) is a Pro Feature!
 ## CSV/Print Button in Ninja Tables
 - Clicking the **Table** **Configuration** tab, you will find a new window appearing with the **Buttons (CSV / Print) **option on the sidebar.
-- Click on the **<strong>Buttons (CSV / Print)**</strong>, there a new tab will open with a **CSV Export / Print Button Settings** **for Frontend** area.
+- Click on the ****Buttons (CSV / Print)****, there a new tab will open with a **CSV Export / Print Button Settings** **for Frontend** area.
 ![New Ui button-csv](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-buttoncsv-1024x595.webp)
 Now, let's talk about the details of the Settings area.
 ### **CSV Export / Print Button Settings** for Frontend

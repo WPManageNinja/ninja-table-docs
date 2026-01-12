@@ -12,7 +12,9 @@ First of all, you need to pick the chart renderer (Charts Js or Google Charts). 
 ![Create a chart](https://ninjatables.com/wp-content/uploads/2023/10/Create-a-chart-01-1024x580.webp)
 ### Select Fluent Forms as Chart Data Source
 You can see 3 options Ninja Charts offers to create charts using different data sources.
--Manual Input: Users can input their own data manually<br>-Ninja Tables: Create chart using a table<br>-Fluent Forms: Create chart using form entries
+- Manual Input: Users can input their own data manually
+- Ninja Tables: Create chart using a table
+- Fluent Forms: Create chart using form entries
 We'll select Fluent Forms as the chart data source.
 ![Select Fluent Forms as chart data source](https://ninjatables.com/wp-content/uploads/2025/08/Select-Fluent-Forms-as-chart-data-source-1024x416.webp)
 Once you select the source, another option will appear asking for "Data."

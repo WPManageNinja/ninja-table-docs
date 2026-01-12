@@ -12,7 +12,7 @@ Let’s dive into the simple guide to learn how to **import JSON** file.
 - First, navigate to the **Ninja Tables dashboard **and click on the **Import Table **button on the top right of the screen.
 - To know how to **Export Data (CSV/JSON)**, you can get help from [here](https://ninjatables.com/docs/export-ninja-tables-csv-json/).
 - Now, go to the **Import **button** **(on the left), and you will get an **Import** **Format** field, where you can choose your desired **JSON** **(Exported From Ninja** **Tables)** table format.
-![](https://ninjatables.com/wp-content/uploads/2022/09/Ninja-Tables-Pro-‹-North-—-WordPress-06-02-2025_04_07_PM-scaled.webp)<figcaption class="wp-element-caption">Import Format</figcaption>
+![Import Format](https://ninjatables.com/wp-content/uploads/2022/09/Ninja-Tables-Pro-‹-North-—-WordPress-06-02-2025_04_07_PM-scaled.webp)
 - Upload your **Exported** **JSON** file (from Ninja Tables) in the **Select File **area by clicking on the **Choose** **File** button and then set the **Import** **Format** as a **JSON (Exported From Ninja Table)**.
 - You can also upload your **Exported** **JSON/CSV** file (from Drag & Drop Tables) in the Select File area by clicking on the Choose File button and then setting the **Import** **Format** as a **JSON (Exported From Ninja Table)**.
 - Lastly, click on the **Import **button when you are done!

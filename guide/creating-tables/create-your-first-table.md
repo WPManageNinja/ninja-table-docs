@@ -55,7 +55,7 @@ In this section, you will find three design options for configuring your tables.
 This is where you can change the whole look of your table.
 ### Styling
 On the right sidebar, you will notice the first tab, **Styling. **This tab itself has three separate styling options.
-- **Styles**: The first one is the Styling Library, which manages the library you have to work with. Three different libraries are available in this segment: **Semantic UI**, **Bootstrap 4** & **Bootstrap 3**. Each of these libraries has various components once you select one of them.<br><br>You can choose table hover, border, stripes etc.
+- **Styles**: The first one is the Styling Library, which manages the library you have to work with. Three different libraries are available in this segment: **Semantic UI**, **Bootstrap 4** & **Bootstrap 3**. Each of these libraries has various components once you select one of them.You can choose table hover, border, stripes etc.
 - **Features**: The second one is the** **features option which offers several functions like table title show, make table searchable**,** and many more. Check these options according to your styling needs.
 - **Table Configuration**: Last but not least, you can show your rows as a list item with a stackable table. You can target by device width and control stacked appearance.
 ![New table ui stackable table](https://ninjatables.com/wp-content/uploads/2025/05/New-table-ui-stackable-table-703x1024.webp)

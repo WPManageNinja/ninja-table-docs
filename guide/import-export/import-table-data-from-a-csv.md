@@ -16,11 +16,11 @@ You can also use the "Import-Export" tab at the top of a table to import tables.
 ![](https://ninjatables.com/wp-content/uploads/2022/09/03-scaled.webp)
 ## Table Data Import for MS-Excel
 If you have any issue with CSV data imports, such as having blank values in your cell, in case you use MS-Excel, export the CSV as MS-DOS Comma Separated Value (CSV).
-![import table from ms-excel](https://ninjatables.com/wp-content/uploads/2023/01/import-table-data-from-CSV-2.png)<figcaption class="wp-element-caption">Export As MS-DOS comma-separated (.csv) format</figcaption>
+![Export As MS-DOS comma-separated (.csv) format](https://ninjatables.com/wp-content/uploads/2023/01/import-table-data-from-CSV-2.png)
 Ninja table supports only comma-separated CSV and JSON.
 If your CSV file is not **Comma Separated **& is in another format,** **there is a trick for converting it to make it Comma-Separated-CSV,
 - First, go to the **Google Spreadsheet → File → **click on **Import  **& then a pop-up will appear.
-![make a csv](https://ninjatables.com/wp-content/uploads/2023/01/import-table-data-from-CSV-3.png)<figcaption class="wp-element-caption">Import File</figcaption>
+![Import File](https://ninjatables.com/wp-content/uploads/2023/01/import-table-data-from-CSV-3.png)
 - Click on the **Upload **button & then upload the CSV file.
-![upload csv](https://ninjatables.com/wp-content/uploads/2023/01/import-table-data-from-CSV-4-1024x456.png)<figcaption class="wp-element-caption">Upload button</figcaption>
+![Upload button](https://ninjatables.com/wp-content/uploads/2023/01/import-table-data-from-CSV-4-1024x456.png)
 - Set the column name as table Column Key, and then **download **it as Comma-Separated-CSV and import it to the existing Ninja Tables.

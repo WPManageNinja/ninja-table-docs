@@ -10,5 +10,5 @@ You can easily create custom columns or Custom Fields in the [WP Posts](https://
 ## Add Column to WP_Posts Table/WooCommerce Tables
 - Go to the **Add New Column** tab of a WP Posts table or WooCommerce product table.
 - Scroll down & then you will get the **Dynamic Post Data Settings**. Choose your preferred Field type.
-![Dynamic Post Data Settings](https://ninjatables.com/wp-content/uploads/2022/10/Add-Post-Table-scaled.webp)<figcaption class="wp-element-caption">Dynamic Post Data Settings</figcaption>
+![Dynamic Post Data Settings](https://ninjatables.com/wp-content/uploads/2022/10/Add-Post-Table-scaled.webp)
 You can also check out **[Post Meta](https://ninjatables.com/docs/post-meta-field/)**, **[Shortcode / Computed Value or HTML](https://ninjatables.com/docs/shortcode-computed-value-or-html-in-wp-post-woocommerce-table/)**, & **[Featured Image](https://ninjatables.com/docs/featured-image/)**.

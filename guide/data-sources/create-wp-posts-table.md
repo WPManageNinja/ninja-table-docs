@@ -11,7 +11,7 @@ Bloggers or business owners can use this feature to display the details of their
 Let's dive into this simple guide to demonstrate how to implement this function in detail.
 - With the built-in WP Posts feature of Ninja Tables, you can convert your WordPress Pages, Posts/CPT, and WooCommerce items into a table format without installing any additional add-ons like other plugins.
 - For instance, there are some pages, blog posts, or customized posts in the WordPress dashboard. Then these items will be displayed in the form of a table. To do this, go to the **Ninja Tables dashboard → Add Table** in the top right corner.
-- Then a pop-up box will appear. Click on the **WP Posts **and add a title to your table.<br>
+- Then a pop-up box will appear. Click on the **WP Posts** and add a title to your table.
 ![](https://ninjatables.com/wp-content/uploads/2022/09/WP-Post-Table-1-scaled.webp)
 - All Post Types, pages, and products will be in the checkbox fields; you can choose as per your requirements.
 - A single Post Type is chosen in this example -
@@ -29,13 +29,13 @@ Table Query can be performed using Conditions based on the available fields.
 - **Order by Type: **There are only two options to sort the table rows. **Ascending** or **Descending**.
 - By clicking on the **+** icon, you can add as many conditions as you want.
 Let's look at an example where we can add a condition to find out the column, which is the ID equal** to 129**.
-![](https://ninjatables.com/wp-content/uploads/2022/09/WP-Post-Table-4-scaled.webp)<figcaption class="wp-element-caption">Conditions</figcaption>
+![Conditions](https://ninjatables.com/wp-content/uploads/2022/09/WP-Post-Table-4-scaled.webp)
 - Now, see how these conditions work. It should show only the ID where the ID number is 129.
-![WP-Post-Table-Condition-Preview](https://ninjatables.com/wp-content/uploads/2023/02/WP-Post-Table-Condition-Preview.png)<figcaption class="wp-element-caption">Result of Conditions</figcaption>
+![Result of Conditions](https://ninjatables.com/wp-content/uploads/2023/02/WP-Post-Table-Condition-Preview.png)
 ## **Meta Query**
 You can add an additional meta query here to filter the table rows.
 If you want to apply a meta query, you need the meta key, which will be compared to the value of your columns.
 For instance, in this case, the **meta key** is the **acf_demo**, and the value **ACF Demo Example** will be** In** the meta key. It will then display only the row with the **Meta name*** *ACF Demo Example. See the below screenshot - 
-![](https://ninjatables.com/wp-content/uploads/2022/09/WP-Post-Table-5-scaled.webp)<figcaption class="wp-element-caption">Meta Query</figcaption>
+![Meta Query](https://ninjatables.com/wp-content/uploads/2022/09/WP-Post-Table-5-scaled.webp)
 Don't forget to click the **Update** button when the configuration is done!
 This is also applicable to other **custom post **types!

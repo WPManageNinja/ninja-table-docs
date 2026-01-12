@@ -32,7 +32,9 @@ First of all, go to the Ninja Charts dashboard and click the “Add New” butto
 - We’ve selected the Horizontal Bar chart for demonstration and clicked Next.
 ![](https://ninjatables.com/wp-content/uploads/2023/10/Choose-chart-type-02-scaled.webp)
 - After this, you have to select the **Data Source** from the Source option.
--Manual Input<br>-Ninja Tables<br>-Fluent Forms
+- Manual Input
+- Ninja Tables
+- Fluent Forms
 ![](https://ninjatables.com/wp-content/uploads/2023/10/Data-Source-03-scaled.webp)
 Here, we’ve selected **Ninja Tables** as the data source as an example.
 - Now, select the table you want to turn into a chart from the dropdown.

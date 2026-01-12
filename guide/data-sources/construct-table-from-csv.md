@@ -12,7 +12,9 @@ Construct Table From External CSV is a Pro Feature.
 - Name the table. It'll be your table title & paste your External Data Source Link in the **Data Source URL** field.
 - Once you’re done, proceed to the **Next** button.
 ![](https://ninjatables.com/wp-content/uploads/2022/10/Construct-Table-From-CSV-1-scaled.webp)
-- Choose and save the entry fields you wish to add.<br><br>This is how all your data will be imported here automatically. Lastly, don't forget to click on the **Save** button.
+- Choose and save the entry fields you wish to add.
+
+This is how all your data will be imported here automatically. Lastly, don't forget to click on the **Save** button.
 ![](https://ninjatables.com/wp-content/uploads/2022/10/Construct-Table-From-CSV-2-scaled.webp)
 - The table has been created here (See the below screenshot)
 ![](https://ninjatables.com/wp-content/uploads/2022/10/Construct-Table-From-CSV-3-scaled.webp)
