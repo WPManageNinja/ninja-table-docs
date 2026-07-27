@@ -23,6 +23,7 @@ export default defineConfig({
         text: 'Getting Started',
         items: [
           { text: 'Introduction', link: '/guide/getting-started/ninja-tables-introduction' },
+          { text: 'Glossary', link: '/guide/getting-started/ninja-tables-glossary' },
           { text: 'Installation & Activation', link: '/guide/getting-started/how-to-install-and-activate-ninja-tables-plugin' },
           { text: 'Upgrade to Pro', link: '/guide/getting-started/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key' }
         ]
