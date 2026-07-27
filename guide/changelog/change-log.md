@@ -7,6 +7,213 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in Ninja Tables.
 
+## Ninja Tables v5.2.12
+*Released on July 22, 2026*
+
+::: code-group
+
+```md [🔧 Improvements]
+• Improved: Large table data exports smoothly to CSV/JSON.
+• Improved: Updated shortcode limit filter behavior.
+• Improved: Instant search typing on mobile/touch keyboards.
+• Compatibility: PHP 8.4 deprecation notices.
+```
+
+```md [🐛 Bug fixes]
+• Fixed: European decimal format in custom filter.
+• Fixed: Data create/update dates now save correctly.
+• Fixed: Frontend date/time picker.
+• Fixed: Gutenberg block colour preview.
+```
+
+:::
+
+## Ninja Tables v5.2.11
+*Released on July 16, 2026*
+
+::: code-group
+
+```md [🔒 Security]
+• Security: Fixes table data handling issue on the frontend.
+```
+
+:::
+
+## Ninja Tables v5.2.10
+*Released on July 9, 2026*
+
+::: code-group
+
+```md [🆕 New Features]
+• Added: dynamic-select support for custom filters in DataTables mode.
+• Added: accessibility labels for custom filter controls.
+• Added: Rendering engine (DataTables/FooTable) indicator in the table list and settings.
+```
+
+```md [🔧 Improvements]
+• Improved: Design Studio Styles panel spacing and rendering-settings UI.
+• Improved: Sticky header support and keyboard accessibility for DataTables and FooTable engines.
+• Improved: admin UI alignment and border issues.
+```
+
+```md [🔒 Security]
+• Security: Added direct file access protection to installer service files.
+• Security: Hardened against DOM/Stored XSS and direct file access.
+```
+
+```md [🐛 Bug fixes]
+• Fixed: DataTables custom filters rendering in reverse order.
+• Fixed: DataTables Progressive filter not refreshing dynamic-data selects.
+• Fixed: custom filter labels showing placeholder text in DataTables mode.
+• Fixed: SumoSelect crash for custom filters in DataTables mode.
+• Fixed: multi-select and HTML column value issues in Inline Edit and the Add Data modal.
+• Fixed: button text and WooCommerce HTML-field columns rendering as escaped text.
+• Fixed: range filter not working when Pro is loaded before FooTable.
+```
+
+:::
+
+## Ninja Tables v5.2.9
+*Released on May 25, 2026*
+
+::: code-group
+
+```md [🔧 Improvements]
+• Improved: Post-type validation on settings, FluentCart, and column-delete endpoints
+• Improved: Access control for table row and post-meta operations
+• Improved: Server-side validation for editable column fields
+• Improved: Authentication checks for license management endpoints
+• Improved: License management restricted to network admin on multisite
+• Improved: Directory listing protection across all plugin directories
+• Improved: Input validation on license key submissions
+```
+
+```md [🔒 Security]
+• Improved: HTML sanitization for frontend table submissions
+```
+
+```md [🐛 Bug fixes]
+• Fixed: Row query scoping by table_id in manual sort operations
+• Fixed: Gutenberg block save now validates post type and user role
+• Fixed: Content filtering for frontend table submissions
+```
+
+:::
+
+## Ninja Tables v5.2.8
+*Released on April 16, 2026*
+
+::: code-group
+
+```md [🆕 New Features]
+• Added: DataTables support for table rendering.
+```
+
+```md [🔧 Improvements]
+• Improved: Accessibility for custom filters.
+```
+
+:::
+
+## Ninja Tables v5.2.7
+*Released on February 4, 2026*
+
+::: code-group
+
+```md [🔒 Security]
+• Security: Improved permissions for FluentCart table creation
+```
+
+:::
+
+## Ninja Tables v5.2.6
+*Released on January 27, 2026*
+
+::: code-group
+
+```md [🆕 New Features]
+• Added: Bulk delete for tables
+• Added: Trash and restore tables
+• Added: Single-row modal view
+• Added: Click to copy cell Content
+```
+
+```md [🔒 Security]
+• Security: Limited ninja_table_info & ninja_table_cell access to public posts.
+```
+
+```md [🐛 Bug fixes]
+• Fixed: Print issues with conditional formatting
+• Fixed: Print issues with responsive breakpoints
+• Fixed: FluentForm payment form warnings
+• Fixed: FluentCart permalink issues
+• Fixed: Drag & drop color picker issue
+```
+
+:::
+
+## Ninja Tables v5.2.5
+*Released on December 17, 2025*
+
+::: code-group
+
+```md [🔒 Security]
+• Security: Improved OrderBy sanitization to prevent SQL injection.
+```
+
+:::
+
+## Ninja Tables v5.2.4
+*Released on November 27, 2025*
+
+::: code-group
+
+```md [🔧 Improvements]
+• Improve: Stock visibility in FluentCart table
+```
+
+```md [🔒 Security]
+• Security: Improved REST API sanitization to prevent SQL injection.
+```
+
+:::
+
+## Ninja Tables v5.2.3
+*Released on November 11, 2025*
+
+::: code-group
+
+```md [🆕 New Features]
+• Added: Fluent Cart Product Table integration
+• Added: WooCommerce Reviews table integration
+• Added: WooCommerce average rating in products table
+• Added: Separate progress bar & progress bar text color options
+• Added: Vietnamese translation support
+```
+
+```md [🔧 Improvements]
+• Improve: Excel formula support
+• Improve: Single cart button action from table
+• Improve: Pagination style in WooCommerce table
+• Improve: Text-domains & data escaping
+• Improve: WooCommerce bulk operations
+• Tested: Full plugin via Plugin Check(PCP)
+```
+
+```md [🐛 Bug fixes]
+• Fixes: WooCommerce multiple attributes variations duplicate issue
+• Fixes: WooCommerce products comparison in stackable table
+• Fixes: WooCommerce table theme conflict
+• Fixes: WooCommerce dynamic column post meta display issue
+• Fixes: Post table conditions date filter issue
+• Fixes: Image clickable issue when no link is provided in drag & drop
+• Fixes: Button hover issue on drag & drop
+• Fixes: Fluent forms table Optional conditions issue
+• Fixes: Progress bar style issue
+```
+
+:::
+
 ## Ninja Tables v5.2.2
 *Released on August 1, 2025*
 
