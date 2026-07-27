@@ -15,9 +15,9 @@ Suppose we have a table that contains 3 numeric data columns- Number One, Number
 We have another column named **Result **that will display the calculated results of all the numbers in a row.
 - If you want to calculate the sum of a row containing numeric data, navigate to the **Table Configuration **->> **Transform Value**.
 - Here you need to add a shortcode to find the sum of the rows. Ninja Tables has a feature to **"Enable Excel Formula support for Transform Value**." Enable this option to get the Excel summation formula.
-- This is a basic single-line shortcode: ` =SUM({{Column 1}}+{{Column 2}}+{{Column 3}}) `. Inside the curly brackets place the **Shortcode Value **off all three columns.
+- This is a basic single-line shortcode: ` =SUM(&#123;&#123;Column 1&#125;&#125;+&#123;&#123;Column 2&#125;&#125;+&#123;&#123;Column 3&#125;&#125;) `. Inside the curly brackets place the **Shortcode Value **off all three columns.
 To learn more about this feature, read this [documentation](https://ninjatables.com/docs/transform-value/).
-- So the final code would look like this: `=SUM( {{row.numberone}} + {{row.numbertwo}} + {{row.numberthree}})`.
+- So the final code would look like this: `=SUM( &#123;&#123;row.numberone&#125;&#125; + &#123;&#123;row.numbertwo&#125;&#125; + &#123;&#123;row.numberthree&#125;&#125;)`.
 - Then click on the **Update **button to save the code. In the preview mode, the **Result **column of the table will now display the sum of the rows. Like the example given below -
 ![Result](https://ninjatables.com/wp-content/uploads/2023/01/row-column-calculation-3.png)
 ### Column Calculation

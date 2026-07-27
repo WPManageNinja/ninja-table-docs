@@ -34,8 +34,12 @@ See the example below for viewing the output of the transform value.
 ![HTML in transform value](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-7.webp)
 Let's go with another example for better understanding.
 - If you want to replace the cell value **Female** from the **gender** **column **with** **a link (for example, https://google.com), you can follow the formula -
-=IF("{{row.gender}}"="Female","<a href='https://google.com'>{{row.gender}}</a>","{{row.gender}}")
-where **reference** **shortcode** for the **gender** column is -** {{row.gender}}**
+
+```
+=IF("&#123;&#123;row.gender&#125;&#125;"="Female","<a href='https://google.com'>&#123;&#123;row.gender&#125;&#125;</a>","&#123;&#123;row.gender&#125;&#125;")
+```
+
+where **reference** **shortcode** for the **gender** column is - `&#123;&#123;row.gender&#125;&#125;`
 Note that you can use as many IF Formulas as you want in the transform value box.
 ![Excel If formula in transform value](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-8.png)
 - See the below screenshot to get how it works-
@@ -46,8 +50,12 @@ Note that you can use as many IF Formulas as you want in the transform value box
 ![sum total of data](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-10.png)
 - Now, go to the **Transform** **Value** of the third column if you want to add column 1 and column 2 together and display the result in the third column (Data type must have a Numeric Value).
 - Give this below formula to the transform value box to add the cell value of column 1 and column 2.
-=SUM({{row.product_1}},{{row.product_2}})
-where **reference** **shortcode** for the **product 1 and product 2** columns is -** {{row.product_1}}** and **{{row.product_2}}**
+
+```
+=SUM(&#123;&#123;row.product_1&#125;&#125;,&#123;&#123;row.product_2&#125;&#125;)
+```
+
+where **reference** **shortcode** for the **product 1 and product 2** columns is - `&#123;&#123;row.product_1&#125;&#125;` and `&#123;&#123;row.product_2&#125;&#125;`
 - Lastly, click on the **Update** button when you are done with your configuration.
 ![use excel sum formula](https://ninjatables.com/wp-content/uploads/2023/01/transform-value-11.png)
 - Below is a screenshot of the Preview Table that will show how it works -

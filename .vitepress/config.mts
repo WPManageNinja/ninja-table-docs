@@ -8,7 +8,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'User Guide', link: '/guide/getting-started/ninja-tables-introduction' }
+      { text: 'User Guide', link: '/guide/getting-started/ninja-tables-introduction' },
+      { text: 'Changelog', link: '/guide/changelog/change-log' }
     ],
 
     sidebar: [

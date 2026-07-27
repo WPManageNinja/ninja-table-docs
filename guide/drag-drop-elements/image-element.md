@@ -25,7 +25,7 @@ When you drag the element on the table, it will show a default image. Change it 
 - **Alignment:** Align the Image to either Left, Center, or Right. By default, it is set to Center.
 - **Image Size:** Change the size of the Image. By default, it is set to 50.
 - **Image Shape:** Change the shape of the Image to either square or round. By default, it is set to Square.
-- **Image Alternative Text:** The alt text of the HTML <a> tag or simply the Alternative text of the link of the image.
+- **Image Alternative Text:** The alt text of the HTML `<a>` tag or simply the Alternative text of the link of the image.
 - **Image Link:** The URL of the link of the image which you can edit within the provided field.
 Here's how a table looks with images:
 ![Images in data table](https://ninjatables.com/wp-content/uploads/2023/08/Images-in-data-table-1024x594.png)
