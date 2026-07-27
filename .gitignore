@@ -5,11 +5,3 @@
 .DS_Store
 .DS_Store
 .vitepress/dist/vp-icons.css
-.vitepress/dist/guide/table-settings/column-rearrangement.html
-.vitepress/dist/guide/table-management/woocommerce-product-comparison-bulk-add-to-cart.html
-.vitepress/dist/guide/table-settings/csv-and-print-button.html
-.vitepress/dist/guide/table-settings/custom-filters.html
-.vitepress/dist/guide/table-settings/language-settings.html
-.vitepress/dist/guide/table-settings/table-rendering-settings.html
-.vitepress/dist/guide/wordpress-integration/acf-field-integration-with-ninja-tables-column.html
-*.html
