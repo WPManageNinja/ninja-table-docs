@@ -1,6 +1,6 @@
 ---
 title: "Feature Memory Index"
-description: "Manifest of all feature-memory chunks consumed by the update-doc-page skill."
+description: "Manifest of feature-memory chunks consumed by the check-ninja-tables-feature-coverage skill."
 ---
 
 # Feature Memory Index
@@ -10,19 +10,11 @@ Source of truth: `ninja-tables-resource/untitled folder/ninja-tables.zip` (free)
 nearly identical between the two). Re-derive/refresh this table if those ZIPs are ever updated to
 a newer plugin version.
 
-This is a starting set covering the free/premium feature lists from the readme's
-`== Ninja Tables Features ==` section. Only 4 representative rows are fully populated so far
-(one per `doc_status`/tier combination, to establish the pattern) — the remaining features from
-that section still need chunk files. See "Remaining features to chunk" below.
+No chunk files exist under `features/` yet — this index currently only lists which features from
+the readme's `== Ninja Tables Features ==` section still need a chunk. Run
+`check-ninja-tables-feature-coverage` against an item below to populate it.
 
-| Feature | Tier | Category | Doc Status | Doc Page(s) | Chunk File |
-|---|---|---|---|---|---|
-| Conditional Formatting | pro | column-settings | documented | guide/column-settings/conditional-formatting.md | features/conditional-formatting.md |
-| Drag and drop table builder | free | drag-drop-tables | documented | guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables.md | features/drag-and-drop-table-builder.md |
-| Merge/split table cells | pro (free in Drag & Drop) | table-formatting | documented | guide/table-formatting/colspan-cell-merge.md, guide/table-formatting/rowspan.md | features/merge-split-table-cells.md |
-| WooCommerce Reviews table | free | data-sources | missing | — | features/woocommerce-reviews-table.md |
-
-## Remaining features to chunk (from readme's Free/Premium lists — not yet populated)
+## Features to chunk (from readme's Free/Premium lists)
 
 Free list: Unlimited data, FluentCart tables, Pre-made templates, Table design customization,
 Table colors, Searchable table, Charts and graphs, Fluent Forms integration, Responsive table,
