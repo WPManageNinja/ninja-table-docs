@@ -14,7 +14,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'User Guide', link: '/guide/getting-started/ninja-tables-introduction' },
-      { text: 'Changelog', link: '/guide/changelog/change-log' }
+      { text: 'Changelog', link: '/guide/changelog/change-log' },
+      { text: 'Website', link: 'https://ninjatables.com/' }
     ],
 
     sidebar: [
