@@ -1,7 +1,4 @@
 /.vitepress/cache
+/.vitepress/dist
 /node_modules
 .DS_Store
-.DS_Store
-.DS_Store
-.DS_Store
-.vitepress/dist/vp-icons.css

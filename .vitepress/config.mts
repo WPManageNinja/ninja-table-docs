@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Ninja Tables",
   description: "Easiest Table Builder Plugin in WordPress!",
+  cleanUrls: true,
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }]
   ],
