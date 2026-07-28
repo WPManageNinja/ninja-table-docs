@@ -7,7 +7,9 @@ description: "Table Color Settings"
 
 Customize table colors with Ninja Tables efficiently with the Table Color Settings. Color customization is an awesome feature that lets you control the table designs and appearance.
 You can make your data tables more engaging and captivating using colors.
+
 ## How to Customize Table Color
+
 - First, you must set up a Table using the Ninja Tables plugin.
 - Select a table to customize its colors and click on the** **"**Table Design**" tab.
 - On the right side, a sidebar appears with 3 separate segments. Select **Table Colors** from the second segment.
@@ -16,7 +18,9 @@ You can make your data tables more engaging and captivating using colors.
 ![New Ui table color options](/images/styling-design/table-color-settings/1.-New-Ui-table-color-options.webp)
 
 We'll explain each option one by one.
+
 ### Pre-defined Color Scheme
+
 The color of the tables changes according to the pre-set color combination you choose.
 Ninja Tables offers 13 predefined color combinations.
 Here's an example of a table with a pre-defined color scheme of "White." Once you select this color, the table will change its color combination to white and teal.
@@ -24,6 +28,7 @@ Here's an example of a table with a pre-defined color scheme of "White." Once yo
 ![New Ui predefined color scheme](/images/styling-design/table-color-settings/2.-New-Ui-predefined-color-scheme.webp)
 
 ### Custom Color Scheme
+
 Pre-defined color combinations can't always look good for your tables. Color the table with any combination you want using the Custom Color Scheme.
 - To do so, click the **Custom Scheme** option in the **Select Color Scheme** section. Then select the color of your choice.
 

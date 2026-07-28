@@ -7,7 +7,9 @@ description: "Google Sheets Integration"
 
 Google Sheets integration with Ninja Tables is certainly the plugin's one of many useful features. This combination is actually an **auto-sync** where data from Google Sheets are automatically fetched and displayed in a customized table.
 Moreover, the data in Ninja Tables will automatically update if there are any changes in the Google Sheets. Google takes a minimum of 5 minutes to update the data on the web.
+
 ## Data from Google Sheets to WordPress Table
+
 How to display Google Sheets data entries in a WordPress table?
 We'll explain the process here, using the following dummy Google Sheet.
 
@@ -34,10 +36,15 @@ We'll explain the process here, using the following dummy Google Sheet.
 - However, in this case, after you're finished adding the details, you have to wait 5 minutes. This is because Google updates the table data cache every 5 minutes. Let's push forward through the waiting period.
 - Go back to your Ninja Tables after 5 minutes, and reload the page. Then at the bottom of the table are the data rows you added 5 minutes ago.
 - This is it, the data will also be included in Ninja Tables if someone changes or adds some data to Google Sheets.
+
 ## Tutorial Video
+
 Here's a tutorial video so you can try it yourself.
+
 https://youtu.be/-eO4-F5sowo?si=DM_kH9DyHe08fXYc
+
 ## Import Hyperlinks/Images Automatically
+
 If your spreadsheet has hyperlinks or images, you can import them directly into Ninja Table so that the link will transform into a clickable link, and the actual image will appear.
 **Hyperlink**: If you have any URL, by default Google will turn them into clickable links until you make them plain text by removing the link inside. 
 If you want Ninja Table to behave similarly, just change that column's data type to **[HTML](https://ninjatables.com/docs/html-field/)**. It will transform all your hyperlinks into clickable links.

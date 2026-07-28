@@ -21,12 +21,15 @@ You can find this option on the leftmost side of the Table Editor and see the re
 | | Desktop | Toggle, dropdown, numeric |
 | **Responsive Settings** | Mobile | Numeric & radio button |
 | | Tablet | Numeric & radio button |
+
 ### General
+
 Enable the table to be responsive by toggling the button on.
 
 ![Responsivenss of a table](/images/drag-drop-settings/responsive-table-design/2.-Responsivenss-of-a-table.webp)
 
 ### Mode Options
+
 **Mobile** **and Tablet**: From here, you can customize the responsiveness on mobile and tablet. Both the options have the same customization directions.
 
 ![Enable table responsiveness on mobile](/images/drag-drop-settings/responsive-table-design/3.-Enable-responsiveness-on-mobile.webp)
@@ -41,6 +44,7 @@ Enable the table to be responsive by toggling the button on.
 ![table responsiveness of desktop](/images/drag-drop-settings/responsive-table-design/4.-table-responsiveness-of-desktop.webp)
 
 ### Responsive Settings
+
 You can change Cell Padding and Table Alignment for mobile and tablets the same way.
 
 ![table responsiveness on mobile and tablet](/images/drag-drop-settings/responsive-table-design/5.-table-responsiveness-on-mobile-and-table.webp)
@@ -54,5 +58,6 @@ And we can also show you another responsive table on a tablet that has the top r
 ![Responsive table on tablets](/images/drag-drop-settings/responsive-table-design/7.-Responsive-table-on-tablets.webp)
 
 ## Conclusion
+
 A responsive table design is a must to keep your audience engaged. Since everyone is now a mobile-user, you can't deny them a good UX. Make your data tables responsive for all devices.
 Let us know your thoughts.

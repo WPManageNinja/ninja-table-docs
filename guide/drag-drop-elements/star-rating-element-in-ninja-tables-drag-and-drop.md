@@ -25,6 +25,8 @@ Let’s add a Rating element to our Ninja Tables in the drag and drop builder!
 - **Alignment:** You can align the stars to the left, right, or center. By default, it is set to Center.
 - **Show Rating Value:** You can toggle On or Off to show the value or not. By default, it is set to On.
 - **Maximum Star:** You can control the maximum number of Stars of the Rating. By default, it is set to 5.
+
 ## **Conclusion**
+
 We hope this documentation has helped you understand the functionality of the rating element of Ninja Tables Drag & Drop table builder. 
 Let us know your thoughts and questions in the comment box.

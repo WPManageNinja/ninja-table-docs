@@ -8,7 +8,9 @@ description: "Hyperlinks from Google Sheets"
 Consider a user who has a data table in Google Sheets and wishes to import the table from **Google** **Sheets** to Ninja Tables. If the table contains hyperlinks, he would want the links to work in Ninja Tables as well.
 But if the hyperlink is erased after the table is imported, the table does not serve its purpose. This is because the hyperlinked data cannot be saved after the table is converted to CSV.
 **But Ninja Tables will bring the links back just by changing the data type!**
+
 ## HTML Data Type for Hyperlink from Google Sheets
+
 This short guide will demonstrate to you how to include hyperlinked data in your table when it's imported from Google Sheets.
 - For instance, we've imported a Google Sheet with three columns named **Title**, **Link Text, **and** Actual link**. This is a dummy table containing information about different mobile phone models.
 

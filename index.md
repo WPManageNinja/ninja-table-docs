@@ -69,6 +69,11 @@ features:
     details: View changelog, updates, and additional resources to stay up-to-date with the latest Ninja Tables features and improvements.
     link: /guide/changelog/change-log
     linkText: "View Resources"
+
+    
 ---
+
+
+
 
 <p class="home-footer">Copyright © 2026 Ninja Tables</p>

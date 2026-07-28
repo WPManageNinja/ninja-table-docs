@@ -7,7 +7,9 @@ description: "Rowspan/Merge Rows"
 
 The **Rowspan** feature enables numerous cells of conjoining rows to be merged into a single row. Merge rows in a data table easily in Ninja Tables.
 Let's dive into this simple guide to learn how to use this feature in your table.
+
 ## Merge Table Rows
+
 - First, go to the table where you want to apply this feature. Then go to the **Custom CSS/JS** option of the table.
 - Copy and paste the code from this **[file](https://gist.github.com/reachkamrul/e8c1818cbe88daa1da9502d440b0d0c9)** into the **Custom Javascript** option.
 - Don't forget to click on the **Save Custom Javascript** button.

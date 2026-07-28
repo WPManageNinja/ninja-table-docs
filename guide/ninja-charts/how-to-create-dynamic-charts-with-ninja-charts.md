@@ -25,7 +25,9 @@ Chart options in Ninja Charts (Charts from both renderers):
 - Combo Chart
 - Radar Chart
 - Polar Chart
+
 ## Creating WordPress Charts with Ninja Charts
+
 First of all, go to the Ninja Charts dashboard and click the “Add New” button.
 
 ![](/images/ninja-charts/create-dynamic-charts-ninja/2.-Charts-North-WordPress-06-03-2025-11-33.webp)

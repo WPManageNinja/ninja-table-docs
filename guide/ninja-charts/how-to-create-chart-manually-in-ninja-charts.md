@@ -7,7 +7,9 @@ description: "How to Create Chart Manually in Ninja Charts"
 
 Want dynamic data charts on your website? Ninja Charts is here for you!
 This free chart generator in WordPress lets you create and customize all sorts of charts easily. For example, pie charts, line charts, bubble charts, histograms, etc.
+
 ## Create a Chart with Manual Data Input
+
 - To create a Manual Chart, click on the **Add New** button from the Ninja Charts dashboard.
 
 ![](/images/ninja-charts/create-chart-manually-ninja/1.-Charts-North-WordPress-06-03-2025-11-33.webp)
@@ -26,11 +28,16 @@ This free chart generator in WordPress lets you create and customize all sorts o
 ![](/images/ninja-charts/create-chart-manually-ninja/4.-data-range-03.webp)
 
 ### Text Input
+
 This input text can generate the chart label.
+
 ### Number Input
+
 The number input can generate chart data.
 Don’t forget to click the Next button. Now you’ll be moved to the **Formatting & Preview** tab where you can customize the chart in real-time.
+
 ## Manually Created Chart
+
 Once you hit Next and move to the **Formatting & Preview** tab, you'll see the Bar Chart is ready with the data you put manually.
 
 ![](/images/ninja-charts/create-chart-manually-ninja/5.-Formatting-Preview.webp)

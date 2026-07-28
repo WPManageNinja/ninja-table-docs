@@ -8,7 +8,9 @@ description: "Conditional Formatting"
 Conditions in table cells can change the column's data or highlight the specific cells you want your audience to focus on. Conditional formatting in Ninja Tables lets you add multiple conditions to table cells and the column/row the cell is in.
 Conditional Formatting is a Pro Feature!
 The cell value of the table changes in response to the conditions.
+
 ## **Applying Conditional Formatting in Ninja Tables**
+
 Read this simple guide to learn how to apply this feature.
 - Firstly, you need to have a table designed beforehand.
 - There are two methods to configure **Conditional Formatting**.
@@ -56,12 +58,14 @@ Let's see how the conditions work.
 ![Table Preview- conditional formatting added](/images/column-settings/conditional-formatting/9.-Table-Preview-conditional-formatting-add.webp)
 
 ### Highlight Table Cells With Conditions
+
 Say you want your customers to pay attention to a specific product price.
 You can highlight the cell where the price is mentioned.
 
 ![highlighted cell](/images/column-settings/conditional-formatting/10.-highlighted-cell.webp)
 
 ### **Set Cell CSS class**
+
 Let’s discuss another cell option, the Set Cell CSS class.
 - First, set the Cell option as **Set cell CSS class** and enter a value name as **abc** (it will be a CSS class name).
 
@@ -77,6 +81,7 @@ Let’s discuss another cell option, the Set Cell CSS class.
 ![Preview Table](/images/column-settings/conditional-formatting/13.-Preview-Table.webp)
 
 ### **Conditional Formatting for Numeric Value** Data
+
 When you select **Numeric Value** as a Data Type in column settings, there will be more options in **Cell** **Value**.
 
 ![COnditional formatting in data field](/images/column-settings/conditional-formatting/14.-Conditional-formatting-in-Numeric-value.webp)
@@ -90,6 +95,7 @@ When you select **Numeric Value** as a Data Type in column settings, there will 
 ![Numeric data types](/images/column-settings/conditional-formatting/16.-Numeric-data-types.webp)
 
 ### **Conditional Formatting in Date Field**
+
 When you select Date Field as a Data Type in column settings, there will be more options in **Cell** **Value**.
 Also, you need to take care of your **Date** **Format** in column settings because you will get the list of **Example Usage** in Conditional Formatting according to your chosen Date Format.
 
@@ -108,6 +114,7 @@ Also, you need to take care of your **Date** **Format** in column settings becau
 ![Table preview numeric formatting](/images/column-settings/conditional-formatting/20.-Table-preview-numeric-formatting.webp)
 
 ### **Set Row CSS class**
+
 Let’s talk about another row option, the Set row CSS class, and how it works.
 - First, set the Row option as **Set row CSS class** and enter a value name as **hide** (it will be a CSS class name).
 

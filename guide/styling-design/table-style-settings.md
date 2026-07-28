@@ -13,12 +13,16 @@ Go to a table and click on the **Table Design** tab beside the **Table Configura
 
 There's device segment and it consists of three device categories **Desktop, tablet, and mobile**. You can click and see how the table looks on respective devices.
 You will see a variety of design options that appear to choose from. In this section, you will find three design options for configuring your tables. They are **Styling**, **Table** **Colors** & **Other**.
+
 ## Tabs Under Table Design
+
 The Table Design tab shows 3 separate tabs from where you can pick multiple designing and customizing options.
 - Styling
 - Table Colors
 - Other
+
 ### **Styling**
+
 On the right sidebar, you will notice the first tab, named **Styling. **This tab itself has 3 separate styling options.
 
 ![New UI table design tabs](/images/styling-design/table-style-settings/2.-New-UI-table-design-tabs.webp)
@@ -30,12 +34,15 @@ On the right sidebar, you will notice the first tab, named **Styling. **This tab
 ![New table ui stackable table](/images/styling-design/table-style-settings/3.-New-table-ui-stackable-table.webp)
 
 ### **Table Colors**
+
 You can style your table in 13 different **pre-defined color schemes**. You will find many custom color options for your table design in the "**Custom Scheme**" tab.
 
 ![New Ui predefined color scheme](/images/styling-design/table-style-settings/4.-New-Ui-predefined-color-scheme.webp)
 
 We'll explain more about [table colors](https://ninjatables.com/docs/table-color-settings/) in the next doc.
+
 ### **Other**
+
 Under the **[Others](https://ninjatables.com/docs/other-design-settings/)** tab, you will find a few more options to style your table.
 - **Pagination**: You can select how many items you want to show per page in this section. You can also disable pagination here.
 - **Pagination Position**: Select where you want the pagination buttons placed- Left, Center, Right, or Default.

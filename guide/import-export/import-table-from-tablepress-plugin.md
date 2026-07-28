@@ -7,7 +7,9 @@ description: "Import Table from TablePress Plugin"
 
 You can import tables from other WordPress plugins, besides importing tables from **CSV/JSON **files. And Ninja Tables can display data from TablePress if you import.
 Find the "**Import From Other WP Table** **Plugin**" section under the **Import Table **option.
+
 ## Import TablePress Data into Ninja Tables
+
 To import a table from the TablePress Plugin, you need the **[TablePress](https://tablepress.org/)** plugin pre-installed and a table ready to import.
 Let's have a look at the article on how to accomplish that.
 - First, create a table in TablePress and name it.

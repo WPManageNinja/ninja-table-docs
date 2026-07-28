@@ -41,7 +41,9 @@ In this document, we will discuss the table settings and customization options a
 | | Color | Graphical Color Selection |
 | | Font Family | Dropdown Selection |
 | **Export Table** | Select Format | Dropdown Selection |
+
 ### **General**
+
 **Cell Padding:** Cell padding controls the space between the element and the cell area. By default, it is set to 10.
 **Table Alignment:** You can align the whole table on the page's left, Center, or Right side.
 **Separate Columns**/**Rows**: You can also separate the rows or columns. By default, it is set to “Off.”
@@ -54,6 +56,7 @@ In this document, we will discuss the table settings and customization options a
 ![Table cell settings](/images/drag-drop-settings/ninja-tables-drag-drop/2.-Table-cell-settings.webp)
 
 ### **Background**
+
 **Header Background:** You can control the header background color from here without going to Background management.
 **Even Row Background:** This option is to control the Even Row background color.
 **Odd Row Background:** This is used to set the background color for even rows.
@@ -61,19 +64,24 @@ In this document, we will discuss the table settings and customization options a
 ![Table header background](/images/drag-drop-settings/ninja-tables-drag-drop/3.-Table-header-background.webp)
 
 ### Custom CSS (Pro)
+
 Just like the Ninja Tables advanced mode, the Drag and Drop table builder gives you the flexibility to customize tables with custom CSS.
 
 ![Custom CSS in drag and drop](/images/drag-drop-settings/ninja-tables-drag-drop/4.-Custom-CSS-in-drag-and-drop.webp)
 
 ### Custom JS (Pro)
+
 Similarly, the Drag and Drop table builder also gives you the flexibility to further customize tables with custom JS.
 
 ![Custom JS drag and drop](/images/drag-drop-settings/ninja-tables-drag-drop/5.-Custom-JS-drag-and-drop.webp)
 
 ### Sticky (Pro)
+
 **First Row Sticky:** You can freeze the first row or make it sticky. If you have to scroll down, you can see which column contains which type of data.
 **First Column Sticky:** You can make the first column sticky as well. This helps if the table is horizontally scrollable.
+
 ### **Accessibility**
+
 **Table Role:** This option has 4 types of "Table Role."
 
 ![table roles](/images/drag-drop-settings/ninja-tables-drag-drop/6.-table-roles.webp)
@@ -82,7 +90,9 @@ Similarly, the Drag and Drop table builder also gives you the flexibility to fur
 - Presentation
 - List
 - Row Group.
+
 ### **Border**
+
 **Table Border:** This option enables you to show each cell with a border a boundary. By default, it is set to 2.
 **Border Color:** You can control the color of the border here.
 **Apply Inner Border:** By default, an Inner Border is applied to the table.
@@ -93,6 +103,7 @@ Similarly, the Drag and Drop table builder also gives you the flexibility to fur
 ![drag and drop table border](/images/drag-drop-settings/ninja-tables-drag-drop/7.-drag-and-drop-table-border.webp)
 
 ### **Global Styl**e
+
 **Margin Top:** You can add an additional Top Margin to the table, which is set to 0 by default.
 **Margin Bottom**: You can add an additional Bottom Margin to the table, which is set to 0 by default.
 **Font Size:** The default font size setting is by default set to 15.
@@ -102,7 +113,10 @@ Similarly, the Drag and Drop table builder also gives you the flexibility to fur
 ![drag and drop table border](/images/drag-drop-settings/ninja-tables-drag-drop/7.-drag-and-drop-table-border.webp)
 
 ### Export Table
+
 One of the most important and helpful options that you can use to export your table to CSV and JSON format. The JSON format is only recognizable by Ninja Tables
+
 ## Conclusion
+
 Customize the drag and drop table settings using all these amazing features and options.
 Let us know if you have any questions.

@@ -6,10 +6,14 @@ description: "ACF Field Integration: Advanced Custom Fields in Ninja Tables"
 # ACF Field Integration: Advanced Custom Fields in Ninja Tables
 
 **ACF Field **is a versatile feature offered by **Ninja Tables** that improves the capacity of table creation. In this case, ACF means **Advanced Custom Fields, **which enables the table created to be more dynamic. This feature is available when the **WP Post **feature is used in the tables.
+
 ## What is ACF[](https://wpmanageninja.com/docs/ninja-tables/wp-posts-table/acf-field/#what-is-acf)
+
 ACF refers to Advanced Custom Fields that make it easier for users to benefit from these custom fields. This feature helps to deal with users’ custom field data and then make it visible to your site’s visitors.
 Technically, you can add customized information not only to posts and pages but also to categories, taxonomies, custom posts/taxonomies, users, attachments, comments, etc.
+
 ## ACF in Ninja Tables
+
 This guide demonstrates how to use this feature in Ninja Tables.
 - The first step is to install a plugin named **Advanced Custom Field** from the WordPress plugin directory. Next, go to the plugin option on the dashboard's left sidebar.
 - Click on the** Add New **button from the plugin’s dashboard. Then go to the **Add Field **button after giving the title of the new field group. In the input field, enter the **Field Label** & **Field Name**.

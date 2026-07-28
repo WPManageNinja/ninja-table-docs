@@ -7,7 +7,9 @@ description: "How to Use Data Range Picker in Ninja Charts"
 
 Ninja Charts offers multiple chart creation options and chart renderers as well. Once you’re done selecting the chart type and data source, you need to select the **Data Range**.
 This is where you can edit the data.
+
 ## Data Range Picker in Ninja Charts
+
 In this step, you can select the data you want on the chart from here.
 
 ![Create using Ninja-Charts](/images/ninja-charts/data-range-picker-ninja/1.-Ninja-Table-Chart-GIF.webp)

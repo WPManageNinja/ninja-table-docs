@@ -8,7 +8,9 @@ description: "Create Table from Custom SQL"
 One of the most versatile features of **Ninja Tables Pro **is the **Custom SQL Query**.
 You can create a table from your SQL database with the help of your custom SQL query. Here the table data is dynamically fetched. Each manual change in the database or in a plugin will be displayed on the table’s front end.
 For example, when you create a table from the WP user table, it will display all user data on the table. Once you have a new user, it synchronizes with your site's database table. After that, the table can be edited and redesigned like a default table.
+
 ## Table with Custom SQL Queries
+
 Here is a simple table created in Ninja Tables using Custom SQL Query -
 - Below you can notice a database table on the WordPress database called **wp_buyers_table**. You can easily create a table from this database table by writing a single-line query in Ninja Tables.
 
@@ -25,9 +27,12 @@ Here is a simple table created in Ninja Tables using Custom SQL Query -
 ![Created Table](/images/data-sources/create-table-custom-sql/3.-Ninja-Tables-Pro-Demosite-WordPress-1-1.webp)
 
 ## **Some Conditional Query**
+
 The data can be accessed conditionally from your database table.
 Here you can use the standard SQL coding method. You can set the condition of the data to fetch after the keyword WHERE.
+
 ### **Single Conditional Queries**
+
 So if a table is made from the wp_buyers_table table to display only book buyers then this structure should be followed.
 SEL*ECT * FROM `Your Database Table Name` WHERE columnName = 'yourFilterValue'*
 For our wp_buyers_table it will be like this: `**SELECT * FROM `wp_buyers_table`WHERE products = 'book'**`
@@ -35,6 +40,7 @@ For our wp_buyers_table it will be like this: `**SELECT * FROM `wp_buyers_table`
 ![Single Conditional Queries](/images/data-sources/create-table-custom-sql/4.-create-table-from-custom-sql-4-edited.webp)
 
 ### **Multiple Conditional Queries**
+
 If a table is created to display book and computer buyers from the wp buyers table then this structure can be followed.
 *SELECT * FROM `wp_buyers_table` WHERE coloumnName = 'filterData1' OR columnName= 'filterData2'*
 For our wp_buyers_table it will be like this: **`SELECT * FROM `wp_buyers_table`WHERE products = 'book'OR products = 'Computer’`**
@@ -42,6 +48,7 @@ For our wp_buyers_table it will be like this: **`SELECT * FROM `wp_buyers_table`
 ![Multiple Conditional Queries](/images/data-sources/create-table-custom-sql/5.-create-table-from-custom-sql-5-edited.webp)
 
 ## **Few Basic Examples**
+
 With respect to this `wp_buyers_table` all sample queries are written, you can write your own based on your table data.
 
 ![wp_buyers_table (database table)](/images/data-sources/create-table-custom-sql/6.-create-table-from-custom-sql-6.webp)

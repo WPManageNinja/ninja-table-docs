@@ -8,7 +8,9 @@ description: "Post Meta Field"
 This feature, known as **Post Meta Field** (also called **Custom Fields**), helps associate additional content to a post.
 With Ninja Tables, you can show this content with your table data. This content is usually not directly linked to the main content itself. Depending on the type of site, the content you’re dealing with could vary a lot.
 A new post can be added, or a current post can be edited. Here, an existing post is edited to build custom post meta fields in WordPress table using the Ninja Tables plugin Post Meta Field option.
+
 ## Display Post Meta Field in WordPress Table
+
 - Firstly, navigate to your WordPress admin panel's Post **Editor** tab. Tap the** Screen Options** in the panel.
 
 ![Screen Options](/images/wordpress-integration/post-meta-field/1.-post-meta-field-1.webp)

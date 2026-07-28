@@ -7,13 +7,16 @@ description: "Row and Column Calculation"
 
 Row / Column Calculation is a feature that many Ninja Tables plugin users would like to implement in their tables. Calculate tabular data in a numeric table easily in this table plugin.
 You may perform data calculation in Ninja Tables just by following a few easy steps. We have 2 different methods for row data calculation and column data calculation.
+
 ## Calculate Tabular Data in Rows/Columns
+
 Follow this simple guide to discover how to calculate data in table rows and columns.
 Suppose we have a table that contains 3 numeric data columns- Number One, Number Two, and Number Three.
 
 ![](/images/table-management/row-column-data-calculation/1.-01-5.webp)
 
 ### Row Calculation
+
 We have another column named **Result **that will display the calculated results of all the numbers in a row.
 - If you want to calculate the sum of a row containing numeric data, navigate to the **Table Configuration **->> **Transform Value**.
 - Here you need to add a shortcode to find the sum of the rows. Ninja Tables has a feature to **"Enable Excel Formula support for Transform Value**." Enable this option to get the Excel summation formula.
@@ -25,6 +28,7 @@ To learn more about this feature, read this [documentation](https://ninjatables.
 ![Result](/images/table-management/row-column-data-calculation/2.-row-column-calculation-3.webp)
 
 ### Column Calculation
+
 Calculating column data is different.
 - First, go to this GitHub [link](https://gist.github.com/reachkamrul/11e6e60d4aa113abe81586367cc27b77) to get the JS code. Copy the code.
 - Now go to the **Custom CSS/JS **tab & click on the **Custom Javascript **button. Paste the code that you copied and hit the save button.

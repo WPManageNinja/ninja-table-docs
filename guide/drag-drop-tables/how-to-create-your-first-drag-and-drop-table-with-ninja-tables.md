@@ -18,7 +18,9 @@ If you already have created tables earlier, then you will see a similar screen b
 ![All Tables List UI](/images/drag-drop-tables/create-first-drag-drop/2.-All-Tables-List-UI.webp)
 
 Once you click the "Add Table" button, you will see a popup dialogue with multiple table creation options.
+
 ## Create Drag and Drop table
+
 From the menu on the side, we'll pick **Drag & Drop Table**.
 
 ![New UI drag and drop table](/images/drag-drop-tables/create-first-drag-drop/3.-New-UI-drag-and-drop-table.webp)
@@ -39,13 +41,16 @@ The Advanced or Pro version includes **[Styled List](https://ninjatables.com/doc
 The buttons at the top of the table are **Manage Cells** and **Background** features to operate on the cells, row/column add/delete/duplicate, and background colors.
 Above these buttons, you'll notice an auto-generated shortcode, a **Preview** button, and a blue **Save Table** button.
 When a table is done, hit the **Save Table** button and paste the shortcode anywhere on your website.
+
 ## Customizable premade templates
+
 If you want to customize a table from a premade design, scroll down after the first window to "Drag and Drop Table" opens.
 There are 4 different table templates-
 - Pricing tables
 - Comparison tables
 - Employee tables
 - Schedule tables
+
 ### Ninja Tables free templates
 
 ![Table Templates](/images/drag-drop-tables/create-first-drag-drop/6.-Screenshot-7.webp)
@@ -73,7 +78,9 @@ When you click on the dropped cell element, you can customize it however you nee
 Please check our documentation for more on settings, [responsiveness](https://ninjatables.com/docs/responsive-table-design/), and [elements](https://ninjatables.com/docs-category/table-elements/).
 Once all the customizations are done, click on the save button and check the preview.
 Now all there's left to do is paste this table on a page. Simply copy the auto-generated shortcode from above the table and paste it where you need it.
+
 ### More Drag and Drop Table Templates
+
 We have created a dedicated page with [50+ table designs](https://ninjatables.com/free-table-templates/) just for you! These tables are ready to use as soon as you download the file.
 Many tables are created using the Drag and Drop builder function. Check out a few we handpicked for you and customize tables your way.
 - [Staff directory](https://ninjatables.com/free-table-templates/staff-directory-template/)

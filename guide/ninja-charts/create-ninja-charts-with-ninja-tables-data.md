@@ -7,12 +7,15 @@ description: "How to Create Ninja Charts with Ninja Tables Data"
 
 If you have a data table created with Ninja Tables ready to go, you can turn those table data into a chart using Ninja Charts! Since it's a free integration, you only need the 2 plugins in your dashboard to create a chart with table data.
 We'll show you how.
+
 ## Create Charts with Ninja Tables Data
+
 As usual, start by selecting chart renderer (Charts Js or Google Charts) in Ninja Charts. Then if you have a prefered chart type, select it from the 10+ options.
 
 ![Create a chart](/images/ninja-charts/create-ninja-charts-ninja/1.-Create-a-chart-01.webp)
 
 ### Select Ninja Tables as Chart Data Source
+
 Just like the usual data source layout, you can see 3 data source options to create your chart.
 - Manual Input: Users can input their own data manually
 - Ninja Tables: Create chart using a table

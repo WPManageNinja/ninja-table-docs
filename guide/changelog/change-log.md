@@ -8,6 +8,7 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in Ninja Tables.
 
 ## Ninja Tables v5.2.12
+
 *Released on July 22, 2026*
 
 ::: code-group
@@ -29,6 +30,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.2.11
+
 *Released on July 16, 2026*
 
 ::: code-group
@@ -40,6 +42,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.2.10
+
 *Released on July 9, 2026*
 
 ::: code-group
@@ -74,6 +77,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.2.9
+
 *Released on May 25, 2026*
 
 ::: code-group
@@ -101,6 +105,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.2.8
+
 *Released on April 16, 2026*
 
 ::: code-group
@@ -116,6 +121,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.2.7
+
 *Released on February 4, 2026*
 
 ::: code-group
@@ -127,6 +133,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.2.6
+
 *Released on January 27, 2026*
 
 ::: code-group
@@ -153,6 +160,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.2.5
+
 *Released on December 17, 2025*
 
 ::: code-group
@@ -164,6 +172,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.2.4
+
 *Released on November 27, 2025*
 
 ::: code-group
@@ -179,6 +188,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.2.3
+
 *Released on November 11, 2025*
 
 ::: code-group
@@ -215,6 +225,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.2.2
+
 *Released on August 1, 2025*
 
 ::: code-group
@@ -247,6 +258,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.2.1
+
 *Released on July 9, 2025*
 
 ::: code-group
@@ -264,6 +276,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.1.1
+
 *Released on June 17, 2025*
 
 ::: code-group
@@ -295,6 +308,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.1.0
+
 *Released on June 2, 2025*
 
 ::: code-group
@@ -306,6 +320,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.23
+
 *Released on April 20, 2025*
 
 ::: code-group
@@ -327,6 +342,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.21
+
 *Released on April 10, 2025*
 
 ::: code-group
@@ -338,6 +354,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.20
+
 *Released on April 9, 2025*
 
 ::: code-group
@@ -349,6 +366,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.19
+
 *Released on April 9, 2025*
 
 ::: code-group
@@ -380,6 +398,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.18
+
 *Released on January 20, 2025*
 
 ::: code-group
@@ -391,6 +410,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.17
+
 *Released on January 1, 2025*
 
 ::: code-group
@@ -402,6 +422,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.16
+
 *Released on December 5, 2024*
 
 ::: code-group
@@ -414,6 +435,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.15
+
 *Released on December 2, 2024*
 
 ::: code-group
@@ -439,6 +461,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.14
+
 *Released on September 20, 2024*
 
 ::: code-group
@@ -458,6 +481,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.13
+
 *Released on August 13, 2024*
 
 ::: code-group
@@ -481,6 +505,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.12
+
 *Released on July 12, 2024*
 
 ::: code-group
@@ -493,6 +518,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.11
+
 *Released on June 13, 2024*
 
 ::: code-group
@@ -514,6 +540,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.10
+
 *Released on May 31, 2024*
 
 ::: code-group
@@ -525,6 +552,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.9
+
 *Released on May 22, 2024*
 
 ::: code-group
@@ -540,6 +568,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.8
+
 *Released on May 16, 2024*
 
 ::: code-group
@@ -568,6 +597,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.7
+
 *Released on January 25, 2024*
 
 ::: code-group
@@ -579,6 +609,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.6
+
 *Released on January 23, 2024*
 
 ::: code-group
@@ -597,6 +628,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.5
+
 *Released on December 19, 2023*
 
 ::: code-group
@@ -615,6 +647,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.4
+
 *Released on October 4, 2023*
 
 ::: code-group
@@ -626,6 +659,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.3
+
 *Released on September 26, 2023*
 
 ::: code-group
@@ -654,6 +688,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.2
+
 *Released on June 15, 2023*
 
 ::: code-group
@@ -670,6 +705,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.1
+
 *Released on June 12, 2023*
 
 ::: code-group
@@ -685,6 +721,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v5.0.0
+
 *Released on June 8, 2023*
 
 ::: code-group
@@ -714,6 +751,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.3.5
+
 *Released on April 20, 2023*
 
 ::: code-group
@@ -726,6 +764,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.3.4
+
 *Released on February 8, 2023*
 
 ::: code-group
@@ -749,6 +788,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.3.3
+
 *Released on December 22, 2022*
 
 ::: code-group
@@ -782,6 +822,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.3.2
+
 *Released on October 19, 2022*
 
 ::: code-group
@@ -801,6 +842,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.3.1
+
 *Released on October 13, 2022*
 
 ::: code-group
@@ -816,6 +858,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.3.0
+
 *Released on October 12, 2022*
 
 ::: code-group
@@ -838,6 +881,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.2.3
+
 *Released on August 10, 2022*
 
 ::: code-group
@@ -849,6 +893,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.2.2
+
 *Released on August 10, 2022*
 
 ::: code-group
@@ -864,6 +909,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.2.1
+
 *Released on August 8, 2022*
 
 ::: code-group
@@ -892,6 +938,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.2.0
+
 *Released on June 22, 2022*
 
 ::: code-group
@@ -913,6 +960,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.14
+
 *Released on March 21, 2021*
 
 ::: code-group
@@ -924,6 +972,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.13
+
 *Released on March 18, 2021*
 
 ::: code-group
@@ -939,6 +988,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.12
+
 *Released on March 11, 2022*
 
 ::: code-group
@@ -954,6 +1004,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.11
+
 *Released on February 1, 2022*
 
 ::: code-group
@@ -973,6 +1024,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.9
+
 *Released on January 27, 2022*
 
 ::: code-group
@@ -984,6 +1036,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.8
+
 *Released on January 27, 2022*
 
 ::: code-group
@@ -1010,6 +1063,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.7
+
 *Released on September 17, 2021*
 
 ::: code-group
@@ -1028,6 +1082,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.6
+
 *Released on June 28, 2021*
 
 ::: code-group
@@ -1049,6 +1104,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.5
+
 *Released on February 18, 2021*
 
 ::: code-group
@@ -1060,6 +1116,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.4
+
 *Released on February 16, 2021*
 
 ::: code-group
@@ -1071,6 +1128,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.3
+
 *Released on February 13, 2021*
 
 ::: code-group
@@ -1090,6 +1148,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.2
+
 *Released on February 8, 2021*
 
 ::: code-group
@@ -1105,6 +1164,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.1
+
 *Released on November 21, 2020*
 
 ::: code-group
@@ -1118,6 +1178,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.1.0
+
 *Released on November 18, 2020*
 
 ::: code-group
@@ -1135,6 +1196,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.0.2
+
 *Released on September 14, 2020*
 
 ::: code-group
@@ -1146,6 +1208,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.0.1
+
 *Released on September 14, 2020*
 
 ::: code-group
@@ -1163,6 +1226,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v4.0.0
+
 *Released on September 12, 2020*
 
 ::: code-group
@@ -1190,6 +1254,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.5.12
+
 *Released on April 7, 2020*
 
 ::: code-group
@@ -1201,6 +1266,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.5.11
+
 *Released on March 23, 2020*
 
 ::: code-group
@@ -1233,6 +1299,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.5.10
+
 *Released on December 27, 2019*
 
 ::: code-group
@@ -1246,6 +1313,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.5.9
+
 *Released on December 26, 2019*
 
 ::: code-group
@@ -1276,6 +1344,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.5.8
+
 *Released on November 9, 2019*
 
 ::: code-group
@@ -1298,6 +1367,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.5.7
+
 *Released on August 28, 2019*
 
 ::: code-group
@@ -1318,6 +1388,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.5.5
+
 *Released on June 20, 2019*
 
 ::: code-group
@@ -1336,6 +1407,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.5.2
+
 *Released on July 13, 2019*
 
 ::: code-group
@@ -1355,6 +1427,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.5.0
+
 *Released on July 10, 2019*
 
 ::: code-group
@@ -1374,6 +1447,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.4.5
+
 *Released on June 1, 2019*
 
 ::: code-group
@@ -1392,6 +1466,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.4.5
+
 *Released on May 27, 2019*
 
 ::: code-group
@@ -1407,6 +1482,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.4.0
+
 *Released on May 24, 2019*
 
 ::: code-group
@@ -1424,6 +1500,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.3.3
+
 *Released on April 8, 2019*
 
 ::: code-group
@@ -1441,6 +1518,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.3.0
+
 *Released on March 21, 2019*
 
 ::: code-group
@@ -1463,6 +1541,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.2.4
+
 *Released on January 25, 2019*
 
 ::: code-group
@@ -1478,6 +1557,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.2.3
+
 *Released on January 19, 2019*
 
 ::: code-group
@@ -1494,6 +1574,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.2.0
+
 *Released on January 16, 2019*
 
 ::: code-group
@@ -1516,6 +1597,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.1.0
+
 *Released on December 24, 2018*
 
 ::: code-group
@@ -1538,6 +1620,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.0.6
+
 *Released on November 28, 2018*
 
 ::: code-group
@@ -1553,6 +1636,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.0.5
+
 *Released on November 26, 2018*
 
 ::: code-group
@@ -1575,6 +1659,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v3.0.0
+
 *Released on November 19, 2018*
 
 ::: code-group
@@ -1597,6 +1682,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.4.1
+
 *Released on October 8, 2018*
 
 ::: code-group
@@ -1614,6 +1700,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.4.0
+
 *Released on October 5, 2018*
 
 ::: code-group
@@ -1635,6 +1722,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.3.4
+
 *Released on August 11, 2018*
 
 ::: code-group
@@ -1651,6 +1739,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.3.3
+
 *Released on August 9, 2018*
 
 ::: code-group
@@ -1662,6 +1751,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.3.0
+
 *Released on August 2, 2018*
 
 ::: code-group
@@ -1675,6 +1765,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.2.6
+
 *Released on August 1, 2018*
 
 ::: code-group
@@ -1700,6 +1791,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.1.1
+
 *Released on April 28, 2018*
 
 ::: code-group
@@ -1716,6 +1808,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.1.0
+
 *Released on April 24, 2018*
 
 ::: code-group
@@ -1731,6 +1824,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.0.9
+
 *Released on April 16, 2018*
 
 ::: code-group
@@ -1745,6 +1839,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.0.8
+
 *Released on April 13, 2018*
 
 ::: code-group
@@ -1762,6 +1857,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.0.4
+
 *Released on April 12, 2018*
 
 ::: code-group
@@ -1777,6 +1873,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v2.0.3
+
 *Released on April 9, 2018*
 
 ::: code-group
@@ -1789,6 +1886,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v1.9.9
+
 *Released on April 1, 2018*
 
 ::: code-group
@@ -1805,6 +1903,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v1.9.8
+
 *Released on March 31, 2018*
 
 ::: code-group
@@ -1816,6 +1915,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v1.9.7
+
 *Released on March 31, 2018*
 
 ::: code-group
@@ -1833,6 +1933,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 :::
 
 ## Ninja Tables v1.9.5
+
 *Released on March 21, 2018*
 
 ::: code-group

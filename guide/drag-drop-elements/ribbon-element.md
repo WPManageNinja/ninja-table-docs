@@ -12,6 +12,7 @@ Ninja Tables offer 4 types of ribbons- Side, Bookmark, Corner, and Horizontal.
 ![Ribbon element in table](/images/drag-drop-elements/ribbon-element/1.-Ribbon-element-in-table.webp)
 
 Let’s see how it works.
+
 ## **Properties of Ribbon Element**
 
 | **Scope** | **Option Name** | **Type** |
@@ -28,6 +29,7 @@ Let’s see how it works.
 | | Font X Offset | Numeric Value, drag bar |
 | | Font Y Offset | Numeric Value, drag bar |
 | Background | Background Color | Graphical Color Selection |
+
 ### **General**
 
 ![Ribbon element](/images/drag-drop-elements/ribbon-element/2.-Ribbon-element.webp)
@@ -38,6 +40,7 @@ Let’s see how it works.
 - **Ribbon Height:** You can change the height of the ribbon.
 - **X Offset:** You can change the X offset to move the ribbon horizontally. Available for bookmark and corner types.
 - **Y Offset:** You can change the Y offset, which means moving the ribbon vertically. By default, it is set to -11.
+
 ### **Text**
 
 ![Ribbon text](/images/drag-drop-elements/ribbon-element/3.-Ribbon-text.webp)
@@ -48,11 +51,14 @@ Let’s see how it works.
 - **Font X Offset:** You can change the X offset of the Font, which means you can move the Text of the ribbon horizontally.
 - **Font Y Offset:** You can change the Y offset of the Font, which means you can move the Text of the ribbon vertically.
 - **Font Style**: Change font style to bold, italic, or underlined.
+
 ### **Background**
 
 ![Ribbon background color](/images/drag-drop-elements/ribbon-element/4.-Ribbon-background-color.webp)
 
 **Background Color:** You can change the background color of the ribbon.
+
 ## **Conclusion**
+
 If a cell or column has a ribbon or badge, it shows the item is on sale or is an exclusive product. The ribbon element in Ninja Tables drag and drop mode helps you create visually appealing pricing and product tables.
 Let us know your thoughts and questions in the comment box.

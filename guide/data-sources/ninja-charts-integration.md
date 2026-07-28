@@ -7,7 +7,9 @@ description: "Ninja Charts Integration"
 
 Ninja Charts has incredible features that generate endless online charts and graphs on your web pages. One of the great characteristics of **Ninja Charts** is the default functionality with **Ninja Tables**.
 With this WordPress charts plugin, you can create dynamic charts utilizing data from the Ninja Tables plugin. You can also pull data from Fluent Forms to create charts or manually input chart entries.
+
 ## Create a Chart
+
 Let's have a look at the simple steps to learn how to create **Ninja Charts **with Ninja Tables.
 *****Ninja Charts **is a completely free charts plugin. You can use it with or without Ninja Tables in your dashboard.
 - First, go to the **Ninja Tables dashboard** **→** **Add Charts** **→** **Chart List** & then **click** on the **Create a new chart **button.
@@ -34,7 +36,9 @@ Choose the preferred data source (manual, forms, or tables) you want to create a
 ![edit wordpress charts](/images/data-sources/ninja-charts-integration/5.-Ninja-Table-Chart-E-3.webp)
 
 - Once you click on the **Next** button, you'll move to the "**Save & Get Shortcode**" window. Copy the auto-generated shortcode and paste it anywhere on your website.
+
 ## WordPress Charts Demo - Ninja Charts
+
 Pie Chart:
 [ninja_charts id="6"]
 Line Chart:

@@ -12,6 +12,7 @@ It shows progress status, availability, reviews, and statistical values in linea
 
 You can add such a beautiful element by dragging it to your desired cell in Ninja Tables drag and drop.
 Let’s add the Progress Bar element to our table.
+
 ## **Properties of Progress Bar Element**
 
 | **Option Name** | **Type** |
@@ -30,6 +31,8 @@ Let’s add the Progress Bar element to our table.
 - **Progress Bar Width: **You can change the width(size) of the Progress Bar. By default, it is set to 100.
 - **Progress Bar Thickness: **You can even change the thickness of the Progress Bar to make it thicker or thinner.
 - **Alignment: **You can align the Progress Bar to the left, right, or center. By default, it is set to Center.
+
 ## **Conclusion**
+
 In the example image shown above, we've used all 3 types of Progress Bar elements. In that product table, circle, line, and dashboard progress bars show the available stocks of the products. But this element can also show progress of a certain project, how far people have read a book, or how good/bad the reviews are.
 Let us know your thoughts and questions in the comment box.

@@ -7,7 +7,9 @@ description: "WooCommerce Integration"
 
 Making a table with **WooCommerce Products **is a versatile feature of Ninja Tables. WooCommerce integration with Ninja Tables lets you create and customize smart product tables easily.
 WooCommerce Integration is a Pro Feature.
+
 ## Create WooCommerce Tables
+
 - Click on **Add Table** from the upper right corner to create a new table.
 - Go to the **WooCommerce** **Table** from the left sidebar.
 
@@ -41,7 +43,9 @@ All settings can be changed after creating the table and you can customize the p
 ![product sku column in woocommerce table](/images/data-sources/woocommerce-integration/5.-Woocommerce-Integration-10.webp)
 
 The remainder of the [column settings](https://ninjatables.com/docs-category/column-settings/) are like every other Ninja Tables column.
+
 ### Customize a WooCommerce Table Using Ninja Tables
+
 Ninja Tables has a huge set of features to help you customize and control any table you create with this plugin. And for WooCommerce, the customization options are even better!
 Here's a fully customized WooCommerce product table demo.
 [ninja_tables id="3792"]

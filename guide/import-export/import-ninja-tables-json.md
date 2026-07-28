@@ -7,7 +7,9 @@ description: "Import Ninja Tables JSON"
 
 Ninja Tables can import JSON file from an existing table of the plugin into another table.
 Importing **JSON** to your table using Ninja** **Tables is a simple and quick process. This plugin is intended to make things easier for users and to improve the overall user experience.
+
 ## Import JSON File
+
 Let’s dive into the simple guide to learn how to **import JSON** file.
 - First, navigate to the **Ninja Tables dashboard **and click on the **Import Table **button on the top right of the screen.
 - To know how to **Export Data (CSV/JSON)**, you can get help from [here](https://ninjatables.com/docs/export-ninja-tables-csv-json/).

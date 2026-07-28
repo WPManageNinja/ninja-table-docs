@@ -8,7 +8,9 @@ description: "Image Lightbox Using Column Transform Value"
 Users frequently want to import a table with an Image column from Google Sheets into **Ninja** **Tables**. When an image from that column is clicked, it opens in a lightbox with a darker background.
 There's already a "[Lightbox](https://ninjatables.com/docs/image-file-lightbox/)" data type option in Ninja Tables.
 So apply this to your table by following this simple guide.
+
 ## Transform Image URL into Image Lightbox
+
 A table from Google Sheets has been uploaded into Ninja Tables for demonstration purposes.
 This table offers data about numerous car models. It is divided into two columns: **Name** and **Image**.
 
@@ -34,6 +36,7 @@ This table offers data about numerous car models. It is divided into two columns
 - Then click on the **Update** button to save the code. All the image URLs are shown as an image in the table.
 
 ### Image with Lightbox
+
 - To convert this image link into an **Image Lightbox**, add an HTML code in the Transform Value box.
 
 - In the transform value field, add this code; this is quite a simple HTML code:

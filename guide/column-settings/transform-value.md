@@ -14,15 +14,20 @@ Transform Value is HTML, CSS & Excel supported!
 
 - 
 Let's go over the **Transform** **Value** functionality step by step.
+
 ## **Transform Value Box**
+
 This box is where you will type your HTML code or use the Excel formula to transform the data value of the corresponding column.
 You can use any HTML, CSS & Excel formula in the transform value box.
+
 ## **Show Formulas**
+
 When you click on the** Enable Excel Formula Support for Transform Value**, you will get a **Show** **Formulas** button, which you may click to acquire the formulas you want.
 
 ![use Excel formula for value transformation](/images/column-settings/transform-value/2.-transform-value-3.webp)
 
 ## **Reference Shortcode**
+
 There will be a **Column** **Title** and a **Reference** **Shortcode**. Reference shortcodes will generate automatically based on the **Column** **name**.
 You can use the following Reference Shortcode Values to transform your cell value.
 - Here, there are three steps to complete. Look at the example below to learn about these steps.
@@ -30,6 +35,7 @@ You can use the following Reference Shortcode Values to transform your cell valu
 ![reference shortcode in transform value](/images/column-settings/transform-value/3.-transform-value-4.webp)
 
 ## Turn Text Into Hyperlink
+
 - Write the HTML code (< a href= ……….) on the transform value box.
 
 ![HTML in transform value](/images/column-settings/transform-value/4.-transform-value-5.webp)
@@ -61,6 +67,7 @@ Note that you can use as many IF Formulas as you want in the transform value box
 ![add link to cell value](/images/column-settings/transform-value/8.-transform-value-9.webp)
 
 ## **Number Calculation**
+
 - To execute number calculations, we must pick the number fields for each column, and the Data Type for each column must be a **Numeric** **Value**.
 - See the screenshot below, where Product 1 and Product 2 are numeric fields, and the third column is utilized to display their results.
 

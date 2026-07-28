@@ -27,7 +27,9 @@ Here is how you can upgrade **Ninja Tables** -
 
 - Congratulations! Ninja Tables Pro-add-on is successfully installed in your domain. Activate the plugin from your Plugins list.
 - **DO NOT DEACTIVATE OR DELETE** the Ninja Tables plugin from the plugins list. The Pro add-on won’t work if the Free version of the plugin is removed.
+
 ## Ninja Tables Pro License Key
+
 A **License Key **will be asked when you will be going to use the Pro features for the first time. You can retrieve the License you purchased from your dashboard.
 
 ![License Key](/images/getting-started/upgrade-ninja-tables/5.-upgrade-to-pro-5.webp)

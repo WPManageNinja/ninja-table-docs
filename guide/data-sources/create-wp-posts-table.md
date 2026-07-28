@@ -7,7 +7,9 @@ description: "WP Posts Table/Custom Post Type Integration"
 
 You can create a WP Posts table with Ninja Tables easily. This feature basically shows the WordPress posts on your website in a table format.
 Bloggers or business owners can use this feature to display the details of their posts/pages in data tables. The table can include a featured image, title, description, link, and even any custom button.
+
 ## Create WP Posts Table
+
 Let's dive into this simple guide to demonstrate how to implement this function in detail.
 - With the built-in WP Posts feature of Ninja Tables, you can convert your WordPress Pages, Posts/CPT, and WooCommerce items into a table format without installing any additional add-ons like other plugins.
 - For instance, there are some pages, blog posts, or customized posts in the WordPress dashboard. Then these items will be displayed in the form of a table. To do this, go to the **Ninja Tables dashboard → Add Table** in the top right corner.
@@ -28,7 +30,9 @@ Let's dive into this simple guide to demonstrate how to implement this function 
 ![](/images/data-sources/create-wp-posts-table/3.-WP-Post-Table-3.webp)
 
 Go to the **Query Settings** tab of that post table. Scroll down, and here you will get two options, one is **Conditions** & the other one is **Meta Query**.
+
 ## **Conditions** in Custom Post Type
+
 Table Query can be performed using Conditions based on the available fields.
 - **Query Limit for Frontend:** This enables you to specify how many posts/CPTs you want to show in total in the Frontend & if you want to show all, you can leave them blank.
 - **Order by Column: **You can select your preferred column by which the table will be sorted.
@@ -43,6 +47,7 @@ Let's look at an example where we can add a condition to find out the column, wh
 ![Result of Conditions](/images/data-sources/create-wp-posts-table/5.-WP-Post-Table-Condition-Preview.webp)
 
 ## **Meta Query**
+
 You can add an additional meta query here to filter the table rows.
 If you want to apply a meta query, you need the meta key, which will be compared to the value of your columns.
 For instance, in this case, the **meta key** is the **acf_demo**, and the value **ACF Demo Example** will be** In** the meta key. It will then display only the row with the **Meta name*** *ACF Demo Example. See the below screenshot - 

@@ -12,11 +12,15 @@ Table Styling & CSS Selector is a Ninja Tables Pro feature.
 ![Ninja Tables Advanced Settings](/images/table-management/table-styling-css-selector/1.-06.webp)
 
 Sometimes you may need to add advanced styling for your tables. This article will explain to you how to style your tables and make them more beautiful with your existing theme.
+
 ## Table Structure
+
 - Every table gets certain CSS classes and an HTML ID that can be used for styling.
 - Add your styling commands to your theme's CSS file or, **Appearance →** **Customize →** **Additional CSS** or, your preferred method to add custom CSS to your site.
 - Where the table ID is **353,** and If you want to select a specific table to style, you need that table ID.
+
 ## Styling Table Header
+
 - To Style the table header, you need the following CSS selector:
 
 **`#footable_parent_353 table.ninja_table_pro > thead`**
@@ -54,6 +58,7 @@ Sometimes you may need to add advanced styling for your tables. This article wil
 - Please note that **353** is the table ID. So you have to replace that with your table ID.
 
 ## Styling Table Rows
+
 - To apply CSS to the table rows, the CSS selector will be:
 
 ```css
@@ -91,6 +96,7 @@ Sometimes you may need to add advanced styling for your tables. This article wil
 ![Applying custom styling in Ninja Tables](/images/table-management/table-styling-css-selector/2.-table-styling-css-selector-2.webp)
 
 ## Styling Specific Column
+
 - Styling specific columns is easy too. Each column's cells have a common CSS class. It's like `ninja_column_ColumnIndex`. Please note that `ColumnIndex` starts from 0. So if you want to select the first column, then the CSS will be:
 
 ```css
@@ -109,6 +115,7 @@ Sometimes you may need to add advanced styling for your tables. This article wil
 - You can also add an extra CSS class from the column editor **→** Advanced Settings; then you can select the CSS class and add your styles.
 
 ## Making the search bar center aligned
+
 - By default, the search bar is right-aligned, but if you want to make it centered and aligned, use the following CSS:
 
 ```css

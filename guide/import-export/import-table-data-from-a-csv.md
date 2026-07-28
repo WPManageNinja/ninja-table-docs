@@ -21,6 +21,7 @@ You can also use the "Import-Export" tab at the top of a table to import tables.
 ![](/images/import-export/import-table-data-csv/3.-03.webp)
 
 ## Table Data Import for MS-Excel
+
 If you have any issue with CSV data imports, such as having blank values in your cell, in case you use MS-Excel, export the CSV as MS-DOS Comma Separated Value (CSV).
 
 ![Export As MS-DOS comma-separated (.csv) format](/images/import-export/import-table-data-csv/4.-import-table-data-from-CSV-2.webp)

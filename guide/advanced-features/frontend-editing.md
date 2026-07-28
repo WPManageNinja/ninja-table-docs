@@ -11,7 +11,9 @@ Let's dive into this guide which will demonstrate how to apply Frontend Editing 
 - With this feature, the user of this table will get some options, such as adding / editing or changing their own frontend data.
 - It is quite simple to implement this feature. Two options need to be configured in the Frontend Editing.
 - The first one is to set the **user role**, who can add/edit/delete data. And then set up the **editable columns**.
+
 ## **Enabling Frontend Editing**
+
 - First, go to the Ninja Tables **dashboard** and click on the **Frontend** **Editing** tab. Look at the example below -
 
 ![Enable Frontend Editing](/images/advanced-features/frontend-editing/1.-Enable-Frontend-Editing-1.webp)
@@ -21,12 +23,14 @@ Let's dive into this guide which will demonstrate how to apply Frontend Editing 
 ![Frontend Settings](/images/advanced-features/frontend-editing/2.-Enable-Frontend-Editing-2.webp)
 
 ### **User Role Permission**s
+
 - Data editing permission is the first option in the settings. Here you will find some user roles to edit/add on the left side.
 - In the example given below, by checking both the left & right checkboxes, only the Author is allowed to edit and delete the table data. Multiple users can be allowed permission if you want.
 
 ![Data Editing Permission](/images/advanced-features/frontend-editing/3.-Enable-Frontend-Editing-3.webp)
 
 ### **Own Data Only**
+
 - If this feature is selected, then users cannot edit/delete **other users’** data. Only their own data can be edited.
 - You'll get a new **shortcode **for this table when you **allow **this 'Users can see and edit/delete only their own data' permission.
 
@@ -46,9 +50,13 @@ The user roles have already been set up. Then the column that can be editable ne
 ![Editing Column Options](/images/advanced-features/frontend-editing/5.-EDitable-Column.webp)
 
 - So, now the table’s frontend is editable for the authors. In this case, just the authors can edit the table info from the frontend. But the other users cannot view the editable options.
+
 ## **Few optional settings of the Frontend Editing table**
+
 From the **Appearance Settings, **we can add some styling to our table.
+
 #### **Always show edit icons**
+
 - Enabling this option, lets you display the edit button beside the row on the frontend all the time.
 
 ![Appearance Settings](/images/advanced-features/frontend-editing/6.-Appearance-Settings.webp)

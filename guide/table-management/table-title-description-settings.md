@@ -15,9 +15,13 @@ In Ninja Tables, the table title is mandatory but the description is optional.
 
 You can see on the right-hand side there are 2 empty boxes- Table Title and Table Description.
 Fill these boxes up with a title and a description. The table description is optional, but you must name the table.
+
 ## **Table Title**
+
 Table Title is a **required** field that must be filled out. The table Title identifies your table.
+
 ## **Table Description**
+
 A table description is information about the data the table is about. The HTML Field allows you to make text bold/italic, change the font color, add media files, create lists, and add anchor links.
 
 ![](/images/table-management/table-title-description/2.-description.webp)

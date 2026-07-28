@@ -15,7 +15,9 @@ The Single Line Text field is a single textbox that's most useful for collecti
 - Go to the **Data Type** option and select the **Single Line Text Field **type of the column.
 - Now a new column with data type has been added to the table.
 If you want to see the data type works or not, click the pencil icon for the row and find the corresponding column's data type.
+
 ## HTML In Single Line Text Field
+
 Note that, Single Line Text Field is also **HTML** supported. So, not just plain texts, you can also display HTML in the table cell.
 The process is the same. Select the data type as single line text field and simply paste the desired HTML code in the blank text box.
 For example, we've used <h2>Hello Ninja</h2> here.

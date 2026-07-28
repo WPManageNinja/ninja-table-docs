@@ -7,7 +7,9 @@ description: "Colspan/Cell Merge"
 
 This function joins multiple neighboring cells into a single larger cell. To merge multiple cells in a row, you must give your cells a value** **as** "#colspan#,"** and then see the selected cell merge with the subsequent cells.
 *******Please note that this function will operate with **Advanced Table (Legacy) only.**
+
 ## How to Merge Table Cells
+
 - To apply this Cell Merge feature, you have to create a table. Or you can edit any of the existing tables.
 - First, select a table and find the cells you want to merge.
 - Remember that when you merge columns, the cell merge option always takes the** **corresponding cell value into one single row.
