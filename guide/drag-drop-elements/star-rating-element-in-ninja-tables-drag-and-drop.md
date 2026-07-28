@@ -8,7 +8,9 @@ description: "Rating Element"
 One of the most important things for a business is “Rating” or “Star Rating.” In this document, we will learn about Ninja Tables’ Rating Element.
 The tiny stars indicate a user's trust in a product, service, or business. It’s crucial to have a star rating to help visitors realize your product is worth it.
 Let’s add a Rating element to our Ninja Tables in the drag and drop builder!
-![Rating element in tables](https://ninjatables.com/wp-content/uploads/2023/08/Rating-element-in-tables-1024x456.png)
+
+![Rating element in tables](/images/drag-drop-elements/star-rating-element-ninja/1.-Rating-element-in-tables.webp)
+
 ## **Properties of Rating Element**
 
 | **Option Name** | **Type** |

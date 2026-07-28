@@ -8,7 +8,9 @@ description: "Ribbon Element (Pro)"
 A ribbon or badge highlights a particular table column, especially if the product is on sale. Ninja Tables offers a Ribbon Element in the Drag and Drop builder that makes your pricing or product table stand out.
 Ribbons or badges are used in pricing tables to highlight sales items, top products, or small texts.
 Ninja Tables offer 4 types of ribbons- Side, Bookmark, Corner, and Horizontal.
-![Ribbon element in table](https://ninjatables.com/wp-content/uploads/2023/08/Ribbon-element-in-table-1024x681.png)
+
+![Ribbon element in table](/images/drag-drop-elements/ribbon-element/1.-Ribbon-element-in-table.webp)
+
 Let’s see how it works.
 ## **Properties of Ribbon Element**
 
@@ -27,7 +29,9 @@ Let’s see how it works.
 | | Font Y Offset | Numeric Value, drag bar |
 | Background | Background Color | Graphical Color Selection |
 ### **General**
-![Ribbon element](https://ninjatables.com/wp-content/uploads/2023/08/Ribbon-element-1024x554.png)
+
+![Ribbon element](/images/drag-drop-elements/ribbon-element/2.-Ribbon-element.webp)
+
 - **Ribbon type:** Change the ribbon type to position in a corner or a rectangular format. By default, it is set to corner.
 - **Ribbon Position: **You can position the Ribbon on either Left or Right for a Corner ribbon.
 - **Ribbon Width:** You can change the width of the ribbon.
@@ -35,7 +39,9 @@ Let’s see how it works.
 - **X Offset:** You can change the X offset to move the ribbon horizontally. Available for bookmark and corner types.
 - **Y Offset:** You can change the Y offset, which means moving the ribbon vertically. By default, it is set to -11.
 ### **Text**
-![Ribbon text](https://ninjatables.com/wp-content/uploads/2023/08/Ribbon-text-1024x381.png)
+
+![Ribbon text](/images/drag-drop-elements/ribbon-element/3.-Ribbon-text.webp)
+
 - **Ribbon Text:** You can change the text color of the ribbon.
 - **Font Color**: You can change the color of the text. By default, it is set to Black.
 - **Font Size**: You can change the size of the text. By default, it is set to 15.
@@ -43,7 +49,9 @@ Let’s see how it works.
 - **Font Y Offset:** You can change the Y offset of the Font, which means you can move the Text of the ribbon vertically.
 - **Font Style**: Change font style to bold, italic, or underlined.
 ### **Background**
-![Ribbon background color](https://ninjatables.com/wp-content/uploads/2023/08/Ribbon-background-color-1024x488.png)
+
+![Ribbon background color](/images/drag-drop-elements/ribbon-element/4.-Ribbon-background-color.webp)
+
 **Background Color:** You can change the background color of the ribbon.
 ## **Conclusion**
 If a cell or column has a ribbon or badge, it shows the item is on sale or is an exclusive product. The ribbon element in Ninja Tables drag and drop mode helps you create visually appealing pricing and product tables.

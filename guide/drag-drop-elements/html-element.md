@@ -10,7 +10,9 @@ Ninja Tables offers an HTML element to use in table cells. We can add our own HT
 Let’s add an HTML element to our Ninja Tables!
 ## **Properties of HTML Element**
 **Custom HTML Options: **Add your own custom HTML code along with HTML tags. In the example or by default the below HTML code is used:
-![HTML element in table](https://ninjatables.com/wp-content/uploads/2023/08/HTML-element-in-table-1024x324.png)
+
+![HTML element in table](/images/drag-drop-elements/html-element/1.-HTML-element-in-table.webp)
+
 ***<span style='display: block; text-align: center; line-height: 1.1'>custom html</span>***
 From the editor box, you can change the cell text, alignment, line height, etc.
 ## **Conclusion**

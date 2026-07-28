@@ -10,22 +10,32 @@ This tutorial will explain the most extraordinary feature, **Drag and Drop Table
 So let’s get started and create our first Drag & Drop table visually with Ninja Tables.
 When we go to the Ninja Tables dashboard, we will be asked to either **Create Your First Table** or **Import Table**.
 We will select the **Create Your First Table** button.
-![Welcome to Ninja Tables UI](https://ninjatables.com/wp-content/uploads/2025/05/Welcome-to-Ninja-Tables-UI-1024x536.png)
+
+![Welcome to Ninja Tables UI](/images/drag-drop-tables/create-first-drag-drop/1.-Welcome-to-Ninja-Tables-UI.webp)
+
 If you already have created tables earlier, then you will see a similar screen below and click on the **+ Create New Table** button.
-![All Tables List UI](https://ninjatables.com/wp-content/uploads/2025/05/All-Tables-List-UI-1024x536.webp)
+
+![All Tables List UI](/images/drag-drop-tables/create-first-drag-drop/2.-All-Tables-List-UI.webp)
+
 Once you click the "Add Table" button, you will see a popup dialogue with multiple table creation options.
 ## Create Drag and Drop table
 From the menu on the side, we'll pick **Drag & Drop Table**.
-![New UI drag and drop table](https://ninjatables.com/wp-content/uploads/2025/06/New-UI-drag-and-drop-table-1024x742.webp)
+
+![New UI drag and drop table](/images/drag-drop-tables/create-first-drag-drop/3.-New-UI-drag-and-drop-table.webp)
+
 You can name the table and select the number of rows and columns from here.
 Hit **Create** when you're done selecting. Or you can choose to **import** a table (using a URL or a CSV/JSON file).
 We've created a table with 3 rows and 3 columns. After that, the live table interface looks like this:
-![Add row columns](https://ninjatables.com/wp-content/uploads/2023/08/Add-row-columns-1024x559.png)
+
+![Add row columns](/images/drag-drop-tables/create-first-drag-drop/4.-Add-row-columns.webp)
+
 The left section on the menu, grouped by **General** & **Advanced**, contains table cell elements that you can drag and drop on the table.
 Four cell elements in the Advanced section are available in the Pro version only.
 The General elements include **[Text](https://ninjatables.com/docs/text-element/)**, **[Button](https://ninjatables.com/docs/button-element/)**, **[Icon](https://ninjatables.com/docs/icon-element/), [Rating](https://ninjatables.com/docs/star-rating-element-in-ninja-tables-drag-and-drop/), [List](https://ninjatables.com/docs/list-element/), [HTML](https://ninjatables.com/docs/html/), [Shortcode](https://ninjatables.com/docs/shortcode-element/), **and** [Image](https://ninjatables.com/docs/image/)**.
 The Advanced or Pro version includes **[Styled List](https://ninjatables.com/docs/styled-list/), [Ribbon](https://ninjatables.com/docs/ribbon-element/), [Progress](https://ninjatables.com/docs/progress/), **and** [Text Icon](https://ninjatables.com/docs/text-icon-pro/) **as below screenshot.
-![Advanced table elements](https://ninjatables.com/wp-content/uploads/2023/08/Advanced-table-elements-1024x425.png)
+
+![Advanced table elements](/images/drag-drop-tables/create-first-drag-drop/5.-Advanced-table-elements.webp)
+
 The buttons at the top of the table are **Manage Cells** and **Background** features to operate on the cells, row/column add/delete/duplicate, and background colors.
 Above these buttons, you'll notice an auto-generated shortcode, a **Preview** button, and a blue **Save Table** button.
 When a table is done, hit the **Save Table** button and paste the shortcode anywhere on your website.
@@ -37,14 +47,20 @@ There are 4 different table templates-
 - Employee tables
 - Schedule tables
 ### Ninja Tables free templates
-![Table Templates](https://ninjatables.com/wp-content/uploads/2022/10/Screenshot_7-1024x468.png)
+
+![Table Templates](/images/drag-drop-tables/create-first-drag-drop/6.-Screenshot-7.webp)
+
 Pick any table template and edit them to fit your purpose.
 Now we will be adding a Text element to the table by dragging on the Text Element and dropping it onto the table.
-![Drag cell element and drop on table](https://ninjatables.com/wp-content/uploads/2023/08/Drag-cell-element-1024x453.png)
+
+![Drag cell element and drop on table](/images/drag-drop-tables/create-first-drag-drop/7.-Drag-cell-element.webp)
+
 Now once an element is added to the table, clicking on it will reveal the customization options for the element.
 More on the customization per element is described separately in documentation later on.
 When you click on the dropped cell element, you can customize it however you need.
-![Customize table cell element](https://ninjatables.com/wp-content/uploads/2023/08/Customize-table-cell-element-1024x583.png)
+
+![Customize table cell element](/images/drag-drop-tables/create-first-drag-drop/8.-Customize-table-cell-element.webp)
+
 - Add text
 - Font color
 - Font size

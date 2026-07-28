@@ -26,7 +26,9 @@ Let’s add a Button element to our Ninja Tables!
 | **Icon** | Enable Icon | Toggle On or Off |
 | **Hover** | Button Hover | Toggle On or Off |
 ### **General**
-![Button element in drag and drop](https://ninjatables.com/wp-content/uploads/2023/08/Button-element-in-drag-and-drop-1-1024x598.png)
+
+![Button element in drag and drop](/images/drag-drop-elements/button-element/1.-Button-element-in-drag-and-drop-1.webp)
+
 - **Button Text Editor: **You can either click on the button element or edit the text in this Editor Box.
 - **Background Color:** You can change the color of the Hover Background. By default, it is set to Blue.
 - **Border Color:** You can change the color of the Button. By default, it is set to Black.
@@ -36,12 +38,16 @@ Let’s add a Button element to our Ninja Tables!
 - **URL:** You can edit the link URL for the Button here.
 - **Open in another tab:** You can toggle On or Off the Link behavior to open the link in the same window or in a new window.
 ### **Text**
-![Table button text](https://ninjatables.com/wp-content/uploads/2023/08/ninja_tables_Button_Text-1-1024x356.png)
+
+![Table button text](/images/drag-drop-elements/button-element/2.-ninja-tables-Button-Text-1.webp)
+
 - **Font Color**: You can change the color of the text. By default, it is set to Black.
 - **Font Size**: You can change the size of the text. By default, it is set to 15.
 - **Font Style**: You can change the Font Style orientations. Available options are Bold, Italic, and Underline.
 ### **Icon**
-![Button with icon](https://ninjatables.com/wp-content/uploads/2023/08/Button-with-icon-1024x546.png)
+
+![Button with icon](/images/drag-drop-elements/button-element/3.-Button-with-icon.webp)
+
 Enable the icon** **option for more customization like below.
 - **Icon Color:** You can change the color of the Icon. By default, it is set to Black.
 - **Icon Size:** You can change the size of the Icon. By default, it is set to 15.
@@ -50,7 +56,9 @@ Enable the icon** **option for more customization like below.
 - **Search Icon Library:** There are plenty of Icons to choose from in the library.
 - **Icon Position:** You can position the icon left or right to the text. By default, it is set to left.
 ### **Hover**
-![Button hover](https://ninjatables.com/wp-content/uploads/2023/08/Button-hover-1024x530.png)
+
+![Button hover](/images/drag-drop-elements/button-element/4.-Button-hover.webp)
+
 Turn the “Button Hover” option on to get more customizing features like below-
 - **Background Color:** You can change the color of the Hover Background. By default, it is set to Blue.
 - **Text Color:** You can change the color of the text of the Button. By default, it is set to Black.

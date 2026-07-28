@@ -23,6 +23,7 @@ change) to catch broken links and parser errors.
 ├── CLAUDE.md                    ← this file
 ├── package.json                 ← devDeps: vitepress, vue
 ├── public/                      ← site-wide assets served at root: logo.svg, favicon.png
+│   └── images/<category>/<slug>/<file>.webp  ← all doc screenshots (see Images below)
 ├── .vitepress/
 │   ├── config.mts               ← site config: title, cleanUrls, nav, sidebar (SINGLE source of truth)
 │   └── theme/
@@ -31,8 +32,7 @@ change) to catch broken links and parser errors.
 ├── ninja-tables-resource/       ← brand assets (Logo/, Icon/) + plugin source ZIPs (free + pro),
 │                                    the readme.txt inside each is the feature/changelog source of truth
 └── guide/
-    ├── public/images/<category>/<slug>/<file>.ext   ← local screenshot mirror (see Images below)
-    └── <category>/<slug>.md                          ← every doc lives directly in a category folder (flat, no sub-folders)
+    └── <category>/<slug>.md     ← every doc lives directly in a category folder (flat, no sub-folders)
 ```
 
 ### Category folders — flat, 2-level (18 folders)
@@ -46,7 +46,7 @@ page is `guide/<category>/<slug>.md`, one level deep. The 18 categories:
 `wordpress-integration` · `advanced-features` · `table-formatting` · `ninja-charts` ·
 `changelog`
 
-(`guide/public/` is assets, not a category.)
+(`public/images/` is assets, not a category.)
 
 ## URL convention — different from a rewrite-flattened site
 
@@ -58,9 +58,9 @@ flattened away via rewrites). All internal cross-links must use this full absolu
 - ❌ `[Link Text](/guide/<category>/<slug>.md)` (no `.md`)
 - ❌ `[Link Text](./slug)` or `[Link Text](../category/slug)` (no relative links)
 
-As of this writing, no page actually contains an internal cross-link yet (every existing image is
-an external URL and no guide page links to another guide page) — the rule above is the
-convention to follow going forward, not a pattern to reverse-engineer from existing pages.
+As of this writing, no page actually contains an internal cross-link yet (no guide page links to
+another guide page) — the rule above is the convention to follow going forward, not a pattern to
+reverse-engineer from existing pages.
 
 ## Sidebar — mandatory step when adding/renaming docs
 
@@ -91,13 +91,27 @@ sidebar coverage should check presence, not exact 1:1 count parity with `nav` in
 
 ## Images
 
-Two patterns currently coexist — check which a specific page actually uses before assuming:
-- **Historical/actual pattern** (used by every existing page): external hosted URLs,
-  `https://ninjatables.com/wp-content/uploads/YYYY/MM/slug-WxH.ext`.
-- **Local mirror** (recommended for new work): `guide/public/images/<category>/<slug>/<file>.ext`,
-  referenced as `/guide/public/images/<category>/<slug>/<file>.ext`. This folder tree already
-  exists per-category but is currently unreferenced by any page — it's a parallel, unused mirror,
-  not yet the live convention.
+All doc screenshots are local `.webp` files under `public/images/` — the only convention now, no
+external `ninjatables.com` URLs remain (except 3 pre-existing dead links in
+`data-sources/fluent-forms-integration.md` where the source images 404 upstream; leave those be
+until replacement screenshots are available).
+
+- **Location on disk**: `public/images/<category>/<short-slug>/<n>.-<Short-Label>.webp` — `public/`
+  is VitePress's real static-asset root (a top-level `public/` folder is what actually gets copied
+  to `dist/` and served; a `public/` folder nested under `guide/` is **not** served — don't
+  recreate that mistake).
+- **Reference in markdown**: `![Alt Text](/images/<category>/<short-slug>/<n>.-<Short-Label>.webp)`
+  — always the absolute `/images/...` form, never `/guide/public/images/...`.
+- **`<short-slug>`**: a compressed version of the page's own slug (stopwords like `how`/`to`/`with`
+  stripped, capped around 25–28 chars) — NOT necessarily identical to the `.md` filename's slug.
+  Check the existing folder under `public/images/<category>/` for a page before inventing a new
+  short-slug, so it stays stable across edits.
+- **`<n>.-<Short-Label>`**: 1-based, in the order the image appears on the page; `<Short-Label>` is
+  a short Title-Case-hyphenated description derived from the original filename (dimension suffixes
+  like `-1024x536` and `-scaled` stripped). Example: `/images/column-settings/conditional-formatting/1.-New-Ui-conditional-formatting-tab.webp`.
+- **New screenshots**: convert to `.webp` before adding (`cwebp -q 82 in.png -o out.webp`; use
+  `gif2webp` for animated GIFs), place under the matching `<category>/<short-slug>/` folder
+  (create one if the page doesn't have one yet), and continue the existing numbering.
 
 ## Markdown writing style
 
@@ -139,8 +153,9 @@ each chunk's `caveat` field, never silently resolved.
 
 ## Hard constraints — never do these
 
-- Never create a `.md` directly under `guide/` (excluding `guide/public`) — it must be inside a
-  category subfolder.
+- Never create a `.md` directly under `guide/` — it must be inside a category subfolder.
+- Never add a `public/` folder anywhere other than the repo root — VitePress only serves the
+  top-level `public/`, a nested one (e.g. `guide/public/`) silently never ships.
 - Never add/rename a doc without updating the sidebar in `.vitepress/config.mts`.
 - Never use relative links (`./slug`, `../slug`) or a link with a `.md` suffix.
 - Never commit `node_modules/`, `.vitepress/dist/`, or `.vitepress/cache/` (all gitignored).

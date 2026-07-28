@@ -22,17 +22,23 @@ Let’s add a list element in table.
 | | List Icon (Unordered) | Circle, Square, Disc, and None |
 | | List Icon (Ordered) | Upper-Roman, Lower-Roman, Upper-Alpha, Lower-Alpha, and Decimal |
 ### **General**
-![List element general options](https://ninjatables.com/wp-content/uploads/2023/08/List-element-general-options-1024x443.png)
+
+![List element general options](/images/drag-drop-elements/list-element/1.-List-element-general-options.webp)
+
 - **Item Spacing Vertically: **Space between lists vertically. By default, it is set to 20.
 - **Space Between Icon and Text: **The space between Icon and the List Text. By default, it is set to 0.
 - **Alignment: **You can also position the Lists on either the cell's Left, center, or right side.
 ### **Text**
-![list element custom text](https://ninjatables.com/wp-content/uploads/2023/08/list-element-custom-text-1024x486.png)
+
+![list element custom text](/images/drag-drop-elements/list-element/2.-list-element-custom-text.webp)
+
 - **Font Color**: You can change the color of the text. By default, it is set to Black.
 - **Font Size**: You can change the size of the text. By default, it is set to 15.
 - **Font Style: **You can change the Font Style orientations. Available options are **Bold**, *Italic*, and Underline.
 ### **List** (Unordered & Ordered List)
-![ordered list element](https://ninjatables.com/wp-content/uploads/2023/08/ordered-list-element-1024x601.png)
+
+![ordered list element](/images/drag-drop-elements/list-element/3.-ordered-list-element.webp)
+
 - **List Type:** You can pick from 2 list types- Unordered List and Ordered List.
 - **List Icon** **(Unordered)**: Change the style of the icons of the lists to Circle, Square, Disc, and None.
 - **List Icon** **(Ordered)**: Upper-Roman, Lower-Roman, Upper-Alpha, Lower-Alpha, and Decimal.

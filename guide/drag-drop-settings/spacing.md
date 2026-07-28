@@ -9,11 +9,12 @@ This option will appear with every cell element. It's used to adjust spacing of 
 
 **Table** **Margin**
 
-![Table margin](https://ninjatables.com/wp-content/uploads/2023/08/Table-margin.png)
+![Table margin](/images/drag-drop-settings/spacing/1.-Table-margin.webp)
 
 **Table** **Padding**
 
-![Table padding](https://ninjatables.com/wp-content/uploads/2023/08/Table-padding.png)
+![Table padding](/images/drag-drop-settings/spacing/2.-Table-padding.webp)
+
 Adjust the spaces outside the element using margin or padding.
 In the Locked state, you can modify the margin properties for the Top, Right, Bottom, and Left together.
 To change individually, you will need to unlock the Margin Properties.

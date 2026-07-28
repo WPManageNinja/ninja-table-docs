@@ -22,13 +22,18 @@ Follow these steps to add multiple products to the cart simultaneously:
 - Select all the products you wish to purchase by checking the box next to each item.
 - From the dropdown menu that appears at the top-left of the table, select **Add to Cart**.
 - Click the **Apply** button. All selected products will be instantly added to the WooCommerce shopping cart.
-![NinjaTable frontend compare_bulk](https://ninjatables.com/wp-content/uploads/2025/08/NinjaTable-frontend-compare_bulk-1-scaled.webp)
+
+![NinjaTable frontend compare_bulk](/images/table-management/woocommerce-product/1.-NinjaTable-frontend-compare-bulk-1.webp)
+
 #### **To Compare Products:**
 This allows customers to see a direct comparison between products.
 - Select two or more products you want to compare by checking the box next to each one.
 - From the dropdown menu, select **Compare Products**.
 - Click the **Apply** button.
-![NinjaTable frontend compare_bulk](https://ninjatables.com/wp-content/uploads/2025/08/NinjaTable-frontend-compare_bulk-2-scaled.webp)
+
+![NinjaTable frontend compare_bulk](/images/table-management/woocommerce-product/2.-NinjaTable-frontend-compare-bulk-2.webp)
+
 - A pop-up window will appear, displaying a side-by-side comparison of the selected products' details.
 - Click the **Close** button to exit the comparison view and return to the product table.
-![NinjaTable frontend compare_bulk](https://ninjatables.com/wp-content/uploads/2025/08/NinjaTable-frontend-compare_bulk-3.webp)
+
+![NinjaTable frontend compare_bulk](/images/table-management/woocommerce-product/3.-NinjaTable-frontend-compare-bulk-3.webp)

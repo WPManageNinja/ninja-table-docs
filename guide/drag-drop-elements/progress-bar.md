@@ -7,7 +7,9 @@ description: "Progress Bar (Pro)"
 
 Progress Bar, also known as “Circle Rating,” is only available in the Ninja Tables Drag and Drop module as a pro element.
 It shows progress status, availability, reviews, and statistical values in linear and circular formats, which are far more attractive than regular styles.
-![Progress bar element](https://ninjatables.com/wp-content/uploads/2023/08/Progress-bar-element-1024x628.png)
+
+![Progress bar element](/images/drag-drop-elements/progress-bar/1.-Progress-bar-element.webp)
+
 You can add such a beautiful element by dragging it to your desired cell in Ninja Tables drag and drop.
 Let’s add the Progress Bar element to our table.
 ## **Properties of Progress Bar Element**

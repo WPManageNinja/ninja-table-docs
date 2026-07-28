@@ -10,18 +10,26 @@ Moreover, the data in Ninja Tables will automatically update if there are any ch
 ## Data from Google Sheets to WordPress Table
 How to display Google Sheets data entries in a WordPress table?
 We'll explain the process here, using the following dummy Google Sheet.
-![employee data in google sheets](https://ninjatables.com/wp-content/uploads/2023/09/employee-data-in-google-sheets.png)
+
+![employee data in google sheets](/images/data-sources/google-sheets-integration/1.-employee-data-in-google-sheets.webp)
+
 - We will import this data table to Ninja Tables. To do this, go to the **Ninja Tables dashboard **located in the sidebar. Then, go to the **Add Table **button from the top right corner of the dashboard.
 - After that, a pop-up box will be visible. Choose **Connect Google Sheets** from the sidebar.
-![](https://ninjatables.com/wp-content/uploads/2022/09/Google-Sheet-Integration-1-scaled.webp)
+
+![](/images/data-sources/google-sheets-integration/2.-Google-Sheet-Integration-1.webp)
+
 - Then add a name to the table. It could be your Google Sheets name or any other name you want.
 - In your Google Sheet, find the **File** option and then click **Publish to the Web** in order to get the **Data URL**.
-![publish google sheet to the web](https://ninjatables.com/wp-content/uploads/2023/09/publish-google-sheet-to-the-web-1024x1021.png)
+
+![publish google sheet to the web](/images/data-sources/google-sheets-integration/3.-publish-google-sheet-to-the-web.webp)
+
 - Choose your predefined sheet in the Section **Link**. In this example, we are using **Sheet 1**. Also, select "**Comma-Separated Values(CSV)**" from the Embed Section, as Google shares its data to the web as CSV.
 - Make sure that in the **Published content and settings** option, the **automatically republish when changes are made** is **checked**.
 - Then copy the link, go back to the dashboard of your Ninja Tables, and paste it into the** Data Source URL**. Once you’re done, proceed to the **Next** button.
 - Choose and save the entry fields you wish to add to. This is how all your data will be imported here automatically.
-![Select Entry Fields](https://ninjatables.com/wp-content/uploads/2022/09/Google-Sheet-Integration-2-scaled.webp)
+
+![Select Entry Fields](/images/data-sources/google-sheets-integration/4.-Google-Sheet-Integration-2.webp)
+
 - Now, go to your Google Sheet again, add some other data here, and check if the modified data is automatically applied to your Ninja Tables.
 - However, in this case, after you're finished adding the details, you have to wait 5 minutes. This is because Google updates the table data cache every 5 minutes. Let's push forward through the waiting period.
 - Go back to your Ninja Tables after 5 minutes, and reload the page. Then at the bottom of the table are the data rows you added 5 minutes ago.

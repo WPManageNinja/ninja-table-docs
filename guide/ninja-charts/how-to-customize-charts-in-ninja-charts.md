@@ -12,7 +12,9 @@ We have this simple guide to show you how to customize Ninja Charts and have fun
 Here are the chart customizing options in the **Formatting & Preview** step. You can customize Google Charts and Chart Js both following this tutorial.
 ### CHART
 In this tab, 8 customizing options will appear with features like chart coloring, size, fonts, etc.
-![](https://ninjatables.com/wp-content/uploads/2023/10/Chart--scaled.webp)
+
+![](/images/ninja-charts/customize-charts-ninja/1.-Chart.webp)
+
 - **Responsive chart:** Make a responsive online chart by toggling it on.
 - **Chart width:** Customize chart width.
 - **Chart height:** Customize chart height.
@@ -22,10 +24,14 @@ In this tab, 8 customizing options will appear with features like chart coloring
 - **Border radius:** Custom chart border radius.
 ### SERIES
 You can redefine the series labels and colors from here.
-![](https://ninjatables.com/wp-content/uploads/2023/10/Series-scaled.webp)
+
+![](/images/ninja-charts/customize-charts-ninja/2.-Series.webp)
+
 ### AXES
 Show grid, control chart stack, or labels.
-![](https://ninjatables.com/wp-content/uploads/2023/10/Axies-scaled.webp)
+
+![](/images/ninja-charts/customize-charts-ninja/3.-Axies.webp)
+
 Grid true and Grid false vary in different chart types. Here's a Horizontal bar chart with Grid true where you can customize what you need. Grid false appears for charts like Pie charts.
 - **Show grid:** Turn it off if you want grid lines in the chart background.
 - **Show stacked chart:** Turn it off if you want the chart data to stack (This won't appear for charts like Pie Chart).
@@ -35,7 +41,9 @@ Grid true and Grid false vary in different chart types. Here's a Horizontal bar 
 - **Vertical axis max:** Custom maximum value of the vertical axis.
 ### TITLE
 Control chart title visibility, appearance, and position.
-![](https://ninjatables.com/wp-content/uploads/2023/10/Title-scaled.webp)
+
+![](/images/ninja-charts/customize-charts-ninja/4.-Title.webp)
+
 - **Show title:** Toggle on if you want the chart title to show up.
 - **Title position:** Change chart title position- Top, Bottom, Left, and Right.
 - **Title font style:** Change chart title font- Normal, Italic, Bold.
@@ -43,7 +51,9 @@ Control chart title visibility, appearance, and position.
 - **Font size:** Change font size.
 ### TOOLTIP
 Control chart tooltip appearance, visibility, and width.
-![](https://ninjatables.com/wp-content/uploads/2023/10/Tooltip-scaled.webp)
+
+![](/images/ninja-charts/customize-charts-ninja/5.-Tooltip.webp)
+
 - **Show tooltip:** Turn it on for the tooltip to appear.
 - **Background color:** Change the tooltip background color.
 - **Border color:** Change the tooltip border color.
@@ -53,7 +63,9 @@ Control chart tooltip appearance, visibility, and width.
 - **Shared tooltip:** Turn it on to share the tooltip area with the entire plot.
 ### LEGEND
 Customize legend position and appearance.
-![](https://ninjatables.com/wp-content/uploads/2023/10/Legenda-scaled.webp)
+
+![](/images/ninja-charts/customize-charts-ninja/6.-Legenda.webp)
+
 - **Show legend:** Enable or disable legend.
 - **Legend position:** Position of legend- Top, Bottom, Left, Right.
 - **Font color:** Change the legend font color.
@@ -63,8 +75,12 @@ Customize chart padding when you embed it on your website.
 - Padding right
 - Padding top
 - Padding bottom
-![](https://ninjatables.com/wp-content/uploads/2023/10/Layout-scaled.webp)
+
+![](/images/ninja-charts/customize-charts-ninja/7.-Layout.webp)
+
 ### CHART ANIMATIONS
 Customize chart render animation and select the animation ease type used to render the chart provided by Chart JS.
-![](https://ninjatables.com/wp-content/uploads/2023/10/animations-scaled.webp)
+
+![](/images/ninja-charts/customize-charts-ninja/8.-animations.webp)
+
 Create customizable charts and graphs easily using Ninja Charts.

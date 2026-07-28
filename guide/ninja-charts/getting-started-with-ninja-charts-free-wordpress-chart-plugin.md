@@ -11,7 +11,9 @@ Just by following a few simple steps, you can generate amazing charts in differe
 And to add to its awesomeness, Ninja Charts integrates with Ninja Tables!
 ## Why Ninja Charts?
 Ninja Charts is the most lightweight WordPress chart plugin that offers 10+ different styles of charts and 2 renderers- **Chart JS** and **Google Charts**. You can customize the charts however you want!
-![](https://ninjatables.com/wp-content/uploads/2023/10/Charts-‹-North-—-WordPress-06-03-2025_10_50_AM-scaled.webp)
+
+![](/images/ninja-charts/getting-started-ninja-charts/1.-Charts-North-WordPress-06-03-2025-10-50.webp)
+
 Ninja Charts includes:
 - Line Chart
 - Pie Chart
@@ -48,5 +50,7 @@ It’s a simple 5-step process-
 - **Formatting & Preview:** Customize the chart color, text, animation, etc.
 - **Save & Get Shortcode:** Copy the auto-generated shortcode and paste it anywhere.
 Here are the charts created in the Ninja Charts dashboard.
-![](https://ninjatables.com/wp-content/uploads/2023/10/Charts-‹-North-—-WordPress-06-03-2025_11_33_AM-1-scaled.webp)
+
+![](/images/ninja-charts/getting-started-ninja-charts/2.-Charts-North-WordPress-06-03-2025-11-33.webp)
+
 If you’re looking for tools to display data in WordPress charts, Ninja Charts is for you.

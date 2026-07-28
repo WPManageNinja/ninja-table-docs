@@ -11,7 +11,9 @@ You can decide the data type right from the start when you add a column to the t
 ## Button and Linked Buttons in Ninja Tables
 This allows you to add a button in a column, links can also be added if required.
 - Go to the **Data Type** option and select the Button/Link type of the column.
-![Actionable button in Ninja Tables](https://ninjatables.com/wp-content/uploads/2023/09/Actionable-button-in-Ninja-Tables-1024x672.png)
+
+![Actionable button in Ninja Tables](/images/field-types/actionable-button-link/1.-Actionable-button-in-Ninja-Tables.webp)
+
 ### **Button Text**
 Text buttons are one of the key components for a good UI of a table. Texts on the button elaborate on the button's function. Button text is HTML supported.
 - You can also choose **Open Link in a new window**, where the button URL will open in a new window.
@@ -25,5 +27,7 @@ There are three types of rel attributes available, and you can select any of the
 - **nofollow:** The nofollow tag tells search engines to ignore that link. Because nofollow links do not pass PageRank they likely don't impact search engine rankings.
 - **noreferrer:** The rel=”noreferrer” tag is a special HTML attribute that can be added to a link tag (). It prevents passing the referrer information to the target website by removing the referral info from the HTTP header.
 Here's how the table looks with custom actionable buttons.
-![buttons in columns](https://ninjatables.com/wp-content/uploads/2023/09/buttons-in-columns-1024x384.png)
+
+![buttons in columns](/images/field-types/actionable-button-link/2.-buttons-in-columns.webp)
+
 Add an actionable button or linked buttons to make your data table more dynamic and engagable.

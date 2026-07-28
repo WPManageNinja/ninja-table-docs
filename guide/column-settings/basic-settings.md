@@ -11,7 +11,9 @@ Let's have a look at this simple guide to learn how to create a column with thes
 - Go to a table created by **Ninja Tables** first and then hover over any column to find the settings icon.
 Or,
 - You can move to the **Table Configuration** tab and click the edit icon. Select Basic Settings.
-![New UI table column](https://ninjatables.com/wp-content/uploads/2025/05/New-UI-table-column-1024x461.webp)
+
+![New UI table column](/images/column-settings/basic-settings/1.-New-UI-table-column.webp)
+
 - Here you will notice various basic options like Column Name, Column Key, Data Type, and Responsive Breakpoints.
 ### Column Name
 To set the **header title** for the specific column, use this option to provide the name. This field must be filled out. One more important thing is that the Column Name is **HTML-supported**.
@@ -21,7 +23,9 @@ The column key is for data mapping, exporting, and importing table data. The col
 Various Data Types are available to construct columns according to your needs. For example, text area, buttons, lightbox, HTML, etc. To learn more, go to this [documentation](https://ninjatables.com/docs-category/column-data-types/), and you will know better.
 ### **Responsive Breakpoint**s
 Ninja Tables gives you the option to choose among 6 distinct breakpoints.
-![New Ui responsive breakpoints](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-responsive-breakpoints-1024x675.webp)
+
+![New Ui responsive breakpoints](/images/column-settings/basic-settings/2.-New-Ui-responsive-breakpoints.webp)
+
 - Always show in all devices
 - Hidden on desktop
 - Initial hidden mobile

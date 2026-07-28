@@ -48,7 +48,7 @@ https://gist.github.com/techjewel/55703124534f1aba9b70cf0f605a793e
 
 Suppose you wish to primarily filter the date or date range if you have a table with a date column. This option is available in **NinjaTables version 3.5.8**. Use the date range filter with shortcode after upgrading your plugin to the latest version.
 
-![Advanced shortcode](https://ninjatables.com/wp-content/uploads/2023/10/Advanced-shortcode-1024x307.png)
+![Advanced shortcode](/images/advanced-features/advanced-shortcode/1.-Advanced-shortcode.webp)
 
 **To filter by date range:**
 
@@ -122,6 +122,6 @@ This shortcode will print out data from that particular cell data.
 
 For the Row Index Number you have to click on this icon:
 
-![advanced shortcode in table](https://ninjatables.com/wp-content/uploads/2023/01/advanced-shortcode-2.webp)
+![advanced shortcode in table](/images/advanced-features/advanced-shortcode/2.-advanced-shortcode-2.webp)
 
 Above here for external data source table, the RowID would be the serial number of the table row

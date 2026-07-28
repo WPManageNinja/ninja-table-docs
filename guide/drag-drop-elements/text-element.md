@@ -9,7 +9,9 @@ A table is used to visualize data, and texts carry the primary data of any table
 After knowing how to create the [first drag-and-drop table](https://ninjatables.com/docs/how-to-create-your-first-drag-and-drop-table-with-ninja-tables/) you should be clear about all the elements of this module. In this guide, we will explore the **Text** element, a free element available in the builder.
 As you engage with the Editor Box, you'll find seamless text editing access at your fingertips.
 Let’s add a Text element to our Ninja Tables!
-![Drag cell element and drop on table](https://ninjatables.com/wp-content/uploads/2023/08/Drag-cell-element-1024x453.png)
+
+![Drag cell element and drop on table](/images/drag-drop-elements/text-element/1.-Drag-cell-element.webp)
+
 All you need to do is drag the element from the left menu and drop it on the table.
 ## **Properties of Text Element**s
 
@@ -19,7 +21,9 @@ All you need to do is drag the element from the left menu and drop it on the tab
 | | Font Size | Numeric Value |
 | | Alignment | Left, Center, Right |
 | | Font Weight | Bold, Italic, Underline |
-![Customize table cell element](https://ninjatables.com/wp-content/uploads/2023/08/Customize-table-cell-element-1024x583.png)
+
+![Customize table cell element](/images/drag-drop-elements/text-element/2.-Customize-table-cell-element.webp)
+
 ### Customize Text Elements in Tables
 - **Editor Box:** You can edit the text of the Text Element. (Or, type in the cell)
 - **Font Color**: You can change the color of the text. By default, it is set to Black.

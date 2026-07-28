@@ -10,7 +10,9 @@ You may perform data calculation in Ninja Tables just by following a few easy st
 ## Calculate Tabular Data in Rows/Columns
 Follow this simple guide to discover how to calculate data in table rows and columns.
 Suppose we have a table that contains 3 numeric data columns- Number One, Number Two, and Number Three.
-![](https://ninjatables.com/wp-content/uploads/2022/09/01-5-scaled.webp)
+
+![](/images/table-management/row-column-data-calculation/1.-01-5.webp)
+
 ### Row Calculation
 We have another column named **Result **that will display the calculated results of all the numbers in a row.
 - If you want to calculate the sum of a row containing numeric data, navigate to the **Table Configuration **->> **Transform Value**.
@@ -19,15 +21,21 @@ We have another column named **Result **that will display the calculated results
 To learn more about this feature, read this [documentation](https://ninjatables.com/docs/transform-value/).
 - So the final code would look like this: `=SUM( &#123;&#123;row.numberone&#125;&#125; + &#123;&#123;row.numbertwo&#125;&#125; + &#123;&#123;row.numberthree&#125;&#125;)`.
 - Then click on the **Update **button to save the code. In the preview mode, the **Result **column of the table will now display the sum of the rows. Like the example given below -
-![Result](https://ninjatables.com/wp-content/uploads/2023/01/row-column-calculation-3.png)
+
+![Result](/images/table-management/row-column-data-calculation/2.-row-column-calculation-3.webp)
+
 ### Column Calculation
 Calculating column data is different.
 - First, go to this GitHub [link](https://gist.github.com/reachkamrul/11e6e60d4aa113abe81586367cc27b77) to get the JS code. Copy the code.
 - Now go to the **Custom CSS/JS **tab & click on the **Custom Javascript **button. Paste the code that you copied and hit the save button.
 - If you wish to calculate the total sum of all the numbers in the 1st column, you need to give the **Column key **of that specific column, on the first line of the code, which is `var myClasses=""`
 - If you want to show the results of one single column, you need to put the key to that column only. If you want to apply calculations to multiple columns, put their columns key by using commas in between each column key.
-![Example: using three column](https://ninjatables.com/wp-content/uploads/2022/09/03-4-scaled.webp)
+
+![Example: using three column](/images/table-management/row-column-data-calculation/3.-03-4.webp)
+
 - After that, click on the **Save Custom Javascript **button to save the code.
 - When you click on the preview mode, all three columns will display the sum at the bottom. See the example given below.
-![Preview](https://ninjatables.com/wp-content/uploads/2023/01/row-column-calculation-6.png)
+
+![Preview](/images/table-management/row-column-data-calculation/4.-row-column-calculation-6.webp)
+
 This is how we can **calculate rows and columns** in Ninja Tables by following some easy steps!

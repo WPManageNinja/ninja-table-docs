@@ -12,7 +12,9 @@ To manage colors for the header, rows, columns, and specific cells, first go to 
 Again, when we are done coloring cells, headers, rows, or columns, we can exit from the Background Mode by clicking on the Close button from the leftmost side of the Table Editor.
 Click “Save Table” to save the changes.
 ### General Color Options
-![Table background color](https://ninjatables.com/wp-content/uploads/2023/08/Table-background-color-1024x467.png)
+
+![Table background color](/images/drag-drop-settings/table-background-color/1.-Table-background-color.webp)
+
 This is where the basic table coloring happens. You'll see 3 options here-
 - Header Background
 - Even Row Background
@@ -25,13 +27,17 @@ Select a color from the “Even Row Background” option and change it to whatev
 #### **Change Odd Row Background Color**
 Likewise, pick a color for the odd rows from the “Odd Row Background” option.
 Here's our table with a deep magenta header, a light pink even row, and white odd rows.
-![Table row color odd and even](https://ninjatables.com/wp-content/uploads/2023/08/Table-row-color-odd-and-even-1024x481.png)
+
+![Table row color odd and even](/images/drag-drop-settings/table-background-color/2.-Table-row-color-odd-and-even.webp)
+
 ### Selected Color Options
 As soon as you select a cell, 3 more options will appear.
 - Selected Cell Row Background
 - Selected Cell Column Background
 - Selected Cell Background
-![Cell background color](https://ninjatables.com/wp-content/uploads/2023/08/Cell-background-color-1024x496.png)
+
+![Cell background color](/images/drag-drop-settings/table-background-color/3.-Cell-background-color.webp)
+
 #### **Change Selected Cell Row Background Color**
 Click on a cell to get the “Selected Color Options” on the left.
 This option will let you color the entire row the selected cell is in.
@@ -40,7 +46,9 @@ Following the same process, click on a cell to color the entire column the selec
 #### **Change Selected Cell Background Color**
 And finally, if you only want to color a specific cell, click the cell and then click “Selected Cell Background.” This does not change the color of the row/column you've previously colored.
 Here's an example-
-![selected cell colors in table](https://ninjatables.com/wp-content/uploads/2023/08/selected-cell-in-tables-1024x509.png)
+
+![selected cell colors in table](/images/drag-drop-settings/table-background-color/4.-selected-cell-in-tables.webp)
+
 ## Conclusion
 You can quick-edit the table from the "Background" button at the top instead of moving to the "Settings" tab and looking for the Background editing option.
 Table background color customizing is easier than ever when it's Ninja Tables!

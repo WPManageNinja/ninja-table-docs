@@ -14,12 +14,16 @@ To use Ninja Tables, you’ll need the following:
 Installing Ninja Tables is similar to any other WordPress plugin.
 - Go to the WordPress Admin **Dashboard** → **Plugins** → **Add New**.
 - Search for **Ninja Tables**, click on the **Install Now** button, and then **Activate** it.
-![Install and activate Ninja Tables](https://ninjatables.com/wp-content/uploads/2023/02/Install-and-activate-Ninja-Tables-1-1024x374.png)
+
+![Install and activate Ninja Tables](/images/getting-started/install-activate-ninja/1.-Install-and-activate-Ninja-Tables-1.webp)
+
 ## Alternative Method
 - Another way is to download the .**zip** file by clicking on the Download button.
 - Navigate to your WordPress Admin Panel → **Plugins** → **Add New** → **Upload Plugin**.
 - Click on Choose File, upload the .zip file, and click on **Install Now**.
-![Install and activate Ninja Tables by uploading .zip](https://ninjatables.com/wp-content/uploads/2023/08/Install-and-activate-Ninja-Tables-by-uploading-.zip.png)
+
+![Install and activate Ninja Tables by uploading .zip](/images/getting-started/install-activate-ninja/2.-Install-and-activate-Ninja-Tables-by-upl.webp)
+
 ## Install and activate pro tutorial [Video]
 The section is for those who are more comfortable with video rather than text tutorials. Below is an in-depth video tutorial on how you can install and activate Ninja Tables.
 https://youtu.be/VTOq48oO4cY?si=t5rGVXca-11Yp7WL

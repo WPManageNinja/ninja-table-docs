@@ -17,7 +17,7 @@ From your WordPress **Dashboard**, click **Ninja Tables** in the left sidebar. T
 
 Click the blue **Create New Table** button in the top right of the screen. A popup appears with a menu of multiple table creation options.
 
-![New UI Table creation option](https://ninjatables.com/wp-content/uploads/2025/05/Table-creation-option-UI-1024x536.webp)
+![New UI Table creation option](/images/getting-started/onboarding-setup-guide/1.-Table-creation-option-UI.webp)
 
 ## Step 3: Choose Your Table Creation Method
 

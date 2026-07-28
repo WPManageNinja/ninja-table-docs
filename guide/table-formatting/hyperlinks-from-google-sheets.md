@@ -11,11 +11,19 @@ But if the hyperlink is erased after the table is imported, the table does not s
 ## HTML Data Type for Hyperlink from Google Sheets
 This short guide will demonstrate to you how to include hyperlinked data in your table when it's imported from Google Sheets.
 - For instance, we've imported a Google Sheet with three columns named **Title**, **Link Text, **and** Actual link**. This is a dummy table containing information about different mobile phone models.
-![Change Column Data Type for Hyperlinks](https://ninjatables.com/wp-content/uploads/2022/11/image-3.png)
+
+![Change Column Data Type for Hyperlinks](/images/table-formatting/hyperlinks-google-sheets/1.-image-3.webp)
+
 When you create a "Google Sheets data table" with this sheet, the column with links will initially remove the links and keep the texts.
-![Removed links from Google Sheets](https://ninjatables.com/wp-content/uploads/2022/11/Links-in-Google-Sheets-1024x409.png)
+
+![Removed links from Google Sheets](/images/table-formatting/hyperlinks-google-sheets/2.-Links-in-Google-Sheets.webp)
+
 - The next step is to add the* *link to the link text column. Simply go to table column configuration and set the data type to "**HTML Field**."
-![Change data type](https://ninjatables.com/wp-content/uploads/2022/10/HTML-Field.webp)
+
+![Change data type](/images/table-formatting/hyperlinks-google-sheets/3.-HTML-Field.webp)
+
 - Update the column settings and check the table preview.
-![Clickable links from Google Sheets](https://ninjatables.com/wp-content/uploads/2022/11/clickable-links-from-Google-Sheets-1024x329.png)
+
+![Clickable links from Google Sheets](/images/table-formatting/hyperlinks-google-sheets/4.-clickable-links-from-Google-Sheets.webp)
+
 Now the links from Google Sheets are clickable hyperlinks.

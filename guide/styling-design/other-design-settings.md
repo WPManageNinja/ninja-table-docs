@@ -15,7 +15,9 @@ The last feature among the three styling tabs is the **Other **option. This tab 
 - **Extra CSS Class for the Table**
 - **Sticky Header**
 - **Table** **Font** **Settings**
-![New Ui table design Other tab](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-table-design-Other-tab-383x1024.webp)
+
+![New Ui table design Other tab](/images/styling-design/other-design-settings/1.-New-Ui-table-design-Other-tab.webp)
+
 - The **Pagination Items Per Page** allows you to restrict the number of rows you want to view in the table. **Pagination Position** specifies the location or display of the pagination number. To know more, **[check](https://ninjatables.com/docs/pagination/)** here.
 - The **Search Bar Position** determines where the search bar will be placed; the search input can also be set to full width.
 - **Select Sorting Method** enables you to sort data in various ways. To know more about it, **[go](https://ninjatables.com/docs/sorting/)** here.

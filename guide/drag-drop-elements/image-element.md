@@ -9,7 +9,9 @@ Sometimes texts and numbers are not enough to express the information we want to
 Ninja Tables Drag and Drop has an image element for you to add media to the table.
 Just drag the element to insert image in table.
 Let’s add the image element in the drag and drop mode to show you how it works.
-![Image element in tables](https://ninjatables.com/wp-content/uploads/2023/08/Image-element-in-tables-1024x509.png)
+
+![Image element in tables](/images/drag-drop-elements/image-element/1.-Image-element-in-tables.webp)
+
 When you drag the element on the table, it will show a default image. Change it to whatever you want.
 ## **Properties of Image Element**
 
@@ -28,7 +30,9 @@ When you drag the element on the table, it will show a default image. Change it 
 - **Image Alternative Text:** The alt text of the HTML `<a>` tag or simply the Alternative text of the link of the image.
 - **Image Link:** The URL of the link of the image which you can edit within the provided field.
 Here's how a table looks with images:
-![Images in data table](https://ninjatables.com/wp-content/uploads/2023/08/Images-in-data-table-1024x594.png)
+
+![Images in data table](/images/drag-drop-elements/image-element/2.-Images-in-data-table.webp)
+
 ## **Conclusion**
 If you run an online product store, you need a table with product images. This is where Ninja Tables' "Image Element" comes in handy for you.
 Insert images in WordPress tables easily.

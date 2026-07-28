@@ -8,7 +8,9 @@ description: "How to Install Ninja Charts"
 You can install Ninja Charts on WordPress version 6.3.1 and PHP version 7.4 or higher. It’s easy to install and ready for chart creation right away.
 ## Installing and Activating Ninja Charts
 Ninja Charts can be installed the same way every other WordPress plugin is installed.
-![](https://ninjatables.com/wp-content/uploads/2023/10/Install-activate-ninja-chart-01-scaled.webp)
+
+![](/images/ninja-charts/install-ninja-charts/1.-Install-activate-ninja-chart-01.webp)
+
 Follow the steps given below:
 - Go to WordPress Admin Dashboard → Plugins → Add New
 - Type “Ninja Charts” in the search box, click on the install button and activate it.

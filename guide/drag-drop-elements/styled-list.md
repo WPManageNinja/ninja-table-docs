@@ -23,17 +23,23 @@ From the menu on the left side, you can see multiple customization options for t
 | | Choose Icon | Upload from Computer |
 | | Icon Library | Selection from Library |
 ### General Options
-![Styled list drag and drop](https://ninjatables.com/wp-content/uploads/2023/08/Styled-list-drag-and-drop-1024x550.png)
+
+![Styled list drag and drop](/images/drag-drop-elements/styled-list/1.-Styled-list-drag-and-drop.webp)
+
 - **Space Between Icon and Text:** You can add space or gap between the Icons and List Items. By default, It is set to 0.
 - **Alignment: **You can align the Styled List to the left, right, or center. By default, it is set to Center.
 ### Text Options
-![Styled List element](https://ninjatables.com/wp-content/uploads/2023/08/Styled-List-element-1024x560.png)
+
+![Styled List element](/images/drag-drop-elements/styled-list/2.-Styled-List-element.webp)
+
 - **Font Color**: You can change the color of the text. By default, it is set to Black.
 - **Font Size**: You can change the size of the text. By default, it is set to 15.
 - **Item Spacing**: You can change the space vertically between list items. By default, it is set to 19.
 - **Font Style**: You can change the Font Style orientations. Available options are **Bold**, *Italic*, and Underline.
 ### Icon Options
-![Stylied list icon](https://ninjatables.com/wp-content/uploads/2023/08/Stylied-list-icon-1024x516.png)
+
+![Stylied list icon](/images/drag-drop-elements/styled-list/3.-Stylied-list-icon.webp)
+
 - **Icon Color:** You can change the color of the Icon. By default, it is set to Black.
 - **Icon Size:** You can change the size of the Icon. By default, it is set to 15
 - **Choose Icon:** You can upload your own image as an Icon to the table by uploading it from your computer or media dashboard.

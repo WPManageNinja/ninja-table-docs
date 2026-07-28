@@ -10,11 +10,15 @@ Buttons (CSV / Print) is a Pro Feature!
 ## CSV/Print Button in Ninja Tables
 - Clicking the **Table** **Configuration** tab, you will find a new window appearing with the **Buttons (CSV / Print) **option on the sidebar.
 - Click on the ****Buttons (CSV / Print)****, there a new tab will open with a **CSV Export / Print Button Settings** **for Frontend** area.
-![New Ui button-csv](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-buttoncsv-1024x595.webp)
+
+![New Ui button-csv](/images/table-settings/csv-print-button/1.-New-Ui-buttoncsv.webp)
+
 Now, let's talk about the details of the Settings area.
 ### **CSV Export / Print Button Settings** for Frontend
 - To display the CSV Export button or print on the preview table, enable them.
-![New Ui csv:print button settings](https://ninjatables.com/wp-content/uploads/2025/05/New-Ui-csvprint-button-settings-1024x897.webp)
+
+![New Ui csv:print button settings](/images/table-settings/csv-print-button/2.-New-Ui-csvprint-button-settings.webp)
+
 - Some more options will show up after these button has been enabled.
 - **Button Label: **It displays the text you want to appear on the button label, where you can add any text that meets your needs.
 - **Button Background Color: **It reveals the button's background color.
@@ -33,6 +37,8 @@ You can adjust the position of your button to suit your requirements. Your butto
 ### **Buttons Alignment**
 Your buttons' alignment can be changed as needed. The button alignment has three options: Left, Center, and Right.
 When you are done with the configuration, don't forget to click on the **Update** **Settings** button. Let's see the Preview Table after you complete the settings.
-![table with print button](https://ninjatables.com/wp-content/uploads/2023/01/buttons-csv-print-6-1024x397.png)
+
+![table with print button](/images/table-settings/csv-print-button/3.-buttons-csv-print-6.webp)
+
 A CSV file will be downloaded when you click on the CSV button and several printing options will appear if you click the Print button.
 This is how you can quickly use and style your CSV and Print buttons to match your needs.
