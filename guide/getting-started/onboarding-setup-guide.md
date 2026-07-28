@@ -1,60 +1,73 @@
 ---
 title: "Onboarding & Setup Guide"
-description: "A step-by-step walkthrough of your first steps after installing Ninja Tables, from opening the dashboard to creating your first table."
+description: "A step-by-step walkthrough of your first steps after installing Ninja Tables, from the welcome screen to configuring your first table."
 ---
 
 # Onboarding & Setup Guide
 
-After successfully installing and activating Ninja Tables, this guide walks you through your first steps inside the plugin — from opening the dashboard to creating your very first table.
+Get started with Ninja Tables in just a few simple steps. This guide shows you how to create your first table, add data, customize its settings, and publish it on your website with ease.
 
 Let's walk through the setup, step by step.
 
-## Step 1: Open the Ninja Tables Dashboard
+## Step 1: The Welcome Screen
 
-From your WordPress **Dashboard**, click **Ninja Tables** in the left sidebar. This opens the **All Tables** screen, where every table you create will be listed.
+Right after activation, Ninja Tables greets you with a welcome screen. From here you can click **Create Your First Table** to start from scratch, or **Import Table** if you already have data to bring in. The **Ninja Tables Guide** links below give quick access to the **Documentation**, **Introduction**, **Templates**, and **Demo**.
 
-## Step 2: Click "Create New Table"
+![Ninja Tables welcome screen](/images/getting-started/onboarding-setup-guide/1.-Welcome-Screen.webp)
 
-Click the blue **Create New Table** button in the top right of the screen. A popup appears with a menu of multiple table creation options.
+You can always get back to this screen later — click **Ninja Tables** in the WordPress **Dashboard** sidebar to open the **All Tables** screen, where every table you create will be listed alongside **Tools and Settings** and **Help & Documentation**.
 
-![New UI Table creation option](/images/getting-started/onboarding-setup-guide/1.-Table-creation-option-UI.webp)
+## Step 2: Choose Your Table Creation Method
 
-## Step 3: Choose Your Table Creation Method
-
-The popup offers several dynamic table creation options, including:
+Clicking **Create Your First Table** opens the **How would you like to create your table?** popup. Pick a method from the left menu:
 
 - **Default:** Build a table manually, column by column.
 - **Drag & Drop Table:** Build a table visually in Simple Mode by dragging elements onto it.
-- **Import Table:** Bring in existing data from a CSV, JSON, or TablePress export.
 - **Connect Fluent Forms:** Build a table from your Fluent Forms entries.
 - **WP Posts:** Build a table from WordPress posts or any custom post type.
-- **WooCommerce Table / WooCommerce Reviews:** Build a table from your store's products or product reviews (Pro).
 - **FluentCart Table:** Build a table from your FluentCart products.
-- **Connect Google Sheets:** Sync a table's data from a Google Sheet (Pro).
+- **Connect Google Sheets:** Sync a table's data from a Google Sheet.
 - **Connect External CSV:** Point a table at a remotely hosted CSV file.
 - **Custom SQL Query:** Build a table directly from a custom SQL query.
 
-> The exact set of options shown may vary slightly by plugin version. For this walkthrough, we're picking **Default** (manual table creation) — see [Create Your First Table](/guide/creating-tables/create-your-first-table) for a full walkthrough of the manual builder, or the [Data Sources & Integration](/guide/data-sources/construct-table-from-csv) guides for the other connection-based options.
+For this walkthrough, we're picking **Default**. Fill in the **Table Title** (required), choose a **Rendering Engine** — **FooTable** (lightweight and responsive, the default) or **DataTables** (better performance for large datasets) — and optionally add a **Table Description** using the built-in editor. Click **Add** when you're done.
 
-## Step 4: Name Your Table
+![Choose your table creation method](/images/getting-started/onboarding-setup-guide/2.-Choose-Table-Creation-Method.webp)
 
-After picking a method, you'll see text boxes for the table's **Title** (required) and **Description** (optional). Fill these in, then click **Add**.
+> See [Create Your First Table](/guide/creating-tables/create-your-first-table) for a full walkthrough of the manual builder, or the [Data Sources & Integration](/guide/data-sources/construct-table-from-csv) guides for the other connection-based options.
 
-## Step 5: Add Your First Column
+## Step 3: Add Your First Column
 
-Clicking **Add** takes you to the **Table Rows** tab, where you'll find a **+ Add Column** button. Click it, give the column a name and a data type, and hit **Add Column** to save it.
+Clicking **Add** takes you into the table editor, opened on the **Table Rows** tab. Your table's shortcode (for example `[ninja_tables id="158"]`) is shown at the top, ready to paste into any post or page. Since the table has no columns yet, click **+ Add Column** to get started.
 
-Once your first column exists, two buttons appear: **Add Data** to start entering rows, and **+ Add Column** to keep building out your structure.
+![Table editor with no columns yet](/images/getting-started/onboarding-setup-guide/3.-Add-First-Column.webp)
+
+## Step 4: Configure the Column
+
+The **Add Table Column** popup opens on **Basic Settings**, where you set the **Column Name**, **Column Key**, **Data Type** (Single Line Text Field, Numeric Value, HTML Field, and more), and **Responsive Breakpoint**. The **Advanced Settings**, **Conditional Formatting**, and **Transform Value** tabs let you fine-tune the column further. Click **Add Column** to save it.
+
+![Add Table Column settings popup](/images/getting-started/onboarding-setup-guide/4.-Add-Table-Column-Settings.webp)
+
+## Step 5: Add Your Data
+
+Back on the **Table Rows** tab, your new column now appears. Click **Add Data** to start entering rows, or **+ Add Column** to keep building out your table's structure.
+
+![Add Data button on the Table Rows tab](/images/getting-started/onboarding-setup-guide/5.-Add-Data-Button.webp)
 
 ## Step 6: Configure & Style Your Table
 
-With your table's basic structure in place, two tabs let you go further:
+With your table's basic structure in place, the tabs at the top let you go further:
 
-- **Table Configuration:** Fine-tune each column's Basic Settings, Advanced Settings, Conditional Formatting, and Transform Value.
+- **Table Configuration:** Manage **Columns**, **Rendering Settings**, **Custom Filters**, **Buttons (CSV/Print)**, and **Language Settings**.
 - **Table Design:** Choose a style library, colors, and layout options like the stackable/responsive table.
+- **Frontend Editing:** Let visitors edit table data directly on the frontend.
+- **Custom CSS/JS:** Add your own styling or scripts.
+- **Import/Export:** Bring in or send out table data.
 
-See [Create Your First Table](/guide/creating-tables/create-your-first-table) for the detailed walkthrough of both tabs.
+![Table Configuration tab showing available columns](/images/getting-started/onboarding-setup-guide/6.-Table-Configuration-Columns.webp)
+
+See [Create Your First Table](/guide/creating-tables/create-your-first-table) for the detailed walkthrough of these tabs.
 
 ## Quick Access: Creating More Tables
 
-Once you're set up, you can always return to this flow — from **All Tables**, click **Create New Table** again at any time to start a new table using any of the same creation methods.
+Once you're set up, you can always return to this flow — from **All Tables**, click **Create New Table** at any time to start a new table using any of the same creation methods.
