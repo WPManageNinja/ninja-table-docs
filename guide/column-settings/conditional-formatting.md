@@ -6,12 +6,16 @@ description: "Conditional Formatting"
 # Conditional Formatting
 
 Conditions in table cells can change the column's data or highlight the specific cells you want your audience to focus on. Conditional formatting in Ninja Tables lets you add multiple conditions to table cells and the column/row the cell is in.
-Conditional Formatting is a Pro Feature!
+
+>[!Note]
+> Conditional Formatting is a Pro Feature!
+
 The cell value of the table changes in response to the conditions.
 
 ## **Applying Conditional Formatting in Ninja Tables**
 
 Read this simple guide to learn how to apply this feature.
+
 - Firstly, you need to have a table designed beforehand.
 - There are two methods to configure **Conditional Formatting**.
 
@@ -24,6 +28,7 @@ Go to the **Table Configuration** tab **→** Click on the **Edit** icon (Pencil
 ![New Ui All tables configuration icon](/images/column-settings/conditional-formatting/2.-New-Ui-All-tables-configuration-icon.webp)
 
 - After that, a pop-up window will appear with various interactive options. Go to the top bar for **Conditional Formatting**.
+
 - Click on the **Conditional Formatting** tab. When you click the **Add** **Condition** button, multiple options to set conditions will appear with-
 
 **If Cell Value** [Select] [Enter Value] **Then** [Select] [Enter Value].
@@ -47,8 +52,9 @@ Go to the **Table Configuration** tab **→** Click on the **Edit** icon (Pencil
 ![Conditional formatting column options](/images/column-settings/conditional-formatting/7.-Conditional-formatting-column-options.webp)
 
 Let's see how the conditions work.
+
 - In this case, **If Cell Value** is Equal to **Male,** Then the **Set cell color** to red.
-- Also,** If Cell Value** is **Equal** to Female, Then the **Set cell background** **color** to brown.
+- Also, If **Cell Value** is **Equal** to Female, Then the **Set cell background** **color** to brown.
 - Lastly, click on the **Update** button when the configuration is done.
 
 ![Ninja Tables added Conditions](/images/column-settings/conditional-formatting/8.-Ninja-Tables-added-Conditions.webp)
@@ -59,19 +65,20 @@ Let's see how the conditions work.
 
 ### Highlight Table Cells With Conditions
 
-Say you want your customers to pay attention to a specific product price.
-You can highlight the cell where the price is mentioned.
+Say you want your customers to pay attention to a specific product price. You can highlight the cell where the price is mentioned.
 
 ![highlighted cell](/images/column-settings/conditional-formatting/10.-highlighted-cell.webp)
 
 ### **Set Cell CSS class**
 
 Let’s discuss another cell option, the Set Cell CSS class.
+
 - First, set the Cell option as **Set cell CSS class** and enter a value name as **abc** (it will be a CSS class name).
 
 ![Ninja Tables cell CSS class](/images/column-settings/conditional-formatting/11.-Ninja-Tables-cell-CSS-class.webp)
 
-- Then, navigate to the table’s** Custom CSS/JS** tab and write your CSS style. (It will apply to all of the Male values since it's the gender column)
+- Then, navigate to the table’s **Custom CSS/JS** tab and write your CSS style. (It will apply to all of the Male values since it's the gender column)
+
 - Click on the** Save Custom CSS** button after you are done.
 
 ![Ninja Tables Custom CSS](/images/column-settings/conditional-formatting/12.-Ninja-Tables-Custom-CSS.webp)
@@ -86,7 +93,7 @@ When you select **Numeric Value** as a Data Type in column settings, there will 
 
 ![COnditional formatting in data field](/images/column-settings/conditional-formatting/14.-Conditional-formatting-in-Numeric-value.webp)
 
-- In the **Age **Column**, if the Cell Value is Less Than **Or** Equal To **25**, Then **the** Set cell color** (cell options) to maroon.
+- In the Age **Column**, if the Cell Value is Less Than **Or** Equal To **25**, Then **the** Set cell color (cell options) to maroon.
 
 ![Add numeric value condition](/images/column-settings/conditional-formatting/15.-Add-numeric-value-condition.webp)
 
@@ -116,16 +123,18 @@ Also, you need to take care of your **Date** **Format** in column settings becau
 ### **Set Row CSS class**
 
 Let’s talk about another row option, the Set row CSS class, and how it works.
+
 - First, set the Row option as **Set row CSS class** and enter a value name as **hide** (it will be a CSS class name).
 
 ![Ninja Tables row css class](/images/column-settings/conditional-formatting/21.-Ninja-Tables-row-css-class.webp)
 
-- Then, navigate to the table’s** Custom CSS/JS** tab and write your CSS style; it will apply to all of the dates which are less than Today’s Date values.
-- At last, click on the** Save Custom CSS** button after you are done.
+- Then, navigate to the table’s **Custom CSS/JS** tab and write your CSS style; it will apply to all of the dates which are less than Today’s Date values.
+
+- At last, click on the **Save Custom CSS** button after you are done.
 
 ![Add Custom CSS for tables](/images/column-settings/conditional-formatting/22.-Add-Custom-CSS-for-tables.webp)
 
-- Here in the preview, you can see the rest of the dates that are **less** **than** **today’s** **date** have been hidden here.
+- Here in the preview, you can see the rest of the dates that are **less** **than** **today’s date** have been hidden here.
 
 ![Preview-Table-with custom css](/images/column-settings/conditional-formatting/23.-Preview-Table-with-custom-css.webp)
 

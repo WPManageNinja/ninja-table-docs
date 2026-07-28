@@ -30,7 +30,7 @@ The column key is for data mapping, exporting, and importing table data. The col
 
 Various Data Types are available to construct columns according to your needs. For example, text area, buttons, lightbox, HTML, etc. To learn more, go to this [documentation](https://ninjatables.com/docs-category/column-data-types/), and you will know better.
 
-### **Responsive Breakpoint**s
+### **Responsive Breakpoint**
 
 Ninja Tables gives you the option to choose among 6 distinct breakpoints.
 
@@ -42,7 +42,10 @@ Ninja Tables gives you the option to choose among 6 distinct breakpoints.
 - Initial hidden mobile and tab
 - Initial hidden mobile, tab, and regular computers
 - Totally hidden on all devices
+
 You can decide what column you don't want to appear on what device. When activated, the table will show a "+" sign and the hidden column will appear if you click it.
+
 Here's an example table
 [ninja_tables id="4697"]
+
 This is how easily you can configure the Basic Settings of a table in Ninja Tables.
