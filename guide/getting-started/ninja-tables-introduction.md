@@ -120,6 +120,3 @@ Use advanced shortcodes to display the same table in different ways across your 
 
 Need help? Our support team is available to assist you with setup, troubleshooting, and feature-related questions. You can also browse the documentation or submit a support ticket whenever needed.
 
-## What's Next?
-
-Now that you've learned the basics, you're ready to start building tables with Ninja Tables. In the next few docs, we'll cover all the details of Ninja Tables [Simple Mode](https://ninjatables.com/docs-category/simple-mode/) and [Advanced Mode](https://ninjatables.com/docs-category/advanced-mode/).
