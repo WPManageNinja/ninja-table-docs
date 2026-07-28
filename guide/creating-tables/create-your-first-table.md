@@ -5,19 +5,20 @@ description: "Create Your First Table"
 
 # Create Your First Table
 
-Creating a table with **Ninja** **Tables** is simple and fast!
-Install and activate Ninja Tables on your dashboard and try all the magic tricks this plugin comes with.
+Creating a table with **Ninja** **Tables** is simple and fast! Install and activate Ninja Tables on your dashboard and try all the magic tricks this plugin comes with.
+
 Let's look at how to create a table.
 
 ## Add Table
 
-- First, go to the **WordPress Dashboard**. Then navigate to the **Ninja Tables** **Plugin** from the sidebar.
+- First, go to the **WordPress Dashboard**. Then navigate to the **Ninja Tables Plugin** from the sidebar.
 - Now, Click the blue "**Create New Table**" button on your screen's top right.
 - After clicking the button, a popup will appear with a menu of multiple table creation options.
 
 ![New UI Table creation option](/images/creating-tables/create-first-table/1.-Table-creation-option-UI.webp)
 
 - Ninja Tables offers 8 dynamic table creation options here, including WooCommerce product tables and Google SHeet auto-sync. You can pick any option to create a new table. We're picking the "Default" or manual table creation.
+
 - You can see some text boxes on the right side under "Manually Create a Table"- Table Title & Description.
 - Give your table a name first (it's required), description (optional), and then, hit the **Add** button to add the table.
 - Clicking on the **Add** button will send you to the **Table Rows** tab.
@@ -26,7 +27,8 @@ Let's look at how to create a table.
 
 ##  Table Rows
 
-- Initially, in the **Table Rows** tab, you will find only the "**+ Add** **Column**" button to create columns. And several other tabs to configure the table. We'll get to that later.
+- Initially, in the **Table Rows** tab, you will find only the "**+ Add Column**" button to create columns. And several other tabs to configure the table. We'll get to that later.
+
 - After clicking the button, a popup will appear with Column Name, Column Key (Column key will automatically generate based on your given column name), Data Type, Responsive Breakpoint for the "Basic Settings," and some more configuration tabs above.
 
 ![New UI table column](/images/creating-tables/create-first-table/3.-New-UI-table-column.webp)
@@ -47,7 +49,8 @@ Let's look at how to create a table.
 ![New Ui table configuration tab](/images/creating-tables/create-first-table/5.-New-Ui-table-configuration-tab.webp)
 
 - To configure each column, you need to click on the pencil icon to get four different options- **Basic Settings**, **Advanced Settings**, **Conditional Formatting**, **Transform Values,** etc.
-***After configuring each tab, you must hit "**Update**" or else no changes will be saved.
+
+After configuring each tab, you must hit "**Update**" or else no changes will be saved.
 
 ### Basic Settings
 
@@ -62,7 +65,8 @@ In Advanced Settings, you can have multiple options for configuring your column
 ### Conditional Formatting
 
 Conditional Formatting will allow you to add a condition for formatting your columns in very different ways.
-From here, you can change cell color, cell content, set CSS class, and more. Insert as many conditions you want by clicking "+", just remember to hit "**Update**."
+
+From here, you can change cell color, cell content, set CSS class, and more. Insert as many conditions you want by clicking **"+"**, just remember to hit "**Update**."
 
 ![New Ui conditional formatting tab](/images/creating-tables/create-first-table/7.-New-Ui-conditional-formatting-tab.webp)
 
@@ -85,9 +89,10 @@ This is where you can change the whole look of your table.
 
 ### Styling
 
-On the right sidebar, you will notice the first tab, **Styling. **This tab itself has three separate styling options.
+On the right sidebar, you will notice the first tab, **Styling**. This tab itself has three separate styling options.
+
 - **Styles**: The first one is the Styling Library, which manages the library you have to work with. Three different libraries are available in this segment: **Semantic UI**, **Bootstrap 4** & **Bootstrap 3**. Each of these libraries has various components once you select one of them.You can choose table hover, border, stripes etc.
-- **Features**: The second one is the** **features option which offers several functions like table title show, make table searchable**,** and many more. Check these options according to your styling needs.
+- **Features**: The second one is the features option which offers several functions like table title show, make table searchable, and many more. Check these options according to your styling needs.
 - **Table Configuration**: Last but not least, you can show your rows as a list item with a stackable table. You can target by device width and control stacked appearance.
 
 ![New table ui stackable table](/images/creating-tables/create-first-table/10.-New-table-ui-stackable-table.webp)
@@ -102,12 +107,11 @@ Besides these, you have a "Custom Scheme" with unlimited color choices.
 
 ![New Ui custom color scheme](/images/creating-tables/create-first-table/12.-New-Ui-custom-color-scheme.webp)
 
-***Please remember to hit the "**Save**" button above to keep your beautiful designs!
+Click the "**Save**" button above to keep your beautiful designs!
 
 ### Other
 
-**Pagination -** Under the **Other** option, you will find the pagination section. In this section, you can select how many items you want to show per page. You can also disable pagination here.
-Click on the **Save** button after finishing up your table configuration.
+**Pagination -** Under the **Other** option, you will find the pagination section. In this section, you can select how many items you want to show per page. You can also disable pagination here. Click on the **Save** button after finishing up your table configuration.
 
 ## Add, Duplicate, Delete Rows
 
@@ -124,9 +128,15 @@ To incorporate a table into your website, navigate to Ninja Tables where you'll 
 
 This shortcode is auto-generated. Paste the Shortcode on your desired page or post anywhere you want.
 You can also easily add your table using the **Ninja Tables block**.
+
 Simply go to the page or post where you'd like to embed your table. Look for the **Ninja Tables Block** and insert it. You'll find a search field where you can look up the specific table you want to display on your frontend. Now click on the table name to insert it.
-Change table color from post/page backend. But remember, the design changes made here will apply to this specific table in the Ninja Tables' "All Tables" dashboard. The block won't create a new table for you to design.
+
+Change table color from post/page backend. But remember, the design changes made here will apply to this specific table in the Ninja Tables' **"All Tables"** dashboard. The block won't create a new table for you to design.
+
 Use Bulk Action if you need to delete more than one entry. You can also duplicate each table using the icon in the table dashboard.
+
 Let's visually look at the video demonstration of the basic table setup using the Ninja Tables plugin.
 
-https://youtu.be/GXqaXMVsnl8?si=QaKnjDwnh6yvo3ar
+<div style="position: relative; padding-top: 56.25%;">
+  <iframe src="https://www.youtube.com/embed/GXqaXMVsnl8?si=QaKnjDwnh6yvo3ar" title="Create Your First Table Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
