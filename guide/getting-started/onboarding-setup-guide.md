@@ -30,7 +30,7 @@ Clicking **Create Your First Table** opens the **How would you like to create yo
 - **Connect External CSV:** Point a table at a remotely hosted CSV file.
 - **Custom SQL Query:** Build a table directly from a custom SQL query.
 
-For this walkthrough, we're picking **Default**. Fill in the **Table Title** (required), choose a **Rendering Engine** — **FooTable** (lightweight and responsive, the default) or **DataTables** (better performance for large datasets) — and optionally add a **Table Description** using the built-in editor. Click **Add** when you're done.
+For this walkthrough, we're picking **Default**. Fill in the **Table Title** (required), choose a **Rendering Engine** **FooTable** (lightweight and responsive, the default) or **DataTables** (better performance for large datasets) and optionally add a **Table Description** using the built-in editor. Click **Add** when you're done.
 
 ![Choose your table creation method](/images/getting-started/onboarding-setup-guide/2.-Choose-Table-Creation-Method.webp)
 
@@ -66,8 +66,8 @@ With your table's basic structure in place, the tabs at the top let you go furth
 
 ![Table Configuration tab showing available columns](/images/getting-started/onboarding-setup-guide/6.-Table-Configuration-Columns.webp)
 
-See [Create Your First Table](/guide/creating-tables/create-your-first-table) for the detailed walkthrough of these tabs.
+You can also see [Create Your First Table](/guide/creating-tables/create-your-first-table) for the detailed walkthrough of these tabs.
 
 ## Quick Access: Creating More Tables
 
-Once you're set up, you can always return to this flow — from **All Tables**, click **Create New Table** at any time to start a new table using any of the same creation methods.
+Once you're set up, you can always return to this flow from **All Tables**, click **Create New Table** at any time to start a new table using any of the same creation methods.
