@@ -6,8 +6,11 @@ description: "Transform Value"
 # Transform Value
 
 A WordPress table is engaging when the data is dynamic. Using the Transform Value feature in Ninja Tables you can concat any column value easily into any valid HTML and show it as a computed value.
+
 Let's dive into this simple guide that’ll teach you how to **Transform** **Values** easily in any specific table’s column.
+
 Transform Value is HTML, CSS & Excel supported!
+
 - Go to the **Table Configuration** tab **→** Click on the **Edit** icon (Pencil Icon) on the right side of the column and you will notice a drop-down.
 
 ![transform value in ninja tables](/images/column-settings/transform-value/1.-transform-value-1.webp)
@@ -18,6 +21,7 @@ Let's go over the **Transform** **Value** functionality step by step.
 ## **Transform Value Box**
 
 This box is where you will type your HTML code or use the Excel formula to transform the data value of the corresponding column.
+
 You can use any HTML, CSS & Excel formula in the transform value box.
 
 ## **Show Formulas**
@@ -29,7 +33,9 @@ When you click on the** Enable Excel Formula Support for Transform Value**, you 
 ## **Reference Shortcode**
 
 There will be a **Column** **Title** and a **Reference** **Shortcode**. Reference shortcodes will generate automatically based on the **Column** **name**.
+
 You can use the following Reference Shortcode Values to transform your cell value.
+
 - Here, there are three steps to complete. Look at the example below to learn about these steps.
 
 ![reference shortcode in transform value](/images/column-settings/transform-value/3.-transform-value-4.webp)
@@ -41,17 +47,20 @@ You can use the following Reference Shortcode Values to transform your cell valu
 ![HTML in transform value](/images/column-settings/transform-value/4.-transform-value-5.webp)
 
 - You don’t have to modify the first piece of the code. But the 2nd part can be changed to whatever suits your needs.
+
 - Custom words can also be written for the second part. Copy & paste the email shortcode inside the anchor tag, and do the same for the email shortcode.
 
 ![email in transform value](/images/column-settings/transform-value/5.-transform-value-6.webp)
 
 See the example below for viewing the output of the transform value.
-- In this case, the **Email Name **has been used before the closing tag of the HTML. You can also transform values for all the other columns similarly. In the example below, Contact No. is used to call people directly by clicking on the link -
+
+- In this case, the **Email Name** has been used before the closing tag of the HTML. You can also transform values for all the other columns similarly. In the example below, Contact No. is used to call people directly by clicking on the link -
 
 ![HTML in transform value](/images/column-settings/transform-value/6.-transform-value-7.webp)
 
 Let's go with another example for better understanding.
-- If you want to replace the cell value **Female** from the **gender** **column **with** **a link (for example, https://google.com), you can follow the formula -
+
+- If you want to replace the cell value **Female** from the **gender** column with a link (for example, https://google.com), you can follow the formula -
 
 ```
 =IF("&#123;&#123;row.gender&#125;&#125;"="Female","<a href='https://google.com'>&#123;&#123;row.gender&#125;&#125;</a>","&#123;&#123;row.gender&#125;&#125;")
@@ -69,11 +78,13 @@ Note that you can use as many IF Formulas as you want in the transform value box
 ## **Number Calculation**
 
 - To execute number calculations, we must pick the number fields for each column, and the Data Type for each column must be a **Numeric** **Value**.
+
 - See the screenshot below, where Product 1 and Product 2 are numeric fields, and the third column is utilized to display their results.
 
 ![sum total of data](/images/column-settings/transform-value/9.-transform-value-10.webp)
 
 - Now, go to the **Transform** **Value** of the third column if you want to add column 1 and column 2 together and display the result in the third column (Data type must have a Numeric Value).
+
 - Give this below formula to the transform value box to add the cell value of column 1 and column 2.
 
 ```
