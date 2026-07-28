@@ -26,7 +26,7 @@ You can use any HTML, CSS & Excel formula in the transform value box.
 
 ## **Show Formulas**
 
-When you click on the** Enable Excel Formula Support for Transform Value**, you will get a **Show** **Formulas** button, which you may click to acquire the formulas you want.
+When you click on the **Enable Excel Formula Support for Transform Value**, you will get a **Show** **Formulas** button, which you may click to acquire the formulas you want.
 
 ![use Excel formula for value transformation](/images/column-settings/transform-value/2.-transform-value-3.webp)
 

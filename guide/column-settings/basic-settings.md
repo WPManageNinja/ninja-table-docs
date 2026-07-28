@@ -6,6 +6,7 @@ description: "Basic Settings"
 # Basic Settings
 
 Ninja Tables has several custom settings options to create a table. Basic Settings is where you can establish a column with basic choices like column name, column key, data type, and responsive breakpoints.
+
 Let's have a look at this simple guide to learn how to create a column with these **Basic Settings**.
 
 ## Column Basic Settings in Ninja Tables
@@ -46,6 +47,7 @@ Ninja Tables gives you the option to choose among 6 distinct breakpoints.
 You can decide what column you don't want to appear on what device. When activated, the table will show a "+" sign and the hidden column will appear if you click it.
 
 Here's an example table
+`
 [ninja_tables id="4697"]
-
+`
 This is how easily you can configure the Basic Settings of a table in Ninja Tables.

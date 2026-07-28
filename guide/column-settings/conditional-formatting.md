@@ -39,7 +39,7 @@ Go to the **Table Configuration** tab **→** Click on the **Edit** icon (Pencil
 
 ![Ninja Tables Conditions](/images/column-settings/conditional-formatting/4.-Ninja-Tables-Conditions.webp)
 
-- From the 3rd box, you can set **Cell Options, Row Options, **and **Column Options **and apply the desired condition.
+- From the 3rd box, you can set **Cell Options, Row Options,** and **Column Options** and apply the desired condition.
 
 - If you select Cell Options, the condition will only apply to cells
 - If you select Row Options, the condition will apply to the corresponding row
@@ -79,7 +79,7 @@ Let’s discuss another cell option, the Set Cell CSS class.
 
 - Then, navigate to the table’s **Custom CSS/JS** tab and write your CSS style. (It will apply to all of the Male values since it's the gender column)
 
-- Click on the** Save Custom CSS** button after you are done.
+- Click on the **Save Custom CSS** button after you are done.
 
 ![Ninja Tables Custom CSS](/images/column-settings/conditional-formatting/12.-Ninja-Tables-Custom-CSS.webp)
 
@@ -104,6 +104,7 @@ When you select **Numeric Value** as a Data Type in column settings, there will 
 ### **Conditional Formatting in Date Field**
 
 When you select Date Field as a Data Type in column settings, there will be more options in **Cell** **Value**.
+
 Also, you need to take care of your **Date** **Format** in column settings because you will get the list of **Example Usage** in Conditional Formatting according to your chosen Date Format.
 
 ![Conditional formatting in data field](/images/column-settings/conditional-formatting/17.-COnditional-formatting-in-data-field.webp)
