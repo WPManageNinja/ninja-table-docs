@@ -1,147 +1,125 @@
 ---
-title: "Introduction- Getting Started with Ninja Tables"
-description: "Introduction- Getting Started with Ninja Tables"
+title: "Introduction – Getting Started with Ninja Tables"
+description: "Introduction – Getting Started with Ninja Tables"
 ---
 
-# Introduction- Getting Started with Ninja Tables
+# Introduction – Getting Started with Ninja Tables
 
-Creating stunning responsive tables was always a struggle. And customizing those was an even bigger dispute. So here we are with all the solutions. It will give you the easiest way of making different types of WordPress tables within minutes and even without writing a single line of code!
-If you want to check out if this plugin fulfills your requirements for a WordPress table plugin, check out the [feature page.](https://ninjatables.com/features/)
+Ninja Tables is a powerful yet beginner-friendly WordPress table builder that lets you create responsive, customizable tables without writing any code. Whether you're building a simple data table, a pricing table, a product table, or connecting data from external sources, Ninja Tables makes the process fast and easy. If you want to check out if this plugin fulfills your requirements for a WordPress table plugin, check out the [feature page.](https://ninjatables.com/features/)
 
-[Watch Video](https://youtu.be/GXqaXMVsnl8)
-As soon as you install and activate Ninja Tables, you'll be welcomed with a short intro. You can start creating tables manually right from there or you can start practicing with an imported file.
+<div style="position: relative; padding-top: 56.25%;">
+  <iframe src="https://www.youtube.com/embed/GXqaXMVsnl8?si=f76AE41OWeI_b0w6" title="Ninja Tables Introduction Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+
+After installing and activating the plugin, you'll see a welcome screen where you can start creating your first table or import existing data. You can also explore the documentation, templates, and demo pages to get familiar with the plugin.
 
 ![Welcome to Ninja Tables UI](/images/getting-started/ninja-tables-introduction/1.-Welcome-to-Ninja-Tables-UI.webp)
 
-Follow the documentations to get started. You can also go to the templates or the dmeo page for inspirations.
+## Multiple Ways to Create Tables
 
-## 9+ table creation options
+Ninja Tables offers several ways to create a table, so you can choose the workflow that best fits your needs.
 
-When you want to create a new table, Ninja Tables gives you multiple options. From the table creation options list, you can pick any type you want to start with.
-- Default (create tables manually)
+- Default (Build manually)
 - Drag & Drop Table
 - Connect Fluent Forms
 - WP Posts
-- WooCommerce Table
-- Connect Google Sheets
-- Connect External CSV
-- Custom SQL Query
+- WooCommerce Product Table *(Pro)*
+- Connect Google Sheets *(Pro)*
+- Connect External CSV *(Pro)*
+- Custom SQL Query *(Pro)*
 
 ![New UI Table creation option](/images/getting-started/ninja-tables-introduction/2.-Table-creation-option-UI.webp)
 
-These will be the primary options. But you can also choose to **import a table CSV/JSON** to create table.
-Or you can pick a **template** from Drag & Drop mode or from the free table [templates](https://ninjatables.com/free-table-templates/) page.
+You can also import tables from CSV or JSON files, or start with one of the ready-made [templates](https://ninjatables.com/free-table-templates/).
 
-## Drag and drop table builder 
+## Drag & Drop Table Builder
 
-Ninja Tables offers the most accessible and most user-friendly interface for building tables by dragging and dropping the elements you need. Outstanding table elements and customization options make this drag-and-drop module a complete table builder plugin itself.
+Create tables visually by dragging and dropping elements onto your table. The intuitive interface makes it easy to design professional-looking tables without any technical knowledge.
 
 ![Ninja Tables drag and drop](/images/getting-started/ninja-tables-introduction/3.-Screenshot-2023-07-26-122526.webp)
 
-## Pre-built table template
+## Ready-Made Table Templates
 
-Ninja Tables comes with a lot of pre-built templates. You can use many of those in the free version. Now you can create pricing tables, comparison tables, employee tables, or schedule tables the easiest way possible.
+Save time with a collection of pre-built templates for pricing tables, comparison tables, employee directories, schedules, and more. Many templates are available in the free version and can be customized to match your needs.
 
 ![Table Templates](/images/getting-started/ninja-tables-introduction/4.-Screenshot-7.webp)
 
-## Responsive Table Plugin in WordPress
-
-Make responsive tables with the Ninja Tables in the easiest way. WordPress tables’ search, pagination, sorting, and other features will also work on all devices. You have control over your table and what you want to show or not.
-
-![Collapsed Table](/images/getting-started/ninja-tables-introduction/5.-Collapsed-Table-1.webp)
-
-## 100+ Table design customization options
-
-Ninja Tables enables you to choose from a huge number of options for table design and customization. 
-- Single Line Cells
-- Fixed Layout
-- Hover Rows
-- Bordered Table
-- Striped Rows
-- Unlimited color scheme
-- Hide/show table title
-- Make the table sortable/filterable
-
-![New UI table design tabs](/images/getting-started/ninja-tables-introduction/6.-New-UI-table-design-tabs.webp)
-
-You can also make the table stackable to fit all screen types. And in the "Other" tab, you get to decide on table pagination, font settings, search bar positions, etc.
-Customize colors for the table from the "Table Colors" tab.
-
-## 3 Most popular CSS libraries and Bootstrap table
-
-Ninja Tables comes with the 3 most widespread CSS libraries, having multiple color schema and styles. Now you can choose from Bootstrap 3, Bootstrap 4, or Semantic UI Table Styles.
-
-## Fastest WordPress table builder with Ajax and Legacy rendering
-
-Ninja Tables operates from a single page on everything. VueJS and VueRouter as Single Page Applications (SPA) are used to develop the backend to make the experience smooth. Everything seems to be real-time, including making a table to set up the configuration, inserting entries, importing CSV files & re-arranging columns. This process is very time-saving for the users.
-Combined with minimum load on JS & CSS load, the front-end table loads faster. AJAX was configured for the front-end data load to manage thousands of table rows without impacting the page load time.
-
-![New UI table rendering](/images/getting-started/ninja-tables-introduction/7.-New-UI-table-rendering.webp)
-
-## Free templates
-
-Save your time and choose a free [table template](https://ninjatables.com/free-table-templates/) from our collection. Ninja Tables has 40+ different table templates of multiple categories that you can download for free, import the table JSON, customize the table, and embed.
+Choose a free [table template](https://ninjatables.com/free-table-templates/) from our collection. Ninja Tables has 40+ different table templates of multiple categories that you can download for free, import the table JSON, customize the table, and embed. The instructions are all documented with each template file.
 
 ![template categories](/images/getting-started/ninja-tables-introduction/8.-template-categories.webp)
 
-The instructions are all documented with each template file.
+## Fully Responsive Tables
 
-## Simple Configuration Feature
+Every table you create is mobile-friendly and responsive. Features like search, sorting, filtering, and pagination work seamlessly across desktops, tablets, and mobile devices. You can also enable stackable tables for smaller screens.
 
-With our user-friendly column builder, table columns’ design and responsive breakpoints’ configuration make it easier to rearrange the columns. The text/HTML area and the data type, like Single Line Text Field, can be selected for every column.
+![Collapsed Table](/images/getting-started/ninja-tables-introduction/5.-Collapsed-Table-1.webp)
 
-## Export and Import Data
+## Powerful Design & Customization
 
-You can retrieve the table data and apply them to some other program. The tables can be exported and saved in CSV/JSON file format. This way, the data will be kept safe & transferable. CSV/JSON files can also be imported in the same method.
+Customize every aspect of your table with over 100 design options, including:
 
-## Import Tables From Other Table Plugins
+- Multiple style libraries
+- Unlimited color customization
+- Striped and bordered rows
+- Hover effects
+- Fixed layouts
+- Sortable and filterable tables
+- Responsive display settings
+- Pagination, search bar, and typography controls
 
-If you’re already using tables with added data from other plugins. No need to worry; for other table plugins like TablePress, you can simply import tables with data.
+![New UI table design tabs](/images/getting-started/ninja-tables-introduction/6.-New-UI-table-design-tabs.webp)
+
+## Multiple Styling Libraries
+
+Choose from three popular styling libraries to instantly change your table's appearance:
+
+- Bootstrap 3
+- Bootstrap 4
+- Semantic UI
+
+## Fast Performance
+
+Ninja Tables is built as a modern single-page application (SPA) using Vue.js, making table management smooth and responsive. AJAX-powered data loading helps maintain fast performance, even when displaying thousands of table rows.
+
+![New UI table rendering](/images/getting-started/ninja-tables-introduction/7.-New-UI-table-rendering.webp)
+
+## Import & Export
+
+Move your table data easily by importing or exporting CSV and JSON files. You can also import existing tables from other plugins, such as TablePress, making migration simple.
 
 ![New UI table import tools and settings](/images/getting-started/ninja-tables-introduction/9.-New-UI-table-import-tools-and-settings.webp)
 
-***The other table plugins section will only show up if you have them installed on your dashboard.
+> **Note:** Import options for other table plugins appear only if those plugins are installed on your WordPress site.
 
-## WooCommerce Integration
+## Integrations
 
-Ninja Tables offers a seamless solution for your WooCommerce product table needs. Thanks to the Pro integration of the plugin, crafting dynamic WooCommerce product tables is now a hassle-free task. 
-This functionality empowers you to design these tables effortlessly, enabling your site visitors to make multiple product purchases directly from a single page. The added benefit of customization options for the cart and checkout buttons further enhances the user experience.
+Extend Ninja Tables with powerful integrations:
+
+- **WooCommerce (Pro):** Display products in customizable product tables with add-to-cart functionality.
+- **Google Sheets (Pro):** Sync your tables with Google Sheets and automatically reflect data updates.
+- **Fluent Forms:** Display Fluent Forms entries inside responsive tables.
+- **Ninja Charts:** Turn your table data into interactive charts and graphs.
 
 ![WooCommerce product table](/images/getting-started/ninja-tables-introduction/10.-WooCommerce-product-table-1.webp)
 
-## Google Sheets Integration
-
-The integration of your Google Sheets with Ninja Tables is undeniably one of its most impressive features. Furthermore, any modifications made to the data in your Google Sheets will be reflected in Ninja Tables through automatic updates.
-
 ![connect google sheets to ninja tables](/images/getting-started/ninja-tables-introduction/11.-connect-google-sheets-to-ninja-tables.webp)
 
-## Fluent Forms Integration
-
-The integration of Fluent Forms with Ninja Tables is seamless, allowing you to effortlessly incorporate Fluent Forms entries into your tables. To gain a better understanding of this feature, feel free to view the instructional video below:
-
-### Fluent Forms Integration(Video)
+### Fluent Forms Integration (Video)
 
 https://youtu.be/uMVnTYnKWM4
 
-## Ninja Tables Integration with Ninja Charts
+## SEO-Friendly Tables
 
- Ninja Charts, a data visualization plugin, has been seamlessly integrated with Ninja Tables, allowing you to utilize your table data for the creation and display of dynamic charts and graphs on your website.
+Ninja Tables generates clean HTML tables that are search-engine friendly, helping your content remain accessible while improving your site's SEO.
 
-## 24/7 Fluent Support 
+## Advanced Shortcodes
 
-Our exceptional support team is readily available to provide dedicated assistance for this remarkable WordPress table plugin, and this service comes at no cost to you! To access this support, simply generate a support ticket through the provided link. We eagerly anticipate your feature requests and stand ready to extend help for tailored table solutions. Feel free to create a support ticket to ensure the finest user experience.
+Use advanced shortcodes to display the same table in different ways across your website. This feature gives developers and advanced users greater flexibility when embedding tables.
 
-## SEO-Optimized Tables 
+## Support
 
-While using an HTML table is a wise decision, it can become cumbersome when coding improvements are required. Fortunately, a variety of plugins are designed to simplify the creation of WordPress tables. Among these, Ninja Tables stands out as a premier table builder plugin within the WordPress repository. Its robust functionality empowers you to craft a diverse range of tables, all while maintaining excellent SEO compatibility.
+Need help? Our support team is available to assist you with setup, troubleshooting, and feature-related questions. You can also browse the documentation or submit a support ticket whenever needed.
 
-## Advanced Shortcode for Customized Presentation 
+## What's Next?
 
-The utilization of advanced shortcodes represents a valuable pro feature, particularly beneficial for developers. Within this feature, you can explore an extensive array of enhanced functionalities. 
-Ninja Tables provides a collection of highly useful shortcodes that grant you the flexibility to configure your tables to meet your exact requirements. This means you can present the same table on different pages or posts, each with a unique appearance and style.
-
-## Conclusion
-
-That’s not all. When you are using Ninja Tables, you are free to create any kind of table for your website and customize them anyhow you want. The only limitation can be your creativity. 
-In the next few docs, we'll cover all the details of Ninja Tables [Simple Mode](https://ninjatables.com/docs-category/simple-mode/) and [Advanced Mode](https://ninjatables.com/docs-category/advanced-mode/).
-If you have any other questions, feel free to comment below!
+Now that you've learned the basics, you're ready to start building tables with Ninja Tables. In the next few docs, we'll cover all the details of Ninja Tables [Simple Mode](https://ninjatables.com/docs-category/simple-mode/) and [Advanced Mode](https://ninjatables.com/docs-category/advanced-mode/).
