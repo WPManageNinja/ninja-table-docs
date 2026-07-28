@@ -13,7 +13,7 @@ Making a table with **WooCommerce Products** is a versatile feature of Ninja T
 ## Create WooCommerce Tables
 
 - Click on **Add Table** from the upper right corner to create a new table.
-- Go to the **WooCommerce** **Table** from the left sidebar.
+- Go to the **WooCommerce Table** from the left sidebar.
 
 ![WooCommerce Table](/images/data-sources/woocommerce-integration/1.-WooCommerce-Table-1.webp)
 
