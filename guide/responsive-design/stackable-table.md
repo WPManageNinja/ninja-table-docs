@@ -35,4 +35,4 @@ This easy guide explains to you how to quickly and easily build up stackable tab
 
 - You can hide column headings or internal borders from here.
 
-This is how easy it is to configure **Stackable** **table** **format** in your Ninja** **tables!
+This is how easy it is to configure **Stackable table format** in your **Ninja tables**!
