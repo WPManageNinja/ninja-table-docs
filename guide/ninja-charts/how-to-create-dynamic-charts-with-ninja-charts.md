@@ -8,7 +8,7 @@ description: "How to Create Dynamic Charts with Ninja Charts"
 Once you install and activate Ninja Charts, this plugin is ready to create any type of chart you want!
 As a free WordPress chart plugin, Ninja Charts makes the process of creating online charts very easy.
 
-![](/images/ninja-charts/create-dynamic-charts-ninja/1.-Create-a-chart-01.webp)
+![Ninja Charts](/images/ninja-charts/create-dynamic-charts-ninja/1.-Create-a-chart-01.webp)
 
 Chart renderer in Ninja Charts:
 - Charts Js
