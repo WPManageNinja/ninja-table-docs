@@ -6,11 +6,10 @@ description: "Table Settings"
 # Table Settings
 
 You already know Ninja Tables is a great WordPress table builder plugin. This plugin has tons of features that you can use to impress your audience.
+
 In this document, we will discuss the table settings and customization options and see what they can do.
 
-![Data Table Settings](/images/drag-drop-settings/ninja-tables-drag-drop/1.-Data-Table-Settings.webp)
-
-## **Properties of Table Settings**
+## Properties of Table Settings
 
 | **Scope** | **Option Name** | **Type** |
 |-----------|-----------------|----------|
@@ -42,24 +41,26 @@ In this document, we will discuss the table settings and customization options a
 | | Font Family | Dropdown Selection |
 | **Export Table** | Select Format | Dropdown Selection |
 
-### **General**
+![Data Table Settings](/images/drag-drop-settings/ninja-tables-drag-drop/1.-Data-Table-Settings.webp)
 
-**Cell Padding:** Cell padding controls the space between the element and the cell area. By default, it is set to 10.
-**Table Alignment:** You can align the whole table on the page's left, Center, or Right side.
-**Separate Columns**/**Rows**: You can also separate the rows or columns. By default, it is set to “Off.”
-**Space Between Columns:** Customize the spaces between columns to display cells as single blocks.
-**Space Between Rows:** Customize the spaces between rows to display cells as single blocks.
-**Table Container Max Width:** Control the maximum width of the table. If the maximum width is lower than the table content, then you will notice a bottom scrollbar to scroll through the data.
-**Table Cell Min Auto Width: **Control the table cell width.
-**Table Container Max Height:** Control the table cell height.
+### General
+
+* **Cell Padding:** Cell padding controls the space between the element and the cell area. By default, it is set to 10.
+* **Table Alignment:** You can align the whole table on the page's left, Center, or Right side.
+* **Separate Columns**/**Rows**: You can also separate the rows or columns. By default, it is set to “Off.”
+* **Space Between Columns:** Customize the spaces between columns to display cells as single blocks.
+* **Space Between Rows:** Customize the spaces between rows to display cells as single blocks.
+* **Table Container Max Width:** Control the maximum width of the table. If the maximum width is lower than the table content, then you will notice a bottom scrollbar to scroll through the data.
+* **Table Cell Min Auto Width:** Control the table cell width.
+* **Table Container Max Height:** Control the table cell height.
 
 ![Table cell settings](/images/drag-drop-settings/ninja-tables-drag-drop/2.-Table-cell-settings.webp)
 
-### **Background**
+### Background
 
-**Header Background:** You can control the header background color from here without going to Background management.
-**Even Row Background:** This option is to control the Even Row background color.
-**Odd Row Background:** This is used to set the background color for even rows.
+* **Header Background:** You can control the header background color from here without going to Background management.
+* **Even Row Background:** This option is to control the Even Row background color.
+* **Odd Row Background:** This is used to set the background color for even rows.
 
 ![Table header background](/images/drag-drop-settings/ninja-tables-drag-drop/3.-Table-header-background.webp)
 
@@ -77,12 +78,12 @@ Similarly, the Drag and Drop table builder also gives you the flexibility to fur
 
 ### Sticky (Pro)
 
-**First Row Sticky:** You can freeze the first row or make it sticky. If you have to scroll down, you can see which column contains which type of data.
-**First Column Sticky:** You can make the first column sticky as well. This helps if the table is horizontally scrollable.
+* **First Row Sticky:** You can freeze the first row or make it sticky. If you have to scroll down, you can see which column contains which type of data.
+* **First Column Sticky:** You can make the first column sticky as well. This helps if the table is horizontally scrollable.
 
-### **Accessibility**
+### Accessibility
 
-**Table Role:** This option has 4 types of "Table Role."
+* **Table Role:** This option has 4 types of "Table Role."
 
 ![table roles](/images/drag-drop-settings/ninja-tables-drag-drop/6.-table-roles.webp)
 
@@ -91,24 +92,24 @@ Similarly, the Drag and Drop table builder also gives you the flexibility to fur
 - List
 - Row Group.
 
-### **Border**
+### Border
 
-**Table Border:** This option enables you to show each cell with a border a boundary. By default, it is set to 2.
-**Border Color:** You can control the color of the border here.
-**Apply Inner Border:** By default, an Inner Border is applied to the table.
-**Header Inner Border:** You can also control whether the Header should have an inner border.
-**Inner Border Color:** The option to control the inner border color.
-**Inner Border Size:** You can also set the inner border size, which is by default set to 3.
+* **Table Border:** This option enables you to show each cell with a border a boundary. By default, it is set to 2.
+* **Border Color:** You can control the color of the border here.
+* **Apply Inner Border:** By default, an Inner Border is applied to the table.
+* **Header Inner Border:** You can also control whether the Header should have an inner border.
+* **Inner Border Color:** The option to control the inner border color.
+* **Inner Border Size:** You can also set the inner border size, which is by default set to 3.
 
 ![drag and drop table border](/images/drag-drop-settings/ninja-tables-drag-drop/7.-drag-and-drop-table-border.webp)
 
-### **Global Styl**e
+### Global Style
 
-**Margin Top:** You can add an additional Top Margin to the table, which is set to 0 by default.
-**Margin Bottom**: You can add an additional Bottom Margin to the table, which is set to 0 by default.
-**Font Size:** The default font size setting is by default set to 15.
-**Color:** You can also define the font color that is set to black by default.
-**Font Family:** You can also select a Font Family for your table from the dropdown, and plenty of fonts are available.
+* **Margin Top:** You can add an additional Top Margin to the table, which is set to 0 by default.
+* **Margin Bottom**: You can add an additional Bottom Margin to the table, which is set to 0 by default.
+* **Font Size:** The default font size setting is by default set to 15.
+* **Color:** You can also define the font color that is set to black by default.
+* **Font Family:** You can also select a Font Family for your table from the dropdown, and plenty of fonts are available.
 
 ![drag and drop table border](/images/drag-drop-settings/ninja-tables-drag-drop/7.-drag-and-drop-table-border.webp)
 
