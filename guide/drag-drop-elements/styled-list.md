@@ -6,10 +6,12 @@ description: "Styled List Element (Pro)"
 # Styled List Element (Pro)
 
 Ninja Tables Drag and Drop has a list element in the free version. It’s enough to create simple lists. But if you want a more attractive list, you will need more customization options. Ninja Tables offers an advanced element called “Styled List,” which is only available as a **pro** element.
+
 Let’s add a Styled List element to our Ninja Tables! Just drag and drop the element in your table, and that’s it.
+
 From the menu on the left side, you can see multiple customization options for this element.
 
-## **Properties of Styled List**
+## Properties of Styled List
 
 | **Scope** | **Option Name** | **Type** |
 |-----------|-----------------|----------|
@@ -26,30 +28,31 @@ From the menu on the left side, you can see multiple customization options for t
 
 ### General Options
 
+- **Space Between Icon and Text:** You can add space or gap between the Icons and List Items. By default, It is set to 0.
+- **Alignment:** You can align the Styled List to the left, right, or center. By default, it is set to Center.
+
 ![Styled list drag and drop](/images/drag-drop-elements/styled-list/1.-Styled-list-drag-and-drop.webp)
 
-- **Space Between Icon and Text:** You can add space or gap between the Icons and List Items. By default, It is set to 0.
-- **Alignment: **You can align the Styled List to the left, right, or center. By default, it is set to Center.
-
 ### Text Options
-
-![Styled List element](/images/drag-drop-elements/styled-list/2.-Styled-List-element.webp)
 
 - **Font Color**: You can change the color of the text. By default, it is set to Black.
 - **Font Size**: You can change the size of the text. By default, it is set to 15.
 - **Item Spacing**: You can change the space vertically between list items. By default, it is set to 19.
 - **Font Style**: You can change the Font Style orientations. Available options are **Bold**, *Italic*, and Underline.
 
-### Icon Options
+![Styled List element](/images/drag-drop-elements/styled-list/2.-Styled-List-element.webp)
 
-![Stylied list icon](/images/drag-drop-elements/styled-list/3.-Stylied-list-icon.webp)
+### Icon Options
 
 - **Icon Color:** You can change the color of the Icon. By default, it is set to Black.
 - **Icon Size:** You can change the size of the Icon. By default, it is set to 15
 - **Choose Icon:** You can upload your own image as an Icon to the table by uploading it from your computer or media dashboard.
 - **Icon Library:** There are plenty of Icons to choose from in the Ninja Tables Styled List.
 
-## **Conclusion**
+![Stylied list icon](/images/drag-drop-elements/styled-list/3.-Stylied-list-icon.webp)
+
+## Conclusion
 
 A product table or a table that shows multiple features would look bland if you don't use any icons in the list. Styled list element in Ninja Tables drag and drop mode helps you create a dynamic data table.
+
 Let us know your thoughts and questions in the comment box.
