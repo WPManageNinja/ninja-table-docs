@@ -6,10 +6,10 @@ description: "Responsive Table Design"
 # Responsive Table Design
 
 When it comes to design and UX, responsiveness is the first thing that comes to mind. It’s important to ensure a responsive table design so that the content is visible and readable.
-Ninja Tables gives you control of your table’s responsiveness, so you don't have to worry about your tables fitting into different device screens.
-You can find this option on the leftmost side of the Table Editor and see the responsiveness setting is turned on by default.
 
-![responsiveness](/images/drag-drop-settings/responsive-table-design/1.-responsiveness.webp)
+Ninja Tables gives you control of your table’s responsiveness, so you don't have to worry about your tables fitting into different device screens.
+
+You can find this option on the leftmost side of the Table Editor and see the responsiveness setting is turned on by default.
 
 ## Properties of Responsive Table Design
 
@@ -22,6 +22,8 @@ You can find this option on the leftmost side of the Table Editor and see the re
 | **Responsive Settings** | Mobile | Numeric & radio button |
 | | Tablet | Numeric & radio button |
 
+![Responsiveness](/images/drag-drop-settings/responsive-table-design/1.-responsiveness.webp)
+
 ### General
 
 Enable the table to be responsive by toggling the button on.
@@ -30,7 +32,7 @@ Enable the table to be responsive by toggling the button on.
 
 ### Mode Options
 
-**Mobile** **and Tablet**: From here, you can customize the responsiveness on mobile and tablet. Both the options have the same customization directions.
+**Mobile and Tablet**: From here, you can customize the responsiveness on mobile and tablet. Both the options have the same customization directions.
 
 ![Enable table responsiveness on mobile](/images/drag-drop-settings/responsive-table-design/3.-Enable-responsiveness-on-mobile.webp)
 
@@ -39,6 +41,9 @@ Enable the table to be responsive by toggling the button on.
 - Toggle the "Top Row as Header" option.
 - Control the number of Items Per Header.
 - Select Group Separator.
+
+
+
 **Desktop**: This is where you can change the header and row position for a desktop view of the table.
 
 ![table responsiveness of desktop](/images/drag-drop-settings/responsive-table-design/4.-table-responsiveness-of-desktop.webp)
@@ -60,4 +65,5 @@ And we can also show you another responsive table on a tablet that has the top r
 ## Conclusion
 
 A responsive table design is a must to keep your audience engaged. Since everyone is now a mobile-user, you can't deny them a good UX. Make your data tables responsive for all devices.
+
 Let us know your thoughts.
