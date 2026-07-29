@@ -26,19 +26,19 @@ Making a table with **WooCommerce Products** is a versatile feature of Ninja T
 All settings can be changed after creating the table and you can customize the product table using Ninja Tables features.
 - You can choose from the **Appearance** tab where you want to view the details of the cart.
 
-![](/images/data-sources/woocommerce-integration/2.-WooCommerce-Table-2.webp)
+![Appearance](/images/data-sources/woocommerce-integration/2.-WooCommerce-Table-2.webp)
 
 - Here, the option to display the **cart** and **checkout** icon both before and after the table is selected.
 - Along with cart info, you can also pick cart & checkout icons.
 - There is also a selection for Variable Products. You can see a dropdown where consumers can select variable options for their product; there may also be price differences depending on the variable options that users have selected.
 - The tab for the **Query Settings** is basically the same settings you made during the table setting. See the image below. You may then adjust your initial settings from this tab.
 
-![](/images/data-sources/woocommerce-integration/3.-WooCommerce-Table-3.webp)
+![Query Settings](/images/data-sources/woocommerce-integration/3.-WooCommerce-Table-3.webp)
 
 - You can make a custom column from the **Add New Column** tab to your table of products.
 - Set a name for the column, select the type of data, and choose the field type. In this case, the product column is called SKU to show the product SKU.
 
-![](/images/data-sources/woocommerce-integration/4.-WooCommerce-Table-Dynamic-Field.webp)
+![Add New Colume](/images/data-sources/woocommerce-integration/4.-WooCommerce-Table-Dynamic-Field.webp)
 
 - Lastly, click on the **Add Column** button to create the column, and your custom column will look like this.
 
