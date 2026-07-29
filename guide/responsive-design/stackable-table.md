@@ -6,9 +6,14 @@ description: "Stackable Table"
 # Stackable Table
 
 Ninja Tables has a unique function where you can stack table rows on top of one another. This **Stackable Table** feature has contributed to Ninja Tables becoming even more user-friendly and responsive.
+
 Stackable Table allows you to break down each row of any table into individual tables. It results in a stacked table arrangement that is compatible with all types of devices.
+
 This easy guide explains to you how to quickly and easily build up stackable tables!
-Note that Stackable Table and [Responsive Breakpoint](https://ninjatables.com/docs/column-responsive-breakpoints/) will not work together. Either you can use Stackable features or Responsive Breakpoints.
+
+> [!Note]
+> Stackable Table and [Responsive Breakpoint](/guide/responsive-design/column-responsive-breakpoints) will not work together. Either you can use Stackable features or Responsive Breakpoints.
+
 - Click the Table Design tab placed at the top of the table you want to use the stackable features on.
 - Then at the bottom of the Styling tab, you will notice the **Stackable Table Configuration** option.
 
@@ -29,4 +34,5 @@ Note that Stackable Table and [Responsive Breakpoint](https://ninjatables.com/do
 ![Hide Column Settings](/images/responsive-design/stackable-table/4.-Stackable-Table-3.webp)
 
 - You can hide column headings or internal borders from here.
+
 This is how easy it is to configure **Stackable** **table** **format** in your Ninja** **tables!
