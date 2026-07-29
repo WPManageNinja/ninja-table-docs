@@ -13,9 +13,10 @@ With this WordPress charts plugin, you can create dynamic charts utilizing data 
 
 Let's have a look at the simple steps to learn how to create **Ninja Charts** with Ninja Tables.
 
-**Ninja Charts** is a completely free charts plugin. You can use it with or without Ninja Tables in your dashboard.
+> [!Note]
+> **Ninja Charts** is a completely free charts plugin. You can use it with or without Ninja Tables in your dashboard.
 
-- First, go to the **Ninja Tables dashboard** **→** **Add Charts** **→** **Chart List** & then **click** on the **Create a new chart **button.
+- First, go to the **Ninja Tables dashboard → Add Charts → Chart List** & then **click** on the **Create a new chart** button.
 
 ![Create a New Chart](/images/data-sources/ninja-charts-integration/1.-Ninja-Table-Chart-E-5.webp)
 
@@ -27,7 +28,7 @@ Let's have a look at the simple steps to learn how to create **Ninja Charts** wi
 
 Choose the preferred data source (manual, forms, or tables) you want to create a chart with from the Data field.
 
-- Then click on the** Next** button [In this step, you will also have an option for manual chart creation]
+- Then click on the **Next** button [In this step, you will also have an option for manual chart creation]
 
 ![Ninja Charts from Ninja Tables and Fluent Forms](/images/data-sources/ninja-charts-integration/3.-Ninja-Charts-from-Ninja-Tables-and-Fluen.webp)
 
@@ -43,8 +44,12 @@ Choose the preferred data source (manual, forms, or tables) you want to create a
 
 ## WordPress Charts Demo - Ninja Charts
 
-Pie Chart:
-[ninja_charts id="6"]
-Line Chart:
-[ninja_charts id="3"]
+Pie Chart: A pie chart showing month-wise data distribution as percentage shares.
+
+![Pie Chart demo](/images/data-sources/ninja-charts-integration/pie-charts-7.webp)
+
+Line Chart: A line chart comparing browser usage trends over several months.
+
+![Line Chart demo](/images/data-sources/ninja-charts-integration/line-charts-8.webp)
+
 These processes are simple and less time-consuming. As a result, you won't find it difficult to build sophisticated or even enormous charts/graphs.

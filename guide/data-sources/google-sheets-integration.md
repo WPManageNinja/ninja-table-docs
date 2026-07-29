@@ -16,7 +16,7 @@ We'll explain the process here, using the following dummy Google Sheet.
 
 ![employee data in google sheets](/images/data-sources/google-sheets-integration/1.-employee-data-in-google-sheets.webp)
 
-- We will import this data table to Ninja Tables. To do this, go to the **Ninja Tables dashboard** located in the sidebar. Then, go to the **Add Table **button from the top right corner of the dashboard.
+- We will import this data table to Ninja Tables. To do this, go to the **Ninja Tables dashboard** located in the sidebar. Then, go to the **Add Table** button from the top right corner of the dashboard.
 - After that, a pop-up box will be visible. Choose **Connect Google Sheets** from the sidebar.
 
 ![](/images/data-sources/google-sheets-integration/2.-Google-Sheet-Integration-1.webp)
@@ -30,7 +30,7 @@ We'll explain the process here, using the following dummy Google Sheet.
 
 - Choose your predefined sheet in the Section **Link**. In this example, we are using **Sheet 1**. Also, select "**Comma-Separated Values(CSV)**" from the Embed Section, as Google shares its data to the web as CSV.
 - Make sure that in the **Published content and settings** option, the **automatically republish when changes are made** is **checked**.
-- Then copy the link, go back to the dashboard of your Ninja Tables, and paste it into the** Data Source URL**. Once you’re done, proceed to the **Next** button.
+- Then copy the link, go back to the dashboard of your Ninja Tables, and paste it into the **Data Source URL**. Once you’re done, proceed to the **Next** button.
 - Choose and save the entry fields you wish to add to. This is how all your data will be imported here automatically.
 
 ![Select Entry Fields](/images/data-sources/google-sheets-integration/4.-Google-Sheet-Integration-2.webp)
