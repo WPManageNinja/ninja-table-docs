@@ -37,7 +37,9 @@ One of the most notable features of Ninja Charts is its ability to pull data fro
 
 You can also create charts with [manual](/guide/ninja-charts/how-to-create-chart-manually-in-ninja-charts) data input.
 
-https://youtu.be/v-mU6LIb7jQ?si=ttb_xkHTN57xQv6c
+<div style="position: relative; padding-top: 56.25%;">
+  <iframe src="https://www.youtube.com/embed/v-mU6LIb7jQ?si=ttb_xkHTN57xQv6c" title="Getting Started with Ninja Charts Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
 
 ### Ninja Charts Features
 
