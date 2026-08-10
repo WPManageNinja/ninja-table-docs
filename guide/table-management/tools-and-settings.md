@@ -11,7 +11,7 @@ From the admin dashboard (left sidebar), go to the **Tools** option from the Nin
 
 ## Import
 
-Ninja Tables can import tables from existing data, like from a CSV or JSON file. You can also import existing tables from the other WordPress table plugins. Check the **[link ](guide/import-export/import-table-data-from-a-csv)** to learn more about how to **Import**.
+Ninja Tables can import tables from existing data, like from a CSV or JSON file. You can also import existing tables from the other WordPress table plugins. Check the [Import Table Data from a CSV](/guide/import-export/import-table-data-from-a-csv) guide to learn more about how to **Import**.
 
 ## Global Appearance
 
