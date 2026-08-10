@@ -19,7 +19,9 @@ The newly generated tables will use the following settings. You may, of course, 
 
 - The first feature is the **Default Styling Library**, which manages the library you must work with. Three different libraries are available in this segment, such as **Semantic UI**, **Bootstrap 4** & **Bootstrap 3**. Each of these libraries has various components once you select one of them.
 
-- The second feature is the** Default Table** **Styles** option which offers several functions like **Single Line Cells**, **Fixed Layout**, **Hover Rows**, **Bordered Table,** and many more. Check these options according to your styling needs. Hover rows, Striped rows, and Vertically centered table cell contents are all checked at the beginning of the newly constructed table.
+- The second feature is the** Default Table** **Styles** option which offers several functions like **Single Line Cells**, **Fixed Layout**, **Hover Rows**, **Bordered Table,** and many more. Check these options according to your styling needs. 
+
+Hover rows, Striped rows, and Vertically centered table cell contents are all checked at the beginning of the newly constructed table.
 
 ![Global Appearance](/images/table-management/tools-settings/2.-Global-Apperrance-02.webp)
 
@@ -31,7 +33,7 @@ Other than predefined colors, Ninja Tables has custom [table color](/guide/styli
 
 - In Default Pagination Setting, you can select how many items you want to show per page. You can also disable pagination here.
 
-- Default Font Setting feature allows users to change the Table’s **Font Family** & **Font Size **according to their requirements.
+- Default Font Setting feature allows users to change the Table’s **Font Family** & **Font Size** according to their requirements.
 
 - Click on the **Update** button when you are done!
 
@@ -44,7 +46,7 @@ By default, Only the Administrator has access to manage the tables. By selecting
 ## License
 
 For the licensing option to appear in your tools and settings, you must install Ninja Table Pro.
-From the left sidebar, click on the **License **option & activate your **Ninja Table Pro** by providing the license key below.
+From the left sidebar, click on the **License** option & activate your **Ninja Table Pro** by providing the license key below.
 
 📌 See [How to install and activate Ninja Tables](/guide/getting-started/how-to-install-and-activate-ninja-tables-plugin) from here. 
 
@@ -56,8 +58,8 @@ From here, you can clear the table cache or handle Javascript errors.
 
 ### Clear Table Cache
 
-If you want to clear all the** Ninja Tables cache**, click on the **Clear Table Cache **button.
+If you want to clear all the **Ninja Tables cache**, click on the **Clear Table Cache** button.
 
 ![Clear Table Cache](/images/table-management/tools-settings/5.-Global-Settings-05.webp)
 
-This is all about** **the **Tools and settings** of Ninja Tables.
+This is all about the **Tools and settings** of Ninja Tables.
