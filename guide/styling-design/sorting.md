@@ -6,11 +6,12 @@ description: "Sorting"
 # Sorting
 
 The **Sorting** **Method** is one of the essential features of the **Other** tab.
+
 Move to the **Select Sorting Method** option to sort table data in various ways.
 
 ![New Ui table sorting options](/images/styling-design/sorting/1.-New-Ui-table-sorting-options.webp)
 
-The sorting Method has three options to sort by - **Created at**,** By Column**, and **Manual Sort**.
+The sorting Method has three options to sort by - **Created at**, **By Column**, and **Manual Sort**.
 
 ## **By Column**
 
@@ -23,7 +24,8 @@ In this option, two sort types are available - Show New Items First & Show Old I
 ## **Sort Manually**
 
 You can sort the table data from **Table Rows** manually. It's a pro feature.
-Click the **Sort** **Manually** checkbox to enable sorting the data using the drag-and-drop feature. Just hover over any row and manually rearrange them.
+
+Click the **Sort Manually** checkbox to enable sorting the data using the drag-and-drop feature. Just hover over any row and manually rearrange them.
 
 ![new Ui table manual sort](/images/styling-design/sorting/2.-new-Ui-table-manual-sort.webp)
 
