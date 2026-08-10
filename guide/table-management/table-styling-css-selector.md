@@ -6,8 +6,11 @@ description: "Table Styling & CSS Selector"
 # Table Styling & CSS Selector
 
 Ninja Tables already has a ton of built-in styling options ranging from background color to the text color of your tables. Styling tables in Ninja Tables using CSS selector is an advanced functionality.
+
 You can also specify the table header text styling, i.e. position, HTML content of the table header, column width, custom CSS classes, etc.
-Table Styling & CSS Selector is a Ninja Tables Pro feature.
+
+> [!Note]
+> Table Styling & CSS Selector is a Ninja Tables Pro feature.
 
 ![Ninja Tables Advanced Settings](/images/table-management/table-styling-css-selector/1.-06.webp)
 
@@ -16,7 +19,9 @@ Sometimes you may need to add advanced styling for your tables. This article wil
 ## Table Structure
 
 - Every table gets certain CSS classes and an HTML ID that can be used for styling.
+
 - Add your styling commands to your theme's CSS file or, **Appearance →** **Customize →** **Additional CSS** or, your preferred method to add custom CSS to your site.
+
 - Where the table ID is **353,** and If you want to select a specific table to style, you need that table ID.
 
 ## Styling Table Header

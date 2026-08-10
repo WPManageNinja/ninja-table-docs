@@ -6,7 +6,9 @@ description: "Define User Role Permission for Table Users"
 # Define User Role Permission for Table Users
 
 With Ninja Tables, you can easily define who can add or edit your tables.
+
 To change your user role permission settings, go through the following steps -
+
 - Go to **Ninja Tables** → **Tools** from your WordPress Admin Panel.
 - Click on **Permission** from the left sidebar.
 - Select the **Permission** Settings you are comfortable with from the Checkboxes. You can also **check all** of the roles, or you can check any specific role as well.
