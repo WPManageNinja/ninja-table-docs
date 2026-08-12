@@ -10,7 +10,9 @@ Default Data Filtering Shortcode feature allows you to quickly and easily displa
 > [!Note]
 > Default Data Filtering Shortcode is a Pro Feature!
 
-For instance, say you have a table with lots of movie data, and you want to show the rows that only contain Adventure. This can be previously done in only one possible way your user had to search for **Adventure** movies manually, given that you have allowed the [ Search / Filter ](https://ninjatables.com/docs/add-or-remove-search-or-filter-functionality/) options in your table.
+For instance, say you have a table with lots of movie data, and you want to show the rows that only contain Adventure. 
+
+This can be previously done in only one possible way your user had to search for **Adventure** movies manually, given that you have allowed the [ Search / Filter ](/guide/styling-design/add-or-remove-search-or-filter-functionality) options in your table.
 
 However, the **Default Data Filtering** feature allows you as an admin to set default filtering options in a table containing a huge amount of data.
 
