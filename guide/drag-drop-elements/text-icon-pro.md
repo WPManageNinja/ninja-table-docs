@@ -7,7 +7,7 @@ description: "Text Icon (Pro)"
 
 In the Ninja Tables Drag and Drop mode, you'll find Text Icon element. This element lets you add text beside an icon and it's only available as a pro element.
 
-It's almost similar to the "[Styled List](https://ninjatables.com/docs/styled-list/)" element because of the use of an icon and a text box side by side. However, the Text Icon element is a single text box and not a list. Unless you stack them as a list.
+It's almost similar to the "[Styled List](/guide/drag-drop-elements/styled-list)" element because of the use of an icon and a text box side by side. However, the Text Icon element is a single text box and not a list. Unless you stack them as a list.
 
 Let’s add a **Text Icon** element to our Ninja Tables and check its properties and possibilities.
 

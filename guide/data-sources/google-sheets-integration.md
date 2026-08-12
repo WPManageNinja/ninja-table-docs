@@ -54,7 +54,7 @@ If your spreadsheet has hyperlinks or images, you can import them directly into 
 
 **Hyperlink**: If you have any URL, by default Google will turn them into clickable links until you make them plain text by removing the link inside. 
 
-If you want Ninja Table to behave similarly, just change that column's data type to **[HTML](https://ninjatables.com/docs/html-field/)**. It will transform all your hyperlinks into clickable links.
+If you want Ninja Table to behave similarly, just change that column's data type to **[HTML](/guide/field-types/html-field)**. It will transform all your hyperlinks into clickable links.
 
 **Image**: Just import your images into a cell using the **Image in Cell** option.
 

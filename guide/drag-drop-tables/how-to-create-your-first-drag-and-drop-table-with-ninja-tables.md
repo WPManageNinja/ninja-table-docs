@@ -42,9 +42,9 @@ The left section on the menu, grouped by **General** & **Advanced**, contains ta
 > [!Note]
 > Four cell elements in the Advanced section are available in the Pro version only.
 
-The General elements include **[Text](https://ninjatables.com/docs/text-element/)**, **[Button](https://ninjatables.com/docs/button-element/)**, **[Icon](https://ninjatables.com/docs/icon-element/), [Rating](https://ninjatables.com/docs/star-rating-element-in-ninja-tables-drag-and-drop/), [List](https://ninjatables.com/docs/list-element/), [HTML](https://ninjatables.com/docs/html/), [Shortcode](https://ninjatables.com/docs/shortcode-element/), **and** [Image](https://ninjatables.com/docs/image/)**.
+The General elements include **[Text](/guide/drag-drop-elements/text-element)**, **[Button](/guide/drag-drop-elements/button-element)**, **[Icon](/guide/drag-drop-elements/icon-element), [Rating](/guide/drag-drop-elements/star-rating-element-in-ninja-tables-drag-and-drop), [List](/guide/drag-drop-elements/list-element), [HTML](/guide/drag-drop-elements/html-element), [Shortcode](/guide/drag-drop-elements/shortcode-element), **and** [Image](/guide/drag-drop-elements/image-element)**.
 
-The Advanced or Pro version includes [Styled List](https://ninjatables.com/docs/styled-list/), [Ribbon](https://ninjatables.com/docs/ribbon-element/), [Progress](https://ninjatables.com/docs/progress/), and [Text Icon](https://ninjatables.com/docs/text-icon-pro/) as below screenshot.
+The Advanced or Pro version includes [Styled List](/guide/drag-drop-elements/styled-list), [Ribbon](/guide/drag-drop-elements/ribbon-element), [Progress](/guide/drag-drop-elements/progress-bar), and [Text Icon](/guide/drag-drop-elements/text-icon-pro) as below screenshot.
 
 ![Advanced table elements](/images/drag-drop-tables/create-first-drag-drop/5.-Advanced-table-elements.webp)
 
@@ -93,7 +93,7 @@ When you click on the dropped cell element, you can customize it however you nee
 - Duplicate
 - Delete
 
-Please check our documentation for more on settings, [responsiveness](https://ninjatables.com/docs/responsive-table-design/), and [elements](https://ninjatables.com/docs-category/table-elements/).
+Please check our documentation for more on settings, [responsiveness](/guide/drag-drop-settings/responsive-table-design), and [elements](https://ninjatables.com/docs-category/table-elements/).
 
 Once all the customizations are done, click on the save button and check the preview.
 

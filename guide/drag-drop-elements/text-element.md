@@ -7,7 +7,7 @@ description: "Text Element"
 
 A table is used to visualize data, and texts carry the primary data of any table. 
 
-After knowing how to create the [first drag-and-drop table](https://ninjatables.com/docs/how-to-create-your-first-drag-and-drop-table-with-ninja-tables/) you should be clear about all the elements of this module. In this guide, we will explore the **Text** element, a free element available in the builder.
+After knowing how to create the [first drag-and-drop table](/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables) you should be clear about all the elements of this module. In this guide, we will explore the **Text** element, a free element available in the builder.
 
 As you engage with the Editor Box, you'll find seamless text editing access at your fingertips.
 

@@ -28,6 +28,6 @@ This is how all your data will be imported here automatically. Lastly, don't for
 
 ![Construct Table CSV](/images/data-sources/construct-table-csv/3.-Construct-Table-From-CSV-3.webp)
 
-All other settings are exactly the same as Google Sheets. Please check the **[documentation](https://ninjatables.com/docs/google-sheets-integration/)** for further details.
+All other settings are exactly the same as Google Sheets. Please check the **[documentation](/guide/data-sources/google-sheets-integration)** for further details.
 
 Creating data tables from CSV as an external source is fast and easy in Ninja Tables. If you already have tables in another website, simply fetch the table using CSV.

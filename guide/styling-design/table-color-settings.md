@@ -41,5 +41,5 @@ Pre-defined color combinations can't always look good for your tables. Color the
 
 - You can also toggle "**Alternate Color Schema for Table Rows**" on to make the table color have alternate colors for rows. Choose your preferred custom colors to display them on odd rows and even rows.
 
-You can also change the color of your table with CSS. Check out this **[documentation](https://ninjatables.com/docs/table-styling-css-selector/)**.
-Also, check out - **[ Table Font Setting](https://ninjatables.com/docs/table-font-setting/)**.
+You can also change the color of your table with CSS. Check out this **[documentation](/guide/table-management/table-styling-css-selector)**.
+Also, check out - **[Table Font Setting](/guide/styling-design/table-font-settings)**.

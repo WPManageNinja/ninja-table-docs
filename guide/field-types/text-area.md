@@ -20,7 +20,7 @@ Text Area data type allows you to add multiple lines in a cell. There’s no lim
 
 ![text area in Ninja Tables](/images/field-types/text-area/2.-text-area-3.webp)
 
-- Text Area also supports HTML. You can follow the same path in "[Single Line Text Field](https://ninjatables.com/docs/single-line-text-field/)" to see how adding HTML in the Text Area works.
+- Text Area also supports HTML. You can follow the same path in "[Single Line Text Field](/guide/field-types/single-line-text-field)" to see how adding HTML in the Text Area works.
 
 ## Text Area in Ninja Tables
 

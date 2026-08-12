@@ -45,11 +45,11 @@ You can style your table in 13 different **pre-defined color schemes**. You will
 
 ![New Ui predefined color scheme](/images/styling-design/table-style-settings/4.-New-Ui-predefined-color-scheme.webp)
 
-We'll explain more about [table colors](https://ninjatables.com/docs/table-color-settings/) in the next doc.
+We'll explain more about [table colors](/guide/styling-design/table-color-settings) in the next doc.
 
 ### Other
 
-Under the **[Others](https://ninjatables.com/docs/other-design-settings/)** tab, you will find a few more options to style your table.
+Under the **[Others](/guide/styling-design/other-design-settings)** tab, you will find a few more options to style your table.
 
 - **Pagination**: You can select how many items you want to show per page in this section. You can also disable pagination here.
 - **Pagination Position**: Select where you want the pagination buttons placed- Left, Center, Right, or Default.
