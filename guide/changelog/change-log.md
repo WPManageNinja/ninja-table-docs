@@ -7,6 +7,18 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in Ninja Tables.
 
+## Ninja Tables v5.2.13
+
+*Released on August 3, 2026*
+
+::: code-group
+
+```md [🆕 New Features]
+• Added: safeguards for outdated Ninja Tables Pro installations.
+```
+
+:::
+
 ## Ninja Tables v5.2.12
 
 *Released on July 22, 2026*
