@@ -32,7 +32,7 @@ This is where you select the form you want to appear on your new chart.
 
 ![Select a form to populate Ninja Charts](/images/ninja-charts/create-ninja-charts-fluent/3.-Select-a-form-to-populate-chart.webp)
 
-Hit "Next" after selecting a form and move to customizing [Data Range](https://ninjatables.com/docs/how-to-use-data-range-picker-in-ninja-charts/), [Formatting & Preview](https://ninjatables.com/docs/how-to-customize-charts-in-ninja-charts/), and save the Fluent Forms data chart.
+Hit "Next" after selecting a form and move to customizing [Data Range](/guide/ninja-charts/how-to-use-data-range-picker-in-ninja-charts), [Formatting & Preview](/guide/ninja-charts/how-to-customize-charts-in-ninja-charts), and save the Fluent Forms data chart.
 
-
-**Tip**: Be mindful of the data type of the form you're selecting and the chart type. Forms with text input are not suitable for pie chart or radar. For Ninja Charts to correctly populate form entries, you need to pick the correct form and the correct chart type.
+> [!Tip]
+> Be mindful of the data type of the form you're selecting and the chart type. Forms with text input are not suitable for pie chart or radar. For Ninja Charts to correctly populate form entries, you need to pick the correct form and the correct chart type.

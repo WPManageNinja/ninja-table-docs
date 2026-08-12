@@ -35,4 +35,5 @@ Pick a table and populate your chart.
 
 You can now hit "Next" and customize your chart as you want.
 
-**Tip**: Tables with text input are not suitable for charts like pie chart or radar. For Ninja Charts to correctly populate table entries, you need to pick the correct table and the correct chart type. Duplicate text type or invalid data type cannot create a chart.
+> [!Tip]
+> Tables with text input are not suitable for charts like pie chart or radar. For Ninja Charts to correctly populate table entries, you need to pick the correct table and the correct chart type. Duplicate text type or invalid data type cannot create a chart.
