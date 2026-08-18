@@ -131,8 +131,8 @@ The user can filter any dynamic options in **Progressive Filter** to quickly acc
 
 Let’s see how this works!
 
-<div style="position: relative; padding-top: 56.25%;">
-  <iframe src="https://www.youtube.com/embed/9pOi39RoFL4" title="Custom Filters Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/9pOi39RoFL4" title="Custom Filters Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 This is how you can use **Custom Filters** in the table step by step!
