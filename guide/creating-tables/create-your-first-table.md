@@ -9,6 +9,10 @@ Creating a table with **Ninja** **Tables** is simple and fast! Install and activ
 
 Let's look at how to create a table.
 
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/U8AHiC1g3Ew" title="Ninja Tables Playbook Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Add Table
 
 - First, go to the **WordPress Dashboard**. Then navigate to the **Ninja Tables Plugin** from the sidebar.
@@ -137,6 +141,4 @@ Use Bulk Action if you need to delete more than one entry. You can also duplicat
 
 Let's visually look at the video demonstration of the basic table setup using the Ninja Tables plugin.
 
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/GXqaXMVsnl8" title="Create Your First Table Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+
