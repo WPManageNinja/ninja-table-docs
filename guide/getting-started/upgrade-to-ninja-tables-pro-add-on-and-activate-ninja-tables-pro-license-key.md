@@ -6,6 +6,11 @@ description: "Upgrade and Activate Ninja Tables Pro License Key"
 # Upgrade and Activate Ninja Tables Pro License Key
 
 Before you install Ninja Tables Pro, make sure you have the Free Version of Ninja Tables already installed on your site. By upgrading to the Ninja Tables Pro add-on, you can access many features.
+
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/VTOq48oO4cY" title="How to Install and Activate Ninja Tables Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 Here is how you can upgrade **Ninja Tables** -
 - First, go to [wpmanageninja.com](https://wpmanageninja.com/downloads/ninja-tables-pro-add-on/) and purchase the Ninja Tables Pro Add-on.
 - Sign-up for WPManageNinja if you are a new user. This account will be required to provide you with the License Key and **Support**, if necessary.

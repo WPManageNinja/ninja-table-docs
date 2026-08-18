@@ -7,10 +7,6 @@ description: "How to Install and Activate Ninja Tables Plugin"
 
 Ninja Tables is well known because of its ease of use and simple configuration. Installing and activating this plugin is as easy as pie. So when you are all set to [get started with Ninja tables](/guide/getting-started/ninja-tables-introduction), let’s see how to install and activate it.
 
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/VTOq48oO4cY" title="How to Install and Activate Ninja Tables Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 
 ## Requirements
 
