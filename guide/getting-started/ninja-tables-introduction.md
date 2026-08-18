@@ -104,12 +104,6 @@ Extend Ninja Tables with powerful integrations:
 
 ![connect google sheets to ninja tables](/images/getting-started/ninja-tables-introduction/11.-connect-google-sheets-to-ninja-tables.webp)
 
-### Fluent Forms Integration (Video)
-
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/0dsOiczWsIQ" title="Fluent Forms Integration Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 ## SEO-Friendly Tables
 
 Ninja Tables generates clean HTML tables that are search-engine friendly, helping your content remain accessible while improving your site's SEO.
