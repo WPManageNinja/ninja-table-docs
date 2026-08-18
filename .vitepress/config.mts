@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Ninja Tables",
   description: "Easiest Table Builder Plugin in WordPress!",
   cleanUrls: true,
+  srcExclude: ['README.md', 'CLAUDE.md', '.claude/**/*.md'],
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }]
   ],

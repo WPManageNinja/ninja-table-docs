@@ -25,7 +25,9 @@ change) to catch broken links and parser errors.
 ├── public/                      ← site-wide assets served at root: logo.svg, favicon.png
 │   └── images/<category>/<slug>/<file>.webp  ← all doc screenshots (see Images below)
 ├── .vitepress/
-│   ├── config.mts               ← site config: title, cleanUrls, nav, sidebar (SINGLE source of truth)
+│   ├── config.mts               ← site config: title, cleanUrls, srcExclude, nav, sidebar
+│                                    (SINGLE source of truth; srcExclude keeps README.md,
+│                                    CLAUDE.md and .claude/**/*.md off the public site)
 │   └── theme/
 │       ├── index.ts             ← DefaultTheme passthrough, imports style.css
 │       └── style.css            ← brand color overrides (teal, see Brand below)
