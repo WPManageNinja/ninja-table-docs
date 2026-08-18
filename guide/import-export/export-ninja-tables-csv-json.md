@@ -9,6 +9,10 @@ It is quite easy & straightforward to export table data from **Ninja Tables**. T
 
 Let's dive into the article to learn how the Ninja Tables export works.
 
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/qzE6NmZmQrQ" title="Export and Import Tables Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 - First, navigate to **All Tables** in the Ninja tables. Pick the preferred table you want to export.
 - Then move to the **Import-Export** tab.
 
@@ -30,3 +34,4 @@ Let's dive into the article to learn how the Ninja Tables export works.
 So there's no need to customize your table from scratch.
 
 Export table data from Ninja Tables and use it in a new table or simply send the CSV/JSON file to someone who needs it.
+
