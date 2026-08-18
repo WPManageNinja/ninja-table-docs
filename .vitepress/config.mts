@@ -218,10 +218,6 @@ export default defineConfig({
           { text: 'Changelog', link: '/guide/changelog/change-log' }
         ]
       }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   }
 })
