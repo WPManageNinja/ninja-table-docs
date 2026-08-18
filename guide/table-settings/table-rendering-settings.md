@@ -12,6 +12,10 @@ Go to the **Table** **Configuration** tab and you'll see Rendering Settings o
 
 ![New Ui table rendering settings](/images/table-settings/table-rendering-settings/1.-New-Ui-table-rendering-settings.webp)
 
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/KGWjIgU3VUY" title="DataTables Rendering Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## **Ajax Table**
 
 You should use the **Ajax** **Rendering** **Method** when your table has a large amount of data. Here, data will load as a chunk.
