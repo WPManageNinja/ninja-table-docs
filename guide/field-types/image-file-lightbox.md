@@ -11,6 +11,10 @@ And a lightbox is for when the image or the media needs to appear much clearer a
 
 You can decide the data type right from the start when you add a column to the table. From your dashboard, go to the **Ninja Tables plugin → Tables (the table where you want to add Column) → Add Column**.
 
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/3zM3RD57UBA" title="Media-Rich Tables Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Lightbox Field in Ninja Tables
 
 This data type allows you to add images, GIFs, videos, or YouTube links in a table column.
