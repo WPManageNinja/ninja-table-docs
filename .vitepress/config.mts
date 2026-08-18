@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Ninja Tables",
-  description: "Easiest Table Builder Plugin in WordPress!",
+  description: "Easiest Table Builder Plugin for WordPress!",
   cleanUrls: true,
   srcExclude: ['README.md', 'CLAUDE.md', '.claude/**/*.md'],
   head: [
@@ -19,7 +19,8 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'User Guide', link: '/guide/getting-started/ninja-tables-introduction' },
       { text: 'Changelog', link: '/guide/changelog/change-log' },
-      { text: 'Website', link: 'https://ninjatables.com/' }
+      { text: 'Website', link: 'https://ninjatables.com/' },
+      { text: 'Support', link: '/guide/getting-started/how-to-get-support' }
     ],
 
     sidebar: [
