@@ -74,4 +74,4 @@ You can set a particular column’s background color to be displayed on the tabl
 ### Column Text Color
 
 With this, you can set a particular column’s text color.
-Apply the **Advanced Settings **to your table columns and make the data stand out.
+Apply the **Advanced Settings** to your table columns and make the data stand out.

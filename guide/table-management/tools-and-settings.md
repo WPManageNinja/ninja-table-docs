@@ -19,7 +19,7 @@ The newly generated tables will use the following settings. You may, of course, 
 
 - The first feature is the **Default Styling Library**, which manages the library you must work with. Three different libraries are available in this segment, such as **Semantic UI**, **Bootstrap 4** & **Bootstrap 3**. Each of these libraries has various components once you select one of them.
 
-- The second feature is the** Default Table** **Styles** option which offers several functions like **Single Line Cells**, **Fixed Layout**, **Hover Rows**, **Bordered Table,** and many more. Check these options according to your styling needs. 
+- The second feature is the **Default Table** **Styles** option which offers several functions like **Single Line Cells**, **Fixed Layout**, **Hover Rows**, **Bordered Table,** and many more. Check these options according to your styling needs. 
 
 Hover rows, Striped rows, and Vertically centered table cell contents are all checked at the beginning of the newly constructed table.
 

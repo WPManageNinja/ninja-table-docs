@@ -37,4 +37,4 @@ The Ninja Tables dashboard will show all the tables you created and for this Dem
 
 The title and description would only be visible if you allow them. Customize this setting from the "[Table Styling](/guide/styling-design/table-style-settings)" tab.
 
-This is all about the **Table Title **and** Table Description!**
+This is all about the **Table Title** and **Table Description!**

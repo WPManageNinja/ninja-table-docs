@@ -21,7 +21,7 @@ At the bottom of this window, locate and click on the "**Settings**" icon to ent
 
 ![New Ui update row settings](/images/styling-design/tables-row-color/2.-New-Ui-update-row-settings.webp)
 
-## **Customizing Row Colors **
+## **Customizing Row Colors**
 
 There are several customization choices available in the Settings section, including the **Row Background color**, **Row Text Color**, and **Cell Color Customization** settings. 
 

@@ -33,7 +33,7 @@ All you need to do is drag the element from the left menu and drop it on the tab
 - **Editor Box:** You can edit the text of the Text Element. (Or, type in the cell)
 - **Font Color**: You can change the color of the text. By default, it is set to Black.
 - **Font Size**: Change the size of the text. By default, it is set to 15.
-- **Alignment: **You can align texts to the left, right, or center. By default, it is set to Center.
+- **Alignment:** You can align texts to the left, right, or center. By default, it is set to Center.
 - **Font Style**: You can change the Font Style orientations. Available options are **Bold**, *Italic*, and **Underline**.
 
 ## Conclusion

@@ -51,7 +51,7 @@ Here, we’ve selected **Ninja Tables** as the data source as an example.
 
 ![](/images/ninja-charts/create-dynamic-charts-ninja/5.-Data-04.webp)
 
-- Hit **Next **and now you’re in the **Data Range** tab where you can choose what table entries you want in your chart.
+- Hit **Next** and now you’re in the **Data Range** tab where you can choose what table entries you want in your chart.
 
 ![](/images/ninja-charts/create-dynamic-charts-ninja/6.-Column-in-data-source-05.webp)
 

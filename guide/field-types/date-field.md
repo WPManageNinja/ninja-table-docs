@@ -36,7 +36,7 @@ It indicates the pattern of the date value. The date field mainly includes 8 for
 
 ### Date Format (Custom)
 
-There is also a Date format option where a custom date can also be added if the default options do not meet your needs. You can put your custom date as per your requirements. Custom dates need to be in **moment.js **supported format.
+There is also a Date format option where a custom date can also be added if the default options do not meet your needs. You can put your custom date as per your requirements. Custom dates need to be in **moment.js** supported format.
 
 > [!Note]
 > Custom Date Format is a Pro feature!

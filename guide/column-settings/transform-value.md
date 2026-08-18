@@ -15,7 +15,6 @@ Transform Value is HTML, CSS & Excel supported!
 
 ![transform value in ninja tables](/images/column-settings/transform-value/1.-transform-value-1.webp)
 
-- 
 Let's go over the **Transform** **Value** functionality step by step.
 
 <div class="video-embed">

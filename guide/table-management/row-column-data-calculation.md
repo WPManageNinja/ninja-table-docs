@@ -21,7 +21,7 @@ Suppose we have a table that contains 3 numeric data columns- Number One, Number
 
 We have another column named **Result** that will display the calculated results of all the numbers in a row.
 
-- If you want to calculate the sum of a row containing numeric data, navigate to the **Table Configuration **->> **Transform Value**.
+- If you want to calculate the sum of a row containing numeric data, navigate to the **Table Configuration** ->> **Transform Value**.
 
 - Here you need to add a shortcode to find the sum of the rows. Ninja Tables has a feature to **"Enable Excel Formula support for Transform Value**." Enable this option to get the Excel summation formula.
 

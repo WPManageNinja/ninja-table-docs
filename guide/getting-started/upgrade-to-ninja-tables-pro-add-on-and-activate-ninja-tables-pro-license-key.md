@@ -12,7 +12,7 @@ Here is how you can upgrade **Ninja Tables** -
 
 ![Wpmanageninja login page](/images/getting-started/upgrade-ninja-tables/1.-upgrade-to-pro-1.webp)
 
-- Then fill in your payment details for the transaction to go through. After you log in to the dashboard, click on the** Download** button. 
+- Then fill in your payment details for the transaction to go through. After you log in to the dashboard, click on the **Download** button. 
 
 ![Download .zip](/images/getting-started/upgrade-ninja-tables/2.-upgrade-to-pro-2.webp)
 
@@ -30,11 +30,11 @@ Here is how you can upgrade **Ninja Tables** -
 
 ## Ninja Tables Pro License Key
 
-A **License Key **will be asked when you will be going to use the Pro features for the first time. You can retrieve the License you purchased from your dashboard.
+A **License Key** will be asked when you will be going to use the Pro features for the first time. You can retrieve the License you purchased from your dashboard.
 
 ![License Key](/images/getting-started/upgrade-ninja-tables/5.-upgrade-to-pro-5.webp)
 
-- Copy the Key and paste it into the License key input field of the Ninja Tables Pro **License** tab & Click on the **Activate Ninja Tables Pro **button.
+- Copy the Key and paste it into the License key input field of the Ninja Tables Pro **License** tab & Click on the **Activate Ninja Tables Pro** button.
 
 ![Activate Ninja Tables Pro](/images/getting-started/upgrade-ninja-tables/6.-upgrade-to-pro-6.webp)
 

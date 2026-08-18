@@ -29,7 +29,7 @@ Let's look at how to create a table.
 
 ![New UI add table column](/images/creating-tables/create-first-table/2.-New-UI-add-table-column.webp)
 
-##  Table Rows
+## Table Rows
 
 - Initially, in the **Table Rows** tab, you will find only the "**+ Add Column**" button to create columns. And several other tabs to configure the table. We'll get to that later.
 

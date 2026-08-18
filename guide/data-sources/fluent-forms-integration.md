@@ -44,7 +44,7 @@ Now a new table will be created with the form fields as table header and form en
 ![form entries in data table](https://ninjatables.com/wp-content/uploads/2023/01/fluent-forms-integration-5.png)
 
 - Edit the table’s name, data type & table style as well using Ninja Tables. Plus, Ninja tables also give you the option to customize table design, responsiveness, and table color.
-- Further customization can be done, such as - adding another **Your Message **column name. Select the Edit button that is just above the table.
+- Further customization can be done, such as - adding another **Your Message** column name. Select the Edit button that is just above the table.
 - After clicking there, you can notice all your form fields, like the screenshot below.
 
 ![Contact Table](https://ninjatables.com/wp-content/uploads/2023/01/fluent-forms-integration-7-1024x426.png)

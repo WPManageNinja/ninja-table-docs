@@ -11,7 +11,7 @@ The last feature among the three styling tabs is the **Other** option. You can c
 
 ![New Ui pagination](/images/styling-design/pagination/1.-New-Ui-pagination.webp)
 
-***Must hit "**Save**" to save your settings!
+Must hit "**Save**" to save your settings!
 
 The **Pagination Items Per Page** allows you to restrict the number of rows you want to view in the table. It's an input field. You can type in the number of rows.
 

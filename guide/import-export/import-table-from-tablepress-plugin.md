@@ -21,13 +21,13 @@ Let's have a look at the article on how to accomplish that.
 ![Table made of TablePress](/images/import-export/import-table-tablepress/1.-01-2.webp)
 
 - Now, go to the WordPress **Dashboard → Ninja Tables → Tools → Import** to import this table from the TablePress Plugin.
-- Scroll down, and you will get the "**Import From Other WP Table  Plugin**" option.
+- Scroll down, and you will get the "**Import From Other WP Table Plugin**" option.
 
 ![Import From WP Table Plugin](/images/import-export/import-table-tablepress/2.-02-2.webp)
 
 - Click on the **Import** button to import from TablePress.
 - A popup will appear after that. Click on the Import button (right side of the table) & a button will appear beside the Import button, the **View Imported Table** button.
--  By clicking on that button, you can view the imported table.
+- By clicking on that button, you can view the imported table.
 
 ![View Imported Table](/images/import-export/import-table-tablepress/3.-03-2.webp)
 

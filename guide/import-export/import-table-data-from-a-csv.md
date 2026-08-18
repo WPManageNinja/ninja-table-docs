@@ -30,7 +30,7 @@ If you have any issue with CSV data imports, such as having blank values in your
 
 Ninja table supports only comma-separated CSV and JSON.
 
-If your CSV file is not **Comma Separated **& is in another format,** **there is a trick for converting it to make it Comma-Separated-CSV,
+If your CSV file is not **Comma Separated** & is in another format, there is a trick for converting it to make it Comma-Separated-CSV,
 
 - First, go to the **Google Spreadsheet → File →** click on **Import** & then a pop-up will appear.
 

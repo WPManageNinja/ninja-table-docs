@@ -37,7 +37,7 @@ Let’s have a look at how JetEngine Integration works in Ninja Tables.
 
 - Lastly, click on the **Add Post Type** button after your configuration is done.
 
-- Now, go to the **Jet Engine CPT** and go to the **Add New **button.
+- Now, go to the **Jet Engine CPT** and go to the **Add New** button.
 
 ![Jet Engine CPT](/images/wordpress-integration/acf-metabox-jetengine/5.-Ninja-Table-JetEngine-E-6-1.webp)
 

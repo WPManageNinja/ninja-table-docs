@@ -21,7 +21,7 @@ It's helpful if the column needs different data for each row. For example, "Yes"
 
 ### Select Items
 
-After choosing this Select field, the Select Items **field will automatically appear.
+After choosing this Select field, the **Select Items** field will automatically appear.
 
 This is where you add the elements of the dropdown list in the specific column. Here we've added "Yes" and "No" for the dropdown.
 

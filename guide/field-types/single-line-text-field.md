@@ -7,7 +7,7 @@ description: "Single Line Text Field"
 
 You can construct the data type of a column by hovering over or from the "Table Configuration" settings of the specific column. The "Single Line Text Field" is for columns with text data.
 
-You can decide the data type right from the start when you add a column to the table. From your dashboard, go to the **Ninja Tables plugin → Tables **(the table where you want to add Column)**  → Add Column**.
+You can decide the data type right from the start when you add a column to the table. From your dashboard, go to the **Ninja Tables plugin → Tables** (the table where you want to add Column) **→ Add Column**.
 
 - A pop-up form will appear, and you will see the available **Data Type** here. You can choose from the various data types listed in the below screenshot.
 
@@ -27,7 +27,7 @@ If you want to see the data type works or not, click the pencil icon for the row
 
 The process is the same. Select the data type as single line text field and simply paste the desired HTML code in the blank text box.
 
-For example, we've used <h2>Hello Ninja</h2> here.
+For example, we've used `<h2>Hello Ninja</h2>` here.
 
 ![HTML in single line text field](/images/field-types/single-line-text-field/2.-HTML-in-single-line-text-field.webp)
 

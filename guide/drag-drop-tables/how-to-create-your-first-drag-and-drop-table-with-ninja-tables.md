@@ -42,7 +42,7 @@ The left section on the menu, grouped by **General** & **Advanced**, contains ta
 > [!Note]
 > Four cell elements in the Advanced section are available in the Pro version only.
 
-The General elements include **[Text](/guide/drag-drop-elements/text-element)**, **[Button](/guide/drag-drop-elements/button-element)**, **[Icon](/guide/drag-drop-elements/icon-element), [Rating](/guide/drag-drop-elements/star-rating-element-in-ninja-tables-drag-and-drop), [List](/guide/drag-drop-elements/list-element), [HTML](/guide/drag-drop-elements/html-element), [Shortcode](/guide/drag-drop-elements/shortcode-element), **and** [Image](/guide/drag-drop-elements/image-element)**.
+The General elements include **[Text](/guide/drag-drop-elements/text-element)**, **[Button](/guide/drag-drop-elements/button-element)**, **[Icon](/guide/drag-drop-elements/icon-element), [Rating](/guide/drag-drop-elements/star-rating-element-in-ninja-tables-drag-and-drop), [List](/guide/drag-drop-elements/list-element), [HTML](/guide/drag-drop-elements/html-element), [Shortcode](/guide/drag-drop-elements/shortcode-element),** and **[Image](/guide/drag-drop-elements/image-element)**.
 
 The Advanced or Pro version includes [Styled List](/guide/drag-drop-elements/styled-list), [Ribbon](/guide/drag-drop-elements/ribbon-element), [Progress](/guide/drag-drop-elements/progress-bar), and [Text Icon](/guide/drag-drop-elements/text-icon-pro) as below screenshot.
 

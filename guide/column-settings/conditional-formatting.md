@@ -39,7 +39,7 @@ Go to the **Table Configuration** tab **→** Click on the **Edit** icon (Pencil
 
 ![Ninja Tables Add Condition](/images/column-settings/conditional-formatting/3.-Ninja-Tables-Add-Condition.webp)
 
-- Let’s set the conditions differently as **Equal, Not Equal, Contains, **and** Does not Contain**. Then, you need to set some trigger values and then set options for which conditions will be applied.
+- Let’s set the conditions differently as **Equal, Not Equal, Contains,** and **Does not Contain**. Then, you need to set some trigger values and then set options for which conditions will be applied.
 
 ![Ninja Tables Conditions](/images/column-settings/conditional-formatting/4.-Ninja-Tables-Conditions.webp)
 
