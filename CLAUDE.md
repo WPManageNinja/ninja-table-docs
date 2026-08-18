@@ -115,6 +115,24 @@ until replacement screenshots are available).
   `gif2webp` for animated GIFs), place under the matching `<category>/<short-slug>/` folder
   (create one if the page doesn't have one yet), and continue the existing numbering.
 
+## Videos
+
+All videos are YouTube embeds — no video files are hosted in the repo. Every embed uses the same
+`.video-embed` wrapper defined in `.vitepress/theme/style.css`, which gives it the full content
+width, a 16:9 ratio, and the same 16px vertical margins as a doc image:
+
+```html
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/<VIDEO_ID>" title="<Descriptive> Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+```
+
+- Use the `youtube.com/embed/<ID>` form — a bare `youtu.be/<ID>` or `youtube.com/watch?v=<ID>`
+  URL on its own line renders as a plain link, not a player.
+- Drop the `?si=…` share parameter from the embed URL.
+- No inline `style` attributes and no `frameborder` — the wrapper class handles sizing.
+- Give every iframe a `title`; keep `loading="lazy"`.
+
 ## Markdown writing style
 
 1. Every page starts with YAML frontmatter (`title`, `description`), then a bare `# H1` matching
