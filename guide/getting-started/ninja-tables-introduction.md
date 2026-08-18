@@ -8,7 +8,7 @@ description: "Introduction – Getting Started with Ninja Tables"
 Ninja Tables is a powerful yet beginner-friendly WordPress table builder that lets you create responsive, customizable tables without writing any code. Whether you're building a simple data table, a pricing table, a product table, or connecting data from external sources, Ninja Tables makes the process fast and easy. If you want to check out if this plugin fulfills your requirements for a WordPress table plugin, check out the [feature page.](https://ninjatables.com/features/)
 
 <div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/GXqaXMVsnl8" title="Ninja Tables Introduction Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/9XIbrKvJRho" title="Ninja Tables Overview Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 After installing and activating the plugin, you'll see a welcome screen where you can start creating your first table or import existing data. You can also explore the documentation, templates, and demo pages to get familiar with the plugin.
@@ -107,7 +107,7 @@ Extend Ninja Tables with powerful integrations:
 ### Fluent Forms Integration (Video)
 
 <div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/uMVnTYnKWM4" title="Fluent Forms Integration Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/0dsOiczWsIQ" title="Fluent Forms Integration Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## SEO-Friendly Tables
