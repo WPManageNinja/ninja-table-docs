@@ -15,7 +15,7 @@ Here's a video on how this integration works.
 > Both the **Ninja Tables** and **[Fluent Forms](https://fluentforms.com/)** are installed beforehand in the dashboard we're using.
 
 <div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/uMVnTYnKWM4" title="Fluent Forms Integration Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/0dsOiczWsIQ" title="Fluent Forms Integration Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 
