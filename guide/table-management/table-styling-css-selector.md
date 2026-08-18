@@ -16,6 +16,10 @@ You can also specify the table header text styling, i.e. position, HTML content 
 
 Sometimes you may need to add advanced styling for your tables. This article will explain to you how to style your tables and make them more beautiful with your existing theme.
 
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/pFVKabaY9Tw" title="Custom CSS Styling Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Table Structure
 
 - Every table gets certain CSS classes and an HTML ID that can be used for styling.
