@@ -137,6 +137,6 @@ Use Bulk Action if you need to delete more than one entry. You can also duplicat
 
 Let's visually look at the video demonstration of the basic table setup using the Ninja Tables plugin.
 
-<div style="position: relative; padding-top: 56.25%;">
-  <iframe src="https://www.youtube.com/embed/GXqaXMVsnl8?si=QaKnjDwnh6yvo3ar" title="Create Your First Table Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/GXqaXMVsnl8" title="Create Your First Table Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
