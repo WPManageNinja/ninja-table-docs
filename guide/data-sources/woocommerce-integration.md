@@ -10,9 +10,6 @@ Making a table with **WooCommerce Products** is a versatile feature of Ninja T
 > [!Note]
 > WooCommerce Integration is a Pro Feature.
 
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/54aIPd2R1RI" title="WooCommerce Product Reviews Table Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 ## Create WooCommerce Tables
 
