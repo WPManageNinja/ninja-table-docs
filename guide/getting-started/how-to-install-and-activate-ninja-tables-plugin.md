@@ -33,4 +33,6 @@ Installing Ninja Tables is similar to any other WordPress plugin.
 
 The section is for those who are more comfortable with video rather than text tutorials. Below is an in-depth video tutorial on how you can install and activate Ninja Tables.
 
-https://youtu.be/VTOq48oO4cY?si=t5rGVXca-11Yp7WL
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/VTOq48oO4cY" title="How to Install and Activate Ninja Tables Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>

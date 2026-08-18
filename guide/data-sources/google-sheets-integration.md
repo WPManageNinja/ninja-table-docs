@@ -44,8 +44,8 @@ We'll explain the process here, using the following dummy Google Sheet.
 
 Here's a tutorial video so you can try it yourself.
 
-<div style="position: relative; padding-top: 56.25%;">
-  <iframe src="https://www.youtube.com/embed/-eO4-F5sowo?si=DM_kH9DyHe08fXYc" title="Google Sheets Integration Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/-eO4-F5sowo" title="Google Sheets Integration Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Import Hyperlinks/Images Automatically
