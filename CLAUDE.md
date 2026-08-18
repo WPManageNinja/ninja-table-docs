@@ -178,6 +178,8 @@ Reusable procedures for this repo are captured as skills in `.claude/skills/` �
 - `write-ninja-tables-doc` — create a new page
 - `edit-ninja-tables-doc` — change an existing page's content
 - `restructure-ninja-tables-docs` — rename/move/delete/merge/reorder
+- `manage-ninja-tables-images` — add/replace/audit screenshots under `public/images/`
+- `update-ninja-tables-changelog` — add a release entry to `guide/changelog/change-log.md`
 - `audit-ninja-tables-docs` — read-only site-wide quality gate
 - `check-ninja-tables-feature-coverage` — decide whether a plugin feature is already documented
   before writing anything

@@ -14,7 +14,7 @@ description: "<One-sentence summary of the page.>"
 - <Step or point one>
 - <Step or point two>
 
-![<Alt text>](https://ninjatables.com/wp-content/uploads/YYYY/MM/<slug>-WxH.ext)
+![<Alt text>](/images/<category>/<short-slug>/1.-<Short-Label>.webp)
 
 ### <Optional Sub-topic>
 
@@ -29,9 +29,9 @@ See [Descriptive Text](/guide/<category>/<other-slug>) for more.
 SCAFFOLD NOTES — delete before saving:
 - Frontmatter title/description are required; H1 (line after frontmatter) should match title.
 - Cross-links: /guide/<category>/<slug> ONLY. Never relative (./slug, ../slug), never with .md.
-- Images: either the historical external https://ninjatables.com/wp-content/uploads/... pattern,
-  or (recommended for new pages) local guide/public/images/<category>/<slug>/<file>, referenced
-  as /guide/public/images/<category>/<slug>/<file>. Pick one, don't mix within a page.
+- Images: local .webp only, on disk at public/images/<category>/<short-slug>/<n>.-<Short-Label>.webp
+  and referenced as /images/<category>/<short-slug>/<n>.-<Short-Label>.webp. No external URLs.
+  See the manage-ninja-tables-images skill.
 - Pro-only features: append "(Pro)" after the feature name on first use.
 - No support boilerplate closers.
 - Bold has no inner spaces: **term** not ** term **.

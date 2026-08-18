@@ -80,8 +80,10 @@ Wait for confirmation.
 
 1. Read `CLAUDE.md`.
 2. Read `.vitepress/config.mts` and locate the affected sidebar entry/entries.
-3. Confirm the image folder path(s), if a local one is used:
-   `guide/public/images/<category>/<slug>/`.
+3. Resolve the doc's REAL image folder — it is a compressed `<short-slug>`, not always the
+   filename slug, so grep it rather than assuming:
+   `grep -oE "/images/[^)]*" guide/<cat>/<slug>.md | sed "s|/[^/]*$||" | sort -u`
+   Record it as `IMG_DIR` (may be empty if the page has no images).
 4. Check `.claude/skills/check-ninja-tables-feature-coverage/references/index.md` for any chunk
    referencing the affected path(s).
 
@@ -92,8 +94,9 @@ Wait for confirmation.
 ```
 RENAME (slug change, same category):
   1. git mv guide/<cat>/<OLD_SLUG>.md guide/<cat>/<NEW_SLUG>.md
-  2. git mv guide/public/images/<cat>/<OLD_SLUG> guide/public/images/<cat>/<NEW_SLUG>  (if exists)
-  3. In the moved file, rewrite local image refs .../<OLD_SLUG>/ -> .../<NEW_SLUG>/
+  2. git mv <IMG_DIR> public/images/<cat>/<NEW_SHORT_SLUG>   (if IMG_DIR exists; derive the new
+     short-slug the same compressed way, or keep the old folder name and skip steps 2-3)
+  3. In the moved file, rewrite local image refs .../<OLD_SHORT_SLUG>/ -> .../<NEW_SHORT_SLUG>/
   4. grep -rl '](/guide/<cat>/<OLD_SLUG>)' guide index.md -> rewrite each to /guide/<cat>/<NEW_SLUG>
   5. .vitepress/config.mts: set the entry's link to /guide/<cat>/<NEW_SLUG> (and text if changed)
   6. Update feature-memory chunk's doc_page if applicable
@@ -101,8 +104,8 @@ RENAME (slug change, same category):
 
 MOVE-CATEGORY (slug same, folder changes):
   1. git mv guide/<OLD_CAT>/<SLUG>.md guide/<NEW_CAT>/<SLUG>.md
-  2. git mv guide/public/images/<OLD_CAT>/<SLUG> guide/public/images/<NEW_CAT>/<SLUG>  (if exists)
-  3. In the moved file, rewrite local image refs .../<OLD_CAT>/<SLUG>/ -> .../<NEW_CAT>/<SLUG>/
+  2. git mv <IMG_DIR> public/images/<NEW_CAT>/<SHORT_SLUG>   (if IMG_DIR exists)
+  3. In the moved file, rewrite local image refs .../<OLD_CAT>/<SHORT_SLUG>/ -> .../<NEW_CAT>/<SHORT_SLUG>/
   4. grep -rl '](/guide/<OLD_CAT>/<SLUG>)' guide index.md -> rewrite to /guide/<NEW_CAT>/<SLUG>
      (unlike a flattened-URL site, the category IS part of the URL here, so this link DOES change)
   5. .vitepress/config.mts: move the {text,link} entry into the new group, link updated
@@ -113,7 +116,8 @@ DELETE:
   1. grep -rln '](/guide/<cat>/<SLUG>)' guide index.md -> report inbound links that will break;
      fix or flag
   2. git rm guide/<cat>/<SLUG>.md
-  3. rm -rf guide/public/images/<cat>/<SLUG>   (if it exists)
+  3. rm -rf <IMG_DIR>   (if it exists AND no other page references those files — check first:
+     grep -rn "<short-slug>/" --include="*.md" guide index.md)
   4. .vitepress/config.mts: remove the sidebar entry
   5. Feature-memory: if a chunk pointed here, set its doc_status to missing/partial and clear
      doc_page; update the index row
@@ -154,7 +158,7 @@ Report:
 ```
 File by slug:    find guide -name '<slug>.md'
 Inbound links:   grep -rln '](/guide/<category>/<slug>)' guide index.md
-Image folder:    guide/public/images/<category>/<slug>/
+Image folder:    public/images/<category>/<short-slug>/   (grep the page's refs; do not guess)
 Sidebar entry:   grep -n "'/guide/<category>/<slug>'" .vitepress/config.mts
 ```
 

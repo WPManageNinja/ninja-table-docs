@@ -79,10 +79,11 @@ creating one.
 Record as `IS_PRO`.
 
 ### 1.6 Images
-> **Are there images? If yes, external hosted URLs or local files to place under
-> `guide/public/images/<category>/<slug>/`?**
+> **Are there images? If yes, where are the source files?** They will be converted to .webp and
+> placed under `public/images/<category>/<short-slug>/`. External URLs are not used on this site.
 
-Record as `HAS_IMAGES` + source paths/URLs.
+Record as `HAS_IMAGES` + source paths. For anything beyond a straightforward add, hand the
+image work to `manage-ninja-tables-images`.
 
 ### 1.7 Source content (optional)
 > **Do you have existing content (pasted HTML/markdown, or a plugin readme excerpt) to convert,
@@ -133,11 +134,11 @@ Summarize and wait for confirmation before proceeding:
               - NO support boilerplate
               If SOURCE_CONTENT: convert it (strip wrapper HTML, fix bold whitespace).
 
-3. IMAGES   - If HAS_IMAGES with local files: mkdir -p
-              guide/public/images/<CATEGORY>/<SLUG>/, copy files in, reference each as
-              /guide/public/images/<CATEGORY>/<SLUG>/<file>.ext. If external URLs: use them
-              directly, matching the historical https://ninjatables.com/wp-content/uploads/...
-              pattern.
+3. IMAGES   - If HAS_IMAGES: convert sources to .webp (cwebp -q 82 in.png -o out.webp),
+              mkdir -p public/images/<CATEGORY>/<SHORT_SLUG>/, name files
+              <n>.-<Short-Label>.webp in page order, and reference each as
+              /images/<CATEGORY>/<SHORT_SLUG>/<n>.-<Short-Label>.webp.
+              No external URLs. See manage-ninja-tables-images.
 
 4. SIDEBAR  - Insert into the correct nested items array in .vitepress/config.mts's sidebar:
               { text: '<TITLE>', link: '/guide/<CATEGORY>/<SLUG>' }
@@ -155,7 +156,7 @@ Report:
 - File created: `guide/<CATEGORY>/<SLUG>.md`
 - Public URL: `/guide/<CATEGORY>/<SLUG>`
 - Sidebar entry added under **<SIDEBAR_GROUP>**
-- Image folder: `guide/public/images/<CATEGORY>/<SLUG>/` (N files) or "external URLs" or "none"
+- Image folder: `public/images/<CATEGORY>/<SHORT_SLUG>/` (N files) or "none"
 - Build: pass / fail (+ any warnings fixed)
 - If this documents a plugin feature: whether the matching feature-memory chunk (if any) was
   updated to `doc_status: documented` — see `check-ninja-tables-feature-coverage`.
@@ -169,9 +170,8 @@ Report:
 File:        guide/<category>/<slug>.md
 URL:         /guide/<category>/<slug>              (cleanUrls strips .html only — category stays)
 Cross-link:  [Text](/guide/<category>/<slug>)       (never .md, never relative ./ or ../)
-Image (external): https://ninjatables.com/wp-content/uploads/YYYY/MM/<slug>-WxH.ext
-Image (local):     guide/public/images/<category>/<slug>/<name>.ext
-Image ref (local):  /guide/public/images/<category>/<slug>/<name>.ext
+Image on disk:  public/images/<category>/<short-slug>/<n>.-<Short-Label>.webp
+Image ref:      /images/<category>/<short-slug>/<n>.-<Short-Label>.webp   (never /guide/public/...)
 Sidebar:     { text: '<Title>', link: '/guide/<category>/<slug>' }   in the correct nested group
 Bold:        **term**                          (no inner spaces)
 Build:       npm run docs:build

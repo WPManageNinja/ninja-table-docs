@@ -84,11 +84,21 @@ C5 SIDEBAR     - Coverage: every guide/<category>/<slug>.md path appears as a li
                - Every link in config.mts resolves: for each '/guide/<category>/<slug>' found,
                  the file guide/<category>/<slug>.md must exist.
 
-C6 IMAGES      - Every local ![](/guide/public/images/<cat>/<slug>/<file>) ref resolves to a
-                 real file under guide/public/images/.
-               - Flag local image folders under guide/public/images/ that no doc references
-                 (this repo has a known-orphaned mirror as of the last audit — see CLAUDE.md —
-                 don't treat every hit as a new regression, just report current state).
+C6 IMAGES      - Baseline at last audit: 381 files, 0 broken refs, 0 orphans, 0 non-webp,
+                 3 known-dead external URLs in data-sources/fluent-forms-integration.md.
+                 Anything beyond that is a regression.
+               - Every ref resolves:
+                   grep -rhoE "\(/images/[^)]*\)" --include="*.md" guide index.md \
+                     | tr -d "()" | sed "s|^/|public/|" | sort -u \
+                     | while read p; do [ -f "$p" ] || echo "MISSING: $p"; done
+               - No wrong-form refs:  grep -rn "](/guide/public/" --include="*.md" guide index.md
+               - No stray public dir:  find . -name public -type d -not -path "./public" \
+                                         -not -path "./node_modules/*"
+               - No non-webp:  find public/images -type f ! -name "*.webp"
+               - Orphans (report, never delete):
+                   comm -23 <(find public/images -type f | sed "s|^public||" | sort -u) \
+                            <(grep -rhoE "\(/images/[^)]*\)" --include="*.md" guide index.md \
+                              | tr -d "()" | sort -u)
 
 C7 BOLD        - No inner-whitespace bold (broken open and broken close). Run BOTH; union of
                  matches should be empty:
@@ -118,7 +128,8 @@ Print a scored checklist:
 
 Then summarize total pass/fail. If `FIX_MODE` allows and the user confirms, fix each issue via
 the right skill (content → `edit-ninja-tables-doc`; structure → `restructure-ninja-tables-docs`;
-missing page → `write-ninja-tables-doc`) and re-run the failed checks.
+missing page → `write-ninja-tables-doc`; images → `manage-ninja-tables-images`; changelog →
+`update-ninja-tables-changelog`) and re-run the failed checks.
 
 ---
 

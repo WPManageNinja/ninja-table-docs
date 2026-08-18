@@ -24,8 +24,10 @@ Canonical conventions live in `CLAUDE.md` — this skill is the *procedure* for 
 3. **DO** keep the frontmatter `title`/H1 in sync — if the display title changes, update both,
    and update the matching sidebar `text` in `.vitepress/config.mts` (the `link`/slug stays the
    same).
-4. **DO** put any new/replacement images consistently with however this page already handles
-   images (external `ninjatables.com` URL vs. local `guide/public/images/<category>/<slug>/`).
+4. **DO** put any new/replacement images in the page's existing folder under
+   `public/images/<category>/<short-slug>/` as .webp, referenced as `/images/...`. Resolve the
+   real folder by grepping the page's current refs — the short-slug is a compressed form of the
+   page slug. See `manage-ninja-tables-images`.
 5. **DO** end on a green `npm run docs:build`.
 6. **DO NOT** change the slug, rename, or move the file — that is restructure work.
 7. **DO NOT** introduce relative links or links with a `.md` suffix.
@@ -86,9 +88,10 @@ Wait for confirmation.
               Enforce conventions on touched lines: absolute links, **term** bold,
               "(Pro)" markers, no boilerplate.
 
-2. IMAGES   - If TOUCHES_IMAGES: add/replace files consistent with this page's existing
-              pattern (external URL or guide/public/images/<CATEGORY>/<SLUG>/) and update the
-              ![alt](...) refs. Remove image refs whose files you deleted.
+2. IMAGES   - If TOUCHES_IMAGES: resolve the page's real folder first —
+                grep -oE "/images/[^)]*" <TARGET_PATH> | sed "s|/[^/]*$||" | sort -u
+              Add/replace .webp files there, continuing the <n>.-<Short-Label> numbering,
+              and update the ![alt](/images/...) refs. Remove refs whose files you deleted.
 
 3. SIDEBAR  - If TITLE_CHANGES: update the matching entry's "text" in .vitepress/config.mts.
               Do NOT change its "link". Keep valid TypeScript.
@@ -115,13 +118,13 @@ Report:
 ```
 File by slug:   find guide -name '<slug>.md'
 Sidebar entry:  grep -n "'/guide/<category>/<slug>'" .vitepress/config.mts
-Image folder:   guide/public/images/<category>/<slug>/
+Image folder:   public/images/<category>/<short-slug>/   (compressed slug — grep, do not guess)
 ```
 
 ### Formats (unchanged from site rules)
 ```
 Cross-link:  [Text](/guide/<category>/<slug>)   (never .md, never relative)
-Image ref:   ![Alt](/guide/public/images/<category>/<slug>/<name>.ext)   (if using local images)
+Image ref:   ![Alt](/images/<category>/<short-slug>/<n>.-<Short-Label>.webp)
 Bold:        **term**                           (no inner spaces)
 ```
 
@@ -129,5 +132,5 @@ Bold:        **term**                           (no inner spaces)
 1. **In place only** — same slug, same path, same sidebar link.
 2. **Conventions survive edits** — don't regress links/bold/boilerplate.
 3. **Title change ⇒ sidebar text change** (link stays).
-4. **Match this page's existing image pattern** rather than introducing a new one.
+4. **Use this page's existing image folder** rather than inventing a new short-slug.
 5. **Green build or it's not done.**
