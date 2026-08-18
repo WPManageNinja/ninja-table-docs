@@ -172,6 +172,7 @@ URL:         /guide/<category>/<slug>              (cleanUrls strips .html only 
 Cross-link:  [Text](/guide/<category>/<slug>)       (never .md, never relative ./ or ../)
 Image on disk:  public/images/<category>/<short-slug>/<n>.-<Short-Label>.webp
 Image ref:      /images/<category>/<short-slug>/<n>.-<Short-Label>.webp   (never /guide/public/...)
+Video embed:    <div class="video-embed"> + youtube.com/embed/<ID> iframe   (see CLAUDE.md)
 Sidebar:     { text: '<Title>', link: '/guide/<category>/<slug>' }   in the correct nested group
 Bold:        **term**                          (no inner spaces)
 Build:       npm run docs:build

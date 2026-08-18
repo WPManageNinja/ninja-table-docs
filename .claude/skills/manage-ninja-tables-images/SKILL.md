@@ -213,6 +213,17 @@ Highest number used:    ls public/images/<category>/<short-slug>/ | sort -t. -k1
 Reuse of one image:     grep -rn '<file>.webp' --include='*.md' guide index.md
 ```
 
+### Videos (YouTube embeds, not images)
+```
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/<ID>" title="<Descriptive> Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+```
+The .video-embed class lives in .vitepress/theme/style.css (full content width, 16:9, 16px
+margins — same footprint as a doc image). Never leave a bare youtu.be/watch?v= URL on its own
+line: it renders as a link, not a player.
+Find them all:  grep -rn "youtu" --include="*.md" guide
+
 ### Convert to webp
 ```
 cwebp -q 82 input.png -o output.webp
