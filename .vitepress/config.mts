@@ -214,6 +214,7 @@ export default defineConfig({
       {
         text: 'Resources',
         items: [
+          { text: 'How to Get Support', link: '/guide/getting-started/how-to-get-support' },
           { text: 'Changelog', link: '/guide/changelog/change-log' }
         ]
       }

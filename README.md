@@ -6,7 +6,7 @@ Built with [VitePress](https://vitepress.dev/).
 
 ## What's Inside
 
-93 pages across 18 category folders, grouped into 11 sidebar sections:
+97 pages across 18 category folders, grouped into 11 sidebar sections:
 
 - **Getting Started** – Introduction, installation & activation, upgrading to Pro, onboarding, glossary
 - **Creating Tables** – Your first table, plus the full Drag & Drop builder: table settings, responsive design, spacing, background color, cell management, and 12 drag & drop elements
@@ -18,7 +18,7 @@ Built with [VitePress](https://vitepress.dev/).
 - **WordPress Integration** – Post meta fields, featured images, ACF / JetEngine / Toolset / Pods, custom columns, shortcode computed values
 - **Advanced Features** – Frontend editing and shortcodes, plus table formatting (colspan, rowspan, image lightbox, Google Sheets hyperlinks)
 - **Ninja Charts** – Installation, dynamic and manual charts, data range picker, customization, and Fluent Forms / Ninja Tables data sources
-- **Resources** – Changelog, newest release first
+- **Resources** – How to get support, and the changelog (newest release first)
 
 Currently documented release: **Ninja Tables v5.2.13** (August 3, 2026).
 
@@ -61,26 +61,25 @@ npm run docs:preview
 │   ├── logo.svg
 │   ├── favicon.png
 │   └── images/<category>/<short-slug>/   # Per-page screenshots (.webp)
-├── guide/                            # All documentation content (Markdown)
-│   ├── getting-started/
-│   ├── creating-tables/
-│   ├── drag-drop-tables/
-│   ├── drag-drop-settings/
-│   ├── drag-drop-elements/
-│   ├── data-sources/
-│   ├── column-settings/
-│   ├── field-types/
-│   ├── table-settings/
-│   ├── styling-design/
-│   ├── responsive-design/
-│   ├── table-management/
-│   ├── import-export/
-│   ├── wordpress-integration/
-│   ├── advanced-features/
-│   ├── table-formatting/
-│   ├── ninja-charts/
-│   └── changelog/
-└── ninja-tables-resource/            # Brand assets + plugin source ZIPs (readme.txt = feature/changelog source of truth)
+└── guide/                            # All documentation content (Markdown)
+    ├── getting-started/
+    ├── creating-tables/
+    ├── drag-drop-tables/
+    ├── drag-drop-settings/
+    ├── drag-drop-elements/
+    ├── data-sources/
+    ├── column-settings/
+    ├── field-types/
+    ├── table-settings/
+    ├── styling-design/
+    ├── responsive-design/
+    ├── table-management/
+    ├── import-export/
+    ├── wordpress-integration/
+    ├── advanced-features/
+    ├── table-formatting/
+    ├── ninja-charts/
+    └── changelog/
 ```
 
 Category folders are **flat** — every page is `guide/<category>/<slug>.md`, exactly one level deep. There are no nested sub-folders on disk, even where the sidebar nests groups.
