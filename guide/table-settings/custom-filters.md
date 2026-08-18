@@ -15,6 +15,10 @@ Ninja Tables offers you a powerful feature known as **Custom Filters**, which le
 
 ![New Ui custom filter tab](/images/table-settings/custom-filters/1.-New-Ui-custom-filter-tab.webp)
 
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/J-SoDaUWHq0" title="Smart Filters with Custom Data Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Add Custom Filters
 
 - Click on the **Custom Filters**, there a new tab will open with an **Add New Filter** button.
@@ -130,9 +134,5 @@ Here's a WP Posts table created with Ninja Tables. It has custom filters enabled
 The user can filter any dynamic options in **Progressive Filter** to quickly access his specific requirements or desires. This option is enabled by default.
 
 Let’s see how this works!
-
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/9pOi39RoFL4" title="Custom Filters Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 This is how you can use **Custom Filters** in the table step by step!
