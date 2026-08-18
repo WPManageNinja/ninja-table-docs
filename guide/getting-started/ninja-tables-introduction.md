@@ -7,8 +7,8 @@ description: "Introduction – Getting Started with Ninja Tables"
 
 Ninja Tables is a powerful yet beginner-friendly WordPress table builder that lets you create responsive, customizable tables without writing any code. Whether you're building a simple data table, a pricing table, a product table, or connecting data from external sources, Ninja Tables makes the process fast and easy. If you want to check out if this plugin fulfills your requirements for a WordPress table plugin, check out the [feature page.](https://ninjatables.com/features/)
 
-<div style="position: relative; padding-top: 56.25%;">
-  <iframe src="https://www.youtube.com/embed/GXqaXMVsnl8?si=f76AE41OWeI_b0w6" title="Ninja Tables Introduction Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/GXqaXMVsnl8" title="Ninja Tables Introduction Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 After installing and activating the plugin, you'll see a welcome screen where you can start creating your first table or import existing data. You can also explore the documentation, templates, and demo pages to get familiar with the plugin.
@@ -106,7 +106,9 @@ Extend Ninja Tables with powerful integrations:
 
 ### Fluent Forms Integration (Video)
 
-https://youtu.be/uMVnTYnKWM4
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/uMVnTYnKWM4" title="Fluent Forms Integration Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## SEO-Friendly Tables
 
