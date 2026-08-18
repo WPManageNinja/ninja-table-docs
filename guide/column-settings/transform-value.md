@@ -18,6 +18,10 @@ Transform Value is HTML, CSS & Excel supported!
 - 
 Let's go over the **Transform** **Value** functionality step by step.
 
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/JFno71QQjok" title="Transform Value Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## **Transform Value Box**
 
 This box is where you will type your HTML code or use the Excel formula to transform the data value of the corresponding column.

@@ -12,6 +12,10 @@ Conditions in table cells can change the column's data or highlight the specific
 
 The cell value of the table changes in response to the conditions.
 
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/navdcAmy7KU" title="Conditional Formatting Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## **Applying Conditional Formatting in Ninja Tables**
 
 Read this simple guide to learn how to apply this feature.
