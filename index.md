@@ -9,71 +9,63 @@ hero:
     - theme: brand
       text: Get Started
       link: /guide/getting-started/how-to-install-and-activate-ninja-tables-plugin
-    - theme: alt
-      text: View Introduction
-      link: /guide/getting-started/ninja-tables-introduction
 
 features:
   - icon: 🚀
     title: Getting Started
-    details: Learn how to install, activate, and create your first table with Ninja Tables. Perfect for beginners who want to get started quickly.
+    details: Install the plugin, activate your license, and build your first table.
     link: /guide/getting-started/ninja-tables-introduction
     linkText: "Get Started"
   - icon: 📊
     title: Creating Tables
-    details: Master table creation with our drag & drop builder. Learn to create tables manually or using drag & drop elements with ease.
+    details: Build tables manually or visually with the drag & drop builder.
     link: /guide/creating-tables/create-your-first-table
     linkText: "Learn More"
   - icon: 🔌
     title: Data Sources & Integration
-    details: Connect with CSV, Google Sheets, WooCommerce, Fluent Forms, WordPress Posts, and more. Import data seamlessly from various sources.
+    details: Pull data from CSV, Google Sheets, WooCommerce, Fluent Forms, and WordPress posts.
     link: /guide/data-sources/construct-table-from-csv
     linkText: "View Integrations"
   - icon: ⚙️
     title: Table Configuration
-    details: Configure columns, field types, and table settings. Customize basic and advanced settings for your tables to match your needs.
+    details: Set up columns, field types, filters, and rendering options.
     link: /guide/column-settings/basic-settings
     linkText: "Configure Tables"
   - icon: 🎨
     title: Styling & Design
-    details: Customize colors, fonts, pagination, sorting, and responsive design. Make your tables look exactly how you want with 100+ options.
+    details: Control colors, fonts, pagination, sorting, and responsive behavior.
     link: /guide/styling-design/table-style-settings
     linkText: "Style Tables"
   - icon: 🧩
     title: Drag & Drop Elements
-    details: Add buttons, icons, images, lists, progress bars, ribbons, and more to your tables with our intuitive drag & drop interface.
+    details: Add buttons, icons, images, lists, progress bars, and ribbons to cells.
     link: /guide/drag-drop-elements/text-element
     linkText: "Explore Elements"
   - icon: 📦
     title: Table Management
-    details: Manage your tables efficiently. Clone, sort rows, calculate data, set permissions, and perform bulk operations with ease.
+    details: Clone tables, sort rows, calculate values, and set user permissions.
     link: /guide/table-management/table-title-description-settings
     linkText: "Manage Tables"
   - icon: 📥
     title: Import & Export
-    details: Import data from CSV, JSON, or TablePress. Export your tables to CSV or JSON format for backup or migration purposes.
+    details: Import from CSV, JSON, or TablePress. Export to CSV or JSON.
     link: /guide/import-export/import-table-data-from-a-csv
     linkText: "Import/Export"
   - icon: 🔗
     title: WordPress Integration
-    details: Integrate with ACF, post meta fields, featured images, and create custom columns from WordPress data seamlessly.
+    details: Show post meta, ACF fields, and featured images in your tables.
     link: /guide/wordpress-integration/post-meta-field
     linkText: "Integrate"
   - icon: 📈
     title: Ninja Charts
-    details: Create beautiful charts from your table data. Dynamic charts, manual charts, and advanced data visualization options.
+    details: Turn your table data into charts and graphs.
     link: /guide/ninja-charts/getting-started-with-ninja-charts-free-wordpress-chart-plugin
     linkText: "Create Charts"
   - icon: 📚
     title: Changelog
-    details: View changelog, updates, and additional resources to stay up-to-date with the latest Ninja Tables features and improvements.
+    details: See what's new in every Ninja Tables release.
     link: /guide/changelog/change-log
     linkText: "View Resources"
-
-    
 ---
-
-
-
 
 <p class="home-footer">Copyright © 2026 Ninja Tables</p>
