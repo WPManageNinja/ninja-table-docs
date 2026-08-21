@@ -44,6 +44,9 @@ https://gist.github.com/techjewel/55703124534f1aba9b70cf0f605a793e
 
 **Please Note that Advanced Shortcode is available only in the Pro Version of Ninja Tables**
 
+> [!Note]
+> The shortcode parameters above are supported under **DataTables** rendering as well as **Classic** rendering. See [Table Rendering Settings](/guide/table-settings/table-rendering-settings) for how a table's rendering method is chosen.
+
 ### Date range filter- shortcode
 
 Suppose you wish to primarily filter the date or date range if you have a table with a date column. This option is available in **NinjaTables version 3.5.8**. Use the date range filter with shortcode after upgrading your plugin to the latest version.

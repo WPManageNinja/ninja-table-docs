@@ -31,6 +31,9 @@ Let's dive into this guide which will demonstrate how to apply Frontend Editing 
 
 - In the example given below, by checking both the left & right checkboxes, only the Author is allowed to edit and delete the table data. Multiple users can be allowed permission if you want.
 
+> [!Note]
+> Data permission also applies to **public users** — visitors who are not logged in — on tables rendered with **DataTables**. Grant it only when you intend the table to be editable by anyone who can reach the page.
+
 ![Data Editing Permission](/images/advanced-features/frontend-editing/3.-Enable-Frontend-Editing-3.webp)
 
 ### **Own Data Only**
