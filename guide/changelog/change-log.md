@@ -7,6 +7,39 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in Ninja Tables.
 
+## Ninja Tables v5.2.14
+
+*Released on August 21, 2026*
+
+::: code-group
+
+```md [🆕 New Features]
+• Added: Support for post slugs in button links.
+• Added: Support for advanced shortcode attributes in DataTables.
+• Added: Confirmation notice when updating Fluent Forms tables.
+```
+
+```md [🔧 Improvements]
+• Improved: Admin interface translation coverage.
+• Improved: Fluent Forms integration by preventing duplicate submissions.
+• Improved: Fluent Forms table loading states for Save and Update actions.
+• Improved: Search placeholder translation support in multi-select dropdown filters.
+• Improved: Accessibility across rendered tables to meet WCAG 2.1 AA standards.
+• Improved: Default filtering and search behavior in DataTables.
+• Improved: Custom filters now work consistently in both Classic and DataTables views.
+• Compatibility: WordPress 7.1.
+```
+
+```md [🐛 Bug fixes]
+• Fixed: File upload issues with Media Library and plugin uploads.
+• Fixed: AJAX tables not rendering correctly in Elementor editor preview.
+• Fixed: DataTables frontend editing now grants data permission for public users.
+• Fixed: HTML column labels not displaying correctly in Stackable table view.
+• Fixed: Filter dropdown options not updating immediately after table data changes.
+```
+
+:::
+
 ## Ninja Tables v5.2.13
 
 *Released on August 3, 2026*
