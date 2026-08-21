@@ -39,6 +39,9 @@ From here, you can choose and save all fields or any unique field you wish to vi
 
 - When you're done selecting or deselecting the form fields, hit the "Save" button.
 
+> [!Note]
+> Updating a table that is connected to Fluent Forms shows a confirmation notice before the change is applied, so you can review it first. Ninja Tables also guards against duplicate submissions, so the same entry will not be added to the table twice.
+
 Now a new table will be created with the form fields as table header and form entries as table data.
 
 ![form entries in data table](https://ninjatables.com/wp-content/uploads/2023/01/fluent-forms-integration-5.png)

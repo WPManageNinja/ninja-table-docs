@@ -15,6 +15,9 @@ You can decide the data type right from the start when you add a column to the t
 
 This allows you to add a button in a column, links can also be added if required.
 
+> [!Note]
+> A button's link accepts a **post slug** in addition to a full URL. The slug is resolved to that post's permalink when the table is rendered.
+
 - Go to the **Data Type** option and select the **Button/Link** type of the column.
 
 ![Actionable button in Ninja Tables](/images/field-types/actionable-button-link/1.-Actionable-button-in-Ninja-Tables.webp)
