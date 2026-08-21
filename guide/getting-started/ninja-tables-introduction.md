@@ -104,6 +104,10 @@ Extend Ninja Tables with powerful integrations:
 
 ![connect google sheets to ninja tables](/images/getting-started/ninja-tables-introduction/11.-connect-google-sheets-to-ninja-tables.webp)
 
+## Accessible Tables
+
+Tables rendered by Ninja Tables meet **WCAG 2.1 AA** accessibility standards, so they can be navigated by keyboard and read correctly by screen readers. For Drag & Drop tables, you can also set the [Table Role](/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings) to describe how assistive technology should interpret the table.
+
 ## SEO-Friendly Tables
 
 Ninja Tables generates clean HTML tables that are search-engine friendly, helping your content remain accessible while improving your site's SEO.

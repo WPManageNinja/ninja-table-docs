@@ -35,4 +35,7 @@ This easy guide explains to you how to quickly and easily build up stackable tab
 
 - You can hide column headings or internal borders from here.
 
+> [!Note]
+> Column headings that contain HTML are rendered as HTML in the stacked view, so a formatted label looks the same as it does in the standard table layout.
+
 This is how easy it is to configure **Stackable table format** in your **Ninja tables**!

@@ -11,7 +11,7 @@ Ninja Tables is well known because of its ease of use and simple configuration. 
 ## Requirements
 
 To use Ninja Tables, you’ll need the following:
-- WordPress version 5.6 or higher
+- WordPress version 5.6 or higher (tested up to WordPress 7.1)
 - PHP version 7.1 or higher
 
 ## Install and Activate Ninja Tables
