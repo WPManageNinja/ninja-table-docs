@@ -22,4 +22,7 @@ Follow this easy guide to set up the language settings in your table.
 
 ![language in data table](/images/table-settings/language-settings/3.-language-settings-4.webp)
 
-This quick guide explains to you how to use **sLanguage Settings** in your table easily.
+> [!Note]
+> The search placeholder inside a multi-select dropdown [Custom Filter](/guide/table-settings/custom-filters) (Pro) is translatable as well, so it can be localized along with the three settings above.
+
+This quick guide explains to you how to use **Language Settings** in your table easily.

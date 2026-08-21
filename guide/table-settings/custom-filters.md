@@ -10,6 +10,8 @@ Ninja Tables offers you a powerful feature known as **Custom Filters**, which le
 > [!Note]
 > Custom Filter is a Pro Feature!
 
+Custom filters behave the same way in both **Classic** and **DataTables** views, so the filters you set up here apply whichever rendering method the table uses.
+
 - First, go to the **Ninja Tables dashboard** and select a your table to add filters.
 - Next, click the **Table Configuration** tab and pick **Custom Filters** from the left menubar.
 
@@ -56,6 +58,8 @@ Such as:
 ### Placeholder
 
 The default placeholder is **All**. But if you want to change the text, you can type in your desired text.
+
+For a **multi-select** dropdown filter, the search placeholder shown inside the dropdown is translatable too, so it can be localized alongside the other [Language Settings](/guide/table-settings/language-settings).
 
 ### Value Type
 
