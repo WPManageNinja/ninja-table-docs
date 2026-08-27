@@ -84,8 +84,10 @@ C5 SIDEBAR     - Coverage: every guide/<category>/<slug>.md path appears as a li
                - Every link in config.mts resolves: for each '/guide/<category>/<slug>' found,
                  the file guide/<category>/<slug>.md must exist.
 
-C6 IMAGES      - Baseline at last audit: 381 files, 0 broken refs, 0 orphans, 0 non-webp,
-                 3 known-dead external URLs in data-sources/fluent-forms-integration.md.
+C6 IMAGES      - Baseline at last audit (2026-08-27): 394 files, 394 unique refs,
+                 0 broken refs, 0 orphans, 0 non-webp, 0 external URLs.
+                 There are no longer any known-dead exceptions — the 3 former
+                 fluent-forms-integration.md hotlinks are now local webp files.
                  Anything beyond that is a regression.
                - Every ref resolves:
                    grep -rhoE "\(/images/[^)]*\)" --include="*.md" guide index.md \
@@ -95,10 +97,23 @@ C6 IMAGES      - Baseline at last audit: 381 files, 0 broken refs, 0 orphans, 0 
                - No stray public dir:  find . -name public -type d -not -path "./public" \
                                          -not -path "./node_modules/*"
                - No non-webp:  find public/images -type f ! -name "*.webp"
+               - No external image URLs (must be zero — upstream hosts delete files):
+                   grep -rn '!\[[^]]*\](http' --include="*.md" guide index.md
+               - No relative / non-absolute image paths:
+                   grep -rhoE '!\[[^]]*\]\([^)]+\)' --include="*.md" guide index.md \
+                     | sed -E 's/.*\((.*)\)/\1/' | grep -vE "^/images/"
                - Orphans (report, never delete):
                    comm -23 <(find public/images -type f | sed "s|^public||" | sort -u) \
                             <(grep -rhoE "\(/images/[^)]*\)" --include="*.md" guide index.md \
                               | tr -d "()" | sort -u)
+               - LIVE 200 sweep — the file existing on disk is not proof it serves:
+                   pkill -f "vitepress preview"   # stale one serves the OLD dist
+                   npm run docs:build && npm run docs:preview & sleep 5
+                   grep -rhoE "\(/images/[^)]*\)" --include="*.md" guide index.md \
+                     | tr -d "()" | sort -u \
+                     | while read p; do c=$(curl -s -o /dev/null -w "%{http_code}" \
+                         "http://127.0.0.1:4173$p"); [ "$c" = 200 ] || echo "BROKEN $c $p"; done
+                   pkill -f "vitepress preview"
 
 C7 BOLD        - No inner-whitespace bold (broken open and broken close). Run BOTH; union of
                  matches should be empty:
@@ -107,6 +122,11 @@ C7 BOLD        - No inner-whitespace bold (broken open and broken close). Run BO
                  (These ignore legit bold whose content starts/ends with punctuation.)
 
 C8 BUILD       - npm run docs:build exits 0 with no dead-link warnings.
+               - NOTE: a green build says nothing about images. Verified 2026-08-27 by
+                 seeding each fault: a missing /images/ file, an external URL, a non-webp
+                 and an orphan ALL pass with exit 0 and no mention. Only a relative path
+                 fails the build. C6 is the only gate that catches a broken image — never
+                 substitute C8 for it.
 ```
 
 ---

@@ -28,7 +28,9 @@ Canonical conventions live in `CLAUDE.md` — this skill is the *procedure* for 
    `public/images/<category>/<short-slug>/` as .webp, referenced as `/images/...`. Resolve the
    real folder by grepping the page's current refs — the short-slug is a compressed form of the
    page slug. See `manage-ninja-tables-images`.
-5. **DO** end on a green `npm run docs:build`.
+5. **DO** end on a green `npm run docs:build` — and if the edit touched images, ALSO run the
+   verify gate in `manage-ninja-tables-images` Phase 3. A green build silently passes a missing
+   image file, an external URL, a non-webp and an orphan; it only fails on a relative path.
 6. **DO NOT** change the slug, rename, or move the file — that is restructure work.
 7. **DO NOT** introduce relative links or links with a `.md` suffix.
 8. **DO NOT** add closing support boilerplate.
@@ -97,6 +99,9 @@ Wait for confirmation.
               Do NOT change its "link". Keep valid TypeScript.
 
 4. BUILD    - npm run docs:build ; fix warnings; rebuild until clean.
+            - If images were touched, the build is NOT sufficient — also run the
+              verify gate in manage-ninja-tables-images Phase 3 (5 checks + live
+              200 sweep). A green build does not prove an image renders.
 ```
 
 ---

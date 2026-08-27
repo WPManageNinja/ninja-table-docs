@@ -15,6 +15,10 @@ Pro table builder). Built with **VitePress 1.6+**, **Vue 3.5**.
 Run `npm run docs:build` after any structural change (new doc, rename, link edit, sidebar
 change) to catch broken links and parser errors.
 
+⚠️ **A green build does not verify images.** It catches a relative image path, but silently
+passes a missing file, an external URL, a non-webp, or an orphan. After any image change run the
+five checks in *Images → Verifying images* — that is the only gate that catches a broken image.
+
 ## Repository layout
 
 ```
@@ -29,8 +33,14 @@ change) to catch broken links and parser errors.
 │                                    (SINGLE source of truth; srcExclude keeps README.md,
 │                                    CLAUDE.md and .claude/**/*.md off the public site)
 │   └── theme/
-│       ├── index.ts             ← DefaultTheme passthrough, imports style.css
-│       └── style.css            ← brand color overrides (teal, see Brand below)
+│       ├── index.ts             ← extends DefaultTheme; imports style.css, sets custom Layout,
+│                                    globally registers Feedback + ZoomableImage
+│       ├── Layout.vue           ← DefaultTheme Layout + <Feedback /> in the #doc-footer-before slot
+│       ├── plugin-zoomable.ts   ← markdown-it image-rule override (see Image zoom below)
+│       ├── style.css            ← brand color overrides (teal, see Brand below)
+│       └── components/
+│           ├── Feedback.vue     ← "was this helpful?" widget under every doc page
+│           └── ZoomableImage.vue ← click-to-zoom wrapper every doc image renders through
 ├── ninja-tables-resource/       ← brand assets (Logo/, Icon/) + plugin source ZIPs (free + pro),
 │                                    the readme.txt inside each is the feature/changelog source of truth
 └── guide/
@@ -93,10 +103,11 @@ sidebar coverage should check presence, not exact 1:1 count parity with `nav` in
 
 ## Images
 
-All doc screenshots are local `.webp` files under `public/images/` — the only convention now, no
-external `ninjatables.com` URLs remain (except 3 pre-existing dead links in
-`data-sources/fluent-forms-integration.md` where the source images 404 upstream; leave those be
-until replacement screenshots are available).
+All doc screenshots are local `.webp` files under `public/images/` — the only convention now.
+**Zero external image URLs remain anywhere in `guide/`.** (The 3 dead `ninjatables.com` hotlinks
+that used to live in `data-sources/fluent-forms-integration.md` were restored from the Internet
+Archive and localised on 2026-08-27; that documented exception no longer exists.) Never add an
+external image URL — the upstream host deletes files, which is exactly how those 3 broke.
 
 - **Location on disk**: `public/images/<category>/<short-slug>/<n>.-<Short-Label>.webp` — `public/`
   is VitePress's real static-asset root (a top-level `public/` folder is what actually gets copied
@@ -114,6 +125,78 @@ until replacement screenshots are available).
 - **New screenshots**: convert to `.webp` before adding (`cwebp -q 82 in.png -o out.webp`; use
   `gif2webp` for animated GIFs), place under the matching `<category>/<short-slug>/` folder
   (create one if the page doesn't have one yet), and continue the existing numbering.
+
+### Verifying images — `docs:build` is NOT enough
+
+**A green `npm run docs:build` does not mean the images work.** Measured on this repo
+(2026-08-27) by deliberately seeding each fault:
+
+| Fault | `docs:build` result |
+| --- | --- |
+| Relative path (`./shot.webp`) | ❌ **fails**, exit 1, `Could not resolve "./shot.webp"` |
+| Referenced `/images/...` file missing | ✅ **passes**, exit 0, never mentioned |
+| External URL (dead or alive) | ✅ **passes**, exit 0, never mentioned |
+| Non-`.webp` file, or orphaned file | ✅ **passes**, exit 0, never mentioned |
+
+So the build catches exactly one of the four. **After adding, renaming, or renumbering any
+image, run all five checks below.** Checks 1–4 must print nothing; check 5 is report-and-ask.
+
+```bash
+# 1. Referenced but missing on disk — the one that broke fluent-forms-integration
+comm -13 <(find public/images -type f | sed 's|^public||' | sort -u) \
+         <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' guide index.md | tr -d '()' | sort -u)
+
+# 2. External image URLs (must always be zero)
+grep -rn '!\[[^]]*\](http' --include='*.md' guide index.md
+
+# 3. Relative / non-absolute paths
+grep -rhoE '!\[[^]]*\]\([^)]+\)' --include='*.md' guide index.md \
+  | sed -E 's/.*\((.*)\)/\1/' | grep -vE '^/images/'
+
+# 4. Non-webp files on disk
+find public/images -type f ! -name '*.webp'
+
+# 5. Orphans — REPORT and ask, never bulk-delete
+comm -23 <(find public/images -type f | sed 's|^public||' | sort -u) \
+         <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' guide index.md | tr -d '()' | sort -u)
+```
+
+Then confirm they actually render, because check 1 only proves the file exists:
+
+```bash
+pkill -f "vitepress preview"          # a stale one serves the OLD dist and reports phantom 404s
+npm run docs:build && npm run docs:preview
+# in another shell — every referenced image must return 200:
+grep -rhoE '\(/images/[^)]*\)' --include='*.md' guide index.md | tr -d '()' | sort -u \
+  | while read p; do c=$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:4173$p"); \
+      [ "$c" = 200 ] || echo "$c $p"; done
+```
+
+Current baseline: **394 image files, 394 unique refs, 0 broken, 0 orphans, 0 non-webp,
+0 external URLs.** Anything else is a regression.
+
+### Image zoom — why image `src` paths must stay absolute
+
+Every markdown image renders through a click-to-zoom component, not a plain `<img>`.
+`.vitepress/theme/plugin-zoomable.ts` overrides markdown-it's `image` rule and emits
+`<ClientOnly><ZoomableImage src="…" alt="…"></ZoomableImage></ClientOnly>`; the component owns the
+`<img>` and builds it from the `src` prop. Wired up in two places: `md.use(zoomablePlugin)` under
+`markdown.config` in `.vitepress/config.mts`, and the global registration in `theme/index.ts`.
+
+Consequences to respect when adding images:
+
+- **`src` never passes through Vite's asset pipeline.** A relative path (`./shot.png`,
+  `../assets/shot.png`) would normally be rewritten and content-hashed at build time; here it is
+  emitted verbatim and 404s in production. Absolute `/images/...` public-dir paths are immune —
+  which is the real reason the absolute form above is mandatory, not just a style preference.
+  The plugin's `isSafeSrc()` guard falls back to the default renderer for anything that isn't
+  `/…`, `http(s):`, or `data:`, so a stray relative path degrades to a normal non-zoomable image
+  instead of breaking — do not rely on that, use the absolute form.
+- **`ClientOnly` is load-bearing.** It is what prevents the SSR/hydration mismatch that makes
+  images duplicate or vanish in the production build. Do not remove it.
+- **Dev alone never proves an image change.** `docs:dev` does no SSR pass, and `docs:build` is
+  blind to 3 of the 4 image faults — run the five checks in *Verifying images* above.
+- Alt text containing `"`, `&`, `<`, or `>` is safe; the plugin HTML-escapes both attributes.
 
 ## Videos
 
@@ -178,6 +261,11 @@ each chunk's `caveat` field, never silently resolved.
   top-level `public/`, a nested one (e.g. `guide/public/`) silently never ships.
 - Never add/rename a doc without updating the sidebar in `.vitepress/config.mts`.
 - Never use relative links (`./slug`, `../slug`) or a link with a `.md` suffix.
+- Never use a relative or external image `src` — always absolute `/images/...`. Images render
+  through `<ZoomableImage>`, so `src` skips Vite's asset pipeline and a relative path 404s in the
+  production build; external hosts delete files (see Images → Image zoom).
+- Never remove the `<ClientOnly>` wrapper from `plugin-zoomable.ts` — it is what prevents images
+  duplicating or vanishing during SSR hydration.
 - Never commit `node_modules/`, `.vitepress/dist/`, or `.vitepress/cache/` (all gitignored).
 - Never edit `.vitepress/dist/` directly — it's regenerated by `docs:build`.
 

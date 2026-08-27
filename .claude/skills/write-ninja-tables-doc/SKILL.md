@@ -27,7 +27,9 @@ and verify with a clean build. Canonical conventions live in `CLAUDE.md` — thi
 5. **DO** add the page to the correct nested group in `.vitepress/config.mts`'s `sidebar` array
    (mandatory — VitePress does NOT auto-discover pages), preserving `collapsed: true` on groups
    that already have it.
-6. **DO** end on a green `npm run docs:build`.
+6. **DO** end on a green `npm run docs:build` — and if the page has images, ALSO run the verify
+   gate in `manage-ninja-tables-images` Phase 3. A green build silently passes a missing image
+   file, an external URL, a non-webp and an orphan; it only fails on a relative path.
 7. **DO NOT** create a `.md` file directly under `guide/` (excluding `guide/public`).
 8. **DO NOT** use relative links (`./slug`, `../slug`) or a link with a `.md` suffix.
 9. **DO NOT** leave support boilerplate ("contact our support team," "reach out for
@@ -145,6 +147,9 @@ Summarize and wait for confirmation before proceeding:
               Keep existing collapsed: true flags. Keep valid TypeScript.
 
 5. BUILD    - Run: npm run docs:build
+            - If the page has images, the build is NOT sufficient — also run the
+              verify gate in manage-ninja-tables-images Phase 3 (5 checks + live
+              200 sweep). A green build does not prove an image renders.
               Fix any dead-link / parse warnings, then rebuild until clean.
 ```
 

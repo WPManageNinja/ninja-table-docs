@@ -28,7 +28,10 @@ conventions live in `CLAUDE.md`.
 5. **DO** update `.vitepress/config.mts`'s sidebar — `link`, `text`, and group as needed —
    keeping valid TypeScript and existing `collapsed: true` flags.
 6. **DO** use `git mv` for renames/moves so history is preserved.
-7. **DO** end on a green `npm run docs:build`.
+7. **DO** end on a green `npm run docs:build` — and whenever an image folder was moved or files
+   were renumbered, ALSO run the verify gate in `manage-ninja-tables-images` Phase 3. A `git mv`
+   of an image folder without updating every ref leaves broken images that the build passes
+   silently: it only fails on a relative path, never on a missing `/images/...` file.
 8. **DO NOT** rename or move without rewriting every inbound reference.
 9. **DO NOT** leave an orphaned local image folder under the old path.
 10. **DO NOT** delete a doc without removing its sidebar entry AND reporting any inbound links
