@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { zoomablePlugin } from './theme/plugin-zoomable'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,6 +10,11 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }]
   ],
+  markdown: {
+    config: (md) => {
+      md.use(zoomablePlugin)
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.svg',
