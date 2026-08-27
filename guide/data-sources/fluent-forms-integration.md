@@ -44,13 +44,13 @@ From here, you can choose and save all fields or any unique field you wish to vi
 
 Now a new table will be created with the form fields as table header and form entries as table data.
 
-![form entries in data table](https://ninjatables.com/wp-content/uploads/2023/01/fluent-forms-integration-5.png)
+![form entries in data table](/images/data-sources/fluent-forms-integration/4.-Form-Entries-In-Data-Table.webp)
 
 - Edit the table’s name, data type & table style as well using Ninja Tables. Plus, Ninja tables also give you the option to customize table design, responsiveness, and table color.
 - Further customization can be done, such as - adding another **Your Message** column name. Select the Edit button that is just above the table.
 - After clicking there, you can notice all your form fields, like the screenshot below.
 
-![Contact Table](https://ninjatables.com/wp-content/uploads/2023/01/fluent-forms-integration-7-1024x426.png)
+![Contact Table](/images/data-sources/fluent-forms-integration/5.-Contact-Table.webp)
 
 Use responsive breakpoints or stackable table features in this form data table if you need a cleaner look.
 
@@ -58,7 +58,7 @@ Use responsive breakpoints or stackable table features in this form data table i
 
 If you choose to use Ninja Tables to display your form submissions, **activate** that from the configuration settings for Table Rows.
 
-![Own Submission Form](https://ninjatables.com/wp-content/uploads/2023/01/fluent-forms-integration-11.png)
+![Own Submission Form](/images/data-sources/fluent-forms-integration/6.-Own-Submission-Form.webp)
 
 ## **Show Your Table Data According to the Entry Type**
 
@@ -66,17 +66,17 @@ You can also show table data based on the Entry type. Go to the form where all t
 
 - Click the **Change Status** field and select your entry type Read / Unread / Trashed.
 
-![Show Table Data According to the Entry Type](/images/data-sources/fluent-forms-integration/4.-fluent-forms-integration-12.webp)
+![Show Table Data According to the Entry Type](/images/data-sources/fluent-forms-integration/7.-fluent-forms-integration-12.webp)
 
 - Now go to your Ninja Table, which is connected with Fluent Forms. **Entry Type** enables you to select what type of entries you want to show from fluent forms.
 
 - Choose your Entry type as per your needs.
 
-![Entry Type](/images/data-sources/fluent-forms-integration/5.-Fluent-Forms-5.webp)
+![Entry Type](/images/data-sources/fluent-forms-integration/8.-Fluent-Forms-5.webp)
 
 - Here is the result of the table data, which depends on the **Status** which was chosen.
 
-![Status](/images/data-sources/fluent-forms-integration/6.-fluent-forms-integration-14.webp)
+![Status](/images/data-sources/fluent-forms-integration/9.-fluent-forms-integration-14.webp)
 
 The combination of Fluent Forms and Ninja Tables is the most powerful one! And undoubtedly, it is very helpful for your website.
 
