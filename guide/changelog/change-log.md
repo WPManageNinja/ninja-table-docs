@@ -7,6 +7,34 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in Ninja Tables.
 
+## Ninja Tables v5.2.17
+
+*Released on September 15, 2026*
+
+::: code-group
+
+```md [🆕 New Features]
+• Added: DataTables now supports Google Sheets and CSV files.
+```
+
+```md [🔧 Improvements]
+• Improved: Sync Interval field now notes that the interval can be changed later.
+• Improved: Translatable text across the plugin.
+• Improved: Admin UI (moved admin notifications to side toasts, Select border and others).
+• Improved: Frontend UI (proper spacing for FooTable custom filter checkboxes and radio buttons).
+```
+
+```md [🔒 Security]
+• Security: Added a guard against a self-referencing cell shortcode. Props to Jakub Herman.
+• Security: Added proper guards to enforce permission policy coverage.
+```
+
+```md [🐛 Bug fixes]
+• Fixed: DataTables custom filter when visitor search was disabled.
+```
+
+:::
+
 ## Ninja Tables v5.2.15
 
 *Released on August 21, 2026*
