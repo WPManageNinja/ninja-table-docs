@@ -10,9 +10,15 @@ Source of truth: `ninja-tables-resource/untitled folder/ninja-tables.zip` (free)
 nearly identical between the two). Re-derive/refresh this table if those ZIPs are ever updated to
 a newer plugin version.
 
-No chunk files exist under `features/` yet — this index currently only lists which features from
-the readme's `== Ninja Tables Features ==` section still need a chunk. Run
-`check-ninja-tables-feature-coverage` against an item below to populate it.
+## Chunks
+
+| feature | tier | doc_status | doc_page | chunk |
+| --- | --- | --- | --- | --- |
+| Google Sheets Integration | pro | documented | guide/data-sources/google-sheets-integration.md | features/google-sheets-integration.md |
+| Construct Table from External CSV | pro | documented | guide/data-sources/construct-table-from-csv.md | features/construct-table-from-csv.md |
+
+Every other feature from the readme's `== Ninja Tables Features ==` section still needs a chunk.
+Run `check-ninja-tables-feature-coverage` against an item below to populate it.
 
 ## Features to chunk (from readme's Free/Premium lists)
 
