@@ -36,7 +36,7 @@ Click **Create Reviews Table** to generate the table.
 In the table editor, the **Table Rows** tab holds the settings specific to your WooCommerce reviews. Click the banner that reads **You may update the query settings here** to open three sub-tabs:
 
 - **Appearance:** Set the **Filled Star Color** and **Empty Star Color** so the star ratings match your branding.
-- **Query Settings:** Change the filters you chose in Step 1 — categories, product type, or review status.
+- **Query Settings:** Change the filters you chose in Step 1: categories, product type, or review status.
 - **Add New Column:** Add more data to the table, such as the [product average rating](/guide/data-sources/woocommerce-product-average-rating-column).
 
 ![WooCommerce review query settings](/images/data-sources/woocommerce-reviews-table/2.-WooCommerce-review-query-settings.webp)
@@ -45,11 +45,11 @@ In the table editor, the **Table Rows** tab holds the settings specific to your 
 
 Settings specific to your review data live under the **Table Rows** tab. The table also has access to every standard Ninja Tables setting from the other tabs in the editor:
 
-- **Table Configuration:** Core rendering settings such as pagination, sorting, and search — see [Table Rendering Settings](/guide/table-settings/table-rendering-settings).
-- **Table Design:** Colors, borders, and layout to match your branding — see [Table Style Settings](/guide/styling-design/table-style-settings).
-- **Frontend Editing:** Let specified users edit table data — see [Frontend Editing](/guide/advanced-features/frontend-editing).
-- **Custom CSS/JS:** Add your own CSS or JavaScript — see [Table Styling & CSS Selector](/guide/table-management/table-styling-css-selector).
-- **Import/Export:** Move table data in and out as CSV or JSON — see [Export Ninja Tables (CSV/JSON)](/guide/import-export/export-ninja-tables-csv-json).
+- **Table Configuration:** Core rendering settings such as pagination, sorting, and search. See [Table Rendering Settings](/guide/table-settings/table-rendering-settings).
+- **Table Design:** Colors, borders, and layout to match your branding. See [Table Style Settings](/guide/styling-design/table-style-settings).
+- **Frontend Editing:** Let specified users edit table data. See [Frontend Editing](/guide/advanced-features/frontend-editing).
+- **Custom CSS/JS:** Add your own CSS or JavaScript. See [Table Styling & CSS Selector](/guide/table-management/table-styling-css-selector).
+- **Import/Export:** Move table data in and out as CSV or JSON. See [Export Ninja Tables (CSV/JSON)](/guide/import-export/export-ninja-tables-csv-json).
 
 ## Step 3: Display Your Review Table
 

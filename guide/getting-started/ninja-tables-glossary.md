@@ -29,7 +29,7 @@ This guide defines common terms used in the Ninja Tables documentation to help y
 
 **Cell Merge (Colspan):** Combining two or more adjacent cells horizontally, within the same row, into a single cell.
 
-**Color Settings:** The tab where you customize a table's overall colors — header, rows, borders, and text — beyond a single preset.
+**Color Settings:** The tab where you customize a table's overall colors (header, rows, borders, and text) beyond a single preset.
 
 **Column Rearrangement:** Dragging a column into a new position to reorder it in the table builder.
 
@@ -47,7 +47,7 @@ This guide defines common terms used in the Ninja Tables documentation to help y
 
 **Data Filtering Shortcode:** A shortcode attribute that pre-filters which rows of a table are shown, without the visitor needing to use the search/filter controls.
 
-**Data Type:** The kind of value a column holds — Text, Numeric, Date, Select, Image/File, Button/Link, HTML, and more — which determines how it's edited, validated, and sorted.
+**Data Type:** The kind of value a column holds (Text, Numeric, Date, Select, Image/File, Button/Link, HTML, and more), which determines how it's edited, validated, and sorted.
 
 **Date Field:** A column data type for storing and displaying calendar dates, with a date-picker input in the editor.
 
@@ -95,7 +95,7 @@ This guide defines common terms used in the Ninja Tables documentation to help y
 
 ## L
 
-**Language Settings:** Text-string overrides for the frontend table interface — like the search placeholder or "no data" message — used to translate or customize wording.
+**Language Settings:** Text-string overrides for the frontend table interface, like the search placeholder or "no data" message, used to translate or customize wording.
 
 **License Key:** The code entered in Ninja Tables Pro's settings to activate Pro features and receive plugin updates.
 
@@ -107,7 +107,7 @@ This guide defines common terms used in the Ninja Tables documentation to help y
 
 ## N
 
-**Ninja Charts:** A companion free plugin that turns Ninja Tables data into charts and graphs — pie charts, bar charts, line charts, and more.
+**Ninja Charts:** A companion free plugin that turns Ninja Tables data into charts and graphs: pie charts, bar charts, line charts, and more.
 
 **Numeric Value (data type):** A column data type for numbers, enabling numeric sorting, filtering, and calculations rather than plain-text comparison.
 
@@ -123,7 +123,7 @@ This guide defines common terms used in the Ninja Tables documentation to help y
 
 ## R
 
-**Rendering Settings:** Options that control how and when a table's data loads on the frontend — for example, loading all data immediately versus in chunks.
+**Rendering Settings:** Options that control how and when a table's data loads on the frontend, for example, loading all data immediately versus in chunks.
 
 **Responsive Breakpoint:** A screen-width threshold at which specific table columns are automatically hidden or shown to fit smaller screens.
 
@@ -159,7 +159,7 @@ This guide defines common terms used in the Ninja Tables documentation to help y
 
 **Table ID:** The unique numeric identifier assigned to every table, used inside its shortcode.
 
-**Table Style Settings:** The tab where you choose a table's overall CSS design — Bootstrap, Semantic UI, or a custom style — from 100+ presets.
+**Table Style Settings:** The tab where you choose a table's overall CSS design (Bootstrap, Semantic UI, or a custom style) from 100+ presets.
 
 **TablePress Migration:** A one-click tool that imports existing tables created with the TablePress plugin into Ninja Tables.
 
@@ -173,6 +173,6 @@ This guide defines common terms used in the Ninja Tables documentation to help y
 
 ## W
 
-**WooCommerce Integration:** A Pro data source that builds a table from WooCommerce products — price, stock, variations, and an add-to-cart button.
+**WooCommerce Integration:** A Pro data source that builds a table from WooCommerce products: price, stock, variations, and an add-to-cart button.
 
 **WordPress Posts Table:** A data source that builds a table from WordPress posts or any custom post type.

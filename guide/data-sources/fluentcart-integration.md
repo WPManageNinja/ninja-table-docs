@@ -7,7 +7,7 @@ description: "Connect Ninja Tables with FluentCart to build responsive, sortable
 
 **FluentCart Integration** connects Ninja Tables directly with FluentCart so you can build responsive, sortable product tables. Customers can add items to their cart, select variations, and buy in bulk without leaving the table.
 
-If both Ninja Tables and FluentCart are installed and activated on your site, the integration is ready to use — there is nothing extra to set up.
+If both Ninja Tables and FluentCart are installed and activated on your site, the integration is ready to use. There is nothing extra to set up.
 
 ## Create a FluentCart Table
 
@@ -27,7 +27,7 @@ The configuration panel is where you decide which products appear in the table.
 - **Select Products By Category:** Show products from the categories you pick. Leave it empty to include every category.
 - **Select Products By Product Brands:** Limit the table to specific brands.
 - **Hide out of stock items:** Check this to leave out products that are currently out of stock.
-- **Initial Order By:** Set the default sort — **Product Title**, **Price**, **Date**, and so on — in **Ascending** or **Descending** order.
+- **Initial Order By:** Set the default sort (**Product Title**, **Price**, **Date**, and so on) in **Ascending** or **Descending** order.
 
 ![FluentCart table creation settings](/images/data-sources/fluentcart-integration/2.-FluentCart-table-creation.webp)
 
@@ -72,11 +72,11 @@ This tab adds more information to the table, just like any other Ninja Table. To
 
 Settings specific to your FluentCart product data live under the **Table Rows** tab. The table also has access to every standard Ninja Tables setting from the other tabs in the editor:
 
-- **Table Configuration:** Core rendering settings such as pagination, sorting, and search — see [Table Rendering Settings](/guide/table-settings/table-rendering-settings).
-- **Table Design:** Colors, borders, and layout to match your branding — see [Table Style Settings](/guide/styling-design/table-style-settings).
-- **Frontend Editing:** Let specified users edit table data from the front end — see [Frontend Editing](/guide/advanced-features/frontend-editing).
-- **Custom CSS/JS:** Add your own CSS or JavaScript — see [Table Styling & CSS Selector](/guide/table-management/table-styling-css-selector).
-- **Import/Export:** Move table data in and out as CSV or JSON — see [Export Ninja Tables (CSV/JSON)](/guide/import-export/export-ninja-tables-csv-json).
+- **Table Configuration:** Core rendering settings such as pagination, sorting, and search. See [Table Rendering Settings](/guide/table-settings/table-rendering-settings).
+- **Table Design:** Colors, borders, and layout to match your branding. See [Table Style Settings](/guide/styling-design/table-style-settings).
+- **Frontend Editing:** Let specified users edit table data from the front end. See [Frontend Editing](/guide/advanced-features/frontend-editing).
+- **Custom CSS/JS:** Add your own CSS or JavaScript. See [Table Styling & CSS Selector](/guide/table-management/table-styling-css-selector).
+- **Import/Export:** Move table data in and out as CSV or JSON. See [Export Ninja Tables (CSV/JSON)](/guide/import-export/export-ninja-tables-csv-json).
 
 ### Step 4: Display Your Table
 

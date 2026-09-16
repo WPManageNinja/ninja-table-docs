@@ -15,7 +15,7 @@ Right after activation, Ninja Tables greets you with a welcome screen. From here
 
 ![Ninja Tables welcome screen](/images/getting-started/onboarding-setup-guide/1.-Welcome-Screen.webp)
 
-You can always get back to this screen later — click **Ninja Tables** in the WordPress **Dashboard** sidebar to open the **All Tables** screen, where every table you create will be listed alongside **Tools and Settings** and **Help & Documentation**.
+You can always get back to this screen later. Click **Ninja Tables** in the WordPress **Dashboard** sidebar to open the **All Tables** screen, where every table you create will be listed alongside **Tools and Settings** and **Help & Documentation**.
 
 ## Step 2: Choose Your Table Creation Method
 

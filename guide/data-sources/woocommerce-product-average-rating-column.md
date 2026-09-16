@@ -5,7 +5,7 @@ description: "Add a column to your WooCommerce reviews table that shows each pro
 
 # WooCommerce Product Average Rating Column
 
-The **Product Average Rating** column (Pro) shows a product's overall average score next to each individual review. Customers can see both at once — the single review (for example, 5 stars) and the product's average (for example, 4.5/5).
+The **Product Average Rating** column (Pro) shows a product's overall average score next to each individual review. Customers can see both at once: the single review (for example, 5 stars) and the product's average (for example, 4.5/5).
 
 Add it to any [WooCommerce Product Reviews Table](/guide/data-sources/woocommerce-product-reviews-table).
 
