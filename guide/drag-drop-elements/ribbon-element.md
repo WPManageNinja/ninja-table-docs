@@ -50,7 +50,9 @@ Let’s see how it works.
 - **Font Size**: You can change the size of the text. By default, it is set to 15.
 - **Font X Offset:** You can change the X offset of the Font, which means you can move the Text of the ribbon horizontally.
 - **Font Y Offset:** You can change the Y offset of the Font, which means you can move the Text of the ribbon vertically.
-- **Font Style**: Change font style to bold, italic, or underlined.
+- **Font Style**: Change font style to bold, italic, underlined, or strikethrough.
+
+<!-- SCREENSHOT UPDATE NEEDED: images/drag-drop-elements/ribbon-element/3.-Ribbon-text.webp - the Font Style checkboxes now include "Strikethrough". -->
 
 ![Ribbon text](/images/drag-drop-elements/ribbon-element/3.-Ribbon-text.webp)
 
