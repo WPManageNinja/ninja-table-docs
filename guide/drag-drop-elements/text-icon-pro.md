@@ -26,7 +26,7 @@ You can click the "Text Icon" cell and customize the icon and text both.
 | | Alignment | Left, Center, and Right |
 | Text | Font Color | Graphical Color Selection |
 | | Font Size | Numeric Value, drag bar |
-| | Font Style | Bold, Italic & Underline |
+| | Font Style | Bold, Italic, Underline & Strikethrough |
 | Icon | Color | Graphical Color Selection |
 | | Icon Size | Numeric Value, drag bar |
 | | Choose Icon | Upload from Computer |
@@ -45,7 +45,9 @@ You can click the "Text Icon" cell and customize the icon and text both.
 
 - **Font Color**: You can change the color of the text. By default, it is set to Black.
 - **Font Size**: You can change the size of the text. By default, it is set to 10.
-- **Font Style**: You can change the Font Style orientations. Available options are **Bold**, *Italic*, and **Underline**.
+- **Font Style**: You can change the Font Style orientations. Available options are **Bold**, *Italic*, **Underline**, and **Strikethrough**.
+
+<!-- SCREENSHOT UPDATE NEEDED: images/drag-drop-elements/text-icon/3.-text-icon-customize.webp - the Font Style checkboxes now include "Strikethrough". -->
 
 ![text icon customize](/images/drag-drop-elements/text-icon/3.-text-icon-customize.webp)
 
