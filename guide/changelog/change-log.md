@@ -7,6 +7,39 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in Ninja Tables.
 
+## Ninja Tables v5.2.18
+
+*Released on October 9, 2026*
+
+::: code-group
+
+```md [🆕 New Features]
+• Added: Excel import and export support.
+• Added: Frontend Excel export support.
+• Added: Strikethrough font style in the Drag & Drop table builder.
+• Added: Opacity support in the Drag & Drop table builder's colour pickers.
+```
+
+```md [🔧 Improvements]
+• Improved: Table Design preview.
+• Improved: Gutenberg block now uses Block API v3.
+• Improved: DataTables toolbar alignment and colour contrast for accessibility.
+```
+
+```md [🔒 Security]
+• Security: Improved security and data handling.
+```
+
+```md [🐛 Bug fixes]
+• Fixed: Duplicating a DataTables table copies configuration but not row data.
+• Fixed: Render styling in Datatables engine.
+• Fixed: Drag & Drop tables row colours and cell alignment.
+• Fixed: Border colour staying after turning off "Bordered table".
+• Fixed: Hover colour now highlights a row together with its responsive breakpoint row.
+```
+
+:::
+
 ## Ninja Tables v5.2.17
 
 *Released on September 15, 2026*
