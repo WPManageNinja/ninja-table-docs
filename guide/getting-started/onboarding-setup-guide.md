@@ -58,7 +58,7 @@ Back on the **Table Rows** tab, your new column now appears. Click **Add Data** 
 
 With your table's basic structure in place, the tabs at the top let you go further:
 
-- **Table Configuration:** Manage **Columns**, **Rendering Settings**, **Custom Filters**, **Buttons (CSV/Print)**, and **Language Settings**.
+- **Table Configuration:** Manage **Columns**, **Rendering Settings**, **Custom Filters**, **Export Buttons**, and **Language Settings**.
 - **Table Design:** Choose a style library, colors, and layout options like the stackable/responsive table.
 - **Frontend Editing:** Let visitors edit table data directly on the frontend.
 - **Custom CSS/JS:** Add your own styling or scripts.
