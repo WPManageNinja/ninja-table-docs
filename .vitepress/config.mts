@@ -189,7 +189,7 @@ export default defineConfig({
             items: [
               { text: 'Language Settings', link: '/guide/table-settings/language-settings' },
               { text: 'Custom Filters', link: '/guide/table-settings/custom-filters' },
-              { text: 'CSV & Print Button', link: '/guide/table-settings/csv-and-print-button' },
+              { text: 'Export Buttons (CSV / Excel / Print)', link: '/guide/table-settings/csv-and-print-button' },
               { text: 'Rendering Settings', link: '/guide/table-settings/table-rendering-settings' },
               { text: 'Column Rearrangement', link: '/guide/table-settings/column-rearrangement' }
             ]
