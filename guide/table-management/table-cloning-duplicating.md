@@ -20,4 +20,6 @@ And you can clone or duplicate any of your data tables with a single click from 
 
 - It's done & you will be notified by a popup; you will see a duplicate table already created at the top of the list.
 
+The duplicate gets a copy of the table's settings and all of its rows, including tables that use the **DataTables** rendering engine. The duplicate does not reuse the original table's cached data, so it always shows its own rows.
+
 This is how you can **duplicate** your entire table using the Ninja Tables plugin. Easy and Simple!
