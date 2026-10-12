@@ -16,6 +16,10 @@ Go to a table and click on the **Table Design** tab beside the **Table Configura
 
 There's device segment and it consists of three device categories **Desktop, tablet, and mobile**. You can click and see how the table looks on respective devices.
 
+The design preview shows your table the same way it appears on your website, including your theme's styles, stackable layout, and filters. It updates as you change settings, and nothing is saved until you click the save button.
+
+<!-- SCREENSHOT UPDATE NEEDED: images/styling-design/table-style-settings/1.-New-Ui-table-design-tab.webp - the Table Design preview is now the real front-end table rendered in a frame; retake the whole Table Design tab. Check the other screenshots in this page too (2, 3 and 4) since the preview area looks different. -->
+
 You will see a variety of design options that appear to choose from. In this section, you will find three design options for configuring your tables. They are **Styling**, **Table** **Colors** & **Other**.
 
 ## Tabs Under Table Design
