@@ -24,7 +24,7 @@ All you need to do is drag the element from the left menu and drop it on the tab
 | Text Options | Font Color | Graphical Color Selection |
 | | Font Size | Numeric Value |
 | | Alignment | Left, Center, Right |
-| | Font Weight | Bold, Italic, Underline |
+| | Font Weight | Bold, Italic, Underline, Strikethrough |
 
 ![Customize table cell element](/images/drag-drop-elements/text-element/2.-Customize-table-cell-element.webp)
 
@@ -34,7 +34,10 @@ All you need to do is drag the element from the left menu and drop it on the tab
 - **Font Color**: You can change the color of the text. By default, it is set to Black.
 - **Font Size**: Change the size of the text. By default, it is set to 15.
 - **Alignment:** You can align texts to the left, right, or center. By default, it is set to Center.
-- **Font Style**: You can change the Font Style orientations. Available options are **Bold**, *Italic*, and **Underline**.
+- **Font Style**: You can change the Font Style orientations. Available options are **Bold**, *Italic*, **Underline**, and **Strikethrough**. You can combine Underline and Strikethrough on the same text.
+- **Strikethrough part of a text:** Select a word or phrase in the Editor Box and click the strikethrough button in its toolbar. This is handy for showing an old price next to a new one.
+
+<!-- SCREENSHOT UPDATE NEEDED: images/drag-drop-elements/text-element/2.-Customize-table-cell-element.webp - the Font Style checkboxes now include "Strikethrough"; retake the Text options panel. -->
 
 ## Conclusion
 
