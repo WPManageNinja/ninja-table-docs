@@ -37,7 +37,9 @@ Pre-defined color combinations can't always look good for your tables. Color the
 
 ![New ui custom color settings](/images/styling-design/table-color-settings/3.-New-ui-custom-color-settings.webp)
 
-- Under the **Table Body Colors** part, you will find the **Hover** tab on the right side. Customize the hover color according to your needs. Hover over the table and see the row/text colors change. This will make the table more interactive.
+- Under the **Table Body Colors** part, you will find the **Hover** tab on the right side. Customize the hover color according to your needs. Hover over the table and see the row/text colors change. This will make the table more interactive. When a row opens its responsive details row (on smaller screens), hovering either part highlights both together, so they read as one record.
+
+- Under the same **Table Body Colors** part, the **Default** tab has a **Border** color. It only applies while **Bordered table** is switched on in the **Styling** tab. If you turn **Bordered table** off, the custom border color is removed from the table. Your chosen color is saved and comes back when you turn **Bordered table** on again.
 
 - You can also toggle "**Alternate Color Schema for Table Rows**" on to make the table color have alternate colors for rows. Choose your preferred custom colors to display them on odd rows and even rows.
 
