@@ -20,7 +20,7 @@ Let’s add a list element in table.
 | | Alignment | Left, Center, and Right |
 | **Text** | Font Color | Numeric Value |
 | | Font Size | Numeric Value |
-| | Font Style | Bold, Italic, and Underline |
+| | Font Style | Bold, Italic, Underline, and Strikethrough |
 | **List** | List Type | Unordered or Ordered |
 | | List Icon (Unordered) | Circle, Square, Disc, and None |
 | | List Icon (Ordered) | Upper-Roman, Lower-Roman, Upper-Alpha, Lower-Alpha, and Decimal |
@@ -37,7 +37,9 @@ Let’s add a list element in table.
 
 - **Font Color**: You can change the color of the text. By default, it is set to Black.
 - **Font Size**: You can change the size of the text. By default, it is set to 15.
-- **Font Style:** You can change the Font Style orientations. Available options are **Bold**, **Italic**, and **Underline**.
+- **Font Style:** You can change the Font Style orientations. Available options are **Bold**, **Italic**, **Underline**, and **Strikethrough**.
+
+<!-- SCREENSHOT UPDATE NEEDED: images/drag-drop-elements/list-element/2.-list-element-custom-text.webp - the Font Style checkboxes now include "Strikethrough". -->
 
 ![list element custom text](/images/drag-drop-elements/list-element/2.-list-element-custom-text.webp)
 
