@@ -20,7 +20,7 @@ From the menu on the left side, you can see multiple customization options for t
 | Text | Font Color | Graphical Color Selection |
 | | Font Size | Numeric Value, drag bar |
 | | Item Spacing | Numeric Value, drag bar |
-| | Font Style | Bold, Italic & Underline |
+| | Font Style | Bold, Italic, Underline & Strikethrough |
 | Icon | Icon Color | Graphical Color Selection |
 | | Icon Size | Numeric Value, drag bar |
 | | Choose Icon | Upload from Computer |
@@ -38,7 +38,9 @@ From the menu on the left side, you can see multiple customization options for t
 - **Font Color**: You can change the color of the text. By default, it is set to Black.
 - **Font Size**: You can change the size of the text. By default, it is set to 15.
 - **Item Spacing**: You can change the space vertically between list items. By default, it is set to 19.
-- **Font Style**: You can change the Font Style orientations. Available options are **Bold**, *Italic*, and Underline.
+- **Font Style**: You can change the Font Style orientations. Available options are **Bold**, *Italic*, Underline, and Strikethrough.
+
+<!-- SCREENSHOT UPDATE NEEDED: images/drag-drop-elements/styled-list/2.-Styled-List-element.webp - the Font Style checkboxes now include "Strikethrough". -->
 
 ![Styled List element](/images/drag-drop-elements/styled-list/2.-Styled-List-element.webp)
 
