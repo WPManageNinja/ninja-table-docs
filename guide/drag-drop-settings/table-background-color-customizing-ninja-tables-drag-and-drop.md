@@ -66,6 +66,12 @@ Here's an example-
 
 ![selected cell colors in table](/images/drag-drop-settings/table-background-color/4.-selected-cell-in-tables.webp)
 
+### Color Opacity
+
+The color pickers in the Drag & Drop builder include an **opacity** (transparency) slider. Use it to make a background, text, or shadow color partly see-through, for example a soft tinted row. Click a color box, then drag the opacity bar under the color panel. Cell shadow colors support opacity too.
+
+<!-- SCREENSHOT UPDATE NEEDED: add a new screenshot (suggested name 5.-Color-picker-opacity.webp) of an open color picker in the builder with the opacity (alpha) bar visible. -->
+
 ## Conclusion
 
 You can quick-edit the table from the "Background" button at the top instead of moving to the "Settings" tab and looking for the Background editing option.
