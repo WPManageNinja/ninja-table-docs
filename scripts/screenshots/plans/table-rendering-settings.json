@@ -3,7 +3,7 @@
   "outDir": "public/images/table-settings/table-rendering-settings",
   "viewport": { "width": 1600, "height": 1100 },
   "steps": [
-    { "admin": "/tables/895/configuration" },
+    { "admin": "/tables/{{Product Price List}}/configuration" },
     { "shot": { "name": "1.-New-Ui-table-rendering-settings", "clip": "app", "crop": "auto",
         "arrows": [ { "target": { "selector": ".nt-tab", "hasText": "Table Configuration" }, "from": "bottom", "len": 140 } ] } },
 

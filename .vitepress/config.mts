@@ -40,7 +40,7 @@ export default defineConfig({
   rewrites: {
     'docs/:category/:slug.md': ':slug.md',
   },
-  srcExclude: ['README.md', 'CLAUDE.md', 'REDESIGN-PLAN.md', '.claude/**/*.md'],
+  srcExclude: ['README.md', 'CLAUDE.md', 'REDESIGN-PLAN.md', '.claude/**/*.md', 'scripts/**/*.md'],
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
 

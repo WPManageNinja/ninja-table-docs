@@ -10,6 +10,7 @@ the docs currently describe.
 - **Source:** free `ninja-tables-dev` branch `redesign` @ `f0b7813e` (header 5.2.18, latest tag `v5.2.18`); Pro folder 5.2.18.
 - **Docs state:** commit `200bce7` "Rewrite docs for the redesigned Ninja Tables admin UI" (branch `ninjatable-new-ui`). Every page was rewritten for the new admin UI by 6 writers following `.claude/redesign-audit/WRITING-BRIEF.md`; audit notes are in `.claude/redesign-audit/`.
 - **Tooling added:** plugin memory (this folder), `scripts/plugin/*`, the screenshot runner `scripts/screenshots/` (ported from FluentCart, `npm run shots`), the `ninja-tables-screenshotter` subagent (Sonnet), `scripts/qa/diff-build.mjs`, and the skills `ninja-tables-code-to-docs`, `ninja-tables-doc-writer`, the four page-type specialists, `ninja-tables-doc-screenshots`, `ninja-tables-featured-images`, `ninja-tables-deployment`.
+- **Demo data:** `scripts/demo-data/seed.sh` seeded 9 tables (~2,700 rows) + 5 pages on cart.local (meta `_nt_demo_seed`). DB backup before seeding: `~/Local Sites/cart/backups/before-demo-seed-20261029-1837.sql`.
 - **Screenshot plans:** `table-rendering-settings.json`, `tools-and-settings.json` (both verified as previews only; nothing written to `public/images/` yet).
 - **Open questions carried forward:**
   - Most screenshots still show the pre-redesign UI (the rewrite kept old image lines "to be retaken"). The retake queue is `.claude/SCREENSHOT-TODO.md`.

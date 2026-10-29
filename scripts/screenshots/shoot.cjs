@@ -46,6 +46,10 @@
 //   {"stack": {"raws": ["before","after"], "labels": ["Before: ...","After: ..."], "name": "3.-Before-After"}}
 //       vertical before/after composite from earlier shots' RAW pngs (by shot name)
 //
+// Placeholders: "{{Employee Directory}}" → that demo table's id, "{{page:Our Team}}" → that demo page's path,
+//   e.g. {"admin": "/tables/{{Employee Directory}}/configuration"}, {"front": "{{page:Our Team}}/"}.
+//   Map: scripts/screenshots/demo-tables.json, written by scripts/demo-data/seed.sh.
+//
 // Raw PNGs go to scripts/screenshots/raw/ (gitignored). Only the .webp in outDir is committed.
 
 const fs = require('fs');
@@ -66,7 +70,16 @@ function parseArgs() {
 async function main() {
   const { plan: planFile, only, out: outOverride } = parseArgs();
   if (!planFile) { console.error('usage: npm run shots -- <plan.json> [--only=name,name] [--out=dir]'); process.exit(1); }
-  const plan = JSON.parse(fs.readFileSync(path.resolve(planFile), 'utf8'));
+  // {{Table Title}} / {{page:Page Title}} placeholders resolve through the demo-data map, so plans survive a
+  // re-seed (table ids change every time scripts/demo-data/seed.sh runs).
+  const mapFile = path.join(__dirname, 'demo-tables.json');
+  const demo = fs.existsSync(mapFile) ? JSON.parse(fs.readFileSync(mapFile, 'utf8')) : { tables: {}, pages: {} };
+  const raw = fs.readFileSync(path.resolve(planFile), 'utf8').replace(/\{\{(page:)?([^}]+)\}\}/g, (m, isPage, name) => {
+    const v = isPage ? (demo.pages || {})[name] : (demo.tables || {})[name];
+    if (v == null) throw new Error(`Unknown demo ${isPage ? 'page' : 'table'} "${name}" (run scripts/demo-data/seed.sh; see ${path.relative(REPO, mapFile)})`);
+    return String(isPage ? v.replace(/\/$/, '').replace(/^\//, '/') : v);
+  });
+  const plan = JSON.parse(raw);
   if (!plan.outDir) throw new Error('plan.outDir is required');
   if (!/^public\/images\//.test(plan.outDir)) throw new Error('plan.outDir must start with public/images/ (the only folder VitePress serves)');
   const outDir = outOverride ? path.resolve(outOverride) : path.resolve(REPO, plan.outDir);

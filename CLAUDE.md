@@ -34,7 +34,7 @@ five checks in *Images → Verifying images* — that is the only gate that catc
 │   └── images/<category>/<slug>/<file>.webp  ← all doc screenshots (see Images below)
 ├── .vitepress/
 │   ├── config.mts               ← site config: title, cleanUrls, srcExclude, nav, sidebar
-│                                    (SINGLE source of truth; srcExclude keeps README.md,
+│                                    (SINGLE source of truth; srcExclude keeps README.md, scripts/**/*.md,
 │                                    CLAUDE.md and .claude/**/*.md off the public site)
 │   └── theme/
 │       ├── index.ts             ← extends DefaultTheme; imports style.css, sets custom Layout,
@@ -342,6 +342,9 @@ Ported from the FluentCart docs repo.
   headless Google Chrome through `playwright-core`, hides WP chrome and the plugin's nags, draws
   `#FF4E6B` arrows with `sharp`, and writes `.webp` (q82, ~2880 px wide) straight into `public/images/`.
   Plans in `scripts/screenshots/plans/` are kept as regression fixtures; re-run them after a release.
+- **Demo data:** `./scripts/demo-data/seed.sh` fills the site with realistic tables (up to 1,200 rows) and
+  pages embedding them; plans reference them by title (`{{Employee Directory}}`) because ids change on
+  re-seed. Shoot these, not the `DOCTEST …` tables. Details: `scripts/demo-data/README.md`.
 - **Never** use the Chrome extension or `screencapture` for this (see the global rule about the other PC).
 
 ## Featured (social-share) images
