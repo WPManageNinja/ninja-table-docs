@@ -48,11 +48,11 @@ const SRC_DIR_REL = ''
 const PUBLIC_DIR_REL = 'public'
 const HOME_REL = 'index.md'
 // Folders under SRC_DIR that hold no pages (mirrors `srcExclude` / stray asset folders).
-const EXCLUDE_DIRS_REL = ["guide/public"]
+const EXCLUDE_DIRS_REL = ["docs/public"]
 
 // Eyebrow label = first folder of the page path, after skipping these wrapper folders,
 // title-cased — with SECTION_LABELS pinning the ones that title-case badly (acronyms etc.).
-const SECTION_PREFIXES = ["guide"]
+const SECTION_PREFIXES = ["docs"]
 const SECTION_LABELS = {
   'drag-drop-elements': 'Drag & Drop Elements',
   'drag-drop-settings': 'Drag & Drop Settings',
@@ -96,9 +96,9 @@ const PALETTE = {
   ]
 }
 
-// No `rewrites` in this repo: pages are served at their source path.
+// Mirrors the config's rewrite `docs/:category/:slug.md` -> `:slug.md`.
 function servedPath(rel) {
-  return rel
+  return rel.replace(/^docs\/[^/]+\//, '')
 }
 
 // =========================================================================
@@ -120,7 +120,7 @@ const HOME_PATH = join(REPO_ROOT, HOME_REL)
 const EXCLUDED_DIRS = new Set(
   [PUBLIC_DIR, ...EXCLUDE_DIRS_REL.map((d) => join(REPO_ROOT, d)), join(REPO_ROOT, 'node_modules'), join(REPO_ROOT, '.vitepress'), join(REPO_ROOT, '.claude'), join(REPO_ROOT, '.github')]
 )
-const EXCLUDED_FILES = new Set(['README.md', 'CLAUDE.md', 'AGENTS.md', 'CONTRIBUTING.md', 'LICENSE.md', 'CHANGELOG-INTERNAL.md'])
+const EXCLUDED_FILES = new Set(['README.md', 'CLAUDE.md', 'AGENTS.md', 'CONTRIBUTING.md', 'LICENSE.md', 'CHANGELOG-INTERNAL.md', 'REDESIGN-PLAN.md'])
 
 // -------------------------------------------------------------------------
 // File discovery

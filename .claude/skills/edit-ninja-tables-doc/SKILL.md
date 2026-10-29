@@ -2,7 +2,7 @@
 name: edit-ninja-tables-doc
 description: 'Edit the CONTENT of an EXISTING Ninja Tables documentation page in place (same slug, same file location) while preserving every site convention. Handles wording changes, new/removed sections, updated steps, and swapped or added screenshots. USE FOR: edit the X doc, update the wording on, add a section to, rewrite this page, fix the screenshot in, this doc is out of date, correct an error in the doc, expand the X guide. DO NOT USE FOR: creating a new page (use write-ninja-tables-doc), renaming the slug / moving to another category / deleting / reordering the sidebar (use restructure-ninja-tables-docs), site-wide audits (use audit-ninja-tables-docs), or deciding whether a feature is documented at all (use check-ninja-tables-feature-coverage).'
 license: MIT
-compatibility: 'VitePress repo using guide/<category>/<slug>.md layout with a hand-maintained nested sidebar inline in .vitepress/config.mts. Requires Node + npm to run docs:build.'
+compatibility: 'VitePress repo using docs/<category>/<slug>.md layout with a hand-maintained nested sidebar inline in .vitepress/config.mts. Requires Node + npm to run docs:build.'
 metadata:
   project: ninja-table-docs
   canonical-rules: CLAUDE.md
@@ -18,7 +18,7 @@ Canonical conventions live in `CLAUDE.md` — this skill is the *procedure* for 
 ## Agent Behavior Rules
 
 1. **DO** locate the exact file before editing and confirm it with the user.
-2. **DO** preserve all conventions on every edit: absolute `/guide/<category>/<slug>` links (no
+2. **DO** preserve all conventions on every edit: absolute `/<slug>` links (no
    `.md`, no relative form), `**term**` bold (no inner spaces), no support boilerplate, "(Pro)"
    markers for Pro features.
 3. **DO** keep the frontmatter `title`/H1 in sync — if the display title changes, update both,
@@ -45,7 +45,7 @@ Canonical conventions live in `CLAUDE.md` — this skill is the *procedure* for 
 ### 1.1 Target page
 > **Which doc?** (title, slug, or URL)
 
-Resolve to a file: `find guide -name '<slug>.md'`. If ambiguous or not found, ask. Record
+Resolve to a file: `find docs -name '<slug>.md'`. If ambiguous or not found, ask. Record
 `TARGET_PATH`, `SLUG`, `CATEGORY`.
 
 ### 1.2 The change
@@ -76,7 +76,7 @@ Wait for confirmation.
 1. Read `TARGET_PATH` fully.
 2. Read `CLAUDE.md` for conventions.
 3. If `TITLE_CHANGES`: read `.vitepress/config.mts` and find the sidebar entry whose `link` is
-   `/guide/<CATEGORY>/<SLUG>` (its `text` must be updated to match the new title).
+   `/<SLUG>` (its `text` must be updated to match the new title).
 4. If this page documents a plugin feature, check whether
    `.claude/skills/check-ninja-tables-feature-coverage/references/index.md` has a chunk pointing
    at it — update the chunk's `source_version`/`caveat` too if the edit changes those facts.
@@ -121,14 +121,14 @@ Report:
 
 ### Locate
 ```
-File by slug:   find guide -name '<slug>.md'
-Sidebar entry:  grep -n "'/guide/<category>/<slug>'" .vitepress/config.mts
+File by slug:   find docs -name '<slug>.md'
+Sidebar entry:  grep -n "'/<slug>'" .vitepress/config.mts
 Image folder:   public/images/<category>/<short-slug>/   (compressed slug — grep, do not guess)
 ```
 
 ### Formats (unchanged from site rules)
 ```
-Cross-link:  [Text](/guide/<category>/<slug>)   (never .md, never relative)
+Cross-link:  [Text](/<slug>)   (never .md, never relative)
 Image ref:   ![Alt](/images/<category>/<short-slug>/<n>.-<Short-Label>.webp)
 Bold:        **term**                           (no inner spaces)
 ```

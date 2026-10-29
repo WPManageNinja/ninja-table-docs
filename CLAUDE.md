@@ -3,6 +3,10 @@
 End-user documentation site for the **Ninja Tables** WordPress plugin by WPManageNinja (free +
 Pro table builder). Built with **VitePress 1.6+**, **Vue 3.5**.
 
+> Source folder is `docs/` (renamed from `guide/` on 2026-10-29). Pages are served at flat URLs
+> `/<slug>` through `rewrites` in `.vitepress/config.mts` (`'docs/:category/:slug.md': ':slug.md'`).
+> Page/nav/sidebar links are `/<slug>`. Image paths in markdown are `/images/...` (root `public/`).
+
 ## Commands
 
 | Command | Action |
@@ -43,14 +47,14 @@ five checks in *Images → Verifying images* — that is the only gate that catc
 │           └── ZoomableImage.vue ← click-to-zoom wrapper every doc image renders through
 ├── ninja-tables-resource/       ← brand assets (Logo/, Icon/) + plugin source ZIPs (free + pro),
 │                                    the readme.txt inside each is the feature/changelog source of truth
-└── guide/
+└── docs/
     └── <category>/<slug>.md     ← every doc lives directly in a category folder (flat, no sub-folders)
 ```
 
 ### Category folders — flat, 2-level (18 folders)
 
 Unlike some sibling doc sites, this repo does **not** nest category sub-folders on disk — every
-page is `guide/<category>/<slug>.md`, one level deep. The 18 categories:
+page is `docs/<category>/<slug>.md`, one level deep. The 18 categories:
 
 `getting-started` · `creating-tables` · `drag-drop-tables` · `drag-drop-settings` ·
 `drag-drop-elements` · `data-sources` · `column-settings` · `field-types` · `table-settings` ·
@@ -60,19 +64,22 @@ page is `guide/<category>/<slug>.md`, one level deep. The 18 categories:
 
 (`public/images/` is assets, not a category.)
 
-## URL convention — different from a rewrite-flattened site
+## URL convention — flat URLs (rewrite-flattened site)
 
-On disk: `guide/<category>/<slug>.md` → In browser: `/guide/<category>/<slug>` (only
-`cleanUrls: true` strips the `.html` extension — **the category stays in the URL**, it is not
-flattened away via rewrites). All internal cross-links must use this full absolute form:
+On disk: `docs/<category>/<slug>.md` → In browser: `/<slug>` (e.g.
+`https://docs.ninjatables.com/ninja-tables-introduction`). `rewrites` in `.vitepress/config.mts`
+(`'docs/:category/:slug.md': ':slug.md'`) hides the category folder and `cleanUrls: true`
+strips `.html`. Consequences:
 
-- ✅ `[Link Text](/guide/<category>/<slug>)`
-- ❌ `[Link Text](/guide/<category>/<slug>.md)` (no `.md`)
-- ❌ `[Link Text](./slug)` or `[Link Text](../category/slug)` (no relative links)
-
-As of this writing, no page actually contains an internal cross-link yet (no guide page links to
-another guide page) — the rule above is the convention to follow going forward, not a pattern to
-reverse-engineer from existing pages.
+- **Every slug must be unique across all category folders** (two `pricing.md` files would collide).
+- Moving a page to another category folder does NOT change its URL; renaming the slug does.
+- All internal cross-links (markdown, sidebar, nav, `index.md`) use the flat absolute form:
+  - ✅ `[Link Text](/<slug>)`
+  - ❌ `[Link Text](/guide/<category>/<slug>)` (old pre-2026-10 form, now 404s)
+  - ❌ `[Link Text](/<slug>.md)` (no `.md`)
+  - ❌ `[Link Text](./slug)` or `[Link Text](../category/slug)` (no relative links)
+- The old `/guide/<category>/<slug>` URLs need host-level 301 redirects to `/<slug>`
+  (the plugin and search engines still point at them).
 
 ## Sidebar — mandatory step when adding/renaming docs
 
@@ -96,7 +103,7 @@ Shape — **nested** array of 11 top-level groups, several with `collapsed: true
 - Ninja Charts
 - Resources (Changelog only)
 
-Leaf entry shape: `{ text: 'Page Title', link: '/guide/<category>/<slug>' }` (no `.md`). The top
+Leaf entry shape: `{ text: 'Page Title', link: '/<slug>' }` (no `.md`). The top
 `nav` array separately duplicates 2 of these links (User Guide → getting-started intro, Changelog)
 plus Home and an external Website link — that's intentional, not a bug, so an audit checking
 sidebar coverage should check presence, not exact 1:1 count parity with `nav` included.
@@ -104,17 +111,17 @@ sidebar coverage should check presence, not exact 1:1 count parity with `nav` in
 ## Images
 
 All doc screenshots are local `.webp` files under `public/images/` — the only convention now.
-**Zero external image URLs remain anywhere in `guide/`.** (The 3 dead `ninjatables.com` hotlinks
+**Zero external image URLs remain anywhere in `docs/`.** (The 3 dead `ninjatables.com` hotlinks
 that used to live in `data-sources/fluent-forms-integration.md` were restored from the Internet
 Archive and localised on 2026-08-27; that documented exception no longer exists.) Never add an
 external image URL — the upstream host deletes files, which is exactly how those 3 broke.
 
 - **Location on disk**: `public/images/<category>/<short-slug>/<n>.-<Short-Label>.webp` — `public/`
   is VitePress's real static-asset root (a top-level `public/` folder is what actually gets copied
-  to `dist/` and served; a `public/` folder nested under `guide/` is **not** served — don't
+  to `dist/` and served; a `public/` folder nested under `docs/` is **not** served — don't
   recreate that mistake).
 - **Reference in markdown**: `![Alt Text](/images/<category>/<short-slug>/<n>.-<Short-Label>.webp)`
-  — always the absolute `/images/...` form, never `/guide/public/images/...`.
+  — always the absolute `/images/...` form, never `/docs/public/images/...`.
 - **`<short-slug>`**: a compressed version of the page's own slug (stopwords like `how`/`to`/`with`
   stripped, capped around 25–28 chars) — NOT necessarily identical to the `.md` filename's slug.
   Check the existing folder under `public/images/<category>/` for a page before inventing a new
@@ -144,13 +151,13 @@ image, run all five checks below.** Checks 1–4 must print nothing; check 5 is 
 ```bash
 # 1. Referenced but missing on disk — the one that broke fluent-forms-integration
 comm -13 <(find public/images -type f | sed 's|^public||' | sort -u) \
-         <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' guide index.md | tr -d '()' | sort -u)
+         <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' docs index.md | tr -d '()' | sort -u)
 
 # 2. External image URLs (must always be zero)
-grep -rn '!\[[^]]*\](http' --include='*.md' guide index.md
+grep -rn '!\[[^]]*\](http' --include='*.md' docs index.md
 
 # 3. Relative / non-absolute paths
-grep -rhoE '!\[[^]]*\]\([^)]+\)' --include='*.md' guide index.md \
+grep -rhoE '!\[[^]]*\]\([^)]+\)' --include='*.md' docs index.md \
   | sed -E 's/.*\((.*)\)/\1/' | grep -vE '^/images/'
 
 # 4. Non-webp files on disk
@@ -158,7 +165,7 @@ find public/images -type f ! -name '*.webp'
 
 # 5. Orphans — REPORT and ask, never bulk-delete
 comm -23 <(find public/images -type f | sed 's|^public||' | sort -u) \
-         <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' guide index.md | tr -d '()' | sort -u)
+         <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' docs index.md | tr -d '()' | sort -u)
 ```
 
 Then confirm they actually render, because check 1 only proves the file exists:
@@ -167,7 +174,7 @@ Then confirm they actually render, because check 1 only proves the file exists:
 pkill -f "vitepress preview"          # a stale one serves the OLD dist and reports phantom 404s
 npm run docs:build && npm run docs:preview
 # in another shell — every referenced image must return 200:
-grep -rhoE '\(/images/[^)]*\)' --include='*.md' guide index.md | tr -d '()' | sort -u \
+grep -rhoE '\(/images/[^)]*\)' --include='*.md' docs index.md | tr -d '()' | sort -u \
   | while read p; do c=$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:4173$p"); \
       [ "$c" = 200 ] || echo "$c $p"; done
 ```
@@ -226,7 +233,7 @@ width, a 16:9 ratio, and the same 16px vertical margins as a doc image:
 4. Bullet lists for steps/feature lists; numbered lists only when strict sequence matters.
 5. Bold important terms/UI labels with no inner whitespace inside markers (`**Save**`, never
    `**Save** button` split as `**Save **button` — CommonMark renders inner-space bold literally).
-6. Cross-references always use the absolute form: `[Descriptive Text](/guide/<category>/<slug>)`.
+6. Cross-references always use the absolute form: `[Descriptive Text](/<slug>)`.
 7. Pro-only features: add "(Pro)" after the feature name on first use.
 8. No support-boilerplate closers (e.g. "contact our support team"). Link to the relevant
    `wordpress-integration`/`table-management` page instead if a related doc exists.
@@ -237,7 +244,7 @@ width, a 16:9 ratio, and the same 16px vertical margins as a doc image:
 
 ## Changelog format
 
-`guide/changelog/change-log.md` is fully maintained in a specific shape — match it precisely for
+`docs/changelog/change-log.md` is fully maintained in a specific shape — match it precisely for
 any changelog edits: reverse-chronological `## Ninja Tables vX.Y.Z` headings, each followed by
 `*Released on Month D, YYYY*`, then a `::: code-group` block with fenced ` ```md [emoji Category]`
 tabs (🆕 New Features / 🔧 Improvements / 🔒 Security / 🐛 Bug fixes — only non-empty categories
@@ -256,9 +263,9 @@ each chunk's `caveat` field, never silently resolved.
 
 ## Hard constraints — never do these
 
-- Never create a `.md` directly under `guide/` — it must be inside a category subfolder.
+- Never create a `.md` directly under `docs/` — it must be inside a category subfolder.
 - Never add a `public/` folder anywhere other than the repo root — VitePress only serves the
-  top-level `public/`, a nested one (e.g. `guide/public/`) silently never ships.
+  top-level `public/`, a nested one (e.g. `docs/public/`) silently never ships.
 - Never add/rename a doc without updating the sidebar in `.vitepress/config.mts`.
 - Never use relative links (`./slug`, `../slug`) or a link with a `.md` suffix.
 - Never use a relative or external image `src` — always absolute `/images/...`. Images render
@@ -287,7 +294,7 @@ Reusable procedures for this repo are captured as skills in `.claude/skills/` �
 - `edit-ninja-tables-doc` — change an existing page's content
 - `restructure-ninja-tables-docs` — rename/move/delete/merge/reorder
 - `manage-ninja-tables-images` — add/replace/audit screenshots under `public/images/`
-- `update-ninja-tables-changelog` — add a release entry to `guide/changelog/change-log.md`
+- `update-ninja-tables-changelog` — add a release entry to `docs/changelog/change-log.md`
 - `audit-ninja-tables-docs` — read-only site-wide quality gate
 - `check-ninja-tables-feature-coverage` — decide whether a plugin feature is already documented
   before writing anything

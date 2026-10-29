@@ -3,7 +3,7 @@ feature: "Construct Table from External CSV"
 tier: pro
 category: data-sources
 doc_status: documented
-doc_page: guide/data-sources/construct-table-from-csv.md
+doc_page: docs/data-sources/construct-table-from-csv.md
 source_version: "5.2.17"
 caveat: "Verified against the free v5.2.17 ZIP from wordpress.org (ninja-tables-admin.js, Remote-Data-Source + GoogleSheetDTNav components). The DataTables sync back end lives in Pro (pro/gsheet-sync/* endpoints, activated_features.google_sheet_dt); Pro 5.2.17 source was not available. ninja-tables-resource/ is absent from this checkout."
 ---

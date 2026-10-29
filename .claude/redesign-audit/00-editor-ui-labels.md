@@ -1,0 +1,959 @@
+
+## components/editor/design/ColorsPane.vue
+- Color mode
+- Preset
+- Custom
+- Pick a ready-made color scheme
+- Color scheme
+- Set each color below. Switching back to Preset uses the scheme instead.
+- Search Bar Colors
+- Background
+- Icon
+- Border
+- Table Header Colors
+- Text
+- Table Body Colors
+- Default
+- Hover
+- Row state
+- Rows
+- Rows on hover
+- Use alternate color schema for table rows
+- Odd Row Colors
+- Hover Background
+- Even Row Colors
+- Footer Colors
+- Active
+- $t('Color mode')
+- $t('Color scheme')
+- name
+- $t('Use alternate color schema for table rows')
+
+## components/editor/design/DesignPresets.vue
+- Minimal
+- Lined
+- Striped
+- Bordered
+- Compact
+
+## components/editor/design/DesignPreview.vue
+- Color customization is a Pro feature. The preview shows it, but it is not saved on the free version.
+- Table configuration required
+- Please configure the table columns before viewing the table design.
+- Table preview
+- The preview could not be updated with your latest changes; it still shows the previous render.
+- Retry
+- The live preview could not be loaded here. Open it in a new tab instead:
+- Rendered by your active theme, exactly as visitors will see it. Unsaved changes show here until you save or leave the page.
+
+## components/editor/design/DesignSection.vue
+- is off. Turn it on with the switch.
+- title
+
+## components/editor/design/ExportSection.vue
+- Export and print buttons are a Pro feature.
+- Let visitors download the table as CSV or Excel, or print it.
+- Button text
+- Background
+- background
+- Text
+- text
+- Export as plain text
+- (strips HTML and links)
+- Downloads the rows the visitor is viewing as an .xlsx file, as plain text. Numbers stay numbers; codes with leading zeros stay as text.
+- Print screen header
+- Print screen footer
+- Print screen
+- Header in each page
+- Footer in each page
+- Yes
+- No
+- Each page
+- Description for header
+- Description for footer
+- Position
+- Alignment
+- Print
+- After search box
+- Top of the table
+- Bottom of the table
+- Left
+- Center
+- Right
+
+## components/editor/EditorHeader.vue
+- Back
+- backLabel || $t('Back')
+- editLabel
+
+## components/editor/RowDrawer.vue
+- added
+- Previous row
+- Next row
+- Close
+- The link this cell's button opens. The button text is set in the column settings.
+- Add at
+- Last
+- First
+- Row and cell colours are a Pro feature.
+- Set the background and text colours of a single row or cell.
+- Cell appearance
+- Set the background and text colours for
+- Background
+- Cell background
+- Not set
+- Text
+- Cell text colour
+- Row appearance
+- Set the background and text colours for this row.
+- Row background
+- Row text colour
+- Created date
+- Useful when the table is sorted by created date.
+- Select date and time
+- Add another after this
+- add
+- Cancel
+- Update
+- Add row
+- Cell settings
+- Row settings
+- Duplicate row
+- Row
+- New row
+- Adds after the row
+- Adds as row
+- Please add at least 1 value to the row
+- Failed to add/update data. Please reload this page and try again
+- Something went wrong, please try again.
+- $t('Previous row')
+- $t('Next row')
+- $t('Close')
+- https://
+
+## components/editor/RowsToolbar.vue
+- Search rows…
+- Search rows
+- Read-only
+- Drag rows into the order visitors see
+- Sort manually
+- Compact rows
+- Delete
+- Clear selection
+- Import / export
+- Add column
+- Add data
+- 1 row matches
+- %d rows match
+- Hide row ID, author and date
+- Show row ID, author and date
+- $t('Search rows')
+- $t('Compact rows')
+- $t('Clear selection')
+- detailsLabel
+
+## components/editor/SourceBanner.vue
+- Rows come from
+- Nothing is set up yet. Open the source settings and choose what this table shows.
+- Source settings
+- These settings decide which rows come into the table. Columns, design and features are set in the other tabs.
+
+## components/editor/TableDetailsDialog.vue
+- Table details
+- Name, caption and description of this table.
+- Table title
+- Enter a title to identify your table
+- Table caption
+- Shown above the table if you enable it.
+- Enter a table caption if you want to show
+- Table description
+- Cancel
+- Update
+- Title is required
+
+## components/Table/ColumnEditor/_conditional.vue
+- Style a cell, row or column when its value matches a rule.
+- View documentation
+- Conditional formatting is a Pro feature.
+- Highlight rows, cells or columns when values match a rule.
+- Rule
+- Remove rule
+- If value
+- Condition
+- Min value
+- Date or {date}
+- Value
+- and
+- Max value
+- Then
+- Action
+- Color
+- New cell content (HTML allowed)
+- No rules yet.
+- Add rule
+- Dynamic dates
+- Relative to today. Use them as the value of a rule.
+- Today's date
+- Tomorrow's date
+- Yesterday's date
+- Date after 10 days
+- Date before 10 days
+- Equal
+- Not equal
+- Less than
+- Greater than
+- Less than or equal to
+- Greater than or equal to
+- Between (min and max)
+- Contains
+- Does not contain
+- Cell options
+- Set cell color
+- Set cell background color
+- Set cell content
+- Set cell CSS class
+- Reset cell color to default
+- Reset cell background color to default
+- Remove cell CSS class
+- Row options
+- Set row color
+- Set row background color
+- Set row CSS class
+- Reset row color to default
+- Reset row background color to default
+- Remove row CSS class
+- Column options
+- Set column color
+- Set column background color
+- Add column CSS class
+- Remove column CSS class
+- $t('Remove rule') + ' ' + (index + 1)
+- $t('Condition')
+- $t('Value')
+- $t('Max value')
+- $t('Action')
+
+## components/Table/ColumnEditor/AdvancedSettingsTab.vue
+- Advanced column settings are mostly Pro.
+- Column width, extra classes, colours, sorting, search and header HTML unlock with Pro.
+- Display
+- Header text align
+- Content text align
+- Leave empty to size automatically.
+- Column width
+- Auto
+- Unit
+- Added to every cell in this column.
+- Extra classes
+- Colors
+- Background color
+- Text color
+- Behavior
+- Sortable
+- Visitors can click the heading to sort by this column.
+- Searchable
+- Include this column when visitors use the search box.
+- Click to copy
+- Visitors can click a cell in this column to copy its value.
+- Header
+- HTML header content
+- Show HTML (an icon, a line break, a link) in this column\'s heading instead of the name.
+- Header HTML content
+- $t('Header text align')
+- $t('Column width')
+- $t('Unit')
+- e.g. price-col
+- $t('Extra classes')
+- $t('Sortable')
+- $t('Searchable')
+- $t('Click to copy')
+- $t('HTML header content')
+
+## components/Table/ColumnEditor/columnOptions.js
+- Single line text field
+- Text area
+- HTML field
+- Numeric value
+- Date field
+- Select field
+- Button/Link
+- Always show in all devices
+- Hidden on desktop
+- Initial hidden mobile
+- Initial hidden mobile and tab
+- Initial Hidden Mobile, Tab and Regular Computers
+- Totally hidden on all devices
+
+## components/Table/ColumnEditor/ColumnsEditor.vue
+- Column settings
+- Column name
+- e.g. Price
+- Column key
+- Used by shortcodes, imports and filters; it can\'t change.
+- English letters, numbers and _ only. Used by shortcodes, imports and filters; it can\'t change later.
+- e.g. price
+- Type
+- Choose the data type of the column.
+- Select Data Type of this column
+- Use HTML for links, media or any formatted content. Only trusted editors should be able to edit this column.
+- Responsive visibility
+- Always show in all devices
+- Delete column
+- Cancel
+- Save column
+- Add column
+- Basic
+- Advanced
+- Conditions
+- Transform
+- Are you sure to delete this column?
+- Yes, delete
+- $t('Column settings')
+- $t('Responsive visibility')
+
+## components/Table/ColumnEditor/ContentTransformer.vue
+- Transform value is a Pro feature.
+- Combine column values into any HTML, like {{row.monthly}} / month.
+- Combine any column values into HTML and show the result in this column. The stored data doesn't change.
+- View documentation
+- Transform value
+- Excel formula support
+- Allow formulas like =SUM({{row.q1}}, {{row.q2}}). Applies to every column in this table. Experimental.
+- Excel formulas are experimental, so not every formula works yet.
+- Show supported formulas
+- Reference values
+- click a row to insert
+- Column name
+- Reference shortcode
+- Supported Excel formulas
+- Transform value (HTML supported)
+- Transform value (HTML and Excel formulas supported)
+- $t('Transform value')
+- $t('Excel formula support')
+
+## components/Table/ColumnEditor/Fields/ButtonFieldSettings.vue
+- Buttons on tables are a Pro feature.
+- It will not work without the Pro version.
+- Button text
+- Used for every cell that holds only a link. Each cell\'s link is set in Table Rows.
+- Button text (HTML supported)
+- Open link in a new tab
+- Rounded corners
+- Force download
+- Background
+- Button background color
+- Text
+- Button text color
+- Border
+- Button border color
+- Link rel attribute
+- $t('Button text')
+
+## components/Table/ColumnEditor/Fields/DateFieldSettings.vue
+- Date format
+- Standard
+- Custom
+- e.g. dddd, MMMM Do YYYY
+- Custom date format
+- Select a format
+- Any moment.js format: D day, MMM short month, YYYY year, dddd weekday.
+- Show time
+- Adds a time picker when editing and shows the time in the table.
+- Time format
+- First day of the week
+- Where the week starts in the date picker.
+- Select first day of the week
+- $t('Custom date format')
+- $t('Date format')
+- $t('Show time')
+- $t('Time format')
+- $t('First day of the week')
+
+## components/Table/ColumnEditor/Fields/ImageFieldSettings.vue
+- Image upload with lightbox and links is a Pro feature.
+- It will not work without the Pro version.
+- When visitors click the image
+- Image only - nothing happens
+- Image lightbox - opens the full image
+- Iframe lightbox - opens a page or video
+- Link to URL - goes to a link
+- File download
+- Download button text / HTML
+- Open link in a new window
+- $t('When visitors click the image')
+
+## components/Table/ColumnEditor/Fields/NumberFieldSettings.vue
+- Separator style
+- Used to read the numbers in this column for sorting and conditional formatting.
+- US style - decimal point (123,234.01)
+- European style - decimal comma (123.234,01)
+- $t('Separator style')
+
+## components/Table/ColumnEditor/Fields/SelectionFieldSettings.vue
+- Select fields are a Pro feature.
+- On the free version the column works as plain text.
+- Select items
+- One per line. Used as the dropdown when editing and for filters.
+- Enter Select items one per line
+- Placeholder
+- e.g. Choose a plan
+- Enable multi-selection
+- $t('Select items')
+- $t('Placeholder')
+
+## components/Table/ColumnEditor/TableColumns.vue
+- Columns in this table
+- Drag to reorder them. The order here is the order on your site.
+- Delete
+- Add column
+- Deselect all
+- Select all
+- Initial hidden mobile
+- Initial hidden mobile and tab
+- Initial Hidden Mobile, Tab and Regular Computers
+- Always show in all devices
+- Totally hidden on all devices
+- Single line text field
+- Text area
+- HTML field
+- Numeric value
+- Date field
+- Select field
+- Something went wrong, please try again.
+- Name is required
+- Column key is required
+- Column Key needs to be unique. Please add a suffix / prefix to make it unique
+- Please select columns to delete
+
+## components/Table/TableFilters/_filterEditor.vue
+- Filter title
+- Just a name to identify your filter.
+- Enter filter title
+- Filter label
+- Keep it blank if you don\'t need any filter instruction.
+- Enter filter label
+- Filter UI type
+- How the filter looks on the site.
+- Select dropdown
+- Radio
+- Checkbox
+- Text input
+- Date picker
+- Date range
+- Number range
+- Reset filter button
+- Placeholder
+- Shown as the default choice that resets the filter (e.g. All).
+- Button text
+- Value type
+- Where the dropdown gets its choices.
+- Manual data
+- Dynamic data from table column
+- Target column
+- The column whose values fill the dropdown.
+- Pick a column
+- Parse comma separated words
+- Disable automatic filter value sorting
+- Sort dynamic values
+- Ascending
+- Descending
+- Sort algorithm
+- As text
+- As number
+- Enable multi-select
+- Filter options
+- Your values should match your table cell data.
+- Date filter operator
+- On or before
+- Equal
+- On or after
+- First day of the week
+- From placeholder
+- To placeholder
+- Filter prefix
+- Joined to what the visitor types before searching.
+- Filter columns
+- The columns this filter looks in.
+- Select columns
+- No columns of a matching data type were found for this filter.
+- Enable strict mode
+- (match the exact value)
+- $t('Filter UI type')
+- $t('Target column')
+- $t('Parse comma separated words')
+- $t('Disable automatic filter value sorting')
+- $t('First day of the week')
+- $t('Filter columns')
+
+## components/Table/TableFilters/_key_pair_options.vue
+- Label
+- Filter value
+- Drag to reorder
+- Enter filter label
+- Enter filter value
+- Remove option
+- Add option
+- $t('Label')
+- $t('Filter value')
+- $t('Remove option')
+
+## components/Table/TableFilters/CustomFilter.vue
+- Filters above the table
+- A dropdown or a row of buttons your visitors use to narrow the table to the rows they care about.
+- Add filter
+- Name
+- Type
+- Target columns
+- Action
+- Filter appearance
+- Show filter inputs as inline
+- Show filter inputs as columns
+- Filter columns
+- Two columns
+- Three columns
+- Four columns
+- Progressive filter
+- Enable Progressive filter for dynamic filter options
+- Update settings
+- No filters yet
+- Pick a column - a department, a category, a status - and visitors get a control for it above the table.
+- Add your first filter
+- Set up custom filters to find the data you want! It’s a Pro feature.
+- Get Pro
+- Edit custom filter
+- Cancel
+- Update
+- Add new custom filter
+- Add
+- All
+- Ninja tables pro
+
+## components/Table/Tools/_ExportTable.vue
+- Format
+- Select the format in which you want to export your table data. CSV format is suitable for spreadsheet applications, while JSON format preserves all table settings for importing into another Ninja Tables installation.
+- Excel (.xlsx)
+- Export table
+- Opens in Excel, Google Sheets and Numbers. Numbers are exported as numbers; codes with leading zeros and long IDs stay as text.
+- Sorry! You can not export the data as the table data is configured as external source
+- CSV
+- JSON
+
+## components/Table/Tools/ExportImport.vue
+- Import and export
+- Export this table
+- Take the rows away as CSV or Excel, or take the whole table - settings and all - as JSON, to drop into another Ninja Tables site.
+- Import rows
+- Add rows from a CSV file. Its columns have to match the ones below, so download the sample if you want the order right first time.
+- Export
+- Import
+
+## components/Table/Tools/Import.vue
+- CSV file
+- You can download a sample CSV file to ensure correct data formatting.
+- Download sample CSV
+- Choose a CSV file or drag & drop it here.
+- Completed
+- Replace existing data
+- Convert to UTF-8 format ( Check this if your csv is non-unicode format)
+- Importing...
+- Import table
+- Sample header structure
+- Your CSV file should follow this column structure.
+- Table configuration required
+- Please configure the table columns before importing data.
+- Sorry! You can not import any data as the table data is configured as external source
+- File upload failed
+- Sample CSV downloaded successfully
+
+## views/editor/AppearanceTab.vue
+- Show panel
+- Preview width
+- Design
+- Hide panel
+- Title & header
+- Show table title
+- Show table description
+- Show header row
+- Typography
+- Font family
+- Select font
+- Font size
+- Rows & borders
+- Style library
+- The options below depend on the library you pick.
+- Quick styles
+- Search
+- Placeholder text
+- Search...
+- Empty Result Text
+- No Result Found
+- Dropdown Heading
+- Search in
+- Look
+- Position
+- Left
+- Center
+- Right
+- Default
+- Search position
+- Full width
+- Colors
+- Background
+- Icon
+- Border
+- Need dropdown filters?
+- Custom filters
+- Sorting
+- The switch lets visitors click a column header to sort.
+- Default order
+- Order
+- Oldest first
+- Newest first
+- Column
+- Pick a column
+- Direction
+- Drag rows into order in Table Rows → Sort manually.
+- Open Table Rows
+- Clear default order
+- Pagination
+- Rows per page
+- Let visitors change page size
+- Page sizes
+- Numbers separated by commas.
+- Default: 10,20,50,100
+- Scroll to the table top on page change
+- Pagination position
+- Active page
+- Sticky header & column
+- Sticky header
+- Top offset
+- A positive or negative number, or a jQuery element. Use this if your theme has a fixed header.
+- positive or negative number
+- Turn off on mobile
+- Sticky first column
+- Mobile & row details
+- On small screens
+- Fold columns into a + drawer
+- Stack rows as cards
+- Stack on
+- Mobile device
+- Tablet device
+- Laptop
+- Large devices (iMac)
+- Card look
+- Hide column headings
+- Hide internal borders
+- Open the + drawer
+- Closed
+- First row
+- All rows
+- + button in
+- First column
+- Last column
+- Row details popup
+- Clicking a row on the site opens its details in a pop-up.
+- Hide empty values
+- Hide labels
+- Preview on mobile
+- Export & print
+- Use as default for new tables
+- Style
+- Features
+- Desktop
+- Tablet
+- Mobile
+- Created date
+- By column
+- Manual
+- New tables will start with this table's title, search, sorting, pagination, font, color scheme and styles.
+- Use as default for new tables?
+- Use as default
+- Cancel
+- Something went wrong, please try again.
+- Semantic UI
+- Bootstrap 4
+- Bootstrap 3
+- A → Z
+- Z → A
+- $t('Show panel')
+- $t('Design')
+- $t('Hide panel')
+- $t('Show table title')
+- $t('Show table description')
+- $t('Show header row')
+- $t('Font family')
+- style.title
+- $t('Full width')
+- $t('Column')
+- $t('Let visitors change page size')
+- $t('Scroll to the table top on page change')
+- $t('Sticky header')
+- $t('Turn off on mobile')
+- $t('Sticky first column')
+- $t('Row details popup')
+- $t('Hide empty values')
+- $t('Hide labels')
+
+## views/editor/CustomCodeTab.vue
+- Custom CSS
+- Custom JS
+- Customize this table without changing your theme or other tables.
+- Runs once the table has finished rendering.
+- Code type
+- You may add
+- Click to copy
+- as your CSS selector prefix to target this specific table. Alternatively, use
+- where NT_ID will be replaced with your table ID dynamically.
+- Please don't include
+- tags.
+- Custom JavaScript
+- Add your own script to this table - it runs after the table is ready on the page.
+- Runs after the table is initialized
+- $table and tableConfig are ready to use
+- Only affects this table
+- Unlock custom JavaScript
+- Two variables are waiting for you:
+- is the table element, and
+- holds its settings.
+- tags. Broken code breaks the table, so test it on a page you can afford to reload.
+- Changes apply to this table only.
+- Save Custom CSS
+- Save Custom JS
+- Table targeting
+- Give this table a hook for your own styles.
+- Custom CSS class
+- Added to the table element. Letters, numbers, dashes and underscores.
+- Table selector
+- Copy CSS
+- CSS
+- JavaScript
+- my-custom-table
+- &lt;style&gt;&lt;/style&gt;
+- // Highlight a row when it is clicked
+- $table.on(
+- 'click'
+- 'tbody tr'
+- function
+- this
+- ).toggleClass(
+- 'is-picked'
+- $table
+- tableConfig
+- &lt;script&gt;&lt;/script&gt;
+
+## views/editor/CustomFiltersTab.vue
+- Custom filters
+- Let visitors narrow big tables in one click - by category, price range, date or anything in your columns.
+- Dropdown, radio, checkbox, text, date and number range filters
+- Options filled automatically from a column - or typed in
+- Progressive filters that only show options with results
+- Inline or grid layout above the table
+- Unlock custom filters
+- Category
+- Apparel
+- In stock
+- Yes
+- No
+- Product
+- Price
+- Custom filters need a newer version of Ninja Tables Pro. Please update Ninja Tables Pro to use this feature.
+- A dropdown, buttons, a text box or a range your visitors use to narrow the table.
+- Every filter here shows above the table. Delete a filter to remove it.
+- Add filter
+- Loading
+- No filters yet
+- Filters appear above the table so visitors can narrow rows, e.g. by category or date.
+- Untitled filter
+- Move up
+- Move down
+- Edit
+- Delete
+- Layout
+- How the filters sit above the table.
+- Show filters
+- Side by side in one line, or in a neat grid.
+- Inline
+- In columns
+- Columns
+- Progressive filters
+- Each filter only offers options that still have matching rows, based on the other filters.
+- New filter
+- Edit filter
+- Cancel
+- Update filter
+- Dynamic data
+- options
+- Please Provide Filter Title
+- Please Provide Filter Options
+- Please Select columns that you need to add filter
+- Please Select Target Column
+- Delete this filter?
+- Warning
+- Yes, delete
+- Select dropdown
+- Radio
+- Checkbox
+- Text input
+- Date picker
+- Date range
+- Number range
+- Reset filter button
+- All
+- $t('Loading')
+- $t('Move up')
+- $t('Move down')
+- $t('Delete')
+- $t('Progressive filters')
+- Merino Base Layer
+- Sun Hoodie
+
+## views/editor/FrontendEditingTab.vue
+- Let your team edit tables from the front end
+- Logged-in users can add, edit and delete rows right on the page - no wp-admin access needed.
+- Choose exactly which user roles can add, edit or delete
+- Limit users to rows they created themselves
+- Mark columns as editable, required, or with a default value
+- Unlock frontend editing
+- Add new row
+- Name
+- Role
+- Designer
+- Engineer
+- Support
+- Frontend editing
+- Logged-in users with the roles below get add, edit and delete controls on the table on your site.
+- Let logged-in users add and edit rows on the page.
+- Only tables that store their own rows can be edited from the front end. This one reads its rows from somewhere else, so there is nothing here to save back to.
+- Permissions
+- Who can add, edit and delete rows.
+- Who can add & edit
+- Add row and edit buttons
+- Administrators only
+- Who can delete
+- Can't be recovered
+- Own data only
+- Users only see, edit and delete rows they added.
+- Everyone else sees an empty table. To show all the rows to everyone, read-only, place this shortcode instead:
+- Click to copy
+- Appearance
+- Labels and icons visitors see when editing.
+- Add row button label
+- Edit row button label
+- Add popup heading
+- Edit popup heading
+- Action icon position
+- Where the edit and delete icons sit in each row.
+- Left
+- Right
+- Always show edit icons
+- Otherwise the icons appear when hovering a row.
+- Columns
+- Choose what people can change.
+- Column
+- Editable
+- Required
+- Default value
+- Something is wrong! Please try again
+- Single line text
+- $t('Frontend editing')
+- $t('Who can add & edit')
+- $t('Who can delete')
+- $t('Own data only')
+- $t('Always show edit icons')
+- $t('Editable') + ': ' + (column.name || column.key)
+- $t('Required') + ': ' + (column.name || column.key)
+- $t('Default value') + ': ' + (column.name || column.key)
+- Amara Okafor
+- Liam Bennett
+- Sofia Rossi
+
+## views/editor/TableConfigurationTab.vue
+- Performance
+- Control how the table loads, updates and stays fast.
+- Table engine
+- Choose the renderer that powers this table.
+- Switching engine only moves your data.
+- Rows and columns are kept, but the table's design (colors, styling and layout settings) doesn't carry over - you'll need to set it up again in Appearance.
+- Drawn by the
+- engine.
+- The engine is locked after a table is created, for tables that keep their own rows.
+- Rendering Setting
+- Choose how the table's rows are rendered on the page.
+- Caching Configuration
+- Serve saved data for faster repeat visits.
+- Display Frontend Loader
+- Disable Caching
+- To optimize and load faster, we cache the table contents. It\'s not recommended to disable caching unless you know what you are doing.
+- Caching interval (in minutes)
+- Leave blank or set 0 to cache nothing.
+- Enable HTML cache
+- Caches the full HTML of the table and serves it without touching the database, for the number of minutes you set.
+- HTML caching interval (in minutes)
+- Enter value
+- Faster with large tables, server-side paging and all new features. Best for new tables.
+- The engine most existing tables use. Fully supported - keep it if your table works well.
+- Ajax
+- Rows load right after the page. Fast, and best for big tables. Shortcodes written into cells will not run.
+- Legacy
+- Rows are built on the server into the page HTML. Useful for merged cells and shortcodes; better for SEO.
+- Current caching interval:
+- hours
+- DataTables
+- FooTable
+
+## views/editor/TableRowsTab.vue
+- To get started please add table columns
+- Nothing to show yet
+- This table has no columns, so there is nothing to draw. Open the data source above and tell it where the rows come from.
+- Add column
+- Drag to reorder
+- Column settings for
+- Column settings
+- Add column left
+- Add column right
+- Delete column
+- Cell settings
+- Cell settings for
+- Row ID
+- Created by
+- Reference date
+- Row actions
+- Row settings
+- Edit row
+- Insert row below
+- Duplicate row
+- Delete row
+- No rows match
+- This table has no rows yet
+- Try another word, or clear the search.
+- Clear search
+- Add first row
+- Rows per page
+- Import / export
+- Back up this table, move it to another site, or add rows from a file.
+- Edit column
+- Cancel
+- Save column
+- New column
+- 1 row
+- %d rows
+- 1 column
+- %d columns
+- Showing %1$s–%2$s of %3$s
+- Sort A → Z
+- Sort Z → A
+- Back to saved order
+- This will permanently delete the selected rows. Continue?
+- Warning
+- Yes, delete
+- Are you sure, you want to delete this row?
+- Yes, Delete
+- Something is wrong! Please try again
+- Delete this column and the data in it?
+- $t('Column settings for') + ' ' + (column.name || column.key)
+- $t('Cell settings for') + ' ' + (column.name || column.key)
+- $t('Row settings')
+- $t('Edit row')
+- $t('Row actions')
+- $t('Rows per page')
+- -1 && viewItems.indexOf(updateItem)

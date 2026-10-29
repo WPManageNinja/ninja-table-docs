@@ -1,8 +1,8 @@
 ---
 name: update-ninja-tables-changelog
-description: 'Add or maintain a release entry in the Ninja Tables changelog (guide/changelog/change-log.md). Prepends a new reverse-chronological version section in the site''s exact ::: code-group format with 🆕 New Features / 🔧 Improvements / 🔒 Security / 🐛 Bug fixes tabs, rewriting raw release notes or the plugin readme.txt changelog into user-facing lines. USE FOR: write a changelog entry, update the changelog, add release notes, document version X, we shipped a new release, import the readme.txt changelog. DO NOT USE FOR: writing or updating feature guides (use write-ninja-tables-doc / edit-ninja-tables-doc), deciding whether a release feature needs a doc page (use check-ninja-tables-feature-coverage), or site-wide checks (use audit-ninja-tables-docs).'
+description: 'Add or maintain a release entry in the Ninja Tables changelog (docs/changelog/change-log.md). Prepends a new reverse-chronological version section in the site''s exact ::: code-group format with 🆕 New Features / 🔧 Improvements / 🔒 Security / 🐛 Bug fixes tabs, rewriting raw release notes or the plugin readme.txt changelog into user-facing lines. USE FOR: write a changelog entry, update the changelog, add release notes, document version X, we shipped a new release, import the readme.txt changelog. DO NOT USE FOR: writing or updating feature guides (use write-ninja-tables-doc / edit-ninja-tables-doc), deciding whether a release feature needs a doc page (use check-ninja-tables-feature-coverage), or site-wide checks (use audit-ninja-tables-docs).'
 license: MIT
-compatibility: 'Operates on guide/changelog/change-log.md in the ninja-table-docs VitePress site. Uses VitePress ::: code-group containers with md-fenced tabs. Release source of truth is the readme.txt inside ninja-tables-resource/**/ninja-tables.zip and ninja-tables-pro.zip. Requires Node + npm to run docs:build.'
+compatibility: 'Operates on docs/changelog/change-log.md in the ninja-table-docs VitePress site. Uses VitePress ::: code-group containers with md-fenced tabs. Release source of truth is the readme.txt inside ninja-tables-resource/**/ninja-tables.zip and ninja-tables-pro.zip. Requires Node + npm to run docs:build.'
 metadata:
   project: ninja-table-docs
   canonical-rules: CLAUDE.md
@@ -10,14 +10,14 @@ metadata:
 
 # Update the Ninja Tables Changelog
 
-Add a release to `guide/changelog/change-log.md`, newest first, in the site's established format.
+Add a release to `docs/changelog/change-log.md`, newest first, in the site's established format.
 Canonical conventions live in `CLAUDE.md` — this skill is the *procedure*.
 
 ---
 
 ## Agent Behavior Rules
 
-1. **DO** read the current top entry in `guide/changelog/change-log.md` before writing, and copy
+1. **DO** read the current top entry in `docs/changelog/change-log.md` before writing, and copy
    its exact structure — blank lines, emoji, tab order, and bullet style included.
 2. **DO** write from the **user's** point of view: what changed for someone using the plugin, not
    what changed in the code.
@@ -75,12 +75,12 @@ Drop anything users can't perceive. Wait for confirmation.
 
 ## Phase 2: Context
 
-1. Read the top ~45 lines of `guide/changelog/change-log.md` — frontmatter, H1, intro, and the
+1. Read the top ~45 lines of `docs/changelog/change-log.md` — frontmatter, H1, intro, and the
    current newest release — and mirror that format exactly.
 2. If the release touches a documented feature, find the affected pages so you can name them in
    the report:
    ```
-   grep -rln '<feature term>' --include='*.md' guide
+   grep -rln '<feature term>' --include='*.md' docs
    ```
 3. For a "what's new" release with genuinely new capabilities, run
    `check-ninja-tables-feature-coverage` to see whether each one already has a guide page.
@@ -94,7 +94,7 @@ Drop anything users can't perceive. Wait for confirmation.
              Keep lines short — one clause, no sub-bullets, no nested lists.
 
 2. INSERT  - Prepend the new section directly under the intro paragraph of
-             guide/changelog/change-log.md, above the previous release heading.
+             docs/changelog/change-log.md, above the previous release heading.
              Use the exact template below. Omit empty tabs.
 
 3. BUILD   - npm run docs:build ; confirm the code-group renders and the build is clean.
@@ -150,7 +150,7 @@ Report:
 
 ### House style
 ```
-File:      guide/changelog/change-log.md
+File:      docs/changelog/change-log.md
 Heading:   ## Ninja Tables v5.2.13
 Date:      *Released on August 3, 2026*        (own line, blank line above and below)
 Bullets:   • Added: sentence case, trailing period.
@@ -173,9 +173,9 @@ BAD   • Bumped composer deps
 
 ### Locate
 ```
-Current top version:  grep -m1 '^## Ninja Tables v' guide/changelog/change-log.md
-All versions:         grep '^## Ninja Tables v' guide/changelog/change-log.md
-Tabs in use:          grep -o '```md \[[^]]*\]' guide/changelog/change-log.md | sort -u
+Current top version:  grep -m1 '^## Ninja Tables v' docs/changelog/change-log.md
+All versions:         grep '^## Ninja Tables v' docs/changelog/change-log.md
+Tabs in use:          grep -o '```md \[[^]]*\]' docs/changelog/change-log.md | sort -u
 Readme source:        unzip -p ninja-tables-resource/**/ninja-tables.zip '*/readme.txt'
 ```
 

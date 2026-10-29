@@ -14,8 +14,8 @@ a newer plugin version.
 
 | feature | tier | doc_status | doc_page | chunk |
 | --- | --- | --- | --- | --- |
-| Google Sheets Integration | pro | documented | guide/data-sources/google-sheets-integration.md | features/google-sheets-integration.md |
-| Construct Table from External CSV | pro | documented | guide/data-sources/construct-table-from-csv.md | features/construct-table-from-csv.md |
+| Google Sheets Integration | pro | documented | docs/data-sources/google-sheets-integration.md | features/google-sheets-integration.md |
+| Construct Table from External CSV | pro | documented | docs/data-sources/construct-table-from-csv.md | features/construct-table-from-csv.md |
 
 Every other feature from the readme's `== Ninja Tables Features ==` section still needs a chunk.
 Run `check-ninja-tables-feature-coverage` against an item below to populate it.
@@ -34,7 +34,7 @@ table, Select Field/Image/File/Lightbox/Button/Link data types, Custom Filter.
 
 - Table-creation-option counts conflict across sources: "11 table creation options"
   (readme Description section) vs. "9 dynamic table types" (readme FAQ) vs. "9+ table creation
-  options" (this repo's own `guide/getting-started/ninja-tables-introduction.md`).
+  options" (this repo's own `docs/getting-started/ninja-tables-introduction.md`).
 - "Merge/split table cells" is listed under the Premium feature list but annotated inline
   "(Free in Drag and Drop)" — it's genuinely free in one table mode and pro in the other.
 - The readme FAQ states Image/File/Lightbox/iframe uploads with no Pro qualifier, while the

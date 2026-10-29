@@ -3,7 +3,7 @@ Minimal shape of one sidebar leaf entry to insert into the correct nested `items
 separate JSON file):
 
 ```ts
-{ text: '<Doc Title — matches the H1>', link: '/guide/<category>/<slug>' }
+{ text: '<Doc Title — matches the H1>', link: '/<slug>' }
 ```
 
 No `.md` extension on `link`. Find the right nested group first — see `CLAUDE.md` for the full

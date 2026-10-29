@@ -23,12 +23,12 @@ description: "<One-sentence summary of the page.>"
 ## <Second Major Section>
 
 <Cross-reference other guide pages with the absolute path form only:>
-See [Descriptive Text](/guide/<category>/<other-slug>) for more.
+See [Descriptive Text](/<other-slug>) for more.
 
 <!--
 SCAFFOLD NOTES — delete before saving:
 - Frontmatter title/description are required; H1 (line after frontmatter) should match title.
-- Cross-links: /guide/<category>/<slug> ONLY. Never relative (./slug, ../slug), never with .md.
+- Cross-links: /<slug> ONLY. Never relative (./slug, ../slug), never with .md.
 - Images: local .webp only, on disk at public/images/<category>/<short-slug>/<n>.-<Short-Label>.webp
   and referenced as /images/<category>/<short-slug>/<n>.-<Short-Label>.webp. No external URLs.
   See the manage-ninja-tables-images skill.

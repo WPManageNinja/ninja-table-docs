@@ -61,7 +61,7 @@ npm run docs:preview
 │   ├── logo.svg
 │   ├── favicon.png
 │   └── images/<category>/<short-slug>/   # Per-page screenshots (.webp)
-└── guide/                            # All documentation content (Markdown)
+└── docs/                            # All documentation content (Markdown)
     ├── getting-started/
     ├── creating-tables/
     ├── drag-drop-tables/
@@ -82,11 +82,11 @@ npm run docs:preview
     └── changelog/
 ```
 
-Category folders are **flat** — every page is `guide/<category>/<slug>.md`, exactly one level deep. There are no nested sub-folders on disk, even where the sidebar nests groups.
+Category folders are **flat** — every page is `docs/<category>/<slug>.md`, exactly one level deep. There are no nested sub-folders on disk, even where the sidebar nests groups.
 
 ## Writing Conventions
 
-A page lives at `guide/<category>/<slug>.md` and is served at `/guide/<category>/<slug>`. Only `cleanUrls` strips the `.html` extension — **the category stays in the public URL**, so moving a page changes its live link.
+A page lives at `docs/<category>/<slug>.md` and is served at `/<slug>` (a `rewrites` rule hides the category folder; `cleanUrls` strips `.html`). Slugs must be unique across categories.
 
 Every page starts with frontmatter, followed by a bare `# H1` matching the title:
 
@@ -100,7 +100,7 @@ description: "A short summary of what the page covers."
 Cross-links always use the absolute form — never relative, never with a `.md` suffix:
 
 ```md
-[Descriptive Text](/guide/column-settings/conditional-formatting)
+[Descriptive Text](/conditional-formatting)
 ```
 
 Screenshots are `.webp`, stored under the **root** `public/images/<category>/<short-slug>/`, and referenced with a root-relative `/images/…` path:
@@ -109,7 +109,7 @@ Screenshots are `.webp`, stored under the **root** `public/images/<category>/<sh
 ![Conditional Formatting tab](/images/column-settings/conditional-formatting/1.-New-Ui-conditional-formatting-tab.webp)
 ```
 
-`public/` at the repo root is the only served static root. A `public/` folder anywhere else (e.g. `guide/public/`) is silently never copied to `dist/`.
+`public/` at the repo root is the only served static root. A `public/` folder anywhere else (e.g. `docs/public/`) is silently never copied to `dist/`.
 
 **Adding a page requires adding it to the sidebar** in `.vitepress/config.mts` — VitePress does not generate navigation from the filesystem, and a missing entry will not fail the build.
 
@@ -134,7 +134,7 @@ Reusable procedures for this repo are packaged as skills in `.claude/skills/`:
 ## Contributing
 
 1. Create a branch from `master`.
-2. Make your changes under `guide/`.
+2. Make your changes under `docs/`.
 3. Add any new page to the sidebar in `.vitepress/config.mts`.
 4. Run `npm run docs:dev` to preview, then `npm run docs:build` to verify.
 5. Open a pull request.

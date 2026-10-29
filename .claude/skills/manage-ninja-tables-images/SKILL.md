@@ -1,6 +1,6 @@
 ---
 name: manage-ninja-tables-images
-description: 'Add, replace, standardize, and audit screenshots in the Ninja Tables VitePress docs. Enforces the repo convention: images live at public/images/<category>/<short-slug>/<n>.-<Short-Label>.webp, are referenced in markdown as /images/... (never /guide/public/...), are always .webp, and carry descriptive alt text. Verifies every reference resolves and reports orphans. USE FOR: add screenshots, embed images, replace an image, fix image paths, broken image, image not showing, convert to webp, rename screenshots, renumber screenshots, find unused images, check alt text. DO NOT USE FOR: brand assets like public/logo.svg or public/favicon.png (config-level, see CLAUDE.md), creating a whole new page (use write-ninja-tables-doc), prose edits (use edit-ninja-tables-doc), or moving a page''s image folder as part of a rename (use restructure-ninja-tables-docs).'
+description: 'Add, replace, standardize, and audit screenshots in the Ninja Tables VitePress docs. Enforces the repo convention: images live at public/images/<category>/<short-slug>/<n>.-<Short-Label>.webp, are referenced in markdown as /images/... (never /docs/public/...), are always .webp, and carry descriptive alt text. Verifies every reference resolves and reports orphans. USE FOR: add screenshots, embed images, replace an image, fix image paths, broken image, image not showing, convert to webp, rename screenshots, renumber screenshots, find unused images, check alt text. DO NOT USE FOR: brand assets like public/logo.svg or public/favicon.png (config-level, see CLAUDE.md), creating a whole new page (use write-ninja-tables-doc), prose edits (use edit-ninja-tables-doc), or moving a page''s image folder as part of a rename (use restructure-ninja-tables-docs).'
 license: MIT
 compatibility: 'VitePress 1.6 site with the default publicDir at the repo root (public/). Markdown image refs are root-relative /images/... paths served straight out of public/. Image conversion requires cwebp / gif2webp (libwebp) or ImageMagick. Requires Node + npm to run docs:build.'
 metadata:
@@ -22,18 +22,18 @@ Add, swap, and validate screenshots without breaking the site's single image con
 | **Brand assets** | `public/logo.svg`, `public/favicon.png` | `/logo.svg`, `/favicon.png` in `.vitepress/config.mts` |
 
 **`public/` at the repo root is the only served static root.** A `public/` folder nested anywhere
-else — `guide/public/` most temptingly — is silently never copied to `dist/`. Any image put there
-renders in dev and 404s in production. If you find empty `guide/public/` directories, they are
+else — `docs/public/` most temptingly — is silently never copied to `dist/`. Any image put there
+renders in dev and 404s in production. If you find empty `docs/public/` directories, they are
 leftovers: never add files to them.
 
-**Never write `/guide/public/images/...` in markdown.** The correct form is always `/images/...`.
+**Never write `/docs/public/images/...` in markdown.** The correct form is always `/images/...`.
 
 ---
 
 ## Agent Behavior Rules
 
 1. **DO** reference images as `/images/<category>/<short-slug>/<file>.webp` — absolute, no
-   `guide/`, no `public/`, no relative `./` or `../`.
+   `docs/`, no `public/`, no relative `./` or `../`.
 2. **DO** find a page's **real** image folder by grepping its existing refs — the `<short-slug>`
    is a *compressed* version of the page slug (stopwords like `how`/`to`/`with` stripped, capped
    around 25–28 chars) and often differs from the `.md` filename.
@@ -80,7 +80,7 @@ Record `TASK`.
 ### 1.2 Target
 For A–C: > **Which page?** Resolve it:
 ```
-find guide -name '<slug>.md'
+find docs -name '<slug>.md'
 ```
 Record `TARGET_PATH`, `CATEGORY`, `SLUG`.
 
@@ -137,8 +137,8 @@ State the destination, the short-slug, and the starting number, then wait for co
 ### C. FIX a broken image
 Work down this list — ordered by how often each cause actually occurs here:
 ```
-1. Path written as /guide/public/images/... instead of /images/...
-2. File placed under guide/public/ instead of the root public/  (renders in dev, 404s in prod)
+1. Path written as /docs/public/images/... instead of /images/...
+2. File placed under docs/public/ instead of the root public/  (renders in dev, 404s in prod)
 3. Short-slug assumed from the page slug, but the real folder is compressed differently
 4. Typo in the number/label, or wrong extension (.png vs .webp)
 5. File genuinely missing from disk
@@ -165,33 +165,33 @@ Current baseline (2026-08-27): **394 images, 394 unique refs, 0 broken refs, 0 o
 regression introduced since.
 ```
 1. BROKEN REFS - every markdown ref must resolve to a real file:
-     grep -rhoE '\(/images/[^)]*\)' --include='*.md' guide index.md \
+     grep -rhoE '\(/images/[^)]*\)' --include='*.md' docs index.md \
        | tr -d '()' | sed 's|^/|public/|' | sort -u \
        | while read p; do [ -f "$p" ] || echo "MISSING: $p"; done
 
-2. WRONG FORM  - refs that still carry the guide/public prefix:
-     grep -rn '](/guide/public/' --include='*.md' guide index.md
+2. WRONG FORM  - refs that still carry the docs/public prefix:
+     grep -rn '](/docs/public/' --include='*.md' docs index.md
 
 3. RELATIVE    - relative image paths:
-     grep -rnE '!\[[^]]*\]\(\.\.?/' --include='*.md' guide index.md
+     grep -rnE '!\[[^]]*\]\(\.\.?/' --include='*.md' docs index.md
 
 4. STRAY DIR   - a public/ folder outside the repo root:
      find . -name public -type d -not -path './public' -not -path './node_modules/*'
 
 5. ORPHANS     - image files no page references:
      comm -23 <(find public/images -type f | sed 's|^public||' | sort -u) \
-              <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' guide index.md \
+              <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' docs index.md \
                 | tr -d '()' | sort -u)
      (Expect none. Report, do not delete.)
 
 6. ALT TEXT    - empty or placeholder alt text:
-     grep -rnE '!\[(|image|screenshot|img)\]\(' --include='*.md' guide index.md
+     grep -rnE '!\[(|image|screenshot|img)\]\(' --include='*.md' docs index.md
 
 7. NON-WEBP    - non-webp screenshots:
      find public/images -type f ! -name '*.webp'
 
 8. EXTERNAL    - remaining hosted image URLs:
-     grep -rn '](http' --include='*.md' guide | grep -iE '\.(png|jpg|jpeg|gif|webp)'
+     grep -rn '](http' --include='*.md' docs | grep -iE '\.(png|jpg|jpeg|gif|webp)'
      (Expect exactly 3, all in data-sources/fluent-forms-integration.md.)
 ```
 
@@ -217,13 +217,13 @@ nothing, 5 is report-and-ask:
 ```bash
 # 1. Referenced but missing on disk — this is what broke fluent-forms-integration
 comm -13 <(find public/images -type f | sed 's|^public||' | sort -u) \
-         <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' guide index.md | tr -d '()' | sort -u)
+         <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' docs index.md | tr -d '()' | sort -u)
 
 # 2. External image URLs (must always be zero)
-grep -rn '!\[[^]]*\](http' --include='*.md' guide index.md
+grep -rn '!\[[^]]*\](http' --include='*.md' docs index.md
 
 # 3. Relative / non-absolute paths
-grep -rhoE '!\[[^]]*\]\([^)]+\)' --include='*.md' guide index.md \
+grep -rhoE '!\[[^]]*\]\([^)]+\)' --include='*.md' docs index.md \
   | sed -E 's/.*\((.*)\)/\1/' | grep -vE '^/images/'
 
 # 4. Non-webp files on disk
@@ -231,7 +231,7 @@ find public/images -type f ! -name '*.webp'
 
 # 5. Orphans — REPORT and ask, never bulk-delete
 comm -23 <(find public/images -type f | sed 's|^public||' | sort -u) \
-         <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' guide index.md | tr -d '()' | sort -u)
+         <(grep -rhoE '\(/images/[^)]*\)' --include='*.md' docs index.md | tr -d '()' | sort -u)
 ```
 
 Then prove they actually render — check 1 only proves the file exists on disk:
@@ -240,7 +240,7 @@ Then prove they actually render — check 1 only proves the file exists on disk:
 pkill -f "vitepress preview"     # a stale one keeps serving the OLD dist -> phantom 404s
 npm run docs:build && npm run docs:preview &
 sleep 5
-grep -rhoE '\(/images/[^)]*\)' --include='*.md' guide index.md | tr -d '()' | sort -u \
+grep -rhoE '\(/images/[^)]*\)' --include='*.md' docs index.md | tr -d '()' | sort -u \
   | while read p; do c=$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:4173$p"); \
       [ "$c" = 200 ] || echo "BROKEN $c $p"; done
 pkill -f "vitepress preview"
@@ -270,7 +270,7 @@ fixes — do not apply them unasked.
 Markdown ref:  ![Descriptive alt text](/images/<category>/<short-slug>/<n>.-<Short-Label>.webp)
 On disk:       public/images/<category>/<short-slug>/<n>.-<Short-Label>.webp
 Brand assets:  public/logo.svg, public/favicon.png  → referenced in config.mts as /logo.svg
-Never:         /guide/public/images/...   guide/public/...   ./img.webp
+Never:         /docs/public/images/...   docs/public/...   ./img.webp
 ```
 
 ### Locate
@@ -278,7 +278,7 @@ Never:         /guide/public/images/...   guide/public/...   ./img.webp
 A page's image folder:  grep -oE '/images/[^)]*' <file> | sed 's|/[^/]*$||' | sort -u
 Folders in a category:  ls public/images/<category>/
 Highest number used:    ls public/images/<category>/<short-slug>/ | sort -t. -k1 -n | tail -1
-Reuse of one image:     grep -rn '<file>.webp' --include='*.md' guide index.md
+Reuse of one image:     grep -rn '<file>.webp' --include='*.md' docs index.md
 ```
 
 ### Videos (YouTube embeds, not images)
@@ -290,7 +290,7 @@ Reuse of one image:     grep -rn '<file>.webp' --include='*.md' guide index.md
 The .video-embed class lives in .vitepress/theme/style.css (full content width, 16:9, 16px
 margins — same footprint as a doc image). Never leave a bare youtu.be/watch?v= URL on its own
 line: it renders as a link, not a player.
-Find them all:  grep -rn "youtu" --include="*.md" guide
+Find them all:  grep -rn "youtu" --include="*.md" docs
 
 ### Convert to webp
 ```
