@@ -4,4 +4,8 @@
 .DS_Store
 .claude/*
 !.claude/skills/
+!.claude/agents/
+!.claude/plugin-memory/
+!.claude/SCREENSHOT-TODO.md
 !.claude/redesign-audit/
+/scripts/screenshots/raw

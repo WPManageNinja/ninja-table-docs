@@ -17,6 +17,10 @@ and verify with a clean build. Canonical conventions live in `CLAUDE.md` — thi
 
 ---
 
+> **Before writing:** load `ninja-tables-doc-writer` (voice, UI-path `›` style, no em dashes, callouts) and the
+> page-type specialist it routes to (`ninja-tables-settings-page`, `-integration-page`, `-element-page`,
+> `-howto-page`). For images, delegate to the `ninja-tables-screenshotter` subagent instead of adding files by hand.
+
 ## Agent Behavior Rules
 
 1. **DO** complete Phase 1 setup and confirm the summary table before writing anything.

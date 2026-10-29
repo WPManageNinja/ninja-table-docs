@@ -88,20 +88,16 @@ inline in `.vitepress/config.mts` — there is **no separate `sidebar.json` file
 VitePress does **not** auto-discover docs; every new or renamed `.md` file **must** be reflected
 there.
 
-Shape — **nested** array of 11 top-level groups, several with `collapsed: true` sub-groups up to
-2 levels deep:
+Shape — **nested** array of 14 task-first top-level groups (redesign, Oct 2026), some with
+`collapsed: true` sub-groups (e.g. **Columns** › **Column types**). Groups do NOT mirror the category
+folders, so place a page by the reader's task, not by its folder:
 
-- Getting Started
-- Creating Tables → nests **Drag & Drop Tables** → nests **Drag & Drop Elements**
-- Data Sources & Integration
-- Table Configuration → nests **Column Settings** / **Field Types** / **Table Settings**
-- Styling & Design → nests **Responsive Design**
-- Table Management
-- Import & Export
-- WordPress Integration
-- Advanced Features → nests **Table Formatting**
-- Ninja Charts
-- Resources (Changelog only)
+- Get Started · Create a Table · Add & Edit Rows · Columns · Appearance · Filters & Frontend Editing ·
+  Performance & Custom Code · Show Live Data · Drag & Drop Builder · Add Tables to Your Site ·
+  Manage Tables & Settings · Charts · For Developers · Help & Updates
+
+Sidebar labels are short, task-first and don't repeat the H1 (`'Date'`, `'Duplicate a table'`,
+`'Add & edit a column'`). Pointer pages for merged topics stay on disk but are hidden from the sidebar.
 
 Leaf entry shape: `{ text: 'Page Title', link: '/<slug>' }` (no `.md`). The top
 `nav` array separately duplicates 2 of these links (User Guide → getting-started intro, Changelog)
@@ -289,15 +285,64 @@ Only commit or push when explicitly asked. Check the current branch with
 
 ## Working style
 
-Reusable procedures for this repo are captured as skills in `.claude/skills/` — check there first:
-- `write-ninja-tables-doc` — create a new page
+Reusable procedures for this repo are captured as skills in `.claude/skills/` — check there first.
+
+**Writing (load the master, then one specialist):**
+- `ninja-tables-doc-writer` — master voice/format guide; load before writing any page
+- `ninja-tables-settings-page` — one settings screen / editor tab, option by option
+- `ninja-tables-integration-page` — connected data sources and WordPress integrations
+- `ninja-tables-element-page` — one Drag & Drop element or one column type
+- `ninja-tables-howto-page` — task / procedural pages (incl. developer and Charts pages)
+
+**Procedures:**
+- `write-ninja-tables-doc` — create a new page (file, sidebar, featured card)
 - `edit-ninja-tables-doc` — change an existing page's content
 - `restructure-ninja-tables-docs` — rename/move/delete/merge/reorder
-- `manage-ninja-tables-images` — add/replace/audit screenshots under `public/images/`
 - `update-ninja-tables-changelog` — add a release entry to `docs/changelog/change-log.md`
-- `audit-ninja-tables-docs` — read-only site-wide quality gate
 - `check-ninja-tables-feature-coverage` — decide whether a plugin feature is already documented
   before writing anything
+
+**Plugin → docs, images, QA, publishing:**
+- `ninja-tables-code-to-docs` — sync docs to plugin code / a new release (see *Plugin memory* below)
+- `ninja-tables-doc-screenshots` — take/refresh screenshots (usually via the `ninja-tables-screenshotter`
+  subagent, see below); queue in `.claude/SCREENSHOT-TODO.md`
+- `manage-ninja-tables-images` — add/replace/audit image files under `public/images/`
+- `ninja-tables-featured-images` — social-share cards
+- `audit-ninja-tables-docs` — read-only site-wide quality gate
+- `ninja-tables-deployment` — publishing, dependencies, Node pinning, live checks
+
+## Plugin memory (code → docs)
+
+Plugin code is read-only and is what the local site runs: free
+`~/Local Sites/cart/app/public/wp-content/plugins/ninja-tables-dev` (git, branch `redesign`, tags
+`vX.Y.Z`) and Pro `.../plugins/ninja-tables-pro` (no git).
+
+- `.claude/plugin-memory/CATALOG.md` — module/screen → key files → doc pages, admin route map, Pro-only
+  list, gaps. `CHANGES.md` — per-release log, newest first. `README.md` — how the layers work.
+- `scripts/plugin/` — `recent-changes.sh [N]`, `diff-since.sh <tag>`, `find-doc.sh "<feature>"`,
+  `sync-memory.sh <prev-tag>` (re-index list + CHANGES skeleton), `pull.sh` (fast-forward, only when asked).
+  Paths live in `scripts/plugin/_paths.sh`.
+- `scripts/qa/diff-build.mjs <old-dist> <new-dist>` — which built pages changed, and in which region.
+
+Per release: `sync-memory.sh <prev-tag>` → `ninja-tables-code-to-docs` → screenshots via the subagent →
+build + image checks → prepend CHANGES.md, bump CATALOG `Last fully audited:`.
+
+## Taking screenshots (dev site → docs)
+
+Screenshots are taken by a script, never by hand, so framing, scale and arrows match across the site.
+Ported from the FluentCart docs repo.
+
+- **Delegate to the `ninja-tables-screenshotter` subagent** (`.claude/agents/`, runs on Sonnet to save
+  cost). Give it the doc page path or the image files to refresh. It follows the
+  `ninja-tables-doc-screenshots` skill, writes a JSON plan, runs it, and Read-checks every image.
+- **Source:** local site `http://localhost:10013` (`admin`/`admin`), plugin clone
+  `~/Local Sites/cart/app/public/wp-content/plugins/ninja-tables-dev` (branch `redesign`), which needs
+  its Vite dev server on port 8881.
+- **Runner:** `npm run shots -- scripts/screenshots/plans/<slug>.json [--only=a,b] [--out=<tmp>]` drives
+  headless Google Chrome through `playwright-core`, hides WP chrome and the plugin's nags, draws
+  `#FF4E6B` arrows with `sharp`, and writes `.webp` (q82, ~2880 px wide) straight into `public/images/`.
+  Plans in `scripts/screenshots/plans/` are kept as regression fixtures; re-run them after a release.
+- **Never** use the Chrome extension or `screencapture` for this (see the global rule about the other PC).
 
 ## Featured (social-share) images
 

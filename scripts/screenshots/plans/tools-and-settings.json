@@ -1,0 +1,11 @@
+{
+  "doc": "docs/table-management/tools-and-settings.md",
+  "outDir": "public/images/table-management/tools-settings",
+  "viewport": { "width": 1600, "height": 1100 },
+  "steps": [
+    { "admin": "/tools/global_settings" },
+    { "shot": { "name": "1.-tools-settings-01", "clip": "app", "crop": "auto" } },
+    { "admin": "/tools/default_table_appearance" },
+    { "shot": { "name": "2.-Global-Apperrance-02", "clip": "app", "crop": "auto" } }
+  ]
+}

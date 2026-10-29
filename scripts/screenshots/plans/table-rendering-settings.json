@@ -1,0 +1,13 @@
+{
+  "doc": "docs/table-settings/table-rendering-settings.md",
+  "outDir": "public/images/table-settings/table-rendering-settings",
+  "viewport": { "width": 1600, "height": 1100 },
+  "steps": [
+    { "admin": "/tables/895/configuration" },
+    { "shot": { "name": "1.-New-Ui-table-rendering-settings", "clip": "app", "crop": "auto",
+        "arrows": [ { "target": { "selector": ".nt-tab", "hasText": "Table Configuration" }, "from": "bottom", "len": 140 } ] } },
+
+    { "shot": { "name": "2.-Rendering-Setting", "clip": { "rows": ["Rendering Setting"], "pad": 6 },
+        "arrows": [ { "target": { "selector": ".nt-radio-card", "hasText": "Legacy" }, "from": "right", "len": 130 } ] } }
+  ]
+}
