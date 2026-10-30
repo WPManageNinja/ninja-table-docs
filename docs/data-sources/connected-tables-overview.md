@@ -22,7 +22,31 @@ You create a connected table from **Create Table** › **Connect live data**. Ea
 | **Remote CSV / JSON** | A CSV file at a public URL | Pro |
 | **Custom SQL query** | A read-only SQL query on this or another database | Pro |
 
-The WooCommerce tiles appear only when WooCommerce is active, and the FluentCart tile only when FluentCart is active. Most drawers also let you pick the table engine (FooTable or DataTables). See [Choose a table engine](/choose-table-engine).
+The WooCommerce tiles appear only when WooCommerce is active, and the FluentCart tile only when FluentCart is active. The Fluent Forms tile is always there. If Fluent Forms isn't installed, its drawer tells you so instead of showing the form.
+
+<!-- TODO(screenshot): connected-tables-overview-1
+  screen: Tables › Create a table › Connect live data
+  table: -
+  state: Create screen with the Connect live data group and its eight tiles visible
+  highlight: Connect live data group
+  view: admin
+  alt: Create a table screen with the eight Connect live data tiles
+-->
+
+### When a Pro source is locked
+
+Every tile for a Pro source opens its drawer even on the Free plugin, but the drawer shows a notice instead of the form, and **Create table** is disabled:
+
+- **Free plugin:** a panel such as "WP Posts tables are a Pro feature." with a short description, **Upgrade to Pro**, **View documentation** and **Watch video**. WooCommerce products, WooCommerce reviews, Google Sheets, Remote CSV and Custom SQL show the same kind of panel.
+- **Pro active but out of date:** a yellow warning, "Please update Ninja Tables Pro to the latest version to use ..." (or "Please update to latest version of Ninja Tables Pro to use WooCommerce integration"). Update Ninja Tables Pro from **Plugins** and open the drawer again.
+
+### Table engine
+
+Most drawers end with an engine line, **Engine: FooTable (the usual choice) · Change**. Click **Change** to choose **FooTable** or **DataTables**. See [Choose a table engine](/choose-table-engine).
+
+- The line appears in the WP Posts, Fluent Forms, FluentCart and Custom SQL drawers, and in the Google Sheets and Remote CSV drawers when the sheet-sync feature is available.
+- The WooCommerce products and WooCommerce reviews drawers have no engine line. Those tables always use FooTable.
+- The engine can't be changed after the table is created.
 
 Each source has its own guide:
 
@@ -65,11 +89,20 @@ What you see inside depends on the source:
 
 Save your changes with the button at the bottom of each section (**Save settings**, **Update** or **Save and run**, depending on the source).
 
+<!-- TODO(screenshot): connected-tables-overview-2
+  screen: Tables › DOCTEST posts › Table Rows
+  table: a WP Posts table
+  state: Source banner at the top of Table Rows with the Edit query button, then the Edit query drawer open
+  highlight: Edit query button
+  view: admin
+  alt: Source banner reading Rows come from WordPress posts, and the Edit query drawer
+-->
+
 ## Rows are read-only
 
 The rows grid of a connected table shows a **Read-only** badge. You can't add, edit or delete rows here, because the data lives in its source. To change a row, change it at the source (edit the post, the product, the sheet or the database), and the table follows.
 
-You can still:
+The rows grid also has no drag-to-sort and no row import. Everything about the table's look and behavior still works. You can:
 
 - Rename columns, change their type and set column options from the column header › **Column settings**.
 - Design the table in the **Appearance** tab.
@@ -81,9 +114,22 @@ The **Frontend editing** tab isn't available for connected tables. It explains: 
 
 How quickly a connected table picks up changes depends on the source:
 
-- **WP Posts, WooCommerce, FluentCart, Fluent Forms and Custom SQL** read from your database when the table loads, subject to the table's cache. See [Table rendering settings](/table-rendering-settings) and [Clear table cache](/clear-table-cache).
-- **Google Sheets and Remote CSV on FooTable** are fetched from the URL and cached for the **Caching interval (in minutes)** set in **Table Configuration** (5 minutes by default).
+- **WP Posts, WooCommerce, FluentCart, Fluent Forms and Custom SQL** read from your database each time the table loads, so new posts, products and entries appear on their own.
+- **Google Sheets and Remote CSV on FooTable** are fetched from the URL and kept for the **Caching interval (in minutes)** set in **Table Configuration** (5 minutes by default). Leave it blank or set 0 to cache nothing.
 - **Google Sheets and Remote CSV on DataTables** are copied into your database on a schedule. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
+
+### Caching settings are different for connected tables
+
+In **Table Configuration** › **Caching Configuration**, the **Display Frontend Loader** and **Disable Caching** switches are not shown for connected tables. They only exist for tables that store their own rows. What you do see:
+
+- **Caching interval (in minutes)** on Google Sheets and Remote CSV tables.
+- **Enable HTML cache** when the table's **Rendering Setting** is **Legacy**.
+
+See [Table rendering settings](/table-rendering-settings) and [Clear table cache](/clear-table-cache).
+
+### Connected tables on DataTables
+
+A connected table on the **DataTables** engine asks the server for its rows live, straight from the source, instead of keeping a copy. A WP Posts table that is set to show only the logged-in user's posts, and a Custom SQL query that uses a visitor placeholder such as `{current_user_id}`, are never shared between visitors, so each visitor sees only their own rows. Developers can read about the related filters in [Hooks and filters](/hooks-and-filters).
 
 ## Show the table on your site
 

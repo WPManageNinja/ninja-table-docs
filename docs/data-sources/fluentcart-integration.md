@@ -1,6 +1,6 @@
 ---
 title: "FluentCart Integration"
-description: "Connect Ninja Tables with FluentCart to build responsive, sortable product tables with add-to-cart, variations, and bulk buying."
+description: "Build a product table from your FluentCart store with add to cart, subscription Buy Now buttons, stock handling, variations and bulk buying."
 ---
 
 # FluentCart Integration
@@ -19,23 +19,41 @@ You need FluentCart active. The **FluentCart products** tile only appears when i
 6. Check the engine line (FooTable is the usual choice). See [Choose a table engine](/choose-table-engine).
 7. Click **Create table**.
 
-![FluentCart in the table creation menu](/images/data-sources/fluentcart-integration/1.-FluentCart-in-table-creation-menu.webp)
+<!-- TODO(screenshot): fluentcart-integration-1
+  screen: Tables › Create Table › Connect live data › FluentCart products
+  table: a FluentCart product table
+  state: Drawer open with a category chosen, Hide out of stock items on, Initial Order By set to Price
+  highlight: Initial Order By field
+  view: admin
+  alt: FluentCart products drawer with category, stock and order options
+-->
 
-![FluentCart table creation settings](/images/data-sources/fluentcart-integration/2.-FluentCart-table-creation.webp)
+The new table starts with these columns: Image, Name, Category, Price, Total Stock, Variations, Quantity and Buy. Sale prices show the old price struck through.
 
-The new table starts with these columns: Image, Name, Category, Price, Total Stock, Variations, Quantity and Buy. Sale prices show the old price struck through, and the Buy column has an **Add To Cart** button.
+### What the Buy column does
+
+- **Simple products:** the button reads **Add To Cart** and adds the product to the cart without leaving the page. Guests can use it too.
+- **Subscriptions and licensed products:** when the product's first variation is a subscription, or the product has licensing turned on, the button reads **Buy Now** instead. It opens FluentCart's instant checkout for that variation in a new tab.
+- **Out of stock:** the Buy and Quantity cells show "Out Of Stock" instead of a button. To leave out-of-stock products out of the table altogether, turn on **Hide out of stock items**.
+
+To change the **Add To Cart** wording, add a column with **Field type** set to **Product Data** › **Buy Now Button** and fill in **Buy now button text** (see Add new column below). The **Buy Now** button for subscriptions always keeps its own wording.
 
 ## Step 2: Change the settings
 
 On the **Table Rows** tab, the banner reads **Rows come from FluentCart products**. Click **Source settings** to open the drawer. It has three sections: **Query settings**, **Appearance** and **Add new column**.
 
-![FluentCart table settings in the editor](/images/data-sources/fluentcart-integration/3.-FluentCart-table-backend.webp)
-
 ### Query settings
 
 The same choices as on the Create screen: **Select Products By Category**, **Select Products By Product Brands**, **Hide out of stocks items**, and **Initial order by** (Product Title, Date, Price, Stock) with **Ascending way** or **Descending way**. Click **Save settings**.
 
-![FluentCart query settings](/images/data-sources/fluentcart-integration/4.-FluentCart-query-settings.webp)
+<!-- TODO(screenshot): fluentcart-integration-2
+  screen: Tables › a FluentCart table › Table Rows › Source settings › Query settings
+  table: a FluentCart product table
+  state: Query settings section open
+  highlight: Save settings button
+  view: admin
+  alt: Query settings section of the FluentCart source settings drawer
+-->
 
 ### Appearance
 
@@ -46,6 +64,15 @@ The same choices as on the Create screen: **Select Products By Category**, **Sel
 
 Click **Save settings**.
 
+<!-- TODO(screenshot): fluentcart-integration-3
+  screen: Tables › a FluentCart table › Table Rows › Source settings › Appearance
+  table: a FluentCart product table
+  state: Appearance section open with cart details and bulk actions on
+  highlight: Show bulk actions switch
+  view: admin
+  alt: Appearance section of the FluentCart source settings drawer
+-->
+
 ### Add new column
 
 Add a column filled from your product data. For example, to show the short description:
@@ -55,7 +82,14 @@ Add a column filled from your product data. For example, to show the short descr
 3. Under **Dynamic column data settings**, set **Field type** to **Post Data** and **Field value** to **Product Short Description**.
 4. Click **Add column**.
 
-![Adding a new column to a FluentCart table](/images/data-sources/fluentcart-integration/5.-FluentCart-table-add-new-column.webp)
+<!-- TODO(screenshot): fluentcart-integration-4
+  screen: Tables › a FluentCart table › Table Rows › Source settings › Add new column
+  table: a FluentCart product table
+  state: Add new column form with Post Data and Product Short Description chosen
+  highlight: Field value dropdown
+  view: admin
+  alt: Add new column section with a Post Data field type
+-->
 
 The **Product Data** field type offers Product Price, Product Price Range, Product Variations, Product Stock, Product Quantity input field, Buy Now Button and Stock Availability. You can also use Post Meta, Shortcode / Computed Value or HTML, Featured Image and Product Taxonomy. See [Dynamic columns reference](/dynamic-columns-reference).
 
@@ -73,4 +107,11 @@ Some general table features, such as custom colors and custom filters, are Pro. 
 
 Copy the shortcode from the editor header and paste it into any page or post, or use the Ninja Tables block. See [Embed a table](/embed-tables).
 
-![FluentCart product table on the front end](/images/data-sources/fluentcart-integration/6.-FluentCart-table-frontend.webp)
+<!-- TODO(screenshot): fluentcart-integration-5
+  screen: A page with the FluentCart table shortcode
+  table: a FluentCart product table
+  state: Front end table with Add To Cart buttons and a cart summary
+  highlight: -
+  view: frontend
+  alt: FluentCart product table on a page with add to cart buttons
+-->

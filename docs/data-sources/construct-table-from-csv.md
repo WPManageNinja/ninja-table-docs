@@ -10,13 +10,16 @@ description: "Build a table from a CSV file at a public URL with the Remote CSV 
 For Google Sheets, use the dedicated [Google Sheets integration](/google-sheets-integration) instead.
 
 ::: warning CSV only
-The tile is called **Remote CSV / JSON**, but today it reads **CSV files only**. A JSON URL is rejected with "Expected CSV but received invalid data type from the given url." To show JSON data, convert it to CSV first, or upload the JSON file with **Create Table** › **Upload a file**. See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
+The tile is called **Remote CSV / JSON**, but today it reads **CSV files only**. The field is labeled "A CSV or JSON file URL", yet a JSON URL is rejected with "Expected CSV but received invalid data type from the given url." To show JSON data, convert it to CSV first, or upload the JSON file with **Create Table** › **Upload a file**. See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
 :::
 
 ## Before you start
 
-- The file must be reachable without a login, at a public URL (HTTPS is best).
+- The file must be reachable without a login, at a public URL.
+- The server hosting the file must report it as CSV. A content type that contains "csv" works, and so does `application/octet-stream` or `application/binary`. A plain `text/plain` response works only when the address ends in `.csv`. Anything else is rejected as "invalid data type".
 - The first row must hold the column headers. Rows with a different number of cells than the header row are skipped.
+- On FooTable the file is requested with a short time limit (10 seconds for the column list, 20 seconds for the rows), so a slow server may fail to load. Developers can change the limit with a filter listed in [Hooks and filters](/hooks-and-filters).
+- On **DataTables**, the address must start with `https://`, and private or internal addresses (such as `localhost` or a local network IP) are blocked. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
 
 ## Create the table
 
@@ -30,17 +33,31 @@ The tile is called **Remote CSV / JSON**, but today it reads **CSV files only**.
 6. Under **Select entry fields**, tick the columns you want, or use **Select all**.
 7. Click **Create table**.
 
-![Create New Table](/images/data-sources/construct-table-csv/1.-Create-New-Table.webp)
+![Remote CSV drawer step 1 with the Data source URL field](/images/data-sources/construct-table-csv/1.-Remote-CSV-Drawer-Step-1.webp)
 
-![Connect External CSV with FooTable selected](/images/data-sources/construct-table-csv/2.-Connect-External-CSV-FooTable.webp)
+![Remote CSV drawer with DataTables selected and a Sync Interval list](/images/data-sources/construct-table-csv/2.-Remote-CSV-Drawer-With-DataTables-Selected.webp)
 
-![Connect External CSV with DataTables selected](/images/data-sources/construct-table-csv/3.-Connect-External-CSV-DataTables.webp)
+<!-- TODO(screenshot): construct-table-from-csv-3
+  screen: Tables › Create Table › Connect live data › Remote CSV / JSON › Step 2
+  table: -
+  state: Select entry fields with all columns ticked
+  highlight: Select all
+  view: admin
+  alt: Select entry fields step listing the CSV columns
+  blocked: needs a reachable public CSV URL (fetch fails from the demo site: "Expected CSV but received invalid data type") and creating a table
+-->
 
-![Select Entry Fields](/images/data-sources/construct-table-csv/4.-Select-Entry-Fields.webp)
+Ninja Tables opens the new table on the **Table Rows** tab with the file's data in it. The rows are read-only: change them in the source file. You can still export the table, but you can't import rows into it or sort its rows by hand.
 
-Ninja Tables opens the new table on the **Table Rows** tab with the file's data in it. The rows are read-only: change them in the source file.
-
-![CSV data imported into a Ninja Table](/images/data-sources/construct-table-csv/5.-CSV-Table-Result.webp)
+<!-- TODO(screenshot): construct-table-from-csv-4
+  screen: Tables › a Remote CSV table › Table Rows
+  table: -
+  state: Table Rows tab with the CSV data loaded
+  highlight: -
+  view: admin
+  alt: Table Rows tab showing rows read from a remote CSV file
+  blocked: needs a reachable public CSV URL (fetch fails from the demo site: "Expected CSV but received invalid data type") and creating a table
+-->
 
 ## FooTable or DataTables
 
@@ -48,6 +65,7 @@ Ninja Tables opens the new table on the **Table Rows** tab with the file's data 
 |---|---|---|
 | How rows are read | Fetched from the URL when the table loads | Copied into your database, then synced on a schedule |
 | How often it updates | After the **Caching interval** (5 minutes by default) | On the **Auto sync** schedule, or when you click **Sync now** |
+| Address must be HTTPS | No (HTTPS is best) | Yes |
 | Best for | Small and medium files | Large files with thousands of rows |
 
 ## Change the URL or the columns

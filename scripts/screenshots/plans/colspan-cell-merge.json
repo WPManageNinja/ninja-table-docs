@@ -1,0 +1,8 @@
+{"doc":"docs/table-formatting/colspan-cell-merge.md","outDir":"public/images/table-formatting/colspan-cell-merge","viewport":{"width":1440,"height":900},"steps":[
+{"admin":"/tables/{{Conference Schedule}}"},{"wait":1500},
+{"click":"th:has-text(\"Room\") .nt-sheet__colset"},{"wait":400},
+{"click":".el-dropdown-menu__item:visible:has-text(\"Column settings\")"},{"wait":1200},
+{"fill":{"selector":".nt-drawer input >> nth=0","value":"#colspan#"}},{"wait":300},
+{"eval":"document.activeElement&&document.activeElement.blur()"},
+{"shot":{"name":"3.-Colspan-Typed-As-A-Column-Name","clip":"app","highlights":[".nt-drawer input >> nth=0"]}}
+]}

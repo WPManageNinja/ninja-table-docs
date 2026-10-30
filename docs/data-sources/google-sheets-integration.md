@@ -18,6 +18,10 @@ How the table keeps up with the sheet depends on the engine you pick when you cr
 
 See [Choose a table engine](/choose-table-engine) for more about the two engines.
 
+::: warning No Google sign-in
+Ninja Tables does not connect to your Google account. There is no sign-in, no permission screen and no API key. It reads a sheet that you have **published to the web**, so anyone with the link can read it. Do not publish a sheet that holds private data.
+:::
+
 ## Step 1: Publish your sheet
 
 Ninja Tables reads sheets that are published to the web.
@@ -28,11 +32,14 @@ Ninja Tables reads sheets that are published to the web.
 4. Under **Published content and settings**, make sure **Automatically republish when changes are made** is ticked.
 5. Click **Publish**, then copy the link.
 
-![employee data in google sheets](/images/data-sources/google-sheets-integration/1.-employee-data-in-google-sheets.webp)
-
-![publish google sheet to the web](/images/data-sources/google-sheets-integration/5.-Publish-Google-Sheet-To-The-Web.webp)
-
-![Copy Link](/images/data-sources/google-sheets-integration/copy-link-6.webp)
+<!-- TODO(screenshot): google-sheets-integration-1
+  screen: Google Sheets › File › Share › Publish to web
+  table: -
+  state: Link tab with Sheet1 and Comma-separated values (.csv) chosen
+  highlight: Publish button
+  view: admin
+  alt: Google Sheets Publish to web dialog with the CSV format selected
+-->
 
 ## Step 2: Create the table
 
@@ -41,22 +48,50 @@ Ninja Tables reads sheets that are published to the web.
 3. Check the engine line. FooTable is the usual choice. Click **Change** to pick DataTables instead.
 4. Paste the link you copied:
    - On FooTable, into **Data source URL**.
-   - On DataTables, into **Google Sheet CSV URL**, and choose a **Sync Interval** (Every 1 hour by default). You can change it any time.
+   - On DataTables, into **Google Sheet CSV URL**, and choose a **Sync Interval** (Every 1 hour by default). You can change it any time. The link must start with `https://`.
 5. Click **Next**.
 6. Under **Select entry fields**, tick the columns you want in the table, or use **Select all**.
 7. Click **Create table**.
 
-![Create New Table](/images/data-sources/google-sheets-integration/2.-Create-New-Table.webp)
+<!-- TODO(screenshot): google-sheets-integration-2
+  screen: Tables › Create Table › Connect live data › Google Sheets › Step 1
+  table: -
+  state: FooTable engine, Table name and Data source URL filled in
+  highlight: Data source URL field
+  view: admin
+  alt: Google Sheets drawer step 1 with the Data source URL field
+-->
 
-![Connect Google Sheets with FooTable selected](/images/data-sources/google-sheets-integration/3.-Connect-Google-Sheets-FooTable.webp)
+<!-- TODO(screenshot): google-sheets-integration-3
+  screen: Tables › Create Table › Connect live data › Google Sheets › Step 1
+  table: -
+  state: DataTables engine chosen, Google Sheet CSV URL and Sync Interval visible
+  highlight: Sync Interval list
+  view: admin
+  alt: Google Sheets drawer with DataTables selected and a Sync Interval list
+-->
 
-![Connect Google Sheets with DataTables selected](/images/data-sources/google-sheets-integration/4.-Connect-Google-Sheets-DataTables.webp)
-
-![Select Entry Fields, with one column unchecked](/images/data-sources/google-sheets-integration/6.-Select-Entry-Fields.webp)
+<!-- TODO(screenshot): google-sheets-integration-4
+  screen: Tables › Create Table › Connect live data › Google Sheets › Step 2
+  table: -
+  state: Select entry fields with one column unticked
+  highlight: Select all
+  view: admin
+  alt: Select entry fields step listing the sheet columns
+-->
 
 Ninja Tables opens the new table on the **Table Rows** tab with your sheet's data in it. The rows are read-only: edit them in Google Sheets.
 
-![Google Sheets data imported into a Ninja Table](/images/data-sources/google-sheets-integration/8.-Google-Sheets-Table-Result.webp)
+<!-- TODO(screenshot): google-sheets-integration-5
+  screen: Tables › a Google Sheets table › Table Rows
+  table: -
+  state: Table Rows tab with the sheet data loaded
+  highlight: -
+  view: admin
+  alt: Table Rows tab showing rows read from a Google Sheet
+-->
+
+If Ninja Tables finds no columns, it says "No columns found. Use the link from File → Share → Publish to web." Check that the sheet is published and that you pasted the published link, not the address of the editor page.
 
 ## Change the sheet or the columns
 
@@ -77,7 +112,14 @@ The **Table Rows** tab shows a sync panel with the column list, the URL, the **A
 
 - **Google's delay:** after you edit a published sheet, Google can take about 5 minutes to republish it.
 - **FooTable:** Ninja Tables keeps the fetched sheet for the **Caching interval (in minutes)** in **Table Configuration** › **Caching Configuration**. New tables start at 5 minutes. Leave it blank or set it to 0 to cache nothing (every page view fetches the sheet, which is slower).
-- **DataTables:** the table updates on its **Auto sync** schedule, or right away when you click **Sync now**.
+- **DataTables:** the table updates on its **Auto sync** schedule, or right away when you click **Sync now**. The sync runs in the background through WordPress's scheduled tasks (WP-Cron), so you don't need to keep the admin open. Intervals run from every 5 minutes to every 7 days. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
+
+## Requirements for DataTables sync
+
+- The link must be **HTTPS**. Other links are rejected with "Please provide a valid HTTPS URL."
+- The link must be reachable from your server over the public internet. Private and internal addresses (such as `localhost` or a local network IP) are blocked.
+- A Google Sheets link that is not in CSV form (for example one ending in `/pubhtml`) is converted to the CSV form for you.
+- Deleting the table also cancels its scheduled sync and cleans up any sync that is still running.
 
 ## Hyperlinks and images from the sheet
 

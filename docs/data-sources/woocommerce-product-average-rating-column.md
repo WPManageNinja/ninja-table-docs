@@ -16,15 +16,35 @@ The **Product Average Rating** column (Pro) shows a product's overall average sc
 5. Set the rating options (below).
 6. Click **Add column**.
 
-![WooCommerce product average rating column](/images/data-sources/woocommerce-average-rating/1.-WooCommerce-product-average-rating.webp)
+<!-- TODO(screenshot): woocommerce-product-average-rating-column-1
+  screen: Tables › DOCTEST woo › Table Rows › Source settings › Add new column
+  table: a WooCommerce products table
+  state: Add new column section with Product Data and Product Average Rating chosen and the four rating options visible
+  highlight: Field value
+  view: admin
+  alt: Add new column section with the Product Average Rating options
+-->
 
 ## Rating options
 
-- **Filled star color**: the color of the filled (active) stars.
-- **Empty star color**: the color of the empty (inactive) stars.
-- **No review text**: the text shown for a product with no reviews. The placeholder is "No reviews yet".
-- **Show rating value**: shows the number next to the stars.
+- **Filled star color**: the color of the filled (active) stars. The default is gold (`#ffd700`).
+- **Empty star color**: the color of the empty (inactive) stars. The default is light grey (`#e0e0e0`).
+- **No review text**: the text shown for a product with no reviews. The placeholder is "No reviews yet". If you leave it empty, the cell shows "No rating".
+- **Show rating value**: shows the number next to the stars, for example "4.5/5". It is on by default.
+
+The stars are whole stars. A product rated 4.5 shows 4 filled stars and 1 empty star, and the number shows 4.5/5.
+
+<!-- TODO(screenshot): woocommerce-product-average-rating-column-2
+  screen: Tables › DOCTEST woo › Preview
+  table: a WooCommerce products table
+  state: Front-end product table with the average rating column showing stars and the x.x/5 value, and one product with no reviews
+  highlight: Avg. rating column
+  view: frontend
+  alt: Product table on the page with an average rating column
+-->
 
 To change these later, open the column header › **Column settings**.
 
 You can also sort products by rating: set **Initial order by** to **Average Rating** in **Source settings** › **Query settings**.
+
+The reviews table's own **Rating** column uses different default colors (gold `#f2c94c` and light grey `#e6e6e6`), set in **Source settings** › **Appearance**. See [WooCommerce product reviews table](/woocommerce-product-reviews-table).

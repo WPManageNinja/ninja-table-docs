@@ -1,0 +1,6 @@
+{"doc":"docs/table-formatting/image-lightbox-using-column-transform-value.md","outDir":"public/images/table-formatting/image-lightbox-column","viewport":{"width":1440,"height":900},"steps":[
+{"admin":"/tables/{{Product Price List}}/additional_css"},{"wait":2000},
+{"fill":{"selector":"input[placeholder=\"my-custom-table\"]","value":"nt_has_lightbox"}},{"wait":300},
+{"eval":"document.activeElement&&document.activeElement.blur()"},
+{"shot":{"name":"2.-Custom-CSS-Class-Field-Set","clip":"app","highlights":["input[placeholder=\"my-custom-table\"]"]}}
+]}

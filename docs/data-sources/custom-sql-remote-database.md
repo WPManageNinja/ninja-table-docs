@@ -30,15 +30,37 @@ Two settings on the remote side are important:
 5. Write your query in **Custom SQL Query**, for example `SELECT id, name, city FROM customers`.
 6. Click **Create table**.
 
-Ninja Tables connects to the remote database, runs the query and builds the columns from the result. If the connection or the query fails, an **SQL error** message explains why.
+<!-- TODO(screenshot): custom-sql-remote-database-1
+  screen: Tables › Create Table › Connect live data › Custom SQL query
+  table: -
+  state: SQL Connection Type set to Remote/External SQL with the connection fields shown, using placeholder values
+  highlight: SQL Connection Type
+  view: admin
+  alt: Custom SQL drawer with Remote/External SQL selected and the connection fields
+-->
+
+Ninja Tables connects to the remote database, runs the query and builds the columns from the result. The query must be a read-only `SELECT`, with the same rules as a local one. See [What queries are allowed](/create-table-from-custom-sql#what-queries-are-allowed).
+
+If the connection or the query fails, an error explains why instead of breaking the page. A wrong host, port, user or password gives "Provided SQL Connection details is not valid" with the database's own message, and a query error shows as **SQL error**. On the front end, a table whose connection fails shows no rows.
+
+Each time the table loads, Ninja Tables connects again and reads the whole result, so keep the query narrow with a `WHERE` or a `LIMIT`. See [Big results and speed](/create-table-from-custom-sql#big-results-and-speed).
 
 ## Change the connection or the query
 
-On the **Table Rows** tab, click **Source settings** on the **Rows come from SQL query** banner. The drawer shows the **Query** and, below it, the **Connection details**. Leave **DB user password** as is to keep the current password, or type a new one. Click **Save and run**.
+On the **Table Rows** tab, click **Source settings** on the **Rows come from SQL query** banner. The drawer shows the **Query** and, below it, the **Connection details**. Leave **DB user password** as is to keep the current password, or type a new one. Click **Save and run**. The password is never shown again after you save it.
+
+<!-- TODO(screenshot): custom-sql-remote-database-2
+  screen: Tables › a remote Custom SQL table › Table Rows › Source settings
+  table: -
+  state: Source settings drawer with the Query and Connection details, using placeholder values
+  highlight: Connection details
+  view: admin
+  alt: Source settings drawer showing Query and Connection details
+-->
 
 ## The {prefix} placeholder on a remote database
 
-All [placeholders](/create-table-from-custom-sql#dynamic-placeholders) work on remote databases. `{prefix}` is the table prefix of the remote connection, and it is `wp_` by default. If the remote database uses another prefix, write the full table name in your query instead.
+All [placeholders](/create-table-from-custom-sql#dynamic-placeholders) work on remote databases, including `{current_user_id}`, `{current_user_role}` and the date placeholders. Their values come from your WordPress site, and they are escaped for the remote connection. `{prefix}` is the table prefix of the remote connection, and it is `wp_` by default. If the remote database uses another prefix, write the full table name in your query instead.
 
 ## Troubleshooting
 
