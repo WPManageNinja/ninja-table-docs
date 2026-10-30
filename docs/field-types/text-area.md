@@ -5,7 +5,7 @@ description: "Use the Text area column type for longer text that runs over sever
 
 # Text Area
 
-The **Text area** column type holds longer text over several lines, such as product details, notes or descriptions. There is no limit on the number of lines in a cell.
+The **Text area** column type holds longer text, such as product details, notes or descriptions. It is free and has no extra options.
 
 ## Set a column to Text area
 
@@ -14,16 +14,23 @@ The **Text area** column type holds longer text over several lines, such as prod
 3. In the **Basic** tab, set **Type** to **Text area**.
 4. Click **Add column** or **Save column**.
 
-![Column type list](/images/field-types/text-area/1.-data-types.webp)
+![Column dialog with Type set to Text area](/images/field-types/text-area/1.-Column-Dialog-With-Type-Set.webp)
 
-![Text area column](/images/field-types/text-area/2.-text-area-3.webp)
+## Enter values
 
-## Add text
+- **In the grid:** click a cell to edit it in a multi-line box. Click away to save.
+- **In the row drawer:** click **Add data**, or the pencil icon on a row. The text box starts 3 lines tall and grows up to 8 lines as you type. Click **Add row** or **Update** to save. See [Working in Table Rows](/working-in-table-rows).
 
-Click a cell in the grid to edit it in a multi-line box, or open the row drawer (**Add data** or the pencil icon on a row), where the field grows as you type. See [Working in Table Rows](/working-in-table-rows).
+## How it looks on your site
 
-Text area cells accept simple HTML too, the same way as the [Single line text field](/single-line-text-field).
+Visitors see the text in the cell. The column is shown as text, not as an HTML field, so use the [HTML field](/html-field) type if you need paragraphs, lists or links. Simple HTML in a text area cell works the same way as in the [Single line text field](/single-line-text-field).
 
-Click **Preview** in the table header to see the result.
-
-![Text area in a table](/images/field-types/text-area/3.-Text-Area.webp)
+<!-- TODO(screenshot): text-area-2
+  screen: Tables › table › Preview
+  table: Course Catalog
+  state: A text area column with a long description
+  highlight: -
+  view: frontend
+  alt: Table showing a text area column on the front end
+  blocked: no demo table has a text area column with a long description
+-->
