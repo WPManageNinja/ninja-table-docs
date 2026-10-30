@@ -11,14 +11,7 @@ The **search box** above a table lets visitors type a word and see only the rows
 2. Click the **Appearance** tab, then the **Features** tab in the settings panel.
 3. Open **Search**.
 
-<!-- TODO(screenshot): add-or-remove-search-or-filter-functionality-1
-  screen: Tables › Employee Directory › Appearance › Features › Search
-  table: Employee Directory
-  state: Search section open with the heading switch on
-  highlight: Search heading switch
-  view: admin
-  alt: Search section with the text fields, Look options and the Custom Filters link
--->
+![Search section with the text fields, Look options and the Custom Filters link](/images/styling-design/remove-search-filter/1.-Search-Section-With-The-Text-Fields.webp)
 
 The switch in the **Search** heading turns the search box on or off.
 

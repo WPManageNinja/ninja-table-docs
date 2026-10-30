@@ -11,14 +11,7 @@ description: "Keep a table's header row and first column in view while visitors 
 2. Click the **Appearance** tab, then the **Features** tab in the settings panel.
 3. Open **Sticky Header & Column**. The section has a Pro badge, and the switches inside it are locked on the free version.
 
-<!-- TODO(screenshot): other-design-settings-1
-  screen: Tables › Product Price List › Appearance › Features › Sticky Header & Column
-  table: Product Price List
-  state: Section open with Sticky Header turned on and Top Offset visible
-  highlight: Sticky Header
-  view: admin
-  alt: Sticky Header & Column section with Sticky Header, Top Offset and Sticky First Column
--->
+![Sticky Header & Column section with Sticky Header, Top Offset and Sticky First Column](/images/styling-design/other-design-settings/1.-Sticky-Header-Column-Section-With-Sticky.webp)
 
 ## Settings
 

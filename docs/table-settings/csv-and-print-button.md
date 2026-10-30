@@ -16,14 +16,7 @@ This page is about buttons for your visitors. To export a table yourself from th
 3. Open **Export & Print**. On the free version it shows a lock box: "Export and print buttons are a Pro feature."
 4. Turn on the switch of each button you want: **CSV**, **Excel** and **Print**. All three are off by default.
 
-<!-- TODO(screenshot): csv-and-print-button-1
-  screen: Tables › Employee Directory › Appearance › Features › Export & Print
-  table: Employee Directory
-  state: Export & Print open with the CSV and Print switches on
-  highlight: CSV switch
-  view: admin
-  alt: Export & Print section with a switch for each button and the Position and Alignment options
--->
+![Export & Print section with a switch for each button and the Position and Alignment options](/images/table-settings/csv-print-button/1.-Export-Print-Section-With-A-Switch.webp)
 
 Each button you turn on opens its own options:
 
@@ -47,14 +40,7 @@ Add a header and footer to the printed pages. Switch between **Print Screen Head
 - **Header In Each Page** / **Footer In Each Page**: **Yes** repeats it on every printed page; **No** (default) prints it once.
 - **Description For Header** / **Description For Footer**: the text, written in a visual editor, so you can add a logo, a title or a date.
 
-<!-- TODO(screenshot): csv-and-print-button-2
-  screen: Tables › Employee Directory › Appearance › Features › Export & Print › Print
-  table: Employee Directory
-  state: Print card open on Print Screen Header with text in the editor
-  highlight: Print Screen Header
-  view: admin
-  alt: Print button options with the header and footer editor
--->
+![Print button options with the header and footer editor](/images/table-settings/csv-print-button/2.-Print-Button-Options-With-The-Header.webp)
 
 ## Where the buttons appear
 
@@ -70,4 +56,5 @@ Click **Save** to keep your changes. The buttons are saved with the rest of the 
   highlight: -
   view: frontend
   alt: A table on the site with export and print buttons
+  blocked: buttons are off on the demo table and enabling them needs Save, which is not allowed on demo tables
 -->

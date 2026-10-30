@@ -12,14 +12,7 @@ There is no "use as default" button inside a table's Appearance tab. Defaults ar
 1. Click the **gear** icon in the top bar, then **Settings**.
 2. Open **Global appearance**. The card is titled **Global appearance Settings**.
 
-<!-- TODO(screenshot): use-design-as-default-1
-  screen: Settings › Global appearance
-  table: -
-  state: Global appearance card with all five groups visible
-  highlight: -
-  view: admin
-  alt: Global appearance settings with color, library, font, show and feature groups
--->
+![Global appearance settings with color, library, font, show and feature groups](/images/styling-design/use-design-as-default/1.-Global-Appearance-Settings-With-Color-Library.webp)
 
 ## Default Table Color
 

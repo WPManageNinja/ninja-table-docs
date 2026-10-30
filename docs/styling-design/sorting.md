@@ -11,14 +11,7 @@ description: "Let visitors sort a table by clicking a column heading, and set th
 2. Click the **Appearance** tab, then the **Features** tab in the settings panel.
 3. Open **Sorting**.
 
-<!-- TODO(screenshot): sorting-1
-  screen: Tables › Employee Directory › Appearance › Features › Sorting
-  table: Employee Directory
-  state: Sorting section open, Default Order set to By Column
-  highlight: Default Order
-  view: admin
-  alt: Sorting section with Default Order, Column and Direction
--->
+![Sorting section with Default Order, Column and Direction](/images/styling-design/sorting/1.-Sorting-Section-With-Default-Order-Column.webp)
 
 ## Let visitors sort
 
