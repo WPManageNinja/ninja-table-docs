@@ -1,11 +1,23 @@
 ---
 title: "How to Get Support"
-description: "How to open a Ninja Tables support ticket from the Help page, and what to include so the team can solve your problem quickly."
+description: "Find help in Ninja Tables from the Help page, open a support ticket, and know what to include so the team can solve your problem quickly."
 ---
 
 # How to Get Support
 
-If the documentation doesn't answer your question, the WPManageNinja support team can help with the plugin and with your own tables. This page shows where to open a ticket and what to include in it.
+The **Help** page in Ninja Tables puts the documentation, the support team and the community in one place. If the documentation doesn't answer your question, the WPManageNinja support team can help with the plugin and with your own tables. This page shows what the Help page contains, where to open a ticket and what to include.
+
+## The Help page
+
+Click **Help** in the top bar. The page has these parts:
+
+- **Documentation**: click **Browse all docs** for the docs home, or a card to jump to a section: **Getting started**, **Creating tables**, **Data sources**, **Table configuration**, **Styling and design**, **Drag and drop elements**, **Table management**, **Import And Export**, **WordPress integration**, **Ninja Charts** and **Changelog**. Each opens in a new tab.
+- **Need expert support**: open a ticket, or read what to include (below).
+- **Show your love**: **Leave a review** opens the plugin's page on WordPress.org.
+- **Get in touch**: links to Ninja Tables on Facebook, YouTube, LinkedIn and X.
+- **Other plugins from WPManageNinja**: free plugins from the same team, such as Fluent Forms, FluentCRM, FluentCart, FluentSMTP and Fluent Support. Click one to open its page.
+
+![Ninja Tables Help page with the Documentation and Need expert support cards](/images/getting-started/get-support/1.-Ninja-Tables-Help-Page.webp)
 
 ## Open a support ticket
 
@@ -32,7 +44,3 @@ You'll find your plugin versions under **Plugins** › **Installed Plugins**, an
 ::: tip
 If a table on your site shows old data, try [clearing the caches](/clear-table-cache) first. If you use Pro and haven't activated your license yet, see [Activate your Pro license](/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key).
 :::
-
-## Other places to get help
-
-The **Help** page also links to the documentation by topic, and to the Ninja Tables community on Facebook, X, LinkedIn and YouTube.
