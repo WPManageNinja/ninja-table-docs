@@ -23,6 +23,17 @@ Every dynamic column has the usual column fields (**Column name**, **Column key*
 
 Click **Add column** to save it. To change a dynamic column later, open the column header › **Column settings** on the **Table Rows** tab.
 
+<!-- TODO(screenshot): dynamic-columns-reference-1
+  screen: Tables › DOCTEST posts › Table Rows › Edit query › Add new column
+  table: a WP Posts table
+  state: Add new column section with the Field type list open, showing Post Meta, Shortcode / Computed Value or HTML and Featured Image
+  highlight: Field type list
+  view: admin
+  alt: Add new column section with the Field type list open
+-->
+
+The **Field type** list only shows the types the table's source supports, so a WP Posts table never offers Product Data. Dynamic columns are a Pro feature on WP Posts and WooCommerce tables.
+
 ## Field types by source
 
 | Field type | WP Posts | WooCommerce products & reviews | FluentCart |
@@ -43,6 +54,8 @@ Shows the value of an ACF field. This type only appears in the list when the Adv
 
 - **Field value**: the ACF field's **Name** (selector), for example `book_author`. It is shown in the **Name** column of your ACF field group.
 
+A field that holds a list is shown as comma-separated text, and a list of groups is separated by semicolons. Values are cleaned the way WordPress cleans post content, so basic HTML such as links and bold text is kept and scripts are removed.
+
 See [ACF field integration](/acf-field-integration-with-ninja-tables-column).
 
 ## Post Meta
@@ -50,6 +63,8 @@ See [ACF field integration](/acf-field-integration-with-ninja-tables-column).
 Shows any custom field (post meta) stored with the post or product.
 
 - **Field value**: the meta key, for example `price_note`.
+
+Basic HTML in the value is kept and scripts are removed. A post without that key shows an empty cell.
 
 This also works for fields made with Meta Box, JetEngine, Toolset, Pods and similar plugins, because they store their values as post meta. See [Post meta field](/post-meta-field).
 
@@ -69,6 +84,8 @@ Placeholders you can use:
 | `{postmeta.META_KEY}` | A post meta value |
 | `{acf.FIELD_NAME}` | An ACF field value (when ACF is active) |
 | `[yourshortcode param="{post.ID}"]` | A shortcode, with placeholders as its parameters |
+
+The result runs through WordPress, so any shortcode in the template is executed. Placeholder values are cleaned before they are put in the template, and values placed inside shortcode parameters are escaped for attributes.
 
 On **FluentCart** tables, a placeholder only works when it is the whole field value, for example just `{post.post_title}` or `{postmeta.my_key}`. To mix text, HTML and shortcodes, write them without placeholders.
 
@@ -101,7 +118,10 @@ Store data for each product. The **Field value** list depends on the store:
 | Product SKU | ✅ | – |
 | Product Average Rating | ✅ | – |
 
-- **Buy Now Button** adds a **Buy now button text** field.
+- **Buy Now Button** adds a **Buy now button text** field. Its default text is the product's own add-to-cart text. The cell depends on the product, see [WooCommerce integration](/woocommerce-integration#the-buy-column).
+- **Product Quantity input field** shows WooCommerce's quantity box with plus and minus buttons, and follows the product's minimum, maximum and step. It is empty for external and grouped products, for products that can't be bought, and for out-of-stock products.
+- **Product Stock Status** shows In Stock, Out of Stock or On Backorder.
+- **Product Price** shows the price the way WooCommerce shows it, so sale prices and price ranges look the same as in your shop.
 - **Product Average Rating** adds **Filled star color**, **Empty star color**, **No review text** and **Show rating value**. See [Product average rating column](/woocommerce-product-average-rating-column).
 
 ## Post Data
@@ -110,7 +130,7 @@ Standard post fields of the product: Post Author, Post Date, Product Title, Prod
 
 ## Product Taxonomy
 
-Shows the product's terms in a taxonomy, such as categories, tags, product type, shipping class or brand. The **Field value** list shows the taxonomies registered for products on your site.
+Shows the product's terms in a taxonomy, such as categories, tags, product type, shipping class or brand. The **Field value** list shows the taxonomies registered for products on your site, named after their internal names, for example Product cat, Product tag, Product type, Product shipping class and Product brand.
 
 Options:
 

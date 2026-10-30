@@ -20,19 +20,27 @@ Advanced Custom Fields is a WordPress plugin that adds your own fields to posts,
 3. Click **Add Field** and enter a **Field Label** and a **Field Name**. Note the field name: you'll need it in Ninja Tables.
 4. Set where the field group shows (for example, on Posts) and publish it.
 
-![ACF custom fields](/images/wordpress-integration/acf-field-integration-ninja/1.-ACF-custom-fields.webp)
-
-![ACF field integration field label](/images/wordpress-integration/acf-field-integration-ninja/2.-ACF-field-integration-3.webp)
-
-![ACF demo](/images/wordpress-integration/acf-field-integration-ninja/3.-ACF-field-integration-4.webp)
-
-![ACF new field group](/images/wordpress-integration/acf-field-integration-ninja/4.-ACF-field-integration-5.webp)
+<!-- TODO(screenshot): acf-field-integration-with-ninja-tables-column-1
+  screen: ACF › Field Groups › Edit field group
+  table: -
+  state: An ACF field group with one text field whose Field Name is visible and the location rule set to Post
+  highlight: Field Name
+  view: admin
+  alt: ACF field group with a field and its Field Name
+-->
 
 ## Step 2: Fill in the field on your posts
 
 Open a post. The ACF field appears below the content. Enter a value and click **Update**.
 
-![Update Post](/images/wordpress-integration/acf-field-integration-ninja/5.-ACF-field-integration-7.webp)
+<!-- TODO(screenshot): acf-field-integration-with-ninja-tables-column-2
+  screen: Posts › Edit post
+  table: -
+  state: A post with the ACF field below the content and a value typed in
+  highlight: ACF field
+  view: admin
+  alt: Post editor with an ACF field filled in
+-->
 
 ## Step 3: Add the ACF column to your table
 
@@ -43,15 +51,25 @@ Open a post. The ACF field appears below the content. Enter a value and click **
 5. In **Field value**, type the ACF field's name exactly as it appears in the **Name** column of your field group.
 6. Click **Add column**.
 
-![ACF add new column](/images/wordpress-integration/acf-field-integration-ninja/6.-ACF-field-integration-9.webp)
-
-![Advanced Custom Fields](/images/wordpress-integration/acf-field-integration-ninja/7.-ACF-field-integration-10.webp)
-
-![ACF new custom column](/images/wordpress-integration/acf-field-integration-ninja/8.-ACF-field-integration-11.webp)
+<!-- TODO(screenshot): acf-field-integration-with-ninja-tables-column-3
+  screen: Tables › DOCTEST posts › Table Rows › Edit query › Add new column
+  table: a WP Posts table
+  state: Add new column section with Field type set to Advanced Custom Fields (ACF) and the field name in Field value
+  highlight: Field value
+  view: admin
+  alt: Add new column section with the ACF field type and an ACF field name
+-->
 
 Click **Preview** in the editor header. The new column shows each post's ACF value.
 
-![Preview](/images/wordpress-integration/acf-field-integration-ninja/9.-ACF-field-integration-12.webp)
+<!-- TODO(screenshot): acf-field-integration-with-ninja-tables-column-4
+  screen: Tables › DOCTEST posts › Preview
+  table: a WP Posts table
+  state: Front-end table with an ACF column filled for each post
+  highlight: -
+  view: frontend
+  alt: Posts table on the page with an ACF column
+-->
 
 ## Use ACF values inside other content
 
@@ -62,5 +80,8 @@ To put an ACF value inside a link, next to other text or in a shortcode, use the
 - If **Advanced Custom Fields (ACF)** is missing from the **Field type** list, check that the ACF plugin is active.
 - ACF fields can also be read with the **Post Meta** field type, using the field name as the meta key. The ACF field type is better for fields that hold choices, images or other structured values, because it reads them the way ACF formats them.
 - ACF isn't offered on FluentCart tables. Use **Post Meta** there.
+- A field with several values, such as a checkbox or select with multiple choices, shows as comma-separated text. A repeating group shows one group after another, separated by semicolons.
+- ACF values keep basic HTML (links, bold text) and lose scripts.
+- On a WooCommerce reviews table, the ACF field is read from the product that was reviewed.
 
 For other custom field plugins, see [Post meta field](/post-meta-field). For every column type, see the [Dynamic columns reference](/dynamic-columns-reference).

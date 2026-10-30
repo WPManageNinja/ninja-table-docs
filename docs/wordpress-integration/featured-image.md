@@ -17,32 +17,38 @@ The **Featured Image** field type shows each post's or product's featured image 
 6. Choose the link options (see below).
 7. Click **Add column**.
 
-![Dynamic Post Data Settings](/images/wordpress-integration/featured-image/1.-featured-image-3.webp)
+<!-- TODO(screenshot): featured-image-1
+  screen: Tables › DOCTEST posts › Table Rows › Edit query › Add new column
+  table: a WP Posts table
+  state: Add new column section with Field type set to Featured Image, an image size chosen and Link to post permalink ticked
+  highlight: Field value
+  view: admin
+  alt: Add new column section with the Featured Image field type and its link option
+-->
 
 ## Image sizes
 
 The **Field value** list shows the image sizes on your site. WordPress includes thumbnail, medium, medium_large, large, 1536x1536 and 2048x2048. Your theme and plugins, such as WooCommerce, can add more. A small size, such as thumbnail, keeps the table light and fast.
 
-![Field Value](/images/wordpress-integration/featured-image/2.-featured-image-4.webp)
-
 ## Link options
 
 The options depend on the table:
 
-- **WP Posts tables:** tick **Link** › **Link to post permalink** to make the image open the post. Tick **Open link to new tab** to open it in a new tab.
+- **WP Posts tables:** tick **Link** › **Link to post permalink** to make the image open the post. Tick **Open link to new tab** to open it in a new tab (this appears once **Link** is ticked).
 - **WooCommerce and FluentCart tables:** choose **Make image as lightbox** (the image opens larger on top of the page), **Link to product page** or **None**. Tick **Open link in new tab** if you link to the product page.
-
-![Link to post Permalink](/images/wordpress-integration/featured-image/3.-featured-image-5.webp)
 
 ## Check the result
 
 Click **Preview** in the editor header. Each row shows its post's featured image. Posts without a featured image show an empty cell. Set a featured image on the post in WordPress and it appears in the table.
 
-![Example](/images/wordpress-integration/featured-image/4.-featured-image-6.webp)
-
-![post featured image](/images/wordpress-integration/featured-image/5.-featured-image-7.webp)
-
-![post featured image in posts table](/images/wordpress-integration/featured-image/6.-featured-image-8.webp)
+<!-- TODO(screenshot): featured-image-2
+  screen: Tables › DOCTEST posts › Preview
+  table: a WP Posts table
+  state: Front-end table with a Featured Image column showing a thumbnail for each post
+  highlight: -
+  view: frontend
+  alt: Posts table on the page with a Featured Image column
+-->
 
 ## Use the image URL in your own HTML
 
