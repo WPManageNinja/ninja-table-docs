@@ -28,11 +28,14 @@
       "eval": "const ok=['Hosting Plans Comparison','Product Price List','Employee Directory','World Countries','Monthly Sales by Region 2026','Conference Schedule','Course Catalog','Order History'];document.querySelectorAll('tbody tr').forEach(r=>{if(!ok.some(t=>r.innerText.includes(t)))r.style.display='none'});"
     },
     {
+      "eval": "const rows=[...document.querySelectorAll('tbody tr')].filter(r=>r.style.display!=='none');const a=document.querySelector('th:nth-of-type(1)');const ths=[...document.querySelectorAll('thead th')];const f=ths.find(t=>/Source/i.test(t.innerText));const l=ths.find(t=>/Shortcode/i.test(t.innerText));const r1=f.getBoundingClientRect(),r2=l.getBoundingClientRect(),rb=rows[2].getBoundingClientRect();const d=document.createElement('div');d.id='nt-hl';d.style.cssText=`position:fixed;pointer-events:none;left:${r1.left}px;top:${r1.top}px;width:${r2.right-r1.left}px;height:${rb.bottom-r1.top}px`;document.body.appendChild(d);"
+    },
+    {
       "shot": {
         "name": "3.-Tables-List-Showing-The-Source-Engine",
         "clip": "app",
         "highlights": [
-          "tr:has-text(\"Hosting Plans Comparison\") .nt-tables__source"
+          "#nt-hl"
         ]
       }
     },

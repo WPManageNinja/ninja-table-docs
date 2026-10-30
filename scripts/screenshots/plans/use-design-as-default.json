@@ -3,7 +3,7 @@
   "outDir": "public/images/styling-design/use-design-as-default",
   "viewport": {
     "width": 1440,
-    "height": 900
+    "height": 1900
   },
   "steps": [
     {
@@ -15,8 +15,43 @@
     {
       "shot": {
         "name": "1.-Global-Appearance-Settings-With-Color-Library",
-        "clip": "app",
-        "crop": "auto"
+        "clip": {
+          "x": 160,
+          "y": 170,
+          "width": 1280,
+          "height": 870
+        },
+        "highlights": [
+          ".nt-settings-groups > section:nth-of-type(2)"
+        ]
+      }
+    },
+    {
+      "shot": {
+        "name": "2.-Default-Font-And-Show-Settings",
+        "clip": {
+          "x": 430,
+          "y": 1000,
+          "width": 1010,
+          "height": 410
+        },
+        "highlights": [
+          ".nt-settings-groups > section:nth-of-type(3)"
+        ]
+      }
+    },
+    {
+      "shot": {
+        "name": "3.-Default-Features-And-Save-Settings",
+        "clip": {
+          "x": 430,
+          "y": 1396,
+          "width": 1010,
+          "height": 400
+        },
+        "highlights": [
+          ".nt-settings-groups > section:nth-of-type(5)"
+        ]
       }
     }
   ]

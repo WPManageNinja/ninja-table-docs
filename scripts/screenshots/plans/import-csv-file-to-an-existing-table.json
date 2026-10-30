@@ -3,7 +3,7 @@
   "outDir": "public/images/import-export/import-csv-file-existing",
   "viewport": {
     "width": 1440,
-    "height": 1400
+    "height": 900
   },
   "steps": [
     {
@@ -30,10 +30,7 @@
     {
       "shot": {
         "name": "1.-Import-Tab-With-The-Upload-Area",
-        "clip": {
-          "element": ".nt-modal",
-          "pad": 8
-        },
+        "clip": "app",
         "arrows": [
           {
             "target": ".nt-modal :text(\"Download sample CSV\")",
@@ -52,10 +49,7 @@
     {
       "shot": {
         "name": "2.-Import-Tab-With-A-File-Chosen",
-        "clip": {
-          "element": ".nt-modal",
-          "pad": 8
-        },
+        "clip": "app",
         "highlights": [
           {
             "role": "button",

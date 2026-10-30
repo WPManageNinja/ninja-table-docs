@@ -7,18 +7,18 @@ description: "Add up values across a row with a Transform value formula, or tota
 
 You can calculate numbers in a Ninja Tables table in two ways. A **row calculation** adds up values across each row and shows the result in its own column. A **column calculation** adds up a whole column and shows the total under it. Both are Pro.
 
-In this example, the table has three **Numeric value** columns: Number One, Number Two and Number Three.
+In this example, a sales table has three **Numeric value** columns, **Q1**, **Q2** and **Q3**, with the column keys `q1`, `q2` and `q3`.
 
 ## Row calculation (Pro)
 
-A fourth column, **Result**, shows the sum of the three numbers in each row. This uses [Transform value](/transform-value) with an Excel formula.
+A fourth column, **Total**, shows the sum of the three quarters in each row. This uses [Transform value](/transform-value) with an Excel formula.
 
-1. Go to **Ninja Tables** › **Tables** › your table › **Table Rows**. Click the gear icon on the **Result** column and choose **Column settings**.
+1. Go to **Ninja Tables** › **Tables** › your table › **Table Rows**. Click the gear icon on the **Total** column and choose **Column settings**.
 2. Open the **Transform** tab and turn on **Excel formula support**. This switch applies to every column in the table and saves immediately.
 3. In the Transform value box, write a formula that starts with `=` and has the reference shortcode of each column. Click a column in the **Reference values** list to insert its shortcode. The final formula looks like this:
 
 ```
-=SUM({{row.numberone}}, {{row.numbertwo}}, {{row.numberthree}})
+=SUM({{row.q1}}, {{row.q2}}, {{row.q3}})
 ```
 
 4. Click **Save column**.
@@ -33,7 +33,7 @@ A fourth column, **Result**, shows the sum of the three numbers in each row. Thi
   alt: Transform tab with a SUM formula
 -->
 
-The **Result** column now shows the sum of each row, in the grid and on your site.
+The **Total** column now shows the sum of each row, in the grid and on your site.
 
 <!-- TODO(screenshot): row-column-data-calculation-2
   blocked: needs a saved formula column and a real demo page; Monthly Sales by Region 2026 has no demo page
@@ -42,7 +42,7 @@ The **Result** column now shows the sum of each row, in the grid and on your sit
   state: Total column showing the row sums
   highlight: -
   view: frontend
-  alt: Result column showing the sum of each row
+  alt: Total column showing the sum of each row
 -->
 
 Other functions work the same way, such as `AVERAGE`, `ROUND` and `IF`. Use `NUMVAL` to turn text such as `$1,200.50` into a number first. See [Transform value](/transform-value) for the formula rules and the list of functions.

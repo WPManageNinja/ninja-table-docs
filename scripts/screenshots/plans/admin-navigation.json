@@ -13,7 +13,7 @@
       "wait": 1200
     },
     {
-      "css": "#adminmenumain,#adminmenuback,#adminmenuwrap,#adminmenu{display:block!important;visibility:visible!important} #adminmenu > li:not(.wp-has-current-submenu){display:none!important} #adminmenu .wp-submenu{display:block!important}"
+      "css": "#adminmenumain,#adminmenuback,#adminmenuwrap,#adminmenu{display:block!important;visibility:visible!important} #adminmenu .wp-submenu{display:block!important}"
     },
     {
       "shot": {
@@ -21,13 +21,16 @@
         "clip": {
           "x": 0,
           "y": 32,
-          "width": 175,
-          "height": 255
+          "width": 700,
+          "height": 600
         },
         "highlights": [
-          "#adminmenu .wp-submenu li a:text-is(\"Tables\")"
+          "#adminmenu li.wp-has-current-submenu .wp-submenu"
         ]
       }
+    },
+    {
+      "css": ".nt-topbar{margin:10px 14px 0!important}"
     },
     {
       "shot": {
@@ -36,10 +39,10 @@
           "x": 160,
           "y": 32,
           "width": 1280,
-          "height": 60
+          "height": 360
         },
         "highlights": [
-          ".nt-topbar .nt-plan, .nt-topbar [class*=plan]"
+          ".nt-topbar"
         ]
       }
     },

@@ -12,7 +12,7 @@ There is no "use as default" button inside a table's Appearance tab. Defaults ar
 1. Click the **gear** icon in the top bar, then **Settings**.
 2. Open **Global appearance**. The card is titled **Global appearance Settings**.
 
-![Global appearance settings with color, library, font, show and feature groups](/images/styling-design/use-design-as-default/1.-Global-Appearance-Settings-With-Color-Library.webp)
+![Global appearance settings with the default table color and styling library group](/images/styling-design/use-design-as-default/1.-Global-Appearance-Settings-With-Color-Library.webp)
 
 ## Default Table Color
 
@@ -34,12 +34,16 @@ Pick the color scheme new tables start with. The schemes are the same as in [Tab
 - **Table description**: off by default.
 - **Hide all borders**: off by default.
 
+![Default font family, font size and show options in Global appearance](/images/styling-design/use-design-as-default/2.-Default-Font-And-Show-Settings.webp)
+
 ## Default Features
 
 - **Search box**: on by default.
 - **Sorting**: on by default.
 - **Default Pagination settings**: **Pages** (default) or **Show all rows**.
 - **Rows per page**: shown when **Pages** is chosen. The default is 20.
+
+![Default features group with search, sorting and rows per page, and the Save settings button](/images/styling-design/use-design-as-default/3.-Default-Features-And-Save-Settings.webp)
 
 Click **Save settings** to keep your changes. **Cancel** drops edits you have not saved, and an **Unsaved changes** badge shows while there are any.
 

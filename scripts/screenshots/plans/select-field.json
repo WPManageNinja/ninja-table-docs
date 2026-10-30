@@ -67,12 +67,18 @@
       "eval": "document.querySelectorAll('.ninja_table_wrapper tbody tr:nth-child(n+9)').forEach(r=>r.style.display='none');document.querySelectorAll('.ninja_table_wrapper tr.footable-paging, .ninja_table_wrapper .dataTables_paginate').forEach(r=>r.style.display='none')"
     },
     {
+      "eval": "const ths=[...document.querySelectorAll('.ninja_table_wrapper thead th')];const i=ths.findIndex(t=>/Level/i.test(t.innerText));const th=ths[i];const rows=[...document.querySelectorAll('.ninja_table_wrapper tbody tr')].filter(r=>r.style.display!=='none');const a=th.getBoundingClientRect(),b=rows[rows.length-1].children[i].getBoundingClientRect();const d=document.createElement('div');d.id='nt-hl';d.style.cssText=`position:fixed;pointer-events:none;left:${a.left}px;top:${a.top}px;width:${a.width}px;height:${b.bottom-a.top}px`;document.body.appendChild(d);"
+    },
+    {
       "shot": {
         "name": "3.-Table-With-A-Select-Field-Column",
         "clip": {
           "element": ".ninja_table_wrapper",
           "pad": 6
-        }
+        },
+        "highlights": [
+          "#nt-hl"
+        ]
       }
     }
   ]
