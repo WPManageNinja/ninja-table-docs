@@ -77,9 +77,6 @@
       "eval": "document.activeElement.blur(); document.body.click()"
     },
     {
-      "click": ".el-select-dropdown__item:visible:has-text(\"Select Dropdown\")"
-    },
-    {
       "wait": 400
     },
     {
