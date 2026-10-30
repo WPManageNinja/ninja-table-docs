@@ -49,7 +49,7 @@ Use it as `[table_total id="123" column="amount"]`.
 
 ## Build a computed table from another table
 
-You can fill a table's rows from your own code with the `ninja_tables_get_public_data` filter. This example builds a sports league standings table from a table of match results, so standings never have to be typed by hand.
+You can fill a table's rows from your own code with the `ninja_tables_get_public_data` filter, which runs for tables drawn by the **FooTable** engine. Set the standings table to FooTable in **Table Configuration** (see [Choose a Table Engine](/choose-table-engine)). This example builds a sports league standings table from a table of match results, so standings never have to be typed by hand.
 
 1. Create a **results** table (for example ID `123`) with the column keys `home`, `away`, `home_goals` and `away_goals`.
 2. Create a **standings** table (for example ID `124`) with the column keys `pos`, `team`, `played` and `points`. Leave it empty.
@@ -153,6 +153,31 @@ add_action('my_nt_csv_export', function () {
     fclose($fh);
 });
 ```
+
+## Let shortcodes run in a connected source
+
+Shortcodes in cells only run for tables whose rows are stored in Ninja Tables. If you trust a data source, add it to the list. Use the source name your table is built on (`fluent-form` for Fluent Forms, for example):
+
+```php
+add_filter('ninja_tables_shortcode_trusted_providers', function ($providers) {
+    $providers[] = 'wp-posts';
+    return $providers;
+});
+```
+
+Only do this when you control everything the source can contain. Entries from a public form can hold text that visitors typed.
+
+## Run code in the browser when a table is ready
+
+For code that runs in the page rather than on the server, listen for a table's jQuery events. This adds a class to every table on the page once it has loaded:
+
+```js
+jQuery(document).on('ninja_table_loaded', function (event, $table, tableConfig) {
+    $table.closest('.ninja_table_wrapper').addClass('is-ready');
+});
+```
+
+See [JavaScript Events](/javascript-events) for every event and what it passes.
 
 ## More hooks
 
