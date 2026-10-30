@@ -1,21 +1,15 @@
 ---
 title: "Introduction – Getting Started with Ninja Tables"
-description: "What Ninja Tables does, how its admin screens are laid out, and the ways you can build, style and publish a responsive table in WordPress."
+description: "What Ninja Tables does, how its admin is laid out, and the ways you can build, style and publish a responsive table in WordPress."
 ---
 
 # Introduction – Getting Started with Ninja Tables
 
 **Ninja Tables** is a WordPress table builder for creating responsive, searchable tables without writing code. Type rows in by hand, upload a spreadsheet, design a layout cell by cell, or connect live data from WooCommerce, Google Sheets, your posts and more. To check whether it fits your project, see the [feature page](https://ninjatables.com/features/).
 
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/9XIbrKvJRho" title="Ninja Tables Overview Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 ## Find your way around
 
-After you [install and activate the plugin](/how-to-install-and-activate-ninja-tables-plugin), open **Ninja Tables** in the WordPress admin menu. Until you create a table, you'll see the **Welcome to Ninja Tables** screen with two buttons, **Create your first table** and **Import table**, plus links to the documentation, templates and demo.
-
-![Welcome to Ninja Tables UI](/images/getting-started/ninja-tables-introduction/1.-Welcome-to-Ninja-Tables-UI.webp)
+After you [install and activate the plugin](/how-to-install-and-activate-ninja-tables-plugin), open **Ninja Tables** in the WordPress admin menu. On a site with no tables, you start in a short guided setup that helps you create your first one; see [Guided setup and quick start](/onboarding-setup-guide). Once you have tables, Ninja Tables opens on the [Tables list](/tables-list).
 
 Every Ninja Tables screen shares the same top bar:
 
@@ -25,9 +19,11 @@ Every Ninja Tables screen shares the same top bar:
 - **Charts**: turn table data into charts with the free [Ninja Charts](/getting-started-with-ninja-charts-free-wordpress-chart-plugin) plugin.
 - **Help**: documentation, support and community links.
 - The **gear** icon opens [Settings](/tools-and-settings) (General, Global appearance, Permissions, Performance and License).
-- The sun icon switches the admin between light and dark mode.
+- The theme icon switches the admin between **Light**, **Dark** and **System** mode.
 
-Press **⌘K** (Mac) or **Ctrl+K** (Windows) anywhere in Ninja Tables to open the command palette. Type to jump to a table or a settings screen.
+Press **⌘K** (Mac) or **Ctrl+K** (Windows) to search your tables and settings from anywhere. See [Find your way around](/admin-navigation) for the top bar, the search, and a map of where older screens moved.
+
+![Ninja Tables Tables list with the top bar](/images/getting-started/ninja-tables-introduction/1.-Ninja-Tables-Tables-List.webp)
 
 ## Ways to create a table
 
@@ -50,9 +46,9 @@ The **Create a table** screen groups its options into two sections. Each tile op
 - **Remote CSV / JSON** (Pro): rows from a CSV file at a URL.
 - **Custom SQL query** (Pro): rows from a database query.
 
-The WooCommerce and FluentCart tiles only appear when those plugins are active.
+The WooCommerce tiles only appear when WooCommerce is active, and the FluentCart tile only when FluentCart is active.
 
-![New UI Table creation option](/images/getting-started/ninja-tables-introduction/2.-Table-creation-option-UI.webp)
+![Create a table screen with Start from scratch and Connect live data tiles](/images/getting-started/ninja-tables-introduction/2.-Create-A-Table-Screen-With-Start.webp)
 
 When you create a table, you also choose its **engine**: **FooTable** (the usual choice) or **DataTables**, which holds up better once a table runs to thousands of rows. Read [FooTable or DataTables: choose an engine](/choose-table-engine) before you build a large table, because tables that store their own rows keep the engine they were created with.
 
@@ -67,56 +63,51 @@ Open any table to edit it. The table name, its ID and its shortcode sit at the t
 - **Frontend editing** (Pro): let logged-in users add, edit and delete rows from the page.
 - **Custom CSS/JS**: add your own CSS, or JavaScript (Pro).
 
+![Table editor with the six tabs along the top](/images/getting-started/ninja-tables-introduction/3.-Table-Editor-With-The-Six-Tabs.webp)
+
 ## Drag & Drop table builder
 
 Build tables visually: add text, buttons, images, ratings, lists and more into any cell, merge and split cells, and preview the result on desktop, tablet and mobile. See [Create your first Drag & Drop table](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
 
-![Ninja Tables drag and drop](/images/getting-started/ninja-tables-introduction/3.-Screenshot-2023-07-26-122526.webp)
+<!-- TODO(screenshot): ninja-tables-introduction-4
+  screen: Tables › a Drag & Drop table › builder
+  table: a Drag & Drop pricing table
+  state: Builder open with elements placed in cells
+  highlight: -
+  view: admin
+  alt: Drag & Drop builder with a pricing table
+  blocked: site has only DOCTEST Drag & Drop tables, no demo pricing builder table
+-->
 
 ## Ready-made table templates
 
-The Drag & Drop builder includes ready-made templates for pricing tables, comparison tables and more. You can pick one when you create a Drag & Drop table.
-
-![Table Templates](/images/getting-started/ninja-tables-introduction/4.-Screenshot-7.webp)
+The Drag & Drop builder includes ready-made templates for pricing tables, comparison tables, employee tables and schedules. Pick one when you create a Drag & Drop table. Some templates are Pro; see [Drag & Drop templates](/drag-drop-templates).
 
 You can also download free templates from the [Ninja Tables template collection](https://ninjatables.com/free-table-templates/). Each one comes as a JSON file that you [import](/import-ninja-tables-json), customize and embed. The instructions are included with each template.
-
-![template categories](/images/getting-started/ninja-tables-introduction/8.-template-categories.webp)
 
 ## Responsive tables
 
 Every table works on desktops, tablets and phones, and search, sorting, filtering and pagination work on all of them. On small screens you can hide columns, fold them into an expandable row, or [stack each row as a card](/stackable-table).
 
-![Collapsed Table](/images/getting-started/ninja-tables-introduction/5.-Collapsed-Table-1.webp)
-
 ## Design and customization
 
-The **Appearance** tab shows a live preview of your table, which you can switch between Desktop, Tablet and Mobile. Start from a **Quick style** (Minimal, Lined, Striped, Bordered or Compact), then fine-tune it:
+The **Appearance** tab shows a live preview of your table, which you can switch between Desktop, Tablet and Mobile. It has three tabs:
 
-- Title and header row
-- Font family and size
-- Style library (Semantic UI, Bootstrap 4 or Bootstrap 3), borders, stripes and hover effects
-- Preset color schemes, or your own colors (Pro)
-- Search box, sorting and pagination
-- Sticky header and first column (Pro)
-- Mobile layout and row details
-- Export and print buttons (Pro)
+- **Colors**: preset color schemes, or your own colors (Pro).
+- **Style**: title and header, typography (font family and size), and rows and borders, including the style library (Semantic UI, Bootstrap 4 or Bootstrap 3), stripes and hover effects.
+- **Features**: search box, sorting, pagination, sticky header and first column (Pro), responsive breakpoint, stackable table, export and print buttons (Pro), and the row details popup.
 
-When you like a design, you can [use it as the default for new tables](/use-design-as-default). See the [Appearance overview](/table-style-settings) for details.
+To set the starting look for every new table, use **Settings** › **Global appearance**. See the [Appearance overview](/table-style-settings) for details.
 
-![New UI table design tabs](/images/getting-started/ninja-tables-introduction/6.-New-UI-table-design-tabs.webp)
+![Appearance tab with a live preview and the Colors, Style and Features tabs](/images/getting-started/ninja-tables-introduction/5.-Appearance-Tab-With-A-Live-Preview.webp)
 
 ## Fast performance
 
 Tables can load their rows with Ajax right after the page, and their data is cached, so pages stay fast. Large tables can use the DataTables engine, which loads one page of rows at a time from the server. You control engine, rendering and caching per table in [Table Configuration](/table-rendering-settings).
 
-![New UI table rendering](/images/getting-started/ninja-tables-introduction/7.-New-UI-table-rendering.webp)
-
 ## Import and export
 
-Create tables from CSV, Excel (.xlsx), JSON or Ninja Tables JSON files, and [import tables from TablePress](/import-table-from-tablepress-plugin) or Data Tables Generator by Supsystic. Each table can also be exported as CSV, Excel or JSON from **Table Rows** › **Import / export**. See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv) and [Export a table](/export-ninja-tables-csv-json).
-
-![New UI table import tools and settings](/images/getting-started/ninja-tables-introduction/9.-New-UI-table-import-tools-and-settings.webp)
+Create tables from CSV, Excel (.xlsx), JSON or Ninja Tables JSON files, and [import tables from TablePress](/import-table-from-tablepress-plugin) or Data Tables Generator by Supsystic. Each table can also be exported as CSV, Excel or JSON from **Table Rows** › **Import / Export**. See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv) and [Export a table](/export-ninja-tables-csv-json).
 
 ## Integrations
 
@@ -125,10 +116,6 @@ Create tables from CSV, Excel (.xlsx), JSON or Ninja Tables JSON files, and [imp
 - **Google Sheets** (Pro): [show a Google Sheet](/google-sheets-integration) as a table, kept up to date.
 - **Fluent Forms**: [display form entries](/fluent-forms-integration) in a table.
 - **Ninja Charts**: turn table data into [charts and graphs](/create-ninja-charts-with-ninja-tables-data).
-
-![WooCommerce product table](/images/getting-started/ninja-tables-introduction/10.-WooCommerce-product-table-1.webp)
-
-![connect google sheets to ninja tables](/images/getting-started/ninja-tables-introduction/11.-connect-google-sheets-to-ninja-tables.webp)
 
 ## Accessible tables
 
@@ -144,7 +131,7 @@ Every table has a shortcode, such as `[ninja_tables id="123"]`, shown in the Tab
 
 ## Next steps
 
-- [Quick start: your first table](/onboarding-setup-guide)
+- [Guided setup and quick start](/onboarding-setup-guide)
 - [Create your first table](/create-your-first-table)
 - [Free vs Pro](/free-vs-pro)
 - [Glossary](/ninja-tables-glossary)
