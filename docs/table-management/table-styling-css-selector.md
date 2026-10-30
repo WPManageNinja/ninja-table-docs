@@ -7,22 +7,29 @@ description: "Style one table with your own CSS, run custom JavaScript after it 
 
 The **Custom CSS/JS** tab lets you style one table with your own CSS, or run your own JavaScript after it loads, without changing your theme or your other tables. Custom CSS is free; **Custom JS** is a Pro feature. This page also lists the CSS selectors you need.
 
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/pFVKabaY9Tw" title="Custom CSS Styling Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+Drag & Drop tables don't use this tab. They have their own **Custom JS** setting in the builder; see [Drag & Drop Table Settings](/ninja-tables-drag-and-drop-table-settings).
 
 ## Open the Custom CSS/JS tab
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
 2. Click the **Custom CSS/JS** tab.
 
-![Custom CSS settings](/images/table-management/table-styling-css-selector/1.-06.webp)
+<!-- TODO(screenshot): table-styling-css-selector-1
+  screen: Tables › Employee Directory › Custom CSS/JS
+  table: Employee Directory
+  state: CSS pane open with a short rule in the editor, Table targeting card on the right
+  highlight: CSS / JavaScript switch
+  view: admin
+  alt: Custom CSS/JS tab with the CSS editor and the Table targeting card
+-->
+
+The card has a **CSS** and a **JavaScript** switch at the top. The **Save** button at the bottom saves the CSS, the JavaScript and the **Custom CSS class** together, so whichever pane you are on, you will not lose the other.
 
 ### Custom CSS
 
 Write your CSS in the editor and click **Save Custom CSS**. Don't include `<style></style>` tags.
 
-To target only this table, start each rule with the table's selector, shown in the tab (click it to copy):
+To target only this table, start each rule with the table's selector, shown above the editor (click it to copy):
 
 - FooTable tables: `#footable_parent_<ID>`, for example `#footable_parent_353`.
 - DataTables tables: `#ninja_dt_parent_<ID>`.
@@ -43,42 +50,60 @@ $table.on('click', 'tbody tr', function () {
 });
 ```
 
-Broken code can break the table, so test it on a page you can safely reload.
+Broken code can break the table, so test it on a page you can safely reload. Without Ninja Tables Pro, the pane shows an upgrade panel (**Unlock custom JavaScript**) and nothing is saved for JavaScript.
+
+<!-- TODO(screenshot): table-styling-css-selector-2
+  screen: Tables › Employee Directory › Custom CSS/JS › JavaScript
+  table: Employee Directory
+  state: JavaScript pane with the sample click script in the editor
+  highlight: Save Custom JS
+  view: admin
+  alt: JavaScript pane of the Custom CSS/JS tab with a sample script
+-->
 
 ### Table targeting
 
-- **Custom CSS class**: a class added to the table element, so you can style it from your theme. Use letters, numbers, dashes and underscores.
-- **Table selector**: the selector for this table, with a **Copy CSS** button.
+- **Custom CSS class**: a class added to the table so you can style it from your theme. Use letters, numbers, dashes and underscores; other characters are removed as you type. On FooTable it is added to the table itself, on DataTables to the outer wrapper.
+- **Table selector**: a ready-made selector for this table with your class, and a **Copy CSS** button.
+
+<!-- TODO(screenshot): table-styling-css-selector-3
+  screen: Tables › Employee Directory › Custom CSS/JS › Table targeting
+  table: Employee Directory
+  state: Custom CSS class set to my-custom-table and the Table selector example showing
+  highlight: Copy CSS
+  view: admin
+  alt: Table targeting card with the Custom CSS class field and the selector example
+-->
 
 You can also add CSS anywhere else you like, such as your theme's stylesheet or **Appearance** › **Customize** › **Additional CSS** in WordPress.
 
 ::: tip
-The examples below use the FooTable selector `#footable_parent_353`. Replace `353` with your table's ID.
+The examples below use the FooTable selector `#footable_parent_353`. Replace `353` with your table's ID. For a DataTables table, use `#ninja_dt_parent_353` for the wrapper and `#ninja_dt_353` for the table; see the end of this page.
 :::
 
 ## Table Structure
 
-Every table gets CSS classes and an HTML ID you can use for styling. In the examples, the table ID is **353**.
+Every table gets CSS classes and an HTML ID you can use for styling. In the examples, the table ID is **353**. The selectors in this section are for the FooTable engine.
 
 ## Styling Table Header
 
 - To Style the table header, you need the following CSS selector:
 
-**`#footable_parent_353 table.ninja_table_pro > thead`**
+**`#footable_parent_353 table.foo-table > thead`**
 
 - To select the contents, the CSS selector will be:
 
-**`#footable_parent_353 table.ninja_table_pro > thead > tr > th`**
+**`#footable_parent_353 table.foo-table > thead > tr > th`**
 
 - Let's assume that you want to make the CSS table header's background color **black** and text color **white.** Then you have to write the following CSS:
 
 ```css
-#footable_parent_353 table.ninja_table_pro thead {
+#footable_parent_353 table.foo-table thead {
     background-color: black;
     color: white;
     /* Write More css properties if you want */
 }
-#footable_parent_353 table.ninja_table_pro thead tr th {
+#footable_parent_353 table.foo-table thead tr th {
     color: white;
     /* Write More css properties if you want */
 }
@@ -87,7 +112,7 @@ Every table gets CSS classes and an HTML ID you can use for styling. In the exam
 - Now, If you want to control the font size, and font style of table column heading text, then you have to write the following CSS:
 
 ```css
-#footable_parent_353 table.ninja_table_pro thead tr th {
+#footable_parent_353 table.foo-table thead tr th {
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -104,13 +129,13 @@ Every table gets CSS classes and an HTML ID you can use for styling. In the exam
 
 ```css
 /* Select Table Rows */
-#footable_parent_353 table.ninja_table_pro tbody tr {
+#footable_parent_353 table.foo-table tbody tr {
     background-color: black;
     color: white;
     /* Write More css properties if you want */
 }
 /*Select Table row cell */
-#footable_parent_353 table.ninja_table_pro tbody tr td {
+#footable_parent_353 table.foo-table tbody tr td {
     color: white;
     font-size: 18px;
     /* Write More css properties if you want */
@@ -121,20 +146,27 @@ Every table gets CSS classes and an HTML ID you can use for styling. In the exam
 
 ```css
 /* Select Table EVEN Rows */
-#footable_parent_353 table.ninja_table_pro tbody tr:nth-child(even) {
+#footable_parent_353 table.foo-table tbody tr:nth-child(even) {
     background-color: black;
     color: white;
 }
 /* Select Table ODD Rows */
-#footable_parent_353 table.ninja_table_pro tbody tr:nth-child(odd) {
+#footable_parent_353 table.foo-table tbody tr:nth-child(odd) {
     background-color: gray;
     color: white;
 }
 ```
 
-- Here is the screenshot of the table by applying some custom CSS:
+- This is how a table looks after applying some custom CSS:
 
-![Applying custom styling in Ninja Tables](/images/table-management/table-styling-css-selector/2.-table-styling-css-selector-2.webp)
+<!-- TODO(screenshot): table-styling-css-selector-4
+  screen: A page showing the Product Price List table with custom header and row colors
+  table: Product Price List
+  state: Black header with white text and alternating black and gray rows
+  highlight: -
+  view: frontend
+  alt: Table on a page styled with custom CSS for the header and rows
+-->
 
 ## Styling Specific Column
 
@@ -142,12 +174,12 @@ Every table gets CSS classes and an HTML ID you can use for styling. In the exam
 
 ```css
 /* Select The 1st Column */
-#footable_parent_353 table.ninja_table_pro .ninja_column_0 {
+#footable_parent_353 table.foo-table .ninja_column_0 {
     font-weight: bold;
     font-style: italic;
 }
 /*Select The 3rd Column  */
-#footable_parent_353 table.ninja_table_pro .ninja_column_2 {
+#footable_parent_353 table.foo-table .ninja_column_2 {
     font-weight: bold;
     font-style: italic;
 }
@@ -157,10 +189,10 @@ Every table gets CSS classes and an HTML ID you can use for styling. In the exam
 
 ## Making the search bar center aligned
 
-- You can set the search box position in **Appearance** › **Search** (Pro). With CSS, center it like this:
+- You can set the search box position in **Appearance** › **Features** › **Search** (Pro). With CSS, center it like this:
 
 ```css
-#footable_parent_353 table.ninja_table_pro tr.footable-filtering form {
+#footable_parent_353 table.foo-table tr.footable-filtering form {
     text-align: center;
 }
 ```
@@ -168,11 +200,35 @@ Every table gets CSS classes and an HTML ID you can use for styling. In the exam
 - To Make it left-aligned, please use the following CSS:
 
 ```css
-#footable_parent_353 table.ninja_table_pro tr.footable-filtering form {
+#footable_parent_353 table.foo-table tr.footable-filtering form {
     text-align: left;
 }
 ```
 
 - If you want to apply this style for all the tables, then just remove `#footable_parent_353` from the CSS.
 
-If you want to apply your CSS to all of your tables, then you have to replace **`#footable_parent_353`** with **`.footable_parent.ninja_table_wrapper`**
+If you want to apply your CSS to all of your FooTable tables, then you have to replace **`#footable_parent_353`** with **`.footable_parent.ninja_table_wrapper`**
+
+## DataTables selectors
+
+DataTables tables use different IDs and classes. In the examples, the table ID is **353**:
+
+- Wrapper around the whole table: `#ninja_dt_parent_353`
+- The table: `#ninja_dt_353` (also the class `.ninja-dt-table`)
+- Header cells: `#ninja_dt_353 thead th`
+- Rows and cells: `#ninja_dt_353 tbody tr` and `#ninja_dt_353 tbody td`
+- A column: `#ninja_dt_353 td.ninja_column_0`, where the number starts at 0, as for FooTable
+
+```css
+/* Header with a black background and white text */
+#ninja_dt_353 thead th {
+    background-color: black;
+    color: white;
+}
+/* Even rows in gray */
+#ninja_dt_353 tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+```
+
+To style every DataTables table, use `.ninja-tables-dt-wrapper` in place of `#ninja_dt_parent_353`.

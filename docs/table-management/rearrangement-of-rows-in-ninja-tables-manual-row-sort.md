@@ -11,15 +11,27 @@ Manual sorting is available on tables that keep their own rows. Connected tables
 
 ## Turn on manual sorting
 
-1. Go to **Tables** › your table › **Table Rows**.
+1. Go to **Ninja Tables** › **Tables** › your table › **Table Rows**.
 2. Click **Sort manually** in the toolbar. The button stays pressed while it is on.
-3. A grip icon appears at the start of every row. Drag a row by its grip and drop it where you want it.
+3. A grip icon (**Drag to reorder**) appears at the start of every row. Drag a row by its grip and drop it where you want it.
 
-![Sort manually in the Table Rows toolbar](/images/table-management/rearrangement-rows-ninja/1.-01-4.webp)
+<!-- TODO(screenshot): rearrangement-of-rows-in-ninja-tables-manual-row-sort-1
+  blocked: toggling Sort manually saves table settings and assigns row positions to the demo table (saved-data change)
+  screen: Tables › Course Catalog › Table Rows
+  table: Course Catalog
+  state: Sort manually turned on, grip icons visible at the start of each row
+  highlight: Sort manually button
+  view: admin
+  alt: Table Rows toolbar with Sort manually on and grips on every row
+-->
 
 Each drop is saved right away. You don't need to click Save.
 
-Turning on **Sort manually** also sets the table's default order to **Manual**. You can see this in **Appearance** › **Sorting** › **Default order**, which you can also use to switch manual order on or off. See [Sorting](/sorting).
+The first time you turn it on, Ninja Tables gives every existing row a position and sets the table's default order to **Manual**. You can see this in **Appearance** › **Sorting** › **Default order**, which you can also use to switch manual order on or off. See [Sorting](/sorting).
+
+::: tip Without Pro, or with an old Pro version
+Without Pro, clicking **Sort manually** opens the upgrade dialog. If your Pro plugin is too old to support manual sorting, you see a notice asking you to update Pro. **Insert row below** is gated the same way.
+:::
 
 ## While manual sorting is on
 

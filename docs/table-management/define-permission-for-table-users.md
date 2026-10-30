@@ -14,9 +14,18 @@ By default, only administrators can create and edit tables. With **Permissions**
 3. Under **Who can manage tables**, tick each role that should have access, or tick **Select all**.
 4. Click **Save settings**.
 
-![Permission option](/images/table-management/define-permission-table/1.-Ninja-Tables-Pro-North-WordPress-06-02-2.webp)
+<!-- TODO(screenshot): define-permission-for-table-users-1
+  screen: Settings › Permissions
+  table: -
+  state: Who can manage tables card with Editor and Shop manager ticked
+  highlight: Role checkboxes
+  view: admin
+  alt: Permissions settings with role checkboxes under Who can manage tables
+-->
 
-Administrators always have access, whatever you tick. A role you tick here can create, edit and delete **every** table on the site; there's no per-table permission.
+Administrators always have access, whatever you tick, so Administrator isn't in the list. Subscriber isn't listed either. A role you tick here can create, edit and delete **every** table on the site; there's no per-table permission.
+
+Like every settings card, an **Unsaved changes** badge appears when you change a box. **Cancel** restores the saved roles and **Save settings** applies them. If you untick every role, only administrators can manage tables again.
 
 In the free version, the Permissions screen shows **Permissions are a Pro feature**, and only administrators can manage tables.
 
@@ -27,10 +36,19 @@ Once you've ticked at least one role, a **Custom SQL module** card appears below
 1. Turn on **Let these roles write SQL queries**.
 2. Click **Save settings**.
 
-The setting applies to all the roles ticked above.
+It's off by default and applies to all the roles ticked above. The roles and this switch are saved together.
+
+<!-- TODO(screenshot): define-permission-for-table-users-2
+  screen: Settings › Permissions
+  table: -
+  state: Custom SQL module card visible with the warning and the switch on
+  highlight: Let these roles write SQL queries switch
+  view: admin
+  alt: Custom SQL module card with the write SQL queries switch
+-->
 
 ::: warning
-SQL tables can read any data in your database, including user details. Only turn this on for roles you fully trust.
+Users with this permission can run read queries against your database. SQL tables can read any data in it, including user details. Only turn this on for roles you fully trust.
 :::
 
 ## Related

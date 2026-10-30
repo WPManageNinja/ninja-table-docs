@@ -12,10 +12,19 @@ Ninja Tables caches each table's data so pages load fast. If a table on your sit
 1. In Ninja Tables, click the **gear** icon in the top bar to open **Settings**.
 2. Click **Performance**.
 3. Under **Clear caches**, click the button you need:
-   - **Clear table cache** (**Ninja Tables cache**): clears the cached data of every table. Each table is rebuilt the next time someone views it.
-   - **Clear external caches** (**Caching plugins**): asks the caching plugins on your site to flush their page caches too.
+   - **Clear table cache** (labelled **Ninja Tables cache**): clears the saved row data, saved HTML and fetched outside data (Google Sheets, Remote CSV) of every table. Each table is rebuilt the next time someone views it.
+   - **Clear external caches** (labelled **Caching plugins**): asks the caching plugins on your site to flush their page caches too.
 
-A message confirms when the cache has been cleared. Reload the page with the table to check it.
+A message confirms when the cache has been cleared: "Table cache successfully cleared" or "All caches successfully cleared". Reload the page with the table to check it.
+
+<!-- TODO(screenshot): clear-table-cache-1
+  screen: Settings › Performance
+  table: -
+  state: Clear caches card showing Clear table cache and Clear external caches
+  highlight: Clear table cache
+  view: admin
+  alt: Settings Performance page with the two Clear caches buttons
+-->
 
 Both buttons are free and safe to use: they don't change or delete any table data.
 
@@ -45,13 +54,13 @@ For any other caching plugin or CDN, clear its cache from its own settings.
 
 ## Per-table cache settings
 
-Each table also has its own cache options in **Table Configuration** › **Caching Configuration**:
+Each table also has its own cache options in **Table Configuration** › **Caching Configuration**. Which ones you see depends on the table type:
 
-- **Disable Caching**: stops caching this table. It's not recommended unless you know you need it, because the table then loads its data on every view.
-- **Caching interval (in minutes)**: for tables that read from an outside source, such as Google Sheets or a remote CSV, how long to keep the fetched data before reading the source again.
-- **Enable HTML cache**: for tables using Legacy rendering, caches the table's finished HTML for the number of minutes you set.
+- **Disable Caching**: stops caching this table. It's not recommended unless you know you need it, because the table then loads its data on every view. Shown for tables that keep their own rows.
+- **Caching interval (in minutes)**: for Remote CSV and Google Sheets tables, how long to keep the fetched data before reading the source again.
+- **Enable HTML cache** (Pro): for tables using Legacy rendering, caches the table's finished HTML for the number of minutes you set under **HTML caching interval (in minutes)**.
 
-See [Engine, rendering and caching](/table-rendering-settings).
+See [Engine, rendering and caching](/table-rendering-settings) for the full list.
 
 ::: tip
 A Google Sheets or Remote CSV table on FooTable shows changes from its source only after its caching interval has passed. To see a change straight away, click **Clear table cache**. On DataTables, these tables keep a synced copy that updates on its own schedule instead; see [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).

@@ -11,15 +11,21 @@ For tables that keep their own rows, the [Image/File/Lightbox](/image-file-light
 
 ## Example table
 
-This example uses a Google Sheet about car models with two columns: **Name** and **Image**. The Image column holds image URLs.
+This example uses a Google Sheet about car models with two columns: **Name** and **Image**. The Image column holds image URLs. When you [connect the Google Sheet](/google-sheets-integration), the columns come in automatically, but the image links show as text.
 
-![Image links in Google Sheets](/images/table-formatting/image-lightbox-column/1.-image-8.webp)
-
-When you [connect the Google Sheet](/google-sheets-integration), the columns come in automatically, but the image links show as text.
+<!-- TODO(screenshot): image-lightbox-using-column-transform-value-1
+  blocked: no Google Sheets demo table with an image URL column
+  screen: Tables › a Google Sheets table › Table Rows
+  table: a Google Sheets table with an Image column of image URLs
+  state: Grid showing the Image column as plain URL text
+  highlight: Image column
+  view: admin
+  alt: Image column showing URLs as text
+-->
 
 ## Show the URLs as images
 
-1. Go to **Tables** › your table › **Table Rows**.
+1. Go to **Ninja Tables** › **Tables** › your table › **Table Rows**.
 2. Click the gear icon on the **Image** column, choose **Column settings**, and open the **Transform** tab.
 3. In the Transform value box, enter an image tag with the column's reference shortcode as the source. For a column with the key `image`:
 
@@ -29,7 +35,7 @@ When you [connect the Google Sheet](/google-sheets-integration), the columns com
 
 4. Click **Save column**. Every image URL in the column now shows as an image.
 
-You can find each column's reference shortcode in the **Reference values** list under the Transform value box. Click a row in the list to insert it.
+Each column's reference shortcode is in the **Reference values** list under the Transform value box. Click a row in the list to insert it.
 
 ## Open the images in a lightbox
 
@@ -39,15 +45,23 @@ You can find each column's reference shortcode in the **Reference values** list 
 <a href="{{row.image}}" class="nt_lightbox"><img src="{{row.image}}"></a>
 ```
 
-![Transform value with the lightbox code](/images/table-formatting/image-lightbox-column/2.-table-configuration-01.webp)
-
 2. Click **Save column**.
 3. Open the **Custom CSS/JS** tab. Under **Table targeting**, type `nt_has_lightbox` in **Custom CSS class**, then click **Save Custom CSS**. This class tells the table to load the lightbox.
 
-![Custom CSS class for the table](/images/table-formatting/image-lightbox-column/3.-table-design-02.webp)
+![Custom CSS class field set to nt_has_lightbox](/images/table-formatting/image-lightbox-column/2.-Custom-CSS-Class-Field-Set.webp)
 
-Preview the table. The images from your sheet now open in a lightbox when clicked.
+Preview the table. The images now open in a lightbox when clicked.
+
+<!-- TODO(screenshot): image-lightbox-using-column-transform-value-3
+  blocked: no Google Sheets demo table or demo page; needs saved transform and class
+  screen: Preview of a Google Sheets table
+  table: a Google Sheets table with an Image column of image URLs
+  state: An image opened in the lightbox over the table
+  highlight: -
+  view: frontend
+  alt: Image from the table open in a lightbox
+-->
 
 ::: tip Use FooTable for this method
-The `nt_has_lightbox` class loads the lightbox on **FooTable** tables. On **DataTables** tables the class doesn't load the lightbox by itself, so the images show but may not open in a lightbox.
+The `nt_has_lightbox` class loads the lightbox on **FooTable** tables. On **DataTables** tables the class doesn't load the lightbox by itself, so the images show but may not open in a lightbox. See [FooTable or DataTables](/choose-table-engine).
 :::
