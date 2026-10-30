@@ -10,14 +10,7 @@ The **Appearance** tab is where you design how a table looks and behaves on your
 1. Go to **Ninja Tables** › **Tables** and open a table.
 2. Click the **Appearance** tab.
 
-<!-- TODO(screenshot): table-style-settings-1
-  screen: Tables › Product Price List › Appearance
-  table: Product Price List
-  state: Appearance tab open on the Colors tab, preview visible on the left
-  highlight: -
-  view: admin
-  alt: Appearance tab with the live preview on the left and the settings panel on the right
--->
+![Appearance tab with the live preview on the left and the settings panel on the right](/images/styling-design/table-style-settings/1.-Appearance-Tab-With-The-Live-Preview.webp)
 
 ## The live preview
 
@@ -46,14 +39,7 @@ Pick a ready-made color scheme, or set every color yourself in **Custom** mode (
 - **Typography**: **Font Family** and **Font Size**. See [Table Fonts](/table-font-settings).
 - **Rows & Borders**: the style library and the row and border switches, described below.
 
-<!-- TODO(screenshot): table-style-settings-2
-  screen: Tables › Product Price List › Appearance › Style › Rows & Borders
-  table: Product Price List
-  state: Style tab, Rows & Borders section open
-  highlight: Style Library
-  view: admin
-  alt: Rows & Borders section with the Style Library choice and the style switches
--->
+![Rows & Borders section with the Style Library choice and the style switches](/images/styling-design/table-style-settings/2.-Rows-Borders-Section-With-The-Style.webp)
 
 The switches under **Rows & Borders** depend on the table's engine and library. Each has a short description under it.
 

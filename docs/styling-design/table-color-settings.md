@@ -11,14 +11,7 @@ description: "Color a table with a ready-made color scheme or set every color yo
 2. Click the **Appearance** tab.
 3. In the settings panel, click the **Colors** tab. It is the tab the panel opens on.
 
-<!-- TODO(screenshot): table-color-settings-1
-  screen: Tables › Product Price List › Appearance › Colors
-  table: Product Price List
-  state: Colors tab open in Preset mode with the scheme swatches visible
-  highlight: Color mode radio
-  view: admin
-  alt: Colors tab showing the Preset and Custom mode choices and the scheme swatches
--->
+![Colors tab showing the Preset and Custom mode choices and the scheme swatches](/images/styling-design/table-color-settings/1.-Colors-Tab-Showing-The-Preset.webp)
 
 At the top, **Color Mode** has two choices: **Preset** and **Custom** (Pro).
 
@@ -30,14 +23,7 @@ With **Preset** selected, click a swatch to pick a **Color Scheme**. The preview
 
 **Default** adds no colors, so the table follows your theme and style library. It is the only scheme on the free version; clicking any other swatch opens the upgrade popup.
 
-<!-- TODO(screenshot): table-color-settings-2
-  screen: Tables › Product Price List › Appearance › Colors
-  table: Product Price List
-  state: Preset mode, the Blue scheme selected and the preview recolored
-  highlight: Blue swatch
-  view: admin
-  alt: Preset color schemes with the Blue scheme selected and the table preview in blue
--->
+![Preset color schemes with the Blue scheme selected and the table preview in blue](/images/styling-design/table-color-settings/2.-Preset-Color-Schemes-With-The-Blue.webp)
 
 ## Custom: set each color (Pro)
 
@@ -45,14 +31,7 @@ Select **Custom** and set each color yourself. Leaving a field empty keeps the d
 
 Editing any custom color switches the table to **Custom** mode automatically, so the color you set takes effect without you touching the mode.
 
-<!-- TODO(screenshot): table-color-settings-3
-  screen: Tables › Product Price List › Appearance › Colors
-  table: Product Price List
-  state: Custom mode selected with the Table Header Colors section open
-  highlight: Table Header Colors
-  view: admin
-  alt: Custom color sections for search bar, header, body and footer
--->
+![Custom color sections for search bar, header, body and footer](/images/styling-design/table-color-settings/3.-Custom-Color-Sections-For-Search-Bar.webp)
 
 - **Search Bar Colors**: **Background**, **Icon** and **Border** of the search box.
 - **Table Header Colors**: **Background**, **Text** and **Border** of the header row.

@@ -37,6 +37,9 @@
       "eval": "const l=[...document.querySelectorAll('.nt-drawer label, .nt-drawer .el-form-item__label, .nt-drawer span, .nt-drawer h4, .nt-drawer div')].find(e=>e.children.length<=1 && e.textContent.trim().startsWith('Filter UI Type')); const w=l.closest('.el-form-item')||l.parentElement; w.classList.add('t-ui');"
     },
     {
+      "eval": "document.activeElement.blur()"
+    },
+    {
       "shot": {
         "name": "2.-New-Filter-Panel-With-The-Basic",
         "clip": {
@@ -72,6 +75,62 @@
     },
     {
       "eval": "document.activeElement.blur(); document.body.click()"
+    },
+    {
+      "click": ".el-select-dropdown__item:visible:has-text(\"Select Dropdown\")"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder=\"Enter Filter Label\"] >> nth=1",
+        "value": "Engineering"
+      }
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder=\"Enter Filter Value\"] >> nth=0",
+        "value": "Engineering"
+      }
+    },
+    {
+      "click": {
+        "selector": "button",
+        "hasText": "Add Option"
+      }
+    },
+    {
+      "wait": 400
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder=\"Enter Filter Label\"] >> nth=2",
+        "value": "Marketing"
+      }
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder=\"Enter Filter Value\"] >> nth=1",
+        "value": "Marketing"
+      }
+    },
+    {
+      "eval": "document.activeElement.blur(); const l=[...document.querySelectorAll('.nt-drawer *')].find(e=>e.children.length==0&&e.textContent.trim()=='Filter Options'); l.parentElement.classList.add('t-opts');"
+    },
+    {
+      "shot": {
+        "name": "4.-Filter-Options-With-A-Label",
+        "clip": {
+          "x": 720,
+          "y": 32,
+          "width": 720,
+          "height": 868
+        },
+        "highlights": [
+          ".t-opts"
+        ]
+      }
     }
   ]
 }

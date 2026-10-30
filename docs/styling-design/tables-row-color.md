@@ -18,14 +18,7 @@ Row and cell colors are only available on tables that keep their own rows.
 3. Under **Row appearance**, pick a **Background** and a **Text** color. Leave a field as **Not set** to keep the table's default.
 4. Click **Update**.
 
-<!-- TODO(screenshot): tables-row-color-1
-  screen: Tables › Hosting Plans Comparison › Table Rows › Row settings
-  table: Hosting Plans Comparison
-  state: Row settings drawer open with a Background and a Text color chosen
-  highlight: Background field
-  view: admin
-  alt: Row settings drawer with Row appearance colors
--->
+![Row settings drawer with Row appearance colors](/images/styling-design/tables-row-color/1.-Row-Settings-Drawer-With-Row-Appearance.webp)
 
 The drawer also has a **Created date** field with the hint **Useful when the table is sorted by created date**. Change it to move the row when the table is ordered by created date.
 
@@ -37,14 +30,7 @@ The drawer also has a **Created date** field with the hint **Useful when the tab
 
 A cell color takes priority over its row color.
 
-<!-- TODO(screenshot): tables-row-color-2
-  screen: Tables › Hosting Plans Comparison › Table Rows › Cell settings
-  table: Hosting Plans Comparison
-  state: Cell settings drawer open for one cell with Cell appearance colors set
-  highlight: Cell appearance card
-  view: admin
-  alt: Cell settings drawer with Cell appearance colors
--->
+![Cell settings drawer with Cell appearance colors](/images/styling-design/tables-row-color/2.-Cell-Settings-Drawer-With-Cell-Appearance.webp)
 
 ## See the result
 
@@ -57,6 +43,7 @@ Click **Preview** in the editor header, or open the page the table is on. The gr
   highlight: -
   view: frontend
   alt: Table on the site with a colored row and a colored cell
+  blocked: needs the front end result of a saved row and cell color; the Row/Cell drawers save on Update and demo data must not be changed
 -->
 
 ## Without Pro
