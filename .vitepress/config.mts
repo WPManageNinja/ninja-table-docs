@@ -103,10 +103,11 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Introduction', link: '/ninja-tables-introduction' },
+          { text: 'Free vs Pro', link: '/free-vs-pro' },
           { text: 'Install & activate', link: '/how-to-install-and-activate-ninja-tables-plugin' },
           { text: 'Activate your Pro license', link: '/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key' },
-          { text: 'Quick start: your first table', link: '/onboarding-setup-guide' },
-          { text: 'Free vs Pro', link: '/free-vs-pro' },
+          { text: 'Guided setup & quick start', link: '/onboarding-setup-guide' },
+          { text: 'Find your way around', link: '/admin-navigation' },
           { text: 'Glossary', link: '/ninja-tables-glossary' }
         ]
       },
@@ -118,8 +119,8 @@ export default defineConfig({
           { text: 'Create your first table', link: '/create-your-first-table' },
           { text: 'FooTable or DataTables', link: '/choose-table-engine' },
           { text: 'Import a CSV, Excel or JSON file', link: '/import-table-data-from-a-csv' },
-          { text: 'Import from TablePress', link: '/import-table-from-tablepress-plugin' },
-          { text: 'Import a Ninja Tables JSON file', link: '/import-ninja-tables-json' }
+          { text: 'Import a Ninja Tables JSON file', link: '/import-ninja-tables-json' },
+          { text: 'Import from TablePress', link: '/import-table-from-tablepress-plugin' }
         ]
       },
       {
@@ -127,11 +128,9 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Work in Table Rows', link: '/working-in-table-rows' },
-          { text: 'Sort rows manually', link: '/rearrangement-of-rows-in-ninja-tables-manual-row-sort' },
           { text: 'Row & cell colors', link: '/tables-row-color' },
-          { text: 'Import rows into a table', link: '/import-csv-file-to-an-existing-table' },
-          { text: 'Export a table', link: '/export-ninja-tables-csv-json' },
-          { text: 'Duplicate a table', link: '/table-cloning-duplicating' }
+          { text: 'Sort rows manually', link: '/rearrangement-of-rows-in-ninja-tables-manual-row-sort' },
+          { text: 'Import rows into a table', link: '/import-csv-file-to-an-existing-table' }
         ]
       },
       {
@@ -139,14 +138,6 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Add & edit a column', link: '/basic-settings' },
-          { text: 'Show or hide columns on mobile', link: '/column-responsive-breakpoints' },
-          { text: 'Advanced column options', link: '/advanced-settings' },
-          { text: 'Conditional formatting', link: '/conditional-formatting' },
-          { text: 'Transform value', link: '/transform-value' },
-          { text: 'Row & column calculations', link: '/row-column-data-calculation' },
-          { text: 'Merge cells (colspan)', link: '/colspan-cell-merge' },
-          { text: 'Merge rows (rowspan)', link: '/rowspan' },
-          { text: 'Image lightbox with Transform', link: '/image-lightbox-using-column-transform-value' },
           {
             text: 'Column types',
             collapsed: true,
@@ -160,7 +151,15 @@ export default defineConfig({
               { text: 'Button/Link', link: '/actionable-button-link' },
               { text: 'Image, file & lightbox', link: '/image-file-lightbox' }
             ]
-          }
+          },
+          { text: 'Show or hide columns on mobile', link: '/column-responsive-breakpoints' },
+          { text: 'Advanced column options', link: '/advanced-settings' },
+          { text: 'Conditional formatting', link: '/conditional-formatting' },
+          { text: 'Transform value', link: '/transform-value' },
+          { text: 'Image lightbox with Transform', link: '/image-lightbox-using-column-transform-value' },
+          { text: 'Formulas & calculations', link: '/row-column-data-calculation' },
+          { text: 'Merge cells (colspan)', link: '/colspan-cell-merge' },
+          { text: 'Merge rows (rowspan)', link: '/rowspan' }
         ]
       },
       {
@@ -174,9 +173,9 @@ export default defineConfig({
           { text: 'Sorting', link: '/sorting' },
           { text: 'Pagination', link: '/pagination' },
           { text: 'Sticky header & first column', link: '/other-design-settings' },
-          { text: 'Mobile view & row details', link: '/stackable-table' },
+          { text: 'Responsive & stackable table', link: '/stackable-table' },
           { text: 'Export & print buttons', link: '/csv-and-print-button' },
-          { text: 'Use a design as the default', link: '/use-design-as-default' }
+          { text: 'Default design for new tables', link: '/use-design-as-default' }
         ]
       },
       {
@@ -184,15 +183,26 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Custom filters', link: '/custom-filters' },
-          { text: 'Frontend editing', link: '/frontend-editing' },
-          { text: 'Filter rows with a shortcode', link: '/default-data-filtering-shortcode' }
+          { text: 'Filter rows with a shortcode', link: '/default-data-filtering-shortcode' },
+          { text: 'Frontend editing', link: '/frontend-editing' }
         ]
       },
       {
-        text: 'Performance & Custom Code',
+        text: 'Add Tables to Your Site',
+        collapsed: true,
+        items: [
+          { text: 'Embed a table', link: '/embed-tables' },
+          { text: 'Shortcode reference', link: '/shortcode-reference' },
+          { text: 'Advanced shortcode options', link: '/advanced-shortcode' },
+          { text: 'Rating & icon shortcodes', link: '/rating-icon-shortcodes' }
+        ]
+      },
+      {
+        text: 'Speed & Custom Code',
         collapsed: true,
         items: [
           { text: 'Engine, rendering & caching', link: '/table-rendering-settings' },
+          { text: 'Clear caches', link: '/clear-table-cache' },
           { text: 'Custom CSS & JS', link: '/table-styling-css-selector' }
         ]
       },
@@ -202,17 +212,6 @@ export default defineConfig({
         items: [
           { text: 'How connected tables work', link: '/connected-tables-overview' },
           { text: 'WordPress posts & custom post types', link: '/create-wp-posts-table' },
-          { text: 'WooCommerce products', link: '/woocommerce-integration' },
-          { text: 'Bulk add to cart & compare', link: '/woocommerce-product-comparison-bulk-add-to-cart' },
-          { text: 'WooCommerce reviews', link: '/woocommerce-product-reviews-table' },
-          { text: 'Average rating column', link: '/woocommerce-product-average-rating-column' },
-          { text: 'FluentCart products', link: '/fluentcart-integration' },
-          { text: 'Fluent Forms entries', link: '/fluent-forms-integration' },
-          { text: 'Google Sheets', link: '/google-sheets-integration' },
-          { text: 'Google Sheets & CSV auto sync', link: '/google-sheets-csv-auto-sync' },
-          { text: 'Remote CSV', link: '/construct-table-from-csv' },
-          { text: 'Custom SQL query', link: '/create-table-from-custom-sql' },
-          { text: 'Connect a remote database', link: '/custom-sql-remote-database' },
           {
             text: 'Custom columns for posts & products',
             collapsed: true,
@@ -224,7 +223,18 @@ export default defineConfig({
               { text: 'Shortcodes & computed values', link: '/shortcode-computed-value-or-html-in-wp-post-woocommerce-table' },
               { text: 'Add a custom column', link: '/create-custom-column-in-wp-post-cpt-woocommerce-table' }
             ]
-          }
+          },
+          { text: 'WooCommerce products', link: '/woocommerce-integration' },
+          { text: 'Bulk add to cart & compare', link: '/woocommerce-product-comparison-bulk-add-to-cart' },
+          { text: 'WooCommerce reviews', link: '/woocommerce-product-reviews-table' },
+          { text: 'Average rating column', link: '/woocommerce-product-average-rating-column' },
+          { text: 'FluentCart products', link: '/fluentcart-integration' },
+          { text: 'Fluent Forms entries', link: '/fluent-forms-integration' },
+          { text: 'Google Sheets', link: '/google-sheets-integration' },
+          { text: 'Google Sheets & CSV auto sync', link: '/google-sheets-csv-auto-sync' },
+          { text: 'Remote CSV', link: '/construct-table-from-csv' },
+          { text: 'Custom SQL query', link: '/create-table-from-custom-sql' },
+          { text: 'Connect a remote database', link: '/custom-sql-remote-database' }
         ]
       },
       {
@@ -232,13 +242,10 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Create a Drag & Drop table', link: '/how-to-create-your-first-drag-and-drop-table-with-ninja-tables' },
-          { text: 'Builder tour', link: '/drag-drop-builder-tour' },
           { text: 'Templates', link: '/drag-drop-templates' },
+          { text: 'Builder tour', link: '/drag-drop-builder-tour' },
           { text: 'Rows & columns', link: '/drag-drop-rows-columns' },
           { text: 'Cell settings', link: '/drag-drop-cell-settings' },
-          { text: 'Table settings', link: '/ninja-tables-drag-and-drop-table-settings' },
-          { text: 'Mobile & tablet layout', link: '/responsive-table-design' },
-          { text: 'Element spacing', link: '/spacing' },
           {
             text: 'Elements',
             collapsed: true,
@@ -256,17 +263,10 @@ export default defineConfig({
               { text: 'HTML', link: '/html-element' },
               { text: 'Shortcode', link: '/shortcode-element' }
             ]
-          }
-        ]
-      },
-      {
-        text: 'Add Tables to Your Site',
-        collapsed: true,
-        items: [
-          { text: 'Embed a table', link: '/embed-tables' },
-          { text: 'Shortcode reference', link: '/shortcode-reference' },
-          { text: 'Advanced shortcode options', link: '/advanced-shortcode' },
-          { text: 'Rating & icon shortcodes', link: '/rating-icon-shortcodes' }
+          },
+          { text: 'Table settings', link: '/ninja-tables-drag-and-drop-table-settings' },
+          { text: 'Element spacing', link: '/spacing' },
+          { text: 'Mobile & tablet layout', link: '/responsive-table-design' }
         ]
       },
       {
@@ -275,23 +275,26 @@ export default defineConfig({
         items: [
           { text: 'The Tables list', link: '/tables-list' },
           { text: 'Title, caption & description', link: '/table-title-description-settings' },
+          { text: 'Duplicate a table', link: '/table-cloning-duplicating' },
+          { text: 'Export a table', link: '/export-ninja-tables-csv-json' },
           { text: 'Settings overview', link: '/tools-and-settings' },
-          { text: 'Who can manage tables', link: '/define-permission-for-table-users' },
-          { text: 'Clear caches', link: '/clear-table-cache' }
+          { text: 'Who can manage tables', link: '/define-permission-for-table-users' }
         ]
       },
       {
         text: 'Charts',
         collapsed: true,
         items: [
-          { text: 'Getting started with Ninja Charts', link: '/getting-started-with-ninja-charts-free-wordpress-chart-plugin' },
           { text: 'Install Ninja Charts', link: '/how-to-install-ninja-charts' },
-          { text: 'Dynamic charts', link: '/how-to-create-dynamic-charts-with-ninja-charts' },
+          { text: 'Getting started with Ninja Charts', link: '/getting-started-with-ninja-charts-free-wordpress-chart-plugin' },
+          { text: 'Charts from Ninja Tables data', link: '/create-ninja-charts-with-ninja-tables-data' },
+          { text: 'Charts from Fluent Forms', link: '/create-ninja-charts-with-fluent-forms-entries' },
           { text: 'Manual charts', link: '/how-to-create-chart-manually-in-ninja-charts' },
+          { text: 'Dynamic charts', link: '/how-to-create-dynamic-charts-with-ninja-charts' },
           { text: 'Data range picker', link: '/how-to-use-data-range-picker-in-ninja-charts' },
           { text: 'Customize charts', link: '/how-to-customize-charts-in-ninja-charts' },
-          { text: 'Charts from Fluent Forms', link: '/create-ninja-charts-with-fluent-forms-entries' },
-          { text: 'Charts from Ninja Tables data', link: '/create-ninja-charts-with-ninja-tables-data' }
+          { text: 'Manage charts', link: '/manage-ninja-charts' },
+          { text: 'Add a chart to a page', link: '/embed-ninja-charts' }
         ]
       },
       {
@@ -299,6 +302,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Hooks & filters', link: '/hooks-and-filters' },
+          { text: 'JavaScript events', link: '/javascript-events' },
           { text: 'Code recipes', link: '/developer-code-recipes' }
         ]
       },
