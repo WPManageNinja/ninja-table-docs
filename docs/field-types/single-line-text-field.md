@@ -5,7 +5,7 @@ description: "Use the Single line text field column type for short text such as 
 
 # Single Line Text Field
 
-The **Single line text field** is the default column type. Use it for short text: names, product codes, short phrases or one-word answers. Each cell holds one line of text.
+The **Single line text field** is the default column type. Use it for short text: names, product codes, short phrases or one-word answers. Each cell holds one line of text. It is free and has no extra options.
 
 ## Set a column to Single line text field
 
@@ -14,20 +14,27 @@ The **Single line text field** is the default column type. Use it for short text
 3. In the **Basic** tab, set **Type** to **Single line text field**.
 4. Click **Add column** or **Save column**.
 
-![Column type list](/images/field-types/single-line-text-field/1.-Data-Type.webp)
+![Column dialog with Type set to Single line text field](/images/field-types/single-line-text-field/1.-Column-Dialog-With-Type-Set.webp)
 
-To fill in the column, click a cell in the grid and type, or open the row drawer with **Add data** or the pencil icon on a row. See [Working in Table Rows](/working-in-table-rows).
+## Enter values
 
-## HTML in a single line text field
+- **In the grid:** click a cell and type. Press **Enter** or click away to save the cell.
+- **In the row drawer:** click **Add data**, or the pencil icon on a row, and type in the column's text box. Click **Add row** or **Update** to save. See [Working in Table Rows](/working-in-table-rows).
 
-A single line text cell can also hold simple HTML, so you can show more than plain text. For example, type `<h2>Hello Ninja</h2>` in a cell.
+## How it looks on your site
 
-![HTML in a single line text cell](/images/field-types/single-line-text-field/2.-HTML-in-single-line-text-field.webp)
+Visitors see the text as typed. A single line text cell can also hold simple HTML, for example `<h2>Hello Ninja</h2>`. The HTML is filtered for safety unless your user is allowed to post unfiltered HTML. Click **Preview** in the table header to check the result.
 
-Click **Preview** in the table header to see the result.
+<!-- TODO(screenshot): single-line-text-field-2
+  screen: Tables › table › Preview
+  table: Employee Directory
+  state: A cell containing simple HTML such as a heading
+  highlight: -
+  view: frontend
+  alt: Table with a single line text cell showing formatted HTML
+  blocked: no demo table has a cell containing simple HTML such as a heading
+-->
 
-![HTML shown in the table](/images/field-types/single-line-text-field/3.-HTML-supported-in-single-line-text-field.webp)
-
-For rich content such as images, lists or formatted text, use the [HTML field](/html-field) type instead.
+For links, images, lists or formatted text, use the [HTML field](/html-field) type, which gives you the WordPress editor.
 
 You can change a column's type at any time. The column key stays the same.
