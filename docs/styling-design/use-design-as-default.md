@@ -1,42 +1,68 @@
 ---
-title: "Use a Design as the Default"
-description: "Save one table's design as the starting point for every new table, or set site-wide defaults in Settings › Global appearance."
+title: "Default Design for New Tables"
+description: "Choose the look every new table starts with, such as color scheme, style, font, search, sorting and rows per page, in Settings › Global appearance."
 ---
 
-# Use a Design as the Default
+# Default Design for New Tables
 
-Once a table looks the way you want, you can make its design the starting point for every table you create next. This saves you from repeating the same color, font and pagination choices on each new table.
+**Global appearance** sets the starting design of every table you create next. It saves you from repeating the same color, font and pagination choices on each new table. Defaults only affect **new** tables; existing tables are never changed, and you can still adjust any table in its own **Appearance** tab.
 
-There are two ways to set defaults. Both only affect **new** tables; existing tables are never changed.
+There is no "use as default" button inside a table's Appearance tab. Defaults are set in one place only.
 
-## From a table you like
+1. Click the **gear** icon in the top bar, then **Settings**.
+2. Open **Global appearance**. The card is titled **Global appearance Settings**.
 
-1. Go to **Ninja Tables** › **Tables** and open the table whose design you want to reuse.
-2. Click the **Appearance** tab.
-3. At the bottom of the settings panel, click **Use as default for new tables**.
-4. Confirm with **Use as default**.
+<!-- TODO(screenshot): use-design-as-default-1
+  screen: Settings › Global appearance
+  table: -
+  state: Global appearance card with all five groups visible
+  highlight: -
+  view: admin
+  alt: Global appearance settings with color, library, font, show and feature groups
+-->
 
-New tables will start with this table's title and description display, search, sorting, pagination, font, color scheme and styles.
+## Default Table Color
 
-::: tip
-Only a preset color scheme can become the default. If the table uses **Custom** colors, the current default scheme is kept.
-:::
+Pick the color scheme new tables start with. The schemes are the same as in [Table Colors](/table-color-settings): **Default**, **White**, **Red**, **Orange**, **Yellow**, **Olive**, **Green**, **Teal**, **Blue**, **Violet**, **Purple**, **Pink**, **Grey** and **Black**. The default is **Default**, which follows your theme.
 
-## From Settings
+## Default Styling Library
 
-To set the defaults by hand instead, click the gear icon › **Settings** › **Global appearance**. You can set:
+- **Styling library**: **Semantic UI** (default), **Bootstrap 4** or **Bootstrap 3**. Semantic UI suits most sites; pick Bootstrap only if your theme already uses it.
+- Style switches: they change with the library, the same lists as under **Rows & Borders** in [Appearance Tab Overview](/table-style-settings).
 
-- **Default color scheme**
-- **Styling library**: Semantic UI or Bootstrap. Semantic UI suits most sites; pick Bootstrap only if your theme already uses it.
-- Style switches: single line cells, fixed layout, hover rows, bordered table, hide horizontal or vertical borders, striped rows, compact table and vertically centered cells.
-- **Font family** and **Font size**
-- **Show**: the table title, the table description, and whether to hide all borders.
-- **Search box** and **Sorting**
-- Default pagination: show pages or all rows, and **Rows per page**.
+## Default Font setting
 
-Click **Save settings**.
+- **Font family**: **Inherit from theme** (default) or one of the generic families.
+- **Font size**: the default is 14.
 
-Using **Use as default for new tables** on a table updates these same global defaults, so the last change you make wins.
+## Show
+
+- **Table title**: off by default.
+- **Table description**: off by default.
+- **Hide all borders**: off by default.
+
+## Default Features
+
+- **Search box**: on by default.
+- **Sorting**: on by default.
+- **Default Pagination settings**: **Pages** (default) or **Show all rows**.
+- **Rows per page**: shown when **Pages** is chosen. The default is 20.
+
+Click **Save settings** to keep your changes. **Cancel** drops edits you have not saved, and an **Unsaved changes** badge shows while there are any.
+
+## When you have never saved defaults
+
+A fresh site starts new tables with this baseline:
+
+- Color scheme **Default**, styling library **Semantic UI**.
+- Style switches **Hover Rows**, **Striped Rows** and **Vertically Centered Table Cell Contents** turned on.
+- **Font family** inherited from the theme, **Font size** 14.
+- Title and description hidden, header row shown.
+- Search and sorting on, sorted by created date with the oldest first.
+- Pagination on with 20 rows per page.
+- Engine **FooTable**. New tables use the **Legacy** rendering setting when Pro is active and **Ajax** on the free version, see [Engine, Rendering & Caching](/table-rendering-settings).
+
+Once you save **Global appearance**, your saved values replace this baseline.
 
 ## Related
 

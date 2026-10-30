@@ -1,4 +1,77 @@
-{"doc":"docs/table-settings/custom-filters.md","outDir":"public/images/table-settings/custom-filters","viewport":{"width":1440,"height":900},
-"steps":[{"admin":"/tables/{{Employee Directory}}/filters"},{"wait":1500},
-{"click":{"role":"button","name":"Add Filter"}},{"wait":1000},
-{"shot":{"name":"probe","clip":"viewport"}}]}
+{
+  "doc": "docs/table-settings/custom-filters.md",
+  "outDir": "public/images/table-settings/custom-filters",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}/filters"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Add Filter"
+      }
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder=\"Enter Filter Title\"]",
+        "value": "Department"
+      }
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder=\"Enter Filter Label\"]:visible >> nth=0",
+        "value": "Department"
+      }
+    },
+    {
+      "eval": "const l=[...document.querySelectorAll('.nt-drawer label, .nt-drawer .el-form-item__label, .nt-drawer span, .nt-drawer h4, .nt-drawer div')].find(e=>e.children.length<=1 && e.textContent.trim().startsWith('Filter UI Type')); const w=l.closest('.el-form-item')||l.parentElement; w.classList.add('t-ui');"
+    },
+    {
+      "shot": {
+        "name": "2.-New-Filter-Panel-With-The-Basic",
+        "clip": {
+          "x": 720,
+          "y": 32,
+          "width": 720,
+          "height": 868
+        },
+        "highlights": [
+          ".t-ui"
+        ]
+      }
+    },
+    {
+      "click": ".nt-drawer .el-select >> nth=0"
+    },
+    {
+      "wait": 700
+    },
+    {
+      "shot": {
+        "name": "3.-Filter-UI-Type-List-With-All",
+        "clip": {
+          "x": 720,
+          "y": 32,
+          "width": 720,
+          "height": 868
+        },
+        "highlights": [
+          ".t-ui"
+        ]
+      }
+    },
+    {
+      "eval": "document.activeElement.blur(); document.body.click()"
+    }
+  ]
+}

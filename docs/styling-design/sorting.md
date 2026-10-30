@@ -5,28 +5,33 @@ description: "Let visitors sort a table by clicking a column heading, and set th
 
 # Sorting
 
-**Sorting** controls two things: whether visitors can sort the table by clicking a column heading, and the order rows appear in when the page loads.
+**Sorting** controls two things: whether visitors can sort the table by clicking a column heading, and the order rows appear in when the page loads. Both are free, except the manual order.
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
 2. Click the **Appearance** tab, then the **Features** tab in the settings panel.
 3. Open **Sorting**.
 
-![Sorting options](/images/styling-design/sorting/1.-New-Ui-table-sorting-options.webp)
+<!-- TODO(screenshot): sorting-1
+  screen: Tables › Employee Directory › Appearance › Features › Sorting
+  table: Employee Directory
+  state: Sorting section open, Default Order set to By Column
+  highlight: Default Order
+  view: admin
+  alt: Sorting section with Default Order, Column and Direction
+-->
 
 ## Let visitors sort
 
-The switch in the **Sorting** heading lets visitors click a column heading to sort by that column. To stop a single column from being sortable, turn off **Sortable** in that column's settings (Pro). See [Advanced Column Options](/advanced-settings).
+The switch in the **Sorting** heading is on by default. It lets visitors click a column heading to sort by that column. To stop a single column from being sortable, turn off **Sortable** in that column's settings (Pro). See [Advanced Column Options](/advanced-settings).
 
 ## Default order
 
-**Default order** sets how rows are ordered when the table first loads:
+**Default Order** sets how rows are ordered when the table first loads:
 
-- **Created date**: order rows by when they were added. Under **Order**, pick **Oldest first** or **Newest first**. Only available for tables that store their own rows.
-- **By column**: pick a **Column** and a **Direction**, **A → Z** or **Z → A**.
-- **Manual** (Pro): use the order you set by dragging rows. Arrange them in **Table Rows** › **Sort manually**, see [Sort Rows Manually](/rearrangement-of-rows-in-ninja-tables-manual-row-sort).
+- **Created Date**: order rows by when they were added. Under **Order**, pick **Oldest First** (default) or **Newest First**. This choice is greyed out for tables that cannot be ordered by created date.
+- **By Column**: pick a **Column** and a **Direction**, **A → Z** or **Z → A**.
+- **Manual** (Pro): use the order you set by dragging rows. Arrange the rows in **Table Rows** › **Sort manually**, see [Sort Rows Manually](/rearrangement-of-rows-in-ninja-tables-manual-row-sort). The hint under **Manual** has an **Open Table Rows** link. On the free version, clicking **Manual** opens the upgrade popup. On Pro, **Manual** is greyed out if the table does not support manual sorting; if the Pro plugin is out of date, an upgrade notice shows instead.
 
-![Manual sort](/images/styling-design/sorting/2.-new-Ui-table-manual-sort.webp)
-
-To go back to the table's natural order, click **Clear default order**.
+To go back to the table's natural order, click **Clear Default Order**.
 
 Click **Save** to keep your changes.

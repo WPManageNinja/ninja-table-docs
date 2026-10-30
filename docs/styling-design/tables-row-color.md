@@ -9,18 +9,25 @@ description: "Give a single row or cell its own background and text color from R
 
 To color a whole column instead, use the column's **Advanced** tab. See [Advanced settings](/advanced-settings). To color rows or cells automatically based on their values, see [Conditional formatting](/conditional-formatting).
 
-![Row settings icon in Table Rows](/images/styling-design/tables-row-color/1.-New-Ui-access-row-editing.webp)
+Row and cell colors are only available on tables that keep their own rows.
 
 ## Color a row
 
-1. Go to **Tables** › your table › **Table Rows**.
-2. At the end of the row, click the palette icon (**Row settings**). A small drawer opens.
+1. Go to **Ninja Tables** › **Tables** › your table › **Table Rows**.
+2. At the end of the row, click the palette icon (**Row settings**). The **Row settings** drawer opens.
 3. Under **Row appearance**, pick a **Background** and a **Text** color. Leave a field as **Not set** to keep the table's default.
 4. Click **Update**.
 
-![Row settings drawer](/images/styling-design/tables-row-color/2.-New-Ui-update-row-settings.webp)
+<!-- TODO(screenshot): tables-row-color-1
+  screen: Tables › Hosting Plans Comparison › Table Rows › Row settings
+  table: Hosting Plans Comparison
+  state: Row settings drawer open with a Background and a Text color chosen
+  highlight: Background field
+  view: admin
+  alt: Row settings drawer with Row appearance colors
+-->
 
-The Row settings drawer also has a **Created date** field. Change it to move the row when the table is sorted by created date.
+The drawer also has a **Created date** field with the hint **Useful when the table is sorted by created date**. Change it to move the row when the table is ordered by created date.
 
 ## Color a single cell
 
@@ -28,14 +35,30 @@ The Row settings drawer also has a **Created date** field. Change it to move the
 2. Under **Cell appearance**, pick a **Background** and a **Text** color for that cell.
 3. Click **Update**.
 
-![Cell colors](/images/styling-design/tables-row-color/3.-New-Ui-row-color-settings.webp)
-
 A cell color takes priority over its row color.
+
+<!-- TODO(screenshot): tables-row-color-2
+  screen: Tables › Hosting Plans Comparison › Table Rows › Cell settings
+  table: Hosting Plans Comparison
+  state: Cell settings drawer open for one cell with Cell appearance colors set
+  highlight: Cell appearance card
+  view: admin
+  alt: Cell settings drawer with Cell appearance colors
+-->
 
 ## See the result
 
-Click **Preview** in the table header, or open the page the table is on.
+Click **Preview** in the editor header, or open the page the table is on. The grid in **Table Rows** shows the same colors.
 
-![Row colors on the site](/images/styling-design/tables-row-color/4.-Ninja-Tables-Pro-Row-Color-Preview.webp)
+<!-- TODO(screenshot): tables-row-color-3
+  screen: Preview of Hosting Plans Comparison
+  table: Hosting Plans Comparison
+  state: One colored row and one colored cell visible on the front end
+  highlight: -
+  view: frontend
+  alt: Table on the site with a colored row and a colored cell
+-->
 
-Row and cell colors are only available on tables that keep their own rows. Without Pro, the drawer shows **Row and cell colours are a Pro feature.**
+## Without Pro
+
+The two drawers still open on the free version, but they show **Row and cell colours are a Pro feature.** with an upgrade link instead of the color pickers, and **Update** is disabled.
