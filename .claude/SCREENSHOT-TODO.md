@@ -1,5 +1,10 @@
 # Screenshot TODO
 
+> **Superseded 2026-10-30 by the docs overhaul.** Every image line was removed from `docs/`; the queue is now the
+> 293 structured placeholders in the pages themselves (`<!-- TODO(screenshot): <slug>-<n>` with `screen`, `table`,
+> `state`, `highlight`, `view`, `alt`). List them with `grep -rn 'TODO(screenshot)' docs`. The per-page table below
+> is the pre-overhaul state, kept for history only.
+
 Retake queue for the redesigned admin UI. Not part of the built site (lives under `.claude/`).
 
 Every image in `docs/` predates the redesign rewrite (commit `200bce7` kept the old image lines "to be retaken"), so every page below needs a pass. Work a page at a time by delegating to the **`ninja-tables-screenshotter`** subagent:
@@ -184,3 +189,7 @@ Rules: replace stale images under the same file name; drop an image only when it
 | `featured-image` | 6 |  |  |  |
 | `post-meta-field` | 8 |  |  |  |
 | `shortcode-computed-value-or-html-in-wp-post-woocommerce-table` | 6 |  |  |  |
+
+## Wave log
+- 2026-10-30 pilots: tables-list (2 of 4; 1-2 blocked), table-rendering-settings (3 of 3).
+- 2026-10-30 wave 1 (Get Started, Create, Import/Export, Columns, Column types): ~70 images placed; ~30 placeholders carry a `blocked:` line (grep `blocked:` in docs/). Next: Rows/Appearance/Filters/Embed/Speed/Live data/Drag & Drop/Manage/Charts.

@@ -19,109 +19,109 @@ Gating model (from `04-sources-integration-pro.md` §2): Pro registers `activate
 - **Key files:** `BaseProvider.php`, `DefaultProvider.php` (key `default`: own-row tables, caching, date normalisation), `FluentFormProvider.php` (key `fluent-form`: entries, entry type, max records, current-user-only, overrides FF entry permissions), `NinjaFooTable.php` (static facade over `Services/Render/FooTableRenderer`).
 - **User-facing surface:** Default table rows; Fluent Forms entries table (Create tile + Source settings drawer); "Install Fluent Forms now" when FF is missing.
 - **Drives docs:** `docs/creating-tables/create-your-first-table.md`, `docs/creating-tables/working-in-table-rows.md`, `docs/data-sources/fluent-forms-integration.md`, `docs/data-sources/connected-tables-overview.md`
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/DataTables (Free)
 - **Purpose:** The **DataTables engine**. On create with `rendering_engine=datatables` it builds a per-table SQL table `{prefix}ninja_tables_dt_<id>` and keeps its columns in sync; drops it on post delete. Server-side paging/search via its own Ajax handler.
 - **Key files:** `DataTablesModule.php`, `Database/DynamicTableManager.php` (reserved/system column keys), `Handlers/{AjaxHandler,ItemsHandler,PublicRenderer}.php`, `Models/DynamicRow.php`, `Query/NumericFilter.php`; renderer in `app/Services/Render/DataTables*.php`; engine switch logic `app/Services/Table/Engine.php`.
 - **User-facing surface:** Engine line on every Create drawer (FooTable "the usual choice" vs DataTables "holds up better once a table runs to thousands of rows"); Table Configuration › Table engine (locked after creation for own-row tables; switching keeps data, drops design); reserved column-key validation error.
 - **Drives docs:** `docs/creating-tables/choose-table-engine.md`, `docs/table-settings/table-rendering-settings.md`
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/Integrations/FluentCart (Free)
 - **Purpose:** FluentCart products as a table source (key `wp_fct`), with cart/checkout buttons, variations, bulk add-to-cart and product comparison. No Pro gating in code.
 - **Key files:** `FluentCartIntegration.php`, `Handlers/FluentCartHandler.php`, `ProductQuery.php`, `ProductFormatter.php`, `CartService.php`, `ProductComparison.php` (registered unconditionally by `IntegrationsInit.php`); config `config/fluent-cart-headers.php`, `config/fluent-cart-dynamic-column-option.php`; Vue `components/tables/sources/FluentCartCreate.vue`, `components/TableNav/FcNavEdit.vue`, `components/DataProviders/FluentCartDynamicColumn.vue`.
 - **User-facing surface:** Create tile **FluentCart products** (category, brands, hide out of stock, initial order by); Source settings drawer (Query settings / Appearance / Add new column); **Show bulk actions**; filters `ninja_table_fct_cart_text|cart_url|checkout_text`.
 - **Drives docs:** `docs/data-sources/fluentcart-integration.md`, `docs/table-management/woocommerce-product-comparison-bulk-add-to-cart.md`, `docs/wordpress-integration/dynamic-columns-reference.md`
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/Integrations/FluentForms (Free)
 - **Purpose:** Registers the Fluent Forms provider hooks unconditionally, so a table keeps its settings while FF is inactive.
 - **Key files:** `FluentFormsIntegration.php`; controller `Http/Controllers/FluentFormsController.php`; Vue `components/tables/sources/FluentFormsCreate.vue`, `components/DataProviders/FluentForm.vue`, `FluentFormDynamicColumn.vue`.
 - **User-facing surface:** Create tile **Fluent Forms entries**; extra ID/Serial/Status/payment columns; install prompt (`install/fluent-forms`).
 - **Drives docs:** `docs/data-sources/fluent-forms-integration.md`
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/Integrations/Gutenberg (Free)
 - **Purpose:** The **Ninja Tables** block (`ninja-tables/guten-block`, API v3). Saved markup is only the shortcode. Block sidebar settings are **written back to the table** (`settings/{id}` REST + `save_post` → `updateTableSettings`), so they apply on every embed.
 - **Key files:** `GutenbergIntegration.php`; block UI `resources/admin/blocks/table-block/{block.js,Edit.js,Save.js,components/,ui/}`.
 - **User-facing surface:** Select Table; tabs Styling | Colors (Pro) | Other (hidden for D&D tables).
 - **Drives docs:** `docs/wordpress-integration/embed-tables.md`
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/Integrations (bootstrap)
 - **Purpose:** `IntegrationsInit.php` loops Gutenberg / FluentForms / FluentCart, calls `isAvailable()` then `register()`; `BaseIntegration.php` is the contract.
 - **Drives docs:** none (add a doc only if a new integration class is added to `$integrations`).
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/Lead (Free)
 - **Purpose:** Admin opt-in prompts: newsletter lead opt-in and review request, each with dismiss timers.
 - **Key files:** `LeadFlow.php` (`wp_ajax_ninja_table_lead_optin`, `wp_ajax_ninja_table_review_consent`, filters `ninja_tables_show_lead`, `ninja_tables_show_review_optin`), `LeadOptIn.php`, `ReviewOptIn.php`; Vue `components/Extras/lead.vue`, `_ReviewDialog.vue`.
 - **User-facing surface:** Admin notices only.
 - **Drives docs:** none.
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/TableBuilder (Free)
 - **Purpose:** Server side of the **Drag & Drop builder**: initial config, element/setting/responsive schemas and the ready-made templates.
 - **Key files:** `InitConfig.php` (loads `config/table-builder/{component,setting,responsive,templates}.php`), `DynamicConfig.php` (merges saved settings/responsive over static config), `ReadyMadeTable.php` (Pricing 1–4, Comparison 1–5, Employee 1–3, Schedule 1–3); `config/table-builder/component.php` holds element names + `has_pro`; controller `Http/Controllers/TableBuilderController.php`; render `app/Views/public/drag-and-drop-html.php`; importer `Services/Import/TableBuilderImporter.php`.
 - **User-facing surface:** Create › Drag & Drop table drawer (Scratch grid 1–30, default 6×3 / Import CSV/JSON up to 1 MB, URL is Pro / Choose a template); builder at `#/table_builder_edit_table/:id`; `[ninja_table_builder id]`. Pro elements: Icon, Image, Styled List, Ribbon, Text Icon; Progress is free.
 - **Drives docs:** `docs/drag-drop-tables/*.md` (3), `docs/drag-drop-settings/*.md` (7), `docs/drag-drop-elements/*.md` (12)
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/I18nStrings.php (Free)
 - **Purpose:** GENERATED translation map handed to the admin app as `ninja_table_admin.i18n` (`npm run i18n:strings`, `dev/i18n/extract-strings.js`). 1645 lines.
 - **Note:** The fastest way to diff **every admin label** between releases: `git diff <old>..<new> -- app/Modules/I18nStrings.php`. A changed string here points to the Vue file that owns it.
 - **Drives docs:** none directly (signal only).
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/DataProviders/WPPostsProvider (Pro, `ninja-tables-pro/app/Modules/DataProviders/WPPostsProvider.php`)
 - **Purpose:** WP Posts / any CPT table (key `wp-posts`). Query, taxonomy, author, meta conditions.
 - **Key files:** `WPPostsProvider.php`, `app/Traits/WPPostDataSourceTrait.php`; free controller `WPPostsController.php`; Vue `components/tables/sources/{WpPostsCreate,WpPostRules}.vue`, `components/TableNav/WPPostsNav.vue`, `components/DataProviders/{WPPosts,WPPostConditions,WPPostMetaQuery,WPPostDynamicColumn}.vue`.
 - **User-facing surface:** Create tile **WP Posts/CPTs**; Table Rows › **Edit query** drawer (Query settings | Add new column); dynamic column types Post Meta, ACF (only when ACF active), Shortcode, Featured Image, Post Data, taxonomy.
 - **Drives docs:** `docs/data-sources/create-wp-posts-table.md`, `docs/wordpress-integration/post-meta-field.md`, `docs/wordpress-integration/acf-field-integration-with-ninja-tables-column.md`, `docs/wordpress-integration/acf-metabox-jetengine-toolset-pods-integration-with-ninja-tables.md`, `docs/wordpress-integration/featured-image.md`, `docs/wordpress-integration/create-custom-column-in-wp-post-cpt-woocommerce-table.md`, `docs/wordpress-integration/shortcode-computed-value-or-html-in-wp-post-woocommerce-table.md`, `docs/wordpress-integration/dynamic-columns-reference.md`
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/DataProviders/WoocommercePostsProvider (Pro, `ninja-tables-pro/app/Modules/DataProviders/WoocommercePostsProvider.php`)
 - **Purpose:** WooCommerce products table (key `wp_woo`): query terms, cart DOM/fragments, variations, average-rating column.
 - **Key files:** `WoocommercePostsProvider.php`, `app/Traits/WooDataSourceTrait.php`, `app/Features/ProductComparison.php`, `app/Views/woocommerce/variation.php`, `assets/js/woo_table_frontend.js`, `ninja_table_comparison.js`; Vue `components/tables/sources/WooCreate.vue`, `components/TableNav/WooNavEdit.vue`.
 - **User-facing surface:** Create tile **WooCommerce products** (category/tag/type, hide out of stock, initial order by); Source settings (Query settings | Appearance | Add new column); **Show bulk action** (Add to Cart / Compare Products); Product Data › Product Average Rating column.
 - **Drives docs:** `docs/data-sources/woocommerce-integration.md`, `docs/data-sources/woocommerce-product-average-rating-column.md`, `docs/table-management/woocommerce-product-comparison-bulk-add-to-cart.md`, `docs/wordpress-integration/dynamic-columns-reference.md`
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/DataProviders/WoocommerceReviewsProvider (Pro, `ninja-tables-pro/app/Modules/DataProviders/WoocommerceReviewsProvider.php`)
 - **Purpose:** WooCommerce product reviews table (key `wp_woo_reviews`).
 - **Key files:** `WoocommerceReviewsProvider.php`; Vue `components/TableNav/WooReviewsNavEdit.vue` (Create shares `WooCreate.vue`).
 - **User-facing surface:** Create tile **WooCommerce reviews** (category/tags/type, Reviews status All/Approved/Unapproved); star colours.
 - **Drives docs:** `docs/data-sources/woocommerce-product-reviews-table.md`
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/DataProviders/CsvProvider (Pro, `ninja-tables-pro/app/Modules/DataProviders/CsvProvider.php`)
 - **Purpose:** Remote CSV (key `csv`) and Google Sheets published CSV (key `google-csv`) on FooTable: live fetch + caching interval; Sheets hyperlinks/images. Timeout filter `ninja_tables_remote_csv_timeout`.
 - **Key files:** `CsvProvider.php`, `app/Traits/GoogleSheetTrait.php`; Vue `components/tables/sources/ExternalSourceCreate.vue`, `components/DataProviders/ExternalDataSource.vue`.
 - **User-facing surface:** Create tiles **Google Sheets** and **Remote CSV / JSON** (2-step: name + URL). **Caveat:** the provider is CSV-only; JSON URLs fail ("Expected CSV but received invalid data type", audit 04 §6.1).
 - **Drives docs:** `docs/data-sources/google-sheets-integration.md`, `docs/data-sources/construct-table-from-csv.md`, `docs/table-formatting/hyperlinks-from-google-sheets.md`
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/DataProviders/RawSqlProvider + RemoteWpdb (Pro, `ninja-tables-pro/app/Modules/DataProviders/`)
 - **Purpose:** Custom SQL table (key `raw_sql`): SELECT-only validation (`app/Library/PHPSQLParser`), placeholders `{prefix}` `{current_user_id}` `{current_date}` `{current_date_time}`, optional remote DB connection (`RemoteWpdb.php`). Permission gate `hasSQLPermission` / filter `ninja_table_sql_permission`.
 - **Key files:** `RawSqlProvider.php`, `RemoteWpdb.php`; Vue `components/tables/sources/RawSqlCreate.vue`.
 - **User-facing surface:** Create tile **Custom SQL query** (SQL Connection Type), "Save and run" drawer; Settings › Permissions "Let these roles write SQL queries".
 - **Drives docs:** `docs/data-sources/create-table-from-custom-sql.md`, `docs/data-sources/custom-sql-remote-database.md`
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/GoogleSheetSync (Pro, `ninja-tables-pro/app/Modules/GoogleSheetSync/`)
 - **Purpose:** Google Sheets / CSV **on the DataTables engine**: imports into the DB table, background auto-sync via WP-Cron (`ninja_tables_gsheet_sync`, `ninja_tables_gsheet_cleanup_tmp`), chunked processing, feature flag `google_sheet_dt`.
 - **Key files:** `GoogleSheetSyncProvider.php`, `SyncService.php` (793 lines), `Http/Controllers/GoogleSheetSyncController.php` (`fetch-headers`, `create`, `{id}/update`, `{id}/sync-now`, `{id}/process-chunk`, `{id}/sync-status`).
 - **User-facing surface:** Auto sync interval, **Sync now**, Status / Last sync / Rows / Duration. Hyperlinks/images are lost on this engine.
 - **Drives docs:** `docs/data-sources/google-sheets-csv-auto-sync.md`, `docs/data-sources/google-sheets-integration.md`, `docs/data-sources/construct-table-from-csv.md`
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Modules/DataTables (Pro, `ninja-tables-pro/app/Modules/DataTables/`)
 - **Purpose:** Brings two Pro features to the DataTables engine: frontend editing and manual row sort.
 - **Key files:** `DataTablesModule.php`, `Handlers/DTFrontendEditHandler.php` (update/delete row), `Handlers/SortableHandler.php`.
 - **User-facing surface:** Frontend editing and Sort manually on DataTables tables.
 - **Drives docs:** `docs/advanced-features/frontend-editing.md`, `docs/table-management/rearrangement-of-rows-in-ninja-tables-manual-row-sort.md` (neither names the engine — see Gaps)
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ---
 
@@ -136,7 +136,7 @@ Gating model (from `04-sources-integration-pro.md` §2): Pro registers `activate
 - **Sources:** `FluentFormsController`, `WPPostsController` (post types, authors), `TableBuilderController` (D&D CRUD). → see the matching module above.
 - **Installers:** `PluginInstallerController` (`install/fluent-forms`, `install/ninja-charts`; needs `install_plugins`). → `docs/data-sources/fluent-forms-integration.md`, `docs/ninja-charts/how-to-install-ninja-charts.md`
 - **Pro controllers** (`ninja-tables-pro/app/Http/Controllers/`): `CustomFilterController` → `docs/table-settings/custom-filters.md`; `SortableController` (init/store) → `docs/table-management/rearrangement-of-rows-in-ninja-tables-manual-row-sort.md`; `PermissionController` → `docs/table-management/define-permission-for-table-users.md`; `LicenseController` (save/deactivate) → `docs/getting-started/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key.md`; `GoogleSheetSyncController` → GoogleSheetSync above.
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### Hooks/Handlers (Free `app/Hooks/Handlers/`)
 - **PublicDataHandler.php:** registers `[ninja_tables]` (base filterable via `ninja_tables_shortcode_base`), `[ninja_table_info]`, `[ninja_table_cell]` (depth cap `ninja_tables_cell_shortcode_max_depth`), `[ninja_table_builder]`; asset enqueue. → `docs/advanced-features/shortcode-reference.md`, `docs/advanced-features/advanced-shortcode.md`, `docs/wordpress-integration/embed-tables.md`
@@ -155,7 +155,7 @@ Gating model (from `04-sources-integration-pro.md` §2): Pro registers `activate
 - **PlaceholderParserHandler.php** + `Services/TemplatePlaceholders.php`: `{date…}`, `{user:…}`, `{usermeta:…}`, `{current_post_id}`, `{current_user_role}`, `{gt}`/`{lt}`; transform `{{row.key}}` escaping. → `docs/advanced-features/shortcode-reference.md`, `docs/column-settings/transform-value.md`, `docs/column-settings/conditional-formatting.md`
 - **PositionHandler.php** + `Traits/SortableTrait.php`: row position for manual sort. → `docs/table-management/rearrangement-of-rows-in-ninja-tables-manual-row-sort.md`
 - **DataProviderHandler.php:** boots the Pro providers. Drives docs: none.
-- **Last fully audited:** v5.2.18 (redesign @ f0b7813e)
+- **Last fully audited:** v5.2.18 (redesign @ 48b8aec9, docs overhaul 2026-10-30)
 
 ### CPT (`app/CPT/NinjaTable.php`)
 - **Purpose:** Registers the `ninja-table` post type; tables are posts, rows/settings are meta or the DT table.
@@ -183,12 +183,12 @@ Gating model (from `04-sources-integration-pro.md` §2): Pro registers `activate
 
 ## Admin UI (Vue) → doc page map
 
-All paths relative to `resources/admin/`; routes from `routes.js` (hash router under `admin.php?page=ninja_tables`). Shell: `components/layout/{AppShell,AppTopBar,CommandPalette,ThemeToggle}.vue` → `docs/getting-started/ninja-tables-introduction.md`.
+All paths relative to `resources/admin/`; routes from `routes.js` (hash router under `admin.php?page=ninja_tables`). Shell: `components/layout/{AppShell,AppTopBar,CommandPalette,ThemeToggle}.vue` → `docs/getting-started/admin-navigation.md` (+ `ninja-tables-introduction.md`).
 
 | Route (name) | View file | Doc page(s) |
 | --- | --- | --- |
 | `#/` (home) | `views/TablesView.vue` (+ `components/tables/UsagePopover.vue`) | `docs/table-management/tables-list.md`, `docs/table-management/table-cloning-duplicating.md` |
-| `#/` first run | `components/onboarding/{OnboardingWizard,OnboardingEmpty,GettingStarted,WelcomeBanner,WhatMovedModal}.vue` | `docs/getting-started/onboarding-setup-guide.md` (partial — see Gaps) |
+| `#/` first run | `components/onboarding/{OnboardingWizard,OnboardingEmpty,GettingStarted,WelcomeBanner,WhatMovedModal}.vue` | `docs/getting-started/onboarding-setup-guide.md` (wizard + checklist), `docs/getting-started/admin-navigation.md` (Welcome banner, What moved) |
 | `#/create` (create_table) | `views/CreateTableView.vue`, `components/tables/{DefaultTableForm,FileImporter,DragDropCreate,EngineLine}.vue`, `components/tables/sources/*.vue` | `docs/creating-tables/table-types-overview.md`, `docs/creating-tables/create-your-first-table.md`, `docs/creating-tables/choose-table-engine.md`, `docs/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables.md`, `docs/drag-drop-tables/drag-drop-templates.md`, each `docs/data-sources/*` source page |
 | `#/tools` (import_tables) | `views/ImportView.vue` | `docs/import-export/import-table-data-from-a-csv.md`, `docs/import-export/import-ninja-tables-json.md`, `docs/import-export/import-table-from-tablepress-plugin.md` |
 | `#/tools/global_settings` | `views/settings/GeneralSettings.vue` (shell `views/SettingsView.vue`) | `docs/table-management/tools-and-settings.md` |
@@ -277,6 +277,8 @@ Caveat recorded in audit 03: D&D template PRO badges show even when Pro is activ
 ---
 
 ## Gaps
+
+> **2026-10-30 docs overhaul:** gaps 1–3 below are now documented (`/onboarding-setup-guide`, `/admin-navigation`, `/frontend-editing` + `/rearrangement-of-rows-in-ninja-tables-manual-row-sort` name both engines). Gap 4 (changelog entry) deferred by the user until the release version is known. Full feature map with doc § per feature: `.claude/docs-overhaul/FEATURE-MAP.md`; open product questions: `.claude/docs-overhaul/QUESTIONS.md`. New pages: `admin-navigation`, `javascript-events`, `manage-ninja-charts`, `embed-ninja-charts`.
 
 Plugin features with no doc page, or a page that never mentions them (checked by grep across `docs/`, Oct 29 2026):
 

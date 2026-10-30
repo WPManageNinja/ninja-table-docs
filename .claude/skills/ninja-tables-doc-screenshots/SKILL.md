@@ -5,6 +5,10 @@ description: Take, annotate, and place pixel-consistent screenshots of the Ninja
 
 # Ninja Tables Doc Screenshots
 
+> **Filling the docs' `TODO(screenshot)` placeholders?** Use `ninja-tables-take-screenshots` first: it sets the
+> quality bar (natural look, 1440×900 viewport, real front-end pages), the arrow / numbered-badge / highlight rules
+> and the placeholder workflow. This file stays the runner reference.
+
 Every screenshot is taken by a script, never by hand, so it is reproducible and every image on the
 site has the same framing, scale and arrow style. You write a small JSON **plan**; the runner logs in,
 navigates, clips, draws arrows and writes `.webp`. Ported from the FluentCart docs runner.

@@ -6,6 +6,16 @@ the docs currently describe.
 
 ---
 
+## Docs overhaul: every page checked against the plugin (October 30, 2026)
+- **Source:** free `ninja-tables-dev` `redesign` @ `48b8aec9` (5.2.18; one styling-only commit past the baseline), Pro 5.2.18, Ninja Charts on the local site.
+- **Skill:** `ninja-tables-docs-overhaul` (new). Working files in `.claude/docs-overhaul/` (FEATURE-MAP, LEDGER, JOURNEY, QUESTIONS, PHASE-C-BRIEF, `features/`, `reports/`).
+- **Feature map:** 1,001 user-visible features/options mapped from code + headless checks on `http://localhost:10013` (721 covered / 101 partial / 179 missing before), plus a Free-mode run (`features/G-free-mode.md`, Pro deactivated briefly and reactivated).
+- **Structure:** sidebar regrouped into a 14-group user journey (`JOURNEY.md`, approved). No slug renames, no folder moves. 4 new pages. 5 pages retitled (featured cards regenerated).
+- **Pages:** all 113 non-pointer pages rewritten/verified by 12 Sonnet batches, reviewed by the main session. 7 pointer stubs kept hidden. Changelog untouched (redesign entry deferred).
+- **Screenshots:** every image reference removed (356 → 0); 293 `<!-- TODO(screenshot): <slug>-<n> … -->` placeholders added for the coming screenshot skill. The 401 files in `public/images/` are kept (now orphans) for that skill to replace or remove.
+- **Videos:** 8 YouTube embeds removed (old UI), 5 kept unverified (QUESTIONS.md §4).
+- **Deferred:** live re-checks listed in QUESTIONS.md §3; plugin bugs to report in §1.
+
 ## Baseline: plugin memory initialised (October 29, 2026)
 - **Source:** free `ninja-tables-dev` branch `redesign` @ `f0b7813e` (header 5.2.18, latest tag `v5.2.18`); Pro folder 5.2.18.
 - **Docs state:** commit `200bce7` "Rewrite docs for the redesigned Ninja Tables admin UI" (branch `ninjatable-new-ui`). Every page was rewritten for the new admin UI by 6 writers following `.claude/redesign-audit/WRITING-BRIEF.md`; audit notes are in `.claude/redesign-audit/`.

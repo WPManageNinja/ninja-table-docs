@@ -88,12 +88,13 @@ inline in `.vitepress/config.mts` — there is **no separate `sidebar.json` file
 VitePress does **not** auto-discover docs; every new or renamed `.md` file **must** be reflected
 there.
 
-Shape — **nested** array of 14 task-first top-level groups (redesign, Oct 2026), some with
-`collapsed: true` sub-groups (e.g. **Columns** › **Column types**). Groups do NOT mirror the category
-folders, so place a page by the reader's task, not by its folder:
+Shape — **nested** array of 14 task-first top-level groups in user-journey order (approved
+2026-10-30, see `.claude/docs-overhaul/JOURNEY.md`), some with `collapsed: true` sub-groups (e.g.
+**Columns** › **Column types**). Groups do NOT mirror the category folders, so place a page by the
+reader's task, not by its folder:
 
 - Get Started · Create a Table · Add & Edit Rows · Columns · Appearance · Filters & Frontend Editing ·
-  Performance & Custom Code · Show Live Data · Drag & Drop Builder · Add Tables to Your Site ·
+  Add Tables to Your Site · Speed & Custom Code · Show Live Data · Drag & Drop Builder ·
   Manage Tables & Settings · Charts · For Developers · Help & Updates
 
 Sidebar labels are short, task-first and don't repeat the H1 (`'Date'`, `'Duplicate a table'`,
@@ -175,8 +176,7 @@ grep -rhoE '\(/images/[^)]*\)' --include='*.md' docs index.md | tr -d '()' | sor
       [ "$c" = 200 ] || echo "$c $p"; done
 ```
 
-Current baseline: **394 image files, 394 unique refs, 0 broken, 0 orphans, 0 non-webp,
-0 external URLs.** Anything else is a regression.
+Current baseline (2026-10-30, screenshot wave 1 done): **68 image refs in `docs/`**, **225 `TODO(screenshot)` placeholders** (30 marked `blocked:`), 401 pre-redesign files on disk kept as orphans pending approval, 0 non-webp, 0 external URLs. Checks 1–4 must print nothing; check 5 lists the old orphans.
 
 ### Image zoom — why image `src` paths must stay absolute
 
@@ -301,10 +301,15 @@ Reusable procedures for this repo are captured as skills in `.claude/skills/` �
 - `update-ninja-tables-changelog` — add a release entry to `docs/changelog/change-log.md`
 - `check-ninja-tables-feature-coverage` — decide whether a plugin feature is already documented
   before writing anything
+- `ninja-tables-docs-overhaul` — full page-by-page pass against the plugin: feature map, user-journey
+  categories, every doc verified, screenshots stripped and replaced by `TODO(screenshot)` placeholders
+  (resumable via `.claude/docs-overhaul/`)
 
 **Plugin → docs, images, QA, publishing:**
 - `ninja-tables-code-to-docs` — sync docs to plugin code / a new release (see *Plugin memory* below)
-- `ninja-tables-doc-screenshots` — take/refresh screenshots (usually via the `ninja-tables-screenshotter`
+- `ninja-tables-take-screenshots` — fill the `TODO(screenshot)` placeholders with natural, step-annotated shots
+  (quality bar, arrows / numbered badges / highlights, `scripts/screenshots/placeholders.mjs`)
+- `ninja-tables-doc-screenshots` — runner reference: take/refresh screenshots (usually via the `ninja-tables-screenshotter`
   subagent, see below); queue in `.claude/SCREENSHOT-TODO.md`
 - `manage-ninja-tables-images` — add/replace/audit image files under `public/images/`
 - `ninja-tables-featured-images` — social-share cards
