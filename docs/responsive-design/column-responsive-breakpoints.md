@@ -5,27 +5,43 @@ description: "Use a column's Responsive visibility setting to decide on which de
 
 # Show or Hide Columns on Mobile
 
-**Responsive visibility** decides on which devices a column is shown. On small screens, a hidden column folds into a **+** drawer that visitors can open, so wide tables stay readable on phones.
+**Responsive visibility** decides on which devices a column is shown. A hidden column folds into a **+** drawer that visitors can open, so wide tables stay readable on phones.
 
 ## Set a column's visibility
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. In **Table Rows**, click the column heading and choose **Column settings**.
+2. In **Table Rows**, click the gear icon on the column heading and choose **Column settings**.
 3. On the **Basic** tab, pick an option under **Responsive visibility**.
 4. Click **Save column**.
 
-![Responsive visibility setting](/images/responsive-design/column-responsive/1.-Column-Responsive-Breakpoint-1-1.webp)
+<!-- TODO(screenshot): column-responsive-breakpoints-1
+  screen: Tables › Employee Directory › Table Rows › Column settings › Basic
+  table: Employee Directory
+  state: Responsive visibility dropdown open showing all six options
+  highlight: Responsive visibility field
+  view: admin
+  alt: Responsive visibility options in the Basic tab
+-->
 
 ## The options
 
-- **Always show in all devices**: the column always shows.
-- **Hidden on desktop**: shows on phones and tablets, hidden on desktop.
-- **Initial hidden mobile**: hidden on phones; visitors open it with the **+** button.
-- **Initial hidden mobile and tab**: hidden on phones and tablets; opened with **+**.
-- **Initial Hidden Mobile, Tab and Regular Computers**: hidden on every device except large screens; opened with **+**.
-- **Totally hidden on all devices**: never shown. Useful for a column you only use for filters, sorting or calculations.
+- **Always show in all devices** (default): the column always shows.
+- **Hidden on desktop**: the column is folded into the **+** drawer. The result depends on the table engine: on a **FooTable** table the column is hidden at every screen width, so visitors only see it in the **+** drawer. On a **DataTables** table the column shows on phones and tablets and is hidden on wide desktop screens (wider than about 1,200 px).
+- **Initial hidden mobile**: hidden on phones, shown on wider screens; visitors open it with the **+** button.
+- **Initial hidden mobile and tab**: hidden on phones and tablets, shown on desktop; opened with **+**.
+- **Initial Hidden Mobile, Tab and Regular Computers**: folded into the **+** drawer at every screen width, so it never shows as a table column. Despite the name, it is not shown on large screens, on either engine.
+- **Totally hidden on all devices**: never shown, not even in the **+** drawer. Useful for a column you only use for filters, sorting or calculations. DataTables tables leave it out completely.
 
-![Column hidden behind the + button on mobile](/images/responsive-design/column-responsive/2.-Column-Responsive-Breakdown-1.webp)
+Exact break points differ a little between the two engines. Test the table on a phone-sized window with **Preview**.
+
+<!-- TODO(screenshot): column-responsive-breakpoints-2
+  screen: Preview of Employee Directory at phone width
+  table: Employee Directory
+  state: A column set to Initial hidden mobile folded behind the + button, drawer open on one row
+  highlight: + button
+  view: frontend
+  alt: Column hidden behind the plus button on a phone
+-->
 
 ## The + drawer
 
@@ -35,7 +51,5 @@ How the **+** drawer behaves is set for the whole table in **Appearance** › **
 - **+ button in**: put the button in the **First column** or **Last column**.
 - **Hide empty values** (Pro): leave empty cells out of the drawer.
 - **Hide labels** (Pro): show values without their column names.
-
-![Mobile & row details settings](/images/responsive-design/column-responsive/3.-Column-Responsive-Breakpoint-2-1.webp)
 
 Prefer each row as a card instead? See [Mobile View: Cards, + Drawer & Row Details](/stackable-table).

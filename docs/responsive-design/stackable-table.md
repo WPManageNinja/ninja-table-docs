@@ -1,54 +1,66 @@
 ---
-title: "Mobile View: Cards, + Drawer & Row Details"
-description: "Choose how a table looks on small screens: stack each row as a card or fold columns into a + drawer, and open row details in a popup."
+title: "Responsive & Stackable Table"
+description: "Choose how a table looks on small screens: fold columns into a + drawer, stack each row as a card, and open row details in a popup."
 ---
 
-# Mobile View: Cards, + Drawer & Row Details
+# Responsive & Stackable Table
 
-Wide tables don't fit on a phone. The **Mobile & row details** settings decide what happens on small screens: each row can become a **card**, or extra columns can fold into a **+ drawer**. You can also let visitors open a row's details in a popup.
+Wide tables don't fit on a phone. The **Responsive Breakpoint**, **Stackable Table** and **Others** sections of the Appearance tab decide what happens on small screens: extra columns can fold into a **+ drawer**, each row can become a **card**, and visitors can open a row's details in a popup. The three are independent, so you can set up one, two or all of them.
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
 2. Click the **Appearance** tab, then the **Features** tab in the settings panel.
-3. Open **Mobile & row details**.
+3. Open **Responsive Breakpoint**, **Stackable Table** or **Others**.
 
-![Mobile & row details](/images/responsive-design/stackable-table/1.-Stackable-Table-1-1.webp)
+<!-- TODO(screenshot): stackable-table-1
+  screen: Tables › Product Price List › Appearance › Features › Responsive Breakpoint
+  table: Product Price List
+  state: Responsive Breakpoint section open, Preview Width set to Mobile
+  highlight: Responsive drawer
+  view: admin
+  alt: Responsive Breakpoint section with the drawer, toggle position and hide options
+-->
 
-Use **Preview width** › **Mobile** above the preview to check the result.
+Use **Preview Width** › **Mobile** above the preview to check the result.
 
-## On small screens
+## Responsive Breakpoint
 
-Pick one of two layouts:
+Columns you hide on small screens move into a drawer that opens with a **+** button. Choose which columns hide on which devices in each column's **Responsive visibility**, see [Show or Hide Columns on Mobile](/column-responsive-breakpoints). These settings only matter for a table that has at least one column with a breakpoint.
 
-### Stack rows as cards
+- **Responsive drawer**: whether the drawer starts open. **Closed** (default) keeps every drawer shut. **First Row** (Pro) opens the drawer of the first row only. **All Rows** (Pro) opens every drawer.
+- **Toggle Position**: put the **+** button in the **First Column** (default) or the **Last Column**.
+- **Hide Empty Values** (Pro): leave empty cells out of the drawer, the cards and the popup.
+- **Hide Labels** (Pro): show the values without their column names.
 
-Each row is shown as a card, with every column on its own line and the column name next to the value.
+## Stackable Table
 
-- **Stack on**: the devices that get cards: **Mobile device**, **Tablet device**, **Laptop** and **Large devices (iMac)**. Other devices show the normal table.
-- **Card look**:
-  - **Hide column headings**: hide the table's header row while stacked.
-  - **Hide internal borders**: remove the borders between the lines of a card.
+**Stackable Table** shows each row as a card, with every column on its own line and the column name next to the value. The switch in the heading is off by default.
 
-![Choose the devices to stack on](/images/responsive-design/stackable-table/2.-Stackable-Table-2.webp)
+<!-- TODO(screenshot): stackable-table-2
+  screen: Tables › Product Price List › Appearance › Features › Stackable Table
+  table: Product Price List
+  state: Stackable Table switched on, Mobile Device ticked
+  highlight: Stack On
+  view: admin
+  alt: Stackable Table section with the Stack On devices and Card Look options
+-->
 
-![A stacked product table](/images/responsive-design/stackable-table/3.-stackable-table-4.webp)
+- **Stack On**: tick the devices that get cards: **Mobile Device**, **Tablet Device**, **Laptop** and **Large Devices (iMac)**. With no device ticked, the table is not stacked anywhere.
+- **Card Look**:
+  - **Hide Column Headings**: hide the table's header row while stacked.
+  - **Hide Internal Borders**: remove the borders between the lines of a card.
 
-### Fold columns into a + drawer
+<!-- TODO(screenshot): stackable-table-3
+  screen: Tables › Product Price List › Preview
+  table: Product Price List
+  state: Mobile view of the table stacked as cards
+  highlight: -
+  view: frontend
+  alt: A stacked product table with each row shown as a card
+-->
 
-Columns you hide on small screens move into a drawer that opens with a **+** button. Choose which columns hide on which devices in each column's **Responsive visibility**, see [Show or Hide Columns on Mobile](/column-responsive-breakpoints).
+## Others: Row Details Popup
 
-- **Open the + drawer**: **Closed**, **First row** (Pro) or **All rows** (Pro).
-- **+ button in**: **First column** or **Last column**.
-
-## Row details popup
-
-Turn on **Row details popup** and a visitor can click a row on the site to see all of its details in a popup. This helps when many columns are hidden on small screens.
-
-## Hide empty values and labels (Pro)
-
-- **Hide empty values**: leave empty cells out of the drawer, the cards and the popup.
-- **Hide labels**: show the values without their column names.
-
-![Hide empty values and labels](/images/responsive-design/stackable-table/4.-Stackable-Table-3.webp)
+Turn on **Row Details Popup** and a visitor can click a row on the site to see all of its details in a popup. It is off by default and free. This helps when many columns are hidden on small screens.
 
 Click **Save** to keep your changes.
 
