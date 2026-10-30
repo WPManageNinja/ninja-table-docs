@@ -7,19 +7,15 @@ description: "Highlight cells, rows or columns automatically when a value matche
 
 **Conditional formatting** (Pro) styles a cell, its row or its whole column when the cell's value matches a rule. Use it to color prices above a limit, flag overdue dates, or hide rows with a CSS class. You can add as many rules to a column as you need.
 
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/navdcAmy7KU" title="Conditional Formatting Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 ## Open the Conditions tab
 
-1. Go to **Tables** › your table › **Table Rows**.
+1. Go to **Ninja Tables** › **Tables** › your table › **Table Rows**.
 2. Click the gear icon on the column you want to check, and choose **Column settings**.
 3. Open the **Conditions** tab.
 
-![Conditions tab in the column dialog](/images/column-settings/conditional-formatting/1.-New-Ui-conditional-formatting-tab.webp)
+![Conditions tab with no rules](/images/column-settings/conditional-formatting/1.-Conditions-Tab-With-No-Rules.webp)
 
-![Column settings in the column header](/images/column-settings/conditional-formatting/2.-New-Ui-All-tables-configuration-icon.webp)
+Without Pro, the tab shows **Conditional formatting is a Pro feature** and no rule builder.
 
 ## Add a rule
 
@@ -27,21 +23,28 @@ description: "Highlight cells, rows or columns automatically when a value matche
    - **If value** [condition] [value]
    - **Then** [action] [color or value]
 2. Pick a condition and type the value to compare against.
-3. Pick an action. If it needs a color, a color picker appears. If it needs text (a CSS class or new cell content), a text box appears.
+3. Pick an action. If it needs a color, a color picker appears. If it needs text (a CSS class or new cell content), a text box appears. The **Reset** actions need no value.
 4. Add more rules if you need them. Remove one with the trash icon next to its **Rule** number.
 5. Click **Save column**.
 
-![Add a rule](/images/column-settings/conditional-formatting/3.-Ninja-Tables-Add-Condition.webp)
+![A conditional formatting rule with a condition and an action](/images/column-settings/conditional-formatting/2.-Conditional-Formatting-Rule-With-A-Condition.webp)
 
 ### Conditions
 
 The list depends on the column type:
 
-- **All columns:** **Equal**, **Not equal**
-- **Text columns:** also **Contains**, **Does not contain**
-- **Numeric value and Date field columns:** also **Less than**, **Greater than**, **Less than or equal to**, **Greater than or equal to**, and **Between (min and max)**. Between shows two boxes, **Min value** and **Max value**.
+- **All columns**: **Equal**, **Not equal**
+- **Text columns**: also **Contains**, **Does not contain**
+- **Numeric value and Date field columns**: also **Less than**, **Greater than**, **Less than or equal to**, **Greater than or equal to**, and **Between (min and max)**. Between shows two boxes, **Min value** and **Max value**.
 
-![Condition list](/images/column-settings/conditional-formatting/4.-Ninja-Tables-Conditions.webp)
+How they compare:
+
+- **Equal** and **Not equal** compare the cell's content exactly, as it appears on the site including any HTML, and the case must match. `Male` does not equal `male` or `Male ` with a trailing space.
+- **Contains** and **Does not contain** look for the text anywhere in the cell and are case-sensitive.
+- The number and date conditions compare numbers: non-numeric characters are ignored, and the column's **Separator style** (Numeric value) or date format is used to read the value.
+- **Between** is inclusive: a value equal to the minimum or the maximum matches.
+
+Set the column's **Type** to **Numeric value** or **Date field** in the **Basic** tab first, or the extra conditions don't appear. See [Numeric value](/numeric-value) and [Date field](/date-field).
 
 ### Actions
 
@@ -53,11 +56,7 @@ Actions are grouped by what they change:
 
 **Set cell content** replaces the cell's value with new content. HTML is allowed.
 
-![Set cell CSS class](/images/column-settings/conditional-formatting/5.-Set-cell-css-class.webp)
-
-![Row and column options](/images/column-settings/conditional-formatting/6.-Ninja-Tables-column-and-row-options.webp)
-
-![Column options](/images/column-settings/conditional-formatting/7.-Conditional-formatting-column-options.webp)
+![Action list grouped into cell, row and column options](/images/column-settings/conditional-formatting/3.-Action-List-Grouped-Into-Cell-Row.webp)
 
 ## Example: color cells by value
 
@@ -68,13 +67,15 @@ In a Gender column:
 
 Click **Save column**, then preview the table.
 
-![Rules added](/images/column-settings/conditional-formatting/8.-Ninja-Tables-added-Conditions.webp)
-
-![Table preview with conditional formatting](/images/column-settings/conditional-formatting/9.-Table-Preview-conditional-formatting-add.webp)
-
-You can use the same approach to make a single price stand out:
-
-![Highlighted cell](/images/column-settings/conditional-formatting/10.-highlighted-cell.webp)
+<!-- TODO(screenshot): conditional-formatting-4
+  screen: Preview of Employee Directory
+  table: Employee Directory
+  state: A column with cells colored by two conditional formatting rules
+  highlight: -
+  view: frontend
+  alt: Table with cells colored by conditional formatting
+  blocked: needs saved conditional formatting rules on Employee Directory (no saving allowed)
+-->
 
 ## Example: add a CSS class
 
@@ -82,25 +83,11 @@ You can use the same approach to make a single price stand out:
 2. Click **Save column**.
 3. Open the table's **Custom CSS/JS** tab, write the CSS for `.abc`, and click **Save Custom CSS**.
 
-![Cell CSS class](/images/column-settings/conditional-formatting/11.-Ninja-Tables-cell-CSS-class.webp)
+The style now applies to every matching cell. See [Style a table with CSS selectors](/table-styling-css-selector).
 
-![Custom CSS](/images/column-settings/conditional-formatting/12.-Ninja-Tables-Custom-CSS.webp)
+## Example: numbers
 
-The style now applies to every matching cell.
-
-![Table preview with the CSS class](/images/column-settings/conditional-formatting/13.-Preview-Table.webp)
-
-## Numeric value columns
-
-Set the column's **Type** to **Numeric value** to compare numbers. The extra conditions (less than, greater than, between) then appear.
-
-![Number conditions](/images/column-settings/conditional-formatting/14.-Conditional-formatting-in-Numeric-value.webp)
-
-For example, in an Age column: **If value** **Less than or equal to** `25` **Then** **Set cell color** to maroon.
-
-![Number rule](/images/column-settings/conditional-formatting/15.-Add-numeric-value-condition.webp)
-
-![Number rule result](/images/column-settings/conditional-formatting/16.-Numeric-data-types.webp)
+On a **Numeric value** column such as Age: **If value** **Less than or equal to** `25` **Then** **Set cell color** to maroon. For a price band, use **Between (min and max)** with a **Min value** and a **Max value**.
 
 ## Date field columns and dynamic dates
 
@@ -114,17 +101,15 @@ On a **Date field** column, the Conditions tab shows a **Dynamic dates** box. Th
 | `{date+10:MM/DD/YY}` | Date after 10 days |
 | `{date-10:MM/DD/YY}` | Date before 10 days |
 
-Set the date format in the **Basic** tab first. The Dynamic dates box always shows the values in the format you chose. See [Date field](/date-field).
+Set the date format in the **Basic** tab first. The Dynamic dates box always shows the values in the format you chose.
 
-![Date column conditions](/images/column-settings/conditional-formatting/17.-COnditional-formatting-in-data-field.webp)
-
-![Dynamic dates list](/images/column-settings/conditional-formatting/18.-Date-format-condition-add.webp)
+![Dynamic dates box on a Date field column](/images/column-settings/conditional-formatting/5.-Dynamic-Dates-Box-On-A-Date.webp)
 
 For example: **If value** **Less than** `{date:MM/DD/YY}` **Then** **Set cell color** to blue. Every date before today turns blue.
 
-![Date rule](/images/column-settings/conditional-formatting/19.-Add-numeric-condition.webp)
+### Other placeholders
 
-![Date rule result](/images/column-settings/conditional-formatting/20.-Table-preview-numeric-formatting.webp)
+The value box also accepts the other Ninja Tables placeholders, such as `{user:field}`, `{usermeta:key}`, `{current_post_id}`, `{current_post_title}` and `{current_user_role}`. They are filled in when the page loads, so a rule can depend on the logged-in user or the page. See [Shortcode reference](/shortcode-reference).
 
 ## Example: hide past rows with a row CSS class
 
@@ -132,10 +117,4 @@ For example: **If value** **Less than** `{date:MM/DD/YY}` **Then** **Set cell co
 2. Click **Save column**.
 3. In the **Custom CSS/JS** tab, add CSS that hides `.hide`, and click **Save Custom CSS**.
 
-![Row CSS class](/images/column-settings/conditional-formatting/21.-Ninja-Tables-row-css-class.webp)
-
-![Custom CSS for the row class](/images/column-settings/conditional-formatting/22.-Add-Custom-CSS-for-tables.webp)
-
 Rows with a date before today are now hidden on your site.
-
-![Table preview with hidden rows](/images/column-settings/conditional-formatting/23.-Preview-Table-with-custom-css.webp)
