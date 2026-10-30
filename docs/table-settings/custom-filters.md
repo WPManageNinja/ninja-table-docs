@@ -23,6 +23,7 @@ Without Ninja Tables Pro, the tab shows an upgrade panel (**Unlock Custom Filter
   highlight: Add Filter
   view: admin
   alt: Custom filters tab listing filters with Move up, Edit and Delete buttons
+  blocked: Employee Directory has no saved filters and creating them means saving
 -->
 
 ## Add a filter
@@ -42,14 +43,7 @@ If something is missing, a message tells you what to fix:
 
 ## Filter settings
 
-<!-- TODO(screenshot): custom-filters-2
-  screen: Tables › Employee Directory › Custom filters › New Filter
-  table: Employee Directory
-  state: New Filter panel open with Filter Title, Filter Label and Filter UI Type visible
-  highlight: Filter UI Type
-  view: admin
-  alt: New Filter panel with the basic filter settings
--->
+![New Filter panel with the basic filter settings](/images/table-settings/custom-filters/2.-New-Filter-Panel-With-The-Basic.webp)
 
 - **Filter Title**: a name to identify the filter in the list.
 - **Filter Label**: the instruction shown next to the filter on your site. Leave it blank if you don't need one. Not shown for **Reset Filter Button**.
@@ -67,14 +61,7 @@ If something is missing, a message tells you what to fix:
 - **Filter Columns**: the columns this filter looks in. You can pick one or several. Only columns of a matching type are offered: **Date Picker** and **Date Range** list **Date** columns, and **Number Range** lists **Number** columns. If there are none, the panel says "No columns of a matching data type were found for this filter." A dropdown that fills itself from a column doesn't ask for this.
 - **Enable Strict Mode (Match The Exact Value)**: match the exact value only, instead of any cell that contains it. Shown for every type.
 
-<!-- TODO(screenshot): custom-filters-3
-  screen: Tables › Employee Directory › Custom filters › New Filter › Filter UI Type
-  table: Employee Directory
-  state: Filter UI Type dropdown open listing the eight types
-  highlight: Filter UI Type
-  view: admin
-  alt: Filter UI Type list with all eight filter types
--->
+![Filter UI Type list with all eight filter types](/images/table-settings/custom-filters/3.-Filter-UI-Type-List-With-All.webp)
 
 ### Where the choices come from
 
@@ -88,14 +75,7 @@ For **Select Dropdown**, **Value Type** sets where the choices come from. **Radi
 
 Values in typed options can contain placeholders such as `{date:Y-m-d}` or `{current_user_role}`, which are replaced with live values when the page loads. See [Placeholders](/shortcode-reference) for the list.
 
-<!-- TODO(screenshot): custom-filters-4
-  screen: Tables › Employee Directory › Custom filters › New Filter › Filter Options
-  table: Employee Directory
-  state: Select Dropdown with Manual Data and two Filter Options filled in
-  highlight: Filter Options
-  view: admin
-  alt: Filter Options with a label and a filter value for each choice
--->
+![Filter Options with a label and a filter value for each choice](/images/table-settings/custom-filters/4.-Filter-Options-With-A-Label.webp)
 
 ### More options by type
 
@@ -116,6 +96,7 @@ To let visitors filter a price list by range, the price column must be a **Numbe
   highlight: -
   view: frontend
   alt: Table on a page with a price range filter above it
+  blocked: no demo page has a Number Range filter (needs a saved filter)
 -->
 
 ## Layout of the filters
@@ -132,6 +113,7 @@ The **Layout** card appears below the list once the table has at least one filte
   highlight: Show Filters
   view: admin
   alt: Layout card with filter display options
+  blocked: Layout card only appears once a filter is saved
 -->
 
 The layout saves with the **Save** button at the top of the editor.

@@ -193,3 +193,4 @@ Rules: replace stale images under the same file name; drop an image only when it
 ## Wave log
 - 2026-10-30 pilots: tables-list (2 of 4; 1-2 blocked), table-rendering-settings (3 of 3).
 - 2026-10-30 wave 1 (Get Started, Create, Import/Export, Columns, Column types): ~70 images placed; ~30 placeholders carry a `blocked:` line (grep `blocked:` in docs/). Next: Rows/Appearance/Filters/Embed/Speed/Live data/Drag & Drop/Manage/Charts.
+- 2026-10-30 wave 2 (rows, formatting, colors/fonts, features, export, responsive, filters; 18 pages): ~23 images placed; the rest blocked (need saved values on demo tables or missing seed data). See blocked: lines.

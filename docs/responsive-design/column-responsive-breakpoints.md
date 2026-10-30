@@ -14,14 +14,7 @@ description: "Use a column's Responsive visibility setting to decide on which de
 3. On the **Basic** tab, pick an option under **Responsive visibility**.
 4. Click **Save column**.
 
-<!-- TODO(screenshot): column-responsive-breakpoints-1
-  screen: Tables › Employee Directory › Table Rows › Column settings › Basic
-  table: Employee Directory
-  state: Responsive visibility dropdown open showing all six options
-  highlight: Responsive visibility field
-  view: admin
-  alt: Responsive visibility options in the Basic tab
--->
+![Responsive visibility options in the Basic tab](/images/responsive-design/column-responsive/1.-Responsive-Visibility-Options-In-The-Basic.webp)
 
 ## The options
 
@@ -41,6 +34,7 @@ Exact break points differ a little between the two engines. Test the table on a 
   highlight: + button
   view: frontend
   alt: Column hidden behind the plus button on a phone
+  blocked: needs a column saved with a responsive breakpoint (unsaved change); Employee Directory on the front end currently has no hidden column
 -->
 
 ## The + drawer

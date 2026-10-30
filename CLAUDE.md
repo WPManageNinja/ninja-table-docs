@@ -176,7 +176,7 @@ grep -rhoE '\(/images/[^)]*\)' --include='*.md' docs index.md | tr -d '()' | sor
       [ "$c" = 200 ] || echo "$c $p"; done
 ```
 
-Current baseline (2026-10-30, screenshot wave 1 done): **68 image refs in `docs/`**, **225 `TODO(screenshot)` placeholders** (30 marked `blocked:`), 401 pre-redesign files on disk kept as orphans pending approval, 0 non-webp, 0 external URLs. Checks 1–4 must print nothing; check 5 lists the old orphans.
+Current baseline (2026-10-30, screenshot waves 1-2 done): **91 image refs in `docs/`**, **202 `TODO(screenshot)` placeholders** (48 marked `blocked:`), 401 pre-redesign files on disk kept as orphans pending approval, 0 non-webp, 0 external URLs. Checks 1–4 must print nothing; check 5 lists the old orphans.
 
 ### Image zoom — why image `src` paths must stay absolute
 

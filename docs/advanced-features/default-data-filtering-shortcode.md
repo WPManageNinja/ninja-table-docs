@@ -28,6 +28,7 @@ The filter looks at every column, unless you limit it (see below). The rules in 
   highlight: -
   view: frontend
   alt: Table on a page showing only the rows that match the shortcode filter
+  blocked: no demo page embeds Order History with filter="Shipped" (needs a new page)
 -->
 
 ## Filter rules

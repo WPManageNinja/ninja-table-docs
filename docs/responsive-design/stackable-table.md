@@ -11,14 +11,7 @@ Wide tables don't fit on a phone. The **Responsive Breakpoint**, **Stackable Tab
 2. Click the **Appearance** tab, then the **Features** tab in the settings panel.
 3. Open **Responsive Breakpoint**, **Stackable Table** or **Others**.
 
-<!-- TODO(screenshot): stackable-table-1
-  screen: Tables › Product Price List › Appearance › Features › Responsive Breakpoint
-  table: Product Price List
-  state: Responsive Breakpoint section open, Preview Width set to Mobile
-  highlight: Responsive drawer
-  view: admin
-  alt: Responsive Breakpoint section with the drawer, toggle position and hide options
--->
+![Responsive Breakpoint section with the drawer, toggle position and hide options](/images/responsive-design/stackable-table/1.-Responsive-Breakpoint-Section-With-The-Drawer.webp)
 
 Use **Preview Width** › **Mobile** above the preview to check the result.
 
@@ -35,14 +28,7 @@ Columns you hide on small screens move into a drawer that opens with a **+** but
 
 **Stackable Table** shows each row as a card, with every column on its own line and the column name next to the value. The switch in the heading is off by default.
 
-<!-- TODO(screenshot): stackable-table-2
-  screen: Tables › Product Price List › Appearance › Features › Stackable Table
-  table: Product Price List
-  state: Stackable Table switched on, Mobile Device ticked
-  highlight: Stack On
-  view: admin
-  alt: Stackable Table section with the Stack On devices and Card Look options
--->
+![Stackable Table section with the Stack On devices and Card Look options](/images/responsive-design/stackable-table/2.-Stackable-Table-Section-With-The-Stack.webp)
 
 - **Stack On**: tick the devices that get cards: **Mobile Device**, **Tablet Device**, **Laptop** and **Large Devices (iMac)**. With no device ticked, the table is not stacked anywhere.
 - **Card Look**:
@@ -56,6 +42,7 @@ Columns you hide on small screens move into a drawer that opens with a **+** but
   highlight: -
   view: frontend
   alt: A stacked product table with each row shown as a card
+  blocked: needs Stackable Table saved on a demo table (unsaved change not visible on the front end)
 -->
 
 ## Others: Row Details Popup
