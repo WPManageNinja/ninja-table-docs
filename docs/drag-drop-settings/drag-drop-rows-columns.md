@@ -5,16 +5,25 @@ description: "Add, insert, duplicate, move and remove rows and columns in a Drag
 
 # Drag & Drop Rows & Columns
 
-In the **Drag & Drop builder**, the column letters above the table and the row numbers beside it are handles: use them to add, move, copy and remove whole columns and rows. You can also merge cells together.
+In the **Drag & Drop builder**, the column letters above the table and the row numbers beside it are handles: use them to add, move, copy and remove whole columns and rows. You can also merge cells together. These tools work in **Desktop** preview only; in **Tablet** and **Mobile** preview they are hidden.
 
 ## Add rows and columns
 
-Below the table:
+Below the table, the add bar has two buttons:
 
 - **+ Add row** › **At the bottom** or **At the top**
 - **+ Add column** › **On the right** or **On the left**
 
-![Add rows and columns](/images/drag-drop-settings/manage-cells-ninja-tables/2.-Manage-table-cells.webp)
+A hint next to them reminds you that the ⋯ on a row or column number inserts next to it.
+
+<!-- TODO(screenshot): drag-drop-rows-columns-1
+  screen: Drag & Drop builder, add bar under the table
+  table: a Drag & Drop pricing table
+  state: + Add row menu open showing At the bottom and At the top
+  highlight: + Add row button
+  view: admin
+  alt: Add row menu with At the bottom and At the top options
+-->
 
 ## The column and row menus
 
@@ -25,7 +34,14 @@ Click a column letter (**A**, **B**, **C**…) to open its menu:
 - **Duplicate column**: copy the column with its content.
 - **Remove column**
 
-![Column menu](/images/drag-drop-settings/manage-cells-ninja-tables/8.-customize-and-manage-table-column.webp)
+<!-- TODO(screenshot): drag-drop-rows-columns-2
+  screen: Drag & Drop builder, column menu
+  table: a Drag & Drop pricing table
+  state: Column B menu open
+  highlight: Insert column after
+  view: admin
+  alt: Column menu with insert, duplicate and remove options
+-->
 
 Click a row number (**1**, **2**, **3**…) for the same options for rows:
 
@@ -34,21 +50,37 @@ Click a row number (**1**, **2**, **3**…) for the same options for rows:
 - **Duplicate row**
 - **Remove row**
 
-![Row menu](/images/drag-drop-settings/manage-cells-ninja-tables/7.-customize-and-manage-table-tows.webp)
+<!-- TODO(screenshot): drag-drop-rows-columns-3
+  screen: Drag & Drop builder, row menu
+  table: a Drag & Drop pricing table
+  state: Row 2 menu open
+  highlight: Insert row after
+  view: admin
+  alt: Row menu with insert, duplicate and remove options
+-->
+
+If a row or column you remove holds merged cells, their content moves into the neighboring cell.
 
 ## Move rows and columns
 
-Drag a **column letter** left or right to move the whole column. Drag a **row number** up or down to move the whole row.
+Drag a **column letter** left or right to move the whole column. Drag a **row number** up or down to move the whole row. To move a single element instead, drag it by the grip on its chip to another cell.
 
 ## Merge and split cells
 
 1. Click the first cell.
-2. Hold **Shift** and click the other cells you want to merge. They must sit next to each other.
+2. Hold **Shift** and click the other cells you want to merge. Together they must form a solid rectangle, so cells next to each other with no gaps.
 3. Click **Merge** in the canvas toolbar.
 
-To undo it, select the merged cell and click **Split**.
+**Merge** stays greyed out until two or more cells are selected. It joins cells across columns (colspan) or down rows (rowspan). To undo it, select the merged cell and click **Split**.
 
-![Merge cells](/images/drag-drop-settings/manage-cells-ninja-tables/5.-merge-data-table-cells.webp)
+<!-- TODO(screenshot): drag-drop-rows-columns-4
+  screen: Drag & Drop builder, canvas toolbar
+  table: a Drag & Drop pricing table
+  state: Two neighboring cells selected, label reading 2 cells selected, Merge enabled
+  highlight: Merge button
+  view: admin
+  alt: Two selected cells and the enabled Merge button in the canvas toolbar
+-->
 
 ## Row height and column width
 
