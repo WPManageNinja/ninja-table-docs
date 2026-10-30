@@ -1,6 +1,6 @@
 ---
 title: "Export Ninja Tables (CSV/JSON)"
-description: "Download a table's rows as CSV or Excel, or the whole table with its settings as JSON, from Table Rows › Import / export › Export."
+description: "Download a table's rows as CSV or Excel, or the whole table with its settings as JSON, from Table Rows › Import / Export."
 ---
 
 # Export Ninja Tables (CSV/JSON)
@@ -14,19 +14,14 @@ You can download any table that stores its own rows as a file: **CSV** or **Exce
 ## Export a table
 
 1. Open the table from the [Tables list](/tables-list). It opens on the **Table Rows** tab.
-2. Click **Import / export** in the toolbar.
+2. Click **Import / Export** in the toolbar. The **Import / Export** dialog opens on **Export**, with the **Export This Table** card.
 
-![Import - Export](/images/import-export/export-ninja-tables-csv/1.-01-3.webp)
+![Import / Export dialog open on the Export tab](/images/import-export/export-ninja-tables-csv/1.-Import-Export-Dialog-Open.webp)
 
-3. Choose **Export**. The **Export this table** panel opens.
+3. Pick a **Format**: **CSV**, **Excel (.xlsx)** or **JSON**. CSV is the default.
+4. Click **Export Table**. The file downloads to your computer.
 
-![Export Data](/images/import-export/export-ninja-tables-csv/2.-02-3.webp)
-
-4. Pick a **Format**: **CSV**, **Excel (.xlsx)** or **JSON**.
-
-![File Format](/images/import-export/export-ninja-tables-csv/3.-03-3.webp)
-
-5. Click **Export table**. The file downloads to your computer.
+![Export This Table card with the Format menu open](/images/import-export/export-ninja-tables-csv/2.-Export-This-Table-Card.webp)
 
 ## Which format to choose
 
@@ -36,6 +31,8 @@ You can download any table that stores its own rows as a file: **CSV** or **Exce
 | **Excel (.xlsx)** | The rows, as a ready-to-open spreadsheet | Share the data with people who use Excel, Google Sheets or Numbers |
 | **JSON** | The whole table: columns, rows, design and settings | Back up the table, or [import it](/import-ninja-tables-json) into another Ninja Tables site without setting it up again |
 
+In a CSV, a cell holding several values (such as a multi-select) is joined with a comma and a space. Cells that start with a character a spreadsheet could read as a formula are made safe, so opening the file can't run a formula.
+
 ## About Excel exports
 
 - The file opens in Excel, Google Sheets and Numbers.
@@ -44,11 +41,17 @@ You can download any table that stores its own rows as a file: **CSV** or **Exce
 - A worksheet can hold up to 1,048,576 rows, which is Excel's own limit. For bigger tables, export as CSV.
 - The **Excel (.xlsx)** option only appears if your server has the PHP Zip extension. If you don't see it, ask your host to enable the extension, or export as CSV.
 
+## Large tables
+
+Tables with 20,000 or more rows are streamed to the file as it's built, instead of being loaded into memory first, so a CSV or JSON export of a big table doesn't run out of server memory. You don't need to do anything. Developers can change the 20,000-row threshold with the `ninja_tables_export_stream_threshold` filter.
+
 ## Tables you can't export
 
-Connected tables, such as WooCommerce, WP Posts, Google Sheets or Custom SQL tables, get their rows from the source, so their Table Rows toolbar has no **Import / export** button. Export the data from the source itself.
+Connected tables, such as WooCommerce, WP Posts, Google Sheets or Custom SQL tables, get their rows from the source, so their Table Rows toolbar has no **Import / Export** button. Export the data from the source itself.
 
-To export a Drag & Drop table, use the ⋯ menu in the Drag & Drop builder.
+## Export a Drag & Drop table
+
+In the Drag & Drop builder, click the **More actions** (⋯) button at the top, then choose **Export as CSV** or **Export as JSON** under **Export Table**. The button appears once the table has been saved.
 
 ## Let visitors download the table
 
