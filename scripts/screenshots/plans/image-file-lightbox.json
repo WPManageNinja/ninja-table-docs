@@ -1,0 +1,64 @@
+{
+  "doc": "docs/field-types/image-file-lightbox.md",
+  "outDir": "public/images/field-types/image-file-lightbox",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Product Price List}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": "button:has-text(\"Add column\")"
+    },
+    {
+      "wait": 900
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer input >> nth=0",
+        "value": "Product Image"
+      }
+    },
+    {
+      "click": ".nt-drawer .el-select"
+    },
+    {
+      "click": ".el-select-dropdown__item:visible:has-text(\"Image/File/Lightbox\")"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "eval": "document.activeElement&&document.activeElement.blur()"
+    },
+    {
+      "shot": {
+        "name": "1.-Column-Dialog-With-Type-Set",
+        "clip": "viewport",
+        "highlights": [
+          {
+            "row": "When visitors click the image",
+            "part": "row"
+          }
+        ]
+      }
+    },
+    {
+      "click": ".nt-drawer .el-select:has-text(\"Image only\")"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "2.-Click-Behavior-Options-For-An-Image",
+        "clip": "viewport"
+      }
+    }
+  ]
+}

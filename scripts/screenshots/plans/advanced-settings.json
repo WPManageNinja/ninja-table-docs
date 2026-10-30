@@ -1,0 +1,54 @@
+{
+  "doc": "docs/column-settings/advanced-settings.md",
+  "outDir": "public/images/column-settings/advanced-settings",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "admin": "/tables/{{Product Price List}}"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": "th:has-text(\"Price ($)\") .nt-sheet__colset"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": {
+        "selector": ".nt-col-tabs__tab",
+        "hasText": "Advanced"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "1.-Advanced-Tab-Of-The-Column-Dialog",
+        "clip": {
+          "x": 720,
+          "y": 32,
+          "width": 720,
+          "height": 968
+        }
+      }
+    }
+  ]
+}

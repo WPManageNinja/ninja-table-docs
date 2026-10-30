@@ -1,0 +1,23 @@
+{
+  "doc": "docs/styling-design/use-design-as-default.md",
+  "outDir": "public/images/styling-design/use-design-as-default",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tools/default_table_appearance"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "shot": {
+        "name": "1.-Global-Appearance-Settings-With-Color-Library",
+        "clip": "app",
+        "crop": "auto"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "doc": "docs/field-types/html-field.md",
+  "outDir": "public/images/field-types/html-field",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": "th.js-col:has-text(\"Office\") .nt-sheet__colset"
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 900
+    },
+    {
+      "click": ".nt-drawer .el-select"
+    },
+    {
+      "click": ".el-select-dropdown__item:visible:has-text(\"HTML field\")"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "eval": "document.activeElement&&document.activeElement.blur()"
+    },
+    {
+      "eval": "(()=>{let best=null;document.querySelectorAll('.nt-drawer *').forEach(e=>{if(e.innerText&&e.innerText.includes(\"trusted\")&&(!best||e.innerText.length<=best.innerText.length))best=e});let t=best;for(let i=0;i<1;i++)t=t.parentElement;t.setAttribute('data-hl','note')})()"
+    },
+    {
+      "shot": {
+        "name": "1.-Column-Dialog-With-Type-Set",
+        "clip": "viewport",
+        "highlights": [
+          "[data-hl=\"note\"]"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "doc": "docs/getting-started/onboarding-setup-guide.md",
+  "outDir": "public/images/getting-started/onboarding-setup-guide",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/create"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": {
+        "text": "Default table"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
+      "fill": {
+        "selector": "#nt-new-title",
+        "value": "Pricing plans"
+      }
+    },
+    {
+      "shot": {
+        "name": "6.-Default-Table-Panel-With-Table-Name",
+        "clip": "app",
+        "highlights": [
+          "button:has-text(\"Create table\")"
+        ]
+      }
+    },
+    {
+      "front": "{{page:Shop Price List}}/"
+    },
+    {
+      "eval": "window.scrollTo(0,110)"
+    },
+    {
+      "shot": {
+        "name": "8.-Published-Page-Showing-A-Ninja-Tables",
+        "clip": "viewport"
+      }
+    }
+  ]
+}

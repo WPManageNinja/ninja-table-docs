@@ -1,0 +1,46 @@
+{
+  "doc": "docs/styling-design/table-font-settings.md",
+  "outDir": "public/images/styling-design/table-font-settings",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Product Price List}}/design_studio"
+    },
+    {
+      "click": {
+        "role": "tab",
+        "name": "^Style$"
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Typography"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": ".nt-ds-sec.is-open .el-select"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "1.-Typography-Settings-With-The-Font-Family",
+        "clip": "app",
+        "highlights": [
+          {
+            "row": "Font Family",
+            "part": "row"
+          }
+        ]
+      }
+    }
+  ]
+}

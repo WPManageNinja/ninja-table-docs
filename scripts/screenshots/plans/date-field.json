@@ -1,0 +1,103 @@
+{
+  "doc": "docs/field-types/date-field.md",
+  "outDir": "public/images/field-types/date-field",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Conference Schedule}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": "th.js-col:has-text(\"Date\") .nt-sheet__colset"
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 900
+    },
+    {
+      "shot": {
+        "name": "1.-Column-Dialog-With-Type-Set",
+        "clip": "viewport",
+        "highlights": [
+          {
+            "row": "Date format",
+            "part": "row"
+          }
+        ]
+      }
+    },
+    {
+      "click": ".nt-drawer :text-is(\"Custom\")"
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer input[placeholder=\"e.g. dddd, MMMM Do YYYY\"]",
+        "value": "dddd, MMMM Do YYYY"
+      }
+    },
+    {
+      "shot": {
+        "name": "2.-Custom-Date-Format-Box",
+        "clip": "viewport",
+        "highlights": [
+          {
+            "row": "Date format",
+            "part": "row"
+          }
+        ]
+      }
+    },
+    {
+      "click": ".nt-drawer button:has-text(\"Cancel\")"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": "tbody tr:nth-child(3) td:nth-child(2)"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": ".el-date-editor input"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "shot": {
+        "name": "3.-Calendar-Date-Picker-Open",
+        "clip": "viewport",
+        "highlights": [
+          ".el-picker-panel"
+        ]
+      }
+    },
+    {
+      "front": "{{page:WordCamp Schedule 2026}}/"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "eval": "document.querySelectorAll('.ninja_table_wrapper tbody tr:nth-child(n+9)').forEach(r=>r.style.display='none');document.querySelectorAll('.ninja_table_wrapper tr.footable-paging, .ninja_table_wrapper .dataTables_paginate').forEach(r=>r.style.display='none')"
+    },
+    {
+      "shot": {
+        "name": "4.-Table-With-A-Date-Field-Column",
+        "clip": {
+          "element": ".ninja_table_wrapper",
+          "pad": 6
+        }
+      }
+    }
+  ]
+}

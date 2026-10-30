@@ -1,0 +1,46 @@
+{
+  "doc": "docs/field-types/text-area.md",
+  "outDir": "public/images/field-types/text-area",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Course Catalog}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": "th.js-col:has-text(\"Course\") .nt-sheet__colset"
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 900
+    },
+    {
+      "click": ".nt-drawer .el-select"
+    },
+    {
+      "click": ".el-select-dropdown__item:visible:has-text(\"Text area\")"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "eval": "document.activeElement&&document.activeElement.blur()"
+    },
+    {
+      "shot": {
+        "name": "1.-Column-Dialog-With-Type-Set",
+        "clip": "viewport",
+        "highlights": [
+          ".nt-drawer .el-select"
+        ]
+      }
+    }
+  ]
+}

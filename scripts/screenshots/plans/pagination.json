@@ -1,0 +1,84 @@
+{
+  "doc": "docs/styling-design/pagination.md",
+  "outDir": "public/images/styling-design/pagination",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}/design_studio"
+    },
+    {
+      "click": {
+        "role": "tab",
+        "name": "^Features$"
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Pagination"
+      }
+    },
+    {
+      "scrollTo": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Pagination"
+      }
+    },
+    {
+      "shot": {
+        "name": "1.-Pagination-Section-With-Rows-Per-Page",
+        "clip": "app",
+        "badges": [
+          {
+            "target": {
+              "selector": ".nt-tab",
+              "hasText": "Appearance"
+            },
+            "n": 1,
+            "pos": "top-right"
+          },
+          {
+            "target": {
+              "role": "tab",
+              "name": "^Features$"
+            },
+            "n": 2,
+            "pos": "top-right"
+          },
+          {
+            "target": {
+              "selector": ".nt-ds-sec__btn",
+              "hasText": "Pagination"
+            },
+            "n": 3,
+            "pos": "left"
+          }
+        ],
+        "highlights": [
+          {
+            "row": "Rows Per Page",
+            "part": "row"
+          }
+        ]
+      }
+    },
+    {
+      "front": "{{page:Our Team}}/"
+    },
+    {
+      "eval": "const r=document.querySelector('tr.footable-paging'); window.scrollTo(0, r.getBoundingClientRect().bottom + window.scrollY - window.innerHeight + 48);"
+    },
+    {
+      "shot": {
+        "name": "2.-Table-On-The-Site",
+        "clip": "viewport",
+        "highlights": [
+          "tr.footable-paging ul.pagination"
+        ]
+      }
+    }
+  ]
+}

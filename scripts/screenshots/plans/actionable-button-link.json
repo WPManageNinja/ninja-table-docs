@@ -1,0 +1,106 @@
+{
+  "doc": "docs/field-types/actionable-button-link.md",
+  "outDir": "public/images/field-types/actionable-button-link",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Course Catalog}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": "th.js-col:has-text(\"Enroll\") .nt-sheet__colset"
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 900
+    },
+    {
+      "shot": {
+        "name": "1.-Column-Dialog-With-Type-Set",
+        "clip": "viewport",
+        "highlights": [
+          {
+            "row": "Button text",
+            "part": "row"
+          }
+        ]
+      }
+    },
+    {
+      "click": ".nt-drawer label:has-text(\"Open link in a new tab\")"
+    },
+    {
+      "click": ".nt-drawer label:has-text(\"Rounded corners\")"
+    },
+    {
+      "click": ".nt-drawer label:has-text(\"nofollow\")"
+    },
+    {
+      "eval": "(()=>{let best=null;document.querySelectorAll('.nt-drawer *').forEach(e=>{if(e.innerText&&e.innerText.includes(\"Border\")&&(!best||e.innerText.length<=best.innerText.length))best=e});let t=best;for(let i=0;i<3;i++)t=t.parentElement;t.setAttribute('data-hl','colors')})()"
+    },
+    {
+      "shot": {
+        "name": "2.-Button-Link-Options-With-Colors",
+        "clip": "viewport",
+        "highlights": [
+          "[data-hl=\"colors\"]"
+        ]
+      }
+    },
+    {
+      "click": ".nt-drawer button:has-text(\"Cancel\")"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": "button:has-text(\"Add data\")"
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer input[placeholder=\"https://\"]",
+        "value": "https://example.com/courses/wordpress-for-beginners"
+      }
+    },
+    {
+      "eval": "(()=>{let best=null;document.querySelectorAll('.nt-drawer *').forEach(e=>{if(e.innerText&&e.innerText.includes(\"The link this cell\")&&(!best||e.innerText.length<=best.innerText.length))best=e});let t=best;for(let i=0;i<1;i++)t=t.parentElement;t.setAttribute('data-hl','url')})()"
+    },
+    {
+      "shot": {
+        "name": "3.-Row-Drawer-Showing-The-Link-Field",
+        "clip": "viewport",
+        "highlights": [
+          "[data-hl=\"url\"]"
+        ]
+      }
+    },
+    {
+      "front": "{{page:Online Courses}}/"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "eval": "document.querySelectorAll('.ninja_table_wrapper tbody tr:nth-child(n+9)').forEach(r=>r.style.display='none');document.querySelectorAll('.ninja_table_wrapper tr.footable-paging, .ninja_table_wrapper .dataTables_paginate').forEach(r=>r.style.display='none')"
+    },
+    {
+      "shot": {
+        "name": "4.-Table-With-Styled-Buttons",
+        "clip": {
+          "element": ".ninja_table_wrapper",
+          "pad": 6
+        }
+      }
+    }
+  ]
+}

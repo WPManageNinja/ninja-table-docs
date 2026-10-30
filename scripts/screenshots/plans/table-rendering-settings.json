@@ -1,13 +1,101 @@
 {
   "doc": "docs/table-settings/table-rendering-settings.md",
   "outDir": "public/images/table-settings/table-rendering-settings",
-  "viewport": { "width": 1600, "height": 1100 },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
   "steps": [
-    { "admin": "/tables/{{Product Price List}}/configuration" },
-    { "shot": { "name": "1.-New-Ui-table-rendering-settings", "clip": "app", "crop": "auto",
-        "arrows": [ { "target": { "selector": ".nt-tab", "hasText": "Table Configuration" }, "from": "bottom", "len": 140 } ] } },
-
-    { "shot": { "name": "2.-Rendering-Setting", "clip": { "rows": ["Rendering Setting"], "pad": 6 },
-        "arrows": [ { "target": { "selector": ".nt-radio-card", "hasText": "Legacy" }, "from": "right", "len": 130 } ] } }
+    {
+      "admin": "/tables/{{Employee Directory}}/configuration"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "shot": {
+        "name": "1.-Table-Configuration-Tab-Showing-The-Performance",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          {
+            "row": "Rendering Setting",
+            "part": "row"
+          }
+        ],
+        "badges": [
+          {
+            "target": {
+              "selector": ".nt-tab",
+              "hasText": "Table Configuration"
+            },
+            "n": 2,
+            "pos": "top-right"
+          }
+        ]
+      }
+    },
+    {
+      "shot": {
+        "name": "2.-Rendering-Setting-With-The-Ajax",
+        "clip": {
+          "rows": [
+            "Rendering Setting"
+          ],
+          "pad": 12
+        },
+        "arrows": [
+          {
+            "target": {
+              "selector": ".nt-radio-card",
+              "hasText": "Legacy"
+            },
+            "from": "right",
+            "len": 130
+          }
+        ]
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-radio-card",
+        "hasText": "Legacy"
+      }
+    },
+    {
+      "wait": 400
+    },
+    {
+      "click": {
+        "selector": ".nt-config__switch",
+        "hasText": "Enable HTML cache"
+      }
+    },
+    {
+      "wait": 400
+    },
+    {
+      "fill": {
+        "selector": "#nt-config-html-cache",
+        "value": "60"
+      }
+    },
+    {
+      "shot": {
+        "name": "3.-Caching-Configuration-Options-With-HTML-Cache",
+        "clip": {
+          "rows": [
+            "Caching Configuration"
+          ],
+          "pad": 12
+        },
+        "highlights": [
+          {
+            "selector": ".nt-config__switch",
+            "hasText": "Enable HTML cache"
+          }
+        ]
+      }
+    }
   ]
 }

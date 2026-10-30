@@ -1,0 +1,28 @@
+{
+  "doc": "docs/getting-started/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key.md",
+  "outDir": "public/images/getting-started/upgrade-ninja-tables",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tools/licensing"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "shot": {
+        "name": "2.-Settings-License-Screen-With-The-License",
+        "clip": "app",
+        "crop": {
+          "height": 1240
+        },
+        "highlights": [
+          "input[placeholder=\"Paste your license key\"]"
+        ]
+      }
+    }
+  ]
+}

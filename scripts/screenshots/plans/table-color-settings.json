@@ -1,0 +1,73 @@
+{
+  "doc": "docs/styling-design/table-color-settings.md",
+  "outDir": "public/images/styling-design/table-color-settings",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Product Price List}}/design_studio"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "css": ".nt-ds-modes{width:fit-content!important;padding:6px 14px!important;margin:14px 0 22px 4px!important}"
+    },
+    {
+      "shot": {
+        "name": "1.-Colors-Tab-Showing-The-Preset",
+        "clip": "app",
+        "highlights": [
+          ".nt-ds-modes"
+        ]
+      }
+    },
+    {
+      "click": ".nt-ds-swatch:nth-child(9)"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "shot": {
+        "name": "2.-Preset-Color-Schemes-With-The-Blue",
+        "clip": "app",
+        "highlights": [
+          ".nt-ds-swatch:nth-child(9)"
+        ]
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-modes label, .nt-ds-modes button",
+        "hasText": "Custom"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Table Header Colors"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "css": ".nt-ds-sec.is-open .nt-ds-sec__inner{margin:0 14px 0 4px!important} .nt-ds-modes{margin-bottom:0!important}"
+    },
+    {
+      "shot": {
+        "name": "3.-Custom-Color-Sections-For-Search-Bar",
+        "clip": "app",
+        "highlights": [
+          ".nt-ds-sec.is-open .nt-ds-sec__inner"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "doc": "docs/getting-started/how-to-get-support.md",
+  "outDir": "public/images/getting-started/get-support",
+  "viewport": {
+    "width": 1440,
+    "height": 1080
+  },
+  "steps": [
+    {
+      "admin": "/help"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "shot": {
+        "name": "1.-Ninja-Tables-Help-Page",
+        "clip": "app",
+        "highlights": [
+          ".nt-help__card:has-text(\"Need expert support\")"
+        ]
+      }
+    }
+  ]
+}

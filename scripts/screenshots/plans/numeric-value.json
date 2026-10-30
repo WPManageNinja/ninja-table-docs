@@ -1,0 +1,73 @@
+{
+  "doc": "docs/field-types/numeric-value.md",
+  "outDir": "public/images/field-types/numeric-value",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Product Price List}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": "th.js-col:has-text(\"Price\") .nt-sheet__colset"
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 900
+    },
+    {
+      "click": ".nt-drawer .el-select"
+    },
+    {
+      "click": ".el-select-dropdown__item:visible:has-text(\"Numeric value\")"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "eval": "document.activeElement&&document.activeElement.blur()"
+    },
+    {
+      "shot": {
+        "name": "1.-Column-Dialog-With-Type-Set",
+        "clip": "viewport",
+        "highlights": [
+          {
+            "row": "Separator style",
+            "part": "row"
+          }
+        ]
+      }
+    },
+    {
+      "front": "{{page:Shop Price List}}/"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "click": "th.ninja_clmn_nm_price"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "eval": "document.querySelectorAll('.ninja_table_wrapper tbody tr:nth-child(n+9)').forEach(r=>r.style.display='none');document.querySelectorAll('.ninja_table_wrapper tr.footable-paging, .ninja_table_wrapper .dataTables_paginate').forEach(r=>r.style.display='none')"
+    },
+    {
+      "shot": {
+        "name": "2.-Table-With-A-Numeric-Column-Sorted",
+        "clip": {
+          "element": ".ninja_table_wrapper",
+          "pad": 6
+        }
+      }
+    }
+  ]
+}

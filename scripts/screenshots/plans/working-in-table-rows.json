@@ -1,0 +1,70 @@
+{
+  "doc": "docs/creating-tables/working-in-table-rows.md",
+  "outDir": "public/images/creating-tables/working-rows",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "shot": {
+        "name": "1.-Table-Rows-Tab-With-The-Toolbar",
+        "clip": "app"
+      }
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Add data"
+      }
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "shot": {
+        "name": "2.-Row-Drawer-With-One-Field-Per",
+        "clip": "app",
+        "highlights": [
+          {
+            "selector": "label",
+            "hasText": "Add another after this"
+          }
+        ]
+      }
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "^Cancel$"
+      }
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": "[aria-label=\"Column settings for Department\"]"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "3.-Column-Header-Menu-With-Column-Settings",
+        "clip": "app",
+        "highlights": [
+          {
+            "role": "menuitem",
+            "name": "Column settings"
+          }
+        ]
+      }
+    }
+  ]
+}

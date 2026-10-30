@@ -1,0 +1,81 @@
+{
+  "doc": "docs/getting-started/admin-navigation.md",
+  "outDir": "public/images/getting-started/admin-navigation",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "css": "#adminmenumain,#adminmenuback,#adminmenuwrap,#adminmenu{display:block!important;visibility:visible!important} #adminmenu > li:not(.wp-has-current-submenu){display:none!important} #adminmenu .wp-submenu{display:block!important}"
+    },
+    {
+      "shot": {
+        "name": "1.-WordPress-Admin-Menu-With-The-Ninja",
+        "clip": {
+          "x": 0,
+          "y": 32,
+          "width": 175,
+          "height": 255
+        },
+        "highlights": [
+          "#adminmenu .wp-submenu li a:text-is(\"Tables\")"
+        ]
+      }
+    },
+    {
+      "shot": {
+        "name": "2.-Ninja-Tables-Top-Bar",
+        "clip": {
+          "x": 160,
+          "y": 32,
+          "width": 1280,
+          "height": 60
+        },
+        "highlights": [
+          ".nt-topbar .nt-plan, .nt-topbar [class*=plan]"
+        ]
+      }
+    },
+    {
+      "admin": "/"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "eval": "document.querySelectorAll('tbody tr').forEach(r=>{if(!/Hosting Plans|Product Price|Employee Dir|World Countries|Monthly Sales|Conference|Course Catalog|Order History/.test(r.innerText))r.style.display='none'});window.dispatchEvent(new KeyboardEvent('keydown',{key:'k',metaKey:true,ctrlKey:true,bubbles:true}));"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "fill": {
+        "selector": ".nt-cmdk input",
+        "value": "employee"
+      }
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "shot": {
+        "name": "3.-Command-Palette-Listing-A-Matching-Table",
+        "clip": {
+          "element": ".nt-cmdk",
+          "pad": 32
+        },
+        "highlights": [
+          ".nt-cmdk__input"
+        ]
+      }
+    }
+  ],
+  "onboarding": false
+}

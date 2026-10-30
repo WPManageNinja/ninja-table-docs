@@ -1,0 +1,34 @@
+{
+  "doc": "docs/field-types/single-line-text-field.md",
+  "outDir": "public/images/field-types/single-line-text-field",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": "th.js-col:has-text(\"Name\") .nt-sheet__colset"
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 900
+    },
+    {
+      "shot": {
+        "name": "1.-Column-Dialog-With-Type-Set",
+        "clip": "viewport",
+        "highlights": [
+          ".nt-drawer .el-select"
+        ]
+      }
+    }
+  ]
+}

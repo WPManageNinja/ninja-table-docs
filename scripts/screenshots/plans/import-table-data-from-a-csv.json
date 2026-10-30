@@ -1,0 +1,85 @@
+{
+  "doc": "docs/import-export/import-table-data-from-a-csv.md",
+  "outDir": "public/images/import-export/import-table-data-csv",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tools"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "wait": 100
+    },
+    {
+      "eval": "const i=document.querySelector(\"input[type=file]\");const dt=new DataTransfer();dt.items.add(new File([\"Name,Role,Department,Location\\\\nMaya Patel,Designer,Product,London\\\\nDaniel Kim,Engineer,Platform,Seoul\\\\n\"],\"employees.csv\",{type:\"text/csv\"}));i.files=dt.files;i.dispatchEvent(new Event(\"change\",{bubbles:true}));"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "shot": {
+        "name": "1.-Import-Screen-With-The-File-Type",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          {
+            "role": "button",
+            "name": "^Import$"
+          }
+        ]
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "admin": "/create"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": {
+        "text": "Upload a file"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
+      "eval": "const i=document.querySelector(\"input[type=file]\");const dt=new DataTransfer();dt.items.add(new File([\"Name,Role,Department,Location\\\\nMaya Patel,Designer,Product,London\\\\nDaniel Kim,Engineer,Platform,Seoul\\\\n\"],\"employees.csv\",{type:\"text/csv\"}));i.files=dt.files;i.dispatchEvent(new Event(\"change\",{bubbles:true}));"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "fillByLabel": {
+        "label": "Table name",
+        "value": "Employee Directory"
+      }
+    },
+    {
+      "eval": "document.activeElement&&document.activeElement.blur()"
+    },
+    {
+      "shot": {
+        "name": "2.-Upload-A-File-Panel",
+        "clip": {
+          "element": ".nt-drawer.is-open, .nt-drawer",
+          "pad": 0
+        },
+        "highlights": [
+          ".nt-drawer .el-select"
+        ]
+      }
+    }
+  ]
+}

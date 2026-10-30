@@ -1,0 +1,53 @@
+{
+  "doc": "docs/import-export/export-ninja-tables-csv-json.md",
+  "outDir": "public/images/import-export/export-ninja-tables-csv",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Import / Export"
+      }
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "shot": {
+        "name": "1.-Import-Export-Dialog-Open",
+        "clip": {
+          "element": ".nt-modal",
+          "pad": 8
+        }
+      }
+    },
+    {
+      "shot": {
+        "name": "2.-Export-This-Table-Card",
+        "clip": {
+          "element": ".nt-modal",
+          "pad": 8
+        },
+        "arrows": [
+          {
+            "target": {
+              "role": "button",
+              "name": "Export Table"
+            },
+            "from": "left",
+            "len": 140
+          }
+        ]
+      }
+    }
+  ]
+}

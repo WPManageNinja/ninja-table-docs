@@ -1,0 +1,98 @@
+{
+  "doc": "docs/creating-tables/choose-table-engine.md",
+  "outDir": "public/images/creating-tables/choose-engine",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/create"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": {
+        "selector": ".nt-create__tile",
+        "hasText": "Default table"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
+      "fill": {
+        "selector": ".nt-default-form input",
+        "value": "Product Catalog"
+      }
+    },
+    {
+      "click": {
+        "text": "Change"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "1.-Rendering-Engine-Cards-On-The-Default",
+        "clip": "app",
+        "highlights": [
+          {
+            "selector": ".nt-radio-card",
+            "hasText": "DataTables"
+          }
+        ]
+      }
+    },
+    {
+      "admin": "/"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": "th:has-text(\"ID\")"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "click": "th:has-text(\"ID\")"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "click": ".nt-tables__engine"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "eval": "const ok=['Hosting Plans Comparison','Product Price List','Employee Directory','Order History'];document.querySelectorAll('tbody tr').forEach(r=>{if(!ok.some(t=>r.innerText.includes(t)))r.style.display='none'});document.querySelectorAll('*').forEach(e=>{if(e.children.length==0&&/^Showing 1/.test(e.textContent.trim()))e.style.visibility='hidden'});"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "shot": {
+        "name": "3.-Tables-List-With-The-Engine-Filter",
+        "clip": {
+          "x": 160,
+          "y": 32,
+          "width": 1280,
+          "height": 626
+        },
+        "highlights": [
+          ".nt-tables__engine"
+        ]
+      }
+    }
+  ]
+}

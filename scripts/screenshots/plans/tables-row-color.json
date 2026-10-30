@@ -1,0 +1,94 @@
+{
+  "doc": "docs/styling-design/tables-row-color.md",
+  "outDir": "public/images/styling-design/tables-row-color",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Hosting Plans Comparison}}"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": ".nt-sheet__row-btn[title=\"Row settings\"] >> nth=1"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "fill": {
+        "selector": ".nt-row-drawer .nt-color-input__hex >> nth=0",
+        "value": "#E6F7F5"
+      }
+    },
+    {
+      "click": ".nt-row-drawer .nt-drawer__title"
+    },
+    {
+      "fill": {
+        "selector": ".nt-row-drawer .nt-color-input__hex >> nth=1",
+        "value": "#0B5E57"
+      }
+    },
+    {
+      "click": ".nt-row-drawer .nt-drawer__title"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "shot": {
+        "name": "1.-Row-Settings-Drawer-With-Row-Appearance",
+        "clip": "viewport",
+        "highlights": [
+          ".nt-row-drawer .nt-row-style__card"
+        ]
+      }
+    },
+    {
+      "admin": "/tables/{{Hosting Plans Comparison}}"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "eval": "document.querySelectorAll('.nt-sheet__cell-btn')[7].click()"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "fill": {
+        "selector": ".nt-row-drawer .nt-color-input__hex >> nth=0",
+        "value": "#FFF4D6"
+      }
+    },
+    {
+      "click": ".nt-row-drawer .nt-drawer__title"
+    },
+    {
+      "fill": {
+        "selector": ".nt-row-drawer .nt-color-input__hex >> nth=1",
+        "value": "#8A5A00"
+      }
+    },
+    {
+      "click": ".nt-row-drawer .nt-drawer__title"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "shot": {
+        "name": "2.-Cell-Settings-Drawer-With-Cell-Appearance",
+        "clip": "viewport",
+        "highlights": [
+          ".nt-row-drawer .nt-row-style__card"
+        ]
+      }
+    }
+  ]
+}

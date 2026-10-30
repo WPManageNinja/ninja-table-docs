@@ -1,0 +1,47 @@
+{
+  "doc": "docs/creating-tables/table-types-overview.md",
+  "outDir": "public/images/creating-tables/types-overview",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/create"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "shot": {
+        "name": "1.-Create-A-Table-Screen-With-Start",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          ".nt-create__grid--scratch"
+        ]
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-create__tile",
+        "hasText": "WP Posts/CPTs"
+      }
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer input",
+        "value": "Latest Posts"
+      }
+    },
+    {
+      "shot": {
+        "name": "2.-WP-Posts-CPTs-Panel",
+        "clip": "app",
+        "highlights": [
+          ".nt-src-form__pair > :first-child"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "doc": "docs/table-settings/csv-and-print-button.md",
+  "outDir": "public/images/table-settings/csv-print-button",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}/design_studio"
+    },
+    {
+      "click": {
+        "role": "tab",
+        "name": "^Features$"
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Export"
+      }
+    },
+    {
+      "scrollTo": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Export"
+      }
+    },
+    {
+      "click": ".nt-ds-sec.is-open .el-switch >> nth=0"
+    },
+    {
+      "click": ".nt-ds-sec.is-open .el-switch >> nth=2"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "shot": {
+        "name": "1.-Export-Print-Section-With-A-Switch",
+        "clip": "app",
+        "badges": [
+          {
+            "target": {
+              "selector": ".nt-tab",
+              "hasText": "Appearance"
+            },
+            "n": 2,
+            "pos": "top-right"
+          },
+          {
+            "target": {
+              "role": "tab",
+              "name": "^Features$"
+            },
+            "n": 2,
+            "pos": "top-right"
+          },
+          {
+            "target": {
+              "selector": ".nt-ds-sec__btn",
+              "hasText": "Export"
+            },
+            "n": 3,
+            "pos": "left"
+          }
+        ],
+        "highlights": [
+          ".nt-ds-sec.is-open .el-switch >> nth=0"
+        ]
+      }
+    },
+    {
+      "eval": "const t=window.tinymce||window.tinyMCE; if(t&&t.editors){const ed=t.editors.find(e=>e.getContainer&&e.getContainer().closest('.nt-ds-sec'))||t.editors[0]; ed.setContent('<p><strong>Employee Directory</strong></p><p>Printed on 30 October 2026</p>');}"
+    },
+    {
+      "eval": "const e=[...document.querySelectorAll('.nt-ds-sec.is-open *')].find(x=>x.children.length==0&&x.textContent.trim()==='Print Screen Footer'); e.scrollIntoView({block:'end'}); let s=e.parentElement; while(s&&s.scrollHeight<=s.clientHeight+2)s=s.parentElement; if(s)s.scrollTop=s.scrollHeight;"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "eval": "const e=[...document.querySelectorAll('.nt-ds-sec.is-open *')].find(x=>x.children.length==0&&x.textContent.trim()==='Print Screen Header'); (e.closest('button,label,[role=radio],[role=tab]')||e).classList.add('shot-hl');"
+    },
+    {
+      "shot": {
+        "name": "2.-Print-Button-Options-With-The-Header",
+        "clip": "app",
+        "highlights": [
+          ".shot-hl"
+        ]
+      }
+    }
+  ]
+}

@@ -16,13 +16,14 @@ The **Shortcode / Computed Value or HTML** field type builds each cell from a te
 5. Write your template in **Field value**. The instructions under the field list the placeholders.
 6. Click **Add column**.
 
-![Shortcode](/images/wordpress-integration/shortcode-computed-value/1.-Shortcode-Table-1.webp)
-
-![Add Column](/images/wordpress-integration/shortcode-computed-value/2.-Shortcode-Table-2.webp)
-
-![Shortcode / Computed Value or HTML](/images/wordpress-integration/shortcode-computed-value/3.-Shortcode-Table-3.webp)
-
-![Shortcode](/images/wordpress-integration/shortcode-computed-value/4.-Shortcode-Table-4.webp)
+<!-- TODO(screenshot): shortcode-computed-value-or-html-in-wp-post-woocommerce-table-1
+  screen: Tables › DOCTEST posts › Table Rows › Edit query › Add new column
+  table: a WP Posts table
+  state: Add new column section with Field type set to Shortcode / Computed Value or HTML and the placeholder instructions visible under Field value
+  highlight: Field value
+  view: admin
+  alt: Add new column section with the Shortcode / Computed Value or HTML field type and its placeholder help
+-->
 
 ## Placeholders
 
@@ -37,6 +38,10 @@ The **Shortcode / Computed Value or HTML** field type builds each cell from a te
 | `{acf.FIELD_NAME}` | An ACF field value (when ACF is active) |
 
 Placeholders also work inside shortcode parameters: `[yourshortcode YourParam="{post.ID}"]`.
+
+Placeholder values are cleaned before they go into the template. URLs (`{post.permalink}` and `{post.featured_image_url}`) are made safe as URLs, other values keep basic HTML and lose scripts, and values placed inside a shortcode parameter are escaped for attributes. A placeholder with no value, such as a missing custom field, leaves an empty spot. After the placeholders are filled, WordPress runs every shortcode in the result.
+
+On a WooCommerce reviews table, the placeholders read the product that was reviewed.
 
 ## Examples
 
@@ -64,11 +69,25 @@ A value from a custom field with a label:
 <strong>Location:</strong> {postmeta.event_location}
 ```
 
-![new column with shortcode](/images/wordpress-integration/shortcode-computed-value/5.-shortcode-computed-value-9.webp)
+<!-- TODO(screenshot): shortcode-computed-value-or-html-in-wp-post-woocommerce-table-2
+  screen: Tables › DOCTEST posts › Table Rows
+  table: a WP Posts table
+  state: Rows grid with a Read more column built from a post link template
+  highlight: Read more column
+  view: admin
+  alt: Rows grid with a column built from a Shortcode / Computed Value or HTML template
+-->
 
 Click **Preview** in the editor header to see the result.
 
-![add to cart button with shortcode](/images/wordpress-integration/shortcode-computed-value/6.-preview-table-after-creating-a-column-fr.webp)
+<!-- TODO(screenshot): shortcode-computed-value-or-html-in-wp-post-woocommerce-table-3
+  screen: Tables › DOCTEST woo › Preview
+  table: a WooCommerce products table
+  state: Front-end table with a column of Add to cart buttons made with the add_to_cart shortcode
+  highlight: -
+  view: frontend
+  alt: Product table on the page with add to cart buttons from a shortcode column
+-->
 
 ## FluentCart tables
 
@@ -77,6 +96,7 @@ FluentCart tables support `{post.FIELD}`, `{post.permalink}` and `{postmeta.META
 ## Good to know
 
 - You can find ready-made shortcodes in the documentation of WooCommerce and other plugins.
+- A product table already has an **Add To Cart** button in its Buy column. Use a shortcode column only when you want a second button or different markup.
 - To change the template later, open the column header › **Column settings**.
 
 For every other column type, see the [Dynamic columns reference](/dynamic-columns-reference).

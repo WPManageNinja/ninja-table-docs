@@ -1,0 +1,236 @@
+{
+  "doc": "docs/creating-tables/create-your-first-table.md",
+  "outDir": "public/images/creating-tables/create-first-table",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/create"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": {
+        "selector": ".nt-create__tile",
+        "hasText": "Default table"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
+      "fill": {
+        "selector": ".nt-default-form input",
+        "value": "Pricing Plans"
+      }
+    },
+    {
+      "shot": {
+        "name": "1.-Default-Table-Panel-With-Table-Name",
+        "clip": "app",
+        "highlights": [
+          {
+            "role": "button",
+            "name": "Create table"
+          }
+        ]
+      }
+    },
+    {
+      "admin": "/tables/{{Hosting Plans Comparison}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "^Add column$"
+      }
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder=\"e.g. Price\"]",
+        "value": "Price"
+      }
+    },
+    {
+      "click": {
+        "selector": ".el-select",
+        "hasText": "Single line text field"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "3.-Column-Dialog-Basic-Tab-With-Column",
+        "clip": "app",
+        "highlights": [
+          {
+            "selector": ".el-select",
+            "hasText": "Single line text field"
+          }
+        ]
+      }
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "^Cancel$"
+      }
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Add data"
+      }
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer input >> nth=0",
+        "value": "Priority support"
+      }
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer input >> nth=1",
+        "value": "Email only"
+      }
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer input >> nth=2",
+        "value": "Chat and email"
+      }
+    },
+    {
+      "shot": {
+        "name": "4.-Add-Data-Panel-With-One-Field",
+        "clip": "app",
+        "highlights": [
+          {
+            "selector": "label",
+            "hasText": "Add another after this"
+          }
+        ]
+      }
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "^Cancel$"
+      }
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": ".nt-sheet__row-btn[aria-label=\"Row actions\"]"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "5.-Table-Rows-Grid-With-A-Row",
+        "clip": "app",
+        "highlights": [
+          ".nt-sheet__row-btn[aria-label=\"Row actions\"]"
+        ]
+      }
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "admin": "/tables/{{Hosting Plans Comparison}}/design_studio"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": {
+        "role": "tab",
+        "name": "^Style$"
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Title & Header"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
+      "css": ".nt-appearance__tabs{margin:6px 14px 0 8px!important}"
+    },
+    {
+      "shot": {
+        "name": "6.-Appearance-Tab-With-The-Live-Preview",
+        "clip": "app",
+        "highlights": [
+          ".nt-appearance__tabs"
+        ]
+      }
+    },
+    {
+      "admin": "/tables/{{Hosting Plans Comparison}}/configuration"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "shot": {
+        "name": "7.-Table-Configuration-Tab-With-The-Engine",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          {
+            "row": "Rendering Setting",
+            "part": "row"
+          }
+        ]
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1160
+      }
+    },
+    {
+      "front": "{{page:Shop Price List}}/"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "wait": 400
+    },
+    {
+      "shot": {
+        "name": "8.-Published-Page-Showing-A-Ninja-Tables",
+        "clip": {
+          "element": ".ninja_table_wrapper",
+          "pad": 12
+        }
+      }
+    }
+  ]
+}

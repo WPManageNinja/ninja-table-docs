@@ -1,0 +1,79 @@
+{
+  "doc": "docs/field-types/select-field.md",
+  "outDir": "public/images/field-types/select-field",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Course Catalog}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": "th.js-col:has-text(\"Level\") .nt-sheet__colset"
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 900
+    },
+    {
+      "shot": {
+        "name": "1.-Column-Dialog-With-Type-Set",
+        "clip": "viewport",
+        "highlights": [
+          {
+            "row": "Select items",
+            "part": "row"
+          }
+        ]
+      }
+    },
+    {
+      "click": ".nt-drawer button:has-text(\"Cancel\")"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": "button:has-text(\"Add data\")"
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "click": ".nt-drawer .el-select"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "2.-Select-Dropdown-Open-In-The-Row",
+        "clip": "viewport"
+      }
+    },
+    {
+      "front": "{{page:Online Courses}}/"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "eval": "document.querySelectorAll('.ninja_table_wrapper tbody tr:nth-child(n+9)').forEach(r=>r.style.display='none');document.querySelectorAll('.ninja_table_wrapper tr.footable-paging, .ninja_table_wrapper .dataTables_paginate').forEach(r=>r.style.display='none')"
+    },
+    {
+      "shot": {
+        "name": "3.-Table-With-A-Select-Field-Column",
+        "clip": {
+          "element": ".ninja_table_wrapper",
+          "pad": 6
+        }
+      }
+    }
+  ]
+}

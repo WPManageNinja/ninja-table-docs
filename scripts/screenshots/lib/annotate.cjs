@@ -58,12 +58,33 @@ function highlightSvg(target, scale = 2) {
   return `<rect x="${target.x - pad}" y="${target.y - pad}" width="${target.width + pad * 2}" height="${target.height + pad * 2}" rx="${8 * scale}" ry="${8 * scale}" fill="none" stroke="${BRAND}" stroke-width="${3 * scale}"/>`;
 }
 
-// annotate(inputPng, outFile, { arrows, highlights, crop, scale })
+// Numbered step badge (1, 2, 3 …) beside a target, for one image that shows several steps in order.
+// `pos` = side of the target the badge sits on: left | right | top | bottom | top-left | top-right.
+function badgeSvg(target, n, pos = 'left', scale = 2) {
+  const r = 15 * scale, gap = 10 * scale;
+  const cx0 = target.x + target.width / 2, cy0 = target.y + target.height / 2;
+  const at = {
+    left: [target.x - gap - r, cy0],
+    right: [target.x + target.width + gap + r, cy0],
+    top: [cx0, target.y - gap - r],
+    bottom: [cx0, target.y + target.height + gap + r],
+    'top-left': [target.x - r * 0.4, target.y - r * 0.4],
+    'top-right': [target.x + target.width + r * 0.4, target.y - r * 0.4],
+  }[pos] || [target.x - gap - r, cy0];
+  const [cx, cy] = at;
+  return `
+    <circle cx="${cx}" cy="${cy}" r="${r + 3 * scale}" fill="#ffffff"/>
+    <circle cx="${cx}" cy="${cy}" r="${r}" fill="${BRAND}"/>
+    <text x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="${17 * scale}" font-weight="700" fill="#ffffff">${String(n).replace(/[<&]/g, '')}</text>`;
+}
+
+// annotate(inputPng, outFile, { arrows, highlights, badges, crop, scale })
 //   arrows:     [{ target: {x,y,width,height}, from, len }]
 //   highlights: [{x,y,width,height}]
+//   badges:     [{ target: {x,y,width,height}, n, pos }]
 //   crop:       { left, top, width, height } in image px (applied BEFORE drawing; targets are shifted)
 // Writes .webp when outFile ends with .webp, otherwise .png.
-async function annotate(inputPng, outFile, { arrows = [], highlights = [], scale = 2, quality = QUALITY, crop = null } = {}) {
+async function annotate(inputPng, outFile, { arrows = [], highlights = [], badges = [], scale = 2, quality = QUALITY, crop = null } = {}) {
   let img = sharp(inputPng);
   const meta = await img.metadata();
   let width = meta.width, height = meta.height, offX = 0, offY = 0;
@@ -78,6 +99,7 @@ async function annotate(inputPng, outFile, { arrows = [], highlights = [], scale
   const parts = [
     ...highlights.map(t => highlightSvg(shift(t), scale)),
     ...arrows.map(a => arrowSvg(shift(a.target), a.from, a.len || 220, scale)),
+    ...badges.map(b => badgeSvg(shift(b.target), b.n, b.pos, scale)),
   ];
   if (parts.length) {
     const svg = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">${parts.join('')}</svg>`);
@@ -102,4 +124,4 @@ async function stack(files, labels, outFile, { gap = 40, labelH = 110, quality =
   return outFile;
 }
 
-module.exports = { annotate, stack, arrowSvg, BRAND, QUALITY };
+module.exports = { annotate, stack, arrowSvg, badgeSvg, BRAND, QUALITY };

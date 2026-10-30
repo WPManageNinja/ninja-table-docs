@@ -1,0 +1,96 @@
+{
+  "doc": "docs/data-sources/construct-table-from-csv.md",
+  "outDir": "public/images/data-sources/construct-table-csv",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 640
+      }
+    },
+    {
+      "admin": "/create"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": {
+        "text": "Remote CSV / JSON"
+      }
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer.open input >> nth=0",
+        "value": "Country List"
+      }
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer.open input >> nth=1",
+        "value": "https://raw.githubusercontent.com/datasets/country-list/master/data.csv"
+      }
+    },
+    {
+      "eval": "document.activeElement&&document.activeElement.blur()"
+    },
+    {
+      "shot": {
+        "name": "1.-Remote-CSV-Drawer-Step-1",
+        "clip": {
+          "element": ".nt-drawer.open",
+          "pad": 0
+        },
+        "highlights": [
+          {
+            "selector": ".nt-drawer.open .nt-field, .nt-drawer.open .el-form-item",
+            "hasText": "Data source URL"
+          }
+        ]
+      }
+    },
+    {
+      "click": ".nt-drawer.open :text-is(\"Change\")"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 780
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": ".nt-drawer.open .nt-radio-card >> text=DataTables"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "shot": {
+        "name": "2.-Remote-CSV-Drawer-With-DataTables-Selected",
+        "clip": {
+          "element": ".nt-drawer.open",
+          "pad": 0
+        },
+        "highlights": [
+          {
+            "selector": ".nt-drawer.open .nt-field, .nt-drawer.open .el-form-item",
+            "hasText": "Sync Interval"
+          }
+        ]
+      }
+    }
+  ]
+}

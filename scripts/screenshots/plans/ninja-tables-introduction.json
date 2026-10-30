@@ -1,0 +1,74 @@
+{
+  "doc": "docs/getting-started/ninja-tables-introduction.md",
+  "outDir": "public/images/getting-started/ninja-tables-introduction",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "eval": "document.querySelectorAll('tbody tr').forEach(r=>{if(!/Hosting Plans|Product Price|Employee Dir|World Countries|Monthly Sales|Conference|Course Catalog|Order History/.test(r.innerText))r.style.display='none'});"
+    },
+    {
+      "shot": {
+        "name": "1.-Ninja-Tables-Tables-List",
+        "clip": "app"
+      }
+    },
+    {
+      "admin": "/create"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "shot": {
+        "name": "2.-Create-A-Table-Screen-With-Start",
+        "clip": "app",
+        "crop": "auto"
+      }
+    },
+    {
+      "admin": "/tables/{{Product Price List}}"
+    },
+    {
+      "wait": 5000
+    },
+    {
+      "shot": {
+        "name": "3.-Table-Editor-With-The-Six-Tabs",
+        "clip": "app",
+        "highlights": [
+          ".nt-tab:has-text(\"Table Rows\")"
+        ]
+      }
+    },
+    {
+      "admin": "/tables/{{Product Price List}}/design_studio"
+    },
+    {
+      "wait": 5000
+    },
+    {
+      "click": {
+        "role": "tab",
+        "name": "^Style$"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "5.-Appearance-Tab-With-A-Live-Preview",
+        "clip": "app"
+      }
+    }
+  ]
+}

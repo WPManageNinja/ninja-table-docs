@@ -1,0 +1,75 @@
+{
+  "doc": "docs/styling-design/other-design-settings.md",
+  "outDir": "public/images/styling-design/other-design-settings",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Product Price List}}/design_studio"
+    },
+    {
+      "click": {
+        "role": "tab",
+        "name": "^Features$"
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Sticky Header"
+      }
+    },
+    {
+      "scrollTo": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Sticky Header"
+      }
+    },
+    {
+      "click": ".nt-setting-row:has-text(\"Sticky Header\") .el-switch"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "shot": {
+        "name": "1.-Sticky-Header-Column-Section-With-Sticky",
+        "clip": "app",
+        "badges": [
+          {
+            "target": {
+              "selector": ".nt-tab",
+              "hasText": "Appearance"
+            },
+            "n": 2,
+            "pos": "top-right"
+          },
+          {
+            "target": {
+              "role": "tab",
+              "name": "^Features$"
+            },
+            "n": 2,
+            "pos": "top-right"
+          },
+          {
+            "target": {
+              "selector": ".nt-ds-sec__btn",
+              "hasText": "Sticky Header"
+            },
+            "n": 3,
+            "pos": "left"
+          }
+        ],
+        "highlights": [
+          {
+            "row": "Sticky Header",
+            "part": "row"
+          }
+        ]
+      }
+    }
+  ]
+}

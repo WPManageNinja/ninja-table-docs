@@ -1,0 +1,43 @@
+{
+  "doc": "docs/import-export/import-ninja-tables-json.md",
+  "outDir": "public/images/import-export/import-ninja-tables-json",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tools"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": {
+        "text": "Ninja Tables JSON"
+      }
+    },
+    {
+      "wait": 400
+    },
+    {
+      "eval": "const i=document.querySelector(\"input[type=file]\");const dt=new DataTransfer();dt.items.add(new File([\"{}\"],\"employee-directory.json\",{type:\"application/json\"}));i.files=dt.files;i.dispatchEvent(new Event(\"change\",{bubbles:true}));"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "shot": {
+        "name": "1.-Import-Screen-With-The-Ninja-Tables",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          {
+            "selector": ".nt-import__formats .nt-radio-card",
+            "hasText": "Ninja Tables JSON"
+          }
+        ]
+      }
+    }
+  ]
+}

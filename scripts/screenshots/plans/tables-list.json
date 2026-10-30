@@ -1,0 +1,59 @@
+{
+  "doc": "docs/table-management/tables-list.md",
+  "outDir": "public/images/table-management/list",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": "th:has-text(\"ID\")"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "click": "th:has-text(\"ID\")"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "eval": "const ok=['Hosting Plans Comparison','Product Price List','Employee Directory','World Countries','Monthly Sales by Region 2026','Conference Schedule','Course Catalog','Order History'];document.querySelectorAll('tbody tr').forEach(r=>{if(!ok.some(t=>r.innerText.includes(t)))r.style.display='none'});"
+    },
+    {
+      "shot": {
+        "name": "3.-Tables-List-Showing-The-Source-Engine",
+        "clip": "app",
+        "highlights": [
+          "tr:has-text(\"Hosting Plans Comparison\") .nt-tables__source"
+        ]
+      }
+    },
+    {
+      "click": "tr:has-text(\"Product Price List\") .nt-row-actions button:last-child"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "shot": {
+        "name": "4.-More-Actions-Menu-Of-A-Table",
+        "clip": "app",
+        "arrows": [
+          {
+            "target": "tr:has-text(\"Product Price List\") .nt-row-actions button:last-child",
+            "from": "top",
+            "len": 120
+          }
+        ]
+      }
+    }
+  ]
+}

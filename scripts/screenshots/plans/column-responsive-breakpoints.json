@@ -1,0 +1,37 @@
+{
+  "doc": "docs/responsive-design/column-responsive-breakpoints.md",
+  "outDir": "public/images/responsive-design/column-responsive",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": "th:has-text(\"Department\") .nt-sheet__colset"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "scrollTo": ".nt-col-resp"
+    },
+    {
+      "click": ".nt-col-resp .el-select"
+    },
+    {
+      "wait": 800
+    }
+  ]
+}

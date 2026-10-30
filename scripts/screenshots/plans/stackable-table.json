@@ -1,0 +1,100 @@
+{
+  "doc": "docs/responsive-design/stackable-table.md",
+  "outDir": "public/images/responsive-design/stackable-table",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Product Price List}}/design_studio"
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "click": {
+        "role": "tab",
+        "name": "^Features$"
+      }
+    },
+    {
+      "click": ".nt-segmented[aria-label=\"Preview Width\"] button:last-child"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Responsive Breakpoint"
+      }
+    },
+    {
+      "scrollTo": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Responsive Breakpoint"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "1.-Responsive-Breakpoint-Section-With-The-Drawer",
+        "clip": "app",
+        "highlights": [
+          {
+            "row": "Responsive drawer",
+            "part": "row"
+          }
+        ]
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Stackable Table"
+      }
+    },
+    {
+      "wait": 500
+    },
+    {
+      "click": ".nt-ds-sec.is-open .el-switch"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": {
+        "selector": ".el-checkbox",
+        "hasText": "Mobile Device"
+      }
+    },
+    {
+      "wait": 300
+    },
+    {
+      "scrollTo": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Stackable Table"
+      }
+    },
+    {
+      "wait": 400
+    },
+    {
+      "shot": {
+        "name": "2.-Stackable-Table-Section-With-The-Stack",
+        "clip": "app",
+        "highlights": [
+          {
+            "row": "Stack On",
+            "part": "row"
+          }
+        ]
+      }
+    }
+  ]
+}

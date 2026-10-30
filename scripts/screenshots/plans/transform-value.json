@@ -1,0 +1,51 @@
+{
+  "doc": "docs/column-settings/transform-value.md",
+  "outDir": "public/images/column-settings/transform-value",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Product Price List}}"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": "th:has-text(\"Price ($)\") .nt-sheet__colset"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": {
+        "selector": ".nt-col-tabs__tab",
+        "hasText": "Transform"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "1.-Transform-Tab-With-The-Value-Box",
+        "clip": {
+          "x": 720,
+          "y": 32,
+          "width": 720,
+          "height": 712
+        },
+        "highlights": [
+          ".nt-col-tf textarea"
+        ]
+      }
+    }
+  ]
+}

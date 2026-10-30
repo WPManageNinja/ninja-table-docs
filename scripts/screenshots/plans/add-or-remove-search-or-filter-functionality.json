@@ -1,0 +1,66 @@
+{
+  "doc": "docs/styling-design/add-or-remove-search-or-filter-functionality.md",
+  "outDir": "public/images/styling-design/remove-search-filter",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}/design_studio"
+    },
+    {
+      "click": {
+        "role": "tab",
+        "name": "^Features$"
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Search"
+      }
+    },
+    {
+      "scrollTo": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Search"
+      }
+    },
+    {
+      "shot": {
+        "name": "1.-Search-Section-With-The-Text-Fields",
+        "clip": "app",
+        "badges": [
+          {
+            "target": {
+              "selector": ".nt-tab",
+              "hasText": "Appearance"
+            },
+            "n": 2,
+            "pos": "top-right"
+          },
+          {
+            "target": {
+              "role": "tab",
+              "name": "^Features$"
+            },
+            "n": 2,
+            "pos": "top-right"
+          },
+          {
+            "target": {
+              "selector": ".nt-ds-sec__btn",
+              "hasText": "Search"
+            },
+            "n": 3,
+            "pos": "left"
+          }
+        ],
+        "highlights": [
+          ".nt-ds-sec:has(.nt-ds-sec__btn:has-text(\"Search\")) .el-switch"
+        ]
+      }
+    }
+  ]
+}

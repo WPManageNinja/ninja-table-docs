@@ -31,7 +31,7 @@ const DEFAULTS = {
 };
 
 // Ancestors that count as one "settings row" for {row: "<label>"} targets and {rows: [...]} clips.
-const ROW_SELECTOR = '.nt-config__row, .nt-settings-q, .el-form-item';
+const ROW_SELECTOR = '.nt-setting-row, .nt-field, .nt-config__row, .nt-settings-q, .el-form-item';
 
 class Harness {
   constructor(opts = {}) {
@@ -43,9 +43,43 @@ class Harness {
 
   async launch() {
     this.browser = await chromium.launch({ executablePath: this.o.chrome, headless: true });
-    this.context = await this.browser.newContext({ viewport: this.o.viewport, deviceScaleFactor: this.o.scale });
+    this.context = await this.browser.newContext({
+      viewport: this.o.viewport, deviceScaleFactor: this.o.scale,
+      colorScheme: 'light', reducedMotion: 'reduce',
+    });
+    // Before any page script runs: light theme (shared Fluent key, see ThemeToggle.vue) and, unless the
+    // plan shoots onboarding itself ("onboarding": true), the welcome banner + Getting started card dismissed.
+    // These are per-browser localStorage flags (onboardingStore.js); nothing is saved on the site.
+    await this.context.addInitScript(({ onboarding }) => {
+      try {
+        localStorage.setItem('fluent_theme_mode', 'light');
+        localStorage.setItem('ninjatable_theme', 'light');
+        if (!onboarding) {
+          localStorage.setItem('ninjatable_onboarding_banner', 'hidden');
+          localStorage.setItem('ninjatable_onboarding_checklist', 'hidden');
+        }
+      } catch (e) { /* storage blocked */ }
+    }, { onboarding: !!this.o.onboarding });
     this.page = await this.context.newPage();
     return this.page;
+  }
+
+  // What makes a capture look like a calm, human screenshot instead of a mid-frame grab:
+  // no animations or half-open transitions, no scrollbars, no blinking caret, no stray focus ring,
+  // and web fonts loaded before the shot.
+  async naturalLook() {
+    const p = this.page;
+    await p.addStyleTag({ content: `
+      *, *::before, *::after { transition: none !important; animation: none !important; caret-color: transparent !important; }
+      ::-webkit-scrollbar { width: 0 !important; height: 0 !important; background: transparent !important; }
+      * { scrollbar-width: none !important; }
+      :focus, :focus-visible { outline: none !important; }
+      #vite-error-overlay, vite-error-overlay, #qm, #query-monitor-main { display: none !important; }
+    ` });
+    await p.evaluate(() => { if (document.activeElement && document.activeElement !== document.body) document.activeElement.blur(); });
+    await p.evaluate(() => (document.fonts && document.fonts.ready) || null).catch(() => {});
+    await p.mouse.move(0, 0);
+    await p.waitForTimeout(250);
   }
 
   async close() { if (this.browser) await this.browser.close(); }
@@ -90,7 +124,7 @@ class Harness {
 
   // Any front-end URL (path or absolute), e.g. "/?ninjatable_preview=895". Logged in by default
   // because the dev site sits in "coming soon" mode for visitors.
-  async gotoFront(url, { hideThemeHeader = true, login = true, waitUntil = 'networkidle' } = {}) {
+  async gotoFront(url, { hideThemeHeader = true, login = true, waitUntil = 'networkidle', contentWidth = 1180 } = {}) {
     if (login && !this.loggedIn) await this.login();
     const p = this.page;
     const full = /^https?:/.test(url) ? url : this.o.site + url;
@@ -98,9 +132,13 @@ class Harness {
     await p.waitForTimeout(1200);
     await p.addStyleTag({ content: `
       #wpadminbar { display: none !important; } html { margin-top: 0 !important; }
+      /* what a visitor sees: no admin-only "Edit Table" link */
+      .nt_edit_link { display: none !important; }
+      /* a normal wide content column, so tables are not squeezed by the demo theme's narrow default */
+      ${contentWidth ? `.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)), .entry-content > * { max-width: ${contentWidth}px !important; }` : ''}
       ${hideThemeHeader ? 'header.wp-block-template-part, .wp-site-blocks > header, .wp-block-template-part:first-child { display: none !important; }' : ''}
     ` });
-    await p.waitForTimeout(300);
+    await this.naturalLook();
   }
 
   // Hide WP admin chrome without changing layout, plus notices and the Ninja Tables
@@ -124,7 +162,7 @@ class Harness {
       document.body.classList.remove('el-popup-parent--hidden');
       document.body.style.overflow = '';
     });
-    await p.waitForTimeout(300);
+    await this.naturalLook();
   }
 
   async hideCss(selector) {
@@ -169,7 +207,7 @@ class Harness {
       let el = lab.closest(rowSel);
       if (!el) { el = lab; for (let i = 0; i < 8 && el; i++) { if (el.getBoundingClientRect().width > 900) break; el = el.parentElement; } }
       const r = el.getBoundingClientRect();
-      const ctrl = el.querySelector('.nt-radio-cards, .el-radio-group, [role="radiogroup"], .el-select, .el-switch, .el-input, .el-color-picker, input, textarea');
+      const ctrl = el.querySelector('.el-input-number, .nt-segmented, .nt-radio-cards, .el-radio-group, [role="radiogroup"], .el-select, .el-switch, .el-input, .el-color-picker, input, textarea');
       const c = ctrl ? ctrl.getBoundingClientRect() : null;
       const l = lab.getBoundingClientRect();
       return {

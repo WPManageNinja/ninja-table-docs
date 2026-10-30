@@ -1,0 +1,68 @@
+{
+  "doc": "docs/import-export/import-csv-file-to-an-existing-table.md",
+  "outDir": "public/images/import-export/import-csv-file-existing",
+  "viewport": {
+    "width": 1440,
+    "height": 1400
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Import / Export"
+      }
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "click": ".nt-modal :text-is(\"Import\")"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "shot": {
+        "name": "1.-Import-Tab-With-The-Upload-Area",
+        "clip": {
+          "element": ".nt-modal",
+          "pad": 8
+        },
+        "arrows": [
+          {
+            "target": ".nt-modal :text(\"Download sample CSV\")",
+            "from": "right",
+            "len": 150
+          }
+        ]
+      }
+    },
+    {
+      "eval": "const i=document.querySelector(\".nt-modal input[type=file]\");const dt=new DataTransfer();dt.items.add(new File([\"Name,Department,Job Title,Email,Phone,Office,Start Date\\nMaya Patel,Product,Designer,maya@example.com,555-0101,London,2026-01-12\\n\"],\"new-hires.csv\",{type:\"text/csv\"}));i.files=dt.files;i.dispatchEvent(new Event(\"change\",{bubbles:true}));"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "shot": {
+        "name": "2.-Import-Tab-With-A-File-Chosen",
+        "clip": {
+          "element": ".nt-modal",
+          "pad": 8
+        },
+        "highlights": [
+          {
+            "role": "button",
+            "name": "Import table"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "doc": "docs/column-settings/conditional-formatting.md",
+  "outDir": "public/images/column-settings/conditional-formatting",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1300
+      }
+    },
+    {
+      "admin": "/tables/{{Product Price List}}"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": "th:has-text(\"Price ($)\") .nt-sheet__colset"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": {
+        "selector": ".nt-col-tabs__tab",
+        "hasText": "Conditions"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "1.-Conditions-Tab-With-No-Rules",
+        "clip": {
+          "x": 720,
+          "y": 32,
+          "width": 720,
+          "height": 300
+        },
+        "highlights": [
+          ".nt-col-cond button:has-text(\"Add rule\")"
+        ]
+      }
+    },
+    {
+      "click": {
+        "selector": "button",
+        "hasText": "Add rule"
+      }
+    },
+    {
+      "wait": 500
+    },
+    {
+      "click": ".nt-col-rule__line:nth-of-type(2) .el-select"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "click": ".el-select-dropdown__item:visible:has-text(\"Greater than\")"
+    },
+    {
+      "wait": 300
+    },
+    {
+      "fill": {
+        "selector": ".nt-col-rule__values input",
+        "value": "100"
+      }
+    },
+    {
+      "click": ".nt-col-rule__line:nth-of-type(3) .el-select"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "click": ".el-select-dropdown__item:visible:has-text(\"Set cell background color\")"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "shot": {
+        "name": "2.-Conditional-Formatting-Rule-With-A-Condition",
+        "clip": {
+          "x": 720,
+          "y": 32,
+          "width": 720,
+          "height": 400
+        },
+        "highlights": [
+          ".nt-col-rule__line:nth-of-type(3)"
+        ]
+      }
+    },
+    {
+      "click": ".nt-col-rule__line:nth-of-type(3) .el-select"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "3.-Action-List-Grouped-Into-Cell-Row",
+        "clip": {
+          "x": 720,
+          "y": 32,
+          "width": 720,
+          "height": 680
+        },
+        "highlights": [
+          ".nt-col-rule__line:nth-of-type(3) .el-select"
+        ]
+      }
+    },
+    {
+      "admin": "/tables/{{Conference Schedule}}"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": "th:has-text(\"Date\") .nt-sheet__colset"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "click": {
+        "selector": ".nt-col-tabs__tab",
+        "hasText": "Conditions"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": {
+        "selector": "button",
+        "hasText": "Add rule"
+      }
+    },
+    {
+      "wait": 500
+    },
+    {
+      "click": ".nt-col-rule__line:nth-of-type(2) .el-select"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "click": ".el-select-dropdown__item:visible:has-text(\"Less than\")"
+    },
+    {
+      "wait": 300
+    },
+    {
+      "fill": {
+        "selector": ".nt-col-rule__values input",
+        "value": "{date:MMM/DD/YYYY}"
+      }
+    },
+    {
+      "click": ".nt-col-rule__line:nth-of-type(3) .el-select"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "click": ".el-select-dropdown__item:visible:has-text(\"Set cell color\")"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "wait": 300
+    },
+    {
+      "shot": {
+        "name": "5.-Dynamic-Dates-Box-On-A-Date",
+        "clip": {
+          "x": 720,
+          "y": 32,
+          "width": 720,
+          "height": 660
+        },
+        "highlights": [
+          ".nt-col-dyn"
+        ]
+      }
+    }
+  ]
+}
