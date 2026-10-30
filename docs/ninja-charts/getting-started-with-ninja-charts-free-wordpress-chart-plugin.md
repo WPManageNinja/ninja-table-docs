@@ -5,72 +5,62 @@ description: "Ninja Charts is a free companion plugin that turns Ninja Tables da
 
 # Introduction: Getting Started with Ninja Charts
 
-Your website needs charts and graphs for smart data display. WordPress charts can present dynamic data in different formats like line charts, pie charts, histograms, etc.
-
-Ninja Charts is a free WordPress chart plugin with multiple chart-creation options. You get to create visually impressive and interactive data charts with this plugin.
-
-Just by following a few simple steps, you can generate amazing charts in different formats. The JavaScript-based chart rendering engine makes the process more accessible than ever.
-
-And to add to its awesomeness, Ninja Charts integrates with Ninja Tables!
-
-## Why Ninja Charts?
-
-Ninja Charts is the most lightweight WordPress chart plugin that offers 10+ different styles of charts and 2 renderers- **Chart JS** and **Google Charts**. You can customize the charts however you want!
-
-![Ninja Charts](/images/ninja-charts/getting-started-ninja-charts/1.-Charts-North-WordPress-06-03-2025-10-50.webp)
-
-Ninja Charts includes:
-
-- Line Chart
-- Pie Chart
-- Bar Chart
-- Horizontal Bar
-- Bubble Chart
-- Doughnut Chart
-- Scatter Chart
-- Area Chart
-- Combo Chart
-- Radar Chart
-- Polar Chart
-
-One of the most notable features of Ninja Charts is its ability to pull data from Ninja Tables and Fluent Forms to create beautiful [dynamic charts](/how-to-create-dynamic-charts-with-ninja-charts).
-
-You can also create charts with [manual](/how-to-create-chart-manually-in-ninja-charts) data input.
+**Ninja Charts** is a free WordPress chart plugin. It turns a Ninja Tables table, Fluent Forms entries or data you type in into a responsive chart, and gives you a shortcode to show it on any page. [Install it](/how-to-install-ninja-charts) first if you haven't.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/v-mU6LIb7jQ" title="Getting Started with Ninja Charts Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-### Ninja Charts Features
+## Renderers and chart types
 
-As a free charts visualization tool Ninja Charts enables you to create many kinds of customizable charts and graphs.
-Here are some features of Ninja Charts:
+Every chart uses one of two renderers, and the chart types you can pick depend on it.
 
-- Integration with Ninja Tables
-- Easy-to-use interface
-- Multiple chart types
-- Design and Layout customization
-- Responsive and mobile-friendly
-- SEO-friendly charts
-- Shortcodes to embed
-- Live preview on admin panel
-- Versatile rendering engines
+- **Chart Js** (12 types): Line, Pie, Bar, Horizontal Bar, Bubble, Doughnut, Scatter, Area, Combo, Radar, Polar and Funnel.
+- **Google Charts** (10 types): Line, Pie, Bar, Horizontal Bar, Bubble, Doughnut, Scatter, Area, Combo and Histogram. Radar, Polar and Funnel are not available.
 
-## How to Use
+Chart Js has more design options (Layout and Animations tabs). See [Customize a Chart](/how-to-customize-charts-in-ninja-charts).
 
-Simply [install Ninja Charts](/how-to-install-ninja-charts) (one click from **Ninja Tables** › **Charts**), then click **Add Chart** in the Ninja Tables menu.
+## Create a chart
 
-It’s a simple 5-step process-
+Click **Add Chart** in the Ninja Tables menu (or **Ninja Tables** › **Charts** › **Add New**). The creator has five steps:
 
-- **Chart Title & Type:** Name the chart and select a type from 10+ chart types.
-- **Data Source:** Choose whether to create a manual chart or fetch from Ninja Tables/Fluent Forms.
-- **Data Range:** Select the data amount and data order.
-- **Formatting & Preview:** Customize the chart color, text, animation, etc.
-- **Save & Get Shortcode:** Copy the auto-generated shortcode and paste it anywhere.
+1. **Chart Title & Type**: name the chart, choose the renderer and pick a chart type.
+2. **Data Source**: choose **Manual Input**, **Ninja Tables** or **Fluent Forms**.
+3. **Data Range**: choose which columns and rows to plot.
+4. **Formatting & Preview**: style the chart and see it update live.
+5. **Save & Get Shortcode**: copy the generated shortcode.
 
+<!-- TODO(screenshot): getting-started-with-ninja-charts-free-wordpress-chart-plugin-1
+  screen: Ninja Tables › Add Chart › Chart Title & Type
+  table: -
+  state: Step 1 with a chart name entered, Chart Js selected and the chart type cards visible
+  highlight: Chart Renderer field
+  view: admin
+  alt: Chart creator step 1 with the chart renderer and chart type cards
+-->
 
-Here are the charts in the chart list (**Ninja Tables** › **Charts**).
+Pick the path that matches your data:
 
-![Use Ninja Charts](/images/ninja-charts/getting-started-ninja-charts/2.-Charts-North-WordPress-06-03-2025-11-33.webp)
+- [Charts from Ninja Tables data](/create-ninja-charts-with-ninja-tables-data)
+- [Charts from Fluent Forms entries](/create-ninja-charts-with-fluent-forms-entries)
+- [Charts from data you type in](/how-to-create-chart-manually-in-ninja-charts)
+- [The full walkthrough for dynamic charts](/how-to-create-dynamic-charts-with-ninja-charts)
 
-If you’re looking for tools to display data in WordPress charts, Ninja Charts is for you.
+## See all your charts
+
+**Ninja Tables** › **Charts** lists every chart with its renderer, data source, type and shortcode. See [Manage Your Charts](/manage-ninja-charts).
+
+<!-- TODO(screenshot): getting-started-with-ninja-charts-free-wordpress-chart-plugin-2
+  screen: Ninja Tables › Charts
+  table: -
+  state: All Charts list with two or three charts and the ShortCode column visible
+  highlight: ShortCode column
+  view: admin
+  alt: All Charts list showing the ID, title, renderer, data source, chart type and shortcode
+-->
+
+When you have no charts yet, the page shows a welcome screen with **Create a new chart** and **Import CSV** options.
+
+## Next steps
+
+- [Add a Chart to a Page](/embed-ninja-charts)

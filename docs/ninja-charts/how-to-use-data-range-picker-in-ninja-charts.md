@@ -1,36 +1,35 @@
 ---
 title: "How to Use Data Range Picker in Ninja Charts"
-description: "Choose which columns, rows and date range a Ninja Charts chart shows with the data range picker."
+description: "Choose which columns, rows and date range a Ninja Charts chart shows with the Data Range step."
 ---
 
 # How to Use Data Range Picker in Ninja Charts
 
-Ninja Charts offers multiple chart creation options and chart renderers as well. Once you’re done selecting the chart type and data source, you need to select the **Data Range**.
+The **Data Range** step of the chart creator decides which parts of your data end up in the chart. It comes after you choose the chart type and the data source, and the options depend on that source.
 
-This is where you can edit the data.
+## Charts from Ninja Tables or Fluent Forms
 
-## Data Range Picker in Ninja Charts
+1. In **Columns in the data source**, click the columns you want to chart. They move to the columns used in the chart. Click one again to deselect it.
+2. Use **Select All** to move every column at once, or **Deselect All** to clear them.
+3. Set **Number of Items**: how many rows the chart shows. The default is 10, which means the last 10 items. Enter `0` to show all items.
+4. Choose **Data order**: **Ascending** (the default) or **Descending**.
+5. Turn on **Pick Items** to choose individual rows instead of a count.
+6. Turn on **Date Range Picker** to show only rows from a date range, then choose the dates. It applies to Fluent Forms entries and to tables that have a date.
+7. Click **Next**.
 
-In this step, you can select the data you want on the chart from here.
+<!-- TODO(screenshot): how-to-use-data-range-picker-in-ninja-charts-1
+  screen: Ninja Tables › Add Chart › Data Range
+  table: Monthly Sales by Region 2026
+  state: Columns in the data source on the left, columns used in the chart on the right, Number of Items set to 10
+  highlight: Number of Items field
+  view: admin
+  alt: Data Range step with column lists, Number of Items, Data order and Pick Items
+-->
 
-![Create using Ninja-Charts](/images/ninja-charts/data-range-picker-ninja/1.-Ninja-Table-Chart-GIF.webp)
+Some columns can't be charted as they are. If the creator says "Please update your table column data type", change that column's type in the table or choose another column. Column types that are counted into categories (such as Select fields and radio buttons) are described in [Ninja Tables data](/create-ninja-charts-with-ninja-tables-data) and [Fluent Forms entries](/create-ninja-charts-with-fluent-forms-entries).
 
-- **Select All** columns if you want. You can **Deselect** too.
-- The **Number of Items** is set to 10 by default.
-- Use **Data Order** to choose the Ascending or Descending order of data.
-- Use **Pick Items** if you don’t want all the items in the chart.
-- Turn on the **Date Range Picker** if you want to generate the chart by date range.
+## Manual charts
 
-This is how the customization looks.
+A manual chart has no columns to pick. Add the data yourself with **Add New Column** and **Add Data**. See [Create a Chart Manually](/how-to-create-chart-manually-in-ninja-charts).
 
-![Create a Chart](/images/ninja-charts/data-range-picker-ninja/2.-Column-in-data-source-05-1.webp)
-
-Select columns from the left box and move to the right. Or customize from the options from the number of items, date range picker, data order, etc.
-
-However, the layout is different for charts created with manual data input.
-
-![Create manual chart](/images/ninja-charts/data-range-picker-ninja/3.-Add-new-chart.webp)
-
-You can add a new column, add data, or delete/edit data from here.
-
-Don’t forget to hit the **Next** button when you’re done here. You’ll be taken to the **Formatting & Preview** tab where you can customize the chart further.
+You land on **Formatting & Preview** after **Next**. See [Customize a Chart](/how-to-customize-charts-in-ninja-charts).

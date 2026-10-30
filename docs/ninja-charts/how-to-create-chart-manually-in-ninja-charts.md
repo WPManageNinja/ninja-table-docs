@@ -5,45 +5,63 @@ description: "Build a chart in Ninja Charts by typing the data in yourself, with
 
 # How to Create Chart Manually in Ninja Charts
 
-Want dynamic data charts on your website? Ninja Charts is here for you!
+A **manual chart** uses data you type into the chart creator, so it needs no table or form. It's the right choice for a one-off figure, such as survey results from a report. The chart doesn't change unless you edit it. To chart data that changes, use [Ninja Tables](/create-ninja-charts-with-ninja-tables-data) or [Fluent Forms](/create-ninja-charts-with-fluent-forms-entries) instead.
 
-This free chart generator in WordPress lets you create and customize all sorts of charts easily. For example, pie charts, line charts, bubble charts, histograms, etc.
+## Start the chart
 
-## Create a Chart with Manual Data Input
+1. Go to **Ninja Tables** › **Add Chart** (or **Ninja Tables** › **Charts** › **Add New**).
+2. Enter a **Chart Name** and choose the **Chart Renderer**: **Chart Js** or **Google Charts**.
+3. Pick a chart type and click **Next**. The type list depends on the renderer (see [Getting Started](/getting-started-with-ninja-charts-free-wordpress-chart-plugin)).
+4. On the **Data Source** step, choose **Manual Input** and click **Next**.
 
-- To create a Manual Chart, go to **Ninja Tables** › **Add Chart** (or click **Add New** in the chart list at **Ninja Tables** › **Charts**).
+<!-- TODO(screenshot): how-to-create-chart-manually-in-ninja-charts-1
+  screen: Ninja Tables › Add Chart › Data Source
+  table: -
+  state: Manual Input selected as the data source
+  highlight: Manual Input option
+  view: admin
+  alt: Data Source step with Manual Input selected
+-->
 
-![Add New Chart](/images/ninja-charts/create-chart-manually-ninja/1.-Charts-North-WordPress-06-03-2025-11-33.webp)
+## Add the data
 
-- Then enter your **Chart Name** and choose your **Chart Renderer**. Two types of chart renderers are available: **Google Charts & Chart Js**.
+The **Data Range** step starts empty and says "Please input some data."
 
-![Choose Cahrt Renderer](/images/ninja-charts/create-chart-manually-ninja/2.-chart-01.webp)
+1. Click **Add New Column** to add a data column to the chart.
+2. Click **Add Data** to add a row.
+3. In the row form, fill in the two fields:
+   - **Text input**: the label for that row. It becomes the chart label.
+   - **Number input**: the value. It becomes the chart data.
+4. Save the row. Repeat for as many rows as you need.
+5. Use the edit and delete icons in the **Actions** column to fix or remove a row.
+6. Click **Next**.
 
-- Now choose your preferred chart type. You can pick any chart type from the 10+ options.
-- In the **Data Source** tab, select **Manual Input**. Select and move to the next tab.
+<!-- TODO(screenshot): how-to-create-chart-manually-in-ninja-charts-2
+  screen: Ninja Tables › Add Chart › Data Range (Manual Input)
+  table: -
+  state: Add row data dialog open over a manual data list with two rows already added
+  highlight: Add Data button
+  view: admin
+  alt: Manual Input data range with the Add row data dialog
+-->
 
-![Manual Input](/images/ninja-charts/create-chart-manually-ninja/3.-Source-02.webp)
+You land on **Formatting & Preview**, where the chart already shows your data.
 
-- In this **Data Range** option, hit the **Add Column** button first to input the data column to the chart. Then **Add Data**. You can add as many data as you want.
+## Bubble and scatter charts
 
-![Add Data](/images/ninja-charts/create-chart-manually-ninja/4.-data-range-03.webp)
+Chart Js bubble and scatter charts plot points, so the **Add row data** form asks for numbers instead of a label:
 
-### Text Input
+- **Number input for X Axis** and **Number input for Y Axis** for scatter charts.
+- The same two fields plus **Number input for radius R** (the bubble size) for bubble charts.
 
-This input text can generate the chart label.
+## Combo charts
 
-### Number Input
+In a Chart Js combo chart, the last dataset is drawn as a line and all earlier ones as bars. Add the series you want as a line last.
 
-The number input can generate chart data.
+## Finish the chart
 
-Don’t forget to click the Next button. Now you’ll be moved to the **Formatting & Preview** tab where you can customize the chart in real-time.
+[Customize it](/how-to-customize-charts-in-ninja-charts), then save and copy the shortcode. See [Add a Chart to a Page](/embed-ninja-charts).
 
-## Manually Created Chart
-
-Once you hit Next and move to the **Formatting & Preview** tab, you'll see the Bar Chart is ready with the data you put manually.
-
-![Manuall Created Chart](/images/ninja-charts/create-chart-manually-ninja/5.-Formatting-Preview.webp)
-
-Now, it's done. [Customize](/how-to-customize-charts-in-ninja-charts) the chart from here all you want. Then hit **Save** and copy the auto-generated shortcode to use on your website.
-
-This is how you can easily create Manual Charts using Ninja Charts.
+::: tip
+Already have the numbers in a spreadsheet? Use **Import CSV** on the chart list to create a manual chart from a file. See [Manage Your Charts](/manage-ninja-charts).
+:::

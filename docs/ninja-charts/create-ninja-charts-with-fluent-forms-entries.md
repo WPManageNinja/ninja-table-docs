@@ -5,34 +5,42 @@ description: "Turn Fluent Forms submissions into a chart with Ninja Charts, for 
 
 # How to Create Ninja Charts with Fluent Forms Entries
 
-Suppose you want to create different online charts on your website. Ninja Charts is a powerful chart generator that helps you create, customize, and embed numerous types of charts in WordPress. And if you have a WordPress form by Fluent Forms, you can make a chart with the form entries.
+A chart built from **Fluent Forms** entries is a dynamic chart: it updates as new submissions arrive. It's a good fit for polls, surveys and ratings. You need Fluent Forms and [Ninja Charts](/how-to-install-ninja-charts) active.
 
-It's super easy too!
+## Create the chart
 
-## Create Charts with Fluent Forms Entries
+1. Go to **Ninja Tables** › **Add Chart**.
+2. Enter a **Chart Name**, choose the **Chart Renderer** and a chart type. Click **Next**.
+3. On the **Data Source** step, choose **Fluent Forms**.
+4. In the **Data** field that appears, pick the form.
+5. Click **Next** and choose what to plot in [Data Range](/how-to-use-data-range-picker-in-ninja-charts).
 
-First of all, you need to pick the chart renderer (Charts Js or Google Charts). Then pick a chart type from the 10+ options.
+<!-- TODO(screenshot): create-ninja-charts-with-fluent-forms-entries-1
+  screen: Ninja Tables › Add Chart › Data Source
+  table: -
+  state: Fluent Forms selected as the data source and the Data dropdown showing a form
+  highlight: Data field
+  view: admin
+  alt: Data Source step with Fluent Forms selected and a form chosen
+-->
 
-![Create a chart](/images/ninja-charts/create-ninja-charts-fluent/1.-Create-a-chart-01.webp)
+The **Fluent Forms** option is always listed, but it only has forms to pick when Fluent Forms is installed.
 
-### Select Fluent Forms as Chart Data Source
+## Pick fields that fit the chart
 
-You can see 3 options Ninja Charts offers to create charts using different data sources.
+Some form fields are counted into categories instead of plotted as raw values, so the chart shows how many people chose each answer:
 
-- Manual Input: Users can input their own data manually
-- Ninja Tables: Create chart using a table
-- Fluent Forms: Create chart using form entries
+- Radio, Checkbox, Select and Multiple select fields
+- Country fields
+- Ratings, Score and Net promoter score fields
+- The `method` and `agreement` field types
 
-We'll select Fluent Forms as the chart data source.
+Free-text fields (names, messages) don't suit pie or radar charts. Choose a field type that matches the chart, or the chart can't be built.
 
-![Select Fluent Forms as chart data source](/images/ninja-charts/create-ninja-charts-fluent/2.-Select-Fluent-Forms-as-chart-data-source.webp)
+## Filter by date
 
-Once you select the source, another option will appear asking for "Data."
-This is where you select the form you want to appear on your new chart.
+When the form has entries with dates, the **Date Range Picker** in [Data Range](/how-to-use-data-range-picker-in-ninja-charts) lets the chart show only entries from a period.
 
-![Select a form to populate Ninja Charts](/images/ninja-charts/create-ninja-charts-fluent/3.-Select-a-form-to-populate-chart.webp)
+## Finish the chart
 
-Hit "Next" after selecting a form and move to customizing [Data Range](/how-to-use-data-range-picker-in-ninja-charts), [Formatting & Preview](/how-to-customize-charts-in-ninja-charts), and save the Fluent Forms data chart.
-
-> [!Tip]
-> Be mindful of the data type of the form you're selecting and the chart type. Forms with text input are not suitable for pie chart or radar. For Ninja Charts to correctly populate form entries, you need to pick the correct form and the correct chart type.
+Style it in [Formatting & Preview](/how-to-customize-charts-in-ninja-charts), then save it and copy the shortcode. See [Add a Chart to a Page](/embed-ninja-charts).

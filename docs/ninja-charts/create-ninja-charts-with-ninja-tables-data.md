@@ -5,35 +5,39 @@ description: "Turn the data in a Ninja Tables table into a bar, line, pie or oth
 
 # How to Create Ninja Charts with Ninja Tables Data
 
-If you have a data table created with Ninja Tables ready to go, you can turn those table data into a chart using Ninja Charts! Since it's a free integration, you only need the 2 plugins in your dashboard to create a chart with table data.
+A chart built from a Ninja Tables table is a **dynamic chart**: it reads the table when the chart loads, so edits to the table show up in the chart. You only need Ninja Tables and [Ninja Charts](/how-to-install-ninja-charts).
 
-We'll show you how.
+## Create the chart
 
-## Create Charts with Ninja Tables Data
+1. Go to **Ninja Tables** › **Add Chart**.
+2. Enter a **Chart Name**, choose the **Chart Renderer** (**Chart Js** or **Google Charts**), then pick a chart type. Click **Next**.
+3. On the **Data Source** step, choose **Ninja Tables**.
+4. In the **Data** field that appears, pick the table.
+5. Click **Next** and choose what to plot in [Data Range](/how-to-use-data-range-picker-in-ninja-charts).
 
-Go to **Ninja Tables** › **Add Chart**. As usual, start by selecting the chart renderer (Charts Js or Google Charts) in Ninja Charts. Then if you have a prefered chart type, select it from the 10+ options.
+<!-- TODO(screenshot): create-ninja-charts-with-ninja-tables-data-1
+  screen: Ninja Tables › Add Chart › Data Source
+  table: Monthly Sales by Region 2026
+  state: Ninja Tables selected as the data source and the Data dropdown showing the table
+  highlight: Data field
+  view: admin
+  alt: Data Source step with Ninja Tables selected and a table chosen
+-->
 
-![Create a chart](/images/ninja-charts/create-ninja-charts-ninja/1.-Create-a-chart-01.webp)
+If you click **Next** on step 1 without a chart type, the creator shows "Chart type is required". Pick a type first.
 
-### Select Ninja Tables as Chart Data Source
+## Choose a table and chart type that fit
 
-Just like the usual data source layout, you can see 3 data source options to create your chart.
+Ninja Charts plots numbers, so match the table to the chart.
 
-- Manual Input: Users can input their own data manually
-- Ninja Tables: Create chart using a table
-- Fluent Forms: Create chart using form entries
+- Columns with numbers (prices, counts, totals) work in every chart type.
+- A [Select field](/select-field) column (the dropdown column type) is counted into categories instead of plotted as raw values, so a pie chart shows how many rows picked each option.
+- Text columns with mostly unique values don't suit pie, doughnut or radar charts. If the data can't be charted, the Data Range step asks you to update the table's column data type.
 
-We’ll select Ninja Tables as the chart data source.
+::: tip
+Tables connected to a Google Sheet are read from the sheet's CSV, up to 2,000 rows.
+:::
 
-![Select Ninja Tables as chart data source](/images/ninja-charts/create-ninja-charts-ninja/2.-Select-Ninja-Tables-as-chart-data-source.webp)
+## Finish the chart
 
-Once you select the source, you can select the table data you want to turn into a chart.
-
-Pick a table and populate your chart.
-
-![Select table data for chart](/images/ninja-charts/create-ninja-charts-ninja/3.-Select-table-data-for-chart.webp)
-
-You can now hit "Next" and customize your chart as you want.
-
-> [!Tip]
-> Tables with text input are not suitable for charts like pie chart or radar. For Ninja Charts to correctly populate table entries, you need to pick the correct table and the correct chart type. Duplicate text type or invalid data type cannot create a chart.
+Style it in [Formatting & Preview](/how-to-customize-charts-in-ninja-charts), then save it and copy the shortcode. See [Add a Chart to a Page](/embed-ninja-charts).

@@ -1,107 +1,91 @@
 ---
 title: "How to Customize Charts in Ninja Charts"
-description: "Change a chart's colors, series, axes, title, tooltip and legend in Ninja Charts."
+description: "Change a chart's size, colors, series, axes, title, tooltip, legend, layout and animation in the Formatting & Preview step."
 ---
 
 # How to Customize Charts in Ninja Charts
 
-Ninja Charts is perfect for creating and embedding unlimited responsive online charts in WordPress websites. You can also customize charts however you need.
+The **Formatting & Preview** step of the chart creator shows your chart and a set of option tabs. Changes show in the preview as you make them. Reopen a saved chart with the pencil icon in the [chart list](/manage-ninja-charts) to change it later.
 
-This plugin gives you lots of flexibility and fun when it comes to customizing a data chart! In the **Formatting & Preview** step, you’ll see some advanced options for customizing your charts.
+The tabs depend on the renderer:
 
-## Customizing WordPress Charts in Ninja Charts
+- **Chart Js**: CHART, SERIES, AXES, TITLE, TOOLTIP, LEGEND, LAYOUT, ANIMATIONS.
+- **Google Charts**: CHART, SERIES, LEGEND, AXES, TITLE, TOOLTIP. There are no Layout or Animations tabs.
 
-We have this simple guide to show you how to customize Ninja Charts and have fun doing it!
+<!-- TODO(screenshot): how-to-customize-charts-in-ninja-charts-1
+  screen: Ninja Tables › Add Chart › Formatting & Preview
+  table: Product Price List
+  state: Chart Js bar chart preview with the CHART tab open
+  highlight: CHART tab
+  view: admin
+  alt: Formatting & Preview step with the CHART tab open
+-->
 
-Here are the chart customizing options in the **Formatting & Preview** step. You can customize Google Charts and Chart Js both following this tutorial.
+## CHART
 
-### CHART
+Size, position, colors and the default font.
 
-In this tab, 8 customizing options will appear with features like chart coloring, size, fonts, etc.
+- **Responsive chart**: the chart resizes to fit its container. Turn it off to use a fixed size.
+- **Chart Position**: **Left**, **Center** or **Right**. It only applies when the chart has a custom width and height, so it is unavailable while **Responsive chart** is on.
+- **Chart width** and **Chart height**: the size in pixels. The width is used when **Responsive chart** is off.
+- **Background color**: the chart background.
+- **Border width**, **Border color** and **Border radius**: the chart border.
+- **Font size** and **Font color**: the default text for the whole chart.
+- **Font style** (Chart Js): the default style for all chart text, for example Normal.
 
-- **Responsive chart:** Make a responsive online chart by toggling it on.
-- **Chart width:** Customize chart width.
-- **Chart height:** Customize chart height.
-- **Background color:** Change the color of the chart background.
-- **Border width:** Customize border width.
-- **Border color:** Change border color.
-- **Border radius:** Custom chart border radius.
+## SERIES
 
-![Chart](/images/ninja-charts/customize-charts-ninja/1.-Chart.webp)
+One block per data column. Change each series' **Label** and **Color**.
 
-### SERIES
+<!-- TODO(screenshot): how-to-customize-charts-in-ninja-charts-2
+  screen: Ninja Tables › Add Chart › Formatting & Preview › SERIES
+  table: Monthly Sales by Region 2026
+  state: SERIES tab with two series blocks showing Label and Color
+  highlight: Color field
+  view: admin
+  alt: SERIES tab with a label and color for each series
+-->
 
-You can redefine the series labels and colors from here.
+## AXES
 
-![Series](/images/ninja-charts/customize-charts-ninja/2.-Series.webp)
+Grid, stacking and axis labels. Which fields appear depends on the chart type: charts without axes, such as Pie, show fewer.
 
-### AXES
+- **Show grid**: turn on to draw grid lines in the chart background.
+- **Show stacked chart**: turn on to stack the series on top of each other instead of side by side. It doesn't appear for charts like Pie.
+- **Horizontal axis label** and **Vertical axis label**: titles for the axes.
+- **Vertical axis min** and **Vertical axis max**: the lowest and highest values on the vertical axis.
 
-Show grid, control chart stack, or labels.
+## TITLE
 
-Grid true and Grid false vary in different chart types. Here's a Horizontal bar chart with Grid true where you can customize what you need. Grid false appears for charts like Pie charts.
+- **Show title**: turn on to show the chart title.
+- **Title position**: Top, Bottom, Left or Right. Google Charts also offers **Out**.
+- **Title font style**: Normal, Italic or Bold.
+- **Title font color**: the title color.
+- **Font size**: the title size.
 
-- **Show grid:** Turn it off if you want grid lines in the chart background.
-- **Show stacked chart:** Turn it off if you want the chart data to stack (This won't appear for charts like Pie Chart).
-- **Horizontal axis label**: Custom labeling of the horizontal axis.
-- **Vertical axis label:** Custom labeling of the vertical axis.
-- **Vertical axis min:** Custom minimum value of the vertical axis.
-- **Vertical axis max:** Custom maximum value of the vertical axis.
+## TOOLTIP
 
-![Axes](/images/ninja-charts/customize-charts-ninja/3.-Axies.webp)
+The box that appears when a visitor hovers a data point.
 
-### TITLE
+- **Show tooltip**: turn on to show tooltips.
+- **Background color** and **Border color**: the tooltip box colors.
+- **Title font color** and **Body font color**: the text colors.
+- **Border width**: the tooltip border in pixels.
+- **Shared tooltip**: turn on so one tooltip covers the whole plot area instead of a single point.
 
-Control chart title visibility, appearance, and position.
+## LEGEND
 
-- **Show title:** Toggle on if you want the chart title to show up.
-- **Title position:** Change chart title position- Top, Bottom, Left, and Right.
-- **Title font style:** Change chart title font- Normal, Italic, Bold.
-- **Title font color:** Customize the title font color from the RGB palette.
-- **Font size:** Change font size.
+- **Show legend**: turn on to display the legend.
+- **Legend position**: Top, Bottom, Left or Right.
+- **Font color**: the legend text color.
+- **Legend alignment** and **Font size** (Google Charts only): align the legend to start, center or end, and set its text size.
 
-![Title](/images/ninja-charts/customize-charts-ninja/4.-Title.webp)
+## LAYOUT (Chart Js only)
 
+**Padding left**, **Padding right**, **Padding top** and **Padding bottom**: space around the chart inside its container.
 
-### TOOLTIP
+## ANIMATIONS (Chart Js only)
 
-Control chart tooltip appearance, visibility, and width.
+**Easing**: the animation curve used when the chart first draws. The default is linear.
 
-- **Show tooltip:** Turn it on for the tooltip to appear.
-- **Background color:** Change the tooltip background color.
-- **Border color:** Change the tooltip border color.
-- **Title font color:** Custom tooltip font color.
-- **Body font color:** Custom tooltip font color.
-- **Border width:** Pixel width of the tooltip border.
-- **Shared tooltip:** Turn it on to share the tooltip area with the entire plot.
-
-![Tooltip](/images/ninja-charts/customize-charts-ninja/5.-Tooltip.webp)
-
-### LEGEND
-
-Customize legend position and appearance.
-
-- **Show legend:** Enable or disable legend.
-- **Legend position:** Position of legend- Top, Bottom, Left, Right.
-- **Font color:** Change the legend font color.
-
-![LEGEND](/images/ninja-charts/customize-charts-ninja/6.-Legenda.webp)
-
-### LAYOUT
-
-Customize chart padding when you embed it on your website.
-
-- Padding left
-- Padding right
-- Padding top
-- Padding bottom
-
-![LAYOUT](/images/ninja-charts/customize-charts-ninja/7.-Layout.webp)
-
-### CHART ANIMATIONS
-
-Customize chart render animation and select the animation ease type used to render the chart provided by Chart JS.
-
-![CHART ANIMATIONS](/images/ninja-charts/customize-charts-ninja/8.-animations.webp)
-
-Create customizable charts and graphs easily using Ninja Charts.
+Click **Save** when you're done, then [add the chart to a page](/embed-ninja-charts).

@@ -5,64 +5,65 @@ description: "Create a chart that updates automatically from a Ninja Tables tabl
 
 # How to Create Dynamic Charts with Ninja Charts
 
-Once you install and activate Ninja Charts, this plugin is ready to create any type of chart you want!
-As a free WordPress chart plugin, Ninja Charts makes the process of creating online charts very easy.
+A **dynamic chart** reads its numbers from a Ninja Tables table or Fluent Forms entries, so it stays current as the data changes. This page walks through the whole creator once. Install [Ninja Charts](/how-to-install-ninja-charts) first.
 
-![Ninja Charts](/images/ninja-charts/create-dynamic-charts-ninja/1.-Create-a-chart-01.webp)
+## Step 1: Name the chart and pick a type
 
-Chart renderer in Ninja Charts:
-- Charts Js
-- Google Charts
-Chart options in Ninja Charts (Charts from both renderers):
-- Line Chart
-- Pie Chart
-- Bar Chart
-- Horizontal Bar
-- Bubble Chart
-- Doughnut Chart
-- Scatter Chart
-- Area Chart
-- Combo Chart
-- Radar Chart
-- Polar Chart
+1. Go to **Ninja Tables** › **Add Chart** (or **Ninja Tables** › **Charts** › **Add New**).
+2. Enter a **Chart Name**.
+3. Choose a **Chart Renderer**, then pick a chart type.
+4. Click **Next**.
 
-## Creating WordPress Charts with Ninja Charts
+The renderer decides which chart types you can pick:
 
-First, go to **Ninja Tables** › **Add Chart** (or **Ninja Tables** › **Charts** and click **Add New**).
+- **Chart Js** (12): Line, Pie, Bar, Horizontal Bar, Bubble, Doughnut, Scatter, Area, Combo, Radar, Polar and Funnel.
+- **Google Charts** (10): Line, Pie, Bar, Horizontal Bar, Bubble, Doughnut, Scatter, Area, Combo and Histogram.
 
-![](/images/ninja-charts/create-dynamic-charts-ninja/2.-Charts-North-WordPress-06-03-2025-11-33.webp)
+If you skip the type, the creator shows "Chart type is required".
 
-- Enter the chart name.
-- Choose a **Chart Renderer**. Choose either Google Charts or Chart Js.
-- After choosing Chart Js here, you’ll see multiple chart types. Let’s pick one.
-- We’ve selected the Horizontal Bar chart for demonstration and clicked Next.
+<!-- TODO(screenshot): how-to-create-dynamic-charts-with-ninja-charts-1
+  screen: Ninja Tables › Add Chart › Chart Title & Type
+  table: -
+  state: Chart Js selected with the Horizontal Bar card highlighted
+  highlight: Chart Renderer field
+  view: admin
+  alt: Chart Title & Type step with chart type cards
+-->
 
-![](/images/ninja-charts/create-dynamic-charts-ninja/3.-Choose-chart-type-02.webp)
+## Step 2: Choose the data source
 
-- After this, you have to select the **Data Source** from the Source option.
-- Manual Input
-- Ninja Tables
-- Fluent Forms
+Choose **Ninja Tables** or **Fluent Forms**, then pick the table or form in the **Data** field. (**Manual Input** is for [typed-in charts](/how-to-create-chart-manually-in-ninja-charts).)
 
-![](/images/ninja-charts/create-dynamic-charts-ninja/4.-Data-Source-03.webp)
+<!-- TODO(screenshot): how-to-create-dynamic-charts-with-ninja-charts-2
+  screen: Ninja Tables › Add Chart › Data Source
+  table: Product Price List
+  state: Ninja Tables selected and the table picked in the Data dropdown
+  highlight: Data field
+  view: admin
+  alt: Data Source step with a Ninja Tables table selected
+-->
 
-Here, we’ve selected **Ninja Tables** as the data source as an example.
-- Now, select the table you want to turn into a chart from the dropdown.
+For source-specific tips, see [Ninja Tables data](/create-ninja-charts-with-ninja-tables-data) and [Fluent Forms entries](/create-ninja-charts-with-fluent-forms-entries).
 
-![](/images/ninja-charts/create-dynamic-charts-ninja/5.-Data-04.webp)
+## Step 3: Choose the data range
 
-- Hit **Next** and now you’re in the **Data Range** tab where you can choose what table entries you want in your chart.
+Move the columns you want from **Columns in the data source** to the columns used in the chart, and set how many items to show. See [Use the Data Range Picker](/how-to-use-data-range-picker-in-ninja-charts).
 
-![](/images/ninja-charts/create-dynamic-charts-ninja/6.-Column-in-data-source-05.webp)
+## Step 4: Format and preview
 
-- You can customize it all you want in the **Formatting & Preview** tab.
-So, here's the Horizontal Bar chart by Ninja Charts made with the chosen data table in Ninja Tables in the **Formatting & Preview** tab.
+Adjust colors, axes, title, tooltip and legend while the preview updates. See [Customize a Chart](/how-to-customize-charts-in-ninja-charts).
 
-![](/images/ninja-charts/create-dynamic-charts-ninja/7.-Formatting-Review-06.webp)
+<!-- TODO(screenshot): how-to-create-dynamic-charts-with-ninja-charts-3
+  screen: Ninja Tables › Add Chart › Formatting & Preview
+  table: Product Price List
+  state: Horizontal bar chart preview with the options tabs visible
+  highlight: -
+  view: admin
+  alt: Formatting & Preview step showing a bar chart preview and option tabs
+-->
 
-Now hit **Save** and get the shortcode from the next tab.
+## Step 5: Save and get the shortcode
 
-![](/images/ninja-charts/create-dynamic-charts-ninja/8.-Finish-07.webp)
+Click **Save**. The last step, **Save & Get Shortcode**, shows `[ninja_charts id="N"]`, where N is the chart's ID. Copy it and [add it to a page](/embed-ninja-charts). Use **Back** to change an earlier step, or **Finish** to close the creator.
 
-Copy the auto-generated shortcode and paste it anywhere on your website.
-This is how you can create different charts using Ninja Charts.
+The chart now appears in your [chart list](/manage-ninja-charts).

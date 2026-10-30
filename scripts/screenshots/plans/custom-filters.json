@@ -1,0 +1,4 @@
+{"doc":"docs/table-settings/custom-filters.md","outDir":"public/images/table-settings/custom-filters","viewport":{"width":1440,"height":900},
+"steps":[{"admin":"/tables/{{Employee Directory}}/filters"},{"wait":1500},
+{"click":{"role":"button","name":"Add Filter"}},{"wait":1000},
+{"shot":{"name":"probe","clip":"viewport"}}]}
