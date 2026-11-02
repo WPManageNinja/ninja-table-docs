@@ -1,46 +1,19 @@
 {
   "doc": "docs/styling-design/table-font-settings.md",
   "outDir": "public/images/styling-design/table-font-settings",
-  "viewport": {
-    "width": 1440,
-    "height": 900
-  },
+  "viewport": {"width": 1440, "height": 900},
   "steps": [
-    {
-      "admin": "/tables/{{Product Price List}}/design_studio"
-    },
-    {
-      "click": {
-        "role": "tab",
-        "name": "^Style$"
-      }
-    },
-    {
-      "click": {
-        "selector": ".nt-ds-sec__btn",
-        "hasText": "Typography"
-      }
-    },
-    {
-      "wait": 600
-    },
-    {
-      "click": ".nt-ds-sec.is-open .el-select"
-    },
-    {
-      "wait": 600
-    },
-    {
-      "shot": {
-        "name": "1.-Typography-Settings-With-The-Font-Family",
-        "clip": "app",
-        "highlights": [
-          {
-            "row": "Font Family",
-            "part": "row"
-          }
-        ]
-      }
-    }
+    {"viewport": {"width": 1440, "height": 1000}},
+    {"admin": "/tables/{{Quarterly Sales by Store 2026}}/design_studio"},
+    {"wait": 2000},
+    {"css": ".nt-appearance{grid-template-columns:minmax(0,1fr) 520px!important}"},
+    {"click": {"selector": ".nt-appearance__tab", "hasText": "Styling"}},
+    {"wait": 800},
+    {"click": {"selector": ".nt-ds-sec__btn", "hasText": "Typography"}},
+    {"wait": 700},
+    {"shot": {"name": "1.-Typography-Section", "clip": {"x": 920, "y": 138, "width": 520, "height": 420}}},
+    {"click": ".nt-ds-sec.is-open .el-select"},
+    {"wait": 700},
+    {"shot": {"name": "2.-Font-Family-List", "clip": {"x": 920, "y": 138, "width": 520, "height": 620}}}
   ]
 }

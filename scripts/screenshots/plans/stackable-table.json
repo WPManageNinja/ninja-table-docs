@@ -7,10 +7,16 @@
   },
   "steps": [
     {
-      "admin": "/tables/{{Product Price List}}/design_studio"
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
     },
     {
-      "wait": 1000
+      "admin": "/tables/{{Quarterly Sales by Store 2026}}/design_studio"
+    },
+    {
+      "wait": 2000
     },
     {
       "click": {
@@ -19,81 +25,55 @@
       }
     },
     {
-      "click": ".nt-segmented[aria-label=\"Preview Width\"] button:last-child"
+      "wait": 500
     },
     {
-      "wait": 600
-    },
-    {
-      "click": {
-        "selector": ".nt-ds-sec__btn",
-        "hasText": "Responsive Breakpoint"
-      }
-    },
-    {
-      "scrollTo": {
-        "selector": ".nt-ds-sec__btn",
-        "hasText": "Responsive Breakpoint"
-      }
-    },
-    {
-      "wait": 600
-    },
-    {
-      "shot": {
-        "name": "1.-Responsive-Breakpoint-Section-With-The-Drawer",
-        "clip": "app",
-        "highlights": [
-          {
-            "row": "Responsive drawer",
-            "part": "row"
-          }
-        ]
-      }
-    },
-    {
-      "click": {
-        "selector": ".nt-ds-sec__btn",
-        "hasText": "Stackable Table"
-      }
+      "css": ".nt-appearance{grid-template-columns:minmax(0,1fr) 520px!important}"
     },
     {
       "wait": 500
     },
     {
-      "click": ".nt-ds-sec.is-open .el-switch"
-    },
-    {
-      "wait": 600
-    },
-    {
       "click": {
-        "selector": ".el-checkbox",
-        "hasText": "Mobile Device"
-      }
-    },
-    {
-      "wait": 300
-    },
-    {
-      "scrollTo": {
         "selector": ".nt-ds-sec__btn",
-        "hasText": "Stackable Table"
+        "hasText": "Mobile"
       }
     },
     {
-      "wait": 400
+      "wait": 700
+    },
+    {
+      "shot": {
+        "name": "1.-Responsive-Breakpoint-Section-With-The-Drawer",
+        "clip": {
+          "x": 920,
+          "y": 140,
+          "width": 520,
+          "height": 560
+        }
+      }
+    },
+    {
+      "eval": "[...document.querySelectorAll('.nt-setting-row')].find(r=>/Stack Rows As Cards/i.test(r.textContent)).querySelector('.el-switch').click()"
+    },
+    {
+      "wait": 700
+    },
+    {
+      "eval": "document.querySelector('.nt-appearance').scrollTop=0;[...document.querySelectorAll('.nt-ds-subhead')].find(e=>/Stackable/.test(e.textContent)).scrollIntoView()"
+    },
+    {
+      "wait": 500
     },
     {
       "shot": {
         "name": "2.-Stackable-Table-Section-With-The-Stack",
-        "clip": "app",
-        "highlights": [
-          {
-            "row": "Stack On",
-            "part": "row"
-          }
-        ]
+        "clip": {
+          "x": 920,
+          "y": 140,
+          "width": 520,
+          "height": 600
+        }
       }
     }
   ]

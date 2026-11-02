@@ -7,7 +7,19 @@
   },
   "steps": [
     {
-      "admin": "/tables/{{Product Price List}}/design_studio"
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "admin": "/tables/{{Quarterly Sales by Store 2026}}/design_studio"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "css": ".nt-appearance{grid-template-columns:minmax(0,1fr) 520px!important}"
     },
     {
       "click": {
@@ -16,59 +28,38 @@
       }
     },
     {
+      "wait": 500
+    },
+    {
       "click": {
         "selector": ".nt-ds-sec__btn",
         "hasText": "Sticky Header"
       }
     },
     {
-      "scrollTo": {
-        "selector": ".nt-ds-sec__btn",
-        "hasText": "Sticky Header"
-      }
+      "wait": 800
+    },
+    {
+      "css": ".nt-ds-sec:not(.is-open){display:none!important}"
+    },
+    {
+      "wait": 600
     },
     {
       "click": ".nt-setting-row:has-text(\"Sticky Header\") .el-switch"
     },
     {
-      "wait": 400
+      "wait": 600
     },
     {
       "shot": {
-        "name": "1.-Sticky-Header-Column-Section-With-Sticky",
-        "clip": "app",
-        "badges": [
-          {
-            "target": {
-              "selector": ".nt-tab",
-              "hasText": "Appearance"
-            },
-            "n": 2,
-            "pos": "top-right"
-          },
-          {
-            "target": {
-              "role": "tab",
-              "name": "^Features$"
-            },
-            "n": 2,
-            "pos": "top-right"
-          },
-          {
-            "target": {
-              "selector": ".nt-ds-sec__btn",
-              "hasText": "Sticky Header"
-            },
-            "n": 3,
-            "pos": "left"
-          }
-        ],
-        "highlights": [
-          {
-            "row": "Sticky Header",
-            "part": "row"
-          }
-        ]
+        "name": "2.-Sticky-Header-Column-Options",
+        "clip": {
+          "x": 920,
+          "y": 140,
+          "width": 520,
+          "height": 430
+        }
       }
     }
   ]

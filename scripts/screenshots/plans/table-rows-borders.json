@@ -1,0 +1,17 @@
+{
+  "doc": "docs/styling-design/table-rows-borders.md",
+  "outDir": "public/images/styling-design/table-rows-borders",
+  "viewport": {"width": 1440, "height": 900},
+  "steps": [
+    {"viewport": {"width": 1440, "height": 1000}},
+    {"admin": "/tables/{{Quarterly Sales by Store 2026}}/design_studio"},
+    {"wait": 2000},
+    {"css": ".nt-appearance{grid-template-columns:minmax(0,1fr) 520px!important}"},
+    {"click": {"selector": ".nt-appearance__tab", "hasText": "Styling"}},
+    {"wait": 800},
+    {"shot": {"name": "1.-Styling-Tab-Semantic-UI-Switches", "clip": {"x": 920, "y": 138, "width": 520, "height": 800}}},
+    {"click": {"selector": ".nt-segmented button, .nt-segmented label", "hasText": "Bootstrap 4"}},
+    {"wait": 800},
+    {"shot": {"name": "2.-Styling-Tab-Bootstrap-4-Switches", "clip": {"x": 920, "y": 138, "width": 520, "height": 600}}}
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "doc": "docs/styling-design/row-details-popup.md",
+  "outDir": "public/images/styling-design/row-details-popup",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "admin": "/tables/{{Quarterly Sales by Store 2026}}/design_studio"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "css": ".nt-appearance{grid-template-columns:minmax(0,1fr) 520px!important}"
+    },
+    {
+      "click": {
+        "role": "tab",
+        "name": "^Features$"
+      }
+    },
+    {
+      "wait": 500
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Row Details"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
+      "css": ".nt-ds-sec:not(.is-open){display:none!important}"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "1.-Row-Details-Section",
+        "clip": {
+          "x": 920,
+          "y": 140,
+          "width": 520,
+          "height": 260
+        }
+      }
+    },
+    {
+      "click": ".nt-setting-row:has-text(\"Row Details Popup\") .el-switch"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "2.-Row-Details-Popup-On",
+        "clip": {
+          "x": 920,
+          "y": 140,
+          "width": 520,
+          "height": 260
+        }
+      }
+    }
+  ]
+}

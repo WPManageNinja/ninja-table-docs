@@ -1,0 +1,19 @@
+{
+  "doc": "docs/table-management/table-title-description-settings.md",
+  "outDir": "public/images/table-management/table-title-description",
+  "viewport": {"width": 1440, "height": 900},
+  "steps": [
+    {"viewport": {"width": 1440, "height": 1000}},
+    {"admin": "/tables/{{Quarterly Sales by Store 2026}}/design_studio"},
+    {"wait": 2000},
+    {"css": ".nt-appearance{grid-template-columns:minmax(0,1fr) 520px!important}"},
+    {"click": {"selector": ".nt-appearance__tab", "hasText": "Styling"}},
+    {"wait": 800},
+    {"click": {"selector": ".nt-ds-sec__btn", "hasText": "Title & Header"}},
+    {"wait": 700},
+    {"click": ".el-switch:has(input[aria-label=\"Show Table Title\"])"},
+    {"click": ".el-switch:has(input[aria-label=\"Show Table Description\"])"},
+    {"wait": 500},
+    {"shot": {"name": "1.-Title-And-Header-Section", "clip": {"x": 920, "y": 138, "width": 520, "height": 365}}}
+  ]
+}

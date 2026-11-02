@@ -28,14 +28,17 @@ for (const file of readdirSync(treesDir).filter((f) => f.endsWith('.json'))) {
   const ids = new Set()
 
   if (!pages.has(tree.overview)) err(id, `overview page ${tree.overview} not found`)
-  else if (!readFileSync(pages.get(tree.overview), 'utf8').includes(`::: doc-tree ${id} tree`))
-    err(id, `overview ${tree.overview} has no "::: doc-tree ${id} tree" line`)
+  else if (!readFileSync(pages.get(tree.overview), 'utf8').includes(`::: doc-tree ${id} panel`))
+    err(id, `overview ${tree.overview} has no "::: doc-tree ${id} panel" line`)
 
   for (const n of nodes) {
     if (ids.has(n.id)) err(id, `duplicate node id "${n.id}"`)
     ids.add(n.id)
+    if (n.facts && (!Array.isArray(n.facts) || n.facts.some((x) => !x?.trim()))) err(id, `node "${n.id}" has an empty fact`)
+    if (!n.ux?.trim()) err(id, `node "${n.id}" needs a one-line "ux" description`)
+    if (n.state && !['on', 'off'].includes(n.state)) err(id, `node "${n.id}" has an invalid state`)
     if (!n.changes?.trim() || !n.visitors?.trim()) err(id, `node "${n.id}" needs both "changes" and "visitors" copy`)
-    const page = pages.get(n.link)
+    const page = pages.get(n.link.split('#')[0])
     if (!page) { err(id, `node "${n.id}" links to ${n.link}, which is not a doc page`); continue }
     const text = readFileSync(page, 'utf8')
     if (n.pro === true && !/\(Pro\)|Pro only|a Pro feature/i.test(text))

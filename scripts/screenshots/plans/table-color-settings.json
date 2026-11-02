@@ -7,46 +7,65 @@
   },
   "steps": [
     {
-      "admin": "/tables/{{Product Price List}}/design_studio"
-    },
-    {
-      "wait": 1500
-    },
-    {
-      "css": ".nt-ds-modes{width:fit-content!important;padding:6px 14px!important;margin:14px 0 22px 4px!important}"
-    },
-    {
-      "shot": {
-        "name": "1.-Colors-Tab-Showing-The-Preset",
-        "clip": "app",
-        "highlights": [
-          ".nt-ds-modes"
-        ]
+      "viewport": {
+        "width": 1440,
+        "height": 1000
       }
     },
     {
-      "click": ".nt-ds-swatch:nth-child(9)"
+      "admin": "/tables/{{Quarterly Sales by Store 2026}}/design_studio"
     },
     {
-      "wait": 800
+      "wait": 2000
+    },
+    {
+      "css": ".nt-appearance{grid-template-columns:minmax(0,1fr) 520px!important}"
+    },
+    {
+      "wait": 500
     },
     {
       "shot": {
-        "name": "2.-Preset-Color-Schemes-With-The-Blue",
-        "clip": "app",
+        "name": "1.-Preset-Scheme-Swatches",
+        "clip": {
+          "x": 920,
+          "y": 140,
+          "width": 520,
+          "height": 470
+        },
         "highlights": [
-          ".nt-ds-swatch:nth-child(9)"
+          ".nt-ds-swatches"
         ]
       }
     },
     {
       "click": {
-        "selector": ".nt-ds-modes label, .nt-ds-modes button",
+        "selector": ".nt-ds-modes label",
         "hasText": "Custom"
       }
     },
     {
+      "wait": 700
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Search Bar Colors"
+      }
+    },
+    {
       "wait": 600
+    },
+    {
+      "shot": {
+        "name": "3.-Search-Bar-Colors",
+        "clip": {
+          "x": 920,
+          "y": 140,
+          "width": 520,
+          "height": 340
+        }
+      }
     },
     {
       "click": {
@@ -58,15 +77,89 @@
       "wait": 600
     },
     {
-      "css": ".nt-ds-sec.is-open .nt-ds-sec__inner{margin:0 14px 0 4px!important} .nt-ds-modes{margin-bottom:0!important}"
+      "shot": {
+        "name": "4.-Table-Header-Colors",
+        "clip": {
+          "x": 920,
+          "y": 140,
+          "width": 520,
+          "height": 400
+        }
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Table Body Colors"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "eval": "[...document.querySelectorAll('.nt-setting-row')].find(r=>/Alternate Color/i.test(r.textContent)).querySelector('.el-switch').click()"
+    },
+    {
+      "wait": 700
     },
     {
       "shot": {
-        "name": "3.-Custom-Color-Sections-For-Search-Bar",
-        "clip": "app",
-        "highlights": [
-          ".nt-ds-sec.is-open .nt-ds-sec__inner"
-        ]
+        "name": "5.-Table-Body-Colors-Alternate-Rows",
+        "clip": {
+          "x": 920,
+          "y": 140,
+          "width": 520,
+          "height": 790
+        }
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Pagination Colors"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "6.-Pagination-Colors",
+        "clip": {
+          "x": 920,
+          "y": 140,
+          "width": 520,
+          "height": 490
+        }
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-ds-sec__btn",
+        "hasText": "Table Header Colors"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "css": ".nt-appearance__canvas>*{visibility:hidden!important}"
+    },
+    {
+      "click": ".nt-ds-sec.is-open .el-color-picker__trigger"
+    },
+    {
+      "wait": 700
+    },
+    {
+      "shot": {
+        "name": "7.-Color-Picker-Popup",
+        "clip": {
+          "x": 800,
+          "y": 140,
+          "width": 640,
+          "height": 640
+        }
       }
     }
   ]
