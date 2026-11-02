@@ -28,6 +28,8 @@ Each chart is one row:
 - **ShortCode**: the `[ninja_charts id="N"]` shortcode to paste into a page. See [Add a Chart to a Page](/embed-ninja-charts).
 - **Actions**: preview, edit and the row menu.
 
+Above the list, the **Search** box finds a chart by name.
+
 The list shows 10 charts per page. With no charts yet, you see a welcome screen with **Create a new chart** and **Import CSV**.
 
 ## Preview and edit a chart

@@ -9,7 +9,7 @@ A **manual chart** uses data you type into the chart creator, so it needs no tab
 
 ## Start the chart
 
-1. Go to **Ninja Tables** › **Add Chart** (or **Ninja Tables** › **Charts** › **Add New**).
+1. Go to **Ninja Tables** › **Charts**, then click **Add New**.
 2. Enter a **Chart Name** and choose the **Chart Renderer**: **Chart Js** or **Google Charts**.
 3. Pick a chart type and click **Next**. The type list depends on the renderer (see [Getting Started](/getting-started-with-ninja-charts-free-wordpress-chart-plugin)).
 4. On the **Data Source** step, choose **Manual Input** and click **Next**.

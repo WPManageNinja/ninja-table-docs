@@ -22,7 +22,7 @@ Chart Js has more design options (Layout and Animations tabs). See [Customize a 
 
 ## Create a chart
 
-Click **Add Chart** in the Ninja Tables menu (or **Ninja Tables** › **Charts** › **Add New**). The creator has five steps:
+Go to **Ninja Tables** › **Charts**, then click **Add New**. The creator has five steps:
 
 1. **Chart Title & Type**: name the chart, choose the renderer and pick a chart type.
 2. **Data Source**: choose **Manual Input**, **Ninja Tables** or **Fluent Forms**.

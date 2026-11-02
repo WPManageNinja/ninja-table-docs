@@ -24,7 +24,7 @@ Charts in Ninja Tables come from **Ninja Charts**, a separate free plugin. It ca
 
 Ninja Tables downloads, installs and activates Ninja Charts, then opens the chart list. Your user needs permission to install plugins (administrators have it).
 
-Once Ninja Charts is active, **Ninja Tables** › **Charts** opens the chart list, and an **Add Chart** item appears in the Ninja Tables menu in the WordPress sidebar.
+Once Ninja Charts is active, **Ninja Tables** › **Charts** opens the chart list. Click **Add New** there to build a chart.
 
 ## Install from the Plugins screen
 

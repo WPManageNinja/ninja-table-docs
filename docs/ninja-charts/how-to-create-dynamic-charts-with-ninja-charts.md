@@ -9,7 +9,7 @@ A **dynamic chart** reads its numbers from a Ninja Tables table or Fluent Forms 
 
 ## Step 1: Name the chart and pick a type
 
-1. Go to **Ninja Tables** › **Add Chart** (or **Ninja Tables** › **Charts** › **Add New**).
+1. Go to **Ninja Tables** › **Charts**, then click **Add New**.
 2. Enter a **Chart Name**.
 3. Choose a **Chart Renderer**, then pick a chart type.
 4. Click **Next**.

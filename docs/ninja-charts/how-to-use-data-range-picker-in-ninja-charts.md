@@ -14,7 +14,7 @@ The **Data Range** step of the chart creator decides which parts of your data en
 3. Set **Number of Items**: how many rows the chart shows. The default is 10, which means the last 10 items. Enter `0` to show all items.
 4. Choose **Data order**: **Ascending** (the default) or **Descending**.
 5. Turn on **Pick Items** to choose individual rows instead of a count.
-6. Turn on **Date Range Picker** to show only rows from a date range, then choose the dates. It applies to Fluent Forms entries and to tables that have a date.
+6. Turn on **Date range picker** to show only rows from a date range, then choose the dates. It applies to Fluent Forms entries and to tables that have a date.
 7. Click **Next**.
 
 ![Data Range step with column lists, Number of Items, Data order and Pick Items](/images/ninja-charts/data-range-picker-ninja/1.-Data-Range-Step-With-Column-Lists.webp)

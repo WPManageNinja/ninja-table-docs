@@ -29,7 +29,8 @@ These three fields are the table's search wording. They replaced the old **Langu
 
 - **Position** (Pro): **Left**, **Center**, **Right** or **Default**.
 - **Full Width** (Pro): the search box takes the full width above the table.
-- **Colors** (Pro): **Background**, **Icon** and **Border** of the search box. They are the same colors as **Search Bar Colors** in [Table Colors](/table-color-settings).
+
+To change the search box colors, open the **Colors** tab, choose **Custom**, and use **Search Bar Colors** (see [Table Colors](/table-color-settings)).
 
 Click **Save** to keep your changes.
 

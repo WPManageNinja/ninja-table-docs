@@ -9,7 +9,7 @@ A chart built from a Ninja Tables table is a **dynamic chart**: it reads the tab
 
 ## Create the chart
 
-1. Go to **Ninja Tables** › **Add Chart**.
+1. Go to **Ninja Tables** › **Charts**, then click **Add New**.
 2. Enter a **Chart Name**, choose the **Chart Renderer** (**Chart Js** or **Google Charts**), then pick a chart type. Click **Next**.
 3. On the **Data Source** step, choose **Ninja Tables**.
 4. In the **Data** field that appears, pick the table.
