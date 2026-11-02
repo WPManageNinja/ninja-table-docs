@@ -1,23 +1,42 @@
 ---
 title: "Appearance Tab Overview"
-description: "A map of the Appearance tab: live preview, colors, typography, row styles and table features, with what each setting changes and a link to every guide."
+description: "Find any Appearance setting fast: pick a goal or browse the panel tab by tab, see what each setting changes, then open its full guide."
 ---
 
 # Appearance Tab Overview
 
 ::: doc-tree appearance hero
 
-To open it, go to **Ninja Tables** › **Tables**, open a table and click the **Appearance** tab.
+## What do you want to do?
 
-![Appearance tab with the live preview on the left and the settings panel on the right](/images/styling-design/table-style-settings/1.-Appearance-Tab-With-The-Live-Preview.webp)
+Pick the goal that sounds like yours. Each card takes you straight to the right guide.
 
 ::: doc-tree appearance tasks
 
-::: doc-tree appearance tree
+## Find any setting, tab by tab
+
+This works like the panel in the plugin. Pick a tab, open a setting to see what it changes on your table and what visitors will notice, then jump to the full guide. Only one setting stays open at a time, just like in the panel.
+
+::: doc-tree appearance panel
+
+## Where to find it in the plugin
+
+1. Go to **Ninja Tables** › **Tables** and open a table.
+2. Click the **Appearance** tab.
+
+The live preview is on the left and the settings panel is on the right.
+
+![Appearance tab with the live preview on the left and the settings panel on the right](/images/styling-design/table-style-settings/1.-Appearance-Tab-With-The-Live-Preview.webp)
+
+## The whole panel on one map
+
+Prefer the big picture? Every tab, setting and option on one page. Click a setting to open its guide.
+
+::: doc-tree appearance map
 
 ## How the panel works
 
-The settings panel opens on **Colors**. In **Style** and **Features**, sections are accordions: click a heading to open it, and only one section stays open at a time. A section with a switch in its heading (**Search**, **Sorting**, **Pagination**, **Stackable Table**) turns that whole feature on or off.
+The settings panel opens on **Colors**. In **Styling** and **Features**, sections are accordions: click a heading to open it, and only one section stays open at a time. A section with a switch in its heading (**Search**, **Sorting**, **Pagination**, **Stackable Table**) turns that whole feature on or off.
 
 ## The live preview
 
