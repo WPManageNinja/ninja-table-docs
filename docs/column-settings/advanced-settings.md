@@ -22,7 +22,7 @@ The tab is split into four groups: Display, Colors, Behavior and Header.
 - **Column width** (Pro): sets the width of the column in **px** or **%**. Leave it empty to size the column automatically.
 - **Extra classes** (Pro): adds one or more CSS classes to the heading and every cell in this column, for example `price-col`. Separate several classes with a space. Then style them in the table's **Custom CSS/JS** tab:
   1. Type a class name in **Extra classes**, for example `test`, and click **Save column**.
-  2. Open the **Custom CSS/JS** tab, add your CSS for `.test`, and click **Save Custom CSS**.
+  2. Open the **Custom CSS/JS** tab, add your CSS for `.test`, and click **Save**.
 
 See [Style a table with CSS selectors](/table-styling-css-selector) for the selector to use. The same class is also what the [rowspan](/rowspan) method relies on.
 
