@@ -31,11 +31,11 @@ Exact break points differ a little between the two engines. Test the table on a 
 
 ## The + drawer
 
-How the **+** drawer behaves is set for the whole table in **Appearance** › **Features** › **Mobile & row details**, with **On small screens** set to **Fold columns into a + drawer**:
+How the **+** drawer behaves is set for the whole table in **Appearance** › **Features** › **Mobile**, under **Responsive Breakpoint**:
 
-- **Open the + drawer**: **Closed** (default), **First row** (Pro) or **All rows** (Pro).
-- **+ button in**: put the button in the **First column** or **Last column**.
-- **Hide empty values** (Pro): leave empty cells out of the drawer.
-- **Hide labels** (Pro): show values without their column names.
+- **Responsive drawer**: **Closed** (default), **First Row** (Pro) or **All Rows** (Pro).
+- **Toggle Position**: put the **+** button in the **First Column** or **Last Column**.
+- **Hide Empty Values** (Pro): leave empty cells out of the drawer.
+- **Hide Labels** (Pro): show values without their column names.
 
-Prefer each row as a card instead? See [Mobile View: Cards, + Drawer & Row Details](/stackable-table).
+Prefer each row as a card instead? See [Responsive & Stackable Table](/stackable-table).
