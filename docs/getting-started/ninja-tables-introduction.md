@@ -91,7 +91,7 @@ The **Appearance** tab shows a live preview of your table, which you can switch 
 
 To set the starting look for every new table, use **Settings** › **Global appearance**. See the [Appearance overview](/table-style-settings) for details.
 
-![Appearance tab with a live preview and the Colors, Style and Features tabs](/images/getting-started/ninja-tables-introduction/5.-Appearance-Tab-With-A-Live-Preview.webp)
+![Appearance tab with a live preview and the Colors, Styling and Features tabs](/images/getting-started/ninja-tables-introduction/5.-Appearance-Tab-With-A-Live-Preview.webp)
 
 ## Fast performance
 
