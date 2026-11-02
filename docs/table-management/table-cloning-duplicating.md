@@ -22,7 +22,7 @@ description: "Make a copy of a table, with its columns, rows and settings, from 
   alt: Duplicate option in a table's More actions menu
 -->
 
-Ninja Tables creates the copy and opens it straight away, in the editor (or in the Drag & Drop builder for a Drag & Drop table). The copy is named after the original with "( Duplicate )" added. Rename it with the pencil next to its name; see [Table title, caption and description](/table-title-description-settings).
+Ninja Tables creates the copy and opens it straight away, in the editor (or in the Drag & Drop builder for a Drag & Drop table). The copy is named after the original with ( Duplicate ) added to the end, with no space before it. Rename it with the pencil next to its name; see [Table title, caption and description](/table-title-description-settings).
 
 ## What gets copied
 
