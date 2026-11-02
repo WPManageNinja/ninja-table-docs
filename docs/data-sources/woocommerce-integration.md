@@ -7,7 +7,7 @@ description: "Build a WooCommerce product table with add to cart, variations, ca
 
 A **WooCommerce products table** (Pro) lists your store's products in a searchable, sortable table with an **Add To Cart** button on every row. It suits wholesale order forms, product catalogs and quick-order pages. The table reads your products live, so prices and stock stay current.
 
-You need WooCommerce active. The **WooCommerce products** tile only appears when it is. On the Free plugin the drawer shows a Pro notice instead of the form, and if Pro is out of date it asks you to update it. See [How connected tables work](/connected-tables-overview).
+You need WooCommerce active. If it isn't, the **WooCommerce products** drawer tells you to install or activate it. On the Free plugin the drawer shows a Pro notice instead of the form, and if Pro is out of date it asks you to update it. See [How connected tables work](/connected-tables-overview).
 
 ## Create a WooCommerce products table
 
@@ -98,7 +98,7 @@ Add a column filled from your product data, for example the product SKU:
 
 1. Open **Add new column**.
 2. Enter a **Column name** (for example "SKU") and a **Column key**.
-3. Under **Dynamic column data settings**, set **Field type** to **Product Data** and **Field value** to **Product SKU**.
+3. Under **Dynamic column data**, set **Field type** to **Product Data** and **Field value** to **Product SKU**.
 4. Click **Add column**.
 
 <!-- TODO(screenshot): woocommerce-integration-4
@@ -118,7 +118,7 @@ Other field types include Post Meta, Shortcode / Computed Value or HTML, Feature
 The rows are read-only, can't be sorted by dragging and can't be imported, because they come from WooCommerce. The rest of the editor works like any other table:
 
 - Column options (name, type, alignment, conditional formatting) from the column header › **Column settings**. See [Basic column settings](/basic-settings).
-- Colors, fonts, search, pagination and mobile layout in the **Appearance** tab. See [Table style settings](/table-style-settings).
+- Colors, fonts, search, pagination and mobile layout in the **Styling** tab. See [Table style settings](/table-style-settings).
 - [Custom filters](/custom-filters) (Pro), for example a price range or category filter.
 - Your own styles in **Custom CSS/JS**. See [Table styling & CSS selectors](/table-styling-css-selector).
 
