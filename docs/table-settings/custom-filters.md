@@ -24,7 +24,7 @@ Without Ninja Tables Pro, the tab shows an upgrade panel (**Unlock Custom Filter
 2. The **New Filter** panel opens. Fill in the settings below.
 3. Click **Add Filter** in the panel. The filter is saved straight away.
 
-Each filter appears in the list as its name, then its type, target columns and number of options (or **Dynamic Data**). Use the arrows to **Move Up** or **Move Down** to set the order above the table, **Edit** to change one (then **Update Filter**), and the trash icon to delete it after you confirm. These changes save at once.
+Each filter shows as a row with its name, type and target columns. Drag the grip at the start of a row to set the order above the table, click **Edit** (pencil) to change one (then **Update Filter**), and click the trash icon to delete it after you confirm. These changes save at once.
 
 If something is missing, a message tells you what to fix:
 
@@ -50,7 +50,7 @@ If something is missing, a message tells you what to fix:
   - **Reset Filter Button**: a button that clears all filters.
 - **Placeholder**: the default choice that resets the filter, for example `All` (new filters start with `All`). Shown for **Select Dropdown**, **Radio**, **Date Picker** and **Text Input**.
 - **Button Text** (**Reset Filter Button** only): the label on the reset button.
-- **Filter Columns**: the columns this filter looks in. You can pick one or several. Only columns of a matching type are offered: **Date Picker** and **Date Range** list **Date** columns, and **Number Range** lists **Number** columns. If there are none, the panel says "No columns of a matching data type were found for this filter." A dropdown that fills itself from a column doesn't ask for this.
+- **Filter Columns**: the columns this filter looks in. You can pick one or several. Only columns of a matching type are offered: **Date Picker** and **Date Range** list **Date** columns, and **Number Range** lists **Number** columns. If there are none, the panel says "No columns of a matching data type were found for this filter." A dropdown with **Dynamic Data** uses the one column you pick here as its source.
 - **Enable Strict Mode (Match The Exact Value)**: match the exact value only, instead of any cell that contains it. Shown for every type.
 
 ![Filter UI Type list with all eight filter types](/images/table-settings/custom-filters/3.-Filter-UI-Type-List-With-All.webp)
@@ -60,8 +60,8 @@ If something is missing, a message tells you what to fix:
 For **Select Dropdown**, **Value Type** sets where the choices come from. **Radio** and **Checkbox** always use typed options.
 
 - **Manual Data**: type each choice yourself under **Filter Options**, as a **Label** (what visitors see) and a **Filter Value** (what is matched). Your values must match the table's cell data. Drag the handle to reorder options, and use **Add Option** and **Remove Option**. The last remaining option can't be removed.
-- **Dynamic Data From Table Column**: the choices are filled from a column's values.
-  - **Target Column**: the column whose values fill the list.
+- **Dynamic Data**: the choices are filled from a column's values.
+  - **Filter Columns**: the column whose values fill the list.
   - **Parse Comma Separated Words**: split cells like `red, blue` into separate choices.
   - **Disable Automatic Filter Value Sorting**: keep the values in table order. When sorting is on, choose **Sort Dynamic Values** (**Ascending** or **Descending**) and the **Sort Algorithm** (**As Text** or **As Number**).
 
@@ -85,7 +85,7 @@ To let visitors filter a price list by range, the price column must be a **Numbe
 
 ## Layout of the filters
 
-The **Layout** card appears below the list once the table has at least one filter:
+The layout settings appear below the list once the table has at least one filter:
 
 - **Show Filters**: **Inline** (side by side in one line) or **In Columns** (a grid). With **In Columns**, choose **Columns**: 2, 3 or 4.
 - **Progressive Filters**: each filter only offers options that still have matching rows, based on what the visitor picked in the other filters.
