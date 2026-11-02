@@ -70,7 +70,7 @@ Details that are easy to miss:
 - `sf_match="lt"` and `"gt"` compare the cell with the filter value as PHP does, so keep both in the same format (for dates, the same date format). `contains` and `startswith` are case-sensitive.
 - `logged_in_only` renders nothing for logged-out visitors. Logged-in visitors see the table as usual.
 - `get_filter` can be combined with a `column` address parameter, and `filter_selects` can be overridden from the address. See [Advanced Shortcode](/advanced-shortcode).
-- `sf_filter` hides rows from view only in Ajax rendering; the rest of the data is still sent to the browser.
+- With the FooTable engine in Ajax rendering, `sf_filter` only hides rows from view and the other rows are still sent to the browser. DataTables tables apply it on the server.
 
 If you need to rename the shortcode tag or add your own attributes, see the rendering hooks in [Hooks & Filters](/hooks-and-filters).
 
