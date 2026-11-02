@@ -14,15 +14,15 @@ A **custom column** adds information that isn't one of the standard post fields:
 3. Open **Add new column**.
 4. Enter a **Column name** and a **Column key**. The key can't be changed after you add the column.
 5. Choose the column **Type** and, if needed, its **Responsive visibility**.
-6. Scroll to **Dynamic post data settings** (WP Posts) or **Dynamic column data settings** (WooCommerce and FluentCart).
+6. Scroll to **Dynamic post data** (WP Posts) or **Dynamic column data** (WooCommerce and FluentCart).
 7. Choose a **Field type**, then fill in the **Field value**.
 8. Click **Add column**.
 
 <!-- TODO(screenshot): create-custom-column-in-wp-post-cpt-woocommerce-table-1
   screen: Tables › DOCTEST posts › Table Rows › Edit query › Add new column
   table: a WP Posts table
-  state: Add new column section with Column name, Column key, Type and the Dynamic post data settings block visible
-  highlight: Dynamic post data settings
+  state: Add new column section with Column name, Column key, Type and the Dynamic post data block visible
+  highlight: Dynamic post data
   view: admin
   alt: Add new column section of the Edit query drawer
 -->
