@@ -16,7 +16,7 @@ How the table keeps up with the sheet depends on the engine you pick when you cr
 | Links and images in cells | Kept | Not kept (plain text only) |
 | Best for | Small and medium sheets, sheets with links or images | Large sheets with thousands of rows |
 
-See [Choose a table engine](/choose-table-engine) for more about the two engines.
+DataTables is the default (recommended). Pick FooTable if your sheet has links or images in cells. See [Choose a table engine](/choose-table-engine) for more about the two engines.
 
 ::: warning No Google sign-in
 Ninja Tables does not connect to your Google account. There is no sign-in, no permission screen and no API key. It reads a sheet that you have **published to the web**, so anyone with the link can read it. Do not publish a sheet that holds private data.
@@ -46,13 +46,12 @@ Ninja Tables reads sheets that are published to the web.
 
 1. Go to **Create Table** and, under **Connect live data**, click **Google Sheets**.
 2. Enter a **Table name**.
-3. Check the engine line. FooTable is the usual choice. Click **Change** to pick DataTables instead.
-4. Paste the link you copied:
-   - On FooTable, into **Data source URL**.
-   - On DataTables, into **Google Sheet CSV URL**, and choose a **Sync Interval** (Every 1 hour by default). You can change it any time. The link must start with `https://`.
-5. Click **Next**.
-6. Under **Select entry fields**, tick the columns you want in the table, or use **Select all**.
-7. Click **Create table**.
+3. Paste the link you copied into **Google Sheet CSV URL**. The link must start with `https://`.
+4. Choose a **Sync Interval** (Every 1 hour by default). You can change it any time.
+5. Check the engine line. **DataTables** (recommended) copies the sheet into your database and keeps it in sync. Click **Change** and pick FooTable if you need links or images from the sheet. On FooTable the URL field is called **Data source URL** and there is no **Sync Interval**.
+6. Click **Next**.
+7. Under **Select entry fields**, tick the columns you want in the table, or use **Select all**.
+8. Click **Create table**.
 
 ![Google Sheets drawer step 1 with the Data source URL field](/images/data-sources/google-sheets-integration/2.-Google-Sheets-Drawer-Step-1.webp)
 
@@ -123,7 +122,7 @@ On **DataTables**, the sheet is read as CSV, which holds only text. Links, image
 
 On either engine, if a column holds plain URLs (for example `https://example.com/photo.jpg`), you can turn them into links or images with [Transform value](/transform-value) (Pro).
 
-Formatting from the sheet (colors, bold text, fonts) isn't copied on either engine. Style the table in the **Appearance** tab instead.
+Formatting from the sheet (colors, bold text, fonts) isn't copied on either engine. Style the table in the **Styling** tab instead.
 
 ## Tutorial video
 
