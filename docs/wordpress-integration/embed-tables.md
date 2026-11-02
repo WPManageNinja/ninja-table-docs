@@ -131,4 +131,4 @@ The **Used on** column in the [Tables list](/tables-list) shows how many pages a
 
 ## Change one embed only
 
-Shortcode attributes change a table on a single page without touching its settings: for example `per_page`, `columns`, `filter` or `logged_in_only`. See [Advanced Shortcode](/advanced-shortcode) and the [Shortcode Reference](/shortcode-reference).
+Shortcode attributes change a table on a single page without touching its settings: for example `per_page` (Pro), `columns` (Pro), `filter` or `logged_in_only` (Pro). See [Advanced Shortcode](/advanced-shortcode) and the [Shortcode Reference](/shortcode-reference).
