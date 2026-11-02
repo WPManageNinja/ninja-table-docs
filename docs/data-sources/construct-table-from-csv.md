@@ -25,13 +25,12 @@ The tile is called **Remote CSV / JSON**, but today it reads **CSV files only**.
 
 1. Go to **Create Table** and, under **Connect live data**, click **Remote CSV / JSON**.
 2. Enter a **Table name**.
-3. Check the engine line. FooTable is the usual choice. Click **Change** to pick DataTables instead. The two work differently (see below).
-4. Paste the file's address:
-   - On FooTable, into **Data source URL**.
-   - On DataTables, into **CSV File URL**, and choose a **Sync Interval** (Every 1 hour by default). You can change it any time.
-5. Click **Next**.
-6. Under **Select entry fields**, tick the columns you want, or use **Select all**.
-7. Click **Create table**.
+3. Paste the file's address into **CSV File URL**. It must start with `https://`.
+4. Choose a **Sync Interval** (Every 1 hour by default). You can change it any time.
+5. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable, which fetches the file live. The two work differently (see below). On FooTable the URL field is called **Data source URL** and there is no **Sync Interval**.
+6. Click **Next**.
+7. Under **Select entry fields**, tick the columns you want, or use **Select all**.
+8. Click **Create table**.
 
 ![Remote CSV drawer step 1 with the Data source URL field](/images/data-sources/construct-table-csv/1.-Remote-CSV-Drawer-Step-1.webp)
 
@@ -65,4 +64,4 @@ On DataTables, the table updates on its **Auto sync** schedule, or right away wh
 
 ## Customize the table
 
-Everything else works like other tables: rename columns and change their types from the column header › **Column settings**, design the table in **Appearance**, and add [Custom filters](/custom-filters) (Pro). To turn plain URLs in the file into links or images, use [Transform value](/transform-value) (Pro).
+Everything else works like other tables: rename columns and change their types from the column header › **Column settings**, design the table in **Styling**, and add [Custom filters](/custom-filters) (Pro). To turn plain URLs in the file into links or images, use [Transform value](/transform-value) (Pro).
