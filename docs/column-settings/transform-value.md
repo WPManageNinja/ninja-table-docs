@@ -60,7 +60,7 @@ How formulas are read:
 
 - A formula must start with `=`, as in `=SUM(...)`. Or wrap one or more formulas in `[f]` and `[/f]` inside your HTML, for example <code v-pre>&lt;b&gt;[f]SUM({{row.q1}},{{row.q2}})[/f]&lt;/b&gt; total</code>. Without the `=` or the `[f]` tags, the text is shown as it is.
 - If a formula can't be calculated, the cell shows empty.
-- Click **Show supported formulas** for the full list, around 385 Excel-style functions such as `SUM`, `IF`, `AVERAGE`, `ROUND`, `CONCATENATE`, `DATE` and `TODAY`. Two extras are added: `NUMVAL` turns text such as `$1,200.50` into a number, and `DATEVAL` turns date text into a date value.
+- Click **Show supported formulas** to open the **Supported Excel formulas** dialog: about 100 functions grouped as Math, Logic, Text, Checks, Date & time, Finance and Ninja Tables. Use **Search formulas** to filter, and click a name to insert it. The Ninja Tables group adds `NUMVAL`, which turns text such as `$1,200.50` into a number, and `DATEVAL`, which turns date text into a date value. Functions that are not listed may still run, but they are not recommended or tested for row values.
 - When you save, a formula that starts with `=` is cleaned: it is cut off at 2,000 characters, and risky strings such as `javascript:`, `<script`, `eval(`, `document.`, `window.` and `fetch(` are removed.
 
 ::: warning The formula switch is table-wide and saves at once
