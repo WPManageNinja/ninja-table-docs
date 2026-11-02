@@ -73,7 +73,7 @@ Click **Save column**, then preview the table.
 
 1. Choose **Set cell CSS class** and type a class name, for example `abc`.
 2. Click **Save column**.
-3. Open the table's **Custom CSS/JS** tab, write the CSS for `.abc`, and click **Save Custom CSS**.
+3. Open the table's **Custom CSS/JS** tab, write the CSS for `.abc`, and click **Save**.
 
 The style now applies to every matching cell. See [Style a table with CSS selectors](/table-styling-css-selector).
 
@@ -107,6 +107,6 @@ The value box also accepts the other Ninja Tables placeholders, such as `{user:f
 
 1. On a Date field column, add the rule **If value** **Less than** `{date:MM/DD/YY}` **Then** **Set row CSS class** `hide`.
 2. Click **Save column**.
-3. In the **Custom CSS/JS** tab, add CSS that hides `.hide`, and click **Save Custom CSS**.
+3. In the **Custom CSS/JS** tab, add CSS that hides `.hide`, and click **Save**.
 
 Rows with a date before today are now hidden on your site.
