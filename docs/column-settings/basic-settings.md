@@ -66,8 +66,8 @@ Choose where the column shows on small screens:
 - **Initial Hidden Mobile, Tab and Regular Computers**
 - **Totally hidden on all devices**
 
-Columns that are folded away aren't lost. Visitors tap the **+** button on a row to see them, and you set how that works in **Appearance** › **Features** › **Mobile & row details**. Careful: **Initial Hidden Mobile, Tab and Regular Computers** hides the column at every width, and **Hidden on desktop** does too on FooTable tables, so the column only appears in the **+** drawer. For what each option does on each table engine, see [Show or hide columns on mobile](/column-responsive-breakpoints).
+Columns that are folded away aren't lost. Visitors tap the **+** button on a row to see them, and you set how that works in **Appearance** › **Features** › **Mobile**. Careful: **Initial Hidden Mobile, Tab and Regular Computers** hides the column at every width, and **Hidden on desktop** does too on FooTable tables, so the column only appears in the **+** drawer. For what each option does on each table engine, see [Show or hide columns on mobile](/column-responsive-breakpoints).
 
 ## Extra settings on connected tables
 
-On tables built from WordPress posts, WooCommerce or FluentCart, the Basic tab also shows the source fields for the column (**Dynamic post data settings** or **Dynamic column data settings**), so you can choose which post field, meta value or product data it displays. See [Dynamic columns reference](/dynamic-columns-reference).
+On tables built from WordPress posts, WooCommerce or FluentCart, the Basic tab also shows the source fields for the column (**Dynamic post data** or **Dynamic column data**), so you can choose which post field, meta value or product data it displays. See [Dynamic columns reference](/dynamic-columns-reference).
