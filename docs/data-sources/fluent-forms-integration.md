@@ -37,7 +37,7 @@ If Fluent Forms is installed but out of date, the drawer shows a warning that Fl
 4. Under **Select form fields**, tick the fields you want. Each ticked field becomes a column, in the order you tick them.
 5. Set **Entry Status** to **All** (default), **Read** or **Unread**. Read entries are the ones opened in **Fluent Forms › Entries**.
 6. Check **Max records**. It starts at **1000**, so a new table shows at most 1,000 entries. Raise the number, or clear the field to show all entries.
-7. Check the engine line (FooTable is the usual choice). See [Choose a table engine](/choose-table-engine).
+7. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable. See [Choose a table engine](/choose-table-engine).
 8. Click **Create table**.
 
 <!-- TODO(screenshot): fluent-forms-integration-2
@@ -81,7 +81,7 @@ On the **Table Rows** tab, the banner reads **Rows come from Fluent Forms entrie
 
 Click **Update** to apply the changes. Changing the form or the fields rebuilds the columns.
 
-The rows are read-only, because they come from Fluent Forms. To change an entry, edit it in Fluent Forms. You can still rename columns, change their type and design the table in the **Appearance** tab. For a cleaner mobile view, see [Responsive breakpoints](/column-responsive-breakpoints) and [Stackable table](/stackable-table).
+The rows are read-only, because they come from Fluent Forms. To change an entry, edit it in Fluent Forms. You can still rename columns, change their type and design the table in the **Styling** tab. For a cleaner mobile view, see [Responsive breakpoints](/column-responsive-breakpoints) and [Stackable table](/stackable-table).
 
 <!-- TODO(screenshot): fluent-forms-integration-4
   screen: Tables › a Fluent Forms table › Table Rows › Source settings
@@ -95,7 +95,7 @@ The rows are read-only, because they come from Fluent Forms. To change an entry,
 
 ## Choose the entry order
 
-New entries show first by default. To show the oldest first, go to **Appearance** › **Sorting**, set **Default Order** to **Created Date**, then set **Order** to **Oldest First** or **Newest First**.
+New entries show first by default. To show the oldest first, go to **Styling** › **Sorting**, set **Default Order** to **Created Date**, then set **Order** to **Oldest First** or **Newest First**.
 
 ## Show entries by status
 
