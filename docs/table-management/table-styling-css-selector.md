@@ -16,11 +16,11 @@ Drag & Drop tables don't use this tab. They have their own **Custom JS** setting
 
 ![Custom CSS/JS tab with the CSS editor and the Table targeting card](/images/table-management/table-styling-css-selector/1.-Custom-CSS-JS-Tab.webp)
 
-The card has a **CSS** and a **JavaScript** switch at the top. The **Save** button at the bottom saves the CSS, the JavaScript and the **Custom CSS class** together, so whichever pane you are on, you will not lose the other.
+The card has a **CSS** and a **JavaScript** switch at the top. The **Save** button at the top right saves the CSS, the JavaScript and the **Custom CSS class** together, so whichever pane you are on, you will not lose the other.
 
 ### Custom CSS
 
-Write your CSS in the editor and click **Save Custom CSS**. Don't include `<style></style>` tags.
+Write your CSS in the editor and click **Save** at the top right. Don't include `<style></style>` tags.
 
 To target only this table, start each rule with the table's selector, shown above the editor (click it to copy):
 
@@ -31,7 +31,7 @@ You can also write `NT_ID` instead of the number, for example `#footable_parent_
 
 ### Custom JS (Pro)
 
-Add a script that runs once the table has finished rendering, then click **Save Custom JS**. Don't include `<script></script>` tags. Two variables are ready to use:
+Add a script that runs once the table has finished rendering, then click **Save** at the top right. Don't include `<script></script>` tags. Two variables are ready to use:
 
 - `$table`: the table element (jQuery).
 - `tableConfig`: the table's settings.
