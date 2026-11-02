@@ -7,7 +7,7 @@ description: "Build a product table from your FluentCart store with add to cart,
 
 **FluentCart Integration** builds a product table from your FluentCart store. Customers can pick variations, add items to the cart, and buy or compare several products at once without leaving the table. It's free: every feature on this page, including bulk add to cart and product comparison, works without Ninja Tables Pro.
 
-You need FluentCart active. The **FluentCart products** tile only appears when it is.
+You need FluentCart active. If it isn't, the **FluentCart products** drawer tells you to install or activate it.
 
 ## Step 1: Create a FluentCart table
 
@@ -16,7 +16,7 @@ You need FluentCart active. The **FluentCart products** tile only appears when i
 3. Pick the products to show from the **Product category** and **Product brands** lists. Leave a list empty to show products from all of its items.
 4. Turn on **Hide out of stock items** to leave out products with no stock.
 5. Set **Initial Order By**: Product Title, Date, Price or Stock, then choose **A → Z** or **Z → A**. Visitors can still sort the table by any column.
-6. Check the engine line (FooTable is the usual choice). See [Choose a table engine](/choose-table-engine).
+6. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable. See [Choose a table engine](/choose-table-engine).
 7. Click **Create table**.
 
 ![FluentCart products drawer with category, stock and order options](/images/data-sources/fluentcart-integration/1.-FluentCart-Products-Drawer-With-Category-Stock.webp)
@@ -72,7 +72,7 @@ Add a column filled from your product data. For example, to show the short descr
 
 1. Open **Add new column**.
 2. Enter a **Column name**, such as "Description", and a **Column key**.
-3. Under **Dynamic column data settings**, set **Field type** to **Post Data** and **Field value** to **Product Short Description**.
+3. Under **Dynamic column data**, set **Field type** to **Post Data** and **Field value** to **Product Short Description**.
 4. Click **Add column**.
 
 <!-- TODO(screenshot): fluentcart-integration-4
@@ -90,7 +90,7 @@ The **Product Data** field type offers Product Price, Product Price Range, Produ
 
 The rows are read-only, because they come from FluentCart. The other tabs work as usual:
 
-- **Appearance**: colors, fonts, search, sorting, pagination and mobile layout. See [Table style settings](/table-style-settings).
+- **Styling**: colors, fonts, search, sorting, pagination and mobile layout. See [Table style settings](/table-style-settings).
 - **Table Configuration**: engine, rendering and caching. See [Table rendering settings](/table-rendering-settings).
 - **Custom CSS/JS**: your own styles. See [Table styling & CSS selectors](/table-styling-css-selector).
 
