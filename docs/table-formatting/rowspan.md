@@ -11,9 +11,9 @@ Unlike [Colspan](/colspan-cell-merge), there is no `#rowspan#` keyword. Rowspan 
 
 ## Merge table rows
 
-1. Go to **Ninja Tables** › **Tables** › your table › **Custom CSS/JS** and open the Custom JS editor.
+1. Go to **Ninja Tables** › **Tables** › your table › **Custom CSS/JS** and switch to **JavaScript**.
 2. Copy the code from this [GitHub gist](https://gist.github.com/reachkamrul/e8c1818cbe88daa1da9502d440b0d0c9) and paste it into the editor.
-3. Click **Save Custom JS**.
+3. Click **Save**.
 4. Open the **Table Rows** tab. Click the gear icon on the column whose repeated values you want to merge, and choose **Column settings**.
 5. Open the **Advanced** tab and type `combine` in **Extra classes**.
 6. Click **Save column**.
