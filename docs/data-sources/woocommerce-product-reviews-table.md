@@ -7,7 +7,7 @@ description: "Create a dynamic, searchable, and sortable table of your WooCommer
 
 The **WooCommerce Product Reviews Table** (Pro) turns your customer feedback into a searchable, sortable table. Showing reviews this way builds trust and helps new customers buy with confidence. The table reads the reviews live, so a new review appears as soon as WooCommerce publishes it.
 
-You need Ninja Tables Pro and WooCommerce active. The **WooCommerce reviews** tile only appears when WooCommerce is active. On the Free plugin the drawer shows a Pro notice instead of the form, and if Pro is out of date it asks you to update it. See [How connected tables work](/connected-tables-overview).
+You need Ninja Tables Pro and WooCommerce active. If WooCommerce isn't active, the **WooCommerce reviews** drawer tells you to install or activate it. On the Free plugin the drawer shows a Pro notice instead of the form, and if Pro is out of date it asks you to update it. See [How connected tables work](/connected-tables-overview).
 
 ## Step 1: Create the reviews table
 
@@ -85,7 +85,7 @@ Columns you add here describe the product that was reviewed, not the review. You
 
 The rows are read-only, can't be sorted by dragging and can't be imported, because they come from WooCommerce. Every other tab of the editor works as usual:
 
-- **Appearance**: colors, fonts, search, sorting, pagination and mobile layout. See [Table style settings](/table-style-settings).
+- **Styling**: colors, fonts, search, sorting, pagination and mobile layout. See [Table style settings](/table-style-settings).
 - **Custom filters** (Pro): filter controls above the table. See [Custom filters](/custom-filters).
 - **Table Configuration**: rendering and caching. The **Disable Caching** and **Display Frontend Loader** switches are not shown for reviews tables. See [Table rendering settings](/table-rendering-settings).
 - **Custom CSS/JS**: your own styles and scripts. See [Table styling & CSS selectors](/table-styling-css-selector).
