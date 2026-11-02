@@ -77,7 +77,7 @@ These three attributes turn on for any value except `0` or empty. `search="false
 Rows whose `category` column equals **Shoes** are shown; visitors can't remove this filter. Change the comparison with `sf_match`: `contains` matches part of the cell (case-sensitive), `startswith` matches the beginning, and `lt` and `gt` compare the cell with the value. Keep both in the same format, for example the same date format.
 
 ::: warning
-In **Ajax** rendering (the default), `sf_filter` only hides rows from view: the other rows are still sent to the browser. If those rows must not reach visitors at all, switch the table to **Legacy** rendering (Pro) in **Table Configuration**. See [Engine, Rendering & Caching](/table-rendering-settings).
+With the **FooTable** engine in **Ajax** rendering, `sf_filter` only hides rows from view: the other rows are still sent to the browser. Tables on the **DataTables** engine apply the locked filter on the server (it is signed, so visitors can't change it). If rows must not reach visitors on FooTable, switch the table to **Legacy** rendering (Pro) in **Table Configuration**. See [Engine, Rendering & Caching](/table-rendering-settings).
 :::
 
 ### Filter a posts or products table by taxonomy
