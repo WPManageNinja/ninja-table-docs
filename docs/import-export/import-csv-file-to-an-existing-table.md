@@ -7,7 +7,7 @@ description: "Add rows from a CSV file to a table you already have, or replace a
 
 **Import Rows** adds the rows from a CSV file to a table that already exists, keeping its columns, design and settings. You can add the new rows after the existing ones, or replace every row in the table. To create a new table from a file instead, see [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
 
-Import works on tables that store their own rows (Default tables and tables created from a file). Connected tables, such as WooCommerce or Google Sheets tables, get their rows from the source, so they show **Sorry! You can not import any data as the table data is configured as external source** instead. This per-table import reads CSV only. For JSON or Excel files, use the [global Import page](/import-ninja-tables-json).
+Import works on tables that store their own rows (Default tables and tables created from a file). Connected tables, such as WooCommerce or Google Sheets tables, can't take imported rows: they only have an **Export** button. This per-table import reads CSV only. For JSON or Excel files, use the [global Import page](/import-ninja-tables-json).
 
 ## Before you start: match the columns
 
@@ -39,7 +39,7 @@ To check which column is which, look at the column headers in **Table Rows** lef
 3. Click the upload area to choose your CSV file, or drag and drop it there. Only one `.csv` file at a time.
 4. Choose the options, which appear once a file is chosen:
    - **Replace existing data**: deletes every row already in the table, then imports the file. Leave it off to add the file's rows after the existing rows.
-   - **Convert to UTF-8 format**: reads the file as ISO-8859-1 (Latin-1) and converts it to UTF-8. Turn it on only if accented characters come through wrong and your file was saved in Latin-1. It does not detect or convert other encodings.
+   - **Convert to UTF-8 format** (the full label adds "Check this if your csv is non-unicode format"): reads the file as ISO-8859-1 (Latin-1) and converts it to UTF-8. Turn it on only if accented characters come through wrong and your file was saved in Latin-1. It does not detect or convert other encodings.
 5. Click **Import table**.
 
 ![Import tab with a file chosen and the two options](/images/import-export/import-csv-file-existing/2.-Import-Tab-With-A-File-Chosen.webp)
@@ -54,5 +54,6 @@ When the import finishes, you see **Successfully uploaded data.** (**Successfull
 
 - **"Please use the provided CSV header structure"**: the file has a different number of columns than the table. Download the sample CSV and copy your data into it.
 - **"Table configuration required"** or **"Please configure the table columns before importing data."**: the table has no columns yet. Add them first with **Add column**.
+- **"CSV header ... conflicts with a reserved system column. Please rename it."** (DataTables tables): a header in the file uses a reserved system name. Rename that header and import again.
 - **Some rows are missing**: those lines had more or fewer values than the table has columns, often because of an extra comma. Check them in a spreadsheet app.
 - **Accented characters look wrong**: import again with **Convert to UTF-8 format** turned on, if the file is Latin-1. Otherwise re-save the file as UTF-8 in your spreadsheet app.

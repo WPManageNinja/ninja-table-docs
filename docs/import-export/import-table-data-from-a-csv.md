@@ -20,8 +20,8 @@ To add rows to a table you already have, see [Import rows into an existing table
    - **Drag & Drop export**: a JSON or CSV file exported from a Drag & Drop table.
 
    Click **Sample CSV** to download `ninja-tables-sample.csv`, an example with the columns Name, Role, Department and Location.
-3. Under **2. Choose the file**, pick the **Rendering engine**: **FooTable** (the usual choice) or **DataTables** (for thousands of rows). The engine can't be changed after the table is created, so see [choose an engine](/choose-table-engine) if you're unsure. The engine choice is hidden for **Drag & Drop export**.
-4. Click the upload area to choose your file, or drag and drop it there. The area shows the largest file your server accepts, for example "Up to 300 MB here". A card with the file name and size confirms your choice, and its bin icon removes it.
+3. Under **2. Choose the file**, click the upload area to choose your file, or drag and drop it there. The area shows the largest file your server accepts, for example "Up to 300 MB here". A card with the file name and size confirms your choice, and its bin icon removes it.
+4. Pick the **Rendering engine**: **DataTables** (recommended, the default) or **FooTable** (light, good for small tables). The engine can't be changed after the table is created, so see [choose an engine](/choose-table-engine) if you're unsure. Switching engine keeps the file you picked. The engine choice is hidden for **Drag & Drop export**.
 5. For a CSV file, turn on **Convert to UTF-8** only if accented characters arrive garbled. See [Tips for a clean import](#tips-for-a-clean-import).
 6. Click **Import**.
 
@@ -39,7 +39,7 @@ You can also import while creating a table:
 2. Click **Upload a file** under **Start from scratch**. You can also drag your file anywhere onto the Create a table screen.
 3. Enter a **Table name** (optional; the file name is used if you leave it empty) and a **Description** if you like.
 4. Choose the file. Ninja Tables picks the **File type** from the file name; change it if it's wrong. The choices are **CSV - Comma-separated values**, **Excel - spreadsheet (.xlsx)**, **JSON - JavaScript Object Notation** and **JSON - Exported From Ninja Tables**.
-5. Check the engine line, and click **Change** to pick DataTables if you need it.
+5. Check the engine line, and DataTables is already selected; click **Change** to pick FooTable instead.
 6. Click **Create table**.
 
 ![Upload a file panel with the file, File type and engine line](/images/import-export/import-table-data-csv/2.-Upload-A-File-Panel.webp)

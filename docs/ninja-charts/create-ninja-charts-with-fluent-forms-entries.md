@@ -9,14 +9,14 @@ A chart built from **Fluent Forms** entries is a dynamic chart: it updates as ne
 
 ## Create the chart
 
-1. Go to **Ninja Tables** › **Add Chart**.
+1. Go to **Ninja Tables** › **Charts**, then click **Add New**.
 2. Enter a **Chart Name**, choose the **Chart Renderer** and a chart type. Click **Next**.
 3. On the **Data Source** step, choose **Fluent Forms**.
 4. In the **Data** field that appears, pick the form.
 5. Click **Next** and choose what to plot in [Data Range](/how-to-use-data-range-picker-in-ninja-charts).
 
 <!-- TODO(screenshot): create-ninja-charts-with-fluent-forms-entries-1
-  screen: Ninja Tables › Add Chart › Data Source
+  screen: Ninja Tables › Charts › Add New › Data Source
   table: -
   state: Fluent Forms selected as the data source and the Data dropdown showing a form
   highlight: Data field
@@ -40,7 +40,7 @@ Free-text fields (names, messages) don't suit pie or radar charts. Choose a fiel
 
 ## Filter by date
 
-When the form has entries with dates, the **Date Range Picker** in [Data Range](/how-to-use-data-range-picker-in-ninja-charts) lets the chart show only entries from a period.
+When the form has entries with dates, the **Date range picker** in [Data Range](/how-to-use-data-range-picker-in-ninja-charts) lets the chart show only entries from a period.
 
 ## Finish the chart
 

@@ -38,16 +38,16 @@ In a CSV, a cell holding several values (such as a multi-select) is joined with 
 - The file opens in Excel, Google Sheets and Numbers.
 - The first row holds your column names, followed by one row per table row.
 - Numbers are exported as numbers. Codes with leading zeros, such as ZIP codes, and long IDs stay as text, so they aren't changed.
-- A worksheet can hold up to 1,048,576 rows, which is Excel's own limit. For bigger tables, export as CSV.
+- A worksheet can hold up to 1,048,576 rows including the header, which is Excel's own limit. For bigger tables, export as CSV.
 - The **Excel (.xlsx)** option only appears if your server has the PHP Zip extension. If you don't see it, ask your host to enable the extension, or export as CSV.
 
 ## Large tables
 
 Tables with 20,000 or more rows are streamed to the file as it's built, instead of being loaded into memory first, so a CSV or JSON export of a big table doesn't run out of server memory. You don't need to do anything. Developers can change the 20,000-row threshold with the `ninja_tables_export_stream_threshold` filter.
 
-## Tables you can't export
+## Export a connected table
 
-Connected tables, such as WooCommerce, WP Posts, Google Sheets or Custom SQL tables, get their rows from the source, so their Table Rows toolbar has no **Import / Export** button. Export the data from the source itself.
+Connected tables, such as WooCommerce, WP Posts, Google Sheets or Custom SQL tables, can be exported too. Their toolbar has an **Export** button (no Import, since the rows come from the source). The file contains the rows as they are right now.
 
 ## Export a Drag & Drop table
 

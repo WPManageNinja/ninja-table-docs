@@ -46,6 +46,7 @@ If no supported plugin is active, the card says **No other table plugin was foun
 
 The imported table is a normal Ninja Tables table with its own columns and rows. Its name is the original name followed by "(Imported From Table Press)", or "(Imported From Supsystic Table)" for Supsystic tables. You can rename it in its [table details](/table-title-description-settings).
 
+- Imported tables use the FooTable engine, and the engine can't be changed afterwards.
 - The table's first row becomes the column names. If a TablePress table has its header row turned off, the columns are named **Ninja Column 1**, **Ninja Column 2** and so on.
 - It doesn't stay linked to the original, so changes in TablePress won't carry over.
 
