@@ -90,7 +90,7 @@ Click the **Appearance** tab. On the left is a live preview of your table, which
 - **Style**: **Title & Header** (show the table title, description and header row), **Typography** (font family and size) and **Rows & Borders** (the style library, Semantic UI, Bootstrap 4 or Bootstrap 3 on FooTable, plus stripes, hover and borders).
 - **Features**: **Search**, **Sorting** and **Pagination** (what visitors can search, the default order and how many rows show per page), **Sticky Header & Column** (Pro), **Responsive Breakpoint** and **Stackable Table** (how the table behaves on small screens), **Export & Print** (Pro) and **Others** (the row details popup).
 
-![Appearance tab with the live preview and the Colors, Style and Features tabs](/images/creating-tables/create-first-table/6.-Appearance-Tab-With-The-Live-Preview.webp)
+![Appearance tab with the live preview and the Colors, Styling and Features tabs](/images/creating-tables/create-first-table/6.-Appearance-Tab-With-The-Live-Preview.webp)
 
 Click **Save** at the top of the editor to keep your changes. See the [Appearance overview](/table-style-settings) for every option. To change the starting look of every new table, use **Settings** › **Global appearance**.
 
