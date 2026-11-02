@@ -86,7 +86,7 @@ Not to get started. The free plugin covers tables you type in, upload from a fil
 == Will my tables work on phones?
 Yes. You can hide columns on small screens, or [stack each row as a card](/stackable-table).
 == FooTable or DataTables?
-FooTable is the usual choice. DataTables holds up better for thousands of rows. Tables that store their own rows keep the engine they were created with, so read [FooTable or DataTables](/choose-table-engine) before you build a large table.
+New tables use DataTables by default, which holds up well for thousands of rows. You can switch a new table to FooTable with **Change**. Tables that store their own rows keep the engine they were created with, so read [FooTable or DataTables](/choose-table-engine) before you build a large table.
 == Do tables slow my site down?
 Rows load with Ajax right after the page, and table data is cached. See [Engine, rendering & caching](/table-rendering-settings).
 == Are tables accessible and SEO-friendly?

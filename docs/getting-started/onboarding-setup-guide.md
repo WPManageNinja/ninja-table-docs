@@ -124,7 +124,7 @@ A panel opens on the right:
 
 1. Enter a **Table name**, for example "Pricing plans". It's required.
 2. Optionally add a **Description**.
-3. Leave the engine on **FooTable**, the usual choice. If you expect thousands of rows, click **Change** and pick **DataTables**. You can't change the engine of a Default table later, so see [choose an engine](/choose-table-engine) if you're unsure.
+3. Leave the engine on **DataTables** (recommended). Click **Change** and pick **FooTable** if you want the lighter classic engine for a small table. You can't change the engine of a Default table later, so see [choose an engine](/choose-table-engine) if you're unsure.
 4. Click **Create table**.
 
 ![Default table panel with Table name, Description and the engine line](/images/getting-started/onboarding-setup-guide/6.-Default-Table-Panel-With-Table-Name.webp)
@@ -154,9 +154,9 @@ Your rows appear in the grid. To change a row later, open its row actions to edi
 
 Click the **Appearance** tab. The left side shows a live preview of your table; switch it between Desktop, Tablet and Mobile to check each size. The side panel has three tabs:
 
-- **Colors**: pick a preset color scheme.
-- **Style**: open **Title & Header** to show the table title above the table, and **Rows & Borders** for stripes, hover and borders.
+- **Styling**: open **Style** for stripes, hover and borders, and **Title & Header** to show the table title above the table.
 - **Features**: open **Search**, **Sorting** and **Pagination** to set how visitors find their way around the table.
+- **Colors**: pick a preset color scheme.
 
 Click **Save** at the top when you're happy. See the [Appearance overview](/table-style-settings) for every option.
 

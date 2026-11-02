@@ -73,7 +73,7 @@ In the free version you can pick the **Select field**, **Image/File/Lightbox** a
 | Feature | Free | Pro |
 |---|:-:|:-:|
 | Live preview on Desktop, Tablet and Mobile | ✅ | ✅ |
-| **Style**: title and header, typography, rows and borders, style library | ✅ | ✅ |
+| **Styling**: style library, rows and borders, typography, title and header | ✅ | ✅ |
 | Preset color schemes | ✅ | ✅ |
 | **Custom** colors | | ✅ |
 | Search box on or off | ✅ | ✅ |

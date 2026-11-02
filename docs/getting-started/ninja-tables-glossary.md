@@ -15,7 +15,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Ajax rendering:** A rendering mode where the table's rows load right after the page. It's fast and suits big tables, but shortcodes typed into cells don't run. Compare Legacy rendering.
 
-**Appearance:** The table editor tab where you style a table with a live preview. It has three tabs: Colors, Style (title and header, typography, rows and borders) and Features (search, sorting, pagination, sticky header, responsive breakpoint, stackable table, export and print, and the row details popup).
+**Appearance:** The table editor tab where you style a table with a live preview. It has three tabs: Styling (style library, rows and borders, typography, title and header), Features (search, sorting, pagination, mobile (responsive breakpoint and stackable table), sticky header and column, export and print, and row details) and Colors.
 
 ## B
 
@@ -73,7 +73,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Fluent Forms integration:** A connected table that shows submitted Fluent Forms entries as rows.
 
-**FooTable:** One of the two table engines. It's light and responsive, and the usual choice for most tables.
+**FooTable:** One of the two table engines. It's light and responsive, and good for small tables.
 
 **Frontend editing:** The table editor tab (Pro) that lets chosen user roles add, edit and delete rows from the page.
 

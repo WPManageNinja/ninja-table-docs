@@ -22,7 +22,7 @@ Click **Help** in the top bar. The page has these parts:
 ## Open a support ticket
 
 1. In Ninja Tables, click **Help** in the top bar.
-2. On the **Need expert support** card, click **Open a ticket**. This opens the [WPManageNinja support portal](https://wpmanageninja.com/support-tickets/).
+2. On the **Need expert support** card, click **Open a ticket**. This opens the [WPManageNinja support portal](https://wpmanageninja.com/account/support-tickets/).
 3. Log in to your WPManageNinja account, or create one, and start a new ticket.
 
 The **What to include** button on the same card opens this page.
