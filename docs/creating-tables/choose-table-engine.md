@@ -5,22 +5,22 @@ description: "What the FooTable and DataTables engines do differently, which one
 
 # FooTable or DataTables: Choose an Engine
 
-Every Ninja Tables table is drawn on your site by an **engine**: **FooTable** or **DataTables**. You choose it when you create the table. For most tables FooTable is the right choice; DataTables is built for tables that run to thousands of rows. This page helps you decide, because some tables can't change engine later.
+Every Ninja Tables table is drawn on your site by an **engine**: **FooTable** or **DataTables**. You choose it when you create the table. DataTables is the recommended default and holds up well even for thousands of rows; FooTable is a lighter choice for small tables. This page helps you decide, because some tables can't change engine later.
 
 ## The short answer
 
-- **Pick FooTable** for most tables: price lists, schedules, directories and anything up to a few thousand rows. It's light, responsive out of the box, and the engine most existing tables use.
-- **Pick DataTables** when the table will hold thousands of rows, or when you'll import a very large CSV or Excel file. It loads one page of rows at a time from the server, so big tables stay fast.
+- **Pick DataTables** (the default) for most tables, especially anything that may grow, or when you'll import a very large CSV or Excel file. It loads one page of rows at a time from the server, so big tables stay fast.
+- **Pick FooTable** for small tables, or when you want the Semantic UI or Bootstrap style library. It's light and responsive out of the box, and the engine most older tables use.
 
-If you're not sure, keep FooTable.
+If you're not sure, keep DataTables.
 
 ## How the two engines differ
 
 | | FooTable | DataTables |
 |---|---|---|
-| Best for | Most tables | Large tables (thousands of rows) |
+| Best for | Small tables | Most tables, and large ones (thousands of rows) |
 | How rows load | The whole table loads in the browser | Rows are paged on the server |
-| Style library (Semantic UI, Bootstrap 4, Bootstrap 3) | ✅ Choose one in **Appearance** › **Rows & borders** | Uses its own built-in styles |
+| Style library (Semantic UI, Bootstrap 4, Bootstrap 3) | ✅ Choose one in **Appearance** › **Styling** › **Style** | Uses its own built-in styles |
 | Import very large CSV or Excel files from the Media Library | | ✅ |
 | Google Sheets and Remote CSV | Reads the source live, and keeps links and images | Keeps a synced copy that updates on a schedule |
 | Custom CSS selector | `#footable_parent_<ID>` | `#ninja_dt_parent_<ID>` |
@@ -31,23 +31,24 @@ Both engines support search, sorting, pagination, custom filters and the filteri
 
 | Table type | Engine choice at creation | Switch later |
 |---|---|---|
-| Default table, Upload a file, Import screen | FooTable or DataTables | No, it is locked |
-| Fluent Forms entries, FluentCart products, WP Posts/CPTs (Pro), Custom SQL query (Pro) | FooTable or DataTables | Yes, in **Table Configuration** |
-| Google Sheets (Pro), Remote CSV / JSON (Pro) | FooTable, or DataTables when your Pro version supports synced copies | No, it is locked |
+| Default table, Upload a file, Import screen | DataTables (default) or FooTable | No, it is locked |
+| Fluent Forms entries, FluentCart products, Custom SQL query (Pro) | DataTables (default) or FooTable | Yes, in **Table Configuration** |
+| WP Posts/CPTs (Pro) | FooTable (no engine line in the panel) | Yes, in **Table Configuration** |
+| Google Sheets (Pro), Remote CSV / JSON (Pro) | DataTables when your Pro version supports synced copies (the default then), otherwise FooTable | No, it is locked |
 | WooCommerce products and reviews (Pro) | FooTable only | No |
 | Drag & Drop table | Not applicable, it uses its own builder | No |
 
 ## Choose the engine when you create a table
 
-On the [Create a table](/table-types-overview) screen, most panels show an engine line, for example **FooTable (the usual choice) · Change**:
+On the [Create a table](/table-types-overview) screen, most panels show an engine line, for example **Engine: DataTables (recommended) · Change**:
 
 1. Click **Change**.
-2. Pick **FooTable** or **DataTables** under **Rendering engine**.
+2. Pick **DataTables** or **FooTable** under **Rendering engine**.
 3. Finish the panel and click **Create table**.
 
 ![Rendering engine cards on the Default table panel](/images/creating-tables/choose-engine/1.-Rendering-Engine-Cards-On-The-Default.webp)
 
-The **Import** screen shows the same **Rendering engine** choice when you import a file, except for a **Drag & Drop export**. WooCommerce products and reviews tables always use FooTable, and Drag & Drop tables use their own builder, so their panels don't show an engine choice.
+The **Import** screen shows the same **Rendering engine** choice after you pick the file, except for a **Drag & Drop export**. WooCommerce products and reviews tables always use FooTable, and Drag & Drop tables use their own builder, so their panels don't show an engine choice.
 
 ## Can I switch later?
 
