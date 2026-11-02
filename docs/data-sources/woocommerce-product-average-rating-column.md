@@ -12,7 +12,7 @@ The **Product Average Rating** column (Pro) shows a product's overall average sc
 1. Open your WooCommerce products or reviews table and go to the **Table Rows** tab.
 2. Click **Source settings** on the banner, then open **Add new column**.
 3. Enter a **Column name** (for example "Avg. rating") and a **Column key**.
-4. Under **Dynamic column data settings**, set **Field type** to **Product Data** and **Field value** to **Product Average Rating**.
+4. Under **Dynamic column data**, set **Field type** to **Product Data** and **Field value** to **Product Average Rating**.
 5. Set the rating options (below).
 6. Click **Add column**.
 
