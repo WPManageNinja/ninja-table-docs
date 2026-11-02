@@ -6,13 +6,16 @@ import { trees, findNodeByLink } from '../../trees'
 /**
  * "You are here" strip for child pages of a doc tree: Group › Branch › Page, plus the
  * sibling pages of the same branch. Rendered in SSR (plain links), so it works without JS.
- * Hidden on the tree's own overview page and on pages that are not in any tree.
+ * Hidden on the tree's own overview page, on pages that are not in any tree, and for
+ * trees with `strip: false`.
  */
 const route = useRoute()
 
 const here = computed(() => {
   const path = route.path.replace(/\.html$/, '').replace(/\/$/, '') || '/'
   for (const tree of trees) {
+    // Hub trees (e.g. product) never show a strip: it would only repeat the sidebar.
+    if (tree.strip === false) continue
     if (path === tree.overview) return null
     const hit = findNodeByLink(tree, path)
     if (hit) {

@@ -10,79 +10,145 @@
       "admin": "/"
     },
     {
-      "wait": 1500
+      "wait": 2000
     },
     {
-      "eval": "document.querySelectorAll('tbody tr').forEach(r=>{if(!/Hosting Plans|Product Price|Employee Dir|World Countries|Monthly Sales|Conference|Course Catalog|Order History/.test(r.innerText))r.style.display='none'});"
+      "css": ".nt-topbar{margin-bottom:44px!important}"
     },
     {
-      "shot": {
-        "name": "1.-Ninja-Tables-Tables-List",
-        "clip": "app"
-      }
-    },
-    {
-      "admin": "/create"
-    },
-    {
-      "wait": 1500
+      "wait": 300
     },
     {
       "shot": {
-        "name": "2.-Create-A-Table-Screen-With-Start",
-        "clip": "app",
-        "crop": "auto"
-      }
-    },
-    {
-      "admin": "/tables/{{Product Price List}}"
-    },
-    {
-      "wait": 5000
-    },
-    {
-      "shot": {
-        "name": "3.-Table-Editor-With-The-Six-Tabs",
-        "clip": "app",
-        "highlights": [
-          ".nt-tab:has-text(\"Table Rows\")"
+        "name": "1.-Top-Bar-Numbered",
+        "clip": {
+          "x": 160,
+          "y": 32,
+          "width": 1280,
+          "height": 370
+        },
+        "badges": [
+          {
+            "target": {
+              "selector": ".nt-topbar__item",
+              "hasText": "Tables"
+            },
+            "n": 1,
+            "pos": "bottom"
+          },
+          {
+            "target": {
+              "selector": ".nt-topbar__item",
+              "hasText": "Create Table"
+            },
+            "n": 2,
+            "pos": "bottom"
+          },
+          {
+            "target": {
+              "selector": ".nt-topbar__item",
+              "hasText": "Import"
+            },
+            "n": 3,
+            "pos": "bottom"
+          },
+          {
+            "target": {
+              "selector": ".nt-topbar__item",
+              "hasText": "Charts"
+            },
+            "n": 4,
+            "pos": "bottom"
+          },
+          {
+            "target": {
+              "selector": ".nt-topbar__item",
+              "hasText": "Help"
+            },
+            "n": 5,
+            "pos": "bottom"
+          },
+          {
+            "target": ".nt-topbar__icon",
+            "n": 6,
+            "pos": "bottom"
+          },
+          {
+            "target": ".nt-topbar__utils > :last-child",
+            "n": 7,
+            "pos": "bottom"
+          }
         ]
       }
     },
     {
-      "admin": "/tables/{{Product Price List}}/design_studio"
+      "admin": "/tables/{{Quarterly Sales by Store 2026}}"
     },
     {
-      "wait": 5000
+      "wait": 4000
     },
     {
-      "click": {
-        "role": "tab",
-        "name": "^Style$"
-      }
-    },
-    {
-      "wait": 600
+      "css": ".nt-editor__body{padding-top:64px!important}"
     },
     {
       "shot": {
-        "name": "5.-Appearance-Tab-With-A-Live-Preview",
-        "clip": "app"
-      }
-    },
-    {
-      "admin": "/table_builder_edit_table/{{Website Pricing}}"
-    },
-    {
-      "wait": 5000
-    },
-    {
-      "shot": {
-        "name": "1.-Drag-Drop-Builder-With-A-Pricing",
-        "clip": "app",
-        "crop": {
-          "height": 1560
-        }
+        "name": "2.-Editor-Tabs-Numbered",
+        "clip": {
+          "x": 160,
+          "y": 32,
+          "width": 1280,
+          "height": 300
+        },
+        "badges": [
+          {
+            "target": {
+              "selector": ".nt-tab",
+              "hasText": "Table Rows"
+            },
+            "n": 1,
+            "pos": "bottom"
+          },
+          {
+            "target": {
+              "selector": ".nt-tab",
+              "hasText": "Custom filters"
+            },
+            "n": 2,
+            "pos": "bottom"
+          },
+          {
+            "target": {
+              "selector": ".nt-tab",
+              "hasText": "Appearance"
+            },
+            "n": 3,
+            "pos": "bottom"
+          },
+          {
+            "target": {
+              "selector": ".nt-tab",
+              "hasText": "Table Configuration"
+            },
+            "n": 4,
+            "pos": "bottom"
+          },
+          {
+            "target": {
+              "selector": ".nt-tab",
+              "hasText": "Frontend editing"
+            },
+            "n": 5,
+            "pos": "bottom"
+          },
+          {
+            "target": {
+              "selector": ".nt-tab",
+              "hasText": "Custom CSS"
+            },
+            "n": 6,
+            "pos": "bottom"
+          }
+        ]
       }
     }
   ]

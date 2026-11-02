@@ -5,11 +5,13 @@ import type { DocTree, TreeNode } from '../trees/types'
 /**
  * `::: doc-tree <id> <part>` on its own line renders part of a doc tree as static HTML
  * at build time (no JS, so it is searchable, printable and present in the SSR output).
- * Parts: `hero`, `tasks`, `map` (mind map with leaf facts), `panel` (replica of the plugin's tabbed settings panel). The data lives in `.vitepress/trees/<id>.json`.
+ * Parts: `hero`, `tasks`, `journey` (numbered quick-start steps), `map` (mind map with leaf facts),
+ * `panel` (replica of the plugin's tabbed settings panel). The data lives in `.vitepress/trees/<id>.json`.
+ * A node with `ref` points at another tree: its map facts are generated from that tree's branches.
  *
  * Raw HTML here must never contain a blank line: a blank line ends the HTML block.
  */
-const MARKER = /^::: doc-tree\s+(\S+)\s+(hero|tasks|map|panel)\s*$/
+const MARKER = /^::: doc-tree\s+(\S+)\s+(hero|tasks|journey|map|panel)\s*$/
 
 const esc = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -21,6 +23,30 @@ function proBadge(node: TreeNode): string {
   if (node.pro === true) return ' <span class="nt-pro">Pro</span>'
   if (node.pro === 'partial' && node.proNote) return ` <small>${esc(node.proNote)}</small>`
   return ''
+}
+
+const proLabel = (n: TreeNode) => (n.pro === true ? ' (Pro)' : '')
+
+/** Facts for a node: its own, or (for a `ref` node) one line per branch of the referenced tree. */
+function factsOf(n: TreeNode): string[] {
+  if (n.facts?.length || !n.ref) return n.facts ?? []
+  const ref = treeById(n.ref)
+  if (!ref) throw new Error(`doc-tree: node "${n.id}" refs unknown tree "${n.ref}"`)
+  return ref.branches
+    .filter((b) => !b.mapOnly)
+    .map((b) => `${b.label}: ${b.nodes.map((x) => x.label + proLabel(x)).join(', ')}`)
+}
+
+/** Node lookup for `tasks` / `journey`: own nodes first, then the nodes of any referenced tree. */
+function nodeIndex(t: DocTree): Map<string, TreeNode> {
+  const own = t.branches.flatMap((b) => b.nodes)
+  const map = new Map<string, TreeNode>()
+  for (const n of own) {
+    if (!n.ref) continue
+    for (const x of treeById(n.ref)?.branches.flatMap((b) => b.nodes) ?? []) map.set(x.id, x)
+  }
+  for (const n of own) map.set(n.id, n)
+  return map
 }
 
 function renderHero(t: DocTree): string {
@@ -42,17 +68,35 @@ ${actions}
 }
 
 function renderTasks(t: DocTree): string {
-  const nodes = new Map(t.branches.flatMap((b) => b.nodes).map((n) => [n.id, n]))
+  const nodes = nodeIndex(t)
+  // Hub trees badge Pro tiles; panel trees keep their original output.
+  const badge = (n: TreeNode) => (t.kind === 'hub' && n.pro === true ? ' <span class="nt-pro">Pro</span>' : '')
   const tiles = t.tasks
     .map((task) => {
       const node = nodes.get(task.to)
       if (!node) throw new Error(`doc-tree "${t.id}": task "${task.text}" points to unknown node "${task.to}"`)
-      return `<a class="dt-task" href="${esc(node.link)}">${esc(task.text)}<small>${esc(task.sub)}</small></a>`
+      return `<a class="dt-task" href="${esc(node.link)}">${esc(task.text)}${badge(node)}<small>${esc(task.sub)}</small></a>`
     })
     .join('\n')
   return `<div class="dt-grid">
 ${tiles}
 </div>`
+}
+
+/** Numbered quick start: a real <ol>, one linked step per item. */
+function renderJourney(t: DocTree): string {
+  if (!t.journey?.length) throw new Error(`doc-tree "${t.id}": no "journey" steps defined`)
+  const nodes = nodeIndex(t)
+  const steps = t.journey
+    .map((step, i) => {
+      const node = nodes.get(step.to)
+      if (!node) throw new Error(`doc-tree "${t.id}": journey step "${step.text}" points to unknown node "${step.to}"`)
+      return `<li class="dt-step"><a href="${esc(node.link)}"><span class="dt-step-n" aria-hidden="true">${i + 1}</span><span class="dt-step-t">${esc(step.text)}${proBadge(node)}</span><small>${esc(step.sub)}</small></a></li>`
+    })
+    .join('\n')
+  return `<ol class="dt-journey">
+${steps}
+</ol>`
 }
 
 function stateBadge(n: TreeNode): string {
@@ -67,8 +111,8 @@ function renderRow(n: TreeNode, branchId: string): string {
 <summary><span class="dt-row-main"><span class="dt-row-name">${esc(n.label)}${proBadge(n)}</span><span class="dt-row-ux">${esc(n.ux)}</span></span>${stateBadge(n)}</summary>
 <div class="dt-row-body">
 <div class="dt-cols">
-<p><span class="dt-k">What changes</span>${inline(n.changes)}</p>
-<p><span class="dt-k">Visitors see</span>${inline(n.visitors)}</p>
+<p><span class="dt-k">What changes</span>${inline(n.changes ?? '')}</p>
+<p><span class="dt-k">Visitors see</span>${inline(n.visitors ?? '')}</p>
 </div>
 ${facts ? `<p class="dt-k">What is inside</p>\n<ul class="dt-facts">\n${facts}\n</ul>` : ''}
 <a class="dt-open" href="${esc(n.link)}">Read the full guide <span aria-hidden="true">→</span></a>
@@ -112,12 +156,12 @@ ${panels}
  */
 function renderMap(t: DocTree): string {
   const weight = (b: DocTree['branches'][number]) =>
-    2 + b.nodes.reduce((sum, n) => sum + 1.4 + (n.facts?.length ?? 0) * 0.8, 0)
+    2 + b.nodes.reduce((sum, n) => sum + 1.4 + factsOf(n).length * 0.8, 0)
 
   const cards = t.branches.map((b, i) => {
     const settings = b.nodes
       .map((n) => {
-        const facts = (n.facts ?? []).map((f) => `<li>${esc(f)}</li>`).join('\n')
+        const facts = factsOf(n).map((f) => `<li>${esc(f)}</li>`).join('\n')
         return `<li class="dt-map-s">
 <a class="dt-map-n" href="${esc(n.link)}">${esc(n.label)}${proBadge(n)}</a>
 ${facts ? `<ul class="dt-map-facts">\n${facts}\n</ul>` : ''}
@@ -144,7 +188,7 @@ ${settings}
   }
 
   return `<div class="dt-map">
-<p class="dt-map-root">${esc('Ninja Tables ' + t.title + ' Settings')}</p>
+<p class="dt-map-root">${esc(t.mapRoot ?? 'Ninja Tables ' + t.title + ' Settings')}</p>
 <div class="dt-map-cols">
 <div class="dt-map-col">
 ${sides[0].html.join('\n')}
@@ -156,7 +200,7 @@ ${sides[1].html.join('\n')}
 </div>`
 }
 
-const RENDERERS = { hero: renderHero, tasks: renderTasks, map: renderMap, panel: renderPanel }
+const RENDERERS = { hero: renderHero, tasks: renderTasks, journey: renderJourney, map: renderMap, panel: renderPanel }
 
 export function docTreePlugin(md: MarkdownRenderer) {
   md.block.ruler.before(

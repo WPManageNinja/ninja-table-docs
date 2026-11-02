@@ -1,0 +1,170 @@
+{
+  "id": "product",
+  "kind": "hub",
+  "strip": false,
+  "title": "Ninja Tables",
+  "mapRoot": "Ninja Tables",
+  "overview": "/ninja-tables-introduction",
+  "sidebarOverviewText": "Introduction",
+  "hero": {
+    "eyebrow": "Ninja Tables docs",
+    "title": "Build responsive WordPress tables without code",
+    "lead": "Type rows in, upload a spreadsheet, design a pricing table, or show live data from WooCommerce, Google Sheets and your posts.",
+    "path": ["WordPress admin", "Ninja Tables", "Tables"],
+    "actions": [
+      { "text": "Publish your first table", "link": "#publish-your-first-table", "primary": true },
+      { "text": "Compare Free and Pro", "link": "/free-vs-pro" }
+    ]
+  },
+  "tasks": [
+    { "text": "Type in my own table", "sub": "Default table, columns, rows", "to": "create-first" },
+    { "text": "Bring in a spreadsheet", "sub": "CSV, Excel or JSON", "to": "import-file" },
+    { "text": "Show products or posts", "sub": "WooCommerce, FluentCart, posts", "to": "connected-overview" },
+    { "text": "Design a pricing table", "sub": "Drag & Drop builder, templates", "to": "dnd-create" },
+    { "text": "Make it match my brand", "sub": "Colors, fonts, mobile layout", "to": "appearance" },
+    { "text": "Put a table on a page", "sub": "Shortcode or block", "to": "embed" }
+  ],
+  "journey": [
+    { "text": "Install Ninja Tables", "sub": "From Plugins › Add New, free", "to": "install" },
+    { "text": "Create your first table", "sub": "Use the guided setup, or start blank", "to": "onboarding" },
+    { "text": "Pick a design", "sub": "Colors and style with a live preview", "to": "appearance" },
+    { "text": "Add it to a page", "sub": "Copy the shortcode or use the Ninja Tables block", "to": "embed" }
+  ],
+  "branches": [
+    {
+      "id": "setup",
+      "label": "Get set up",
+      "where": "WordPress admin › Plugins",
+      "goal": "Install the plugin, add Pro if you have it, and learn the admin.",
+      "nodes": [
+        { "id": "install", "label": "Install & activate", "link": "/how-to-install-and-activate-ninja-tables-plugin", "ux": "Get the free plugin running in about a minute.", "facts": ["From: Plugins › Add New, or a .zip file"] },
+        { "id": "license", "label": "Activate your Pro license", "link": "/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key", "ux": "Unlock Pro features, updates and support.", "facts": ["Where: Settings › License"] },
+        { "id": "onboarding", "label": "Guided setup & quick start", "link": "/onboarding-setup-guide", "ux": "Create your first table in three guided steps.", "facts": ["Checklist: Create, Pick a design, Add it to a page"] },
+        { "id": "admin-nav", "label": "Find your way around", "link": "/admin-navigation", "ux": "Learn the top bar, the search and where screens moved.", "facts": ["Search: ⌘K or Ctrl+K", "Theme: Light, Dark, System"] },
+        { "id": "free-vs-pro", "label": "Free vs Pro", "link": "/free-vs-pro", "ux": "See at a glance which features need Pro.", "facts": ["Every feature, side by side"] }
+      ]
+    },
+    {
+      "id": "create",
+      "label": "Create Table",
+      "where": "Top bar › Create Table, or Import",
+      "goal": "Start a table from scratch or from a file.",
+      "nodes": [
+        { "id": "table-types", "label": "All table types", "link": "/table-types-overview", "ux": "Compare the eleven ways to start a table.", "facts": ["Start from scratch: Default, Upload a file, Drag & Drop", "Connect live data: eight sources"] },
+        { "id": "create-first", "label": "Create your first table", "link": "/create-your-first-table", "ux": "Build a Default table with your own columns and rows.", "facts": ["Steps: columns, rows, Appearance, embed"] },
+        { "id": "engine", "label": "FooTable or DataTables", "link": "/choose-table-engine", "ux": "Pick the engine that suits your table's size.", "facts": ["FooTable: the usual choice", "DataTables: thousands of rows"] },
+        { "id": "import-file", "label": "Import a CSV, Excel or JSON file", "link": "/import-table-data-from-a-csv", "ux": "Turn a spreadsheet into a table in one upload.", "facts": ["Formats: CSV, Excel (.xlsx), JSON"] },
+        { "id": "tablepress", "label": "Import from TablePress", "link": "/import-table-from-tablepress-plugin", "ux": "Move your existing tables over in one click.", "facts": ["From: TablePress, Data Tables Generator by Supsystic"] }
+      ]
+    },
+    {
+      "id": "rows",
+      "label": "Table Rows tab",
+      "where": "Open a table › Table Rows",
+      "goal": "Add rows and set up columns in a spreadsheet grid.",
+      "nodes": [
+        { "id": "work-rows", "label": "Work in Table Rows", "link": "/working-in-table-rows", "ux": "Add, edit and reorder rows in a spreadsheet grid.", "facts": ["Rows: add, edit, duplicate, delete", "Sort manually (Pro)"] },
+        { "id": "columns", "label": "Add & edit a column", "link": "/basic-settings", "ux": "Name a column, pick its type, hide it on phones.", "facts": ["Basic tab: name, key, type, responsive visibility"] },
+        { "id": "conditional", "label": "Conditional formatting", "link": "/conditional-formatting", "pro": true, "ux": "Highlight cells automatically when a value matches.", "facts": ["Where: column dialog › Conditions"] },
+        { "id": "calc", "label": "Formulas & calculations", "link": "/row-column-data-calculation", "pro": true, "ux": "Add up a row or total a column automatically.", "facts": ["Row: Transform value formula", "Column: JavaScript snippet"] },
+        { "id": "import-rows", "label": "Import rows into a table", "link": "/import-csv-file-to-an-existing-table", "ux": "Add or replace rows from a CSV file.", "facts": ["Where: Table Rows › Import / Export › Import"] }
+      ]
+    },
+    {
+      "id": "appearance",
+      "label": "Appearance tab",
+      "where": "Open a table › Appearance",
+      "goal": "Style the table with a live preview.",
+      "nodes": [
+        { "id": "appearance", "label": "Appearance overview", "link": "/table-style-settings", "ref": "appearance", "ux": "Restyle colors, fonts, rows and mobile layout live." }
+      ]
+    },
+    {
+      "id": "editor-tabs",
+      "label": "More editor tabs",
+      "where": "Open a table › the other editor tabs",
+      "goal": "Filters, loading speed, editing on the page and your own code.",
+      "nodes": [
+        { "id": "custom-filters", "label": "Custom filters", "link": "/custom-filters", "pro": true, "ux": "Let visitors narrow a table with dropdowns and ranges.", "facts": ["Types: dropdown, radio, checkbox, text, date, number range"] },
+        { "id": "table-config", "label": "Table Configuration", "link": "/table-rendering-settings", "ux": "Keep big tables fast with Ajax loading and caching.", "facts": ["Rendering: Ajax, Legacy (Pro)", "Engine and Caching Configuration"] },
+        { "id": "frontend-editing", "label": "Frontend editing", "link": "/frontend-editing", "pro": true, "ux": "Let logged-in users edit rows right on the page.", "facts": ["Actions: add, edit, delete rows", "Permissions: who can change what"] },
+        { "id": "css-js", "label": "Custom CSS/JS", "link": "/table-styling-css-selector", "pro": "partial", "proNote": "JavaScript is Pro", "ux": "Fine-tune one table with your own CSS.", "facts": ["Selectors: header, rows, columns"] }
+      ]
+    },
+    {
+      "id": "live-data",
+      "label": "Connect live data",
+      "where": "Create Table › Connect live data",
+      "goal": "Tables whose rows come from somewhere else and stay up to date.",
+      "nodes": [
+        { "id": "connected-overview", "label": "How connected tables work", "link": "/connected-tables-overview", "pro": "partial", "proNote": "Some sources are Pro", "ux": "See where live rows come from and how to change it.", "facts": ["Source settings: change the source later", "Rows: read-only in the editor"] },
+        { "id": "wp-posts", "label": "WP Posts/CPTs", "link": "/create-wp-posts-table", "pro": true, "ux": "List posts, pages or custom post types in a table.", "facts": ["Filter: conditions, taxonomies, meta queries"] },
+        { "id": "woocommerce", "label": "WooCommerce products", "link": "/woocommerce-integration", "pro": true, "ux": "Sell from a product table with add-to-cart buttons.", "facts": ["Buy column: add to cart, variations"] },
+        { "id": "fluent-forms", "label": "Fluent Forms entries", "link": "/fluent-forms-integration", "ux": "Show form submissions in a table that updates itself.", "facts": ["Filter: entry status, own entries only"] },
+        { "id": "fluentcart", "label": "FluentCart products", "link": "/fluentcart-integration", "ux": "Sell FluentCart products straight from a table.", "facts": ["Buttons: add to cart, Buy Now for subscriptions"] },
+        { "id": "google-sheets", "label": "Google Sheets", "link": "/google-sheets-integration", "pro": true, "ux": "Show a Google Sheet that keeps up with your edits.", "facts": ["Needs: a published sheet"] },
+        { "id": "remote-csv", "label": "Remote CSV / JSON", "link": "/construct-table-from-csv", "pro": true, "ux": "Build a table from a CSV file at a public URL.", "facts": ["Updates: follows the file"] },
+        { "id": "custom-sql", "label": "Custom SQL query", "link": "/create-table-from-custom-sql", "pro": true, "ux": "Show the results of a read-only SELECT query.", "facts": ["Databases: WordPress or a remote MySQL", "Placeholders: current user, date"] }
+      ]
+    },
+    {
+      "id": "drag-drop",
+      "label": "Drag & Drop builder",
+      "where": "Create Table › Drag & Drop table",
+      "goal": "Design a visual table cell by cell.",
+      "nodes": [
+        { "id": "dnd-create", "label": "Create a Drag & Drop table", "link": "/how-to-create-your-first-drag-and-drop-table-with-ninja-tables", "ux": "Design pricing and comparison tables cell by cell.", "facts": ["Start: scratch, template, CSV or JSON file"] },
+        { "id": "dnd-templates", "label": "Templates", "link": "/drag-drop-templates", "pro": "partial", "proNote": "Some templates are Pro", "ux": "Start from a ready-made pricing or schedule layout.", "facts": ["15 templates: pricing, comparison, employee, schedule"] },
+        { "id": "dnd-tour", "label": "Builder tour", "link": "/drag-drop-builder-tour", "ux": "Learn the canvas, the toolbar and the side panel.", "facts": ["Right panel: Elements and Settings"] }
+      ]
+    },
+    {
+      "id": "on-site",
+      "label": "On your site",
+      "where": "Shortcode, block or page builder",
+      "goal": "Put a table on any page or post.",
+      "nodes": [
+        { "id": "embed", "label": "Embed a table", "link": "/embed-tables", "ux": "Put a table on any page with a shortcode or block.", "facts": ["Shortcode: [ninja_tables id=\"123\"]", "Block: Ninja Tables"] },
+        { "id": "shortcode-ref", "label": "Shortcode reference", "link": "/shortcode-reference", "ux": "Every shortcode and attribute, with its default.", "facts": ["Shortcodes: ninja_tables, ninja_table_info, ninja_table_cell, ninja_table_builder"] },
+        { "id": "adv-shortcode", "label": "Advanced shortcode options", "link": "/advanced-shortcode", "pro": "partial", "proNote": "Most attributes are Pro", "ux": "Show one table differently on different pages.", "facts": ["Attributes: rows per page, columns, filters"] }
+      ]
+    },
+    {
+      "id": "manage",
+      "label": "Tables list & Settings",
+      "where": "Top bar › Tables, and the gear icon › Settings",
+      "goal": "Find and manage tables, and set site-wide options.",
+      "nodes": [
+        { "id": "tables-list", "label": "The Tables list", "link": "/tables-list", "ux": "Find, filter and manage every table in one place.", "facts": ["Filters: source, engine", "Used on: where each table appears"] },
+        { "id": "duplicate", "label": "Duplicate a table", "link": "/table-cloning-duplicating", "ux": "Copy a table with its rows and settings in one click." },
+        { "id": "export", "label": "Export a table", "link": "/export-ninja-tables-csv-json", "ux": "Download rows as CSV or Excel, or the table as JSON.", "facts": ["Where: Table Rows › Import / Export"] },
+        { "id": "settings", "label": "Settings overview", "link": "/tools-and-settings", "ux": "Set the options that apply to every table.", "facts": ["Tabs: General, Global appearance, Permissions, Performance, License"] },
+        { "id": "permissions", "label": "Who can manage tables", "link": "/define-permission-for-table-users", "pro": true, "ux": "Choose which user roles can build and edit tables.", "facts": ["Where: Settings › Permissions"] },
+        { "id": "cache", "label": "Clear caches", "link": "/clear-table-cache", "ux": "Fix tables that still show old data.", "facts": ["Where: Settings › Performance"] }
+      ]
+    },
+    {
+      "id": "charts",
+      "label": "Charts",
+      "where": "Top bar › Charts (free Ninja Charts plugin)",
+      "goal": "Turn table data into charts.",
+      "nodes": [
+        { "id": "charts-install", "label": "Install Ninja Charts", "link": "/how-to-install-ninja-charts", "ux": "Add the free chart plugin in one click.", "facts": ["From: Ninja Tables › Charts"] },
+        { "id": "charts-start", "label": "Getting started with Ninja Charts", "link": "/getting-started-with-ninja-charts-free-wordpress-chart-plugin", "ux": "Learn the chart types and how a chart is built.", "facts": ["Data: Ninja Tables, Fluent Forms or manual"] },
+        { "id": "charts-from-table", "label": "Charts from Ninja Tables data", "link": "/create-ninja-charts-with-ninja-tables-data", "ux": "Turn any table into a bar, line or pie chart." },
+        { "id": "charts-embed", "label": "Add a chart to a page", "link": "/embed-ninja-charts", "ux": "Show a chart with its shortcode or block." }
+      ]
+    },
+    {
+      "id": "developers",
+      "label": "For developers",
+      "where": "PHP and JavaScript",
+      "goal": "Change how tables behave with your own code.",
+      "nodes": [
+        { "id": "hooks", "label": "Hooks & filters", "link": "/hooks-and-filters", "ux": "Change rendering, data and permissions from PHP.", "facts": ["WordPress actions and filters"] },
+        { "id": "js-events", "label": "JavaScript events", "link": "/javascript-events", "ux": "Run your own code when a table loads or changes." },
+        { "id": "recipes", "label": "Code recipes", "link": "/developer-code-recipes", "ux": "Copy working PHP examples for common jobs.", "facts": ["Examples: read rows, totals, scheduled CSV export"] }
+      ]
+    }
+  ]
+}

@@ -25,10 +25,15 @@ export interface TreeNode {
   state?: 'on' | 'off'
   /** Short leaf lines for the mind map, e.g. `Font Size: slider from 8 to 50 px`. */
   facts?: string[]
-  /** What the setting changes on the table. Supports **bold**. */
-  changes: string
-  /** What visitors see on the live site. Supports **bold**. */
-  visitors: string
+  /** What the setting changes on the table. Supports **bold**. Required in panel trees, optional in hubs. */
+  changes?: string
+  /** What visitors see on the live site. Supports **bold**. Required in panel trees, optional in hubs. */
+  visitors?: string
+  /**
+   * Id of another tree whose overview is this node's `link`. In the map and tasks, the node's
+   * facts are generated from that tree's (non-`mapOnly`) branches, so its labels are never copied here.
+   */
+  ref?: string
 }
 
 export interface TreeBranch {
@@ -45,6 +50,14 @@ export interface TreeBranch {
 export interface DocTree {
   id: string
   title: string
+  /** `panel` (default): a settings screen with tabs. `hub`: a site-wide map (no panel, no changes/visitors copy). */
+  kind?: 'panel' | 'hub'
+  /** `false` = never shows a "you are here" strip and never builds a sidebar group. */
+  strip?: boolean
+  /** Text of the map's root pill. Defaults to `Ninja Tables <title> Settings`. */
+  mapRoot?: string
+  /** Numbered quick-start steps (`::: doc-tree <id> journey`). `to` is a node id. */
+  journey?: { text: string; sub: string; to: string }[]
   /** Overview page that hosts the tree. */
   overview: string
   sidebarOverviewText: string

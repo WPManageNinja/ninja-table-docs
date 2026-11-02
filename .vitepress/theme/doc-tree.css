@@ -272,3 +272,45 @@
 @media (prefers-reduced-motion: reduce) {
   .vp-doc details.dt-row, .vp-doc a.dt-task, .vp-doc a.dt-open { transition: none; }
 }
+
+/* ---- Quick-start journey (::: doc-tree <id> journey) --------------------------
+   A real <ol>: numbered steps in a row on wide screens, a vertical path under 560px. */
+.vp-doc ol.dt-journey { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 16px 0; padding: 0; list-style: none; counter-reset: none; }
+.vp-doc ol.dt-journey > li.dt-step { position: relative; margin: 0; padding: 0; }
+.vp-doc ol.dt-journey > li.dt-step + li.dt-step::before {
+  content: ""; position: absolute; top: 31px; left: -12px; width: 12px; border-top: 2px dashed var(--vp-c-divider);
+}
+.vp-doc .dt-step > a {
+  display: flex; flex-direction: column; gap: 4px; height: 100%; box-sizing: border-box;
+  padding: 14px 14px 16px; border-radius: 14px; border: 1px solid var(--vp-c-divider); background: var(--vp-c-bg-soft);
+  text-decoration: none; color: var(--vp-c-text-1); transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+.vp-doc .dt-step > a:hover { border-color: var(--vp-c-brand-1); transform: translateY(-2px); box-shadow: 0 10px 22px -14px rgba(1, 213, 198, .7); }
+.vp-doc .dt-step-n {
+  display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin-bottom: 6px;
+  border-radius: 50%; font-size: 15px; font-weight: 700; color: #04332f;
+  background: linear-gradient(135deg, #01D5C6, #00A99D); box-shadow: 0 6px 14px -6px rgba(1, 213, 198, .8);
+}
+.vp-doc .dt-step-t { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 14.5px; font-weight: 650; line-height: 1.35; }
+.vp-doc .dt-step-t small { font-size: 12px; font-weight: 400; color: var(--vp-c-text-2); }
+.vp-doc .dt-step > a > small { font-size: 12.5px; line-height: 1.45; color: var(--vp-c-text-2); }
+@media (max-width: 720px) and (min-width: 561px) {
+  .vp-doc ol.dt-journey { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vp-doc ol.dt-journey > li.dt-step:nth-child(odd)::before { display: none; }
+}
+@media (max-width: 560px) {
+  .vp-doc ol.dt-journey { grid-template-columns: 1fr; gap: 10px; }
+  .vp-doc .dt-step > a { display: grid; grid-template-columns: 32px 1fr; column-gap: 12px; row-gap: 2px; padding: 12px 14px; }
+  .vp-doc .dt-step-n { grid-row: span 2; margin: 0; }
+  .vp-doc ol.dt-journey > li.dt-step + li.dt-step::before { top: -10px; left: 30px; width: 0; height: 10px; border-top: 0; border-left: 2px dashed var(--vp-c-divider); }
+}
+@media print {
+  .vp-doc ol.dt-journey { display: block; list-style: decimal; padding-left: 1.4em; }
+  .vp-doc ol.dt-journey > li.dt-step { display: list-item; margin: 0 0 6px; }
+  .vp-doc ol.dt-journey > li.dt-step::before, .vp-doc .dt-step-n { display: none; }
+  .vp-doc .dt-step > a { display: inline; padding: 0; border: 0; background: none; box-shadow: none; }
+  .vp-doc .dt-step > a > small { display: block; }
+}
+@media (prefers-reduced-motion: reduce) { .vp-doc .dt-step > a { transition: none; } }
+/* Partial-Pro note next to a map item (e.g. "JavaScript is Pro"): quieter than the item name. */
+.vp-doc a.dt-map-n small { font-size: 11.5px; font-weight: 500; color: var(--vp-c-text-2); }

@@ -125,6 +125,13 @@ Appearance group in `config.mts`, and do not hand-write HTML on the overview pag
   A branch with `"mapOnly": true` appears only in the mind map (not in the journey, sidebar or strip).
   Keep `facts` short (`Name: options`) and true to the page; the check script does not verify their wording.
 - **Gate:** `node scripts/qa/check-trees.mjs` must print `✓` (links exist, Pro flags match the pages, tasks resolve).
+- **Hub tree (`product.json`, the Introduction page):** `"kind": "hub"` = a site-wide map, not a settings panel:
+  no `panel` line needed (`map` instead), and nodes skip `changes`/`visitors`. `"strip": false` keeps it out of
+  TreeStrip and `treeSidebarGroup` (the sidebar stays hand-maintained; the checker fails if a hub node links to a page
+  that is not in the sidebar). `"mapRoot"` sets the map's root pill. `"journey"` (`{text, sub, to}`, `to` = node id)
+  renders the numbered quick start via `::: doc-tree product journey`. A node with `"ref": "<tree id>"` must link to
+  that tree's overview; its map facts are generated from that tree's branches (never copy Appearance labels into
+  `product.json`). `pro: "partial"` needs a `proNote`. Keep `appearance` before `product` in `trees/index.ts`.
 - **Another group:** add `.vitepress/trees/<id>.json`, register it in `trees/index.ts`, swap that group in
   `config.mts` for `treeSidebarGroup(treeById('<id>')!)`, and put the `::: doc-tree <id> …` lines on its landing page.
   Use trees only where a real plugin screen with tabs exists; keep linear task groups as numbered paths.
