@@ -1,9 +1,9 @@
 ---
-title: "WooCommerce: Bulk Add to Cart &amp; Product Comparison"
+title: "WooCommerce: Bulk Add to Cart & Product Comparison"
 description: "Let shoppers tick several products in a WooCommerce or FluentCart table, add them all to the cart at once, or compare them side by side."
 ---
 
-# WooCommerce: Bulk Add to Cart &amp; Product Comparison
+# WooCommerce: Bulk Add to Cart & Product Comparison
 
 **Bulk Add to Cart** and **Product Comparison** let shoppers tick several products in a product table and act on all of them at once. Bulk Add to Cart saves wholesale buyers and repeat customers from visiting each product page. Product Comparison shows the selected products side by side in a pop-up, which helps when choosing between similar items.
 
