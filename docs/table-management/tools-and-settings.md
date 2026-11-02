@@ -36,7 +36,7 @@ General, Global appearance and Permissions share the same footer. As soon as you
 
 ## General
 
-**Global Javascript Error Handling** sets what Ninja Tables does when another script on the page throws an error while a table is rendering. It applies to all tables.
+**Global Javascript Error Handling** sets what Ninja Tables does when another script on the page throws an error on your pages. It applies to all tables.
 
 - **Console Log JS Errors Silently**: Ninja Tables catches the error so the table keeps working, and writes it to the browser console.
 - **Handle Error But don't Log**: Ninja Tables catches the error without logging it.
@@ -59,9 +59,10 @@ The card is titled **Global appearance Settings**. New tables start with these s
 
 - **Default Table Color**: the color scheme for new tables. Choose from Default, White, Red, Orange, Yellow, Olive, Green, Teal, Blue, Violet, Purple, Pink, Grey or Black.
 - **Default Styling Library**: **Semantic UI** (default), **Bootstrap 4** or **Bootstrap 3**. Semantic UI suits most sites; pick Bootstrap only if your theme already uses it. Below it, a list of switches changes with the library you pick:
-  - Semantic UI: Single Line Cells, Fixed Layout, Hover Rows, Bordered Table, Hide Horizontal Borders, Hide Vertical Borders, Striped Rows, Compact Table and Vertically Centered.
-  - Bootstrap 4: Striped, Bordered, Hide Horizontal and Vertical Borders, Hover, Small Table and Vertically Centered.
+  - Semantic UI: Single Line Cells, Fixed Layout, Hover Rows, Bordered Table, Hide Horizontal Borders, Hide Vertical Borders, Striped Rows, Compact Table and Vertically Centered Table Cell Contents.
+  - Bootstrap 4: Striped Rows, Bordered Table, Hide Horizontal Borders, Hide Vertical Borders, Hover Rows, Small Table and Vertically Centered Table Cell Contents.
   - Bootstrap 3: the same as Bootstrap 4, with Condensed Table in place of Small Table.
+  - On a new site, **Striped Rows** and **Vertically Centered Table Cell Contents** start switched on until you save your own defaults.
 - **Default Font setting**: **Font family** (**Inherit from theme** by default, or a generic family such as serif or monospace) and **Font size** from 1 to 50 (14 by default).
 - **Show**: **Table title**, **Table description** and **Hide all borders**. All three are off by default.
 - **Default Features**: **Search box** and **Sorting** (both on by default), **Default Pagination settings** (**Pages** or **Show all rows**; **Pages** by default) and **Rows per page** (20 by default; hidden when you choose **Show all rows**).
