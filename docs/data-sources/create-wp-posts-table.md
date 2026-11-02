@@ -13,13 +13,10 @@ On the Free plugin the **WP Posts/CPTs** drawer shows a Pro notice instead of th
 
 1. Go to **Create Table** and, under **Connect live data**, click **WP Posts/CPTs**.
 2. Enter a **Table name**.
-3. Under **Post types**, tick at least one post type. **Posts** is ticked by default. See the list below.
-4. Under **Columns**, tick at least one column. Title, Author, Date and Categories are ticked by default.
-5. Optionally open **Conditions** to filter the posts (see below).
-6. Set **Order By Column** and choose **A → Z** or **Z → A**.
-7. Set **Query Limit For Frontend** to cap how many posts the table shows. Leave it empty to show all.
-8. Check the engine line (FooTable is the usual choice). See [Choose a table engine](/choose-table-engine).
-9. Click **Create table**.
+3. Under **Post types**, tick at least one post type, for example **Posts**. Nothing is ticked when the drawer opens. See the list below.
+4. Under **Columns**, tick at least one column. The list stays empty until you pick a post type.
+5. Optionally use **Conditions** (open by default) to filter the posts (see below).
+6. Click **Create table**.
 
 ![WP Posts/CPTs drawer with the Post types and Columns lists](/images/data-sources/create-wp-posts-table/1.-WP-Posts-CPTs-Drawer.webp)
 
@@ -27,7 +24,7 @@ Ninja Tables opens the new table on the **Table Rows** tab. The rows are read-on
 
 ### Post types
 
-The **Post types** list shows a counter, for example 1/28, and these entries:
+The **Post types** list shows a counter, for example 0/28, and these entries:
 
 - **Posts**, **Pages** and **Media**, named as in WordPress.
 - Every other type registered on your site, such as a store's `product` or a page builder's template type, under its internal name.
@@ -48,18 +45,17 @@ The **Columns** list stays empty ("Pick a post type first.") until you tick a po
 Ninja Tables sets each column's type for you: Post ID, Comments, Menu order and the parent post become **Numeric value** columns, the post date columns become **Date** columns formatted as `YYYY-MM-DD`, and everything else is **Single line text**. You can change a column's type later from the column header › **Column settings**. Column headings are generated from the field names, so the date column is headed **Create Date** and the Categories column is headed **Category**. Rename them from the same menu.
 
 ::: tip
-The drawer says "Post meta, ACF fields and shortcodes can be added later in the Columns tab." There is no Columns tab any more. Add those columns after you create the table, from **Table Rows** › **Edit query** › **Add new column**. See [Dynamic columns reference](/dynamic-columns-reference).
+Post meta, ACF fields and shortcodes aren't in this list. Add those columns after you create the table, from **Table Rows** › **Edit query** › **Add new column**. See [Dynamic columns reference](/dynamic-columns-reference).
 :::
 
 ### Conditions on the Create screen
 
-Open **Conditions** to narrow down the posts. The closed section shows a summary, such as "Posts · published · newest first".
+**Conditions** is open by default. Use it to narrow down the posts.
 
-- **Status**: pick one or more of Published, Draft, Pending, Private and Scheduled. Only the statuses your site has are shown. Published is the default, and if you untick everything it falls back to Published.
 - **Only the logged-in user's posts**: each visitor sees only the posts they wrote. Handy for member areas.
 - **Rules**: click **Add condition**, then choose a **Field**, an **Operator** and a **Value**. The table only shows posts that match every rule. Click **Remove condition** to delete a rule.
 
-The **Field** list offers ID, Author, Comments, Date, Modified date and your taxonomies:
+The **Field** list appears once you pick a post type. It offers ID, Author, Comments, Date, Modified date, Status and your taxonomies:
 
 | Field | Operators | Value |
 |---|---|---|
@@ -67,11 +63,13 @@ The **Field** list offers ID, Author, Comments, Date, Modified date and your tax
 | Date, Modified date | The same six | A date and time picker |
 | Author, Status and taxonomies | In, Not In | A multi-select list |
 
+To limit the table to published posts, add a rule with **Status**, **In** and **Published**.
+
 ### Order and limit
 
-**Order By Column** offers Date (the default), Title, Modified date, Comments, Post ID, Author, Status and Menu order. **Z → A** on Date means newest first.
+The Create drawer doesn't set the order or a row limit, so a new table shows every matching post. The table starts on FooTable. To use DataTables, change **Table engine** in **Table Configuration**.
 
-**Query Limit For Frontend** is the maximum number of posts in the table. Leave it empty to show all.
+To set **Order by column**, **Order by type** and **Query limit for frontend**, open **Edit query** › **Conditions** after you create the table (see below).
 
 ## Change the query later: Edit query
 
