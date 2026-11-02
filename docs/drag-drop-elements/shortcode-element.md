@@ -11,18 +11,11 @@ The **Shortcode** element shows the output of any WordPress shortcode inside a D
 
 1. Copy the shortcode from the other plugin, for example a Fluent Forms form shortcode.
 2. In the builder, click a cell and click **Shortcode** in the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell.
-3. Click the element and paste the shortcode into the box in the **Settings** tab. The new element starts with the text `[Shortcode]`.
+3. Click the element and paste the shortcode into the **Shortcode** box in the **Settings** tab (the hint reads "Enter a WordPress shortcode"). The new element starts with the text `[Shortcode]`.
 4. Set the **Alignment**: **Left**, **Center** (default) or **Right**. If needed, set the [spacing](/spacing).
 5. Click **Save**.
 
-<!-- TODO(screenshot): shortcode-element-1
-  screen: Drag & Drop builder › Settings › Shortcode
-  table: a Drag & Drop pricing table
-  state: Shortcode element selected with a Fluent Forms shortcode pasted
-  highlight: shortcode box
-  view: admin
-  alt: Shortcode settings with a form shortcode pasted in the box
--->
+![Shortcode settings with a form shortcode pasted in the box](/images/drag-drop-elements/shortcode-element/1.-Shortcode-Settings-With-A-Form-Shortcode.webp)
 
 The builder shows the shortcode text; the real output appears on your site and in **Preview**.
 
@@ -33,4 +26,5 @@ The builder shows the shortcode text; the real output appears on your site and i
   highlight: -
   view: frontend
   alt: A form shown inside a Drag & Drop table cell on the site
+  blocked: needs a saved Drag & Drop table with a real form shortcode on a live page; demo tables must not be saved
 -->

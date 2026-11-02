@@ -15,17 +15,17 @@ To add one, click a cell and click **Progress** in the **Advanced** group of the
 
 Under **Content & style**:
 
-- **Progress type**: **line**, **circle** (default) or **dashboard** (a gauge).
-- **Text color** (default `#1E90FF`): the color of the percentage label.
-- **Progress bar color** (default `#1E90FF`): the color of the filled part.
-- **Text font size** (10–50): 10 uses the table's global font size.
-- **Progressbar percentage** (1–100, default 50): the value to show.
-- **Progressbar width** (50–150, default 100): the size of the circle or gauge. Hidden for the **line** type.
-- **Progressbar thickness** (2–15, default 6): how thick the bar or ring is.
+- **Progress Type**: **line**, **circle** (default) or **dashboard** (a gauge).
+- **Text Color** (default `#1E90FF`): the color of the percentage label.
+- **Progress Bar Color** (default `#1E90FF`): the color of the filled part.
+- **Text Font Size** (10–50): 10 uses the table's global font size.
+- **Progressbar Percentage** (1–100, default 50): the value to show.
+- **Progressbar Width** (50–150, default 100): the size of the circle or gauge. Hidden for the **line** type.
+- **Progressbar Thickness** (2–15, default 6): how thick the bar or ring is.
 - **Alignment**: **Left**, **Center** (default) or **Right**. Hidden for the **line** type, which fills the cell.
 
 ![Progress options with the line type selected](/images/drag-drop-elements/progress-bar/2.-Progress-Options-With-The-Line-Type.webp)
 
-Below the options, **Spacing** sets the margin and padding around it; see [Element Spacing](/spacing).
+Under **Content & style**, the **Spacing** section sets the margin and padding around it; see [Element Spacing](/spacing).
 
 Click **Save** to keep your changes.
