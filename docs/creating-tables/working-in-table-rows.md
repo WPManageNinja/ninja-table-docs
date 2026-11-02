@@ -45,6 +45,7 @@ The bar above the grid holds these tools:
 | **Compact rows** | Switches between tight and roomy row height in the editor. Compact is on by default. It doesn't change the table on your site. |
 | **Show row ID, author and date** | Adds three read-only columns to the grid: **Row ID**, **Created by** and **Reference date**. Click again to hide them. |
 | **Import / Export** | Opens a dialog to export this table as CSV, Excel (.xlsx) or JSON, or to import rows from a CSV file. See [Export a table](/export-ninja-tables-csv-json) and [Import rows into a table](/import-csv-file-to-an-existing-table). |
+| **Export** (connected tables only) | Opens the export dialog. Connected tables have no Import, because their rows come from the source. See [Export a table](/export-ninja-tables-csv-json). |
 | **Add column** | Adds a new column at the end of the table. |
 | **Add data** | Opens the row drawer to add a new row. |
 
@@ -73,7 +74,7 @@ Select columns let you type a value that is not in the **Select items** list, an
 
 The end of every row has three buttons:
 
-- **Row settings** (palette icon, Pro): set this row's **Background** and **Text** colors, and change its **Created date**. See [Row and cell colors](/tables-row-color).
+- **Row settings** (palette icon): change this row's **Created date**, and set its **Background** and **Text** colors (Pro). See [Row and cell colors](/tables-row-color).
 - **Edit row** (pencil icon): opens the row drawer.
 - **Row actions** (the ⋯ menu):
   - **Insert row below** (Pro): opens the drawer to add a new row right under this one.
@@ -115,7 +116,7 @@ An older full-page column manager is still available at the address `#/tables/<i
 Tables that get their rows from another source (WordPress posts, WooCommerce, Fluent Forms, FluentCart, Google Sheets, a remote CSV or a custom SQL query) show a **Read-only** badge in the toolbar. For these tables:
 
 - A **source banner** above the grid says where the rows come from and has a **Source settings** button (**Edit query** for WP Posts tables) to change what the table shows. See [Connected tables overview](/connected-tables-overview).
-- You can search the rows and switch **Compact rows**, but you can't add, edit, sort or delete rows here. Change the data in its source instead.
+- You can search the rows, switch **Compact rows** and click **Export** to download the rows as CSV, Excel or JSON. You can't add, edit, sort or delete rows here. Change the data in its source instead.
 - The grid shows row numbers instead of checkboxes, and columns have no drag grip.
 - The column menu still has **Column settings** and **Delete column**, so you can change how each column looks.
 
