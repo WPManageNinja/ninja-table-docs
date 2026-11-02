@@ -5,4 +5,4 @@ description: "Adding, moving, merging and sizing cells, rows and columns in a Dr
 
 # Manage Cells (Drag & Drop)
 
-The old **Manage Cells** mode in the Drag & Drop builder is gone. Rows, columns, merging and splitting are now handled right on the canvas: see [Drag & Drop Rows & Columns](/drag-drop-rows-columns). Column highlight, row height and column width are in [Drag & Drop Cell Settings](/drag-drop-cell-settings).
+The old **Manage Cells** mode in the Drag & Drop builder is gone. Rows, columns, merging and splitting are now handled right on the canvas: see [Drag & Drop Rows & Columns](/drag-drop-rows-columns). Column highlight, row height and column width appear when you select a column or row, in [Drag & Drop Cell Settings](/drag-drop-cell-settings).
