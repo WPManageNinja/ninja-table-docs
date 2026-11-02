@@ -15,7 +15,7 @@ Only read-only `SELECT` queries are allowed, and only administrators can write t
 2. Enter a **Table name**.
 3. Write your query in **Custom SQL Query**, for example `SELECT * FROM wp_buyers_table`. The query is passed to the WordPress `$wpdb->get_results()` function.
 4. Leave **SQL Connection Type** on **Default WP SQL Table** to query this site's database. To query another database, choose **Remote/External SQL**. See [Connect a remote database](/custom-sql-remote-database).
-5. Check the engine line (FooTable is the usual choice). See [Choose a table engine](/choose-table-engine).
+5. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable. See [Choose a table engine](/choose-table-engine).
 6. Click **Create table**.
 
 ![Custom SQL query drawer with a SELECT query](/images/data-sources/create-table-custom-sql/1.-Custom-SQL-Query-Drawer.webp)
@@ -32,7 +32,7 @@ Ninja Tables runs the query and turns the fields of the first result row into te
   blocked: needs a saved Custom SQL table; creating tables not allowed this wave
 -->
 
-The rows are read-only. You can still rename columns, change their types and design the table in the **Appearance** tab.
+The rows are read-only. You can still rename columns, change their types and design the table in the **Styling** tab.
 
 ## Change the query later
 
