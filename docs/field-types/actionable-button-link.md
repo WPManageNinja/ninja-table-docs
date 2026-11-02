@@ -30,7 +30,7 @@ The label on every button in this column, for example *Buy now*. HTML is support
 
 ## Colors
 
-Set the **Background**, **Text** and **Border** colors of the button. They are blank by default.
+Set the **Background**, **Text** and **Border** colors of the button. Each shows **Default** until you pick a color.
 
 ## Link rel attribute
 

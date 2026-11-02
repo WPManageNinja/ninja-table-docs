@@ -52,7 +52,7 @@ Ninja Tables shows "Table created successfully." (or "Imported successfully." fo
 
 1. Click a cell to select it.
 2. In the right panel, on the **Elements** tab, click an element to add it to the selected cell, or drag an element onto any cell.
-3. Click the element in the cell and set its options in the **Settings** tab.
+3. Click the element in the cell and set its options in the **Settings** tab. The third tab, **Responsive**, controls how the table looks on phones and tablets.
 
 A cell can hold several elements. Adding another one stacks it below the ones already there, so you can put a heading, a list and a button in the same cell.
 

@@ -12,10 +12,12 @@ The **Ninja Tables** admin is one app with a top bar, a search you open from the
 Click **Ninja Tables** in the WordPress admin menu (it reads **Ninja Tables Pro** when Pro is active). The menu has these items:
 
 - **Tables**: the [Tables list](/tables-list).
+- **Create Table**: the Create a table screen.
 - **Import**: the Import screen.
-- **Charts**: opens the Charts screen, where you can install the free Ninja Charts plugin. Once Ninja Charts is active, this item opens its chart list and an **Add Chart** item appears next to it.
+- **Charts**: opens the Charts screen, where you can install the free Ninja Charts plugin. Once Ninja Charts is active, this item opens its chart list.
 - **Get Pro** (orange, free version only): opens the Pro page on wpmanageninja.com.
 - **Activate License** or **Renew License** (orange, Pro only): shows while your license isn't active or has expired, and opens **Settings** › **License**.
+- **Settings**: site-wide settings (General, Global appearance, Permissions, Performance and License).
 - **Help**: documentation, support and community links.
 
 ![WordPress admin menu with the Ninja Tables submenu expanded](/images/getting-started/admin-navigation/1.-WordPress-Admin-Menu-With-The-Ninja.webp)
@@ -57,7 +59,7 @@ Your choice is saved in your browser and is shared with the other Fluent plugins
 
 ## See what moved from older versions
 
-The first time you open the **Tables** list after updating, a **Welcome to the new Ninja Tables** banner appears. Your tables, shortcodes and the way tables look on your site are unchanged; only the admin screens were reorganized. The banner has three buttons:
+A **Welcome to the new Ninja Tables** banner appears at the top of the **Tables** list until you dismiss it. Your tables, shortcodes and the way tables look on your site are unchanged; only the admin screens were reorganized. The banner has three buttons:
 
 - **What moved?** opens a map of old screens and their new homes.
 - **Find a setting** opens the command palette.
