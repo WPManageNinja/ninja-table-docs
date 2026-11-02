@@ -22,7 +22,7 @@
     { "wait": 2500 },
     { "click": ".ntb-sheet .table-data" },
     { "click": { "selector": ".ntb-panel__tab", "hasText": "Elements" } },
-    { "shot": { "name": "4.-Builder-With-A-Cell-Selected", "clip": "app",
+    { "shot": { "name": "4.-Builder-With-A-Cell-Selected", "clip": "app", "crop": "auto",
         "highlights": [ { "selector": ".ntb-panel__tab", "hasText": "Elements" } ] } },
     { "front": "{{page:Website Pricing}}/" },
     { "shot": { "name": "5.-Saved-Drag-Drop-Pricing-Table-Shown", "clip": {"x":0,"y":100,"width":1440,"height":640} } }

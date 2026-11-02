@@ -1,22 +1,123 @@
 {
   "doc": "docs/drag-drop-settings/drag-drop-cell-settings.md",
   "outDir": "public/images/drag-drop-settings/manage-cells-ninja-tables",
-  "viewport": { "width": 1440, "height": 900 },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
   "steps": [
-    { "admin": "/table_builder_edit_table/{{Website Pricing}}" },
-    { "wait": 2500 },
-    { "eval": "document.querySelectorAll('.ntb-sheet tbody tr')[3].querySelectorAll('td.table-data')[1].dispatchEvent(new MouseEvent('click',{bubbles:true}))" },
-    { "wait": 600 },
-    { "shot": { "name": "1.-Settings-Tab-Showing-The-Cell-Settings", "clip": "app", "crop": "auto" } },
-    { "shot": { "name": "2.-Cell-Settings-Showing-The-Header-Even", "clip": "app", "crop": "auto",
-        "highlights": [ { "selector": ".ntb-field", "hasText": "Header background" } ] } },
-    { "setColor": { "label": "Selected cell background", "hex": "#FF4E6B" } },
-    { "wait": 500 },
-    { "shot": { "name": "3.-Selected-Cell-Color-Pickers", "clip": "app", "crop": "auto",
-        "highlights": [ { "selector": ".component-wrapper", "hasText": "Selected cell background" } ] } },
-    { "click": ".ntb-panel__body .el-switch" },
-    { "wait": 600 },
-    { "shot": { "name": "4.-Highlight-Column-Options-With-Height", "clip": "app", "crop": "auto",
-        "highlights": [ { "selector": ".component-wrapper", "hasText": "Highlight column" } ] } }
+    {
+      "admin": "/table_builder_edit_table/{{Website Pricing}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "eval": "document.querySelectorAll('.ntb-sheet tbody tr')[3].querySelectorAll('td.table-data')[1].dispatchEvent(new MouseEvent('click',{bubbles:true}))"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "1.-Settings-Tab-Showing-The-Cell-Settings",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          ".ntb-crumbs"
+        ]
+      }
+    },
+    {
+      "setColor": {
+        "label": "Cell Background",
+        "hex": "#FF4E6B"
+      }
+    },
+    {
+      "wait": 500
+    },
+    {
+      "shot": {
+        "name": "3.-Selected-Cell-Color-Pickers",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          {
+            "selector": ".ntb-field",
+            "hasText": "Cell Background"
+          }
+        ]
+      }
+    },
+    {
+      "admin": "/"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "admin": "/table_builder_edit_table/{{Website Pricing}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": "[aria-label=\"Select Column B\"]"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "5.-Column-Selected-With-Column-Width",
+        "clip": "app",
+        "crop": "auto"
+      }
+    },
+    {
+      "click": ".ntb-panel__body .el-switch"
+    },
+    {
+      "wait": 700
+    },
+    {
+      "shot": {
+        "name": "4.-Highlight-Column-Options-With-Height",
+        "clip": "app",
+        "crop": "auto"
+      }
+    },
+    {
+      "admin": "/"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "admin": "/table_builder_edit_table/{{Website Pricing}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": "[aria-label=\"Select Row 3\"]"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "6.-Row-Selected-With-Row-Height",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          {
+            "selector": ".component-wrapper",
+            "hasText": "Row Height"
+          }
+        ]
+      }
+    }
   ]
 }

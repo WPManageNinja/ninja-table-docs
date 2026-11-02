@@ -16,24 +16,27 @@
    "admin": "/table_builder_edit_table/{{Website Pricing}}"
   },
   {
-   "wait": 4000
-  },
-  {
-   "css": "#selected-item{opacity:1!important;background:none!important;animation:none!important}"
+   "wait": 3500
   },
   {
    "click": {
-    "text": "Add row"
+    "text": "Add Row"
    }
   },
   {
-   "eval": "[...document.querySelectorAll('td.table-data')].find(t=>t.textContent.includes('9.99$')).click()"
+   "wait": 500
   },
   {
-   "wait": 400
+   "click": "tbody tr:nth-child(2) td.table-data:nth-of-type(3)"
+  },
+  {
+   "wait": 300
   },
   {
    "click": ".ntb-panel__tab:has-text(\"Elements\")"
+  },
+  {
+   "wait": 200
   },
   {
    "click": {
@@ -42,35 +45,25 @@
    }
   },
   {
-   "wait": 800
+   "wait": 700
   },
   {
-   "click": "#pane-general .el-select"
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": ".ntb-panel__body .el-select"
   },
   {
    "wait": 300
   },
   {
-   "click": {
-    "selector": ".el-select-dropdown__item:visible",
-    "hasText": "corner"
-   }
+   "click": ".el-select-dropdown__item:has-text(\"corner\")"
   },
   {
    "wait": 500
-  },
-  {
-   "scrollTop": true
-  },
-  {
-   "shot": {
-    "name": "2.-Ribbon-General-Options-For-The-Corner",
-    "clip": "app",
-    "crop": "auto",
-    "highlights": [
-     "#pane-general .el-select"
-    ]
-   }
   },
   {
    "click": {
@@ -79,22 +72,69 @@
    }
   },
   {
-   "wait": 300
+   "wait": 400
   },
   {
    "fill": {
-    "selector": "#pane-text input.el-input__inner",
+    "selector": ".ribbon-wrapper p[contenteditable]",
     "value": "Most popular"
    }
   },
   {
+   "wait": 300
+  },
+  {
    "setColor": {
-    "label": "Font color",
+    "label": "Font Color",
     "hex": "#FFFFFF"
    }
   },
   {
+   "wait": 300
+  },
+  {
+   "click": {
+    "selector": ".ntb-panel .el-tabs__item",
+    "hasText": "General"
+   }
+  },
+  {
    "wait": 400
+  },
+  {
+   "eval": "document.querySelector('.ntb-panel__body').scrollTop=0"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "shot": {
+    "name": "1.-Ribbon-Element-On-A-Pricing-Plan",
+    "clip": "app"
+   }
+  },
+  {
+   "css": ".ntb-body{grid-template-columns:minmax(0,1fr) 520px!important}"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "document.querySelector('.ntb-panel__body').scrollTop=0"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "shot": {
+    "name": "2.-Ribbon-General-Options-For-The-Corner",
+    "clip": {
+     "x": 920,
+     "y": 104,
+     "width": 520,
+     "height": 796
+    }
+   }
   },
   {
    "click": {
@@ -103,35 +143,17 @@
    }
   },
   {
-   "wait": 300
+   "wait": 400
   },
   {
    "shot": {
     "name": "3.-Ribbon-Background-Sub-Tab",
-    "clip": "app",
-    "crop": "auto",
-    "highlights": [
-     "#pane-background .el-color-picker"
-    ]
-   }
-  },
-  {
-   "click": ".ntb-crumbs__link:has-text(\"Table\")"
-  },
-  {
-   "wait": 500
-  },
-  {
-   "click": ".ntb-panel__tab:has-text(\"Elements\")"
-  },
-  {
-   "scrollTop": true
-  },
-  {
-   "shot": {
-    "name": "1.-Ribbon-Element-On-A-Pricing-Plan",
-    "clip": "app",
-    "crop": "auto"
+    "clip": {
+     "x": 920,
+     "y": 104,
+     "width": 520,
+     "height": 340
+    }
    }
   }
  ]

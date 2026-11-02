@@ -28,14 +28,14 @@
       }
     },
     {
+      "eval": "(function(){var els=[...document.querySelectorAll('.nt-drawer *')].filter(e=>/^Engine:/.test(e.textContent.trim())&&e.children.length<6);var t=els[els.length-1];t.setAttribute('data-hl','eng')})()"
+    },
+    {
       "shot": {
         "name": "1.-Default-Table-Panel-With-Table-Name",
         "clip": "app",
         "highlights": [
-          {
-            "role": "button",
-            "name": "Create table"
-          }
+          "[data-hl=\"eng\"]"
         ]
       }
     },

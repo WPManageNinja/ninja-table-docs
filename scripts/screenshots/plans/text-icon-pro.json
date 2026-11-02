@@ -9,42 +9,40 @@
   {
    "viewport": {
     "width": 1440,
-    "height": 900
+    "height": 940
    }
   },
   {
    "admin": "/table_builder_edit_table/{{Website Pricing}}"
   },
   {
-   "wait": 4000
+   "wait": 3500
   },
   {
    "click": {
-    "text": "Add row"
-   }
-  },
-  {
-   "click": {
-    "text": "At the bottom"
+    "text": "Add Row"
    }
   },
   {
    "wait": 500
   },
   {
-   "css": ".ntb_table_wrapper{max-height:none!important;height:auto!important}#selected-item{opacity:1!important;background:none!important;animation:none!important}"
-  },
-  {
-   "eval": "document.querySelector('tbody tr:last-child td.table-data:nth-of-type(3) .ntb-chip__btn--danger').click()"
+   "eval": "(function(){var b=document.querySelector('tbody tr:last-child td.table-data:nth-of-type(4) .ntb-chip__btn--danger');if(b)b.click()})()"
   },
   {
    "wait": 300
   },
   {
-   "click": "tbody tr:last-child td.table-data:nth-of-type(3)"
+   "click": "tbody tr:last-child td.table-data:nth-of-type(4)"
+  },
+  {
+   "wait": 300
   },
   {
    "click": ".ntb-panel__tab:has-text(\"Elements\")"
+  },
+  {
+   "wait": 200
   },
   {
    "click": {
@@ -53,37 +51,13 @@
    }
   },
   {
-   "wait": 800
+   "wait": 700
   },
   {
-   "click": {
-    "selector": ".ntb-panel .el-tabs__item",
-    "hasText": "General"
-   }
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
   },
   {
-   "wait": 300
-  },
-  {
-   "fill": {
-    "selector": "#pane-general .nt-ce-box",
-    "value": "Open 9:00 - 17:00"
-   }
-  },
-  {
-   "click": {
-    "selector": ".ntb-panel .el-tabs__item",
-    "hasText": "Text"
-   }
-  },
-  {
-   "wait": 300
-  },
-  {
-   "setColor": {
-    "label": "Font color",
-    "hex": "#FFFFFF"
-   }
+   "wait": 600
   },
   {
    "click": {
@@ -92,12 +66,12 @@
    }
   },
   {
-   "wait": 300
+   "wait": 400
   },
   {
    "fill": {
     "selector": ".ntb-iconpick .el-input__inner",
-    "value": "time"
+    "value": "alarm"
    }
   },
   {
@@ -110,50 +84,209 @@
    "wait": 400
   },
   {
-   "setColor": {
-    "label": "Color",
-    "hex": "#FFFFFF"
+   "fill": {
+    "selector": "tbody tr:last-child td.table-data:nth-of-type(4) .icon-text-wrapper [contenteditable]",
+    "value": "Open 24/7"
    }
   },
   {
-   "wait": 400
+   "wait": 300
   },
   {
-   "scrollTop": true
+   "eval": "(function(){var b=document.querySelector('tbody tr:last-child td.table-data:nth-of-type(3) .ntb-chip__btn--danger');if(b)b.click()})()"
   },
   {
-   "wait": 200
+   "wait": 300
   },
   {
-   "shot": {
-    "name": "2.-Text-Icon-Icon-Sub-Tab",
-    "clip": "app",
-    "crop": "auto",
-    "highlights": [
-     "#pane-icon .block:has(.el-select)"
-    ]
-   }
+   "click": "tbody tr:last-child td.table-data:nth-of-type(3)"
   },
   {
-   "click": ".ntb-crumbs__link:has-text(\"Table\")"
+   "wait": 300
   },
   {
    "click": ".ntb-panel__tab:has-text(\"Elements\")"
   },
   {
+   "wait": 200
+  },
+  {
+   "click": {
+    "selector": ".ntb-pal__item",
+    "hasText": "Text Icon"
+   }
+  },
+  {
+   "wait": 700
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": {
+    "selector": ".ntb-panel .el-tabs__item",
+    "hasText": "Icon"
+   }
+  },
+  {
    "wait": 400
   },
   {
-   "scrollTop": true
+   "fill": {
+    "selector": ".ntb-iconpick .el-input__inner",
+    "value": "alarm"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": ".ntb-iconpick__item"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "fill": {
+    "selector": "tbody tr:last-child td.table-data:nth-of-type(3) .icon-text-wrapper [contenteditable]",
+    "value": "Mon-Sat 9 AM"
+   }
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "(function(){var b=document.querySelector('tbody tr:last-child td.table-data:nth-of-type(2) .ntb-chip__btn--danger');if(b)b.click()})()"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": "tbody tr:last-child td.table-data:nth-of-type(2)"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Elements\")"
   },
   {
    "wait": 200
   },
   {
+   "click": {
+    "selector": ".ntb-pal__item",
+    "hasText": "Text Icon"
+   }
+  },
+  {
+   "wait": 700
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": {
+    "selector": ".ntb-panel .el-tabs__item",
+    "hasText": "Icon"
+   }
+  },
+  {
+   "wait": 400
+  },
+  {
+   "fill": {
+    "selector": ".ntb-iconpick .el-input__inner",
+    "value": "alarm"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": ".ntb-iconpick__item"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "fill": {
+    "selector": "tbody tr:last-child td.table-data:nth-of-type(2) .icon-text-wrapper [contenteditable]",
+    "value": "Mon-Fri 9 AM"
+   }
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "document.activeElement&&document.activeElement.blur()"
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
+   "click": {
+    "selector": ".ntb-panel .el-tabs__item",
+    "hasText": "General"
+   }
+  },
+  {
+   "wait": 400
+  },
+  {
+   "eval": "document.querySelector('.ntb-canvas').scrollTop=99999"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "document.querySelector('.ntb-panel__body').scrollTop=0"
+  },
+  {
+   "wait": 300
+  },
+  {
    "shot": {
     "name": "1.-Text-Icon-Elements-In-A-Drag",
-    "clip": "app",
-    "crop": "auto"
+    "clip": "app"
+   }
+  },
+  {
+   "css": ".ntb-body{grid-template-columns:minmax(0,1fr) 520px!important}"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": {
+    "selector": ".ntb-panel .el-tabs__item",
+    "hasText": "Icon"
+   }
+  },
+  {
+   "wait": 400
+  },
+  {
+   "eval": "document.querySelector('.ntb-panel__body').scrollTop=0"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "shot": {
+    "name": "2.-Text-Icon-Icon-Sub-Tab",
+    "clip": {
+     "x": 920,
+     "y": 104,
+     "width": 520,
+     "height": 680
+    }
    }
   }
  ]

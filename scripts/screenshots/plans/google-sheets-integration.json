@@ -9,7 +9,7 @@
     {
       "viewport": {
         "width": 1440,
-        "height": 640
+        "height": 560
       }
     },
     {
@@ -51,7 +51,7 @@
         "highlights": [
           {
             "selector": ".nt-drawer.open .nt-field, .nt-drawer.open .el-form-item",
-            "hasText": "Data source URL"
+            "hasText": "Google Sheet CSV URL"
           }
         ]
       }
@@ -60,13 +60,13 @@
       "click": ".nt-drawer.open :text-is(\"Change\")"
     },
     {
-      "wait": 600
-    },
-    {
       "viewport": {
         "width": 1440,
-        "height": 780
+        "height": 700
       }
+    },
+    {
+      "wait": 600
     },
     {
       "wait": 600

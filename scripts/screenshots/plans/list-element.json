@@ -3,54 +3,46 @@
  "outDir": "public/images/drag-drop-elements/list-element",
  "viewport": {
   "width": 1440,
-  "height": 1150
+  "height": 900
  },
  "steps": [
   {
    "viewport": {
     "width": 1440,
-    "height": 1150
+    "height": 900
    }
   },
   {
    "admin": "/table_builder_edit_table/{{Website Pricing}}"
   },
   {
-   "wait": 4000
+   "wait": 3500
   },
   {
    "click": {
-    "text": "Add row"
-   }
-  },
-  {
-   "click": {
-    "text": "At the bottom"
+    "text": "Add Row"
    }
   },
   {
    "wait": 500
   },
   {
-   "css": ".ntb_table_wrapper{max-height:none!important;height:auto!important}#selected-item{opacity:1!important;background:none!important;animation:none!important}"
+   "eval": "(function(){var b=document.querySelector('tbody tr:last-child td.table-data:nth-of-type(4) .ntb-chip__btn--danger');if(b)b.click()})()"
   },
   {
    "wait": 300
   },
   {
-   "eval": "document.querySelector('tbody tr:last-child td.table-data:nth-of-type(2) .ntb-chip__btn--danger').click()"
+   "click": "tbody tr:last-child td.table-data:nth-of-type(4)"
   },
   {
    "wait": 300
-  },
-  {
-   "click": "tbody tr:last-child td.table-data:nth-of-type(2)"
-  },
-  {
-   "wait": 200
   },
   {
    "click": ".ntb-panel__tab:has-text(\"Elements\")"
+  },
+  {
+   "wait": 200
   },
   {
    "click": {
@@ -59,87 +51,22 @@
    }
   },
   {
+   "wait": 700
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
    "wait": 600
   },
   {
-   "click": {
-    "selector": ".ntb-panel .el-tabs__item",
-    "hasText": "Text"
-   }
+   "eval": "(function(){var b=document.querySelector('tbody tr:last-child td.table-data:nth-of-type(3) .ntb-chip__btn--danger');if(b)b.click()})()"
   },
   {
    "wait": 300
   },
   {
-   "setColor": {
-    "label": "Font color",
-    "hex": "#ffffff"
-   }
-  },
-  {
-   "click": {
-    "selector": ".ntb-panel .el-tabs__item",
-    "hasText": "General"
-   }
-  },
-  {
-   "wait": 200
-  },
-  {
-   "hover": "tbody tr:last-child td.table-data:nth-of-type(2) li:nth-child(2)"
-  },
-  {
-   "wait": 400
-  },
-  {
-   "scrollTop": true
-  },
-  {
-   "wait": 200
-  },
-  {
-   "shot": {
-    "name": "2.-List-Item-With-The-Copy",
-    "clip": "app",
-    "crop": "auto",
-    "highlights": [
-     "tbody tr:last-child td.table-data:nth-of-type(2) li:nth-child(2) .icon-styles .el-icon:first-child"
-    ]
-   }
-  },
-  {
-   "click": {
-    "selector": ".ntb-panel .el-tabs__item",
-    "hasText": "List"
-   }
-  },
-  {
-   "wait": 300
-  },
-  {
-   "click": ".ntb-panel .el-radio:has-text(\"Ordered list\")"
-  },
-  {
-   "wait": 400
-  },
-  {
-   "scrollTop": true
-  },
-  {
-   "wait": 200
-  },
-  {
-   "shot": {
-    "name": "3.-List-Sub-Tab-With-The-List",
-    "clip": "app",
-    "crop": "auto",
-    "highlights": [
-     ".ntb-panel div:has(> p:text-is(\"List type\"))"
-    ]
-   }
-  },
-  {
-   "click": ".ntb-crumbs__link:has-text(\"Table\")"
+   "click": "tbody tr:last-child td.table-data:nth-of-type(3)"
   },
   {
    "wait": 300
@@ -148,19 +75,136 @@
    "click": ".ntb-panel__tab:has-text(\"Elements\")"
   },
   {
-   "wait": 400
+   "wait": 200
   },
   {
-   "scrollTop": true
+   "click": {
+    "selector": ".ntb-pal__item",
+    "hasText": "List"
+   }
+  },
+  {
+   "wait": 700
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "(function(){var b=document.querySelector('tbody tr:last-child td.table-data:nth-of-type(2) .ntb-chip__btn--danger');if(b)b.click()})()"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": "tbody tr:last-child td.table-data:nth-of-type(2)"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Elements\")"
   },
   {
    "wait": 200
   },
   {
+   "click": {
+    "selector": ".ntb-pal__item",
+    "hasText": "List"
+   }
+  },
+  {
+   "wait": 700
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelector('.ntb-canvas').scrollTop=99999"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "document.querySelector('.ntb-panel__body').scrollTop=0"
+  },
+  {
+   "wait": 300
+  },
+  {
    "shot": {
     "name": "1.-List-Element-In-A-Drag-Drop",
-    "clip": "app",
-    "crop": "auto"
+    "clip": "app"
+   }
+  },
+  {
+   "hover": "tbody tr:last-child td.table-data:nth-of-type(2) li"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "shot": {
+    "name": "2.-List-Item-With-The-Copy",
+    "clip": {
+     "element": "tbody tr:last-child td.table-data:nth-of-type(2)",
+     "pad": 80
+    }
+   }
+  },
+  {
+   "hover": ".ntb-panel"
+  },
+  {
+   "css": ".ntb-body{grid-template-columns:minmax(0,1fr) 520px!important}"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "document.querySelector('.ntb-panel__body').scrollTop=0"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "(function(){var h=[...document.querySelectorAll('.ntb-option-section__title')].find(e=>e.textContent.trim()==\"Content\");if(h)h.scrollIntoView({block:'start'})})()"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "shot": {
+    "name": "4.-List-Items-Box",
+    "clip": {
+     "x": 920,
+     "y": 104,
+     "width": 520,
+     "height": 796
+    }
+   }
+  },
+  {
+   "eval": "(function(){var h=[...document.querySelectorAll('.ntb-option-section__title')].find(e=>e.textContent.trim()==\"List\");if(h)h.scrollIntoView({block:'start'})})()"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "shot": {
+    "name": "3.-List-Sub-Tab-With-The-List",
+    "clip": {
+     "x": 920,
+     "y": 104,
+     "width": 520,
+     "height": 796
+    }
    }
   }
  ]

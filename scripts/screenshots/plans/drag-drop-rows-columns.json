@@ -1,33 +1,173 @@
 {
   "doc": "docs/drag-drop-settings/drag-drop-rows-columns.md",
   "outDir": "public/images/drag-drop-settings/manage-cells-ninja-tables",
-  "viewport": { "width": 1440, "height": 900 },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
   "steps": [
-    { "viewport": { "width": 1440, "height": 1000 } },
-    { "admin": "/table_builder_edit_table/{{Website Pricing}}" },
-    { "wait": 2500 },
-    { "click": { "selector": ".ntb-addbar button", "hasText": "Add row" } },
-    { "wait": 600 },
-    { "shot": { "name": "1.-Add-Row-Menu-With-At", "clip": "app", "crop": {"height": 1700},
-        "highlights": [ { "selector": ".ntb-addbar button", "hasText": "Add row" } ] } },
-    { "eval": "document.body.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape',bubbles:true}))" },
-    { "click": ".ntb-handle-th:nth-child(2) .ntb-handle" },
-    { "wait": 600 },
-    { "shot": { "name": "2.-Column-Menu-With-Insert-Duplicate", "clip": "app", "crop": "auto", "highlights": [ { "selector": "li.el-dropdown-menu__item:visible", "hasText": "Insert column after" } ] } },
-    { "admin": "/" },
-    { "wait": 1500 },
-    { "admin": "/table_builder_edit_table/{{Website Pricing}}" },
-    { "wait": 2500 },
-    { "click": "tbody tr:nth-child(2) .ntb-handle-td .ntb-handle" },
-    { "wait": 600 },
-    { "shot": { "name": "3.-Row-Menu-With-Insert-Duplicate", "clip": "app", "crop": "auto", "highlights": [ { "selector": "li.el-dropdown-menu__item:visible", "hasText": "Insert row after" } ] } },
-    { "admin": "/" },
-    { "wait": 1500 },
-    { "admin": "/table_builder_edit_table/{{Website Pricing}}" },
-    { "wait": 2500 },
-    { "eval": "const r=document.querySelectorAll('.ntb-sheet tbody tr')[2].querySelectorAll('td.table-data'); r[0].dispatchEvent(new MouseEvent('click',{bubbles:true})); r[1].dispatchEvent(new MouseEvent('click',{bubbles:true,shiftKey:true}))" },
-    { "wait": 600 },
-    { "shot": { "name": "4.-Two-Selected-Cells-And-The-Enabled", "clip": "app", "crop": "auto",
-        "highlights": [ { "selector": ".ntb-toolbar button", "hasText": "Merge" } ] } }
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      }
+    },
+    {
+      "admin": "/table_builder_edit_table/{{Website Pricing}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": "[aria-label=\"Row Placement\"]"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "1.-Add-Row-Menu-With-At",
+        "clip": {
+          "x": 160,
+          "y": 32,
+          "width": 1280,
+          "height": 830
+        },
+        "highlights": [
+          ".el-dropdown-menu:visible"
+        ]
+      }
+    },
+    {
+      "eval": "document.body.click()"
+    },
+    {
+      "admin": "/"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "admin": "/table_builder_edit_table/{{Website Pricing}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": "[aria-label=\"Column Options B\"]"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "2.-Column-Menu-With-Insert-Duplicate",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          ".el-dropdown-menu:visible"
+        ]
+      }
+    },
+    {
+      "admin": "/"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "admin": "/table_builder_edit_table/{{Website Pricing}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": "[aria-label=\"Row Options 2\"]"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "3.-Row-Menu-With-Insert-Duplicate",
+        "clip": {
+          "x": 110,
+          "y": 32,
+          "width": 1330,
+          "height": 720
+        },
+        "highlights": [
+          ".el-dropdown-menu:visible"
+        ]
+      }
+    },
+    {
+      "admin": "/"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "admin": "/table_builder_edit_table/{{Website Pricing}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "eval": "const r=document.querySelectorAll('.ntb-sheet tbody tr')[3].querySelectorAll('td.table-data'); r[0].dispatchEvent(new MouseEvent('click',{bubbles:true})); r[1].dispatchEvent(new MouseEvent('click',{bubbles:true,shiftKey:true}))"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "4.-Two-Selected-Cells-And-The-Enabled",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          {
+            "selector": ".ntb-toolbar button",
+            "hasText": "Merge"
+          }
+        ]
+      }
+    },
+    {
+      "admin": "/"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "admin": "/table_builder_edit_table/{{Website Pricing}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": {
+        "selector": ".ntb-toolbar button",
+        "hasText": "Merge"
+      }
+    },
+    {
+      "wait": 500
+    },
+    {
+      "eval": "const r=document.querySelectorAll('.ntb-sheet tbody tr')[3].querySelectorAll('td.table-data'); r.forEach(c=>c.dispatchEvent(new MouseEvent('click',{bubbles:true})))"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "5.-Merge-Mode-In-The-Canvas-Toolbar",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          ".ntb-toolbar"
+        ]
+      }
+    }
   ]
 }
