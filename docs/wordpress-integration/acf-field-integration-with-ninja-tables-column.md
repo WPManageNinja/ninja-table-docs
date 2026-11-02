@@ -49,7 +49,7 @@ Open a post. The ACF field appears below the content. Enter a value and click **
 1. Open your WP Posts or WooCommerce table and go to the **Table Rows** tab.
 2. On the banner, click **Edit query** (WP Posts tables) or **Source settings** (WooCommerce tables), then open **Add new column**.
 3. Enter a **Column name** and a **Column key**.
-4. Under **Dynamic post data settings** (or **Dynamic column data settings**), set **Field type** to **Advanced Custom Fields (ACF)**.
+4. Under **Dynamic post data** (or **Dynamic column data**), set **Field type** to **Advanced Custom Fields (ACF)**.
 5. In **Field value**, type the ACF field's name exactly as it appears in the **Name** column of your field group.
 6. Click **Add column**.
 
