@@ -14,7 +14,7 @@ A **Default table** is a table whose rows you type, paste or import yourself. Th
 
 3. In the panel that opens, enter a **Table name**. It's required.
 4. Optionally add a **Description**. The editor lets you add bold and italic text, lists, links and media.
-5. Check the engine line. **FooTable** is the usual choice. If the table will hold thousands of rows, click **Change** and pick **DataTables**. The engine of a Default table can't be changed later; see [choose an engine](/choose-table-engine).
+5. Check the engine line. It is set to **DataTables** (recommended), which suits tables of any size. Click **Change** and pick **FooTable** if you want the lighter classic engine or the Semantic UI / Bootstrap style library. The engine of a Default table can't be changed later; see [choose an engine](/choose-table-engine).
 6. Click **Create table**.
 
 ![Default table panel with Table name, Description and the engine line](/images/creating-tables/create-first-table/1.-Default-Table-Panel-With-Table-Name.webp)
@@ -38,6 +38,7 @@ A new table has no columns, so the grid shows **Add column**.
 3. Click **Add column**.
 
 ![Column dialog Basic tab with Column name, Column key, Type and Responsive visibility](/images/creating-tables/create-first-table/3.-Column-Dialog-Basic-Tab-With-Column.webp)
+
 Repeat for each column. To edit a column later, open the menu on its header in Table Rows and click **Column settings**. The same menu lets you add a column to the left or right, sort the rows, or delete the column. Drag a column header to move the column.
 
 ## Add rows
@@ -65,7 +66,7 @@ Each row has its own actions at the end of the row:
 
 - **Edit row** opens the row in the side panel. Use **Previous row** and **Next row** to move through the table without closing it.
 - **Row actions** › **Insert row below** (Pro), **Duplicate row** or **Delete row**.
-- **Row settings** sets a background and text color (Pro) for the row. Cells have their own **Cell settings**. See [Row and cell colors](/tables-row-color).
+- **Row settings** (palette icon) changes the row's **Created date** and sets its background and text colors (Pro). Cells have their own **Cell settings**. See [Row and cell colors](/tables-row-color).
 
 To delete several rows at once, tick them and click **Delete** in the toolbar.
 
@@ -77,7 +78,6 @@ The column dialog has three more tabs:
 
 - **Advanced**: text alignment, **Click to copy**, and (Pro) column width, extra CSS classes, background and text colors, **Sortable**, **Searchable** and HTML header content. See [Advanced column settings](/advanced-settings).
 - **Conditions** (Pro): style a cell, row or column when its value matches a rule, such as "greater than 100". See [Conditional formatting](/conditional-formatting).
-
 - **Transform** (Pro): change how a value is shown, for example turning plain text into a link, or calculating it with an Excel formula. See [Transform value](/transform-value).
 
 Click **Save column** after changing a column.
@@ -86,9 +86,9 @@ Click **Save column** after changing a column.
 
 Click the **Appearance** tab. On the left is a live preview of your table, which you can switch between Desktop, Tablet and Mobile. The side panel has three tabs.
 
+- **Styling**: **Style** (the style library, Semantic UI, Bootstrap 4 or Bootstrap 3 on FooTable, plus rows, borders and layout switches), **Typography** (font family and size) and **Title & Header** (show the table title, description and header row).
+- **Features**: **Search**, **Sorting** and **Pagination** (what visitors can search, the default order and how many rows show per page), **Mobile** (responsive breakpoint and stackable table), **Sticky Header & Column** (Pro), **Export & Print** (Pro) and **Row Details** (the row details popup).
 - **Colors**: pick a preset color scheme, or set your own colors (Pro).
-- **Style**: **Title & Header** (show the table title, description and header row), **Typography** (font family and size) and **Rows & Borders** (the style library, Semantic UI, Bootstrap 4 or Bootstrap 3 on FooTable, plus stripes, hover and borders).
-- **Features**: **Search**, **Sorting** and **Pagination** (what visitors can search, the default order and how many rows show per page), **Sticky Header & Column** (Pro), **Responsive Breakpoint** and **Stackable Table** (how the table behaves on small screens), **Export & Print** (Pro) and **Others** (the row details popup).
 
 ![Appearance tab with the live preview and the Colors, Styling and Features tabs](/images/creating-tables/create-first-table/6.-Appearance-Tab-With-The-Live-Preview.webp)
 
