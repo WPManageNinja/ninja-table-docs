@@ -14,10 +14,14 @@ export default {
     app.component('Feedback', Feedback)
     app.component('TreeStrip', TreeStrip)
 
-    // Closed <details> don't print: open every doc-tree dropdown before printing.
+    // Closed <details> don't print: open every doc-tree row and FAQ item before printing.
+    // Rows share a `name` (exclusive accordion), so drop it first or each open closes the previous one.
     if (typeof window !== 'undefined') {
       window.addEventListener('beforeprint', () => {
-        document.querySelectorAll('details.dt-more, details.dt-faq-item').forEach((d) => ((d as HTMLDetailsElement).open = true))
+        document.querySelectorAll('details.dt-row, details.dt-faq-item').forEach((d) => {
+          d.removeAttribute('name')
+          ;(d as HTMLDetailsElement).open = true
+        })
       })
     }
 

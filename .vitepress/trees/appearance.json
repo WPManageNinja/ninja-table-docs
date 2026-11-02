@@ -5,25 +5,91 @@
   "sidebarOverviewText": "Appearance overview",
   "hero": {
     "eyebrow": "Appearance tab",
-    "title": "Design how your table looks and behaves",
-    "lead": "A live preview sits on the left and the settings panel on the right, so you see every change before you save it. Follow the tree below, or jump straight to a task.",
+    "title": "Make your table look the way you want",
+    "lead": "Colors, fonts, rows, search, pagination and mobile layout, all in one panel with a live preview. Find a setting below, read what it changes, then open its full guide.",
     "actions": [
-      { "text": "Start with colors", "link": "/table-color-settings", "primary": true },
-      { "text": "Set a default design", "link": "/use-design-as-default" }
+      {
+        "text": "Start with colors",
+        "link": "/table-color-settings",
+        "primary": true
+      },
+      {
+        "text": "Set a default design",
+        "link": "/use-design-as-default"
+      }
+    ],
+    "path": [
+      "Ninja Tables",
+      "Tables",
+      "Open a table",
+      "Appearance"
     ]
   },
   "tasks": [
-    { "text": "Match my brand", "sub": "Colors, then fonts", "to": "presets" },
-    { "text": "Add stripes or remove borders", "sub": "Rows & Borders", "to": "rows-borders" },
-    { "text": "Let visitors find a row", "sub": "Search box", "to": "search" },
-    { "text": "Split a long table into pages", "sub": "Pagination", "to": "pagination" },
-    { "text": "Keep headings in view", "sub": "Sticky header & first column", "to": "sticky" },
-    { "text": "Make it work on phones", "sub": "Responsive & stackable", "to": "responsive" },
-    { "text": "Let visitors download data", "sub": "Export & print buttons", "to": "export-print" },
-    { "text": "Reuse one design everywhere", "sub": "Default design", "to": "default-design" }
+    {
+      "text": "Match my brand",
+      "sub": "Colors, then fonts",
+      "to": "presets"
+    },
+    {
+      "text": "Add stripes or remove borders",
+      "sub": "Rows & Borders",
+      "to": "rows-borders"
+    },
+    {
+      "text": "Let visitors find a row",
+      "sub": "Search box",
+      "to": "search"
+    },
+    {
+      "text": "Split a long table into pages",
+      "sub": "Pagination",
+      "to": "pagination"
+    },
+    {
+      "text": "Keep headings in view",
+      "sub": "Sticky header & first column",
+      "to": "sticky"
+    },
+    {
+      "text": "Make it work on phones",
+      "sub": "Responsive & stackable",
+      "to": "responsive"
+    },
+    {
+      "text": "Let visitors download data",
+      "sub": "Export & print buttons",
+      "to": "export-print"
+    },
+    {
+      "text": "Reuse one design everywhere",
+      "sub": "Default design",
+      "to": "default-design"
+    }
   ],
-  "treeIntro": "The branches match the three tabs of the settings panel, in the order most people work. Open any setting to see what it changes on your table.",
   "branches": [
+    {
+      "id": "overview",
+      "label": "Appearance tab overview",
+      "mapOnly": true,
+      "where": "Appearance tab",
+      "goal": "The live preview and the panel around it.",
+      "nodes": [
+        {
+          "id": "live-preview",
+          "label": "Live preview options",
+          "link": "/table-style-settings#the-live-preview",
+          "changes": "The preview shows the table the way visitors will see it.",
+          "visitors": "Nothing: the preview is for you only.",
+          "facts": [
+            "Preview Width: Desktop, Tablet and Mobile",
+            "Hide Panel: switch to a full-width preview",
+            "Unsaved changes show in the preview until you save"
+          ],
+          "ux": "See every change before you save it."
+        }
+      ]
+    },
     {
       "id": "colors",
       "label": "Colors",
@@ -38,7 +104,12 @@
           "pro": "partial",
           "proNote": "Free: Default only",
           "changes": "Recolors the search bar, header, rows, hover state and footer together with one of 14 ready-made schemes. The **Default** scheme adds no colors, so the table follows your theme.",
-          "visitors": "The whole table in one consistent palette, with no per-color work from you."
+          "visitors": "The whole table in one consistent palette, with no per-color work from you.",
+          "facts": [
+            "Default scheme follows your theme and style library",
+            "13 more schemes (Pro): White, Red, Orange, Yellow, Olive, Green, Teal, Blue, Violet, Purple, Pink, Grey, Black"
+          ],
+          "ux": "Recolor the whole table in one click."
         },
         {
           "id": "custom-colors",
@@ -46,14 +117,22 @@
           "link": "/table-color-settings",
           "pro": true,
           "changes": "Lets you set the background, text and border of the search bar, header, body rows and footer one by one. You can also color odd and even rows differently.",
-          "visitors": "Exactly your brand colors, including a different color for rows under the pointer."
+          "visitors": "Exactly your brand colors, including a different color for rows under the pointer.",
+          "facts": [
+            "Search Bar Colors: Background, Icon, Border",
+            "Table Header Colors: Background, Text, Border",
+            "Table Body Colors: Background, Text, Border, plus a Hover state",
+            "Alternate Row Colors: separate Odd and Even rows",
+            "Pagination Colors: Background, Active Page, Border"
+          ],
+          "ux": "Match your brand to the exact color."
         }
       ]
     },
     {
       "id": "style",
-      "label": "Style",
-      "where": "Appearance › Style tab",
+      "label": "Styling",
+      "where": "Appearance › Styling tab",
       "goal": "Decide what sits above the table, which font it uses and how rows and borders look.",
       "nodes": [
         {
@@ -62,7 +141,14 @@
           "link": "/table-title-description-settings",
           "inGroup": false,
           "changes": "Switches the table title, the description and the header row on or off above and inside the table.",
-          "visitors": "A clean table with only the heading text you want shown."
+          "visitors": "A clean table with only the heading text you want shown.",
+          "facts": [
+            "Show Table Title: off for new tables",
+            "Show Table Description: off for new tables",
+            "Show Header Row: on by default",
+            "Text is edited in Table details"
+          ],
+          "ux": "Choose what sits above and inside the table."
         },
         {
           "id": "typography",
@@ -70,14 +156,26 @@
           "link": "/table-font-settings",
           "sidebar": "Fonts",
           "changes": "Changes the font family and the font size of the table text. The default, **Inherit From Theme**, copies your site font.",
-          "visitors": "Text that matches your site, or stands out from it on purpose."
+          "visitors": "Text that matches your site, or stands out from it on purpose.",
+          "facts": [
+            "Font Family: Inherit From Theme or a generic family, all free",
+            "Font Size: slider 1 to 50 px, default 14"
+          ],
+          "ux": "Make the table text match your site."
         },
         {
           "id": "rows-borders",
           "label": "Rows & Borders",
           "link": "/table-rows-borders",
           "changes": "Turns row stripes, hover highlight, borders and row spacing on or off. The options depend on the table engine and style library.",
-          "visitors": "Rows that are easier to scan: zebra stripes, a highlighted row under the pointer, tighter or roomier cells."
+          "visitors": "Rows that are easier to scan: zebra stripes, a highlighted row under the pointer, tighter or roomier cells.",
+          "facts": [
+            "Groups: Rows, Borders, Layout",
+            "FooTable: Semantic UI, Bootstrap 4 or Bootstrap 3 library",
+            "Semantic UI only: Single Line Cells, Fixed Layout",
+            "DataTables: adds Hide All Borders, no library choice"
+          ],
+          "ux": "Stripes, hover and borders for rows that are easy to scan."
         }
       ]
     },
@@ -94,7 +192,15 @@
           "sidebar": "Search box",
           "group": "Find and browse",
           "changes": "Adds a search box above the table. Visitors type a word and only matching rows stay visible. You control its wording, and on Pro its position and colors.",
-          "visitors": "A search box that filters rows as they type, and your own message when nothing matches."
+          "visitors": "A search box that filters rows as they type, and your own message when nothing matches.",
+          "facts": [
+            "Turn on or off (on by default)",
+            "Texts: Placeholder, Empty Result, Dropdown Heading",
+            "Look (Pro): Position, Full Width, Colors",
+            "Leave a column out: turn off Searchable in column settings (Pro)"
+          ],
+          "ux": "Help visitors find the right row in seconds.",
+          "state": "on"
         },
         {
           "id": "sorting",
@@ -102,7 +208,15 @@
           "link": "/sorting",
           "group": "Find and browse",
           "changes": "Lets visitors click a column heading to sort by it. **Default Order** sets the order rows appear in before anyone clicks.",
-          "visitors": "Clickable headings, and a table that opens already ordered the way you chose."
+          "visitors": "Clickable headings, and a table that opens already ordered the way you chose.",
+          "facts": [
+            "Sorting: on / off switch",
+            "Default Order: Created Date, By Column, Manual (Pro)",
+            "Order: Oldest First, Newest First",
+            "By Column: Column, Direction (A → Z, Z → A)"
+          ],
+          "ux": "Let visitors put rows in the order they need.",
+          "state": "on"
         },
         {
           "id": "pagination",
@@ -110,7 +224,17 @@
           "link": "/pagination",
           "group": "Find and browse",
           "changes": "Splits a long table into pages instead of one long scroll. You set the rows per page and where the page numbers sit.",
-          "visitors": "Page numbers under the table, with a limited number of rows at a time."
+          "visitors": "Page numbers under the table, with a limited number of rows at a time.",
+          "facts": [
+            "Pagination: on / off switch",
+            "Rows Per Page: 20 by default",
+            "Let Visitors Change Page Size: Pro",
+            "Scroll To The Table Top On Page Change: Pro",
+            "Position: Left, Center, Right",
+            "Colors: Pagination Colors in the Colors tab"
+          ],
+          "ux": "Break a long table into easy pages.",
+          "state": "on"
         },
         {
           "id": "sticky",
@@ -120,7 +244,15 @@
           "pro": true,
           "group": "Keep it readable",
           "changes": "Pins the header row while visitors scroll down, and pins the first column while they scroll sideways.",
-          "visitors": "Headings and row labels that never scroll out of view."
+          "visitors": "Headings and row labels that never scroll out of view.",
+          "facts": [
+            "Sticky Header: header pinned while the table scrolls",
+            "Top Offset: saved, not applied by the current engines",
+            "Turn Off On Mobile: screens 767px and narrower",
+            "Sticky First Column: stays put when scrolling sideways"
+          ],
+          "ux": "Keep headings in view while visitors scroll.",
+          "state": "off"
         },
         {
           "id": "responsive",
@@ -129,7 +261,29 @@
           "sidebar": "Responsive & stackable table",
           "group": "Keep it readable",
           "changes": "Decides what a wide table does on a small screen. Columns can fold into a **+** drawer, rows can turn into cards, and a click can open the details of a row in a popup.",
-          "visitors": "On phones, a table that fits the screen instead of forcing sideways scrolling."
+          "visitors": "On phones, a table that fits the screen instead of forcing sideways scrolling.",
+          "facts": [
+            "Responsive drawer: Closed, First Row (Pro), All Rows (Pro)",
+            "Toggle Position: First Column, Last Column",
+            "Stack Rows As Cards: you pick the devices",
+            "Card Look: Hide Column Headings, Hide Internal Borders"
+          ],
+          "ux": "Make wide tables comfortable on phones."
+        },
+        {
+          "id": "row-details",
+          "label": "Row Details Popup",
+          "link": "/row-details-popup",
+          "group": "Keep it readable",
+          "changes": "Makes every row clickable. A click opens a pop-up with all of that row's columns as label and value pairs.",
+          "visitors": "A pop-up with the whole row, so they don't scroll sideways to read it. Esc, the × button or a click outside closes it.",
+          "facts": [
+            "Row Details Popup: on or off, off by default",
+            "Skips empty and hidden columns",
+            "Opens with a click, Enter or Space"
+          ],
+          "ux": "Open a row's full details in a pop-up.",
+          "state": "off"
         },
         {
           "id": "export-print",
@@ -139,7 +293,15 @@
           "pro": true,
           "group": "Take the data",
           "changes": "Adds **CSV**, **Excel** and **Print** buttons to the table on your site. You choose which buttons, their labels and colors, and where they sit.",
-          "visitors": "Buttons that download or print the rows they are currently viewing, so a search they ran is kept."
+          "visitors": "Buttons that download or print the rows they are currently viewing, so a search they ran is kept.",
+          "facts": [
+            "Buttons: CSV, Excel (when Pro supports it), Print",
+            "Each button: Button Text, Background, Text",
+            "Position: After Search Box, Top Of The Table, Bottom Of The Table",
+            "Alignment: Left, Center, Right"
+          ],
+          "ux": "Let visitors download or print what they see.",
+          "state": "off"
         }
       ]
     },
@@ -155,7 +317,12 @@
           "link": "/use-design-as-default",
           "sidebar": "Default design for new tables",
           "changes": "Sets the starting color, library, font, title, search, sorting and pagination of tables you create from now on. Tables you already have are never changed.",
-          "visitors": "New tables that already look on-brand the moment they are created."
+          "visitors": "New tables that already look on-brand the moment they are created.",
+          "facts": [
+            "Set in the gear icon › Settings › Global appearance",
+            "Affects new tables only; existing tables stay unchanged"
+          ],
+          "ux": "Start every new table already on-brand."
         },
         {
           "id": "custom-css",
@@ -163,7 +330,34 @@
           "link": "/table-styling-css-selector",
           "inGroup": false,
           "changes": "Adds your own styles for anything the panel does not cover.",
-          "visitors": "A table styled beyond the built-in options."
+          "visitors": "A table styled beyond the built-in options.",
+          "facts": [
+            "Add your own CSS or JS for anything the panel does not cover"
+          ],
+          "ux": "Style anything the panel can't reach."
+        }
+      ]
+    },
+    {
+      "id": "row-cell",
+      "label": "Row & cell colors",
+      "mapOnly": true,
+      "where": "Table Rows tab",
+      "goal": "Color one row or one cell instead of the whole table.",
+      "nodes": [
+        {
+          "id": "row-colors",
+          "label": "Row & cell colors",
+          "link": "/tables-row-color",
+          "pro": true,
+          "inGroup": false,
+          "changes": "Colors a single row or cell.",
+          "visitors": "A highlighted row or cell.",
+          "facts": [
+            "Row settings: color one row's background and text",
+            "Cell settings: color one cell; it wins over the row color"
+          ],
+          "ux": "Highlight one row or cell instead of the whole table."
         }
       ]
     }

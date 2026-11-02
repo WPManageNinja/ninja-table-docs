@@ -112,17 +112,21 @@ pages are generated from one file: `.vitepress/trees/appearance.json` (types in
 `.vitepress/trees/types.ts`, registry in `.vitepress/trees/index.ts`). Do not hand-edit the
 Appearance group in `config.mts`, and do not hand-write HTML on the overview page.
 
-- **Overview page** (`docs/styling-design/table-style-settings.md`) uses three lines:
-  `::: doc-tree appearance hero`, `... tasks`, `... tree` (each on its own line, blank line between).
+- **Overview page** (`docs/styling-design/table-style-settings.md`) uses four lines, each with a real `##` heading and a short UX-writing intro above it in the markdown:
+  `::: doc-tree appearance hero`, `... tasks`, `... panel`, `... map` (blank line between).
+  `panel` is a replica of the plugin's settings panel (a tab per branch, an exclusive accordion row per setting);
+  `map` is the mind map (tab › setting › leaf **facts**). Keep the goal tiles within the first screen.
   `.vitepress/theme/plugin-doc-tree.ts` renders them to static HTML (searchable, printable, no JS).
 - **Child pages** get a `TreeStrip` (`theme/components/TreeStrip.vue`, `#doc-before` slot) automatically
   when their slug is a node `link` in a tree. Styles: `theme/doc-tree.css` (`dt-*` classes, `.nt-pro` badge).
-- **Add/rename/move an Appearance page:** edit the tree JSON (label, `link`, `sidebar` text, `pro`,
-  `changes`, `visitors`). Set `"inGroup": false` for a page that lives in another sidebar group.
-  The "what changes / visitors see" copy lives ONLY in the tree; child pages keep their own prose.
+- **Add/rename/move an Appearance page:** edit the tree JSON (label, `link`, `sidebar` text, `pro`, `state`,
+  `ux`, `changes`, `visitors`, `facts`). `ux` is one benefit-led line (about 60 characters, no trailing detail). Set `"inGroup": false` for a page that lives in another sidebar group.
+  The `ux` / "what changes / visitors see" copy and the mind-map `facts` live ONLY in the tree; child pages keep their own prose.
+  A branch with `"mapOnly": true` appears only in the mind map (not in the journey, sidebar or strip).
+  Keep `facts` short (`Name: options`) and true to the page; the check script does not verify their wording.
 - **Gate:** `node scripts/qa/check-trees.mjs` must print `✓` (links exist, Pro flags match the pages, tasks resolve).
 - **Another group:** add `.vitepress/trees/<id>.json`, register it in `trees/index.ts`, swap that group in
-  `config.mts` for `treeSidebarGroup(treeById('<id>')!)`, and put the three `::: doc-tree <id> …` lines on its landing page.
+  `config.mts` for `treeSidebarGroup(treeById('<id>')!)`, and put the `::: doc-tree <id> …` lines on its landing page.
   Use trees only where a real plugin screen with tabs exists; keep linear task groups as numbered paths.
 - Raw HTML in markdown must never contain a blank line (it ends the HTML block).
 

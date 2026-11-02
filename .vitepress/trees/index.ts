@@ -12,7 +12,7 @@ export function treeById(id: string): DocTree | undefined {
 export function treeSidebarGroup(tree: DocTree) {
   const seen = new Set<string>([tree.overview])
   const items = [{ text: tree.sidebarOverviewText, link: tree.overview }]
-  for (const node of tree.branches.flatMap((b) => b.nodes)) {
+  for (const node of tree.branches.filter((b) => !b.mapOnly).flatMap((b) => b.nodes)) {
     if (node.inGroup === false || seen.has(node.link)) continue
     seen.add(node.link)
     const label = (node.sidebar ?? node.label).replace(/&/g, '&amp;')
@@ -24,6 +24,7 @@ export function treeSidebarGroup(tree: DocTree) {
 
 export function findNodeByLink(tree: DocTree, path: string): { branch: DocTree['branches'][number]; node: TreeNode } | undefined {
   for (const branch of tree.branches) {
+    if (branch.mapOnly) continue
     const node = branch.nodes.find((n) => n.link === path)
     if (node) return { branch, node }
   }
