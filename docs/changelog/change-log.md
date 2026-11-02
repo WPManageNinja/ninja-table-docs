@@ -68,7 +68,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 
 :::
 
-## Ninja Tables v5.2.15
+## Ninja Tables v5.2.14
 
 *Released on August 21, 2026*
 
