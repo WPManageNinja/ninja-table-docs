@@ -16,12 +16,12 @@ To add one, click a cell and click **Icon** in the **Elements** tab. If no singl
 Under **Content & style**:
 
 - **Color** (default `#000000`): the icon's color. Only shown when the icon is an SVG; an uploaded PNG or JPG keeps its own colors.
-- **Icon size** (10–150): 10 uses the table's global font size.
+- **Icon Size** (10–150): 10 uses the table's global font size.
 - **Alignment**: **Left**, **Center** (default) or **Right**.
-- **Icon**: pick one from the library with the search box, or click **Upload your own** to choose an image from the media library. The default icon is "ninja-table".
+- **Icon**: pick one from the library with **Search Icons**, or click **Upload Your Own** to choose an image from the media library. The default icon is "ninja-table".
 
 ![Settings tab showing the Icon element options and icon picker](/images/drag-drop-elements/icon-element/2.-Settings-Tab-Showing-The-Icon-Element.webp)
 
-Below the options, **Spacing** sets the margin and padding around the icon; see [Element Spacing](/spacing).
+Under **Content & style**, the **Spacing** section sets the margin and padding around the icon; see [Element Spacing](/spacing).
 
 Click **Save** to keep your changes.
