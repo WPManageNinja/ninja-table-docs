@@ -11,10 +11,10 @@ A **dynamic column** is a column that Ninja Tables fills from each row's post or
 
 | Table | Path | Settings block |
 |---|---|---|
-| WP Posts/CPTs (Pro) | **Table Rows** › **Edit query** › **Add new column** | **Dynamic post data settings** |
-| WooCommerce products (Pro) | **Table Rows** › **Source settings** › **Add new column** | **Dynamic column data settings** |
-| WooCommerce reviews (Pro) | **Table Rows** › **Source settings** › **Add new column** | **Dynamic column data settings** |
-| FluentCart products (Free) | **Table Rows** › **Source settings** › **Add new column** | **Dynamic column data settings** |
+| WP Posts/CPTs (Pro) | **Table Rows** › **Edit query** › **Add new column** | **Dynamic post data** |
+| WooCommerce products (Pro) | **Table Rows** › **Source settings** › **Add new column** | **Dynamic column data** |
+| WooCommerce reviews (Pro) | **Table Rows** › **Source settings** › **Add new column** | **Dynamic column data** |
+| FluentCart products (Free) | **Table Rows** › **Source settings** › **Add new column** | **Dynamic column data** |
 
 Every dynamic column has the usual column fields (**Column name**, **Column key**, **Type**, **Responsive visibility**) plus two settings:
 
@@ -89,8 +89,8 @@ See [Shortcode / computed value or HTML](/shortcode-computed-value-or-html-in-wp
 Shows the post's or product's featured image.
 
 - **Field value**: the image size. WordPress offers thumbnail, medium, medium_large, large, 1536x1536 and 2048x2048. Your theme and plugins (such as WooCommerce) can add more.
-- **WP Posts tables**: **Link** › **Link to post permalink**, and **Open link to new tab**.
-- **WooCommerce and FluentCart tables**: choose **Make image as lightbox**, **Link to product page** or **None**, and **Open link in new tab**.
+- **WP Posts tables**: turn on **Link to post permalink**, then **Open link in new tab** if you want a new tab.
+- **WooCommerce and FluentCart tables**: under **When clicked**, choose **Lightbox**, **Product page** or **Nothing**. **Open link in new tab** appears for **Product page**.
 
 See [Featured image](/featured-image).
 
@@ -129,15 +129,17 @@ Options:
 
 - **Link to taxonomy**: links each term to its archive page.
 - **Taxonomy separator**: the text between terms when a product has several.
-- **Permalink action**: **Make taxonomies as table filter**. Clicking a term then filters the table to that term instead of opening its page.
-- **Open link to new tab**.
+- **Make taxonomies as table filter**: clicking a term filters the table to that term instead of opening its page. It appears once **Link to taxonomy** is on.
+- **Open link in new tab**.
+
+On FluentCart tables, these options appear for the **Product Categories** taxonomy.
 
 ## Options on query columns (WP Posts)
 
 The columns you pick when you create a WP Posts table also have link options, set from the column header › **Column settings**:
 
-- **Title**: **Link to post permalink** and **Open link to new tab**.
-- **Author**: **Link to author permalink**, and a **Permalink action** that makes the author a table filter.
-- **Taxonomies**: **Link to taxonomy**, **Taxonomy separator**, a **Permalink action** that makes the terms table filters, and **Open link to new tab**.
+- **Title**: **Link to post permalink** and **Open link in new tab**.
+- **Author**: **Link to author permalink**, and **Make author a table filter**, which appears once the link is on.
+- **Taxonomies**: **Link to taxonomy**, **Taxonomy separator**, **Make taxonomies as table filter**, and **Open link in new tab**.
 
 See [WP Posts table](/create-wp-posts-table).
