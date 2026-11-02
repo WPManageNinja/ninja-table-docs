@@ -14,7 +14,7 @@ In this example, a sales table has three **Numeric value** columns, **Q1**, **Q2
 A fourth column, **Total**, shows the sum of the three quarters in each row. This uses [Transform value](/transform-value) with an Excel formula.
 
 1. Go to **Ninja Tables** › **Tables** › your table › **Table Rows**. Click the gear icon on the **Total** column and choose **Column settings**.
-2. Open the **Transform** tab and turn on **Excel formula support**. This switch applies to every column in the table and saves immediately.
+2. Open the **Transform** tab and turn on **Excel formula support** (marked experimental). This switch applies to every column in the table and saves immediately.
 3. In the Transform value box, write a formula that starts with `=` and has the reference shortcode of each column. Click a column in the **Reference values** list to insert its shortcode. The final formula looks like this:
 
 ```
@@ -36,9 +36,9 @@ Other functions work the same way, such as `AVERAGE`, `ROUND` and `IF`. Use `NUM
 Column totals use a small script in the table's **Custom JS**, a Pro feature. It adds a total row at the bottom of the table.
 
 1. Copy the JavaScript from this [GitHub gist](https://gist.github.com/reachkamrul/11e6e60d4aa113abe81586367cc27b77).
-2. Go to **Ninja Tables** › **Tables** › your table › **Custom CSS/JS** and open the Custom JS editor. Paste the code.
+2. Go to **Ninja Tables** › **Tables** › your table › **Custom CSS/JS** and switch to **JavaScript**. Paste the code.
 3. Near the top of the code, in the line `var myClasses= "..."`, enter the **Column key** of the column you want to total. To total several columns, separate their keys with commas. You can find a column's key in **Table Rows** › column header gear › **Column settings** › **Basic**.
-4. Click **Save Custom JS**.
+4. Click **Save** at the top right.
 
 ![Custom JS editor with the column total script](/images/table-management/row-column-data-calculation/3.-Custom-JS-Editor-With-The-Column.webp)
 
