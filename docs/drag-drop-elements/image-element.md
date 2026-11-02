@@ -15,17 +15,17 @@ To add one, click a cell and click **Image** in the **Elements** tab. If no sing
 
 Under **Content & style**:
 
-- **Replace image**: opens the media library ("Choose Image") so you can pick your own picture.
+- **Replace Image**: opens the media library so you can pick your own picture. When the element has no image yet, this button reads **Choose From Media Library**.
 - **Alignment**: **Left**, **Center** (default) or **Right**.
-- **Image size** (10–100, default 50): the width of the image as a percentage of the cell.
-- **Image shape**: **Square** or **Round** (a circle).
-- **Image alternative text** (default "Demo Image"): describes the image for screen readers and search engines. Change it to describe your picture.
-- **Image link**: make the image clickable. Empty by default.
-- **Open in a new tab**: off by default, unlike the Button element.
-- **Link rel attributes**: tick `sponsored`, `nofollow`, `noreferrer` or `noopener`.
+- **Image Size (%)** (10–100, default 50): the width of the image as a percentage of the cell.
+- **Image Shape**: **Square** or **Round** (a circle).
+- **Image Alternative Text** (default "Demo Image"): describes the image for screen readers and search engines. Change it to describe your picture.
+- **Image Link**: make the image clickable. Empty by default.
+- **Open In New Tab**: off by default, unlike the Button element.
+- **Link Rel Attributes**: tick `sponsored`, `nofollow`, `noreferrer` or `noopener`.
 
 ![Settings tab showing the Image element options](/images/drag-drop-elements/image-element/2.-Settings-Tab-Showing-The-Image-Element.webp)
 
-Below the options, **Spacing** sets the margin and padding around the image; see [Element Spacing](/spacing).
+Under **Content & style**, the **Spacing** section sets the margin and padding around the image; see [Element Spacing](/spacing).
 
 Click **Save** to keep your changes.
