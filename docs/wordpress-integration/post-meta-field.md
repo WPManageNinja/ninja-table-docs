@@ -43,7 +43,7 @@ Plugins that store complex values (repeaters, galleries, relations) save them in
 1. Open your table and go to the **Table Rows** tab.
 2. On the banner, click **Edit query** (WP Posts tables) or **Source settings** (WooCommerce and FluentCart tables), then open **Add new column**.
 3. Enter a **Column name** and a **Column key**.
-4. Under **Dynamic post data settings** (or **Dynamic column data settings**), set **Field type** to **Post Meta**.
+4. Under **Dynamic post data** (or **Dynamic column data**), set **Field type** to **Post Meta**.
 5. In **Field value**, type the meta key, for example `Ninja-Post`.
 6. Click **Add column**.
 

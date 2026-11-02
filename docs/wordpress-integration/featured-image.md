@@ -12,7 +12,7 @@ The **Featured Image** field type shows each post's or product's featured image 
 1. Open your table and go to the **Table Rows** tab.
 2. On the banner, click **Edit query** (WP Posts tables) or **Source settings** (WooCommerce and FluentCart tables), then open **Add new column**.
 3. Enter a **Column name** (for example "Image") and a **Column key**.
-4. Under **Dynamic post data settings** (or **Dynamic column data settings**), set **Field type** to **Featured Image**.
+4. Under **Dynamic post data** (or **Dynamic column data**), set **Field type** to **Featured Image**.
 5. In **Field value**, choose the image size (see below).
 6. Choose the link options (see below).
 7. Click **Add column**.
@@ -27,8 +27,8 @@ The **Field value** list shows the image sizes on your site. WordPress includes 
 
 The options depend on the table:
 
-- **WP Posts tables:** tick **Link** › **Link to post permalink** to make the image open the post. Tick **Open link to new tab** to open it in a new tab (this appears once **Link** is ticked).
-- **WooCommerce and FluentCart tables:** choose **Make image as lightbox** (the image opens larger on top of the page), **Link to product page** or **None**. Tick **Open link in new tab** if you link to the product page.
+- **WP Posts tables:** turn on **Link to post permalink** so the image opens the post. Then turn on **Open link in new tab** if you want a new tab (it appears once the link is on).
+- **WooCommerce and FluentCart tables:** under **When clicked**, choose **Lightbox** (the image opens larger on top of the page), **Product page** or **Nothing**. **Open link in new tab** appears for **Product page**.
 
 ## Check the result
 

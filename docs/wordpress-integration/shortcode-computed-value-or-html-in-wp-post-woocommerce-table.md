@@ -12,7 +12,7 @@ The **Shortcode / Computed Value or HTML** field type builds each cell from a te
 1. Open your table and go to the **Table Rows** tab. If you don't have a table yet, create one from **Create Table** › **WP Posts/CPTs** (or **WooCommerce products**).
 2. On the banner, click **Edit query** (WP Posts tables) or **Source settings** (WooCommerce and FluentCart tables), then open **Add new column**.
 3. Enter a **Column name**, such as "Buy Now", and a **Column key**.
-4. Under **Dynamic post data settings** (or **Dynamic column data settings**), set **Field type** to **Shortcode / Computed Value or HTML**.
+4. Under **Dynamic post data** (or **Dynamic column data**), set **Field type** to **Shortcode / Computed Value or HTML**.
 5. Write your template in **Field value**. The instructions under the field list the placeholders.
 6. Click **Add column**.
 
