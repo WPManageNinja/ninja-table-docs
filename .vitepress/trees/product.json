@@ -52,7 +52,7 @@
       "nodes": [
         { "id": "table-types", "label": "All table types", "link": "/table-types-overview", "ux": "Compare the eleven ways to start a table.", "facts": ["Start from scratch: Default, Upload a file, Drag & Drop", "Connect live data: eight sources"] },
         { "id": "create-first", "label": "Create your first table", "link": "/create-your-first-table", "ux": "Build a Default table with your own columns and rows.", "facts": ["Steps: columns, rows, Appearance, embed"] },
-        { "id": "engine", "label": "FooTable or DataTables", "link": "/choose-table-engine", "ux": "Pick the engine that suits your table's size.", "facts": ["FooTable: the usual choice", "DataTables: thousands of rows"] },
+        { "id": "engine", "label": "FooTable or DataTables", "link": "/choose-table-engine", "ux": "Pick the engine that suits your table's size.", "facts": ["DataTables: the default for new tables", "FooTable: switch with Change"] },
         { "id": "import-file", "label": "Import a CSV, Excel or JSON file", "link": "/import-table-data-from-a-csv", "ux": "Turn a spreadsheet into a table in one upload.", "facts": ["Formats: CSV, Excel (.xlsx), JSON"] },
         { "id": "tablepress", "label": "Import from TablePress", "link": "/import-table-from-tablepress-plugin", "ux": "Move your existing tables over in one click.", "facts": ["From: TablePress, Data Tables Generator by Supsystic"] }
       ]
