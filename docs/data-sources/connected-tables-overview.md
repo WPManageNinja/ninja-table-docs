@@ -22,7 +22,7 @@ You create a connected table from **Create Table** › **Connect live data**. Ea
 | **Remote CSV / JSON** | A CSV file at a public URL | Pro |
 | **Custom SQL query** | A read-only SQL query on this or another database | Pro |
 
-The WooCommerce tiles appear only when WooCommerce is active, and the FluentCart tile only when FluentCart is active. The Fluent Forms tile is always there. If Fluent Forms isn't installed, its drawer tells you so instead of showing the form.
+All eight tiles always show. If WooCommerce or FluentCart isn't active, its drawer says so and links to install or activate it. If Fluent Forms isn't installed, the drawer offers **Install Fluent Forms now**.
 
 ![Create a table screen with the eight Connect live data tiles](/images/data-sources/connected-overview/1.-Create-A-Table-Screen.webp)
 
@@ -35,11 +35,11 @@ Every tile for a Pro source opens its drawer even on the Free plugin, but the dr
 
 ### Table engine
 
-Most drawers end with an engine line, **Engine: FooTable (the usual choice) · Change**. Click **Change** to choose **FooTable** or **DataTables**. See [Choose a table engine](/choose-table-engine).
+Most drawers end with an engine line, **Engine: DataTables (recommended) · Change**. Click **Change** to choose **DataTables** or **FooTable** (lighter, for small tables). See [Choose a table engine](/choose-table-engine).
 
-- The line appears in the WP Posts, Fluent Forms, FluentCart and Custom SQL drawers, and in the Google Sheets and Remote CSV drawers when the sheet-sync feature is available.
-- The WooCommerce products and WooCommerce reviews drawers have no engine line. Those tables always use FooTable.
-- The engine can't be changed after the table is created.
+- The line appears in the Fluent Forms, FluentCart and Custom SQL drawers, and in the Google Sheets and Remote CSV drawers when the sheet-sync feature is available.
+- The WP Posts, WooCommerce products and WooCommerce reviews drawers have no engine line. Those tables start on FooTable.
+- You can change the engine later in **Table Configuration** › **Table engine** for WP Posts, Fluent Forms, FluentCart and Custom SQL tables. Switching keeps rows and columns but not the table's design settings. WooCommerce tables always use FooTable.
 
 Each source has its own guide:
 
@@ -77,7 +77,7 @@ What you see inside depends on the source:
 | Fluent Forms, Google Sheets, Remote CSV, Custom SQL | A single form |
 
 - **Query settings** decides which rows the table shows (post types, categories, filters, order).
-- **Appearance** holds source-specific display options, such as the cart buttons on product tables or the star colors on review tables. The table's general design lives in the **Appearance** tab of the editor.
+- **Appearance** holds source-specific display options, such as the cart buttons on product tables or the star colors on review tables. The table's general design lives in the **Styling** tab of the editor.
 - **Add new column** adds a column filled from the source, such as a post meta value, a product SKU or a featured image. See [Dynamic columns reference](/dynamic-columns-reference).
 
 Save your changes with the button at the bottom of each section (**Save settings**, **Update** or **Save and run**, depending on the source).
@@ -99,7 +99,7 @@ The rows grid of a connected table shows a **Read-only** badge. You can't add, e
 The rows grid also has no drag-to-sort and no row import. Everything about the table's look and behavior still works. You can:
 
 - Rename columns, change their type and set column options from the column header › **Column settings**.
-- Design the table in the **Appearance** tab.
+- Design the table in the **Styling** tab.
 - Add [Custom filters](/custom-filters) (Pro), Custom CSS/JS and performance settings in **Table Configuration**.
 
 The **Frontend editing** tab isn't available for connected tables. It explains: "Only tables that store their own rows can be edited from the front end. This one reads its rows from somewhere else, so there is nothing here to save back to."
