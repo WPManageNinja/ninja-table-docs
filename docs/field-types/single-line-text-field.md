@@ -25,15 +25,7 @@ The **Single line text field** is the default column type. Use it for short text
 
 Visitors see the text as typed. A single line text cell can also hold simple HTML, for example `<h2>Hello Ninja</h2>`. The HTML is filtered for safety unless your user is allowed to post unfiltered HTML. Click **Preview** in the table header to check the result.
 
-<!-- TODO(screenshot): single-line-text-field-2
-  screen: Tables › table › Preview
-  table: Employee Directory
-  state: A cell containing simple HTML such as a heading
-  highlight: -
-  view: frontend
-  alt: Table with a single line text cell showing formatted HTML
-  blocked: no demo table has a cell containing simple HTML such as a heading
--->
+![Table with a single line text cell showing formatted HTML](/images/field-types/single-line-text-field/1.-Table-With-A-Single-Line-Text.webp)
 
 For links, images, lists or formatted text, use the [HTML field](/html-field) type, which gives you the WordPress editor.
 

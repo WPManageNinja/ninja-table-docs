@@ -148,15 +148,7 @@ Click **Add data**. A panel opens with one field per column. Fill them in and cl
 
 Your rows appear in the grid. To change a row later, open its row actions to edit, duplicate or delete it.
 
-<!-- TODO(screenshot): onboarding-setup-guide-7
-  screen: Tables › Pricing plans › Table Rows
-  table: -
-  state: Grid with three columns and a few rows after adding data
-  highlight: Add data button
-  view: admin
-  alt: Table Rows grid with columns and rows added
-  blocked: needs a newly created Pricing plans table; not creating tables on the demo site
--->
+![Table Rows grid with columns and rows added](/images/getting-started/onboarding-setup-guide/6.-Table-Rows-Grid-With-Columns.webp)
 
 ### Style your table
 

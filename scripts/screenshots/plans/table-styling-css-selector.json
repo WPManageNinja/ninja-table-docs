@@ -1,0 +1,97 @@
+{
+  "doc": "docs/table-management/table-styling-css-selector.md",
+  "outDir": "public/images/table-management/table-styling-css-selector",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}/additional_css"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "eval": "const e=ace.edit('ninja_custom_css'); e.setValue('#footable_parent_922 thead th {\\n    background: #000;\\n    color: #fff;\\n}\\n', -1);"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "shot": {
+        "name": "1.-Custom-CSS-JS-Tab",
+        "clip": "app",
+        "arrows": [
+          {
+            "target": {
+              "role": "radio",
+              "name": "CSS"
+            },
+            "from": "left",
+            "len": 130
+          }
+        ]
+      }
+    },
+    {
+      "click": {
+        "text": "JavaScript"
+      }
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "eval": "const e=ace.edit('ninja_custom_js'); e.setValue(\"jQuery('tbody tr', $table).on('click', function () {\\n    jQuery(this).toggleClass('is-picked');\\n});\\n\", -1);"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "shot": {
+        "name": "2.-JavaScript-Pane-Of-The-Custom-CSS",
+        "clip": "app",
+        "arrows": [
+          {
+            "target": {
+              "role": "button",
+              "name": "Save Custom JS"
+            },
+            "from": "top",
+            "len": 110
+          }
+        ]
+      }
+    },
+    {
+      "click": {
+        "text": "CSS"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
+      "fill": {
+        "selector": "#nt-code-class",
+        "value": "my-custom-table"
+      }
+    },
+    {
+      "wait": 500
+    },
+    {
+      "shot": {
+        "name": "3.-Table-Targeting-Card-With-The-Custom",
+        "clip": "app",
+        "highlights": [
+          {
+            "role": "button",
+            "name": "Copy CSS"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -13,14 +13,7 @@ description: "The 15 ready-made Drag & Drop table templates for pricing, compari
 2. Enter a **Table name**, choose **Choose a template** and click **Next**.
 3. Filter by category (**All**, **Pricing**, **Comparison**, **Employee** or **Schedule**), click a template and click **Create table**.
 
-<!-- TODO(screenshot): drag-drop-templates-1
-  screen: Create Table › Drag & Drop table drawer, step 2, Choose a template
-  table: -
-  state: Template cards visible, Pricing category selected, one card selected
-  highlight: PRO badge on a card
-  view: admin
-  alt: Template picker showing template cards with PRO badges on the Pro ones
--->
+![Template picker showing template cards with PRO badges on the Pro ones](/images/drag-drop-tables/drag-drop-templates/1.-Template-Picker-Showing-Template-Cards.webp)
 
 The table opens in the builder, where you can change everything. Click **Save** once before adding it to a page; see [Create a Drag & Drop Table](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
 

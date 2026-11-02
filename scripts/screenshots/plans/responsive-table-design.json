@@ -1,0 +1,244 @@
+{
+ "doc": "docs/drag-drop-settings/responsive-table-design.md",
+ "outDir": "public/images/drag-drop-settings/responsive-table-design",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   }
+  },
+  {
+   "admin": "/table_builder_edit_table/{{Website Pricing}}"
+  },
+  {
+   "wait": 5000
+  },
+  {
+   "css": ".ntb_table_wrapper{max-height:none!important;height:auto!important}"
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='General');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Background');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Custom CSS');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Custom JS');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Sticky');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Accessibility');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Border');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Global style');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Mode options');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Responsive settings');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='General');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Responsive');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Responsive');if(h.parentElement.classList.contains('is-active')!=true)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "[...document.querySelectorAll('.ntb-field')].find(f=>f.textContent.includes('Enable responsive table')).querySelector('.el-switch:not(.is-checked)')?.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "scrollTop": true
+  },
+  {
+   "wait": 200
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Responsive');var p=h;while(p&&p.scrollHeight<=p.clientHeight+2)p=p.parentElement;if(p){p.scrollTop=h.parentElement.offsetTop-60}"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "shot": {
+    "name": "1.-Responsive-Sections-In-The-Table-Settings",
+    "clip": "app",
+    "highlights": [
+     {
+      "selector": ".el-collapse-item.is-active .ntb-field",
+      "hasText": "Enable responsive table"
+     }
+    ]
+   }
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Responsive');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Mode options');if(h.parentElement.classList.contains('is-active')!=true)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "[...document.querySelectorAll('.el-collapse-item.is-active .el-tabs__item')].find(x=>x.textContent.trim()=='Mobile').click()"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "scrollTop": true
+  },
+  {
+   "wait": 200
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Mode options');var p=h;while(p&&p.scrollHeight<=p.clientHeight+2)p=p.parentElement;if(p){p.scrollTop=h.parentElement.offsetTop-60}"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "shot": {
+    "name": "2.-Mode-Options-For-Mobile-With-Stack",
+    "clip": "app",
+    "highlights": [
+     {
+      "selector": ".el-collapse-item.is-active .ntb-field",
+      "hasText": "Items per header"
+     }
+    ]
+   }
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Mode options');if(h.parentElement.classList.contains('is-active')!=false)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Responsive settings');if(h.parentElement.classList.contains('is-active')!=true)h.click()"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "[...document.querySelectorAll('.el-collapse-item.is-active .el-tabs__item')].find(x=>x.textContent.trim()=='Mobile').click()"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "scrollTop": true
+  },
+  {
+   "wait": 200
+  },
+  {
+   "eval": "var h=[...document.querySelectorAll('.el-collapse-item__header')].find(x=>x.textContent.trim()=='Responsive settings');var p=h;while(p&&p.scrollHeight<=p.clientHeight+2)p=p.parentElement;if(p){p.scrollTop=h.parentElement.offsetTop-60}"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "shot": {
+    "name": "3.-Responsive-Settings-For-Mobile-With-Cell",
+    "clip": "app",
+    "highlights": [
+     {
+      "selector": ".el-collapse-item.is-active .ntb-field",
+      "hasText": "Cell padding"
+     }
+    ]
+   }
+  },
+  {
+   "viewport": {
+    "width": 390,
+    "height": 844
+   }
+  },
+  {
+   "front": "{{page:Website Pricing}}/"
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "shot": {
+    "name": "4.-Responsive-Drag-Drop-Table-Stacked",
+    "clip": "viewport"
+   }
+  }
+ ]
+}

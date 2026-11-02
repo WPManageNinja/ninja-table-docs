@@ -1,0 +1,16 @@
+{"doc":"wave: responsive/column/format front-end shots","outDir":"public/images/misc-wave","viewport":{"width":1440,"height":900},"steps":[
+{"front":"{{page:Quarterly Sales}}/"},{"wait":1000},{"scrollTo":".footable, table"},
+{"shot":{"name":"qs-front","clip":"viewport"}},
+{"front":"{{page:Event Agenda}}/"},{"wait":1000},
+{"shot":{"name":"ea-front","clip":"viewport"}},
+{"front":"{{page:Department Roster}}/"},{"wait":1000},
+{"shot":{"name":"dr-front","clip":"viewport"}},
+{"front":"{{page:Team Contacts}}/"},{"wait":1000},
+{"shot":{"name":"tc-front","clip":"viewport"}},
+{"front":"{{page:Winter Collection}}/"},{"wait":1000},
+{"shot":{"name":"wc-front","clip":"viewport"}},
+{"admin":"/tables/{{Quarterly Sales by Store 2026}}/additional_css"},{"wait":2000},
+{"shot":{"name":"cj-admin","clip":"app"}},
+{"admin":"/tables/{{Event Agenda}}"},{"wait":2000},
+{"shot":{"name":"ea-admin","clip":"app"}}
+]}

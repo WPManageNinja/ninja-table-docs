@@ -1,0 +1,132 @@
+{
+ "doc": "docs/data-sources/create-wp-posts-table.md",
+ "outDir": "public/images/data-sources/create-wp-posts-table",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/create"
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "click": {
+    "text": "WP Posts/CPTs"
+   }
+  },
+  {
+   "wait": 7000
+  },
+  {
+   "fill": {
+    "selector": "input[placeholder='e.g. Latest posts']",
+    "value": "Latest posts"
+   }
+  },
+  {
+   "shot": {
+    "name": "1.-WP-Posts-CPTs-Drawer",
+    "clip": "app",
+    "highlights": [
+     ".nt-src-form__pair"
+    ]
+   }
+  },
+  {
+   "admin": "/tables/{{Store Blog Posts}}"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Edit query"
+   }
+  },
+  {
+   "wait": 8000
+  },
+  {
+   "eval": "(function(){var ps=[...document.querySelectorAll('.el-drawer .el-transfer-panel')];var a=ps[1].getBoundingClientRect(),b=ps[3].getBoundingClientRect();var d=document.createElement('div');d.id='nt-hl';d.style.cssText='position:fixed;pointer-events:none;left:'+(a.left-6)+'px;top:'+(a.top-6)+'px;width:'+(a.width+12)+'px;height:'+(b.bottom-a.top+12)+'px';document.body.appendChild(d)})()"
+  },
+  {
+   "shot": {
+    "name": "2.-Edit-Query-Drawer-With-The-Selected",
+    "clip": "app",
+    "highlights": [
+     "#nt-hl"
+    ]
+   }
+  },
+  {
+   "click": {
+    "selector": ".nt-post-edit-accordion .el-collapse-item__header",
+    "hasText": "Conditions"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "wait": 800
+  },
+  {
+   "eval": "document.querySelector('.el-drawer__body').scrollTop=document.querySelector('.nt-posts-conditions').offsetTop-250"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": ".nt-posts-conditions .el-select"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item:visible",
+    "hasText": "ID"
+   }
+  },
+  {
+   "wait": 600
+  },
+  {
+   "fill": {
+    "selector": ".nt-posts-conditions input[placeholder='Value']",
+    "value": "129"
+   }
+  },
+  {
+   "click": ".nt-posts-conditions .el-select >> nth=1"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item:visible",
+    "hasText": "Equal To"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "document.activeElement&&document.activeElement.blur();var r=document.querySelector('.nt-posts-conditions .el-select');while(r&&!r.querySelector(\"input[placeholder='Value']\"))r=r.parentElement;r.setAttribute('data-hl','cond')"
+  },
+  {
+   "shot": {
+    "name": "3.-Conditions-Section-Of-The-Edit-Query",
+    "clip": "app",
+    "highlights": [
+     "[data-hl=\"cond\"]"
+    ]
+   }
+  }
+ ]
+}

@@ -67,15 +67,7 @@ In a Gender column:
 
 Click **Save column**, then preview the table.
 
-<!-- TODO(screenshot): conditional-formatting-4
-  screen: Preview of Employee Directory
-  table: Employee Directory
-  state: A column with cells colored by two conditional formatting rules
-  highlight: -
-  view: frontend
-  alt: Table with cells colored by conditional formatting
-  blocked: needs saved conditional formatting rules on Employee Directory (no saving allowed)
--->
+![Table with cells colored by conditional formatting](/images/column-settings/conditional-formatting/1.-Table-With-Cells-Colored-By-Conditional.webp)
 
 ## Example: add a CSS class
 

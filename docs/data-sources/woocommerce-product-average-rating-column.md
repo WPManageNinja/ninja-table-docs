@@ -23,6 +23,7 @@ The **Product Average Rating** column (Pro) shows a product's overall average sc
   highlight: Field value
   view: admin
   alt: Add new column section with the Product Average Rating options
+  blocked: needs a demo WooCommerce store: only 2 placeholder products (lorem-ipsum tags) exist and no saved demo Woo table, so no natural drawer or front-end shot; the only existing Woo tables are DOCTEST-titled
 -->
 
 ## Rating options
@@ -41,6 +42,7 @@ The stars are whole stars. A product rated 4.5 shows 4 filled stars and 1 empty 
   highlight: Avg. rating column
   view: frontend
   alt: Product table on the page with an average rating column
+  blocked: needs a demo WooCommerce store: only 2 placeholder products (lorem-ipsum tags) exist and no saved demo Woo table, so no natural drawer or front-end shot; the only existing Woo tables are DOCTEST-titled
 -->
 
 To change these later, open the column header › **Column settings**.

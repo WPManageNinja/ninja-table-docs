@@ -24,6 +24,7 @@ Custom fields are stored as key/value pairs. To show one in a table, you only ne
   highlight: Name column of the Custom Fields box
   view: admin
   alt: Custom Fields box under a post showing the meta key in the Name column
+  blocked: needs the WordPress post editor with Custom Fields enabled (changes editor preferences) and a post that has a meta key; the demo posts have none
 -->
 
 ### Meta Box, JetEngine, Toolset, Pods and other field plugins
@@ -46,25 +47,11 @@ Plugins that store complex values (repeaters, galleries, relations) save them in
 5. In **Field value**, type the meta key, for example `Ninja-Post`.
 6. Click **Add column**.
 
-<!-- TODO(screenshot): post-meta-field-2
-  screen: Tables › DOCTEST posts › Table Rows › Edit query › Add new column
-  table: a WP Posts table
-  state: Add new column section with Field type set to Post Meta and a meta key typed in Field value
-  highlight: Field value
-  view: admin
-  alt: Add new column section with the Post Meta field type and a meta key in Field value
--->
+![Add new column section with the Post Meta field type and a meta key in Field value](/images/wordpress-integration/post-meta-field/2.-Add-New-Column-Section.webp)
 
 Click **Preview** in the editor header to see the column on the front end. Each row shows that post's value for the meta key. Posts without the field show an empty cell. Basic HTML in a value, such as a link, is kept; scripts are removed.
 
-<!-- TODO(screenshot): post-meta-field-3
-  screen: Tables › DOCTEST posts › Preview
-  table: a WP Posts table
-  state: Front-end table with the new Post Meta column filled for most rows and empty for posts without the field
-  highlight: -
-  view: frontend
-  alt: Posts table on the page with a Post Meta column
--->
+![Posts table on the page with a Post Meta column](/images/wordpress-integration/post-meta-field/2.-Posts-Table-On-The-Page.webp)
 
 ## Combine meta values with other content
 

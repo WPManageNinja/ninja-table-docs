@@ -1,0 +1,33 @@
+{
+ "doc": "docs/wordpress-integration/embed-tables.md",
+ "outDir": "public/images/wordpress-integration/embed",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/tables/{{Product Price List}}"
+  },
+  {
+   "wait": 5000
+  },
+  {
+   "eval": "const els=[...document.querySelectorAll('*')].filter(e=>e.children.length<=1 && (e.textContent||'').trim().startsWith('[ninja_tables')); const el=els[els.length-1]; (el.closest('button')||el).setAttribute('data-hl','1');"
+  },
+  {
+   "shot": {
+    "name": "1.-Table-Editor-Header-With-The-Shortcode",
+    "clip": {
+     "x": 160,
+     "y": 32,
+     "width": 1280,
+     "height": 406
+    },
+    "highlights": [
+     "[data-hl]"
+    ]
+   }
+  }
+ ]
+}

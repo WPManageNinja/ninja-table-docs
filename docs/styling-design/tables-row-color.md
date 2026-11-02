@@ -36,15 +36,7 @@ A cell color takes priority over its row color.
 
 Click **Preview** in the editor header, or open the page the table is on. The grid in **Table Rows** shows the same colors.
 
-<!-- TODO(screenshot): tables-row-color-3
-  screen: Preview of Hosting Plans Comparison
-  table: Hosting Plans Comparison
-  state: One colored row and one colored cell visible on the front end
-  highlight: -
-  view: frontend
-  alt: Table on the site with a colored row and a colored cell
-  blocked: needs the front end result of a saved row and cell color; the Row/Cell drawers save on Update and demo data must not be changed
--->
+![Table on the site with a colored row and a colored cell](/images/styling-design/tables-row-color/1.-Table-On-The-Site.webp)
 
 ## Without Pro
 

@@ -22,27 +22,11 @@ With **Ajax** rendering, or on a **DataTables** table, cells that contain `#cols
 
 Each `#colspan#` cell merges into the cell to its left, so two `#colspan#` cells after a cell make one cell three columns wide. The merge applies only to that row. A `#colspan#` in the first column has nothing to its left, so it can't merge.
 
-<!-- TODO(screenshot): colspan-cell-merge-1
-  blocked: demo cells contain no #colspan# and typing it into cells saves row data
-  screen: Tables › Conference Schedule › Table Rows
-  table: Conference Schedule
-  state: A section-heading row whose cells to the right contain #colspan#, and a total row whose last two cells contain #colspan#
-  highlight: cells containing #colspan#
-  view: admin
-  alt: Cells with #colspan# in Table Rows
--->
+![Cells with #colspan# in Table Rows](/images/table-formatting/colspan-cell-merge/1.-Cells-With-Colspan-In-Table-Rows.webp)
 
 In this example, a row of section headings sits in the middle of the table, and the last cells at the bottom merge into one.
 
-<!-- TODO(screenshot): colspan-cell-merge-2
-  blocked: needs saved #colspan# cells and Legacy rendering; Conference Schedule demo page only shows unmerged rows
-  screen: Preview of Conference Schedule
-  table: Conference Schedule
-  state: Merged section-heading row and merged bottom cell visible on the front end
-  highlight: -
-  view: frontend
-  alt: Merged cells in the table
--->
+![Merged cells in the table](/images/table-formatting/colspan-cell-merge/2.-Merged-Cells-In-The-Table.webp)
 
 ## Merge column headings
 

@@ -1,0 +1,108 @@
+{
+  "doc": "docs/data-sources/custom-sql-remote-database.md",
+  "outDir": "public/images/data-sources/custom-sql-remote-database",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 990
+      }
+    },
+    {
+      "admin": "/create"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": {
+        "text": "Custom SQL query"
+      }
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "fill": {
+        "selector": "#nt-sql-title",
+        "value": "Customer Report"
+      }
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer.open .ace_text-input",
+        "value": "SELECT id, name, city FROM customers LIMIT 100"
+      }
+    },
+    {
+      "click": ".nt-drawer.open .el-select"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": {
+        "selector": ".el-select-dropdown__item:visible",
+        "hasText": "Remote/External SQL"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
+      "fill": {
+        "selector": "#nt-sql-host",
+        "value": "db.example.com"
+      }
+    },
+    {
+      "fill": {
+        "selector": "#nt-sql-port",
+        "value": "3306"
+      }
+    },
+    {
+      "fill": {
+        "selector": "#nt-sql-db",
+        "value": "shop_reports"
+      }
+    },
+    {
+      "fill": {
+        "selector": "#nt-sql-user",
+        "value": "nt_readonly"
+      }
+    },
+    {
+      "fill": {
+        "selector": "#nt-sql-pass",
+        "value": "examplepass"
+      }
+    },
+    {
+      "eval": "document.activeElement&&document.activeElement.blur()"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "shot": {
+        "name": "1.-Custom-SQL-Drawer-With-Remote-External",
+        "clip": {
+          "element": ".nt-drawer.open",
+          "pad": 0
+        },
+        "highlights": [
+          {
+            "selector": ".nt-drawer.open .nt-field",
+            "hasText": "SQL Connection Type"
+          }
+        ]
+      }
+    }
+  ]
+}

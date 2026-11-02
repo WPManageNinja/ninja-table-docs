@@ -9,14 +9,7 @@ The **Button** element adds a clickable button to a Drag & Drop table cell, such
 
 To add one, click a cell and click **Button** in the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell. Click the button to set its options in the **Settings** tab, which has four sub-tabs: **General**, **Text**, **Icon** and **Hover**.
 
-<!-- TODO(screenshot): button-element-1
-  screen: Drag & Drop builder › canvas
-  table: a Drag & Drop pricing table
-  state: A Button element in a pricing plan cell
-  highlight: -
-  view: admin
-  alt: Button element in a Drag & Drop table cell
--->
+![Button element in a Drag & Drop table cell](/images/drag-drop-elements/button-element/1.-Button-Element-In-A-Drag-Drop.webp)
 
 ## General
 
@@ -30,14 +23,7 @@ To add one, click a cell and click **Button** in the **Elements** tab. If no sin
 - **Link rel attributes**: tick `sponsored`, `nofollow`, `noreferrer` or `noopener`, for example for affiliate links. None are ticked by default.
 - **Open in a new tab** (on by default).
 
-<!-- TODO(screenshot): button-element-2
-  screen: Drag & Drop builder › Settings › Button › General
-  table: a Drag & Drop pricing table
-  state: Full width turned off so Button size and Alignment show
-  highlight: Full width switch
-  view: admin
-  alt: Button General options with Full width turned off
--->
+![Button General options with Full width turned off](/images/drag-drop-elements/button-element/2.-Button-General-Options-With-Full-Width.webp)
 
 ## Text
 
@@ -54,14 +40,7 @@ Put an icon inside the button. On the free version this sub-tab only shows "You 
 - **Item spacing** (0–100, default 0): the gap between the icon and the text.
 - **Icon position**: left or right of the text.
 
-<!-- TODO(screenshot): button-element-3
-  screen: Drag & Drop builder › Settings › Button › Icon
-  table: a Drag & Drop pricing table
-  state: Enable icon on, an icon picked
-  highlight: Enable icon switch
-  view: admin
-  alt: Button Icon sub-tab with the icon picker
--->
+![Button Icon sub-tab with the icon picker](/images/drag-drop-elements/button-element/3.-Button-Icon-Sub-Tab.webp)
 
 ## Hover
 
@@ -71,14 +50,7 @@ Turn on **Button hover** (off by default) to change the button when a visitor po
 - **Icon color** on hover. Only shown when **Enable icon** is on, you have Pro and the icon is an SVG.
 - **Scale** (1–3, default 1): grow the button slightly on hover.
 
-<!-- TODO(screenshot): button-element-4
-  screen: Drag & Drop builder › Settings › Button › Hover
-  table: a Drag & Drop pricing table
-  state: Button hover on
-  highlight: Button hover switch
-  view: admin
-  alt: Button Hover sub-tab with the hover options
--->
+![Button Hover sub-tab with the hover options](/images/drag-drop-elements/button-element/4.-Button-Hover-Sub-Tab.webp)
 
 Below the sub-tabs, **Spacing** sets the margin and padding around the button; see [Element Spacing](/spacing).
 

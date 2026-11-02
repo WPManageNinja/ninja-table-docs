@@ -25,6 +25,7 @@ You need WooCommerce active. The **WooCommerce products** tile only appears when
   highlight: Product category list
   view: admin
   alt: WooCommerce products drawer with the product lists and ordering options
+  blocked: needs a demo WooCommerce store: only 2 placeholder products (lorem-ipsum tags) exist and no saved demo Woo table, so no natural drawer or front-end shot; the only existing Woo tables are DOCTEST-titled
 -->
 
 This drawer has no engine line. WooCommerce tables always use the FooTable engine.
@@ -59,6 +60,7 @@ On the **Table Rows** tab, the banner reads **Rows come from WooCommerce product
   highlight: Source settings button
   view: admin
   alt: Source settings drawer for a WooCommerce products table
+  blocked: needs a demo WooCommerce store: only 2 placeholder products (lorem-ipsum tags) exist and no saved demo Woo table, so no natural drawer or front-end shot; the only existing Woo tables are DOCTEST-titled
 -->
 
 ### Query settings
@@ -87,6 +89,7 @@ These options add cart features around the table. Click **Save settings** to kee
   highlight: Show bulk action
   view: admin
   alt: Appearance section of the WooCommerce Source settings drawer
+  blocked: needs a demo WooCommerce store: only 2 placeholder products (lorem-ipsum tags) exist and no saved demo Woo table, so no natural drawer or front-end shot; the only existing Woo tables are DOCTEST-titled
 -->
 
 ### Add new column
@@ -105,6 +108,7 @@ Add a column filled from your product data, for example the product SKU:
   highlight: Field value
   view: admin
   alt: Add new column section with Product Data and Product SKU chosen
+  blocked: needs a demo WooCommerce store: only 2 placeholder products (lorem-ipsum tags) exist and no saved demo Woo table, so no natural drawer or front-end shot; the only existing Woo tables are DOCTEST-titled
 -->
 
 Other field types include Post Meta, Shortcode / Computed Value or HTML, Featured Image, Post Data and Product Taxonomy. Product Data also offers Product Price, Product Stock Status, Product Quantity input field, Buy Now Button and [Product Average Rating](/woocommerce-product-average-rating-column). See [Dynamic columns reference](/dynamic-columns-reference) for the full list.

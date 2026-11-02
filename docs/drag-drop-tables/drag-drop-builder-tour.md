@@ -9,14 +9,7 @@ The **Drag & Drop builder** is where you design a Drag & Drop table. This page w
 
 Open it by [creating a Drag & Drop table](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables), or by clicking **Edit** on a Drag & Drop table in the **Tables** list (use the **Drag & Drop** tab there to find them). If a table can't be opened, for example because it was deleted, you see "That table could not be loaded. It may have been deleted." and return to the list.
 
-<!-- TODO(screenshot): drag-drop-builder-tour-1
-  screen: Drag & Drop builder, whole screen
-  table: a Drag & Drop pricing table
-  state: Nothing selected, Elements tab open
-  highlight: -
-  view: admin
-  alt: The Drag & Drop builder with the header, canvas toolbar, table canvas and right panel
--->
+![The Drag & Drop builder with the header, canvas toolbar, table canvas and right panel](/images/drag-drop-tables/drag-drop-builder-tour/1.-Drag-Drop-Builder-With-The-Header.webp)
 
 ## The header
 
@@ -54,14 +47,7 @@ When **Tablet** or **Mobile** is active and the responsive layout is on for that
 
 The slider is a test tool. On your live site the layout switches at fixed widths: mobile at 700 px or narrower, tablet from 701 to 1023 px, and desktop at 1024 px or wider. See [Mobile & Tablet Layout](/responsive-table-design).
 
-<!-- TODO(screenshot): drag-drop-builder-tour-2
-  screen: Drag & Drop builder, canvas toolbar
-  table: a Drag & Drop pricing table
-  state: Mobile preview selected with the width slider showing
-  highlight: Preview width buttons
-  view: admin
-  alt: Canvas toolbar with the Desktop, Tablet and Mobile buttons and the width slider
--->
+![Canvas toolbar with the Desktop, Tablet and Mobile preview buttons, Mobile selected](/images/drag-drop-tables/drag-drop-builder-tour/2.-Canvas-Toolbar-With-The-Desktop-Tablet.webp)
 
 ## The canvas
 
@@ -89,14 +75,7 @@ All the elements you can place in a cell, in two groups:
 
 Use **Search elements** to find one. **Click** an element to add it to the selected cell, or **drag** it onto any cell. If no single cell is selected, a clicked element goes to the last cell (bottom right). Pro elements show a **PRO** badge; on the free version, clicking one shows "You are using free version of ninja-tables, Upgrade To Pro" and adds nothing.
 
-<!-- TODO(screenshot): drag-drop-builder-tour-3
-  screen: Drag & Drop builder › Elements tab
-  table: a Drag & Drop pricing table
-  state: Elements tab open, Search elements empty
-  highlight: Search elements field
-  view: admin
-  alt: Elements tab with the General and Advanced element groups
--->
+![Elements tab with the General and Advanced element groups](/images/drag-drop-tables/drag-drop-builder-tour/3.-Elements-Tab-With-The-General.webp)
 
 ### Settings tab
 
@@ -106,14 +85,7 @@ What it shows depends on what you selected. A breadcrumb (**Table › Cell › E
 - **A cell**: colors, column highlight, row height and column width. See [Cell Settings](/drag-drop-cell-settings).
 - **An element**: that element's options under **Content & style**, such as its text, colors and size, plus [spacing](/spacing).
 
-<!-- TODO(screenshot): drag-drop-builder-tour-4
-  screen: Drag & Drop builder › Settings tab
-  table: a Drag & Drop pricing table
-  state: One element selected, breadcrumb Table › Cell › Element visible
-  highlight: breadcrumb
-  view: admin
-  alt: Settings tab with the Table, Cell and Element breadcrumb above the element options
--->
+![Settings tab with the Table, Cell and Element breadcrumb above the element options](/images/drag-drop-tables/drag-drop-builder-tour/4.-Settings-Tab-With-The-Table-Cell.webp)
 
 ## On your site
 

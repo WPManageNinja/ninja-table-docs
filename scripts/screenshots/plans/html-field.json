@@ -1,49 +1,100 @@
 {
-  "doc": "docs/field-types/html-field.md",
-  "outDir": "public/images/field-types/html-field",
-  "viewport": {
-    "width": 1440,
-    "height": 900
+ "doc": "docs/field-types/html-field.md",
+ "outDir": "public/images/field-types/html-field",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/tables/{{Employee Directory}}"
   },
-  "steps": [
-    {
-      "admin": "/tables/{{Employee Directory}}"
+  {
+   "wait": 2000
+  },
+  {
+   "click": "th.js-col:has-text(\"Office\") .nt-sheet__colset"
+  },
+  {
+   "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "click": ".nt-drawer .el-select"
+  },
+  {
+   "click": ".el-select-dropdown__item:visible:has-text(\"HTML field\")"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "document.activeElement&&document.activeElement.blur()"
+  },
+  {
+   "eval": "(()=>{let best=null;document.querySelectorAll('.nt-drawer *').forEach(e=>{if(e.innerText&&e.innerText.includes(\"trusted\")&&(!best||e.innerText.length<=best.innerText.length))best=e});let t=best;for(let i=0;i<1;i++)t=t.parentElement;t.setAttribute('data-hl','note')})()"
+  },
+  {
+   "shot": {
+    "name": "1.-Column-Dialog-With-Type-Set",
+    "clip": "viewport",
+    "highlights": [
+     "[data-hl=\"note\"]"
+    ]
+   }
+  },
+  {
+   "admin": "/tables/{{Team Contacts}}"
+  },
+  {
+   "wait": 6000
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Add data"
+   }
+  },
+  {
+   "wait": 4500
+  },
+  {
+   "shot": {
+    "name": "1.-Row-Drawer-Showing-The-WordPress-Editor",
+    "clip": "app",
+    "highlights": [
+     ".nt-drawer .wp-editor-wrap"
+    ]
+   }
+  },
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 1300
+   }
+  },
+  {
+   "front": "{{page:Team Contacts}}/"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "eval": "(function(){var t=document.querySelector('.ninja_table_wrapper table');var ths=[...t.querySelectorAll('thead th[class*=ninja_column_]')];var i=ths.findIndex(function(x){return x.innerText.trim().toLowerCase().indexOf(\"bio\")===0});var rows=[...t.querySelectorAll('tbody tr')].filter(function(r){return r.offsetParent});var a=ths[i].getBoundingClientRect();var b=rows[rows.length-1].children[i].getBoundingClientRect();var d=document.createElement('div');d.id='nt-hl';d.style.cssText='position:absolute;pointer-events:none;left:'+(a.left+scrollX-2)+'px;top:'+(a.top+scrollY-2)+'px;width:'+(a.width+4)+'px;height:'+(b.bottom-a.top+4)+'px';document.body.appendChild(d)})()"
+  },
+  {
+   "shot": {
+    "name": "2.-Table-With-An-HTML-Column",
+    "clip": {
+     "element": ".ninja_table_wrapper",
+     "pad": 24
     },
-    {
-      "wait": 2000
-    },
-    {
-      "click": "th.js-col:has-text(\"Office\") .nt-sheet__colset"
-    },
-    {
-      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
-    },
-    {
-      "wait": 900
-    },
-    {
-      "click": ".nt-drawer .el-select"
-    },
-    {
-      "click": ".el-select-dropdown__item:visible:has-text(\"HTML field\")"
-    },
-    {
-      "wait": 500
-    },
-    {
-      "eval": "document.activeElement&&document.activeElement.blur()"
-    },
-    {
-      "eval": "(()=>{let best=null;document.querySelectorAll('.nt-drawer *').forEach(e=>{if(e.innerText&&e.innerText.includes(\"trusted\")&&(!best||e.innerText.length<=best.innerText.length))best=e});let t=best;for(let i=0;i<1;i++)t=t.parentElement;t.setAttribute('data-hl','note')})()"
-    },
-    {
-      "shot": {
-        "name": "1.-Column-Dialog-With-Type-Set",
-        "clip": "viewport",
-        "highlights": [
-          "[data-hl=\"note\"]"
-        ]
-      }
-    }
-  ]
+    "highlights": [
+     "#nt-hl"
+    ]
+   }
+  }
+ ]
 }

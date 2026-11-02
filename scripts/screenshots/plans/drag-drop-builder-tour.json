@@ -1,0 +1,24 @@
+{
+  "doc": "docs/drag-drop-tables/drag-drop-builder-tour.md",
+  "outDir": "public/images/drag-drop-tables/drag-drop-builder-tour",
+  "viewport": { "width": 1440, "height": 900 },
+  "steps": [
+    { "admin": "/table_builder_edit_table/{{Website Pricing}}" },
+    { "wait": 2500 },
+    { "shot": { "name": "1.-Drag-Drop-Builder-With-The-Header", "clip": "app", "crop": "auto" } },
+    { "click": ".ntb-toolbar [aria-label=\"Mobile\"]" },
+    { "wait": 800 },
+    { "shot": { "name": "2.-Canvas-Toolbar-With-The-Desktop-Tablet", "clip": "app", "crop": "auto",
+        "highlights": [ ".ntb-toolbar [aria-label=\"Preview width\"]" ] } },
+    { "admin": "/" },
+    { "wait": 1500 },
+    { "admin": "/table_builder_edit_table/{{Website Pricing}}" },
+    { "wait": 2500 },
+    { "shot": { "name": "3.-Elements-Tab-With-The-General", "clip": "app", "crop": "auto",
+        "highlights": [ ".ntb-panel__body .el-input" ] } },
+    { "click": ".ntb-sheet .table-data" },
+    { "wait": 500 },
+    { "shot": { "name": "4.-Settings-Tab-With-The-Table-Cell", "clip": "app", "crop": "auto",
+        "highlights": [ ".ntb-crumbs" ] } }
+  ]
+}

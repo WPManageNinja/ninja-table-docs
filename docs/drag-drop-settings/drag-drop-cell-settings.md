@@ -10,14 +10,7 @@ description: "Color rows, columns and single cells, highlight a column, and set 
 1. In the builder, click a cell. Hold **Shift** and click to select several.
 2. Open the **Settings** tab of the right panel. It shows **Settings · Cell**.
 
-<!-- TODO(screenshot): drag-drop-cell-settings-1
-  screen: Drag & Drop builder › Settings · Cell
-  table: a Drag & Drop pricing table
-  state: One cell selected, Cell settings open
-  highlight: -
-  view: admin
-  alt: Settings tab showing the Cell settings for one selected cell
--->
+![Settings tab showing the Cell settings for one selected cell](/images/drag-drop-settings/manage-cells-ninja-tables/1.-Settings-Tab-Showing-The-Cell-Settings.webp)
 
 If nothing useful is selected, the panel tells you to "Pick a row, a column or a cell to colour it" and to hold Shift to take several cells at once. With several cells selected, only the options that work for a group are shown.
 
@@ -29,14 +22,7 @@ If nothing useful is selected, the panel tells you to "Pick a row, a column or a
 
 These are the same values as **Table** › **Background** in the [table settings](/ninja-tables-drag-and-drop-table-settings); changing one changes the other.
 
-<!-- TODO(screenshot): drag-drop-cell-settings-2
-  screen: Drag & Drop builder › Settings · Cell › Colors for every row
-  table: a Drag & Drop pricing table
-  state: Header, Even row and Odd row background pickers visible
-  highlight: Header background
-  view: admin
-  alt: Cell settings showing the header, even row and odd row background colors
--->
+![Cell settings showing the header, even row and odd row background colors](/images/drag-drop-settings/manage-cells-ninja-tables/2.-Cell-Settings-Showing-The-Header-Even.webp)
 
 ## Colors for what you picked
 
@@ -50,14 +36,7 @@ Each color picker has an opacity slider and preset swatches.
 
 When these colors overlap, the selected cell color wins. Between a row color and a column color, the one that was first added to the cell more recently wins, and both sit on top of the every-row colors above. Changing an existing row or column color keeps its place; to bring it on top, clear it and set it again.
 
-<!-- TODO(screenshot): drag-drop-cell-settings-3
-  screen: Drag & Drop builder › Settings · Cell › Colors for what you picked
-  table: a Drag & Drop pricing table
-  state: One cell selected, a row, column and cell color applied
-  highlight: Selected cell background
-  view: admin
-  alt: Selected cell color pickers and the colored row, column and cell on the canvas
--->
+![Selected cell color pickers and the colored cell on the canvas](/images/drag-drop-settings/manage-cells-ninja-tables/3.-Selected-Cell-Color-Pickers.webp)
 
 ## Highlight column (Pro)
 
@@ -69,14 +48,7 @@ Make one column stand out, as in a "most popular" pricing plan. Select one cell 
 
 Turning the highlight on also adjusts **Margin top** and **Margin bottom** under **Global style** in the [table settings](/ninja-tables-drag-and-drop-table-settings), so the shadow isn't cut off. If you then check those values and find they changed, that is why.
 
-<!-- TODO(screenshot): drag-drop-cell-settings-4
-  screen: Drag & Drop builder › Settings · Cell › Highlight column
-  table: a Drag & Drop pricing table
-  state: Highlight column on with its height and shadow options visible
-  highlight: Highlight column switch
-  view: admin
-  alt: Highlight column options with height and shadow settings
--->
+![Highlight column options with height and shadow settings](/images/drag-drop-settings/manage-cells-ninja-tables/4.-Highlight-Column-Options-With-Height.webp)
 
 <!-- TODO(screenshot): drag-drop-cell-settings-5
   screen: A page containing the Drag & Drop table
@@ -84,6 +56,7 @@ Turning the highlight on also adjusts **Margin top** and **Margin bottom** under
   state: One plan column highlighted with a shadow
   highlight: -
   view: frontend
+  blocked: needs a saved Highlight column on a front-end table (no saving allowed on Website Pricing)
   alt: Pricing table with the middle column highlighted by a shadow
 -->
 

@@ -1,0 +1,35 @@
+{
+ "doc": "docs/responsive-design/stackable-table.md",
+ "outDir": "public/images/responsive-design/stackable-table",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "viewport": {
+    "width": 390,
+    "height": 844
+   }
+  },
+  {
+   "front": "{{page:Winter Collection}}/",
+   "contentWidth": false
+  },
+  {
+   "wait": 800
+  },
+  {
+   "eval": "window.scrollTo(0, document.querySelector('.ninja_table_wrapper').getBoundingClientRect().top+window.scrollY-16)"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "shot": {
+    "name": "1.-Stacked-Product-Table-With-Each-Row",
+    "clip": "viewport"
+   }
+  }
+ ]
+}

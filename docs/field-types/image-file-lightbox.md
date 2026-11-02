@@ -50,26 +50,10 @@ Open the row drawer (**Add data**, or the pencil icon on a row). In the image co
 
 Image cells are not edited inside the grid.
 
-<!-- TODO(screenshot): image-file-lightbox-3
-  screen: Tables › table › Table Rows › row drawer
-  table: Product Price List
-  state: Row drawer with an image chosen and the Target URL field shown
-  highlight: Image upload
-  view: admin
-  alt: Row drawer with an image uploaded in an Image column
-  blocked: no demo table has an Image/File/Lightbox column or media-library image
--->
+![Row drawer with an image uploaded in an Image column](/images/field-types/image-file-lightbox/1.-Row-Drawer-With-An-Image-Uploaded.webp)
 
 ## How it looks on your site
 
 Visitors see the thumbnail in the cell. With **Image lightbox** or **Iframe lightbox**, the thumbnail opens the lightbox; with **Link to URL**, it opens your link. To show images from a column of plain image URLs, such as a Google Sheet, see [Image lightbox using Transform value](/image-lightbox-using-column-transform-value).
 
-<!-- TODO(screenshot): image-file-lightbox-4
-  screen: Tables › table › Preview
-  table: Product Price List
-  state: An Image column with an open image lightbox
-  highlight: -
-  view: frontend
-  alt: Table with an Image column and an open lightbox
-  blocked: no demo table has an Image/File/Lightbox column with images
--->
+![Table with an Image column and an open lightbox](/images/field-types/image-file-lightbox/2.-Table-With-An-Image-Column.webp)

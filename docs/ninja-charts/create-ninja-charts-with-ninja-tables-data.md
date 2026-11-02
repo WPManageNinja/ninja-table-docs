@@ -15,14 +15,7 @@ A chart built from a Ninja Tables table is a **dynamic chart**: it reads the tab
 4. In the **Data** field that appears, pick the table.
 5. Click **Next** and choose what to plot in [Data Range](/how-to-use-data-range-picker-in-ninja-charts).
 
-<!-- TODO(screenshot): create-ninja-charts-with-ninja-tables-data-1
-  screen: Ninja Tables › Add Chart › Data Source
-  table: Monthly Sales by Region 2026
-  state: Ninja Tables selected as the data source and the Data dropdown showing the table
-  highlight: Data field
-  view: admin
-  alt: Data Source step with Ninja Tables selected and a table chosen
--->
+![Data Source step with Ninja Tables selected and a table chosen](/images/ninja-charts/create-ninja-charts-ninja/1.-Data-Source-Step-With-Ninja-Tables.webp)
 
 If you click **Next** on step 1 without a chart type, the creator shows "Chart type is required". Pick a type first.
 

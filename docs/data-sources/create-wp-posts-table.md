@@ -21,14 +21,7 @@ On the Free plugin the **WP Posts/CPTs** drawer shows a Pro notice instead of th
 8. Check the engine line (FooTable is the usual choice). See [Choose a table engine](/choose-table-engine).
 9. Click **Create table**.
 
-<!-- TODO(screenshot): create-wp-posts-table-1
-  screen: Tables › Create a table › Connect live data › WP Posts/CPTs
-  table: a WP Posts table
-  state: WP Posts/CPTs drawer open with Posts ticked, default columns ticked and Conditions closed
-  highlight: Post types and Columns lists
-  view: admin
-  alt: WP Posts/CPTs drawer with the Post types and Columns lists
--->
+![WP Posts/CPTs drawer with the Post types and Columns lists](/images/data-sources/create-wp-posts-table/1.-WP-Posts-CPTs-Drawer.webp)
 
 Ninja Tables opens the new table on the **Table Rows** tab. The rows are read-only, because they come from your posts.
 
@@ -84,14 +77,7 @@ The **Field** list offers ID, Author, Comments, Date, Modified date and your tax
 
 On the **Table Rows** tab, the banner reads **Rows come from WordPress posts**. Click **Edit query** to open the drawer. It has two sections: **Query settings** and **Add new column**.
 
-<!-- TODO(screenshot): create-wp-posts-table-2
-  screen: Tables › DOCTEST posts › Table Rows › Edit query › Query settings
-  table: a WP Posts table
-  state: Query settings section showing the four transfer lists and the Conditions and Meta query sections closed
-  highlight: Update button
-  view: admin
-  alt: Edit query drawer with the Selected Types and Selected Properties lists
--->
+![Edit query drawer with the Selected Types and Selected Properties lists](/images/data-sources/create-wp-posts-table/2.-Edit-Query-Drawer-With-The-Selected.webp)
 
 ### Query settings
 
@@ -133,14 +119,7 @@ Open **Conditions** to filter and order the rows:
 
 For example, a rule on **ID** with **Equal To** and the value `129` shows only the post with ID 129.
 
-<!-- TODO(screenshot): create-wp-posts-table-3
-  screen: Tables › DOCTEST posts › Table Rows › Edit query › Conditions
-  table: a WP Posts table
-  state: Conditions section open with one rule on ID, Query limit and Order by fields visible
-  highlight: Add condition
-  view: admin
-  alt: Conditions section of the Edit query drawer with a rule and the order fields
--->
+![Conditions section of the Edit query drawer with a rule and the order fields](/images/data-sources/create-wp-posts-table/3.-Conditions-Section-Of-The-Edit-Query.webp)
 
 ### Meta query
 

@@ -1,0 +1,142 @@
+{
+ "doc": "docs/drag-drop-elements/text-element.md",
+ "outDir": "public/images/drag-drop-elements/text-element",
+ "viewport": {
+  "width": 1440,
+  "height": 1150
+ },
+ "steps": [
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 1150
+   }
+  },
+  {
+   "admin": "/table_builder_edit_table/{{Website Pricing}}"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "text": "Add row"
+   }
+  },
+  {
+   "click": {
+    "text": "At the bottom"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "css": ".ntb_table_wrapper{max-height:none!important;height:auto!important}#selected-item{opacity:1!important;background:none!important;animation:none!important}"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": "tbody tr:last-child td.table-data:nth-of-type(2)"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Elements\")"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "fill": {
+    "selector": "tbody tr:last-child td.table-data:nth-of-type(2) .single-item [contenteditable]",
+    "value": "Starter plan"
+   }
+  },
+  {
+   "click": "tbody tr:last-child td.table-data:nth-of-type(2) .single-item"
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "setColor": {
+    "label": "Font color",
+    "hex": "#FFFFFF"
+   }
+  },
+  {
+   "wait": 300
+  },
+  {
+   "wait": 200
+  },
+  {
+   "click": "tbody tr:last-child td.table-data:nth-of-type(3)"
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Elements\")"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": "tbody tr:last-child td.table-data:nth-of-type(2)"
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Elements\")"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "scrollTop": true
+  },
+  {
+   "wait": 200
+  },
+  {
+   "shot": {
+    "name": "1.-Text-Element-Added-To-A-Cell",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     ".ntb-pal__item:has(span:text-is(\"Text\"))"
+    ]
+   }
+  },
+  {
+   "click": "tbody tr:last-child td.table-data:nth-of-type(2) .single-item"
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "scrollTop": true
+  },
+  {
+   "wait": 200
+  },
+  {
+   "shot": {
+    "name": "2.-Settings-Tab-Showing-The-Text-Element",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     {
+      "selector": ".ntb-field",
+      "hasText": "Font size"
+     }
+    ]
+   }
+  }
+ ]
+}

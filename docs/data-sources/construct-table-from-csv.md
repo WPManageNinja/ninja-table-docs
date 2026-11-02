@@ -37,27 +37,11 @@ The tile is called **Remote CSV / JSON**, but today it reads **CSV files only**.
 
 ![Remote CSV drawer with DataTables selected and a Sync Interval list](/images/data-sources/construct-table-csv/2.-Remote-CSV-Drawer-With-DataTables-Selected.webp)
 
-<!-- TODO(screenshot): construct-table-from-csv-3
-  screen: Tables › Create Table › Connect live data › Remote CSV / JSON › Step 2
-  table: -
-  state: Select entry fields with all columns ticked
-  highlight: Select all
-  view: admin
-  alt: Select entry fields step listing the CSV columns
-  blocked: needs a reachable public CSV URL (fetch fails from the demo site: "Expected CSV but received invalid data type") and creating a table
--->
+![Select entry fields step listing the CSV columns](/images/data-sources/construct-table-csv/3.-Select-Entry-Fields-Step.webp)
 
 Ninja Tables opens the new table on the **Table Rows** tab with the file's data in it. The rows are read-only: change them in the source file. You can still export the table, but you can't import rows into it or sort its rows by hand.
 
-<!-- TODO(screenshot): construct-table-from-csv-4
-  screen: Tables › a Remote CSV table › Table Rows
-  table: -
-  state: Table Rows tab with the CSV data loaded
-  highlight: -
-  view: admin
-  alt: Table Rows tab showing rows read from a remote CSV file
-  blocked: needs a reachable public CSV URL (fetch fails from the demo site: "Expected CSV but received invalid data type") and creating a table
--->
+![Table Rows tab showing rows read from a remote CSV file](/images/data-sources/construct-table-csv/4.-Table-Rows-Tab-Showing-Rows-Read.webp)
 
 ## FooTable or DataTables
 

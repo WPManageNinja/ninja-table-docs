@@ -16,15 +16,7 @@ description: "Add dropdown, radio, checkbox, text, date and number-range filters
 
 Without Ninja Tables Pro, the tab shows an upgrade panel (**Unlock Custom Filters**). If Pro is active but too old, the tab says "Custom filters need a newer version of Ninja Tables Pro"; update Pro to use it.
 
-<!-- TODO(screenshot): custom-filters-1
-  screen: Tables › Employee Directory › Custom filters
-  table: Employee Directory
-  state: Custom filters tab with two filters in the list and the Layout card below
-  highlight: Add Filter
-  view: admin
-  alt: Custom filters tab listing filters with Move up, Edit and Delete buttons
-  blocked: Employee Directory has no saved filters and creating them means saving
--->
+![Custom filters tab listing filters with Move up, Edit and Delete buttons](/images/table-settings/custom-filters/1.-Custom-Filters-Tab-Listing-Filters.webp)
 
 ## Add a filter
 
@@ -89,15 +81,7 @@ Values in typed options can contain placeholders such as `{date:Y-m-d}` or `{cur
 
 To let visitors filter a price list by range, the price column must be a **Number** column. Add a filter with **Filter UI Type** set to **Number Range** and pick the price column under **Filter Columns**.
 
-<!-- TODO(screenshot): custom-filters-5
-  screen: Tables › Product Price List › Custom filters
-  table: Product Price List
-  state: a published page showing a Number Range filter above the table
-  highlight: -
-  view: frontend
-  alt: Table on a page with a price range filter above it
-  blocked: no demo page has a Number Range filter (needs a saved filter)
--->
+![Table on a page with a price range filter above it](/images/table-settings/custom-filters/2.-Table-On-A-Page.webp)
 
 ## Layout of the filters
 
@@ -106,15 +90,7 @@ The **Layout** card appears below the list once the table has at least one filte
 - **Show Filters**: **Inline** (side by side in one line) or **In Columns** (a grid). With **In Columns**, choose **Columns**: 2, 3 or 4.
 - **Progressive Filters**: each filter only offers options that still have matching rows, based on what the visitor picked in the other filters.
 
-<!-- TODO(screenshot): custom-filters-6
-  screen: Tables › Employee Directory › Custom filters › Layout
-  table: Employee Directory
-  state: Layout card with Show Filters set to In Columns and Columns set to 3
-  highlight: Show Filters
-  view: admin
-  alt: Layout card with filter display options
-  blocked: Layout card only appears once a filter is saved
--->
+![Layout card with filter display options](/images/table-settings/custom-filters/3.-Layout-Card-With-Filter-Display-Options.webp)
 
 The layout saves with the **Save** button at the top of the editor.
 

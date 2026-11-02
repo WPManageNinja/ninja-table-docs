@@ -46,6 +46,27 @@
         "name": "8.-Published-Page-Showing-A-Ninja-Tables",
         "clip": "viewport"
       }
+    },
+    {
+      "admin": "/tables/{{Pricing Plans}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "shot": {
+        "name": "6.-Table-Rows-Grid-With-Columns",
+        "clip": "app",
+        "highlights": [
+          {
+            "role": "button",
+            "name": "Add data"
+          }
+        ],
+        "crop": {
+          "height": 1130
+        }
+      }
     }
   ]
 }

@@ -9,14 +9,7 @@ The **Rating** element shows a star rating in a Drag & Drop table cell, for exam
 
 To add one, click a cell and click **Rating** in the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell. The new rating starts at 5 stars. Click the stars on the canvas to set the score (half stars are allowed); the score is not in the Settings panel. Click the element to set its other options in the **Settings** tab.
 
-<!-- TODO(screenshot): star-rating-element-in-ninja-tables-drag-and-drop-1
-  screen: Drag & Drop builder › canvas
-  table: a Drag & Drop pricing table
-  state: A Rating element with 4.5 stars and Show rating value on
-  highlight: -
-  view: admin
-  alt: Rating element showing 4.5 out of 5 stars
--->
+![Rating element showing 4.5 out of 5 stars](/images/drag-drop-elements/star-rating-element-ninja/1.-Rating-Element-Showing-4-5-Out.webp)
 
 ## Rating options
 

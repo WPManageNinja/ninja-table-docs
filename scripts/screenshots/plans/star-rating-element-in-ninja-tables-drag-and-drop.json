@@ -1,0 +1,96 @@
+{
+ "doc": "docs/drag-drop-elements/star-rating-element-in-ninja-tables-drag-and-drop.md",
+ "outDir": "public/images/drag-drop-elements/star-rating-element-ninja",
+ "viewport": {
+  "width": 1440,
+  "height": 1150
+ },
+ "steps": [
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 1150
+   }
+  },
+  {
+   "admin": "/table_builder_edit_table/{{Website Pricing}}"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "text": "Add row"
+   }
+  },
+  {
+   "click": {
+    "text": "At the bottom"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "css": ".ntb_table_wrapper{max-height:none!important;height:auto!important}#selected-item{opacity:1!important;background:none!important;animation:none!important}"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "document.querySelector('tbody tr:last-child td.table-data:nth-of-type(2) .ntb-chip__btn--danger').click()"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": "tbody tr:last-child td.table-data:nth-of-type(2)"
+  },
+  {
+   "wait": 200
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Elements\")"
+  },
+  {
+   "click": {
+    "selector": ".ntb-pal__item",
+    "hasText": "Rating"
+   }
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "var it=document.querySelector('tbody tr:last-child td.table-data:nth-of-type(2) .el-rate__item:nth-child(5)');var ev=new MouseEvent('mousemove',{bubbles:true});Object.defineProperty(ev,'offsetX',{value:1});it.dispatchEvent(ev);it.click();"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "click": ".ntb-field:has-text(\"Show rating value\") .el-switch"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "scrollTop": true
+  },
+  {
+   "wait": 200
+  },
+  {
+   "shot": {
+    "name": "1.-Rating-Element-Showing-4-5-Out",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     {
+      "selector": ".ntb-field",
+      "hasText": "Show rating value"
+     }
+    ]
+   }
+  }
+ ]
+}

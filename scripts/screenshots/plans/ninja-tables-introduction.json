@@ -69,6 +69,21 @@
         "name": "5.-Appearance-Tab-With-A-Live-Preview",
         "clip": "app"
       }
+    },
+    {
+      "admin": "/table_builder_edit_table/{{Website Pricing}}"
+    },
+    {
+      "wait": 5000
+    },
+    {
+      "shot": {
+        "name": "1.-Drag-Drop-Builder-With-A-Pricing",
+        "clip": "app",
+        "crop": {
+          "height": 1560
+        }
+      }
     }
   ]
 }

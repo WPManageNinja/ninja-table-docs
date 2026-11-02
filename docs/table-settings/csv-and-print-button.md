@@ -49,12 +49,4 @@ Add a header and footer to the printed pages. Switch between **Print Screen Head
 
 Click **Save** to keep your changes. The buttons are saved with the rest of the Appearance settings.
 
-<!-- TODO(screenshot): csv-and-print-button-3
-  screen: Tables › Employee Directory › Preview
-  table: Employee Directory
-  state: Front-end table with CSV, Excel and Print buttons above the table
-  highlight: -
-  view: frontend
-  alt: A table on the site with export and print buttons
-  blocked: buttons are off on the demo table and enabling them needs Save, which is not allowed on demo tables
--->
+![A table on the site with export and print buttons](/images/table-settings/csv-print-button/1.-Table-On-The-Site-With-Export.webp)

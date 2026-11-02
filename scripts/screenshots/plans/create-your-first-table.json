@@ -231,6 +231,27 @@
           "pad": 12
         }
       }
+    },
+    {
+      "admin": "/tables/{{Pricing Plans (empty)}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "shot": {
+        "name": "1.-Table-Rows-Tab-Of-A-New",
+        "clip": "app",
+        "highlights": [
+          {
+            "role": "button",
+            "name": "Add column"
+          }
+        ],
+        "crop": {
+          "height": 900
+        }
+      }
     }
   ]
 }

@@ -12,14 +12,7 @@ The tabs depend on the renderer:
 - **Chart Js**: CHART, SERIES, AXES, TITLE, TOOLTIP, LEGEND, LAYOUT, ANIMATIONS.
 - **Google Charts**: CHART, SERIES, LEGEND, AXES, TITLE, TOOLTIP. There are no Layout or Animations tabs.
 
-<!-- TODO(screenshot): how-to-customize-charts-in-ninja-charts-1
-  screen: Ninja Tables › Add Chart › Formatting & Preview
-  table: Product Price List
-  state: Chart Js bar chart preview with the CHART tab open
-  highlight: CHART tab
-  view: admin
-  alt: Formatting & Preview step with the CHART tab open
--->
+![Formatting & Preview step with the CHART tab open](/images/ninja-charts/customize-charts-ninja/1.-Formatting-Preview-Step-With-The-CHART.webp)
 
 ## CHART
 
@@ -37,14 +30,7 @@ Size, position, colors and the default font.
 
 One block per data column. Change each series' **Label** and **Color**.
 
-<!-- TODO(screenshot): how-to-customize-charts-in-ninja-charts-2
-  screen: Ninja Tables › Add Chart › Formatting & Preview › SERIES
-  table: Monthly Sales by Region 2026
-  state: SERIES tab with two series blocks showing Label and Color
-  highlight: Color field
-  view: admin
-  alt: SERIES tab with a label and color for each series
--->
+![SERIES tab with a label and color for each series](/images/ninja-charts/customize-charts-ninja/2.-SERIES-Tab-With-A-Label.webp)
 
 ## AXES
 

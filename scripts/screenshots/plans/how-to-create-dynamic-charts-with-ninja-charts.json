@@ -1,0 +1,173 @@
+{
+ "doc": "docs/ninja-charts/how-to-create-dynamic-charts-with-ninja-charts.md",
+ "outDir": "public/images/ninja-charts/create-dynamic-charts-ninja",
+ "adminPage": "ninja-charts",
+ "appRoot": "#ninja-charts-app",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 1300
+   }
+  },
+  {
+   "admin": "/add-chart"
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "fill": {
+    "selector": ".el-input__inner >> nth=0",
+    "value": "Product Price Comparison"
+   }
+  },
+  {
+   "click": ".el-select"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Chart Js"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "text": "Horizontal Bar"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "shot": {
+    "name": "1.-Chart-Title-Type-Step-With-Chart",
+    "clip": {
+     "element": ".el-card.box-card",
+     "pad": 24
+    },
+    "highlights": [
+     {
+      "selector": ".el-form-item",
+      "hasText": "Chart Renderer"
+     }
+    ]
+   }
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "^next$"
+   }
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "click": ".el-select"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Ninja Tables"
+   }
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "click": ".el-select >> nth=1"
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Product Price List"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "shot": {
+    "name": "2.-Data-Source-Step-With-A-Ninja",
+    "clip": {
+     "element": ".el-card.box-card",
+     "pad": 24
+    },
+    "highlights": [
+     {
+      "selector": ".el-form-item",
+      "hasText": "Data"
+     }
+    ]
+   }
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "^next$"
+   }
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "eval": "document.querySelectorAll('.el-popper.el-tooltip').forEach(e=>e.remove())"
+  },
+  {
+   "click": {
+    "selector": ".list-group-item",
+    "hasText": "Product"
+   }
+  },
+  {
+   "wait": 400
+  },
+  {
+   "eval": "document.querySelectorAll('.el-popper.el-tooltip').forEach(e=>e.remove())"
+  },
+  {
+   "click": {
+    "selector": ".list-group-item",
+    "hasText": "Price"
+   }
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "^next$"
+   }
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "shot": {
+    "name": "3.-Formatting-Preview-Step-Showing-A-Bar",
+    "clip": {
+     "element": ".el-card.box-card",
+     "pad": 24
+    }
+   }
+  }
+ ]
+}

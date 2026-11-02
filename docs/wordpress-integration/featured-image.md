@@ -17,14 +17,7 @@ The **Featured Image** field type shows each post's or product's featured image 
 6. Choose the link options (see below).
 7. Click **Add column**.
 
-<!-- TODO(screenshot): featured-image-1
-  screen: Tables › DOCTEST posts › Table Rows › Edit query › Add new column
-  table: a WP Posts table
-  state: Add new column section with Field type set to Featured Image, an image size chosen and Link to post permalink ticked
-  highlight: Field value
-  view: admin
-  alt: Add new column section with the Featured Image field type and its link option
--->
+![Add new column section with the Featured Image field type and its link option](/images/wordpress-integration/featured-image/1.-Add-New-Column-Section.webp)
 
 ## Image sizes
 
@@ -41,14 +34,7 @@ The options depend on the table:
 
 Click **Preview** in the editor header. Each row shows its post's featured image. Posts without a featured image show an empty cell. Set a featured image on the post in WordPress and it appears in the table.
 
-<!-- TODO(screenshot): featured-image-2
-  screen: Tables › DOCTEST posts › Preview
-  table: a WP Posts table
-  state: Front-end table with a Featured Image column showing a thumbnail for each post
-  highlight: -
-  view: frontend
-  alt: Posts table on the page with a Featured Image column
--->
+![Posts table on the page with a Featured Image column](/images/wordpress-integration/featured-image/1.-Posts-Table-On-The-Page.webp)
 
 ## Use the image URL in your own HTML
 

@@ -1,0 +1,29 @@
+{
+  "doc": "docs/table-management/clear-table-cache.md",
+  "outDir": "public/images/table-management/clear-cache",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tools/performance"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "shot": {
+        "name": "1.-Settings-Performance-Page-With-The-Two",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          {
+            "role": "button",
+            "name": "Clear table cache"
+          }
+        ]
+      }
+    }
+  ]
+}

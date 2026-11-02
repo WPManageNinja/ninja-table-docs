@@ -24,26 +24,10 @@ HTML cells can hold links, media or any formatted content. Only people you trust
 
 HTML cells are not edited inside the grid. Open the row drawer instead: click **Add data** for a new row, or the pencil icon on an existing row. The HTML column shows the WordPress editor (full width), where you can format text, add links and insert media. Click **Add row** or **Update** to save. See [Working in Table Rows](/working-in-table-rows).
 
-<!-- TODO(screenshot): html-field-2
-  screen: Tables › table › Table Rows › row drawer
-  table: Employee Directory
-  state: Row drawer open with the WordPress editor in the HTML column
-  highlight: editor
-  view: admin
-  alt: Row drawer showing the WordPress editor for an HTML column
-  blocked: no demo table has an HTML field column (row drawer shows no WordPress editor)
--->
+![Row drawer showing the WordPress editor for an HTML column](/images/field-types/html-field/1.-Row-Drawer-Showing-The-WordPress-Editor.webp)
 
 ## How it looks on your site
 
 Visitors see the formatted result: bold text, links, lists and media render as HTML inside the cell.
 
-<!-- TODO(screenshot): html-field-3
-  screen: Tables › table › Preview
-  table: Employee Directory
-  state: An HTML column with a link and bold text
-  highlight: -
-  view: frontend
-  alt: Table with an HTML column showing a link and bold text
-  blocked: no demo table has HTML cell content
--->
+![Table with an HTML column showing a link and bold text](/images/field-types/html-field/2.-Table-With-An-HTML-Column.webp)

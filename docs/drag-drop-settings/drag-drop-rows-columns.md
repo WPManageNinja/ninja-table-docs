@@ -16,14 +16,7 @@ Below the table, the add bar has two buttons:
 
 A hint next to them reminds you that the ⋯ on a row or column number inserts next to it.
 
-<!-- TODO(screenshot): drag-drop-rows-columns-1
-  screen: Drag & Drop builder, add bar under the table
-  table: a Drag & Drop pricing table
-  state: + Add row menu open showing At the bottom and At the top
-  highlight: + Add row button
-  view: admin
-  alt: Add row menu with At the bottom and At the top options
--->
+![Add row menu with At the bottom and At the top options](/images/drag-drop-settings/manage-cells-ninja-tables/1.-Add-Row-Menu-With-At.webp)
 
 ## The column and row menus
 
@@ -34,14 +27,7 @@ Click a column letter (**A**, **B**, **C**…) to open its menu:
 - **Duplicate column**: copy the column with its content.
 - **Remove column**
 
-<!-- TODO(screenshot): drag-drop-rows-columns-2
-  screen: Drag & Drop builder, column menu
-  table: a Drag & Drop pricing table
-  state: Column B menu open
-  highlight: Insert column after
-  view: admin
-  alt: Column menu with insert, duplicate and remove options
--->
+![Column menu with insert, duplicate and remove options](/images/drag-drop-settings/manage-cells-ninja-tables/2.-Column-Menu-With-Insert-Duplicate.webp)
 
 Click a row number (**1**, **2**, **3**…) for the same options for rows:
 
@@ -50,14 +36,7 @@ Click a row number (**1**, **2**, **3**…) for the same options for rows:
 - **Duplicate row**
 - **Remove row**
 
-<!-- TODO(screenshot): drag-drop-rows-columns-3
-  screen: Drag & Drop builder, row menu
-  table: a Drag & Drop pricing table
-  state: Row 2 menu open
-  highlight: Insert row after
-  view: admin
-  alt: Row menu with insert, duplicate and remove options
--->
+![Row menu with insert, duplicate and remove options](/images/drag-drop-settings/manage-cells-ninja-tables/3.-Row-Menu-With-Insert-Duplicate.webp)
 
 If a row or column you remove holds merged cells, their content moves into the neighboring cell.
 
@@ -73,14 +52,7 @@ Drag a **column letter** left or right to move the whole column. Drag a **row nu
 
 **Merge** stays greyed out until two or more cells are selected. It joins cells across columns (colspan) or down rows (rowspan). To undo it, select the merged cell and click **Split**.
 
-<!-- TODO(screenshot): drag-drop-rows-columns-4
-  screen: Drag & Drop builder, canvas toolbar
-  table: a Drag & Drop pricing table
-  state: Two neighboring cells selected, label reading 2 cells selected, Merge enabled
-  highlight: Merge button
-  view: admin
-  alt: Two selected cells and the enabled Merge button in the canvas toolbar
--->
+![Two selected cells and the enabled Merge button in the canvas toolbar](/images/drag-drop-settings/manage-cells-ninja-tables/4.-Two-Selected-Cells-And-The-Enabled.webp)
 
 ## Row height and column width
 

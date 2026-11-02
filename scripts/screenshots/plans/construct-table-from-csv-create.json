@@ -1,0 +1,76 @@
+{
+  "doc": "docs/data-sources/construct-table-from-csv.md",
+  "outDir": "public/images/data-sources/construct-table-csv",
+  "viewport": {
+    "width": 1440,
+    "height": 640
+  },
+  "steps": [
+    {
+      "admin": "/create"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": {
+        "text": "Remote CSV / JSON"
+      }
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer.open input >> nth=0",
+        "value": "Country List"
+      }
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer.open input >> nth=1",
+        "value": "http://localhost:10013/wp-content/uploads/nt-demo/countries.csv"
+      }
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "^Next$"
+      }
+    },
+    {
+      "wait": 4000
+    },
+    {
+      "eval": "document.activeElement&&document.activeElement.blur()"
+    },
+    {
+      "shot": {
+        "name": "3.-Select-Entry-Fields-Step",
+        "clip": {
+          "element": ".nt-drawer.open",
+          "pad": 0
+        },
+        "highlights": [
+          ".nt-drawer.open .nt-checklist__head"
+        ]
+      }
+    },
+    {
+      "admin": "/tables/{{Country List}}"
+    },
+    {
+      "wait": 4000
+    },
+    {
+      "shot": {
+        "name": "4.-Table-Rows-Tab-Showing-Rows-Read",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          ".nt-source-banner"
+        ]
+      }
+    }
+  ]
+}

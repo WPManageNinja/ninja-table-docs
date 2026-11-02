@@ -27,15 +27,7 @@ description: "Use a column's Responsive visibility setting to decide on which de
 
 Exact break points differ a little between the two engines. Test the table on a phone-sized window with **Preview**.
 
-<!-- TODO(screenshot): column-responsive-breakpoints-2
-  screen: Preview of Employee Directory at phone width
-  table: Employee Directory
-  state: A column set to Initial hidden mobile folded behind the + button, drawer open on one row
-  highlight: + button
-  view: frontend
-  alt: Column hidden behind the plus button on a phone
-  blocked: needs a column saved with a responsive breakpoint (unsaved change); Employee Directory on the front end currently has no hidden column
--->
+![Column hidden behind the plus button on a phone](/images/responsive-design/column-responsive/1.-Column-Hidden-Behind-The-Plus-Button.webp)
 
 ## The + drawer
 

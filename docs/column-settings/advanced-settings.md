@@ -26,15 +26,7 @@ The tab is split into four groups: Display, Colors, Behavior and Header.
 
 See [Style a table with CSS selectors](/table-styling-css-selector) for the selector to use. The same class is also what the [rowspan](/rowspan) method relies on.
 
-<!-- TODO(screenshot): advanced-settings-2
-  screen: Preview of Product Price List
-  table: Product Price List
-  state: One column with width 200px, custom background and text colors and a custom extra class visible on the front end
-  highlight: -
-  view: frontend
-  alt: Column with a fixed width and custom styling on the site
-  blocked: needs a saved column width, colors and extra class on a demo table (no saving allowed)
--->
+![Column with a fixed width and custom styling on the site](/images/column-settings/advanced-settings/1.-Column-With-A-Fixed-Width.webp)
 
 ## Colors (Pro)
 

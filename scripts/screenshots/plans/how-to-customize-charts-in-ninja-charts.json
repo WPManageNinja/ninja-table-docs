@@ -1,0 +1,306 @@
+{
+ "doc": "docs/ninja-charts/how-to-customize-charts-in-ninja-charts.md",
+ "outDir": "public/images/ninja-charts/customize-charts-ninja",
+ "adminPage": "ninja-charts",
+ "appRoot": "#ninja-charts-app",
+ "viewport": {
+  "width": 1440,
+  "height": 1300
+ },
+ "steps": [
+  {
+   "admin": "/add-chart"
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "fill": {
+    "selector": ".el-input__inner >> nth=0",
+    "value": "Product Price Comparison"
+   }
+  },
+  {
+   "click": ".el-select"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Chart Js"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "text": "Horizontal Bar"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "^next$"
+   }
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "click": ".el-select"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Ninja Tables"
+   }
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "click": ".el-select >> nth=1"
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Product Price List"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "^next$"
+   }
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "eval": "document.querySelectorAll('.el-popper.el-tooltip').forEach(e=>e.remove())"
+  },
+  {
+   "click": {
+    "selector": ".list-group-item",
+    "hasText": "Product"
+   }
+  },
+  {
+   "wait": 400
+  },
+  {
+   "eval": "document.querySelectorAll('.el-popper.el-tooltip').forEach(e=>e.remove())"
+  },
+  {
+   "click": {
+    "selector": ".list-group-item",
+    "hasText": "Price"
+   }
+  },
+  {
+   "wait": 400
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "^next$"
+   }
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "eval": "document.querySelectorAll('.el-popper.el-tooltip').forEach(e=>e.remove())"
+  },
+  {
+   "shot": {
+    "name": "1.-Formatting-Preview-Step-With-The-CHART",
+    "clip": {
+     "element": ".el-card.box-card",
+     "pad": 24
+    },
+    "highlights": [
+     {
+      "text": "CHART"
+     }
+    ]
+   }
+  },
+  {
+   "admin": "/chart-list"
+  },
+  {
+   "front": "/wp-login.php",
+   "login": false,
+   "waitUntil": "load"
+  },
+  {
+   "admin": "/add-chart"
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "fill": {
+    "selector": ".el-input__inner >> nth=0",
+    "value": "Regional Sales Overview"
+   }
+  },
+  {
+   "click": ".el-select"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Chart Js"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "text": "Bar Chart"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "^next$"
+   }
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "click": ".el-select"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Ninja Tables"
+   }
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "click": ".el-select >> nth=1"
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Monthly Sales by Region 2026"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "^next$"
+   }
+  },
+  {
+   "wait": 3500
+  },
+  {
+   "eval": "document.querySelectorAll('.el-popper.el-tooltip').forEach(e=>e.remove())"
+  },
+  {
+   "click": {
+    "selector": ".list-group-item",
+    "hasText": "Month"
+   }
+  },
+  {
+   "wait": 400
+  },
+  {
+   "eval": "document.querySelectorAll('.el-popper.el-tooltip').forEach(e=>e.remove())"
+  },
+  {
+   "click": {
+    "selector": ".list-group-item",
+    "hasText": "North America"
+   }
+  },
+  {
+   "wait": 400
+  },
+  {
+   "eval": "document.querySelectorAll('.el-popper.el-tooltip').forEach(e=>e.remove())"
+  },
+  {
+   "click": {
+    "selector": ".list-group-item",
+    "hasText": "Europe"
+   }
+  },
+  {
+   "wait": 400
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "^next$"
+   }
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "text": "SERIES"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "eval": "document.querySelectorAll('.el-popper.el-tooltip').forEach(e=>e.remove())"
+  },
+  {
+   "shot": {
+    "name": "2.-SERIES-Tab-With-A-Label",
+    "clip": {
+     "element": ".el-card.box-card",
+     "pad": 24
+    },
+    "highlights": [
+     {
+      "text": "SERIES"
+     }
+    ]
+   }
+  }
+ ]
+}

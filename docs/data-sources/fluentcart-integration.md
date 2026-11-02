@@ -19,14 +19,7 @@ You need FluentCart active. The **FluentCart products** tile only appears when i
 6. Check the engine line (FooTable is the usual choice). See [Choose a table engine](/choose-table-engine).
 7. Click **Create table**.
 
-<!-- TODO(screenshot): fluentcart-integration-1
-  screen: Tables › Create Table › Connect live data › FluentCart products
-  table: a FluentCart product table
-  state: Drawer open with a category chosen, Hide out of stock items on, Initial Order By set to Price
-  highlight: Initial Order By field
-  view: admin
-  alt: FluentCart products drawer with category, stock and order options
--->
+![FluentCart products drawer with category, stock and order options](/images/data-sources/fluentcart-integration/1.-FluentCart-Products-Drawer-With-Category-Stock.webp)
 
 The new table starts with these columns: Image, Name, Category, Price, Total Stock, Variations, Quantity and Buy. Sale prices show the old price struck through.
 
@@ -48,7 +41,7 @@ The same choices as on the Create screen: **Select Products By Category**, **Sel
 
 <!-- TODO(screenshot): fluentcart-integration-2
   screen: Tables › a FluentCart table › Table Rows › Source settings › Query settings
-  table: a FluentCart product table
+  table: Store Products
   state: Query settings section open
   highlight: Save settings button
   view: admin
@@ -66,7 +59,7 @@ Click **Save settings**.
 
 <!-- TODO(screenshot): fluentcart-integration-3
   screen: Tables › a FluentCart table › Table Rows › Source settings › Appearance
-  table: a FluentCart product table
+  table: Store Products
   state: Appearance section open with cart details and bulk actions on
   highlight: Show bulk actions switch
   view: admin
@@ -84,7 +77,7 @@ Add a column filled from your product data. For example, to show the short descr
 
 <!-- TODO(screenshot): fluentcart-integration-4
   screen: Tables › a FluentCart table › Table Rows › Source settings › Add new column
-  table: a FluentCart product table
+  table: Store Products
   state: Add new column form with Post Data and Product Short Description chosen
   highlight: Field value dropdown
   view: admin
@@ -109,7 +102,7 @@ Copy the shortcode from the editor header and paste it into any page or post, or
 
 <!-- TODO(screenshot): fluentcart-integration-5
   screen: A page with the FluentCart table shortcode
-  table: a FluentCart product table
+  table: Store Products
   state: Front end table with Add To Cart buttons and a cart summary
   highlight: -
   view: frontend

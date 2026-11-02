@@ -18,14 +18,7 @@ Only read-only `SELECT` queries are allowed, and only administrators can write t
 5. Check the engine line (FooTable is the usual choice). See [Choose a table engine](/choose-table-engine).
 6. Click **Create table**.
 
-<!-- TODO(screenshot): create-table-from-custom-sql-1
-  screen: Tables › Create Table › Connect live data › Custom SQL query
-  table: -
-  state: Table name and a SELECT query filled in, SQL Connection Type on Default WP SQL Table
-  highlight: Custom SQL Query editor
-  view: admin
-  alt: Custom SQL query drawer with a SELECT query
--->
+![Custom SQL query drawer with a SELECT query](/images/data-sources/create-table-custom-sql/1.-Custom-SQL-Query-Drawer.webp)
 
 Ninja Tables runs the query and turns the fields of the first result row into text columns, named after the fields. The query must return at least one row, otherwise Ninja Tables can't detect the columns and says "SQL is valid but returned no rows, so columns cannot be detected." If the query has an error, an **SQL error** message shows what went wrong.
 
@@ -36,6 +29,7 @@ Ninja Tables runs the query and turns the fields of the first result row into te
   highlight: -
   view: admin
   alt: Table Rows tab showing the result of a SQL query
+  blocked: needs a saved Custom SQL table; creating tables not allowed this wave
 -->
 
 The rows are read-only. You can still rename columns, change their types and design the table in the **Appearance** tab.
@@ -51,6 +45,7 @@ On the **Table Rows** tab, the banner reads **Rows come from SQL query**. Click 
   highlight: Save and run button
   view: admin
   alt: Source settings drawer of a Custom SQL table with the Query field
+  blocked: needs a saved Custom SQL table; creating tables not allowed this wave
 -->
 
 ## What queries are allowed

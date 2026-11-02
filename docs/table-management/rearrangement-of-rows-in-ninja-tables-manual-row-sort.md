@@ -15,15 +15,7 @@ Manual sorting is available on tables that keep their own rows. Connected tables
 2. Click **Sort manually** in the toolbar. The button stays pressed while it is on.
 3. A grip icon (**Drag to reorder**) appears at the start of every row. Drag a row by its grip and drop it where you want it.
 
-<!-- TODO(screenshot): rearrangement-of-rows-in-ninja-tables-manual-row-sort-1
-  blocked: toggling Sort manually saves table settings and assigns row positions to the demo table (saved-data change)
-  screen: Tables › Course Catalog › Table Rows
-  table: Course Catalog
-  state: Sort manually turned on, grip icons visible at the start of each row
-  highlight: Sort manually button
-  view: admin
-  alt: Table Rows toolbar with Sort manually on and grips on every row
--->
+![Table Rows toolbar with Sort manually on and grips on every row](/images/table-management/rearrangement-rows-ninja/1.-Table-Rows-Toolbar-With-Sort-Manually.webp)
 
 Each drop is saved right away. You don't need to click Save.
 

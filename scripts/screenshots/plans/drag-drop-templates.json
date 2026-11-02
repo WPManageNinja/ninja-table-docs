@@ -1,0 +1,19 @@
+{
+  "doc": "docs/drag-drop-tables/drag-drop-templates.md",
+  "outDir": "public/images/drag-drop-tables/drag-drop-templates",
+  "viewport": { "width": 1440, "height": 900 },
+  "steps": [
+    { "admin": "/create?source=drag_and_drop" },
+    { "wait": 1500 },
+    { "fill": { "selector": ".nt-dd-create .el-input__inner", "value": "Pricing plans" } },
+    { "click": { "selector": ".nt-dd-source", "hasText": "Choose a template" } },
+    { "click": ".el-drawer__footer .nt-btn--primary" },
+    { "wait": 1500 },
+    { "click": { "selector": ".nt-segmented button", "hasText": "Pricing" } },
+    { "wait": 800 },
+    { "click": { "selector": ".nt-dd-picker__tpl", "hasText": "Pricing Table Two" } },
+    { "wait": 500 },
+    { "shot": { "name": "1.-Template-Picker-Showing-Template-Cards", "clip": "app",
+        "highlights": [ { "selector": ".nt-dd-picker__tpl", "hasText": "Pricing Table Two" } ] } }
+  ]
+}

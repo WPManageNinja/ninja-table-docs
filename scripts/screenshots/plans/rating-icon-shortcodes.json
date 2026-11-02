@@ -1,0 +1,10 @@
+{
+  "doc": "docs/advanced-features/rating-icon-shortcodes.md",
+  "outDir": "public/images/advanced-features/rating-icon-shortcodes",
+  "viewport": { "width": 1440, "height": 900 },
+  "steps": [
+    { "front": "{{page:Online Courses}}/" },
+    { "wait": 1500 },
+    { "shot": { "name": "1.-Table-Column-Showing-Star-Ratings-Drawn", "clip": "viewport" } }
+  ]
+}

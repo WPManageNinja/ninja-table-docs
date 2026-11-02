@@ -27,6 +27,7 @@ Advanced Custom Fields is a WordPress plugin that adds your own fields to posts,
   highlight: Field Name
   view: admin
   alt: ACF field group with a field and its Field Name
+  blocked: Advanced Custom Fields is not installed on the local site (no ACF option in Field type); install ACF with a sample field group and a post value
 -->
 
 ## Step 2: Fill in the field on your posts
@@ -40,6 +41,7 @@ Open a post. The ACF field appears below the content. Enter a value and click **
   highlight: ACF field
   view: admin
   alt: Post editor with an ACF field filled in
+  blocked: Advanced Custom Fields is not installed on the local site (no ACF option in Field type); install ACF with a sample field group and a post value
 -->
 
 ## Step 3: Add the ACF column to your table
@@ -58,6 +60,7 @@ Open a post. The ACF field appears below the content. Enter a value and click **
   highlight: Field value
   view: admin
   alt: Add new column section with the ACF field type and an ACF field name
+  blocked: Advanced Custom Fields is not installed on the local site (no ACF option in Field type); install ACF with a sample field group and a post value
 -->
 
 Click **Preview** in the editor header. The new column shows each post's ACF value.
@@ -69,6 +72,7 @@ Click **Preview** in the editor header. The new column shows each post's ACF val
   highlight: -
   view: frontend
   alt: Posts table on the page with an ACF column
+  blocked: Advanced Custom Fields is not installed on the local site (no ACF option in Field type); install ACF with a sample field group and a post value
 -->
 
 ## Use ACF values inside other content

@@ -17,14 +17,7 @@ The **Data Range** step of the chart creator decides which parts of your data en
 6. Turn on **Date Range Picker** to show only rows from a date range, then choose the dates. It applies to Fluent Forms entries and to tables that have a date.
 7. Click **Next**.
 
-<!-- TODO(screenshot): how-to-use-data-range-picker-in-ninja-charts-1
-  screen: Ninja Tables › Add Chart › Data Range
-  table: Monthly Sales by Region 2026
-  state: Columns in the data source on the left, columns used in the chart on the right, Number of Items set to 10
-  highlight: Number of Items field
-  view: admin
-  alt: Data Range step with column lists, Number of Items, Data order and Pick Items
--->
+![Data Range step with column lists, Number of Items, Data order and Pick Items](/images/ninja-charts/data-range-picker-ninja/1.-Data-Range-Step-With-Column-Lists.webp)
 
 Some columns can't be charted as they are. If the creator says "Please update your table column data type", change that column's type in the table or choose another column. Column types that are counted into categories (such as Select fields and radio buttons) are described in [Ninja Tables data](/create-ninja-charts-with-ninja-tables-data) and [Fluent Forms entries](/create-ninja-charts-with-fluent-forms-entries).
 

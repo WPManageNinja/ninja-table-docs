@@ -1,0 +1,81 @@
+{
+  "doc": "docs/data-sources/google-sheets-csv-auto-sync.md",
+  "outDir": "public/images/data-sources/google-sheets-csv-auto-sync",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 640
+      }
+    },
+    {
+      "admin": "/create"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": {
+        "text": "Google Sheets"
+      }
+    },
+    {
+      "wait": 1000
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer.open input >> nth=0",
+        "value": "Sales Report"
+      }
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer.open input >> nth=1",
+        "value": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8nR4kLw2Hs9Pz7xT3mYc5JdUe6aBf0GqVo1NiKtXhSyZrA/pub?output=csv"
+      }
+    },
+    {
+      "eval": "document.activeElement&&document.activeElement.blur()"
+    },
+    {
+      "click": ".nt-drawer.open :text-is(\"Change\")"
+    },
+    {
+      "wait": 600
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 780
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": ".nt-drawer.open .nt-radio-card >> text=DataTables"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "click": {
+        "selector": ".nt-drawer.open .nt-field, .nt-drawer.open .el-form-item",
+        "hasText": "Sync Interval"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
+      "shot": {
+        "name": "1.-Sync-Interval-List-In-The-Google",
+        "clip": "app"
+      }
+    }
+  ]
+}

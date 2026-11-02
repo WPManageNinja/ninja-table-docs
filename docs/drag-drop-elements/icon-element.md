@@ -9,14 +9,7 @@ The **Icon** element (Pro) shows a single icon in a Drag & Drop table cell. It i
 
 To add one, click a cell and click **Icon** in the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell. Click the icon to set its options in the **Settings** tab.
 
-<!-- TODO(screenshot): icon-element-1
-  screen: Drag & Drop builder › canvas
-  table: a Drag & Drop comparison table
-  state: Check and cross Icon elements in feature cells
-  highlight: -
-  view: admin
-  alt: Icon elements in a Drag & Drop comparison table
--->
+![Icon elements in a Drag & Drop comparison table](/images/drag-drop-elements/icon-element/1.-Icon-Elements-In-A-Drag-Drop.webp)
 
 ## Icon options
 
@@ -27,14 +20,7 @@ Under **Content & style**:
 - **Alignment**: **Left**, **Center** (default) or **Right**.
 - **Icon**: pick one from the library with the search box, or click **Upload your own** to choose an image from the media library. The default icon is "ninja-table".
 
-<!-- TODO(screenshot): icon-element-2
-  screen: Drag & Drop builder › Settings › Icon › Content & style
-  table: a Drag & Drop comparison table
-  state: Icon element selected, icon picker visible
-  highlight: Icon picker
-  view: admin
-  alt: Settings tab showing the Icon element options and icon picker
--->
+![Settings tab showing the Icon element options and icon picker](/images/drag-drop-elements/icon-element/2.-Settings-Tab-Showing-The-Icon-Element.webp)
 
 Below the options, **Spacing** sets the margin and padding around the icon; see [Element Spacing](/spacing).
 

@@ -23,27 +23,11 @@ A fourth column, **Total**, shows the sum of the three quarters in each row. Thi
 
 4. Click **Save column**.
 
-<!-- TODO(screenshot): row-column-data-calculation-1
-  blocked: Excel formula support switch saves immediately for the whole table and no demo column has a formula
-  screen: Tables › Monthly Sales by Region 2026 › Table Rows › Column settings › Transform
-  table: Monthly Sales by Region 2026
-  state: Transform tab of a total column with Excel formula support on and a SUM formula in the box
-  highlight: Transform value box
-  view: admin
-  alt: Transform tab with a SUM formula
--->
+![Transform tab with a SUM formula](/images/table-management/row-column-data-calculation/1.-Transform-Tab-With-A-SUM-Formula.webp)
 
 The **Total** column now shows the sum of each row, in the grid and on your site.
 
-<!-- TODO(screenshot): row-column-data-calculation-2
-  blocked: needs a saved formula column and a real demo page; Monthly Sales by Region 2026 has no demo page
-  screen: Preview of Monthly Sales by Region 2026
-  table: Monthly Sales by Region 2026
-  state: Total column showing the row sums
-  highlight: -
-  view: frontend
-  alt: Total column showing the sum of each row
--->
+![Total column showing the sum of each row](/images/table-management/row-column-data-calculation/2.-Total-Column-Showing-The-Sum.webp)
 
 Other functions work the same way, such as `AVERAGE`, `ROUND` and `IF`. Use `NUMVAL` to turn text such as `$1,200.50` into a number first. See [Transform value](/transform-value) for the formula rules and the list of functions.
 
@@ -53,27 +37,11 @@ Column totals use a small script in the table's **Custom JS**, a Pro feature. It
 
 1. Copy the JavaScript from this [GitHub gist](https://gist.github.com/reachkamrul/11e6e60d4aa113abe81586367cc27b77).
 2. Go to **Ninja Tables** › **Tables** › your table › **Custom CSS/JS** and open the Custom JS editor. Paste the code.
-3. On the first line of the code, `var myClasses= "..."`, enter the **Column key** of the column you want to total. To total several columns, separate their keys with commas. You can find a column's key in **Table Rows** › column header gear › **Column settings** › **Basic**.
+3. Near the top of the code, in the line `var myClasses= "..."`, enter the **Column key** of the column you want to total. To total several columns, separate their keys with commas. You can find a column's key in **Table Rows** › column header gear › **Column settings** › **Basic**.
 4. Click **Save Custom JS**.
 
-<!-- TODO(screenshot): row-column-data-calculation-3
-  blocked: the gist script is not available locally and the total row needs saved Custom JS
-  screen: Tables › Monthly Sales by Region 2026 › Custom CSS/JS › Custom JS
-  table: Monthly Sales by Region 2026
-  state: Custom JS editor with the column total script pasted and the column keys set on the first line
-  highlight: first line of the script
-  view: admin
-  alt: Custom JS editor with the column total script
--->
+![Custom JS editor with the column total script](/images/table-management/row-column-data-calculation/3.-Custom-JS-Editor-With-The-Column.webp)
 
 Preview the table. Each column you listed now shows its total at the bottom.
 
-<!-- TODO(screenshot): row-column-data-calculation-4
-  blocked: needs saved Custom JS and a real demo page for Monthly Sales by Region 2026
-  screen: Preview of Monthly Sales by Region 2026
-  table: Monthly Sales by Region 2026
-  state: Total row at the bottom of the table
-  highlight: Total row
-  view: frontend
-  alt: Table with a total row under the numeric columns
--->
+![Table with a total row under the numeric columns](/images/table-management/row-column-data-calculation/4.-Table-With-A-Total-Row-Under.webp)

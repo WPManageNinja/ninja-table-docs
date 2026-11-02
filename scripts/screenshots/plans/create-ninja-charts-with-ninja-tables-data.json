@@ -1,0 +1,25 @@
+{
+  "doc": "docs/ninja-charts/create-ninja-charts-with-ninja-tables-data.md",
+  "outDir": "public/images/ninja-charts/create-ninja-charts-ninja",
+  "adminPage": "ninja-charts",
+  "appRoot": "#ninja-charts-app",
+  "viewport": { "width": 1440, "height": 900 },
+  "steps": [
+    { "admin": "/add-chart" },
+    { "fill": { "selector": "#ninja-charts-app input[type=text]", "value": "Monthly Revenue by Region" } },
+    { "click": "#ninja-charts-app .el-select" },
+    { "click": ".el-select-dropdown__item:has-text(\"Chart Js\")" },
+    { "wait": 800 },
+    { "click": "#ninja-charts-app .el-col:has(h4:text-is(\"Bar Chart\"))" },
+    { "click": "#ninja-charts-app button:has-text(\"Next\")" },
+    { "wait": 800 },
+    { "click": "#ninja-charts-app .el-select" },
+    { "click": ".el-select-dropdown__item:has-text(\"Ninja Tables\")" },
+    { "wait": 800 },
+    { "click": "#ninja-charts-app .el-form-item:has-text(\"Data\") .el-select" },
+    { "click": ".el-select-dropdown__item:has-text(\"Monthly Sales by Region 2026\")" },
+    { "wait": 800 },
+    { "shot": { "name": "1.-Data-Source-Step-With-Ninja-Tables", "clip": "app", "crop": "auto",
+        "highlights": [ { "selector": ".el-form-item", "hasText": "Data" } ] } }
+  ]
+}

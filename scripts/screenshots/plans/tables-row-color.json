@@ -89,6 +89,21 @@
           ".nt-row-drawer .nt-row-style__card"
         ]
       }
+    },
+    {
+      "front": "{{page:Managed WordPress Plans}}/"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "shot": {
+        "name": "1.-Table-On-The-Site",
+        "clip": {
+          "element": ".ninja_table_wrapper",
+          "pad": 10
+        }
+      }
     }
   ]
 }

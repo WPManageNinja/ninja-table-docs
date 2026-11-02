@@ -24,14 +24,7 @@ You create a connected table from **Create Table** › **Connect live data**. Ea
 
 The WooCommerce tiles appear only when WooCommerce is active, and the FluentCart tile only when FluentCart is active. The Fluent Forms tile is always there. If Fluent Forms isn't installed, its drawer tells you so instead of showing the form.
 
-<!-- TODO(screenshot): connected-tables-overview-1
-  screen: Tables › Create a table › Connect live data
-  table: -
-  state: Create screen with the Connect live data group and its eight tiles visible
-  highlight: Connect live data group
-  view: admin
-  alt: Create a table screen with the eight Connect live data tiles
--->
+![Create a table screen with the eight Connect live data tiles](/images/data-sources/connected-overview/1.-Create-A-Table-Screen.webp)
 
 ### When a Pro source is locked
 
@@ -96,6 +89,7 @@ Save your changes with the button at the bottom of each section (**Save settings
   highlight: Edit query button
   view: admin
   alt: Source banner reading Rows come from WordPress posts, and the Edit query drawer
+  blocked: no demo WP Posts table exists (only DOCTEST ones); needs a seeded WP Posts table to show the source banner and Edit query drawer
 -->
 
 ## Rows are read-only

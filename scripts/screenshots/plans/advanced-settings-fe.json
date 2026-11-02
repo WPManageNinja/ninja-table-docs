@@ -1,0 +1,40 @@
+{
+ "doc": "docs/column-settings/advanced-settings.md",
+ "outDir": "public/images/column-settings/advanced-settings",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   }
+  },
+  {
+   "front": "{{page:Winter Collection}}/"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "eval": "(function(){var w=document.querySelector('.ninja_table_wrapper');var e=w;while(e&&e.tagName!='BODY'){var s=e.previousElementSibling;while(s){s.style.display='none';s=s.previousElementSibling}s=e.nextElementSibling;while(s){s.style.display='none';s=s.nextElementSibling}e=e.parentElement}})()"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "wait": 300
+  },
+  {
+   "shot": {
+    "name": "1.-Column-With-A-Fixed-Width",
+    "clip": {
+     "element": ".ninja_table_wrapper",
+     "pad": 24
+    }
+   }
+  }
+ ]
+}

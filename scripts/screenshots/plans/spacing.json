@@ -1,0 +1,117 @@
+{
+ "doc": "docs/drag-drop-settings/spacing.md",
+ "outDir": "public/images/drag-drop-settings/spacing",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   }
+  },
+  {
+   "admin": "/table_builder_edit_table/{{Website Pricing}}"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "text": "Add row"
+   }
+  },
+  {
+   "click": {
+    "text": "At the bottom"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "css": ".ntb_table_wrapper{max-height:none!important;height:auto!important}#selected-item{opacity:1!important;background:none!important;animation:none!important}"
+  },
+  {
+   "eval": "document.querySelector('tbody tr:last-child td.table-data:nth-of-type(3) .ntb-chip__btn--danger').click()"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": "tbody tr:last-child td.table-data:nth-of-type(3)"
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Elements\")"
+  },
+  {
+   "click": {
+    "selector": ".ntb-pal__item",
+    "hasText": "Text"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "fill": {
+    "selector": "tbody tr:last-child td.table-data:nth-of-type(3) .single-item [contenteditable]",
+    "value": "Standard plan"
+   }
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": "tbody tr:last-child td.table-data:nth-of-type(3) .single-item"
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "setColor": {
+    "label": "Font color",
+    "hex": "#FFFFFF"
+   }
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": {
+    "selector": ".el-collapse-item__header",
+    "hasText": "Spacing"
+   }
+  },
+  {
+   "wait": 600
+  },
+  {
+   "scrollTop": true
+  },
+  {
+   "wait": 200
+  },
+  {
+   "shot": {
+    "name": "1.-Spacing-Section-With-The-Margin-Tab",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     ".ntb-panel .el-tabs__item.is-active"
+    ]
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "scrollTop": true
+  }
+ ]
+}

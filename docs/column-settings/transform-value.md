@@ -46,15 +46,7 @@ Write an anchor tag in the Transform value box and use reference shortcodes for 
 
 The same idea works for phone numbers (`tel:`), so visitors can call with one click.
 
-<!-- TODO(screenshot): transform-value-2
-  screen: Preview of Employee Directory
-  table: Employee Directory
-  state: Email column showing underlined mailto links produced by Transform value
-  highlight: -
-  view: frontend
-  alt: Email column shown as links on the site
-  blocked: needs a saved Transform value on Employee Directory Email column (no saving allowed)
--->
+![Email column shown as links on the site](/images/column-settings/transform-value/1.-Email-Column-Shown-As-Links.webp)
 
 ## Excel formulas
 
@@ -99,14 +91,6 @@ You can use as many `IF` formulas as you need.
 
 The result column now shows the sum for every row.
 
-<!-- TODO(screenshot): transform-value-3
-  screen: Preview of Monthly Sales by Region 2026
-  table: Monthly Sales by Region 2026
-  state: A total column showing the sum of two numeric columns for every row
-  highlight: -
-  view: frontend
-  alt: Result column showing the sum of two columns
-  blocked: needs a saved SUM formula column on Monthly Sales by Region 2026 (no saving allowed)
--->
+![Result column showing the sum of two columns](/images/column-settings/transform-value/2.-Result-Column-Showing-The-Sum.webp)
 
 For more calculation examples, see [Formulas & calculations](/row-column-data-calculation). To show images and lightboxes from a URL column, see [Image lightbox with Transform](/image-lightbox-using-column-transform-value).

@@ -26,6 +26,7 @@ If Fluent Forms is installed but out of date, the drawer shows a warning that Fl
   highlight: Install Fluent Forms now button
   view: admin
   alt: Fluent Forms entries drawer asking to install Fluent Forms
+  blocked: Fluent Forms plugin is not installed on the dev site
 -->
 
 ## Create a Fluent Forms table
@@ -46,6 +47,7 @@ If Fluent Forms is installed but out of date, the drawer shows a warning that Fl
   highlight: Max records field
   view: admin
   alt: Fluent Forms entries drawer with form, fields, entry status and max records
+  blocked: Fluent Forms plugin is not installed on the dev site
 -->
 
 Ninja Tables opens the new table on the **Table Rows** tab, with your form fields as column headers and the entries as rows.
@@ -57,6 +59,7 @@ Ninja Tables opens the new table on the **Table Rows** tab, with your form field
   highlight: -
   view: admin
   alt: Table Rows tab listing Fluent Forms entries
+  blocked: Fluent Forms plugin is not installed on the dev site
 -->
 
 ### Extra entry columns
@@ -87,6 +90,7 @@ The rows are read-only, because they come from Fluent Forms. To change an entry,
   highlight: Update button
   view: admin
   alt: Source settings drawer of a Fluent Forms table
+  blocked: Fluent Forms plugin is not installed on the dev site
 -->
 
 ## Choose the entry order

@@ -1,0 +1,53 @@
+{
+ "doc": "docs/wordpress-integration/dynamic-columns-reference.md",
+ "outDir": "public/images/wordpress-integration/dynamic-columns-reference",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/tables/{{Store Blog Posts}}"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Edit query"
+   }
+  },
+  {
+   "wait": 6000
+  },
+  {
+   "click": {
+    "text": "Add new column"
+   }
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "click": {
+    "text": "Select field"
+   }
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "(function(){var d=document.querySelector('.el-drawer');function f(t){var c=[...d.querySelectorAll('label,div,span')].filter(function(e){return e.children.length<=2&&e.innerText&&e.innerText.trim()===t});return c[c.length-1]}function box(t){var e=f(t);var r=e.parentElement;return r}var a=box(\"Field type\").getBoundingClientRect(),b=box(\"Field type\").getBoundingClientRect();var d2=document.createElement('div');d2.id='nt-hl';d2.style.cssText='position:fixed;pointer-events:none;left:'+(a.left-10)+'px;top:'+(a.top-6)+'px;width:'+(a.width+4)+'px;height:'+(b.bottom-a.top+12)+'px';document.body.appendChild(d2)})()"
+  },
+  {
+   "shot": {
+    "name": "1.-Add-New-Column-Section",
+    "clip": "app",
+    "highlights": [
+     "#nt-hl"
+    ]
+   }
+  }
+ ]
+}

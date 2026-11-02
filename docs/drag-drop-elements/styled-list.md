@@ -9,14 +9,7 @@ The **Styled List** element (Pro) is a list that uses an icon of your choice ins
 
 To add one, click a cell and click **Styled List** in the **Advanced** group of the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell. The list starts with three items. Click the list to set its options in the **Settings** tab, which has three sub-tabs: **General**, **Text** and **Icon**.
 
-<!-- TODO(screenshot): styled-list-1
-  screen: Drag & Drop builder › canvas
-  table: a Drag & Drop pricing table
-  state: A Styled List with check mark icons in a plan cell
-  highlight: -
-  view: admin
-  alt: Styled List element with check mark icons
--->
+![Styled List element with check mark icons](/images/drag-drop-elements/styled-list/1.-Styled-List-Element-With-Check-Mark.webp)
 
 ## Add and remove items
 
@@ -38,14 +31,7 @@ Click an item to edit its text. There is no **Add item** button. Hover over an i
 - **Icon size** (10–50).
 - **Icon**: pick one from the library with the search box, or click **Upload your own** to choose an image from the media library. The default icon is "heart".
 
-<!-- TODO(screenshot): styled-list-2
-  screen: Drag & Drop builder › Settings › Stylist list › Icon
-  table: a Drag & Drop pricing table
-  state: Icon sub-tab open with the icon picker
-  highlight: Icon picker
-  view: admin
-  alt: Styled List Icon sub-tab with the icon picker
--->
+![Styled List Icon sub-tab with the icon picker](/images/drag-drop-elements/styled-list/2.-Styled-List-Icon-Sub-Tab.webp)
 
 Below the sub-tabs, **Spacing** sets the margin and padding around the list; see [Element Spacing](/spacing). Click **Save** to keep your changes.
 

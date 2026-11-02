@@ -35,6 +35,7 @@ The rating value is also written into the cell as hidden text, so the column sti
   highlight: -
   view: frontend
   alt: Table column showing star ratings drawn by the nt_ratings shortcode
+  blocked: no demo table has a rating column using [nt_ratings]; Course Catalog has none and adding one means saving cell data
 -->
 
 ### Example: rating from another column

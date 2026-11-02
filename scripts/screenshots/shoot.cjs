@@ -89,7 +89,7 @@ async function main() {
   const outDir = outOverride ? path.resolve(outOverride) : path.resolve(REPO, plan.outDir);
   fs.mkdirSync(outDir, { recursive: true });
 
-  const h = new Harness({ site: plan.site, viewport: plan.viewport, user: plan.user, pass: plan.pass, onboarding: plan.onboarding });
+  const h = new Harness({ site: plan.site, viewport: plan.viewport, user: plan.user, pass: plan.pass, onboarding: plan.onboarding, adminPage: plan.adminPage, appRoot: plan.appRoot });
   await h.launch();
   const raws = {};
   let n = 0;
@@ -114,6 +114,7 @@ async function main() {
         case 'scrollTop': console.log(tag); await h.scrollTop(); break;
         case 'css': console.log(tag, v.slice(0, 60)); await h.page.addStyleTag({ content: v }); await h.page.waitForTimeout(300); break;
         case 'eval': console.log(tag, v.slice(0, 60)); await h.page.evaluate(v); await h.page.waitForTimeout(600); break;
+        case 'upload': console.log(tag, v.file); await h.page.setInputFiles(v.selector || 'input[type=file]', v.file); await h.page.waitForTimeout(1000); break;
         case 'wait': console.log(tag, v); await h.page.waitForTimeout(v); break;
         case 'shot': {
           if (only.length && !only.includes(v.name)) { console.log(tag, v.name, '(skipped)'); break; }

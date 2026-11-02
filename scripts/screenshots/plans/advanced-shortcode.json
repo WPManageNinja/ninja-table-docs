@@ -1,0 +1,40 @@
+{
+  "doc": "docs/advanced-features/advanced-shortcode.md",
+  "outDir": "public/images/advanced-features/advanced-shortcode",
+  "viewport": {
+    "width": 1900,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Employee Directory}}"
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "click": "[aria-label='Show row ID, author and date']"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "wait": 300
+    },
+    {
+      "wait": 600
+    },
+    {
+      "shot": {
+        "name": "1.-Table-Rows-Tab-With-The-Row",
+        "clip": "app",
+        "highlights": [
+          {
+            "selector": "th",
+            "hasText": "Row ID"
+          }
+        ]
+      }
+    }
+  ]
+}

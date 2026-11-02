@@ -41,6 +41,27 @@
           ".nt-drawer .el-select"
         ]
       }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1300
+      }
+    },
+    {
+      "front": "{{page:Winter Collection}}/"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "shot": {
+        "name": "1.-Table-Showing-A-Text-Area-Column",
+        "clip": {
+          "element": ".ninja_table_wrapper",
+          "pad": 24
+        }
+      }
     }
   ]
 }

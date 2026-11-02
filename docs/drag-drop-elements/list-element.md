@@ -9,27 +9,13 @@ The **List** element adds a bulleted or numbered list to a Drag & Drop table cel
 
 To add one, click a cell and click **List** in the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell. The list starts with three items ("list item 1", "list item 2", "list item 3"). Click the list to set its options in the **Settings** tab, which has three sub-tabs: **General**, **Text** and **List**.
 
-<!-- TODO(screenshot): list-element-1
-  screen: Drag & Drop builder › canvas
-  table: a Drag & Drop pricing table
-  state: A List element with three features in a plan cell
-  highlight: -
-  view: admin
-  alt: List element in a Drag & Drop table cell
--->
+![List element in a Drag & Drop table cell](/images/drag-drop-elements/list-element/1.-List-Element-In-A-Drag-Drop.webp)
 
 ## Add and remove items
 
 Click an item in the cell to edit its text. There is no **Add item** button. Hover over an item and click its **copy** icon to add another item, or its **delete** icon to remove it. These icons only show in the Desktop preview.
 
-<!-- TODO(screenshot): list-element-2
-  screen: Drag & Drop builder › canvas
-  table: a Drag & Drop pricing table
-  state: Pointer over a list item showing the copy and delete icons
-  highlight: copy icon
-  view: admin
-  alt: List item with the copy and delete icons showing
--->
+![List item with the copy and delete icons showing](/images/drag-drop-elements/list-element/2.-List-Item-With-The-Copy.webp)
 
 ## General
 
@@ -46,14 +32,7 @@ Click an item in the cell to edit its text. There is no **Add item** button. Hov
 - **List type**: **Unordered list** (bullets, default) or **Ordered list** (numbers or letters). Switching the type resets **List icon** to the first choice.
 - **List icon**: the marker style. For an unordered list: **circle** (default), **square**, **disc** or **none**. For an ordered list: **upper-roman**, **lower-roman**, **upper-alpha**, **lower-alpha** or **decimal**.
 
-<!-- TODO(screenshot): list-element-3
-  screen: Drag & Drop builder › Settings › List › List
-  table: a Drag & Drop pricing table
-  state: List type set to Ordered list, List icon options open
-  highlight: List type
-  view: admin
-  alt: List sub-tab with the list type and list icon options
--->
+![List sub-tab with the list type and list icon options](/images/drag-drop-elements/list-element/3.-List-Sub-Tab-With-The-List.webp)
 
 Below the sub-tabs, **Spacing** sets the margin and padding around the list; see [Element Spacing](/spacing).
 

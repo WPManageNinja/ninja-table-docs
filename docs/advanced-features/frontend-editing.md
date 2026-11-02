@@ -24,6 +24,7 @@ Without Ninja Tables Pro, the tab shows an upgrade panel (**Unlock frontend edit
   highlight: Frontend editing switch
   view: admin
   alt: Frontend editing tab with the switch turned on
+  blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor)
 -->
 
 Set the options below and click **Save** at the top of the editor. Turning the switch off saves straight away.
@@ -37,6 +38,7 @@ Set the options below and click **Save** at the top of the editor. Turning the s
   highlight: Who can add & edit
   view: admin
   alt: Permissions card with the role picker open
+  blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor); open the Who can add & edit select on the Permissions card
 -->
 
 - **Who can add & edit**: the roles that get the add and edit buttons. Pick as many roles as you like. Leave it empty for **Administrators only**.
@@ -61,6 +63,7 @@ With **Own data only** on, you can still show every row to everyone, read-only, 
   highlight: Own data only
   view: admin
   alt: Own data only switch with the read-only shortcode
+  blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor); also Own data only = on so the read-only shortcode note shows (set in the UI, can stay unsaved once the switch is on)
 -->
 
 ## Appearance
@@ -81,6 +84,7 @@ The labels and icons visitors see while editing:
   highlight: Action icon position
   view: admin
   alt: Appearance card with frontend editing labels and icon options
+  blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor)
 -->
 
 ## Columns
@@ -98,6 +102,7 @@ The **Columns** card lists every column with its type underneath the name: **Sin
   highlight: Editable
   view: admin
   alt: Columns card with Editable, Required and Default value for each column
+  blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor); Name and Email Editable+Required, Department default value (needs saved Columns settings or typed unsaved)
 -->
 
 ## On your site
@@ -111,4 +116,5 @@ Users with the right role see an add button above the table (**New Row** unless 
   highlight: -
   view: frontend
   alt: Table on a page with the Add row button and the edit popup open
+  blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor); plus a page embedding the table and an editor-role login (the runner logs in as admin)
 -->

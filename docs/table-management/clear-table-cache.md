@@ -17,14 +17,7 @@ Ninja Tables caches each table's data so pages load fast. If a table on your sit
 
 A message confirms when the cache has been cleared: "Table cache successfully cleared" or "All caches successfully cleared". Reload the page with the table to check it.
 
-<!-- TODO(screenshot): clear-table-cache-1
-  screen: Settings › Performance
-  table: -
-  state: Clear caches card showing Clear table cache and Clear external caches
-  highlight: Clear table cache
-  view: admin
-  alt: Settings Performance page with the two Clear caches buttons
--->
+![Settings Performance page with the two Clear caches buttons](/images/table-management/clear-cache/1.-Settings-Performance-Page-With-The-Two.webp)
 
 Both buttons are free and safe to use: they don't change or delete any table data.
 

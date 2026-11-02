@@ -19,6 +19,7 @@ Charts in Ninja Tables come from **Ninja Charts**, a separate free plugin. It ca
   highlight: Install Ninja Charts button
   view: admin
   alt: Charts screen with the Install Ninja Charts button
+  blocked: Ninja Charts is already installed on the dev site, so the "not installed" card cannot be shown
 -->
 
 Ninja Tables downloads, installs and activates Ninja Charts, then opens the chart list. Your user needs permission to install plugins (administrators have it).
@@ -39,6 +40,7 @@ You can also download the `.zip` file from WordPress.org and upload it with **Up
   highlight: Install Now button
   view: admin
   alt: WordPress plugin search showing Ninja Charts
+  blocked: needs the wordpress.org plugin search (external install screen)
 -->
 
 ## Update Ninja Charts

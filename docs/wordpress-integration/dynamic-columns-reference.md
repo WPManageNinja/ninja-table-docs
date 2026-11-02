@@ -23,14 +23,7 @@ Every dynamic column has the usual column fields (**Column name**, **Column key*
 
 Click **Add column** to save it. To change a dynamic column later, open the column header › **Column settings** on the **Table Rows** tab.
 
-<!-- TODO(screenshot): dynamic-columns-reference-1
-  screen: Tables › DOCTEST posts › Table Rows › Edit query › Add new column
-  table: a WP Posts table
-  state: Add new column section with the Field type list open, showing Post Meta, Shortcode / Computed Value or HTML and Featured Image
-  highlight: Field type list
-  view: admin
-  alt: Add new column section with the Field type list open
--->
+![Add new column section with the Field type list open](/images/wordpress-integration/dynamic-columns-reference/1.-Add-New-Column-Section.webp)
 
 The **Field type** list only shows the types the table's source supports, so a WP Posts table never offers Product Data. Dynamic columns are a Pro feature on WP Posts and WooCommerce tables.
 

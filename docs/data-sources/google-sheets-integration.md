@@ -39,6 +39,7 @@ Ninja Tables reads sheets that are published to the web.
   highlight: Publish button
   view: admin
   alt: Google Sheets Publish to web dialog with the CSV format selected
+  blocked: screen is Google Sheets itself (not this site)
 -->
 
 ## Step 2: Create the table
@@ -53,23 +54,9 @@ Ninja Tables reads sheets that are published to the web.
 6. Under **Select entry fields**, tick the columns you want in the table, or use **Select all**.
 7. Click **Create table**.
 
-<!-- TODO(screenshot): google-sheets-integration-2
-  screen: Tables › Create Table › Connect live data › Google Sheets › Step 1
-  table: -
-  state: FooTable engine, Table name and Data source URL filled in
-  highlight: Data source URL field
-  view: admin
-  alt: Google Sheets drawer step 1 with the Data source URL field
--->
+![Google Sheets drawer step 1 with the Data source URL field](/images/data-sources/google-sheets-integration/2.-Google-Sheets-Drawer-Step-1.webp)
 
-<!-- TODO(screenshot): google-sheets-integration-3
-  screen: Tables › Create Table › Connect live data › Google Sheets › Step 1
-  table: -
-  state: DataTables engine chosen, Google Sheet CSV URL and Sync Interval visible
-  highlight: Sync Interval list
-  view: admin
-  alt: Google Sheets drawer with DataTables selected and a Sync Interval list
--->
+![Google Sheets drawer with DataTables selected and a Sync Interval list](/images/data-sources/google-sheets-integration/3.-Google-Sheets-Drawer-With-DataTables-Selected.webp)
 
 <!-- TODO(screenshot): google-sheets-integration-4
   screen: Tables › Create Table › Connect live data › Google Sheets › Step 2
@@ -78,6 +65,7 @@ Ninja Tables reads sheets that are published to the web.
   highlight: Select all
   view: admin
   alt: Select entry fields step listing the sheet columns
+  blocked: needs a real published Google Sheet reachable from the site
 -->
 
 Ninja Tables opens the new table on the **Table Rows** tab with your sheet's data in it. The rows are read-only: edit them in Google Sheets.
@@ -89,6 +77,7 @@ Ninja Tables opens the new table on the **Table Rows** tab with your sheet's dat
   highlight: -
   view: admin
   alt: Table Rows tab showing rows read from a Google Sheet
+  blocked: needs a real published Google Sheet reachable from the site
 -->
 
 If Ninja Tables finds no columns, it says "No columns found. Use the link from File → Share → Publish to web." Check that the sheet is published and that you pasted the published link, not the address of the editor page.

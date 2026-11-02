@@ -33,14 +33,7 @@ Because the source is read as CSV, links, images and cell formatting from a Goog
 
 On the **Google Sheets** or **Remote CSV / JSON** drawer, switch the engine to **DataTables**. The URL field becomes **Google Sheet CSV URL** (or **CSV File URL**) and a **Sync Interval** list appears. Pick how often to sync: every 5 minutes, 15 minutes, 30 minutes, 1 hour (default), 6 hours, 12 hours, 24 hours or 7 days.
 
-<!-- TODO(screenshot): google-sheets-csv-auto-sync-1
-  screen: Tables › Create Table › Connect live data › Google Sheets
-  table: -
-  state: DataTables engine chosen, Sync Interval list open
-  highlight: Sync Interval list
-  view: admin
-  alt: Sync Interval list in the Google Sheets drawer
--->
+![Sync Interval list in the Google Sheets drawer](/images/data-sources/google-sheets-csv-auto-sync/1.-Sync-Interval-List-In-The-Google.webp)
 
 ## The sync panel
 
@@ -69,6 +62,7 @@ While a sync is running, a bar at the top of the tab shows **Importing data…**
   highlight: Sync now button
   view: admin
   alt: Sync panel with Auto sync schedule, Sync now and last sync details
+  blocked: needs a saved Google Sheets DataTables table (no public sheet available)
 -->
 
 ## Sync messages

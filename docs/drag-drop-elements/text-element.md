@@ -9,14 +9,7 @@ The **Text** element holds a heading, a price, a label or a paragraph in a Drag 
 
 To add one, click a cell and click **Text** in the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell. You can also drag it onto a cell, and a cell can hold several elements. Click the text in the cell and start typing.
 
-<!-- TODO(screenshot): text-element-1
-  screen: Drag & Drop builder › Elements tab and canvas
-  table: a Drag & Drop pricing table
-  state: A cell selected, a Text element in it with text typed
-  highlight: Text tile in the Elements tab
-  view: admin
-  alt: Text element added to a cell of a Drag & Drop table
--->
+![Text element added to a cell of a Drag & Drop table](/images/drag-drop-elements/text-element/1.-Text-Element-Added-To-A-Cell.webp)
 
 While you type in the cell, a small toolbar offers **bold**, **italic**, **underline**, **strikethrough**, a text highlight color, **link** and **unlink**.
 
@@ -30,14 +23,7 @@ Click the Text element and open the **Settings** tab (titled **Text**). The opti
 - **Alignment**: **Left**, **Center** (default) or **Right**.
 - **Font style**: any of **Bold**, **Italic**, **Underline** and **Strikethrough**.
 
-<!-- TODO(screenshot): text-element-2
-  screen: Drag & Drop builder › Settings › Text › Content & style
-  table: a Drag & Drop pricing table
-  state: Text element selected, Content & style open
-  highlight: Font size slider
-  view: admin
-  alt: Settings tab showing the Text element options
--->
+![Settings tab showing the Text element options](/images/drag-drop-elements/text-element/2.-Settings-Tab-Showing-The-Text-Element.webp)
 
 Below the options, **Spacing** sets the margin and padding around the text; see [Element Spacing](/spacing).
 

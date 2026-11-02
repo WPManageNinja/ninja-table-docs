@@ -27,6 +27,7 @@ Both features work in:
   highlight: Show bulk action
   view: admin
   alt: Appearance section of the Source settings drawer with Show bulk action ticked
+  blocked: needs a demo WooCommerce store: only 2 placeholder products (lorem-ipsum tags) exist and no saved demo Woo table, so no natural drawer or front-end shot; the only existing Woo tables are DOCTEST-titled
 -->
 
 The table now has a checkbox column at the start, with a checkbox in the header to select all rows, and a **Bulk Actions** menu with an **Apply** button above the table. The menu has two choices: **Add to Cart** and **Compare Products**.
@@ -38,6 +39,7 @@ The table now has a checkbox column at the start, with a checkbox in the header 
   highlight: Bulk Actions menu
   view: frontend
   alt: Product table on the page with checkboxes and the Bulk Actions menu
+  blocked: needs a demo WooCommerce store: only 2 placeholder products (lorem-ipsum tags) exist and no saved demo Woo table, so no natural drawer or front-end shot; the only existing Woo tables are DOCTEST-titled
 -->
 
 ## How customers use it
@@ -67,6 +69,7 @@ If a shopper picks fewer than two products, they see "Please select at least 2 p
   highlight: Close button
   view: frontend
   alt: Compare Products pop-up showing three products side by side
+  blocked: needs a demo WooCommerce store: only 2 placeholder products (lorem-ipsum tags) exist and no saved demo Woo table, so no natural drawer or front-end shot; the only existing Woo tables are DOCTEST-titled
 -->
 
 ## Good to know

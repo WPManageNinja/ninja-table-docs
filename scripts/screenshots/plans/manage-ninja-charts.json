@@ -1,0 +1,135 @@
+{
+ "doc": "docs/ninja-charts/manage-ninja-charts.md",
+ "outDir": "public/images/ninja-charts/manage-charts",
+ "adminPage": "ninja-charts",
+ "appRoot": "#ninja-charts-app",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/chart-list"
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "shot": {
+    "name": "1.-All-Charts-List-With-Import-CSV",
+    "clip": {
+     "element": ".el-card",
+     "pad": 24
+    },
+    "highlights": [
+     {
+      "role": "button",
+      "name": "Import CSV"
+     }
+    ]
+   }
+  },
+  {
+   "click": ".el-dropdown >> nth=0"
+  },
+  {
+   "wait": 800
+  },
+  {
+   "eval": "document.querySelectorAll('.el-popper.el-tooltip').forEach(e=>e.remove())"
+  },
+  {
+   "shot": {
+    "name": "2.-Chart-Row-Menu-With-Duplicate-Three",
+    "clip": {
+     "x": 170,
+     "y": 95,
+     "width": 1270,
+     "height": 520
+    },
+    "highlights": [
+     {
+      "selector": ".el-dropdown-menu__item",
+      "hasText": "Export CSV"
+     }
+    ]
+   }
+  },
+  {
+   "admin": "/chart-list"
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Import CSV"
+   }
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "click": ".el-select"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Chart Js"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "text": "Pie Chart"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "^next$"
+   }
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "fill": {
+    "selector": ".el-input__inner >> nth=0",
+    "value": "Visitors by Device"
+   }
+  },
+  {
+   "upload": {
+    "file": "/private/tmp/claude-503/-Users-authlab-24-Desktop-WPManageNinja-Docs-ninja-table-docs/db5ad483-4745-45e4-abcd-453b3adb1dc4/scratchpad/ch/traffic.csv"
+   }
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "shot": {
+    "name": "3.-Import-CSV-Upload-Step",
+    "clip": {
+     "element": ".el-card.box-card",
+     "pad": 24
+    },
+    "highlights": [
+     {
+      "role": "button",
+      "name": "Import Chart"
+     }
+    ]
+   }
+  }
+ ]
+}

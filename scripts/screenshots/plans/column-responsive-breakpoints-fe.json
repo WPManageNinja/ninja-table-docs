@@ -1,0 +1,47 @@
+{
+ "doc": "docs/responsive-design/column-responsive-breakpoints.md",
+ "outDir": "public/images/responsive-design/column-responsive",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "viewport": {
+    "width": 480,
+    "height": 900
+   }
+  },
+  {
+   "front": "{{page:Team Contacts}}/",
+   "contentWidth": false
+  },
+  {
+   "wait": 800
+  },
+  {
+   "eval": "document.querySelector('.footable-toggle').click()"
+  },
+  {
+   "eval": "document.querySelectorAll('*').forEach(e=>{if(e.scrollLeft)e.scrollLeft=0});window.scrollTo(0,window.scrollY)"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "window.scrollTo(0, document.querySelector('.ninja_table_wrapper').getBoundingClientRect().top+window.scrollY-16)"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "shot": {
+    "name": "1.-Column-Hidden-Behind-The-Plus-Button",
+    "clip": "viewport",
+    "highlights": [
+     ".footable-toggle >> nth=0"
+    ]
+   }
+  }
+ ]
+}

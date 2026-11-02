@@ -69,15 +69,7 @@ Open any table to edit it. The table name, its ID and its shortcode sit at the t
 
 Build tables visually: add text, buttons, images, ratings, lists and more into any cell, merge and split cells, and preview the result on desktop, tablet and mobile. See [Create your first Drag & Drop table](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
 
-<!-- TODO(screenshot): ninja-tables-introduction-4
-  screen: Tables › a Drag & Drop table › builder
-  table: a Drag & Drop pricing table
-  state: Builder open with elements placed in cells
-  highlight: -
-  view: admin
-  alt: Drag & Drop builder with a pricing table
-  blocked: site has only DOCTEST Drag & Drop tables, no demo pricing builder table
--->
+![Drag & Drop builder with a pricing table](/images/getting-started/ninja-tables-introduction/1.-Drag-Drop-Builder-With-A-Pricing.webp)
 
 ## Ready-made table templates
 

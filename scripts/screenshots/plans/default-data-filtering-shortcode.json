@@ -1,0 +1,28 @@
+{
+  "doc": "docs/advanced-features/default-data-filtering-shortcode.md",
+  "outDir": "public/images/advanced-features/default-data-filtering-short",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "front": "{{page:Shipped Orders}}/"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "eval": "window.scrollTo(0, document.querySelector('.footable, table').getBoundingClientRect().top + window.scrollY - 140);"
+    },
+    {
+      "wait": 300
+    },
+    {
+      "shot": {
+        "name": "1.-Table-On-A-Page-Showing-Only",
+        "clip": "viewport"
+      }
+    }
+  ]
+}

@@ -21,27 +21,13 @@ The renderer decides which chart types you can pick:
 
 If you skip the type, the creator shows "Chart type is required".
 
-<!-- TODO(screenshot): how-to-create-dynamic-charts-with-ninja-charts-1
-  screen: Ninja Tables › Add Chart › Chart Title & Type
-  table: -
-  state: Chart Js selected with the Horizontal Bar card highlighted
-  highlight: Chart Renderer field
-  view: admin
-  alt: Chart Title & Type step with chart type cards
--->
+![Chart Title & Type step with chart type cards](/images/ninja-charts/create-dynamic-charts-ninja/1.-Chart-Title-Type-Step-With-Chart.webp)
 
 ## Step 2: Choose the data source
 
 Choose **Ninja Tables** or **Fluent Forms**, then pick the table or form in the **Data** field. (**Manual Input** is for [typed-in charts](/how-to-create-chart-manually-in-ninja-charts).)
 
-<!-- TODO(screenshot): how-to-create-dynamic-charts-with-ninja-charts-2
-  screen: Ninja Tables › Add Chart › Data Source
-  table: Product Price List
-  state: Ninja Tables selected and the table picked in the Data dropdown
-  highlight: Data field
-  view: admin
-  alt: Data Source step with a Ninja Tables table selected
--->
+![Data Source step with a Ninja Tables table selected](/images/ninja-charts/create-dynamic-charts-ninja/2.-Data-Source-Step-With-A-Ninja.webp)
 
 For source-specific tips, see [Ninja Tables data](/create-ninja-charts-with-ninja-tables-data) and [Fluent Forms entries](/create-ninja-charts-with-fluent-forms-entries).
 
@@ -53,14 +39,7 @@ Move the columns you want from **Columns in the data source** to the columns use
 
 Adjust colors, axes, title, tooltip and legend while the preview updates. See [Customize a Chart](/how-to-customize-charts-in-ninja-charts).
 
-<!-- TODO(screenshot): how-to-create-dynamic-charts-with-ninja-charts-3
-  screen: Ninja Tables › Add Chart › Formatting & Preview
-  table: Product Price List
-  state: Horizontal bar chart preview with the options tabs visible
-  highlight: -
-  view: admin
-  alt: Formatting & Preview step showing a bar chart preview and option tabs
--->
+![Formatting & Preview step showing a bar chart preview and option tabs](/images/ninja-charts/create-dynamic-charts-ninja/3.-Formatting-Preview-Step-Showing-A-Bar.webp)
 
 ## Step 5: Save and get the shortcode
 

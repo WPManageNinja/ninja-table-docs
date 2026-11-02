@@ -173,13 +173,6 @@ For tables that store their own rows, use `row_id`: the row's ID, shown in **Tab
 [ninja_table_cell id="123" row="3" column="price"]
 ```
 
-<!-- TODO(screenshot): advanced-shortcode-1
-  screen: Tables › Employee Directory › Table Rows
-  table: Employee Directory
-  state: Show row ID, author and date turned on so the ID column is visible
-  highlight: Row ID column
-  view: admin
-  alt: Table Rows tab with the row ID column visible
--->
+![Table Rows tab with the row ID column visible](/images/advanced-features/advanced-shortcode/1.-Table-Rows-Tab-With-The-Row.webp)
 
 See the [Shortcode Reference](/shortcode-reference) for every shortcode in one place.

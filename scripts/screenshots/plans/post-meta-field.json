@@ -1,0 +1,116 @@
+{
+  "doc": "docs/wordpress-integration/post-meta-field.md",
+  "outDir": "public/images/wordpress-integration/post-meta-field",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Store Blog Posts}}"
+    },
+    {
+      "wait": 4000
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Edit query"
+      }
+    },
+    {
+      "wait": 6000
+    },
+    {
+      "click": {
+        "text": "Add new column"
+      }
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder='e.g. Price']",
+        "value": "Ninja Post"
+      }
+    },
+    {
+      "fill": {
+        "selector": "input[placeholder='e.g. price']",
+        "value": "ninja_post"
+      }
+    },
+    {
+      "click": {
+        "text": "Select field"
+      }
+    },
+    {
+      "wait": 600
+    },
+    {
+      "click": {
+        "selector": ".el-select-dropdown__item",
+        "hasText": "Post Meta"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
+      "fill": {
+        "selector": ".el-drawer input:visible >> nth=-1",
+        "value": "Ninja-Post"
+      }
+    },
+    {
+      "eval": "(function(){var d=document.querySelector('.el-drawer');function f(t){var c=[...d.querySelectorAll('label,div,span')].filter(function(e){return e.children.length<=2&&e.innerText&&e.innerText.trim()===t});return c[c.length-1]}function box(t){var e=f(t);var r=e.parentElement;return r}var a=box(\"Field type\").getBoundingClientRect(),b=box(\"Field value\").getBoundingClientRect();var d2=document.createElement('div');d2.id='nt-hl';d2.style.cssText='position:fixed;pointer-events:none;left:'+(a.left-10)+'px;top:'+(a.top-6)+'px;width:'+(a.width+4)+'px;height:'+(b.bottom-a.top+12)+'px';document.body.appendChild(d2)})()"
+    },
+    {
+      "shot": {
+        "name": "2.-Add-New-Column-Section",
+        "clip": "app",
+        "highlights": [
+          "#nt-hl"
+        ]
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1900
+      }
+    },
+    {
+      "front": "{{page:Style Journal}}/"
+    },
+    {
+      "css": ".ninja_table_wrapper tbody tr:nth-child(n+4){display:none !important}"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "eval": "(function(){var w=document.querySelector('.ninja_table_wrapper');var e=w;while(e&&e.tagName!='BODY'){var s=e.previousElementSibling;while(s){s.style.display='none';s=s.previousElementSibling}s=e.nextElementSibling;while(s){s.style.display='none';s=s.nextElementSibling}e=e.parentElement}})()"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "eval": "(function(){var t=document.querySelector('.ninja_table_wrapper table');var ths=[...t.querySelectorAll('thead th[class*=ninja_column_]')];var i=ths.findIndex(function(x){return x.innerText.trim().toLowerCase().indexOf(\"ninja post\")===0});var rows=[...t.querySelectorAll('tbody tr')].filter(function(r){return r.offsetParent});var a=ths[i].getBoundingClientRect();var b=rows[rows.length-1].children[i].getBoundingClientRect();var d=document.createElement('div');d.id='nt-hl';d.style.cssText='position:absolute;pointer-events:none;left:'+(a.left+scrollX-2)+'px;top:'+(a.top+scrollY-2)+'px;width:'+(a.width+4)+'px;height:'+(b.bottom-a.top+4)+'px';document.body.appendChild(d)})()"
+    },
+    {
+      "shot": {
+        "name": "2.-Posts-Table-On-The-Page",
+        "clip": {
+          "element": ".ninja_table_wrapper",
+          "pad": 24
+        },
+        "highlights": [
+          "#nt-hl"
+        ]
+      }
+    }
+  ]
+}

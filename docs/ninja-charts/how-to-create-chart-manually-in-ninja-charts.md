@@ -14,21 +14,14 @@ A **manual chart** uses data you type into the chart creator, so it needs no tab
 3. Pick a chart type and click **Next**. The type list depends on the renderer (see [Getting Started](/getting-started-with-ninja-charts-free-wordpress-chart-plugin)).
 4. On the **Data Source** step, choose **Manual Input** and click **Next**.
 
-<!-- TODO(screenshot): how-to-create-chart-manually-in-ninja-charts-1
-  screen: Ninja Tables › Add Chart › Data Source
-  table: -
-  state: Manual Input selected as the data source
-  highlight: Manual Input option
-  view: admin
-  alt: Data Source step with Manual Input selected
--->
+![Data Source step with Manual Input selected](/images/ninja-charts/create-chart-manually-ninja/1.-Data-Source-Step-With-Manual-Input.webp)
 
 ## Add the data
 
 The **Data Range** step starts empty and says "Please input some data."
 
-1. Click **Add New Column** to add a data column to the chart.
-2. Click **Add Data** to add a row.
+1. Click **Add column** to add a data column to the chart. The **Add New Column** dialog opens.
+2. Click **Add data** to add a row.
 3. In the row form, fill in the two fields:
    - **Text input**: the label for that row. It becomes the chart label.
    - **Number input**: the value. It becomes the chart data.
@@ -36,14 +29,7 @@ The **Data Range** step starts empty and says "Please input some data."
 5. Use the edit and delete icons in the **Actions** column to fix or remove a row.
 6. Click **Next**.
 
-<!-- TODO(screenshot): how-to-create-chart-manually-in-ninja-charts-2
-  screen: Ninja Tables › Add Chart › Data Range (Manual Input)
-  table: -
-  state: Add row data dialog open over a manual data list with two rows already added
-  highlight: Add Data button
-  view: admin
-  alt: Manual Input data range with the Add row data dialog
--->
+![Manual Input data range with the Add row data dialog](/images/ninja-charts/create-chart-manually-ninja/2.-Manual-Input-Data-Range.webp)
 
 You land on **Formatting & Preview**, where the chart already shows your data.
 

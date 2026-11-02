@@ -1,0 +1,9 @@
+{"doc":"docs/data-sources/fluentcart-integration.md",
+"outDir":"public/images/data-sources/fluentcart-integration",
+"viewport":{"width":1440,"height":900},
+"steps":[
+{"admin":"/create"},{"wait":2500},
+{"click":{"text":"FluentCart products"}},{"wait":5000},
+{"fill":{"selector":"input[placeholder^='e.g.']","value":"Store products"}},
+{"shot":{"name":"1.-FluentCart-Products-Drawer-With-Category-Stock","clip":"app","highlights":[".nt-src-form__pair"]}}
+]}

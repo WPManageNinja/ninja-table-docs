@@ -24,6 +24,7 @@ You need Ninja Tables Pro and WooCommerce active. The **WooCommerce reviews** ti
   highlight: Reviews Status
   view: admin
   alt: WooCommerce reviews drawer with the product lists and Reviews Status
+  blocked: needs a demo WooCommerce reviews table plus approved sample reviews (none exist; create drawer also shows lorem-ipsum tags)
 -->
 
 This drawer has no engine line. Reviews tables always use the FooTable engine.
@@ -65,6 +66,7 @@ Click **Save settings** in each section to apply your changes.
   highlight: Source settings button
   view: admin
   alt: Source settings drawer for a WooCommerce reviews table
+  blocked: needs a demo WooCommerce reviews table plus approved sample reviews (none exist; create drawer also shows lorem-ipsum tags)
 -->
 
 <!-- TODO(screenshot): woocommerce-product-reviews-table-3
@@ -74,6 +76,7 @@ Click **Save settings** in each section to apply your changes.
   highlight: Filled star color
   view: admin
   alt: Appearance section with the star color options
+  blocked: needs a demo WooCommerce reviews table plus approved sample reviews (none exist; create drawer also shows lorem-ipsum tags)
 -->
 
 Columns you add here describe the product that was reviewed, not the review. You can't add a column for the review's own custom fields.
@@ -100,6 +103,7 @@ Copy the shortcode from the editor header and paste it into any page or post, or
   highlight: -
   view: frontend
   alt: WooCommerce reviews table on the page
+  blocked: needs a demo WooCommerce reviews table plus approved sample reviews (none exist; create drawer also shows lorem-ipsum tags)
 -->
 
 For product tables rather than review tables, see [WooCommerce Integration](/woocommerce-integration).

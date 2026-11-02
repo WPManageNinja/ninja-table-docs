@@ -14,14 +14,7 @@ Drag & Drop tables don't use this tab. They have their own **Custom JS** setting
 1. Go to **Ninja Tables** › **Tables** and open a table.
 2. Click the **Custom CSS/JS** tab.
 
-<!-- TODO(screenshot): table-styling-css-selector-1
-  screen: Tables › Employee Directory › Custom CSS/JS
-  table: Employee Directory
-  state: CSS pane open with a short rule in the editor, Table targeting card on the right
-  highlight: CSS / JavaScript switch
-  view: admin
-  alt: Custom CSS/JS tab with the CSS editor and the Table targeting card
--->
+![Custom CSS/JS tab with the CSS editor and the Table targeting card](/images/table-management/table-styling-css-selector/1.-Custom-CSS-JS-Tab.webp)
 
 The card has a **CSS** and a **JavaScript** switch at the top. The **Save** button at the bottom saves the CSS, the JavaScript and the **Custom CSS class** together, so whichever pane you are on, you will not lose the other.
 
@@ -52,28 +45,14 @@ $table.on('click', 'tbody tr', function () {
 
 Broken code can break the table, so test it on a page you can safely reload. Without Ninja Tables Pro, the pane shows an upgrade panel (**Unlock custom JavaScript**) and nothing is saved for JavaScript.
 
-<!-- TODO(screenshot): table-styling-css-selector-2
-  screen: Tables › Employee Directory › Custom CSS/JS › JavaScript
-  table: Employee Directory
-  state: JavaScript pane with the sample click script in the editor
-  highlight: Save Custom JS
-  view: admin
-  alt: JavaScript pane of the Custom CSS/JS tab with a sample script
--->
+![JavaScript pane of the Custom CSS/JS tab with a sample script](/images/table-management/table-styling-css-selector/2.-JavaScript-Pane-Of-The-Custom-CSS.webp)
 
 ### Table targeting
 
 - **Custom CSS class**: a class added to the table so you can style it from your theme. Use letters, numbers, dashes and underscores; other characters are removed as you type. On FooTable it is added to the table itself, on DataTables to the outer wrapper.
 - **Table selector**: a ready-made selector for this table with your class, and a **Copy CSS** button.
 
-<!-- TODO(screenshot): table-styling-css-selector-3
-  screen: Tables › Employee Directory › Custom CSS/JS › Table targeting
-  table: Employee Directory
-  state: Custom CSS class set to my-custom-table and the Table selector example showing
-  highlight: Copy CSS
-  view: admin
-  alt: Table targeting card with the Custom CSS class field and the selector example
--->
+![Table targeting card with the Custom CSS class field and the selector example](/images/table-management/table-styling-css-selector/3.-Table-Targeting-Card-With-The-Custom.webp)
 
 You can also add CSS anywhere else you like, such as your theme's stylesheet or **Appearance** › **Customize** › **Additional CSS** in WordPress.
 
@@ -166,6 +145,7 @@ Every table gets CSS classes and an HTML ID you can use for styling. In the exam
   highlight: -
   view: frontend
   alt: Table on a page styled with custom CSS for the header and rows
+  blocked: needs the custom header/row CSS saved on Product Price List and a page embedding it; not saved on the demo site
 -->
 
 ## Styling Specific Column

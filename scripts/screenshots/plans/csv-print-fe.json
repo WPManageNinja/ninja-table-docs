@@ -1,0 +1,31 @@
+{
+  "doc": "docs/table-settings/csv-and-print-button.md",
+  "outDir": "public/images/table-settings/csv-print-button",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "front": "{{page:Staff Directory}}/"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "eval": "const bs=[...document.querySelectorAll('button,a')].filter(e=>['CSV','Excel','Print'].includes(e.textContent.trim())); bs.forEach((b,i)=>b.classList.add('t-exp'+i)); const t=document.querySelector('.footable')||document.querySelector('table.ninja_footable'); window.scrollTo(0, bs[0].getBoundingClientRect().top + window.scrollY - 300); const r=bs.map(b=>b.getBoundingClientRect()); const L=Math.min(...r.map(x=>x.left)),T=Math.min(...r.map(x=>x.top)),R=Math.max(...r.map(x=>x.right)),B=Math.max(...r.map(x=>x.bottom)); const o=document.createElement('div'); o.id='t-expbox'; o.style.cssText='position:absolute;pointer-events:none;left:'+(L+scrollX)+'px;top:'+(T+scrollY)+'px;width:'+(R-L)+'px;height:'+(B-T)+'px'; document.body.appendChild(o);"
+    },
+    {
+      "wait": 300
+    },
+    {
+      "shot": {
+        "name": "1.-Table-On-The-Site-With-Export",
+        "clip": "viewport",
+        "highlights": [
+          "#t-expbox"
+        ]
+      }
+    }
+  ]
+}

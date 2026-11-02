@@ -12,14 +12,7 @@ Every table has a **shortcode**, and that shortcode is how a table appears on yo
 - **In the table editor**: the shortcode chip next to the table's title, for example `[ninja_tables id="123"]`. Click it to copy.
 - **In the Tables list**: the **Shortcode** column. See [The Tables List](/tables-list).
 
-<!-- TODO(screenshot): embed-tables-1
-  screen: Tables › Product Price List (table editor header)
-  table: Product Price List
-  state: Table editor open, shortcode chip and Preview button visible in the header
-  highlight: Shortcode chip
-  view: admin
-  alt: Table editor header with the shortcode chip and the Preview button
--->
+![Table editor header with the shortcode chip and the Preview button](/images/wordpress-integration/embed/1.-Table-Editor-Header-With-The-Shortcode.webp)
 
 Drag & Drop tables use a different shortcode, `[ninja_table_builder id="123"]`. Copy it from the chip in the builder. The table must be published, or the shortcode prints nothing. Logged-in table admins also see an **Edit Table** link under a Drag & Drop table on the page.
 
@@ -53,6 +46,7 @@ The block shows a live preview of the table in the editor. It saves the table's 
   highlight: Select Table field
   view: admin
   alt: Ninja Tables block in the block editor with its sidebar tabs
+  blocked: block editor (wp-admin/post-new.php) shows a WordPress "critical error" on this site, so the Ninja Tables block cannot be shot; fix the site error first
 -->
 
 For regular tables the sidebar has three tabs: **Styling**, **Colors** and **Other**.
@@ -116,6 +110,7 @@ Without Pro, the tab shows the notice **Color customization is a PRO feature** a
   highlight: Pagination Items Per Page field
   view: admin
   alt: Other tab of the Ninja Tables block showing the pagination options
+  blocked: same as embed-tables-2: block editor throws a critical error
 -->
 
 ## Classic editor

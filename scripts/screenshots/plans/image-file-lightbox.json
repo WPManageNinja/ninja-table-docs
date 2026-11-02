@@ -59,6 +59,86 @@
         "name": "2.-Click-Behavior-Options-For-An-Image",
         "clip": "viewport"
       }
+    },
+    {
+      "admin": "/tables/{{Winter Apparel}}"
+    },
+    {
+      "wait": 6000
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Add data"
+      }
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Image upload"
+      }
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": {
+        "text": "Media Library"
+      }
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": ".attachments .attachment[aria-label=\"Casual Classic Hoodie\"] >> nth=0"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Insert into post"
+      }
+    },
+    {
+      "wait": 2000
+    },
+    {
+      "shot": {
+        "name": "1.-Row-Drawer-With-An-Image-Uploaded",
+        "clip": "app"
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "front": "{{page:Winter Collection}}/"
+    },
+    {
+      "wait": 1200
+    },
+    {
+      "eval": "window.scrollTo(0,160)"
+    },
+    {
+      "click": ".ninja_table_wrapper img >> nth=1"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "shot": {
+        "name": "2.-Table-With-An-Image-Column",
+        "clip": "viewport"
+      }
     }
   ]
 }

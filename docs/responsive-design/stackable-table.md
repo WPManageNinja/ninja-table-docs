@@ -35,15 +35,7 @@ Columns you hide on small screens move into a drawer that opens with a **+** but
   - **Hide Column Headings**: hide the table's header row while stacked.
   - **Hide Internal Borders**: remove the borders between the lines of a card.
 
-<!-- TODO(screenshot): stackable-table-3
-  screen: Tables › Product Price List › Preview
-  table: Product Price List
-  state: Mobile view of the table stacked as cards
-  highlight: -
-  view: frontend
-  alt: A stacked product table with each row shown as a card
-  blocked: needs Stackable Table saved on a demo table (unsaved change not visible on the front end)
--->
+![A stacked product table with each row shown as a card](/images/responsive-design/stackable-table/1.-Stacked-Product-Table-With-Each-Row.webp)
 
 ## Others: Row Details Popup
 

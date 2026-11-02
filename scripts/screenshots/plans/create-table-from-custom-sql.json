@@ -1,0 +1,60 @@
+{
+  "doc": "docs/data-sources/create-table-from-custom-sql.md",
+  "outDir": "public/images/data-sources/create-table-custom-sql",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 760
+      }
+    },
+    {
+      "admin": "/create"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "click": {
+        "text": "Custom SQL query"
+      }
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "fill": {
+        "selector": "#nt-sql-title",
+        "value": "Published Posts"
+      }
+    },
+    {
+      "fill": {
+        "selector": ".nt-drawer.open .ace_text-input",
+        "value": "SELECT post_title AS Title, post_date AS Published\nFROM {prefix}posts\nWHERE post_type = 'post'\nAND post_status = 'publish'"
+      }
+    },
+    {
+      "wait": 500
+    },
+    {
+      "eval": "document.activeElement&&document.activeElement.blur()"
+    },
+    {
+      "shot": {
+        "name": "1.-Custom-SQL-Query-Drawer",
+        "clip": {
+          "element": ".nt-drawer.open",
+          "pad": 0
+        },
+        "highlights": [
+          ".nt-drawer.open .ace_editor"
+        ]
+      }
+    }
+  ]
+}

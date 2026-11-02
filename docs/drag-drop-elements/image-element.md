@@ -9,14 +9,7 @@ The **Image** element (Pro) adds a picture to a Drag & Drop table cell, such as 
 
 To add one, click a cell and click **Image** in the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell. The new element starts with a demo image. Click it to set its options in the **Settings** tab.
 
-<!-- TODO(screenshot): image-element-1
-  screen: Drag & Drop builder › canvas
-  table: a Drag & Drop team table
-  state: Image elements with round portraits in a row
-  highlight: -
-  view: admin
-  alt: Image elements in a Drag & Drop table
--->
+![Image elements in a Drag & Drop table](/images/drag-drop-elements/image-element/1.-Image-Elements-In-A-Drag-Drop.webp)
 
 ## Image options
 
@@ -31,14 +24,7 @@ Under **Content & style**:
 - **Open in a new tab**: off by default, unlike the Button element.
 - **Link rel attributes**: tick `sponsored`, `nofollow`, `noreferrer` or `noopener`.
 
-<!-- TODO(screenshot): image-element-2
-  screen: Drag & Drop builder › Settings › Image › Content & style
-  table: a Drag & Drop team table
-  state: Image element selected, all options visible
-  highlight: Image shape
-  view: admin
-  alt: Settings tab showing the Image element options
--->
+![Settings tab showing the Image element options](/images/drag-drop-elements/image-element/2.-Settings-Tab-Showing-The-Image-Element.webp)
 
 Below the options, **Spacing** sets the margin and padding around the image; see [Element Spacing](/spacing).
 

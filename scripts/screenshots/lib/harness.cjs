@@ -133,7 +133,7 @@ class Harness {
     await p.addStyleTag({ content: `
       #wpadminbar { display: none !important; } html { margin-top: 0 !important; }
       /* what a visitor sees: no admin-only "Edit Table" link */
-      .nt_edit_link { display: none !important; }
+      .nt_edit_link, [class^="ntb_edit_table_class_"] { display: none !important; }
       /* a normal wide content column, so tables are not squeezed by the demo theme's narrow default */
       ${contentWidth ? `.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)), .entry-content > * { max-width: ${contentWidth}px !important; }` : ''}
       ${hideThemeHeader ? 'header.wp-block-template-part, .wp-site-blocks > header, .wp-block-template-part:first-child { display: none !important; }' : ''}

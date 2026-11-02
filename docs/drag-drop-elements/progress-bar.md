@@ -9,14 +9,7 @@ The **Progress** element shows a percentage as a bar, a circle or a gauge in a D
 
 To add one, click a cell and click **Progress** in the **Advanced** group of the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell. Click it to set its options in the **Settings** tab.
 
-<!-- TODO(screenshot): progress-bar-1
-  screen: Drag & Drop builder › canvas
-  table: a Drag & Drop team table
-  state: Progress elements of type circle in three cells
-  highlight: -
-  view: admin
-  alt: Progress elements shown as circles in a Drag & Drop table
--->
+![Progress elements shown as circles in a Drag & Drop table](/images/drag-drop-elements/progress-bar/1.-Progress-Elements-Shown-As-Circles.webp)
 
 ## Progress options
 
@@ -31,14 +24,7 @@ Under **Content & style**:
 - **Progressbar thickness** (2–15, default 6): how thick the bar or ring is.
 - **Alignment**: **Left**, **Center** (default) or **Right**. Hidden for the **line** type, which fills the cell.
 
-<!-- TODO(screenshot): progress-bar-2
-  screen: Drag & Drop builder › Settings › Progress › Content & style
-  table: a Drag & Drop team table
-  state: Progress type set to line, so width and alignment are hidden
-  highlight: Progress type
-  view: admin
-  alt: Progress options with the line type selected
--->
+![Progress options with the line type selected](/images/drag-drop-elements/progress-bar/2.-Progress-Options-With-The-Line-Type.webp)
 
 Below the options, **Spacing** sets the margin and padding around it; see [Element Spacing](/spacing).
 

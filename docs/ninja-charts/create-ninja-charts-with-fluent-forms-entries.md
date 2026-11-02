@@ -22,6 +22,7 @@ A chart built from **Fluent Forms** entries is a dynamic chart: it updates as ne
   highlight: Data field
   view: admin
   alt: Data Source step with Fluent Forms selected and a form chosen
+  blocked: Fluent Forms is not installed on the dev site
 -->
 
 The **Fluent Forms** option is always listed, but it only has forms to pick when Fluent Forms is installed.

@@ -1,34 +1,61 @@
 {
-  "doc": "docs/field-types/single-line-text-field.md",
-  "outDir": "public/images/field-types/single-line-text-field",
-  "viewport": {
-    "width": 1440,
-    "height": 900
+ "doc": "docs/field-types/single-line-text-field.md",
+ "outDir": "public/images/field-types/single-line-text-field",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/tables/{{Employee Directory}}"
   },
-  "steps": [
-    {
-      "admin": "/tables/{{Employee Directory}}"
+  {
+   "wait": 2000
+  },
+  {
+   "click": "th.js-col:has-text(\"Name\") .nt-sheet__colset"
+  },
+  {
+   "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "shot": {
+    "name": "1.-Column-Dialog-With-Type-Set",
+    "clip": "viewport",
+    "highlights": [
+     ".nt-drawer .el-select"
+    ]
+   }
+  },
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 1300
+   }
+  },
+  {
+   "front": "{{page:Team Contacts}}/"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "eval": "(function(){var t=document.querySelector('.ninja_table_wrapper table');var ths=[...t.querySelectorAll('thead th[class*=ninja_column_]')];var i=ths.findIndex(function(x){return x.innerText.trim().toLowerCase().indexOf(\"name\")===0});var rows=[...t.querySelectorAll('tbody tr')].filter(function(r){return r.offsetParent});var a=rows[0].children[i].getBoundingClientRect();var b=rows[0].children[i].getBoundingClientRect();var d=document.createElement('div');d.id='nt-hl';d.style.cssText='position:absolute;pointer-events:none;left:'+(a.left+scrollX-2)+'px;top:'+(a.top+scrollY-2)+'px;width:'+(a.width+4)+'px;height:'+(b.bottom-a.top+4)+'px';document.body.appendChild(d)})()"
+  },
+  {
+   "shot": {
+    "name": "1.-Table-With-A-Single-Line-Text",
+    "clip": {
+     "element": ".ninja_table_wrapper",
+     "pad": 24
     },
-    {
-      "wait": 2000
-    },
-    {
-      "click": "th.js-col:has-text(\"Name\") .nt-sheet__colset"
-    },
-    {
-      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
-    },
-    {
-      "wait": 900
-    },
-    {
-      "shot": {
-        "name": "1.-Column-Dialog-With-Type-Set",
-        "clip": "viewport",
-        "highlights": [
-          ".nt-drawer .el-select"
-        ]
-      }
-    }
-  ]
+    "highlights": [
+     "#nt-hl"
+    ]
+   }
+  }
+ ]
 }

@@ -21,15 +21,7 @@ For example, if a table lists hundreds of movies and one page should only show a
 
 The filter looks at every column, unless you limit it (see below). The rules in the next section are FooTable search rules. On a DataTables table, the whole `filter` text is matched as one piece of text that a cell contains, so use a single word or phrase there.
 
-<!-- TODO(screenshot): default-data-filtering-shortcode-1
-  screen: A page with the Order History table and filter="Shipped" in its shortcode
-  table: Order History
-  state: Page showing only the rows that contain the filter word, search box empty
-  highlight: -
-  view: frontend
-  alt: Table on a page showing only the rows that match the shortcode filter
-  blocked: no demo page embeds Order History with filter="Shipped" (needs a new page)
--->
+![Table on a page showing only the rows that match the shortcode filter](/images/advanced-features/default-data-filtering-short/1.-Table-On-A-Page-Showing-Only.webp)
 
 ## Filter rules
 

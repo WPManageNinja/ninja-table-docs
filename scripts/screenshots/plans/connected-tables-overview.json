@@ -1,0 +1,12 @@
+{
+  "doc": "docs/data-sources/connected-tables-overview.md",
+  "outDir": "public/images/data-sources/connected-overview",
+  "viewport": { "width": 1440, "height": 900 },
+  "steps": [
+    { "admin": "/create" },
+    { "wait": 2000 },
+    { "scrollTo": { "text": "Connect live data" } },
+    { "wait": 500 },
+    { "shot": { "name": "1.-Create-A-Table-Screen", "clip": "app", "crop": "auto" } }
+  ]
+}

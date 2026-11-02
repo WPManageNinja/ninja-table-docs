@@ -30,14 +30,7 @@ Two settings on the remote side are important:
 5. Write your query in **Custom SQL Query**, for example `SELECT id, name, city FROM customers`.
 6. Click **Create table**.
 
-<!-- TODO(screenshot): custom-sql-remote-database-1
-  screen: Tables › Create Table › Connect live data › Custom SQL query
-  table: -
-  state: SQL Connection Type set to Remote/External SQL with the connection fields shown, using placeholder values
-  highlight: SQL Connection Type
-  view: admin
-  alt: Custom SQL drawer with Remote/External SQL selected and the connection fields
--->
+![Custom SQL drawer with Remote/External SQL selected and the connection fields](/images/data-sources/custom-sql-remote-database/1.-Custom-SQL-Drawer-With-Remote-External.webp)
 
 Ninja Tables connects to the remote database, runs the query and builds the columns from the result. The query must be a read-only `SELECT`, with the same rules as a local one. See [What queries are allowed](/create-table-from-custom-sql#what-queries-are-allowed).
 
@@ -56,6 +49,7 @@ On the **Table Rows** tab, click **Source settings** on the **Rows come from SQL
   highlight: Connection details
   view: admin
   alt: Source settings drawer showing Query and Connection details
+  blocked: needs a saved remote Custom SQL table and a reachable remote database
 -->
 
 ## The {prefix} placeholder on a remote database

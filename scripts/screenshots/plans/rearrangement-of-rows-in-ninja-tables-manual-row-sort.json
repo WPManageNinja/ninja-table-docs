@@ -1,0 +1,31 @@
+{
+  "doc": "docs/table-management/rearrangement-of-rows-in-ninja-tables-manual-row-sort.md",
+  "outDir": "public/images/table-management/rearrangement-rows-ninja",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/tables/{{Weekend Workshops}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "shot": {
+        "name": "1.-Table-Rows-Toolbar-With-Sort-Manually",
+        "clip": "app",
+        "highlights": [
+          {
+            "role": "button",
+            "name": "Sort manually"
+          }
+        ],
+        "crop": {
+          "height": 1130
+        }
+      }
+    }
+  ]
+}

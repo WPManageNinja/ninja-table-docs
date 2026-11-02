@@ -18,14 +18,7 @@ The **Drag & Drop table** builder lets you design a table visually, cell by cell
    - **Choose a template**: start from a ready-made design.
 5. Click **Next**.
 
-<!-- TODO(screenshot): how-to-create-your-first-drag-and-drop-table-with-ninja-tables-1
-  screen: Create Table › Drag & Drop table drawer, step 1
-  table: -
-  state: Table name filled in, the three Start with cards visible, none selected
-  highlight: Start with cards
-  view: admin
-  alt: Drag & Drop table drawer with the Table name field and the three Start with cards
--->
+![Drag & Drop table drawer with the Table name field and the three Start with cards](/images/drag-drop-tables/create-first-drag-drop/1.-Drag-Drop-Table-Drawer.webp)
 
 If you click **Next** without choosing a card, the drawer asks you to "Choose how to start." Use **Previous** on step 2 to go back and change your choice.
 
@@ -35,14 +28,7 @@ Set the number of **columns** with the number box above the grid and the number 
 
 Every cell starts with an empty **Text** element, ready to type in.
 
-<!-- TODO(screenshot): how-to-create-your-first-drag-and-drop-table-with-ninja-tables-2
-  screen: Create Table › Drag & Drop table drawer, step 2, Create From Scratch
-  table: -
-  state: Grid preview with the column and row number boxes
-  highlight: column and row number boxes
-  view: admin
-  alt: Create From Scratch step with the column and row counters and the grid preview
--->
+![Create From Scratch step with the column and row counters and the grid preview](/images/drag-drop-tables/create-first-drag-drop/2.-Create-From-Scratch-Step.webp)
 
 ### From a CSV or JSON file
 
@@ -58,14 +44,7 @@ What you get:
 
 Pick a category (**All**, **Pricing**, **Comparison**, **Employee** or **Schedule**), click a template, then **Create table**. Some templates need Pro. See [Drag & Drop Templates](/drag-drop-templates) for the full list.
 
-<!-- TODO(screenshot): how-to-create-your-first-drag-and-drop-table-with-ninja-tables-3
-  screen: Create Table › Drag & Drop table drawer, step 2, Choose a template
-  table: -
-  state: Template cards with the category pills above them
-  highlight: category pills
-  view: admin
-  alt: Template picker with the All, Pricing, Comparison, Employee and Schedule category pills
--->
+![Template picker with the All, Pricing, Comparison, Employee and Schedule category pills](/images/drag-drop-tables/create-first-drag-drop/3.-Template-Picker-With-The-All-Pricing.webp)
 
 Ninja Tables shows "Table created successfully." (or "Imported successfully." for a file) and opens the new table in the builder.
 
@@ -79,14 +58,7 @@ A cell can hold several elements. Adding another one stacks it below the ones al
 
 When you click an element and no single cell is selected (nothing selected, or several cells selected), it is added to the last cell, the one at the bottom right.
 
-<!-- TODO(screenshot): how-to-create-your-first-drag-and-drop-table-with-ninja-tables-4
-  screen: Drag & Drop builder, Elements tab
-  table: a Drag & Drop pricing table
-  state: One cell selected, Elements tab open with the General and Advanced groups
-  highlight: Elements tab tile
-  view: admin
-  alt: Builder with a cell selected and the Elements tab listing the General and Advanced elements
--->
+![Builder with a cell selected and the Elements tab listing the General and Advanced elements](/images/drag-drop-tables/create-first-drag-drop/4.-Builder-With-A-Cell-Selected.webp)
 
 Elements in the **General** group are **Text**, **Button**, **Icon** (Pro), **Rating**, **List**, **HTML**, **Shortcode** and **Image** (Pro). The **Advanced** group has **Styled List** (Pro), **Ribbon** (Pro), **Progress** and **Text Icon** (Pro). On the free version, clicking or dragging a Pro element shows "You are using free version of ninja-tables, Upgrade To Pro" and adds nothing.
 
@@ -104,14 +76,7 @@ The table on your site is built from the version you last saved in the builder. 
 
 Click **Preview** in the builder to see the saved table on its own page. If you leave the builder with unsaved edits, your browser asks you to confirm that "Changes that you made may not be saved".
 
-<!-- TODO(screenshot): how-to-create-your-first-drag-and-drop-table-with-ninja-tables-5
-  screen: A page containing the Drag & Drop table
-  table: a Drag & Drop pricing table
-  state: Saved table embedded in a page with the shortcode
-  highlight: -
-  view: frontend
-  alt: A saved Drag & Drop pricing table shown on a page
--->
+![A saved Drag & Drop pricing table shown on a page](/images/drag-drop-tables/create-first-drag-drop/5.-Saved-Drag-Drop-Pricing-Table-Shown.webp)
 
 ## Next steps
 

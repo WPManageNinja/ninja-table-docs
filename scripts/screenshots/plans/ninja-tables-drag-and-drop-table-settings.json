@@ -1,0 +1,179 @@
+{
+ "doc": "docs/drag-drop-settings/ninja-tables-drag-and-drop-table-settings.md",
+ "outDir": "public/images/drag-drop-settings/ninja-tables-drag-drop",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   }
+  },
+  {
+   "admin": "/table_builder_edit_table/{{Website Pricing}}"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "css": ".ntb_table_wrapper{max-height:none!important;height:auto!important}"
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Settings\")"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "document.querySelectorAll('.el-collapse-item.is-active .el-collapse-item__header').forEach(h=>h.click())"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "scrollTop": true
+  },
+  {
+   "wait": 200
+  },
+  {
+   "shot": {
+    "name": "1.-Settings-Tab-With-The-Table-Settings",
+    "clip": "app",
+    "crop": "auto"
+   }
+  },
+  {
+   "click": {
+    "selector": ".el-collapse-item__header",
+    "hasText": "General"
+   }
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": ".ntb-field:has-text(\"Table container max width\") .el-switch"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "scrollTo": ".el-collapse-item.is-active .el-collapse-item__header"
+  },
+  {
+   "eval": "var h=document.querySelector('.el-collapse-item.is-active');var sc=h.closest('.ntb-panel__pane')||h.parentElement;var p=h;while(p&&p.scrollHeight<=p.clientHeight+2)p=p.parentElement;if(p){p.scrollTop=h.offsetTop-80}"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "shot": {
+    "name": "2.-General-Settings-With-The-Container-Max",
+    "clip": "app",
+    "highlights": [
+     {
+      "selector": ".ntb-field",
+      "hasText": "Table container max width"
+     }
+    ]
+   }
+  },
+  {
+   "click": ".ntb-field:has-text(\"Table container max width\") .el-switch"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": {
+    "selector": ".el-collapse-item__header",
+    "hasText": "General"
+   }
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": {
+    "selector": ".el-collapse-item__header",
+    "hasText": "Custom CSS"
+   }
+  },
+  {
+   "wait": 600
+  },
+  {
+   "eval": "var ed=document.querySelector('.ninja_css_editor').env.editor;ed.setValue('.ntb_988 td {\\n  border-radius: 6px;\\n}\\n.ntb_988 td:hover {\\n  background: #2c2c2c;\\n}',-1)"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "scrollTo": ".el-collapse-item.is-active .el-collapse-item__header"
+  },
+  {
+   "eval": "var h=document.querySelector('.el-collapse-item.is-active');var sc=h.closest('.ntb-panel__pane')||h.parentElement;var p=h;while(p&&p.scrollHeight<=p.clientHeight+2)p=p.parentElement;if(p){p.scrollTop=h.offsetTop-80}"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "shot": {
+    "name": "3.-Custom-CSS-Section-With-The-Code",
+    "clip": "app",
+    "highlights": [
+     ".ninja_css_editor"
+    ]
+   }
+  },
+  {
+   "click": {
+    "selector": ".el-collapse-item__header",
+    "hasText": "Custom CSS"
+   }
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": {
+    "selector": ".el-collapse-item__header",
+    "hasText": "Border"
+   }
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": ".ntb-field:has-text(\"Apply inner border\") .el-switch"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "scrollTo": ".el-collapse-item.is-active .el-collapse-item__header"
+  },
+  {
+   "eval": "var h=document.querySelector('.el-collapse-item.is-active');var sc=h.closest('.ntb-panel__pane')||h.parentElement;var p=h;while(p&&p.scrollHeight<=p.clientHeight+2)p=p.parentElement;if(p){p.scrollTop=h.offsetTop-80}"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "shot": {
+    "name": "4.-Border-Settings-With-Table-Border",
+    "clip": "app",
+    "highlights": [
+     {
+      "selector": ".ntb-field",
+      "hasText": "Apply inner border"
+     }
+    ]
+   }
+  }
+ ]
+}

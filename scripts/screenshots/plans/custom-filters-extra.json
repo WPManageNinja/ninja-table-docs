@@ -1,0 +1,80 @@
+{
+  "doc": "docs/table-settings/custom-filters.md",
+  "outDir": "public/images/table-settings/custom-filters",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1200
+      }
+    },
+    {
+      "admin": "/tables/{{Staff Directory}}/filters"
+    },
+    {
+      "wait": 4000
+    },
+    {
+      "eval": "const w=async()=>{for(let i=0;i<40;i++){const b=[...document.querySelectorAll('#data-tables-app *')].find(e=>e.textContent.trim()==='Add Filter'&&e.closest('button'));if(b){b.closest('button').id='t-add';return}await new Promise(r=>setTimeout(r,500))}};w()"
+    },
+    {
+      "wait": 3000
+    },
+    {
+      "shot": {
+        "name": "1.-Custom-Filters-Tab-Listing-Filters",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          "#t-add"
+        ]
+      }
+    },
+    {
+      "eval": "const h=[...document.querySelectorAll('#data-tables-app *')].find(e=>e.children.length==0&&e.textContent.trim()==='Layout'); let c=h; while(c.parentElement && !(c.textContent.includes('Show Filters') && c.getBoundingClientRect().width>600)) c=c.parentElement; c.classList.add('t-layout');"
+    },
+    {
+      "shot": {
+        "name": "3.-Layout-Card-With-Filter-Display-Options",
+        "clip": {
+          "element": ".t-layout",
+          "pad": 4
+        },
+        "highlights": [
+          {
+            "row": "Show Filters",
+            "part": "row"
+          }
+        ]
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "front": "{{page:Winter Collection}}/"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "eval": "window.scrollTo(0, document.querySelector('.footable, table').getBoundingClientRect().top + window.scrollY - 140);"
+    },
+    {
+      "wait": 300
+    },
+    {
+      "shot": {
+        "name": "2.-Table-On-A-Page",
+        "clip": "viewport"
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+ "doc": "docs/drag-drop-elements/ribbon-element.md",
+ "outDir": "public/images/drag-drop-elements/ribbon-element",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   }
+  },
+  {
+   "admin": "/table_builder_edit_table/{{Website Pricing}}"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "css": "#selected-item{opacity:1!important;background:none!important;animation:none!important}"
+  },
+  {
+   "click": {
+    "text": "Add row"
+   }
+  },
+  {
+   "eval": "[...document.querySelectorAll('td.table-data')].find(t=>t.textContent.includes('9.99$')).click()"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Elements\")"
+  },
+  {
+   "click": {
+    "selector": ".ntb-pal__item",
+    "hasText": "Ribbon"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": "#pane-general .el-select"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item:visible",
+    "hasText": "corner"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "scrollTop": true
+  },
+  {
+   "shot": {
+    "name": "2.-Ribbon-General-Options-For-The-Corner",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     "#pane-general .el-select"
+    ]
+   }
+  },
+  {
+   "click": {
+    "selector": ".ntb-panel .el-tabs__item",
+    "hasText": "Text"
+   }
+  },
+  {
+   "wait": 300
+  },
+  {
+   "fill": {
+    "selector": "#pane-text input.el-input__inner",
+    "value": "Most popular"
+   }
+  },
+  {
+   "setColor": {
+    "label": "Font color",
+    "hex": "#FFFFFF"
+   }
+  },
+  {
+   "wait": 400
+  },
+  {
+   "click": {
+    "selector": ".ntb-panel .el-tabs__item",
+    "hasText": "Background"
+   }
+  },
+  {
+   "wait": 300
+  },
+  {
+   "shot": {
+    "name": "3.-Ribbon-Background-Sub-Tab",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     "#pane-background .el-color-picker"
+    ]
+   }
+  },
+  {
+   "click": ".ntb-crumbs__link:has-text(\"Table\")"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Elements\")"
+  },
+  {
+   "scrollTop": true
+  },
+  {
+   "shot": {
+    "name": "1.-Ribbon-Element-On-A-Pricing-Plan",
+    "clip": "app",
+    "crop": "auto"
+   }
+  }
+ ]
+}

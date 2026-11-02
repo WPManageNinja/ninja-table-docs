@@ -30,14 +30,7 @@ Click **Add Chart** in the Ninja Tables menu (or **Ninja Tables** › **Charts**
 4. **Formatting & Preview**: style the chart and see it update live.
 5. **Save & Get Shortcode**: copy the generated shortcode.
 
-<!-- TODO(screenshot): getting-started-with-ninja-charts-free-wordpress-chart-plugin-1
-  screen: Ninja Tables › Add Chart › Chart Title & Type
-  table: -
-  state: Step 1 with a chart name entered, Chart Js selected and the chart type cards visible
-  highlight: Chart Renderer field
-  view: admin
-  alt: Chart creator step 1 with the chart renderer and chart type cards
--->
+![Chart creator step 1 with the chart renderer and chart type cards](/images/ninja-charts/getting-started-ninja-charts/1.-Chart-Creator-Step-1.webp)
 
 Pick the path that matches your data:
 
@@ -50,14 +43,7 @@ Pick the path that matches your data:
 
 **Ninja Tables** › **Charts** lists every chart with its renderer, data source, type and shortcode. See [Manage Your Charts](/manage-ninja-charts).
 
-<!-- TODO(screenshot): getting-started-with-ninja-charts-free-wordpress-chart-plugin-2
-  screen: Ninja Tables › Charts
-  table: -
-  state: All Charts list with two or three charts and the ShortCode column visible
-  highlight: ShortCode column
-  view: admin
-  alt: All Charts list showing the ID, title, renderer, data source, chart type and shortcode
--->
+![All Charts list showing the ID, title, renderer, data source, chart type and shortcode](/images/ninja-charts/getting-started-ninja-charts/2.-All-Charts-List-Showing-The-ID.webp)
 
 When you have no charts yet, the page shows a welcome screen with **Create a new chart** and **Import CSV** options.
 

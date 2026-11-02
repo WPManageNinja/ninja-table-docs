@@ -1,0 +1,65 @@
+{
+  "doc": "docs/ninja-charts/getting-started-with-ninja-charts-free-wordpress-chart-plugin.md",
+  "outDir": "public/images/ninja-charts/getting-started-ninja-charts",
+  "adminPage": "ninja-charts",
+  "appRoot": "#ninja-charts-app",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "admin": "/add-chart"
+    },
+    {
+      "fill": {
+        "selector": "#ninja-charts-app input[type=text]",
+        "value": "Monthly Revenue by Region"
+      }
+    },
+    {
+      "click": "#ninja-charts-app .el-select"
+    },
+    {
+      "click": ".el-select-dropdown__item:has-text(\"Chart Js\")"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "click": "#ninja-charts-app .el-col:has(h4:text-is(\"Bar Chart\"))"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "shot": {
+        "name": "1.-Chart-Creator-Step-1",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          {
+            "selector": ".el-form-item",
+            "hasText": "Chart Renderer"
+          }
+        ]
+      }
+    },
+    {
+      "admin": "/"
+    },
+    {
+      "eval": "(()=>{const th=[...document.querySelectorAll('th')].find(t=>t.innerText.trim()==='ShortCode');const r=th.getBoundingClientRect();const cells=[...document.querySelectorAll('td')].filter(td=>td.innerText.includes('[ninja_charts'));const last=cells[cells.length-1].getBoundingClientRect();const b=document.createElement('div');b.id='nt-col-box';b.style.cssText='position:absolute;pointer-events:none;left:'+(r.left+window.scrollX)+'px;top:'+(r.top+window.scrollY)+'px;width:'+(r.width+4)+'px;height:'+(last.bottom-r.top-8)+'px';document.body.appendChild(b);})()"
+    },
+    {
+      "shot": {
+        "name": "2.-All-Charts-List-Showing-The-ID",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          "#nt-col-box"
+        ]
+      }
+    }
+  ]
+}

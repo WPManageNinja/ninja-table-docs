@@ -25,12 +25,4 @@ The **Text area** column type holds longer text, such as product details, notes 
 
 Visitors see the text in the cell. The column is shown as text, not as an HTML field, so use the [HTML field](/html-field) type if you need paragraphs, lists or links. Simple HTML in a text area cell works the same way as in the [Single line text field](/single-line-text-field).
 
-<!-- TODO(screenshot): text-area-2
-  screen: Tables › table › Preview
-  table: Course Catalog
-  state: A text area column with a long description
-  highlight: -
-  view: frontend
-  alt: Table showing a text area column on the front end
-  blocked: no demo table has a text area column with a long description
--->
+![Table showing a text area column on the front end](/images/field-types/text-area/1.-Table-Showing-A-Text-Area-Column.webp)

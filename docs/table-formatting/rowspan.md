@@ -22,14 +22,6 @@ Unlike [Colspan](/colspan-cell-merge), there is no `#rowspan#` keyword. Rowspan 
 
 Preview the table. Neighboring rows with the same value in that column now share one merged cell. Only neighboring rows are merged, so equal values must sit next to each other.
 
-<!-- TODO(screenshot): rowspan-2
-  blocked: needs saved Custom JS and saved combine class on the Employee Directory demo table
-  screen: Preview of Employee Directory
-  table: Employee Directory
-  state: Department column with repeated values merged into tall cells
-  highlight: merged cells
-  view: frontend
-  alt: Neighboring rows with the same value merged into one cell
--->
+![Neighboring rows with the same value merged into one cell](/images/table-formatting/rowspan/1.-Neighboring-Rows-With-The-Same-Value.webp)
 
 For the field itself, see [Advanced settings](/advanced-settings).
