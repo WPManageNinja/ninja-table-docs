@@ -21,7 +21,7 @@ Pick the color scheme new tables start with. The schemes are the same as in [Tab
 ## Default Styling Library
 
 - **Styling library**: **Semantic UI** (default), **Bootstrap 4** or **Bootstrap 3**. Semantic UI suits most sites; pick Bootstrap only if your theme already uses it.
-- Style switches: they change with the library, the same lists as under **Rows & Borders** in [Appearance Tab Overview](/table-style-settings).
+- Style switches: they change with the library, the same lists as on [Rows & Borders](/table-rows-borders).
 
 ## Default Font setting
 

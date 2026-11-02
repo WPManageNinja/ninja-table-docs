@@ -40,7 +40,7 @@ Editing any custom color switches the table to **Custom** mode automatically, so
 - **Footer Colors**: **Background**, **Active** and **Border** of the pagination bar. These are the same colors as **Pagination** › **Colors**, so a change in one shows in the other.
 
 ::: tip
-A custom border color only shows when the table has borders. Turn on **Bordered Table** under **Style** › **Rows & Borders**.
+A custom border color only shows when the table has borders. Turn on **Bordered Table** under **Style** › [Rows & Borders](/table-rows-borders).
 :::
 
 ## What the free version does

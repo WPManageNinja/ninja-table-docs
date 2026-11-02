@@ -1,0 +1,171 @@
+{
+  "id": "appearance",
+  "title": "Appearance",
+  "overview": "/table-style-settings",
+  "sidebarOverviewText": "Appearance overview",
+  "hero": {
+    "eyebrow": "Appearance tab",
+    "title": "Design how your table looks and behaves",
+    "lead": "A live preview sits on the left and the settings panel on the right, so you see every change before you save it. Follow the tree below, or jump straight to a task.",
+    "actions": [
+      { "text": "Start with colors", "link": "/table-color-settings", "primary": true },
+      { "text": "Set a default design", "link": "/use-design-as-default" }
+    ]
+  },
+  "tasks": [
+    { "text": "Match my brand", "sub": "Colors, then fonts", "to": "presets" },
+    { "text": "Add stripes or remove borders", "sub": "Rows & Borders", "to": "rows-borders" },
+    { "text": "Let visitors find a row", "sub": "Search box", "to": "search" },
+    { "text": "Split a long table into pages", "sub": "Pagination", "to": "pagination" },
+    { "text": "Keep headings in view", "sub": "Sticky header & first column", "to": "sticky" },
+    { "text": "Make it work on phones", "sub": "Responsive & stackable", "to": "responsive" },
+    { "text": "Let visitors download data", "sub": "Export & print buttons", "to": "export-print" },
+    { "text": "Reuse one design everywhere", "sub": "Default design", "to": "default-design" }
+  ],
+  "treeIntro": "The branches match the three tabs of the settings panel, in the order most people work. Open any setting to see what it changes on your table.",
+  "branches": [
+    {
+      "id": "colors",
+      "label": "Colors",
+      "where": "Appearance › Colors tab",
+      "goal": "Set the color mood of the whole table in one click, or take full control.",
+      "nodes": [
+        {
+          "id": "presets",
+          "label": "Preset color schemes",
+          "link": "/table-color-settings",
+          "sidebar": "Colors",
+          "pro": "partial",
+          "proNote": "Free: Default only",
+          "changes": "Recolors the search bar, header, rows, hover state and footer together with one of 14 ready-made schemes. The **Default** scheme adds no colors, so the table follows your theme.",
+          "visitors": "The whole table in one consistent palette, with no per-color work from you."
+        },
+        {
+          "id": "custom-colors",
+          "label": "Custom colors",
+          "link": "/table-color-settings",
+          "pro": true,
+          "changes": "Lets you set the background, text and border of the search bar, header, body rows and footer one by one. You can also color odd and even rows differently.",
+          "visitors": "Exactly your brand colors, including a different color for rows under the pointer."
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "label": "Style",
+      "where": "Appearance › Style tab",
+      "goal": "Decide what sits above the table, which font it uses and how rows and borders look.",
+      "nodes": [
+        {
+          "id": "title-header",
+          "label": "Title & Header",
+          "link": "/table-title-description-settings",
+          "inGroup": false,
+          "changes": "Switches the table title, the description and the header row on or off above and inside the table.",
+          "visitors": "A clean table with only the heading text you want shown."
+        },
+        {
+          "id": "typography",
+          "label": "Typography",
+          "link": "/table-font-settings",
+          "sidebar": "Fonts",
+          "changes": "Changes the font family and the font size of the table text. The default, **Inherit From Theme**, copies your site font.",
+          "visitors": "Text that matches your site, or stands out from it on purpose."
+        },
+        {
+          "id": "rows-borders",
+          "label": "Rows & Borders",
+          "link": "/table-rows-borders",
+          "changes": "Turns row stripes, hover highlight, borders and row spacing on or off. The options depend on the table engine and style library.",
+          "visitors": "Rows that are easier to scan: zebra stripes, a highlighted row under the pointer, tighter or roomier cells."
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "label": "Features",
+      "where": "Appearance › Features tab",
+      "goal": "Decide what visitors can do with the table, and how it behaves on every screen.",
+      "nodes": [
+        {
+          "id": "search",
+          "label": "Search",
+          "link": "/add-or-remove-search-or-filter-functionality",
+          "sidebar": "Search box",
+          "group": "Find and browse",
+          "changes": "Adds a search box above the table. Visitors type a word and only matching rows stay visible. You control its wording, and on Pro its position and colors.",
+          "visitors": "A search box that filters rows as they type, and your own message when nothing matches."
+        },
+        {
+          "id": "sorting",
+          "label": "Sorting",
+          "link": "/sorting",
+          "group": "Find and browse",
+          "changes": "Lets visitors click a column heading to sort by it. **Default Order** sets the order rows appear in before anyone clicks.",
+          "visitors": "Clickable headings, and a table that opens already ordered the way you chose."
+        },
+        {
+          "id": "pagination",
+          "label": "Pagination",
+          "link": "/pagination",
+          "group": "Find and browse",
+          "changes": "Splits a long table into pages instead of one long scroll. You set the rows per page and where the page numbers sit.",
+          "visitors": "Page numbers under the table, with a limited number of rows at a time."
+        },
+        {
+          "id": "sticky",
+          "label": "Sticky Header & Column",
+          "link": "/other-design-settings",
+          "sidebar": "Sticky header & first column",
+          "pro": true,
+          "group": "Keep it readable",
+          "changes": "Pins the header row while visitors scroll down, and pins the first column while they scroll sideways.",
+          "visitors": "Headings and row labels that never scroll out of view."
+        },
+        {
+          "id": "responsive",
+          "label": "Responsive & Stackable Table",
+          "link": "/stackable-table",
+          "sidebar": "Responsive & stackable table",
+          "group": "Keep it readable",
+          "changes": "Decides what a wide table does on a small screen. Columns can fold into a **+** drawer, rows can turn into cards, and a click can open the details of a row in a popup.",
+          "visitors": "On phones, a table that fits the screen instead of forcing sideways scrolling."
+        },
+        {
+          "id": "export-print",
+          "label": "Export & Print",
+          "link": "/csv-and-print-button",
+          "sidebar": "Export & print buttons",
+          "pro": true,
+          "group": "Take the data",
+          "changes": "Adds **CSV**, **Excel** and **Print** buttons to the table on your site. You choose which buttons, their labels and colors, and where they sit.",
+          "visitors": "Buttons that download or print the rows they are currently viewing, so a search they ran is kept."
+        }
+      ]
+    },
+    {
+      "id": "beyond",
+      "label": "Beyond one table",
+      "where": "Gear icon › Settings, and the table's Custom CSS/JS tab",
+      "goal": "Reuse your design on every new table, or style what the panel does not cover.",
+      "nodes": [
+        {
+          "id": "default-design",
+          "label": "Default design for new tables",
+          "link": "/use-design-as-default",
+          "sidebar": "Default design for new tables",
+          "changes": "Sets the starting color, library, font, title, search, sorting and pagination of tables you create from now on. Tables you already have are never changed.",
+          "visitors": "New tables that already look on-brand the moment they are created."
+        },
+        {
+          "id": "custom-css",
+          "label": "Custom CSS",
+          "link": "/table-styling-css-selector",
+          "inGroup": false,
+          "changes": "Adds your own styles for anything the panel does not cover.",
+          "visitors": "A table styled beyond the built-in options."
+        }
+      ]
+    }
+  ]
+}

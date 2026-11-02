@@ -7,6 +7,8 @@ metadata:
   project: ninja-table-docs
   canonical-rules: CLAUDE.md
 ---
+> **Doc trees:** renaming, moving, deleting or reordering an Appearance page means editing `.vitepress/trees/appearance.json` (the sidebar group is generated from it). Run `node scripts/qa/check-trees.mjs` afterwards.
+
 
 # Restructure Ninja Tables Docs
 

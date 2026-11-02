@@ -3,6 +3,9 @@ import { existsSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { zoomablePlugin } from './theme/plugin-zoomable'
+import { docTreePlugin } from './theme/plugin-doc-tree'
+import { docBlocksPlugin } from './theme/plugin-doc-blocks'
+import { treeById, treeSidebarGroup } from './trees'
 
 // https://vitepress.dev/reference/site-config
 // Canonical origin for this site — reused by the canonical links and the absolute
@@ -57,6 +60,8 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       md.use(zoomablePlugin)
+      md.use(docTreePlugin)
+      md.use(docBlocksPlugin)
     }
   },
   // Per-page SEO tags: canonical URL plus the Open Graph / Twitter values that differ
@@ -162,22 +167,8 @@ export default defineConfig({
           { text: 'Merge rows (rowspan)', link: '/rowspan' }
         ]
       },
-      {
-        text: 'Appearance',
-        collapsed: true,
-        items: [
-          { text: 'Appearance overview', link: '/table-style-settings' },
-          { text: 'Colors', link: '/table-color-settings' },
-          { text: 'Fonts', link: '/table-font-settings' },
-          { text: 'Search box', link: '/add-or-remove-search-or-filter-functionality' },
-          { text: 'Sorting', link: '/sorting' },
-          { text: 'Pagination', link: '/pagination' },
-          { text: 'Sticky header & first column', link: '/other-design-settings' },
-          { text: 'Responsive & stackable table', link: '/stackable-table' },
-          { text: 'Export & print buttons', link: '/csv-and-print-button' },
-          { text: 'Default design for new tables', link: '/use-design-as-default' }
-        ]
-      },
+      // Built from .vitepress/trees/appearance.json: edit the tree, not this group.
+      treeSidebarGroup(treeById('appearance')!),
       {
         text: 'Filters & Frontend Editing',
         collapsed: true,

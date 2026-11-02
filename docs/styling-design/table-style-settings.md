@@ -1,16 +1,23 @@
 ---
 title: "Appearance Tab Overview"
-description: "Design how a table looks on your site with the Appearance tab: a live preview, colors, typography, row styles and table features."
+description: "A map of the Appearance tab: live preview, colors, typography, row styles and table features, with what each setting changes and a link to every guide."
 ---
 
 # Appearance Tab Overview
 
-The **Appearance** tab is where you design how a table looks and behaves on your site. It shows a live preview of the table on the left and a settings panel on the right, so you see every change before you save it.
+::: doc-tree appearance hero
 
-1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Appearance** tab.
+To open it, go to **Ninja Tables** › **Tables**, open a table and click the **Appearance** tab.
 
 ![Appearance tab with the live preview on the left and the settings panel on the right](/images/styling-design/table-style-settings/1.-Appearance-Tab-With-The-Live-Preview.webp)
+
+::: doc-tree appearance tasks
+
+::: doc-tree appearance tree
+
+## How the panel works
+
+The settings panel opens on **Colors**. In **Style** and **Features**, sections are accordions: click a heading to open it, and only one section stays open at a time. A section with a switch in its heading (**Search**, **Sorting**, **Pagination**, **Stackable Table**) turns that whole feature on or off.
 
 ## The live preview
 
@@ -24,45 +31,6 @@ Click **Save** at the top of the editor to keep your changes. Appearance setting
 ::: tip
 The preview needs at least one column. If the table has none yet, add them in [Table Rows](/working-in-table-rows) first.
 :::
-
-## The settings panel
-
-The panel has three tabs: **Colors**, **Style** and **Features**. It opens on **Colors**. In **Style** and **Features**, sections are accordions: click a heading to open it, and only one section stays open at a time. A section with a switch in its heading (**Search**, **Sorting**, **Pagination**, **Stackable Table**) turns that whole feature on or off.
-
-### Colors
-
-Pick a ready-made color scheme, or set every color yourself in **Custom** mode (Pro). See [Table Colors](/table-color-settings).
-
-### Style
-
-- **Title & Header**: **Show Table Title**, **Show Table Description** and **Show Header Row**. See [Table Title, Caption & Description](/table-title-description-settings).
-- **Typography**: **Font Family** and **Font Size**. See [Table Fonts](/table-font-settings).
-- **Rows & Borders**: the style library and the row and border switches, described below.
-
-![Rows & Borders section with the Style Library choice and the style switches](/images/styling-design/table-style-settings/2.-Rows-Borders-Section-With-The-Style.webp)
-
-The switches under **Rows & Borders** depend on the table's engine and library. Each has a short description under it.
-
-- **FooTable tables** show a **Style Library** choice: **Semantic UI** (default), **Bootstrap 4** or **Bootstrap 3**. Semantic UI suits most sites; pick Bootstrap only if your theme already uses it. The switches below change with the library:
-  - **Semantic UI**: **Single Line Cells**, **Fixed Layout**, **Hover Rows**, **Bordered Table**, **Hide Horizontal Borders**, **Hide Vertical Borders**, **Striped Rows**, **Compact Table** and **Vertically Centered Table Cell Contents**. **Single Line Cells** and **Fixed Layout** exist only in Semantic UI.
-  - **Bootstrap 4**: **Striped Rows**, **Bordered Table**, **Hide Horizontal Borders**, **Hide Vertical Borders**, **Hover Rows**, **Small Table** and **Vertically Centered**.
-  - **Bootstrap 3**: the same list, with **Condensed Table** in place of **Small Table**.
-- **DataTables tables** have no library choice. The switches are **Hover Rows**, **Striped Rows**, **Bordered Table**, **Hide Horizontal Borders**, **Hide Vertical Borders**, **Hide All Borders**, **Compact Table** and **Vertically Centered Table Cell Contents**. **Hide All Borders** exists only on DataTables.
-
-To see which engine a table uses, or to compare them, read [FooTable or DataTables: Choose an Engine](/choose-table-engine).
-
-::: warning
-Style switches are tied to the engine. If you switch a table's engine, check **Rows & Borders** again, because the FooTable and DataTables styles are separate sets.
-:::
-
-### Features
-
-- **Search**: the search box, its texts, position and colors. See [Search Box](/add-or-remove-search-or-filter-functionality).
-- **Sorting**: let visitors sort by clicking a column heading, and set the default order. See [Sorting](/sorting).
-- **Pagination**: rows per page, page-size changer and position. See [Pagination](/pagination).
-- **Sticky Header & Column** (Pro): see [Sticky Header & First Column](/other-design-settings).
-- **Responsive Breakpoint**, **Stackable Table** and **Others** (Row Details Popup): how a table behaves on small screens. See [Responsive & Stackable Table](/stackable-table).
-- **Export & Print** (Pro): download and print buttons for visitors. See [Export & Print Buttons](/csv-and-print-button).
 
 ## Set the starting design for new tables
 

@@ -84,7 +84,7 @@ strips `.html`. Consequences:
 ## Sidebar — mandatory step when adding/renaming docs
 
 The sidebar (and top nav) is 100% driven by the `themeConfig.nav` / `themeConfig.sidebar` arrays
-inline in `.vitepress/config.mts` — there is **no separate `sidebar.json` file** in this repo.
+inline in `.vitepress/config.mts` (the **Appearance** group is generated from a doc tree, see *Doc trees*) — there is **no separate `sidebar.json` file** in this repo.
 VitePress does **not** auto-discover docs; every new or renamed `.md` file **must** be reflected
 there.
 
@@ -104,6 +104,53 @@ Leaf entry shape: `{ text: 'Page Title', link: '/<slug>' }` (no `.md`). The top
 `nav` array separately duplicates 2 of these links (User Guide → getting-started intro, Changelog)
 plus Home and an external Website link — that's intentional, not a bug, so an audit checking
 sidebar coverage should check presence, not exact 1:1 count parity with `nav` included.
+
+## Doc trees — the Appearance group is data-driven
+
+The **Appearance** sidebar group, its overview page and the "you are here" strip on its child
+pages are generated from one file: `.vitepress/trees/appearance.json` (types in
+`.vitepress/trees/types.ts`, registry in `.vitepress/trees/index.ts`). Do not hand-edit the
+Appearance group in `config.mts`, and do not hand-write HTML on the overview page.
+
+- **Overview page** (`docs/styling-design/table-style-settings.md`) uses three lines:
+  `::: doc-tree appearance hero`, `... tasks`, `... tree` (each on its own line, blank line between).
+  `.vitepress/theme/plugin-doc-tree.ts` renders them to static HTML (searchable, printable, no JS).
+- **Child pages** get a `TreeStrip` (`theme/components/TreeStrip.vue`, `#doc-before` slot) automatically
+  when their slug is a node `link` in a tree. Styles: `theme/doc-tree.css` (`dt-*` classes, `.nt-pro` badge).
+- **Add/rename/move an Appearance page:** edit the tree JSON (label, `link`, `sidebar` text, `pro`,
+  `changes`, `visitors`). Set `"inGroup": false` for a page that lives in another sidebar group.
+  The "what changes / visitors see" copy lives ONLY in the tree; child pages keep their own prose.
+- **Gate:** `node scripts/qa/check-trees.mjs` must print `✓` (links exist, Pro flags match the pages, tasks resolve).
+- **Another group:** add `.vitepress/trees/<id>.json`, register it in `trees/index.ts`, swap that group in
+  `config.mts` for `treeSidebarGroup(treeById('<id>')!)`, and put the three `::: doc-tree <id> …` lines on its landing page.
+  Use trees only where a real plugin screen with tabs exists; keep linear task groups as numbered paths.
+- Raw HTML in markdown must never contain a blank line (it ends the HTML block).
+
+## Tabs, FAQ and keycaps (Linear-style blocks)
+
+`.vitepress/theme/plugin-doc-blocks.ts` adds two containers, split into sections with `== Label` lines.
+Section bodies are normal markdown; **never nest another `:::` block inside them** (`::: tip` inside a tab
+breaks the parse). Styles are in `theme/doc-tree.css`.
+
+```md
+::: tabs
+== FooTable
+Steps for FooTable…
+== DataTables
+Steps for DataTables…
+:::
+
+::: faq
+== Why can't I see X?
+Because…
+:::
+```
+
+- **Tabs** are for one task done in different ways (engine, route, Free vs Pro). Max 6 tabs, 2–3 is best.
+  CSS-only, so they work without JS and every tab prints. Don't hide required steps in a tab that most readers won't open.
+- **FAQ** answers short "why/what if" questions at the bottom of a page, after the main content.
+- **Keycaps:** write `<kbd>F</kbd>` for a keyboard key. UI labels stay in `**bold**`.
+- Used first on `docs/styling-design/table-rows-borders.md`.
 
 ## Images
 

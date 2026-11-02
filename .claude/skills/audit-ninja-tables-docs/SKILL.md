@@ -7,6 +7,8 @@ metadata:
   project: ninja-table-docs
   canonical-rules: CLAUDE.md
 ---
+> **Doc trees:** also run `node scripts/qa/check-trees.mjs`; it must print `✓`. Appearance sidebar coverage is guaranteed by the tree, so check the tree file rather than `config.mts` for that group.
+
 
 # Audit Ninja Tables Docs
 

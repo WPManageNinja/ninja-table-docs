@@ -7,6 +7,8 @@ metadata:
   project: ninja-table-docs
   canonical-rules: CLAUDE.md
 ---
+> **Doc trees:** if the new page belongs to the Appearance group, add a node to `.vitepress/trees/appearance.json` instead of editing the sidebar in `config.mts` (see CLAUDE.md › Doc trees). Then run `node scripts/qa/check-trees.mjs`.
+
 
 # Write a Ninja Tables Doc
 

@@ -6,6 +6,9 @@ const { Layout } = DefaultTheme
 
 <template>
   <Layout>
+    <template #doc-before>
+      <TreeStrip />
+    </template>
     <!-- doc-footer-before renders above the Previous/Next pager (see screenshots).
          The default theme's #doc-after slot sits *below* the pager. -->
     <template #doc-footer-before>
