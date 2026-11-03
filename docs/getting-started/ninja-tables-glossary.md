@@ -81,7 +81,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Google Sheets integration:** A connected table (Pro) that shows rows from a published Google Sheet.
 
-**Guided setup:** The three-step wizard that opens on the Tables screen when a site has no tables: choose how to start, name the table, pick a look. See [Onboarding](/ninja-tables-onboarding).
+**Guided setup:** The two-step wizard that opens on the Tables screen when a site has no tables: choose how to start, then finish the table. See [Onboarding](/ninja-tables-onboarding).
 
 ## H
 

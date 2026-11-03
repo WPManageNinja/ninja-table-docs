@@ -47,7 +47,7 @@ A **Drag & Drop export** has no engine choice, because Drag & Drop tables use th
 
 ## Use the guided setup
 
-On a site with no tables, the guided setup creates your first table for you, and that table is always a **FooTable**, even though the **Create Table** screen defaults to DataTables. The setup has no engine choice. See [Guided Setup and Quick Start](/onboarding-setup-guide).
+On a site with no tables, the guided setup creates your first table for you, and a table made with the **Start blank** card is always a **FooTable**, even though the **Create Table** screen defaults to DataTables. That card has no engine choice. See [Guided Setup and Quick Start](/onboarding-setup-guide).
 
 If you want a DataTables table instead, click **Skip setup** and use the **Create Table** screen.
 
