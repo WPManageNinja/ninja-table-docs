@@ -14,7 +14,7 @@ You need Ninja Tables Pro and WooCommerce active. If WooCommerce isn't active, t
 1. Go to **Create Table** and, under **Connect live data**, click **WooCommerce reviews**.
 2. Enter a **Table name**, such as "Customer Feedback".
 3. Pick the products whose reviews you want to show from the **Product category**, **Product tags** and **Product type** lists. Leave a list empty to use all of its items.
-4. Set **Reviews Status** to **All**, **Approved** or **Unapproved**. Unapproved reviews are the ones waiting in **WooCommerce › Reviews**. Choose **Approved** for a public table.
+4. Set **Reviews Status** to **All** (the default), **Approved** or **Unapproved**. Unapproved reviews are the ones waiting in **WooCommerce › Reviews**. Choose **Approved** for a public table.
 5. Click **Create table**.
 
 <!-- TODO(screenshot): woocommerce-product-reviews-table-1
