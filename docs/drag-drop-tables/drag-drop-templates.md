@@ -35,5 +35,5 @@ Pro templates carry a **PRO** badge. The badge shows on these cards even when Ni
 On the free version you can still select a Pro template, but clicking **Create table** shows "This is a Pro feature." and nothing is created. Choose a free template or upgrade to continue.
 
 ::: tip
-Some templates come with **Enable responsive table** turned off, so they keep their desktop layout on phones. To stack them on small screens, turn it on in the table settings; see [Mobile & Tablet Layout](/responsive-table-design).
+Every template comes with **Enable Responsive Table** turned on, but several have **Use Top Row As Header** turned off for mobile or tablet. Check the **Responsive** tab if a template does not stack the way you expect; see [Mobile & Tablet Layout](/responsive-table-design).
 :::
