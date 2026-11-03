@@ -7,7 +7,7 @@ description: "Use the Button/Link column type (Pro) to show a styled button in e
 
 The **Button/Link** column type (Pro) turns each cell into a button. You set the button text and style once for the whole column, and each row holds its own link. Use it for *Buy now*, *Download* or *Read more* buttons.
 
-On the free version you can still choose this type, but a note says **Buttons on tables are a Pro feature** and the options are disabled. A new Button/Link column added without Pro is saved as a Single line text field, and the row drawer shows the Pro badge with a plain text box.
+On the free version you can still choose this type, but a note says **Buttons on tables are a Pro feature** and the checkboxes, colors and **Link rel attribute** options are disabled. A new Button/Link column added without Pro is saved as a Single line text field, and the row drawer shows the Pro badge with a plain text box.
 
 ## Set a column to Button/Link
 
