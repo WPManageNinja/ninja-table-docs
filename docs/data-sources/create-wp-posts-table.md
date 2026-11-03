@@ -59,8 +59,9 @@ The **Field** list appears once you pick a post type. It offers ID, Author, Comm
 
 | Field | Operators | Value |
 |---|---|---|
-| ID, Comments | Equal To, Not Equal To, Greater Than, Less Than, Greater Than Or Equal To, Less Than Or Equal To | A number |
-| Date, Modified date | The same six | A date and time picker |
+| ID | Equal To, Not Equal To, Greater Than, Less Than, Greater Than Or Equal To, Less Than Or Equal To | A number |
+| Comments | Equal To, Greater Than, Less Than, Greater Than Or Equal To, Less Than Or Equal To (no Not Equal To) | A number |
+| Date, Modified date | The same six as ID | A date and time picker |
 | Author, Status and taxonomies | In, Not In | A multi-select list |
 
 To limit the table to published posts, add a rule with **Status**, **In** and **Published**.
@@ -110,10 +111,10 @@ Click **Update** when you're done. **Update** merges your choices into the table
 Open **Conditions** to filter and order the rows:
 
 - **Logged in user posts**: show each visitor only their own posts.
-- **Add condition**: add a rule with a field (a post field or a taxonomy), an operator and a value. Operators are Equal To, Not Equal To, Greater Than, Less Than, Greater Than Or Equal To, Less Than Or Equal To, In and Not In. Date fields show a date picker, and author and taxonomy fields show a picker.
+- **Add condition**: add a rule with a field (a post field or a taxonomy), an operator and a value. Operators are Equal To, Not Equal To, Greater Than, Less Than, Greater Than Or Equal To, Less Than Or Equal To, In and Not In. Date fields show a date picker, and author, status and taxonomy fields show a picker. Comments has no Not Equal To.
 - **Query limit for frontend**: how many posts to show in total. Leave it blank to show all.
-- **Order by column**: the column the rows are sorted by (`post_date` by default).
-- **Order by type**: **Ascending** or **Descending** (the default).
+- **Order by column**: the field the rows are sorted by: `ID`, `post_date`, `post_author`, `post_title`, `post_status`, `menu_order` or `comment_count`. A new table starts with no choice here, and WordPress then sorts by post date, newest first.
+- **Order by type**: **Ascending** or **Descending**.
 
 For example, a rule on **ID** with **Equal To** and the value `129` shows only the post with ID 129.
 
