@@ -112,7 +112,7 @@ When the Trash has tables in it, a **Trash** button with a count appears next to
 - **Restore** a table, from its **More actions** menu or as a bulk action. It goes back to the list and shows on your site again.
 - **Delete permanently**, from its **More actions** menu or as a bulk action.
 
-Click **Tables** at the top of the Trash to go back to the list.
+Click the back arrow (**Back to tables**) beside the title to go back to the list.
 
 Two empty screens can appear:
 
