@@ -7,7 +7,7 @@ description: "Add rows from a CSV file to a table you already have, or replace a
 
 **Import Rows** adds the rows from a CSV file to a table that already exists, keeping its columns, design and settings. You can add the new rows after the existing ones, or replace every row in the table. To create a new table from a file instead, see [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
 
-Import works on tables that store their own rows (Default tables and tables created from a file). Connected tables, such as WooCommerce or Google Sheets tables, can't take imported rows: they only have an **Export** button. This per-table import reads CSV only. For JSON or Excel files, use the [global Import page](/import-ninja-tables-json).
+Import works on tables that store their own rows (Default tables and tables created from a file). Connected tables, such as WooCommerce or Google Sheets tables, can't take imported rows: they only have an **Export** button. This per-table import reads CSV only. For JSON or Excel files, use the [global Import screen](/import-table-data-from-a-csv), which creates a new table.
 
 ## Before you start: match the columns
 
@@ -18,7 +18,7 @@ The table needs its columns set up first. Ninja Tables reads the CSV by position
 
 Lines with a different number of values than the table has columns are skipped.
 
-The easiest way to get this right is to start from the sample file:
+The easiest way to get this right is to start from the sample file (it is named `sample-<table ID>.csv`):
 
 1. Open the table and go to **Table Rows** › **Import / Export** and choose **Import**.
 2. Click **Download sample CSV**. The file has your table's column names as its header row, in the right order, plus a few example lines.
@@ -52,8 +52,8 @@ When the import finishes, you see **Successfully uploaded data.** (**Successfull
 
 ## Troubleshooting
 
-- **"Please use the provided CSV header structure"**: the file has a different number of columns than the table. Download the sample CSV and copy your data into it.
-- **"Table configuration required"** or **"Please configure the table columns before importing data."**: the table has no columns yet. Add them first with **Add column**.
+- **"Please use the provided CSV header structure font face."**: the first line of the file has a different number of values than the table has columns. Download the sample CSV and copy your data into it.
+- **Table configuration required** ("Please configure the table columns before importing data."): the Import panel shows this instead of the upload area when the table has no columns yet. Add them first with **Add column**.
 - **"CSV header ... conflicts with a reserved system column. Please rename it."** (DataTables tables): a header in the file uses a reserved system name. Rename that header and import again.
 - **Some rows are missing**: those lines had more or fewer values than the table has columns, often because of an extra comma. Check them in a spreadsheet app.
 - **Accented characters look wrong**: import again with **Convert to UTF-8 format** turned on, if the file is Latin-1. Otherwise re-save the file as UTF-8 in your spreadsheet app.

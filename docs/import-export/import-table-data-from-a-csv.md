@@ -15,7 +15,7 @@ To add rows to a table you already have, see [Import rows into an existing table
 2. Under **1. What are you importing?**, pick the file type:
    - **CSV**: from Excel, Google Sheets or Numbers.
    - **Excel (.xlsx)**: the first sheet is imported.
-   - **JSON**: a list of rows (objects or arrays).
+   - **JSON**: a list of rows (objects or arrays). The field names of the first row become the columns.
    - **Ninja Tables JSON**: a table exported from Ninja Tables, with its design and settings. See [Import a Ninja Tables JSON file](/import-ninja-tables-json).
    - **Drag & Drop export**: a JSON or CSV file exported from a Drag & Drop table.
 
@@ -27,7 +27,7 @@ To add rows to a table you already have, see [Import rows into an existing table
 
 ![Import screen with the file type cards, rendering engine and a chosen CSV file](/images/import-export/import-table-data-csv/1.-Import-Screen-With-The-File-Type.webp)
 
-Ninja Tables creates the table, imports the rows and opens the new table in the editor. A table imported from a CSV file is named after the file, including the `.csv` ending. A table imported from a plain **JSON** file is named **Temporary table name**, with the description **Temporary table description**. You can rename either one with the pencil next to its name; see [Table title, caption and description](/table-title-description-settings).
+Ninja Tables creates the table, imports the rows and opens the new table in the editor. A table imported from a CSV or Excel file is named after the file, including the `.csv` or `.xlsx` ending. A table imported from a plain **JSON** file is named **Temporary table name**, with the description **Temporary table description**. You can rename either one with the pencil next to its name; see [Table title, caption and description](/table-title-description-settings).
 
 The **Create from scratch instead** button at the top of the screen opens the **Create a table** screen if you change your mind.
 
@@ -39,7 +39,7 @@ You can also import while creating a table:
 2. Click **Upload a file** under **Start from scratch**. You can also drag your file anywhere onto the Create a table screen.
 3. Enter a **Table name** (optional; the file name is used if you leave it empty) and a **Description** if you like.
 4. Choose the file. Ninja Tables picks the **File type** from the file name; change it if it's wrong. The choices are **CSV - Comma-separated values**, **Excel - spreadsheet (.xlsx)**, **JSON - JavaScript Object Notation** and **JSON - Exported From Ninja Tables**.
-5. Check the engine line, and DataTables is already selected; click **Change** to pick FooTable instead.
+5. Check the engine line. It reads **Engine: DataTables (recommended)**; click **Change** to pick FooTable instead.
 6. Click **Create table**.
 
 ![Upload a file panel with the file, File type and engine line](/images/import-export/import-table-data-csv/2.-Upload-A-File-Panel.webp)

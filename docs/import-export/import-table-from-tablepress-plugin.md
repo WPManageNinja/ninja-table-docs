@@ -48,6 +48,8 @@ The imported table is a normal Ninja Tables table with its own columns and rows.
 
 - Imported tables use the FooTable engine, and the engine can't be changed afterwards.
 - The table's first row becomes the column names. If a TablePress table has its header row turned off, the columns are named **Ninja Column 1**, **Ninja Column 2** and so on.
+- Rows that have a different number of cells than the header row are skipped.
+- The table description is set to "Temporary table description" until you change it.
 - It doesn't stay linked to the original, so changes in TablePress won't carry over.
 
-Style the table in [Appearance](/table-style-settings), then replace the old plugin's shortcode on your pages with the Ninja Tables shortcode from the [Tables list](/tables-list).
+Style the table in [Table Design](/table-style-settings), then replace the old plugin's shortcode on your pages with the Ninja Tables shortcode from the [Tables list](/tables-list).

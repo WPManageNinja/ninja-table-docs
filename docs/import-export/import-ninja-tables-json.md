@@ -38,11 +38,11 @@ A file exported from a Drag & Drop table needs its own option:
 The new Drag & Drop table opens in the builder. Save it once there before you embed it on a page.
 
 - A **JSON** export brings back the whole layout, with its elements and settings.
-- A **CSV** file creates a grid with a cell for every value in the file, including the first row, and the table is named after the file.
+- A **CSV** file creates a grid with a cell for every value in the file, including the first row. The table is named **Ninja-tables** followed by today's date (for example `Ninja-tables03-11-2026`); rename it in the builder.
 
 ## JSON vs Ninja Tables JSON
 
 The Import screen has two JSON options:
 
 - **Ninja Tables JSON** is a full table exported from Ninja Tables, including its design and settings.
-- **JSON** is a plain list of rows, for example from another app. The names in the first row become the columns, and it brings in the data only. The new table is called **Temporary table name** until you rename it in its [table details](/table-title-description-settings). See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
+- **JSON** is a plain list of rows, for example from another app. The field names of the first object become the columns, and it brings in the data only. The new table is called **Temporary table name** until you rename it in its [table details](/table-title-description-settings). See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
