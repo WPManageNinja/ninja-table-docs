@@ -30,7 +30,7 @@ features:
     link: /working-in-table-rows
     linkText: "Edit Your Table"
   - icon: 🎨
-    title: Appearance
+    title: Table Design
     details: Live preview, quick styles, colors, fonts, search, sorting, pagination and mobile layout.
     link: /table-style-settings
     linkText: "Design Tables"
