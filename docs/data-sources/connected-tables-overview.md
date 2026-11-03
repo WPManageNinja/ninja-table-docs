@@ -77,7 +77,7 @@ What you see inside depends on the source:
 | Fluent Forms, Google Sheets, Remote CSV, Custom SQL | A single form |
 
 - **Query settings** decides which rows the table shows (post types, categories, filters, order).
-- **Appearance** holds source-specific display options, such as the cart buttons on product tables or the star colors on review tables. The table's general design lives in the **Styling** tab of the editor.
+- **Appearance** holds source-specific display options, such as the cart buttons on product tables or the star colors on review tables. The table's general design lives in the **Styling** tab of **Table Design** of the editor.
 - **Add new column** adds a column filled from the source, such as a post meta value, a product SKU or a featured image. See [Dynamic columns reference](/dynamic-columns-reference).
 
 Save your changes with the button at the bottom of each section (**Save settings**, **Update** or **Save and run**, depending on the source).
@@ -99,10 +99,10 @@ The rows grid of a connected table shows a **Read-only** badge. You can't add, e
 The rows grid also has no drag-to-sort and no row import. Everything about the table's look and behavior still works. You can:
 
 - Rename columns, change their type and set column options from the column header › **Column settings**.
-- Design the table in the **Styling** tab.
+- Design the table in the **Styling** tab of **Table Design**.
 - Add [Custom filters](/custom-filters) (Pro), Custom CSS/JS and performance settings in **Table Configuration**.
 
-The **Frontend editing** tab isn't available for connected tables. It explains: "Only tables that store their own rows can be edited from the front end. This one reads its rows from somewhere else, so there is nothing here to save back to."
+The **Frontend Editing** tab isn't available for connected tables. It explains: "Only tables that store their own rows can be edited from the front end. This one reads its rows from somewhere else, so there is nothing here to save back to."
 
 ## Keeping the data fresh
 

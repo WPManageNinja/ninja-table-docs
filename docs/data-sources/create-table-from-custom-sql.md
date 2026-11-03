@@ -32,7 +32,7 @@ Ninja Tables runs the query and turns the fields of the first result row into te
   blocked: needs a saved Custom SQL table; creating tables not allowed this wave
 -->
 
-The rows are read-only. You can still rename columns, change their types and design the table in the **Styling** tab.
+The rows are read-only. You can still rename columns, change their types and design the table in the **Styling** tab of **Table Design**.
 
 ## Change the query later
 
