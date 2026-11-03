@@ -18,9 +18,9 @@ From left to right:
 - **Back arrow**: return to all tables.
 - **Table name** with a **pencil icon**: opens the **Rename Table** box. The name is only shown in the admin, and is saved with the next **Save**.
 - **#ID** and the **shortcode chip**, for example `[ninja_table_builder id="123"]`. Click the chip to copy it.
-- **Full Screen**: hide the WordPress menus while you work, and bring them back with **Leave Full Screen**.
+- **Full Screen**: collapse the WordPress admin menu to give the builder more room, and bring it back with **Leave Full Screen**.
 - **Preview**: open the saved table on its own page in a new tab. Unsaved changes are not shown.
-- **⋯ More Actions**: under **Export Table**, **Export As CSV** and **Export As JSON**.
+- **⋯ More Actions**: under **Export Table**, **Export As CSV** and **Export As JSON**. Both export the last saved version of the table, so click **Save** first.
 - **Save**: save your changes. The table on your site only updates when you save.
 
 ### Export as CSV or JSON
@@ -30,9 +30,9 @@ From left to right:
 
 ### What Save does
 
-**Save** writes the table, its settings and the HTML that visitors see. It also returns the preview width to **Desktop**. If your WordPress user can't post unfiltered HTML, Ninja Tables cleans the saved HTML: tags and attributes outside a safe list, which can include custom **HTML** and **Shortcode** elements and some inline styles, may be removed. Script tags are escaped for everyone.
+**Save** writes the table, its settings and the HTML that visitors see. It also returns the preview width to **Desktop**. If your WordPress user can't post unfiltered HTML, Ninja Tables cleans the saved HTML: tags and attributes outside a safe list, which can include custom **HTML** and **Shortcode** elements and some inline styles, may be removed. Script tags are removed for everyone.
 
-If you try to leave the builder after making edits, the browser asks you to confirm that "Changes that you made may not be saved". Saving clears the warning. There is no undo or redo in the builder.
+If you move to another Ninja Tables screen after making edits, you are asked to confirm that "Changes that you made may not be saved". Saving clears the warning. Closing or reloading the browser tab is not guarded. There is no undo or redo in the builder.
 
 ## The canvas toolbar
 
@@ -43,7 +43,7 @@ If you try to leave the builder after making edits, the browser asks you to conf
 
 ### Preview Width
 
-When **Tablet** or **Mobile** is active and the responsive layout is on for that device, a slider above the table lets you drag the preview width to test how the table behaves: mobile from 300 to 699 px (it starts at 400 px) and tablet from 700 to 1023 px.
+When **Tablet** or **Mobile** is active and the responsive layout is on for that device, a **Preview Width** row above the table lets you drag the slider or type a width in px to test how the table behaves: mobile from 300 to 699 px (it starts at 400 px) and tablet from 700 to 1023 px.
 
 The slider is a test tool. On your live site the layout switches at fixed widths: mobile at 700 px or narrower, tablet from 701 to 1023 px, and desktop at 1024 px or wider. See [Mobile & Tablet Layout](/responsive-table-design).
 
@@ -53,8 +53,8 @@ The slider is a test tool. On your live site the layout switches at fixed widths
 
 The table is shown on a sheet, with column letters (**A**, **B**, **C**…) above it and row numbers (**1**, **2**, **3**…) beside it.
 
-- **Click a cell** to select it. **Shift-click** another cell to select more than one, or use **Merge** and click the cells. Click outside the table to clear the selection.
-- **Click an element** inside a cell to select the element. A small chip appears with a grip to **drag** it to another cell, plus **Duplicate** and **Delete** buttons.
+- **Click a cell** to select it. The toolbar then reads "Cell C1". **Shift-click** another cell to select more than one, or use **Merge** and click the cells. Click outside the table to clear the selection.
+- **Click an element** inside a cell to select the element. A small chip appears above it with a grip to **drag** it to another cell, plus **Duplicate** and **Delete** buttons. **Double-click** a text element to type in it (the toolbar reads "Typing. Esc To Finish"). With an element selected, press <kbd>Esc</kbd> to go back to its cell, <kbd>Delete</kbd> to remove it, or <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>D</kbd> to duplicate it.
 - A cell can hold several elements, stacked from top to bottom.
 - **Text** can be edited right in the cell. The small toolbar has bold, italic, underline, strikethrough, link and unlink. Button labels have bold, italic, underline and strikethrough only.
 - Click a **column letter** or **row number** to select the whole column or row. The **chevron** beside it opens its menu, and you can drag the letter or number to move the whole column or row.
@@ -89,9 +89,9 @@ What it shows depends on what you selected. A breadcrumb (**Table › Cell › E
 
 ### Responsive tab
 
-Turn on **Enable Responsive Table** to show the **Mode Options** and **Responsive Settings** sections, which control how the table looks on tablets and phones. When it is off, the tab only shows a hint: "Enable Responsive Table To Show Mode Options And Responsive Settings. Existing Settings Are Retained." See [Mobile & Tablet Layout](/responsive-table-design).
+Turn on **Enable Responsive Table** to show a **Desktop** / **Tablet** / **Mobile** switch (the same one as in the canvas toolbar) and the layout and spacing options of the device you pick, which control how the table looks on tablets and phones. When it is off, the tab only shows a hint: "Enable Responsive Table To Show Mode Options And Responsive Settings. Existing Settings Are Retained." See [Mobile & Tablet Layout](/responsive-table-design).
 
-![Responsive tab with Enable Responsive Table on and the Mode Options and Responsive Settings sections](/images/drag-drop-tables/drag-drop-builder-tour/5.-Responsive-Tab-With-Enable-Responsive-Table.webp)
+![Responsive tab with Enable Responsive Table on and the device switch with its options](/images/drag-drop-tables/drag-drop-builder-tour/5.-Responsive-Tab-With-Enable-Responsive-Table.webp)
 
 ## On your site
 
