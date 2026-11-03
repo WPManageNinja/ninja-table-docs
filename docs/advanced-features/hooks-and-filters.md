@@ -291,3 +291,4 @@ These hooks belong to the free [Ninja Charts](/getting-started-with-ninja-charts
 | `ninja_charts_ntm_google_csv_unique_key` | filter | `$key` (default empty) | Cache key suffix for Google Sheets chart data. |
 | `ninja_charts/fluent_connector_base_url` | filter | `$url` | Base URL of the Ninja Charts admin screen used by its menu links. |
 | `ninja_charts_editor_available_charts` | filter | `$charts` | Charts listed in the classic editor's **Insert Ninja Charts Shortcode** dialog. |
+| `ninjacharts_loaded` | action | `$app` | Ninja Charts has finished loading. |
