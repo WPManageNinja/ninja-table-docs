@@ -37,7 +37,7 @@ To color single rows or cells instead, see [Row and cell colors](/tables-row-col
 ## Behavior
 
 - **Sortable** (Pro): on by default. When on, visitors can click the heading to sort the table by this column. Turn it off to remove the sort icon and sorting for this column only. Sorting for the whole table is set in **Appearance** › **Sorting**. See [Sorting](/sorting).
-- **Searchable** (Pro): on by default. When on, this column is included when visitors use the search box. Turn it off to leave the column out of search results and out of the **Search in** dropdown.
+- **Searchable** (Pro): on by default. When on, this column is included when visitors use the search box. Turn it off to leave the column out of search results. On FooTable tables it is also left out of the **Search in** dropdown.
 - **Click to copy**: off by default. When on, visitors can click a cell in this column to copy its value. Useful for coupon codes, phone numbers or IDs.
 
 ## Header
