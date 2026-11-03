@@ -66,7 +66,7 @@ Choose where the column shows on small screens:
 - **Initial Hidden Mobile, Tab and Regular Computers**
 - **Totally hidden on all devices**
 
-Columns that are folded away aren't lost. Visitors tap the **+** button on a row to see them, and you set how that works in **Appearance** › **Features** › **Mobile**. Careful: **Initial Hidden Mobile, Tab and Regular Computers** hides the column at every width, and **Hidden on desktop** does too on FooTable tables, so the column only appears in the **+** drawer. For what each option does on each table engine, see [Show or hide columns on mobile](/column-responsive-breakpoints).
+Columns that are folded away aren't lost. Visitors tap the **+** button on a row to see them, and you set how that works in **Table Design** › **Features** › **Mobile**. Careful: **Initial Hidden Mobile, Tab and Regular Computers** hides the column at every width, and **Hidden on desktop** does too on FooTable tables, so the column only appears in the **+** drawer. For what each option does on each table engine, see [Show or hide columns on mobile](/column-responsive-breakpoints).
 
 ## Extra settings on connected tables
 
