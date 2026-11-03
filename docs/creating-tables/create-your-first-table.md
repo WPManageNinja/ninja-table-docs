@@ -1,6 +1,6 @@
 ---
 title: "Create Your First Table"
-description: "Build a Default table step by step: create it, add columns and rows, style it in Appearance, preview it and embed it on a page."
+description: "Build a Default table step by step: create it, add columns and rows, style it in Table Design, preview it and embed it on a page."
 ---
 
 # Create Your First Table
@@ -33,13 +33,13 @@ A new table has no columns, so the grid shows **Add column**.
 2. On the **Basic** tab, fill in:
    - **Column name**: the header visitors see.
    - **Column key**: filled in from the name. Use English letters, numbers and `_` only. It's used by shortcodes, imports and filters, and it can't change later.
-   - **Type**: Single line text field, Text area, HTML field, Numeric value or Date field. Select field, Image/File/Lightbox and Button/Link also appear in the list, but they need Pro to work. On the free version a note says so, and the column is saved as Single line text.
+   - **Type**: Single line text field, Text area, HTML field, Numeric value or Date field. Select field, Image/File/Lightbox and Button/Link also appear in the list, but they need Pro to work. On the free version a note says so. A Select column works as plain text, and a new Image/File/Lightbox or Button/Link column is saved as Single line text.
    - **Responsive visibility**: whether the column is always shown, or hidden on some screen sizes.
 3. Click **Add column**.
 
 ![Column dialog Basic tab with Column name, Column key, Type and Responsive visibility](/images/creating-tables/create-first-table/3.-Column-Dialog-Basic-Tab-With-Column.webp)
 
-Repeat for each column. To edit a column later, open the menu on its header in Table Rows and click **Column settings**. The same menu lets you add a column to the left or right, sort the rows, or delete the column. Drag a column header to move the column.
+Repeat for each column. To edit a column later, open the menu on its header in Table Rows and click **Column settings**. The same menu lets you add a column to the left or right, or delete the column. To move a column, drag the grip icon (**Drag to reorder**) at the left of its header. To sort the grid for a moment, click a column name; this view is never saved.
 
 ## Add rows
 
@@ -55,7 +55,7 @@ The toolbar above the grid also has:
 
 - **Search rows**: find rows by any value.
 - **Sort manually** (Pro): drag rows into the order visitors see. See [Sort rows manually](/rearrangement-of-rows-in-ninja-tables-manual-row-sort).
-- **Compact rows**: show more rows on screen.
+- **Compact View**: show more rows on screen.
 - **Import / Export**: add rows from a CSV file, or export the table. See [Import rows into an existing table](/import-csv-file-to-an-existing-table).
 
 For everything you can do in the grid, see [Working in Table Rows](/working-in-table-rows).
@@ -64,9 +64,9 @@ For everything you can do in the grid, see [Working in Table Rows](/working-in-t
 
 Each row has its own actions at the end of the row:
 
-- **Edit row** opens the row in the side panel. Use **Previous row** and **Next row** to move through the table without closing it.
+- **Edit row** opens the row in the side panel, where you can also change its **Created date**. Use **Previous row** and **Next row** to move through the table without closing it.
 - **Row actions** › **Insert row below** (Pro), **Duplicate row** or **Delete row**.
-- **Row settings** (palette icon) changes the row's **Created date** and sets its background and text colors (Pro). Cells have their own **Cell settings**. See [Row and cell colors](/tables-row-color).
+- **Row settings** (palette icon) sets the row's background and text colors (Pro). Cells have their own **Cell settings**. See [Row and cell colors](/tables-row-color).
 
 To delete several rows at once, tick them and click **Delete** in the toolbar.
 
@@ -82,17 +82,17 @@ The column dialog has three more tabs:
 
 Click **Save column** after changing a column.
 
-## Style the table in Appearance
+## Style the table in Table Design
 
-Click the **Appearance** tab. On the left is a live preview of your table, which you can switch between Desktop, Tablet and Mobile. The side panel has three tabs.
+Click the **Table Design** tab. On the left is a live preview of your table, which you can switch between Desktop, Tablet and Mobile. The side panel has three tabs.
 
 - **Styling**: **Style** (the style library, Semantic UI, Bootstrap 4 or Bootstrap 3 on FooTable, plus rows, borders and layout switches), **Typography** (font family and size) and **Title & Header** (show the table title, description and header row).
 - **Features**: **Search**, **Sorting** and **Pagination** (what visitors can search, the default order and how many rows show per page), **Mobile** (responsive breakpoint and stackable table), **Sticky Header & Column** (Pro), **Export & Print** (Pro) and **Row Details** (the row details popup).
 - **Colors**: pick a preset color scheme, or set your own colors (Pro).
 
-![Appearance tab with the live preview and the Colors, Styling and Features tabs](/images/creating-tables/create-first-table/6.-Appearance-Tab-With-The-Live-Preview.webp)
+![Table Design tab with the live preview and the Colors, Styling and Features tabs](/images/creating-tables/create-first-table/6.-Appearance-Tab-With-The-Live-Preview.webp)
 
-Click **Save** at the top of the editor to keep your changes. See the [Appearance overview](/table-style-settings) for every option. To change the starting look of every new table, use **Settings** › **Global appearance**.
+Click **Save** at the top of the editor to keep your changes. See the [Table Design overview](/table-style-settings) for every option. To change the starting look of every new table, use **Settings** › **Global appearance**.
 
 ## Check Table Configuration
 
