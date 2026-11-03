@@ -11,10 +11,10 @@ The **Data Range** step of the chart creator decides which parts of your data en
 
 1. In **Columns in the data source**, click the columns you want to chart. They move to the columns used in the chart. Click one again to deselect it.
 2. Use **Select All** to move every column at once, or **Deselect All** to clear them.
-3. Set **Number of Items**: how many rows the chart shows. The default is 10, which means the last 10 items. Enter `0` to show all items.
-4. Choose **Data order**: **Ascending** (the default) or **Descending**.
+3. Set **Number of Items**: how many rows the chart shows. The default is 10, which means the first 10 rows in the chosen **Data order**. Enter `0` to show all items.
+4. Choose **Data order**: **Ascending** (the default) or **Descending**. Ascending follows the table's own row order (its manual sort order if it has one, otherwise the date each row was added). Descending reverses it.
 5. Turn on **Pick Items** to choose individual rows instead of a count.
-6. Turn on **Date range picker** to show only rows from a date range, then choose the dates. It applies to Fluent Forms entries and to tables that have a date.
+6. Turn on **Date range picker** to show only rows from a date range, then choose the dates. For a Ninja Tables table it filters by the date each row was added to the table, not by a Date column. For Fluent Forms it filters by the date of the entry (trashed entries are left out). Pick Items and the date range read the rows stored in Ninja Tables, so use them with tables that store their own rows.
 7. Click **Next**.
 
 ![Data Range step with column lists, Number of Items, Data order and Pick Items](/images/ninja-charts/data-range-picker-ninja/1.-Data-Range-Step-With-Column-Lists.webp)

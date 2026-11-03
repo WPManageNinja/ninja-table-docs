@@ -8,7 +8,7 @@ description: "Turn the table search box on or off, change its placeholder, no-re
 The **search box** above a table lets visitors type a word and see only the rows that contain it. You can turn it on or off, change its texts, and decide where it sits. It is on by default.
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Appearance** tab, then the **Features** tab in the settings panel.
+2. Click the **Table Design** tab, then the **Features** tab in the settings panel.
 3. Open **Search**.
 
 ![Search section with the text fields, Look options and the Custom Filters link](/images/styling-design/remove-search-filter/1.-Search-Section-With-The-Text-Fields.webp)

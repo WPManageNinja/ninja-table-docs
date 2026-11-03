@@ -5,7 +5,7 @@ description: View, edit, duplicate, export, delete and import Ninja Charts from 
 
 # Manage Your Charts
 
-The **All Charts** list is where you find, preview, edit, copy, export, delete and import your charts. Open it from **Ninja Tables** › **Charts**. It needs [Ninja Charts](/how-to-install-ninja-charts) to be active, and only users with the Ninja Charts admin role can see charts.
+The **All Charts** list is where you find, preview, edit, copy, export, delete and import your charts. Open it from **Ninja Tables** › **Charts**. It needs [Ninja Charts](/how-to-install-ninja-charts) to be active, and only users who are allowed to manage Ninja Tables (administrators by default; see [Define Permission for Table Users](/define-permission-for-table-users)) can see charts. Without Ninja Tables, only administrators can.
 
 <!-- TODO(screenshot): manage-ninja-charts-1
   screen: Ninja Tables › Charts
@@ -101,7 +101,7 @@ The first row of the file must be a header row, followed by at least one data ro
 Limits:
 
 - The file can be up to 1 MB.
-- Only the first 500 rows are imported. The upload step warns you when a file has more.
+- Only the first 500 data rows (below the header row) are imported. The upload step warns you when a file has more.
 - The imported data must stay under 60 KB once saved.
 
 The upload step shows an error when the file doesn't fit the chart type, for example a bubble chart without exactly three columns or a value that isn't a number.

@@ -5,9 +5,9 @@ description: "Choose the look every new table starts with, such as color scheme,
 
 # Default Design for New Tables
 
-**Global appearance** sets the starting design of every table you create next. It saves you from repeating the same color, font and pagination choices on each new table. Defaults only affect **new** tables; existing tables are never changed, and you can still adjust any table in its own **Appearance** tab.
+**Global appearance** sets the starting design of every table you create next. It saves you from repeating the same color, font and pagination choices on each new table. Defaults only affect **new** tables; existing tables are never changed, and you can still adjust any table in its own **Table Design** tab.
 
-There is no "use as default" button inside a table's Appearance tab. Defaults are set in one place only.
+There is no "use as default" button inside a table's Table Design tab. Defaults are set in one place only.
 
 1. Click the **gear** icon in the top bar, then **Settings**.
 2. Open **Global appearance**. The card is titled **Global appearance Settings**.
@@ -45,7 +45,7 @@ Pick the color scheme new tables start with. The schemes are the same as in [Tab
 
 ![Default features group with search, sorting and rows per page, and the Save settings button](/images/styling-design/use-design-as-default/3.-Default-Features-And-Save-Settings.webp)
 
-Click **Save settings** to keep your changes. **Cancel** drops edits you have not saved, and an **Unsaved changes** badge shows while there are any.
+Click **Save settings** to keep your changes. The button switches on once you change something.
 
 ## When you have never saved defaults
 
@@ -63,5 +63,5 @@ Once you save **Global appearance**, your saved values replace this baseline.
 
 ## Related
 
-- [Appearance Tab Overview](/table-style-settings)
+- [Table Design Overview](/table-style-settings)
 - [Settings Overview](/tools-and-settings)

@@ -8,7 +8,7 @@ description: "Pick a style library and turn row stripes, hover highlight, border
 The **Style** section of the **Styling** tab controls how the rows and borders of a table look: stripes, hover highlight, borders, cell spacing and column layout. For FooTable tables it also holds the **Style Library**, which decides the look and which switches you get. It is free.
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Appearance** tab.
+2. Click the **Table Design** tab.
 3. In the settings panel, click the **Styling** tab, then open **Style**. It is the first section and is open by default.
 
 ![Style section of the Styling tab in Semantic UI, with the Style Library choice and the Rows, Borders and Layout switches](/images/styling-design/table-rows-borders/1.-Styling-Tab-Semantic-UI-Switches.webp)

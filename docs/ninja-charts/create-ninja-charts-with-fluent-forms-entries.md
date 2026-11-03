@@ -36,7 +36,7 @@ Some form fields are counted into categories instead of plotted as raw values, s
 - Ratings, Score and Net promoter score fields
 - The `method` and `agreement` field types
 
-Free-text fields (names, messages) don't suit pie or radar charts. Choose a field type that matches the chart, or the chart can't be built.
+Free-text fields (names, messages) don't suit pie or radar charts. Only some field types are offered in the Data Range step, for example text, email, number, radio, checkbox, select, multiple select, date, URL, country, ratings, net promoter score, range slider, phone and quantity fields. Choose a field type that matches the chart, or the chart can't be built.
 
 ## Filter by date
 

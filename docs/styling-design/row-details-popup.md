@@ -1,6 +1,6 @@
 ---
 title: "Row Details Popup"
-description: "Let visitors click a row to see all of its details in a pop-up, from the Features tab in Appearance."
+description: "Let visitors click a row to see all of its details in a pop-up, from the Features tab in Table Design."
 ---
 
 # Row Details Popup
@@ -8,7 +8,7 @@ description: "Let visitors click a row to see all of its details in a pop-up, fr
 **Row Details Popup** opens a pop-up with all the details of a row when a visitor clicks it. It is useful for wide tables, where a visitor would otherwise scroll sideways to read one row, and for tables with long text or many columns.
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Appearance** tab, then the **Features** tab in the settings panel.
+2. Click the **Table Design** tab, then the **Features** tab in the settings panel.
 3. Open **Row Details**.
 4. Turn on **Row Details Popup**. Its hint reads: "Clicking a row on the site opens its details in a pop-up."
 

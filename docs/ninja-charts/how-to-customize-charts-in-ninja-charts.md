@@ -36,7 +36,7 @@ One block per data column. Change each series' **Label** and **Color**.
 
 Grid, stacking and axis labels. Which fields appear depends on the chart type: charts without axes, such as Pie, show fewer.
 
-- **Show grid**: turn on to draw grid lines in the chart background.
+- **Show grid** (Chart Js only): turn on to draw grid lines in the chart background. On Google Charts the tab shows a **Grid** heading but no switch.
 - **Show stacked chart**: turn on to stack the series on top of each other instead of side by side. It doesn't appear for charts like Pie.
 - **Horizontal axis label** and **Vertical axis label**: titles for the axes.
 - **Vertical axis min** and **Vertical axis max**: the lowest and highest values on the vertical axis.
@@ -45,19 +45,20 @@ Grid, stacking and axis labels. Which fields appear depends on the chart type: c
 
 - **Show title**: turn on to show the chart title.
 - **Title position**: Top, Bottom, Left or Right. Google Charts also offers **Out**.
-- **Title font style**: Normal, Italic or Bold.
+- **Title font style** (Chart Js only): Normal, Italic or Bold.
 - **Title font color**: the title color.
-- **Font size**: the title size.
+- **Font size**: the title size. On Google Charts this field is called **Title font size**.
 
 ## TOOLTIP
 
 The box that appears when a visitor hovers a data point.
 
 - **Show tooltip**: turn on to show tooltips.
-- **Background color** and **Border color**: the tooltip box colors.
-- **Title font color** and **Body font color**: the text colors.
-- **Border width**: the tooltip border in pixels.
-- **Shared tooltip**: turn on so one tooltip covers the whole plot area instead of a single point.
+- **Background color** and **Border color** (Chart Js only): the tooltip box colors.
+- **Title font color** and **Body font color** (Chart Js only): the text colors.
+- **Border width** (Chart Js only): the tooltip border in pixels.
+- **Shared tooltip** (Chart Js only): turn on so one tooltip covers the whole plot area instead of a single point.
+- **Tooltip font color** and **Tooltip font size** (Google Charts only): the text color and size.
 
 ## LEGEND
 
@@ -74,4 +75,4 @@ The box that appears when a visitor hovers a data point.
 
 **Easing**: the animation curve used when the chart first draws. The default is linear.
 
-Click **Save** when you're done, then [add the chart to a page](/embed-ninja-charts).
+Click **Save** (**Update** when you edit a saved chart) when you're done, then [add the chart to a page](/embed-ninja-charts).

@@ -1,6 +1,6 @@
 ---
 title: "Sticky Header & First Column"
-description: "Keep a table's header row and first column in view while visitors scroll through long or wide tables, from the Features tab in Appearance (Pro)."
+description: "Keep a table's header row and first column in view while visitors scroll through long or wide tables, from the Features tab in Table Design (Pro)."
 ---
 
 # Sticky Header & First Column
@@ -8,7 +8,7 @@ description: "Keep a table's header row and first column in view while visitors 
 **Sticky Header & Column** (Pro) keeps the header row at the top of the table while visitors scroll down a long table, and keeps the first column in place while they scroll sideways through a wide one. Visitors never lose track of what a column or a row is.
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Appearance** tab, then the **Features** tab in the settings panel.
+2. Click the **Table Design** tab, then the **Features** tab in the settings panel.
 3. Open **Sticky Header & Column**. The section has a Pro badge, and the switches inside it open the upgrade popup on the free version.
 
 ![Sticky Header & Column section with Sticky Header on and the Top Offset, Turn Off On Mobile and Sticky First Column options](/images/styling-design/other-design-settings/2.-Sticky-Header-Column-Options.webp)

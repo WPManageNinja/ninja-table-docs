@@ -11,7 +11,7 @@ Wide tables don't fit on a phone. The **Mobile** section of the Features tab dec
 - **Stackable Table**: each row becomes a **card**, with every column on its own line.
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Appearance** tab.
+2. Click the **Table Design** tab.
 3. In the settings panel, click the **Features** tab, then open **Mobile**.
 
 ![Mobile section with the Responsive Breakpoint settings](/images/responsive-design/stackable-table/1.-Responsive-Breakpoint-Section-With-The-Drawer.webp)
@@ -20,7 +20,7 @@ Use **Preview Width** › **Mobile** above the preview to check the result. Clic
 
 ## Responsive Breakpoint
 
-Columns you hide on small screens move into a drawer that opens with a **+** button. Choose which columns hide on which devices in each column's **Responsive visibility**. See [Show or Hide Columns on Mobile](/column-responsive-breakpoints). These settings only matter for a table that has at least one column folded into the drawer.
+Columns you hide on small screens move into a drawer that opens with a **+** button. Choose which columns hide on which devices in each column's **Responsive visibility**. See [Show or Hide Columns on Mobile](/column-responsive-breakpoints). These settings only matter for a table that has at least one column folded into the drawer. A note under the **Responsive Breakpoint** heading tells you how many columns have **Responsive visibility** set ("Works for 2 columns with Responsive visibility set."). With none, it says "Set Responsive visibility from Column settings to use this."
 
 - **Responsive drawer**: whether the drawers start open.
   - **Closed** (default): every drawer starts shut. Visitors tap **+** to open one.
@@ -34,9 +34,9 @@ On the free version, **First Row**, **All Rows** and the two switches open the u
 
 ## Stackable Table
 
-With **Stack Rows As Cards** on, each row is shown as a card: every column on its own line, with the column name next to the value. Cards are easier to read than a wide table on a phone. The switch is off by default and it is free.
+With **Enable Stackable Table** on, each row is shown as a card: every column on its own line, with the column name next to the value. Cards are easier to read than a wide table on a phone. The switch is off by default and it is free. It sits under the **Stackable Table** heading in the **Mobile** section.
 
-![Stackable Table settings with Stack Rows As Cards on, the Stack On devices and Card Look](/images/responsive-design/stackable-table/2.-Stackable-Table-Section-With-The-Stack.webp)
+![Stackable Table settings with Enable Stackable Table on, the Stack On devices and Card Look](/images/responsive-design/stackable-table/2.-Stackable-Table-Section-With-The-Stack.webp)
 
 When the switch is on, two groups appear.
 
@@ -80,7 +80,7 @@ You can turn on cards for one embed with the `stackable` and `stack_devices` sho
 ## Common questions
 
 ::: faq
-== I turned on Stack Rows As Cards but my table is not stacked.
+== I turned on Enable Stackable Table but my table is not stacked.
 Tick at least one device under **Stack On**. With none ticked the table is not stacked anywhere. Also click **Save**, and check the table at the right width with **Preview Width**.
 == Cards and the + drawer are both set up. Which one shows?
 On a screen where the table is stacked, rows show as cards. On other screens, the **+** drawer still applies to the columns you hid.

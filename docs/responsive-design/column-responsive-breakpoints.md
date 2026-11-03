@@ -31,7 +31,7 @@ Exact break points differ a little between the two engines. Test the table on a 
 
 ## The + drawer
 
-How the **+** drawer behaves is set for the whole table in **Appearance** › **Features** › **Mobile**, under **Responsive Breakpoint**:
+How the **+** drawer behaves is set for the whole table in **Table Design** › **Features** › **Mobile**, under **Responsive Breakpoint**:
 
 - **Responsive drawer**: **Closed** (default), **First Row** (Pro) or **All Rows** (Pro).
 - **Toggle Position**: put the **+** button in the **First Column** or **Last Column**.

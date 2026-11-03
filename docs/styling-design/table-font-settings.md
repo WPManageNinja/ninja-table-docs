@@ -8,7 +8,7 @@ description: "Change the font family and font size of a table from the Typograph
 The **Typography** section changes the **font family** and the **font size** of the text in a table, so it matches your site or stands out from it. Both settings are free, and they apply to the whole table.
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Appearance** tab.
+2. Click the **Table Design** tab.
 3. In the settings panel, click the **Styling** tab, then open **Typography**.
 
 ![Typography section with the Font Family list and the Font Size slider](/images/styling-design/table-font-settings/1.-Typography-Section.webp)

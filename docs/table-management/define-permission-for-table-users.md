@@ -23,9 +23,9 @@ By default, only administrators can create and edit tables. With **Permissions**
   alt: Permissions settings with role checkboxes under Who can manage tables
 -->
 
-Administrators always have access, whatever you tick, so Administrator isn't in the list. Subscriber isn't listed either. A role you tick here can create, edit and delete **every** table on the site; there's no per-table permission.
+Administrators always have access, whatever you tick, so Administrator isn't in the list. Subscriber isn't listed either. A role you tick here can create, edit and delete **every** table on the site; there's no per-table permission. Only a WordPress administrator can save changes on this screen.
 
-Like every settings card, an **Unsaved changes** badge appears when you change a box. **Cancel** restores the saved roles and **Save settings** applies them. If you untick every role, only administrators can manage tables again.
+Like every settings card, **Save settings** switches on when you change a box and applies the roles. If you untick every role, only administrators can manage tables again.
 
 In the free version, the Permissions screen shows **Permissions are a Pro feature**, and only administrators can manage tables.
 
@@ -36,7 +36,7 @@ Once you've ticked at least one role, a **Custom SQL module** card appears below
 1. Turn on **Let these roles write SQL queries**.
 2. Click **Save settings**.
 
-It's off by default and applies to all the roles ticked above. The roles and this switch are saved together.
+It's off by default and applies to all the roles ticked above. Administrators can always write SQL queries. The roles and this switch are saved together.
 
 <!-- TODO(screenshot): define-permission-for-table-users-2
   screen: Settings › Permissions

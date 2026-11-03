@@ -46,7 +46,7 @@ Each column's reference shortcode is in the **Reference values** list under the 
 ```
 
 2. Click **Save column**.
-3. Open the **Custom CSS/JS** tab. Under **Table targeting**, type `nt_has_lightbox` in **Custom CSS class**, then click **Save**. This class tells the table to load the lightbox.
+3. Open the **Custom CSS/JS** tab. Under **Table Targeting**, type `nt_has_lightbox` in **Custom CSS class**, then click **Save**. This class tells the table to load the lightbox.
 
 ![Custom CSS class field set to nt_has_lightbox](/images/table-formatting/image-lightbox-column/2.-Custom-CSS-Class-Field-Set.webp)
 

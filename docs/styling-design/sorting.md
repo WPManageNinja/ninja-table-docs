@@ -11,7 +11,7 @@ description: "Let visitors sort a table by clicking a column heading, and choose
 - **Default Order** sets the starting order, before a visitor clicks anything.
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Appearance** tab.
+2. Click the **Table Design** tab.
 3. In the settings panel, click the **Features** tab, then open **Sorting**.
 
 ![Sorting section with Default Order set to Created Date and the Order choices](/images/styling-design/sorting/1.-Sorting-Section-With-Default-Order-Column.webp)

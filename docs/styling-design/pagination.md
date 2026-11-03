@@ -13,7 +13,7 @@ description: "Split a table into pages, choose how many rows each page shows, le
 - **Look** › **Position** places the page bar.
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Appearance** tab.
+2. Click the **Table Design** tab.
 3. In the settings panel, click the **Features** tab, then open **Pagination**.
 
 ![Pagination section with Rows Per Page, the two Pro switches and the Position choices](/images/styling-design/pagination/1.-Pagination-Section-With-Rows-Per-Page.webp)

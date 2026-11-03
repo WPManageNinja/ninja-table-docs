@@ -1,6 +1,6 @@
 ---
 title: "Table Colors"
-description: "Color a table with a ready-made scheme or set the search bar, header, rows, hover, zebra stripes and pagination colors yourself, from the Colors tab in Appearance."
+description: "Color a table with a ready-made scheme or set the search bar, header, rows, hover, zebra stripes and pagination colors yourself, from the Colors tab in Table Design."
 ---
 
 # Table Colors
@@ -11,8 +11,8 @@ description: "Color a table with a ready-made scheme or set the search bar, head
 - **Custom** (Pro) lets you set every color of every part, one by one.
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Appearance** tab.
-3. In the settings panel, click the **Colors** tab. It is the tab the panel opens on.
+2. Click the **Table Design** tab.
+3. In the settings panel, click the **Colors** tab. (The panel opens on **Styling**.)
 
 ![Colors tab in Preset mode with the scheme swatches](/images/styling-design/table-color-settings/1.-Preset-Scheme-Swatches.webp)
 
@@ -55,8 +55,6 @@ The search bar is the strip above the table where visitors type to find a row. T
 - **Icon**: the color of the search icon and its button.
 - **Border**: the outline around the search bar. Leave it as **Default** for no visible border.
 
-These are the same colors as **Colors** in the **Search** section of the Features tab, so a change in one shows in the other.
-
 ### Table Header Colors
 
 The header row holds your column titles. Color it to make the titles stand out from the data below.
@@ -67,7 +65,7 @@ The header row holds your column titles. Color it to make the titles stand out f
 - **Text**: the color of the column titles. Pick a color that contrasts with the background so the titles stay easy to read.
 - **Border**: the color of the lines around the header cells.
 
-If the header row is hidden, these colors have nothing to paint. Show it with **Show Header Row** under **Styling** › **Title & Header** (see [Title, Caption & Description](/table-title-description-settings)).
+If the header row is hidden, these colors have nothing to paint. Turn off **Hide Header Row** under **Styling** › **Title & Header** (see [Title, Caption & Description](/table-title-description-settings)).
 
 ### Table Body Colors
 
@@ -101,8 +99,6 @@ The pagination bar sits under the table and holds the page numbers. Turn paginat
 - **Active Page**: the color that marks the page the visitor is on. Pick something that stands out from the background.
 - **Border**: the color of the lines around the pagination buttons.
 
-These are the same colors as **Colors** in the **Pagination** section of the Features tab, so a change in one shows in the other.
-
 ## Pick a color
 
 Every color field works the same way. A small swatch sits next to a text box. A checkered swatch with the word **Default** means the color is not set.
@@ -131,8 +127,6 @@ Check three things. **Custom** must be selected at the top of the Colors tab, be
 While **Preset** is selected the table uses the scheme, and your custom colors are not applied. Select **Custom** again to apply them.
 == Why can't I change the color of one row or one cell?
 Table colors apply to the whole table. To color a single row or cell, use [Row & Cell Colors](/tables-row-color). To color cells by their value, use [Conditional Formatting](/conditional-formatting).
-== Do the pagination and search colors change anywhere else?
-They are the same colors you find in the **Search** and **Pagination** sections of the Features tab. Change them in either place.
 :::
 
 ## Related

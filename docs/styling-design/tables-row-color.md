@@ -20,7 +20,7 @@ Row and cell colors are only available on tables that keep their own rows.
 
 ![Row settings drawer with Row appearance colors](/images/styling-design/tables-row-color/1.-Row-Settings-Drawer-With-Row-Appearance.webp)
 
-When you edit a saved row (click the row), that drawer has a **Created date** field with the hint **Useful when the table is sorted by created date**. Change it to move the row when the table is ordered by created date.
+This is separate from editing a row's values. The drawer that opens when you edit a saved row has a **Created date** field with the hint "Useful when the table is sorted by created date." Change it to move the row when the table is ordered by created date.
 
 ## Color a single cell
 

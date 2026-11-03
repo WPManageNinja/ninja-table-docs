@@ -21,7 +21,7 @@ If you click **Next** on step 1 without a chart type, the creator shows "Chart t
 
 ## Choose a table and chart type that fit
 
-Ninja Charts plots numbers, so match the table to the chart.
+Ninja Charts plots numbers, so match the table to the chart. Only columns of the type Single line text, Number, Date or Select (dropdown) are offered in the Data Range step; other column types, such as HTML or Button, are not listed. [Drag & Drop](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables) tables don't appear in the **Data** list.
 
 - Columns with numbers (prices, counts, totals) work in every chart type.
 - A [Select field](/select-field) column (the dropdown column type) is counted into categories instead of plotted as raw values, so a pie chart shows how many rows picked each option.
