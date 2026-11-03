@@ -30,7 +30,7 @@ The **Product Average Rating** column (Pro) shows a product's overall average sc
 
 - **Filled star color**: the color of the filled (active) stars. The default is gold (`#ffd700`).
 - **Empty star color**: the color of the empty (inactive) stars. The default is light grey (`#e0e0e0`).
-- **No review text**: the text shown for a product with no reviews. The placeholder is "No reviews yet". If you leave it empty, the cell shows "No rating".
+- **No review text**: the text shown for a product with no reviews. The default is "No rating".
 - **Show rating value**: shows the number next to the stars, for example "4.5/5". It is on by default.
 
 The stars are whole stars. A product rated 4.5 shows 4 filled stars and 1 empty star, and the number shows 4.5/5.
