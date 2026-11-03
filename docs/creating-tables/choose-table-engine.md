@@ -20,7 +20,7 @@ If you're not sure, keep DataTables.
 |---|---|---|
 | Best for | Small tables | Most tables, and large ones (thousands of rows) |
 | How rows load | The whole table loads in the browser | Rows are paged on the server |
-| Style library (Semantic UI, Bootstrap 4, Bootstrap 3) | ✅ Choose one in **Appearance** › **Styling** › **Style** | Uses its own built-in styles |
+| Style library (Semantic UI, Bootstrap 4, Bootstrap 3) | ✅ Choose one in **Table Design** › **Styling** › **Style** | Uses its own built-in styles |
 | Import very large CSV or Excel files from the Media Library | | ✅ |
 | Google Sheets and Remote CSV | Reads the source live, and keeps links and images | Keeps a synced copy that updates on a schedule |
 | Custom CSS selector | `#footable_parent_<ID>` | `#ninja_dt_parent_<ID>` |
@@ -68,7 +68,7 @@ It depends on where the table's rows are stored. Open the table, go to **Table C
 -->
 
 ::: warning
-Switching engine only moves your data. Rows and columns are kept, but the table's design (colors, styling and layout settings) doesn't carry over. Set it up again in **Appearance** after you switch.
+Switching engine only moves your data. Rows and columns are kept, but the table's design (colors, styling and layout settings) doesn't carry over. Set it up again in **Table Design** after you switch.
 :::
 
 ### Move a locked table to the other engine
@@ -77,7 +77,7 @@ To move a Default or uploaded table to the other engine, rebuild it from an expo
 
 1. Open the table and go to **Table Rows** › **Import / Export** › **Export**. Export it as **CSV**. See [Export a table](/export-ninja-tables-csv-json).
 2. Go to **Import** in the top bar, choose **CSV**, pick the other engine and import the file. See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
-3. Set up the columns and **Appearance** of the new table, then replace the old shortcode on your pages with the new one.
+3. Set up the columns and **Table Design** of the new table, then replace the old shortcode on your pages with the new one.
 
 ## See which engine a table uses
 
