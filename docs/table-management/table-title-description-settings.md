@@ -51,15 +51,15 @@ The caption is saved with the table and added to the table's HTML as a `<caption
 
 You choose per table what visitors see above and inside the table. These switches are in the **Title & Header** section of the **Styling** tab.
 
-1. Open the table and click the **Appearance** tab.
+1. Open the table and click the **Table Design** tab.
 2. In the settings panel, click the **Styling** tab, then open **Title & Header**.
 3. Set the three switches, then click **Save**.
 
-![Title & Header section with Show Table Title, Show Table Description and Show Header Row all turned on](/images/table-management/table-title-description/1.-Title-And-Header-Section.webp)
+![Title & Header section with Show Table Title, Show Table Description and Hide Header Row](/images/table-management/table-title-description/1.-Title-And-Header-Section.webp)
 
 - **Show Table Title**: shows the table's title as a heading above the table. The text is the **Table title** from Table details. When the switch is off, no heading is shown and the title stays visible only in the admin. It is off for a new table.
 - **Show Table Description**: shows the table's description in a block above the table, under the title if that is on. The text is the **Table description** from Table details, with its formatting, links and shortcodes. When the switch is off, the description is not shown on your site. It is off for a new table.
-- **Show Header Row**: shows the row of column names at the top of the table. It is on by default. When you turn it off, the column names are hidden and the table starts straight with the data. Use that for a plain list. Without the header row, visitors can't see what each column is, so be sure the data explains itself. Header colors from [Table Colors](/table-color-settings) have nothing to paint while the header row is hidden.
+- **Hide Header Row**: hides the row of column names at the top of the table. It is off by default, so the header row shows. When you turn it on, the column names are hidden and the table starts straight with the data. Use that for a plain list. Without the header row, visitors can't see what each column is, so be sure the data explains itself. Header colors from [Table Colors](/table-color-settings) have nothing to paint while the header row is hidden.
 
 Every change shows in the live preview straight away. The title and description are two separate switches, so you can show one without the other.
 
@@ -71,15 +71,15 @@ To make the title or description show by default on new tables, turn on **Table 
 == I turned on Show Table Title but nothing shows.
 Click **Save** and reload the page that holds the table. If the heading is still missing, check that the table has a title in **Table details**.
 == Where do I change the text of the title or description?
-In **Table details**: click the pencil icon next to the table's name at the top of the editor. The **Appearance** tab only switches them on or off.
+In **Table details**: click the pencil icon next to the table's name at the top of the editor. The **Table Design** tab only switches them on or off.
 == Why are my column names gone?
-**Show Header Row** is off. Turn it on in **Title & Header** under the **Styling** tab and save.
+**Hide Header Row** is on. Turn it off in **Title & Header** under the **Styling** tab and save.
 == Does the caption have a switch?
 No. The caption is output whenever the **Table caption** field has text. See "How the caption works" above.
 :::
 
 ## Related
 
-- The other design options: [Appearance overview](/table-style-settings).
+- The other design options: [Table Design overview](/table-style-settings).
 - Color the header row: [Table Colors](/table-color-settings).
 - Font and size of the text: [Table Fonts](/table-font-settings).
