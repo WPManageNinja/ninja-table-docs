@@ -14,16 +14,16 @@ Without Ninja Tables Pro, the tab shows an upgrade panel (**Unlock frontend edit
 ## Turn it on
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Frontend editing** tab.
-3. Turn on the switch next to **Frontend editing**.
+2. Click the **Frontend Editing** tab.
+3. Turn on the switch next to **Frontend Editing**.
 
 <!-- TODO(screenshot): frontend-editing-1
-  screen: Tables › Employee Directory › Frontend editing
+  screen: Tables › Employee Directory › Frontend Editing
   table: Employee Directory
   state: Frontend editing switch on, Permissions, Appearance and Columns cards visible
   highlight: Frontend editing switch
   view: admin
-  alt: Frontend editing tab with the switch turned on
+  alt: Frontend Editing tab with the switch turned on
   blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor)
 -->
 
@@ -32,7 +32,7 @@ Set the options below and click **Save** at the top of the editor. Turning the s
 ## Permissions
 
 <!-- TODO(screenshot): frontend-editing-2
-  screen: Tables › Employee Directory › Frontend editing › Permissions
+  screen: Tables › Employee Directory › Frontend Editing › Permissions
   table: Employee Directory
   state: Permissions card with Who can add & edit open, showing the role list
   highlight: Who can add & edit
@@ -57,7 +57,7 @@ With **Own data only** on, you can still show every row to everyone, read-only, 
 :::
 
 <!-- TODO(screenshot): frontend-editing-3
-  screen: Tables › Employee Directory › Frontend editing › Permissions
+  screen: Tables › Employee Directory › Frontend Editing › Permissions
   table: Employee Directory
   state: Own data only on, with the read-only shortcode note showing
   highlight: Own data only
@@ -78,7 +78,7 @@ The labels and icons visitors see while editing:
 - **Always show edit icons**: show the icons all the time. When off, they appear when hovering a row.
 
 <!-- TODO(screenshot): frontend-editing-4
-  screen: Tables › Employee Directory › Frontend editing › Appearance
+  screen: Tables › Employee Directory › Frontend Editing › Appearance
   table: Employee Directory
   state: Appearance card with the four label fields, Action icon position and Always show edit icons
   highlight: Action icon position
@@ -96,7 +96,7 @@ The **Columns** card lists every column with its type underneath the name: **Sin
 - **Default value**: the value a new row starts with.
 
 <!-- TODO(screenshot): frontend-editing-5
-  screen: Tables › Employee Directory › Frontend editing › Columns
+  screen: Tables › Employee Directory › Frontend Editing › Columns
   table: Employee Directory
   state: Columns card with Name and Email set to Editable and Required, Department with a default value
   highlight: Editable
