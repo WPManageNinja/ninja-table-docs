@@ -12,15 +12,15 @@ description: "Add dropdown, radio, checkbox, text, date and number-range filters
 </div>
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Custom filters** tab.
+2. Click the **Custom Filter** tab.
 
 Without Ninja Tables Pro, the tab shows an upgrade panel (**Unlock Custom Filters**). If Pro is active but too old, the tab says "Custom filters need a newer version of Ninja Tables Pro"; update Pro to use it.
 
-![Custom filters tab listing filters with Move up, Edit and Delete buttons](/images/table-settings/custom-filters/1.-Custom-Filters-Tab-Listing-Filters.webp)
+![Custom Filter tab listing filters with Edit and Delete buttons](/images/table-settings/custom-filters/1.-Custom-Filters-Tab-Listing-Filters.webp)
 
 ## Add a filter
 
-1. On the **Custom filters** tab, click **Add Filter**. A table with no filters shows **No Filters Yet** and the same button.
+1. On the **Custom Filter** tab, click **Add Filter**. A table with no filters shows **No Filters Yet** and the same button.
 2. The **New Filter** panel opens. Fill in the settings below.
 3. Click **Add Filter** in the panel. The filter is saved straight away.
 
@@ -29,18 +29,20 @@ Each filter shows as a row with its name, type and target columns. Drag the grip
 If something is missing, a message tells you what to fix:
 
 - **Please Provide Filter Title**: every filter needs a title.
-- **Please Provide Filter Options**: a filter needs at least one option row.
-- **Please Select columns that you need to add filter**: every type except **Select Dropdown** and **Reset Filter Button** needs at least one column.
-- **Please Select Target Column**: a dropdown that fills its choices from a column needs that column.
+- **Please Provide Filter Options**: a **Radio**, **Checkbox** or manual **Dropdown** filter needs at least one option with a **Label** or a **Filter Value**.
+- **Please Select columns that you need to add filter**: every type except **Dropdown** and **Reset Filter Button** needs at least one column.
+- **Please Select Target Column**: a dropdown set to **Dynamic Data** needs a column under **Get values from column**.
 
 ## Filter settings
+
+The panel is split into three parts: **General** (**Filter Title**, **Filter UI Type** and **Filter Columns**), a middle part named after the type (**Options**, **Date**, **Date Range**, **Number Range** or **Text Input**; a **Reset Filter Button** has none), and **Additional Settings**.
 
 ![New Filter panel with the basic filter settings](/images/table-settings/custom-filters/2.-New-Filter-Panel-With-The-Basic.webp)
 
 - **Filter Title**: a name to identify the filter in the list.
 - **Filter Label**: the instruction shown next to the filter on your site. Leave it blank if you don't need one. Not shown for **Reset Filter Button**.
 - **Filter UI Type**: how the filter looks on the site:
-  - **Select Dropdown** (default)
+  - **Dropdown** (default)
   - **Radio**
   - **Checkbox**
   - **Text Input**
@@ -48,20 +50,20 @@ If something is missing, a message tells you what to fix:
   - **Date Range**
   - **Number Range**
   - **Reset Filter Button**: a button that clears all filters.
-- **Placeholder**: the default choice that resets the filter, for example `All` (new filters start with `All`). Shown for **Select Dropdown**, **Radio**, **Date Picker** and **Text Input**.
+- **Placeholder**: the default choice that resets the filter, for example `All` (new filters start with `All`). Shown for **Dropdown**, **Radio**, **Date Picker** and **Text Input**.
 - **Button Text** (**Reset Filter Button** only): the label on the reset button.
-- **Filter Columns**: the columns this filter looks in. You can pick one or several. Only columns of a matching type are offered: **Date Picker** and **Date Range** list **Date** columns, and **Number Range** lists **Number** columns. If there are none, the panel says "No columns of a matching data type were found for this filter." A dropdown with **Dynamic Data** uses the one column you pick here as its source.
-- **Enable Strict Mode (Match The Exact Value)**: match the exact value only, instead of any cell that contains it. Shown for every type.
+- **Filter Columns**: the columns this filter looks in. You can pick one or several. Only columns of a matching type are offered: **Date Picker** and **Date Range** list **Date** columns, and **Number Range** lists **Number** columns. If there are none, the panel says "No columns of a matching data type were found for this filter." This field is hidden for a **Dropdown** set to **Dynamic Data** (it has its own column field, see below) and for **Reset Filter Button**.
+- **Enable Strict Mode**: match the exact value only, instead of any cell that contains it. Shown for every type, under **Additional Settings**.
 
 ![Filter UI Type list with all eight filter types](/images/table-settings/custom-filters/3.-Filter-UI-Type-List-With-All.webp)
 
 ### Where the choices come from
 
-For **Select Dropdown**, **Value Type** sets where the choices come from. **Radio** and **Checkbox** always use typed options.
+For **Dropdown**, **Value Type** sets where the choices come from. **Radio** and **Checkbox** always use typed options.
 
 - **Manual Data**: type each choice yourself under **Filter Options**, as a **Label** (what visitors see) and a **Filter Value** (what is matched). Your values must match the table's cell data. Drag the handle to reorder options, and use **Add Option** and **Remove Option**. The last remaining option can't be removed.
-- **Dynamic Data**: the choices are filled from a column's values.
-  - **Filter Columns**: the column whose values fill the list.
+- **Dynamic Data**: the choices are filled from the values of one column.
+  - **Get values from column**: the column whose values fill the list. Pick one column from the list ("Pick a column").
   - **Parse Comma Separated Words**: split cells like `red, blue` into separate choices.
   - **Disable Automatic Filter Value Sorting**: keep the values in table order. When sorting is on, choose **Sort Dynamic Values** (**Ascending** or **Descending**) and the **Sort Algorithm** (**As Text** or **As Number**).
 
@@ -71,7 +73,7 @@ Values in typed options can contain placeholders such as `{date:Y-m-d}` or `{cur
 
 ### More options by type
 
-- **Enable Multi-Select** (**Select Dropdown**): visitors can pick more than one choice.
+- **Enable Multi-Select** (**Dropdown**): visitors can pick more than one choice.
 - **Date Filter Operator** (**Date Picker**): **On Or Before**, **Equal** or **On Or After**.
 - **First Day Of The Week** (**Date Picker** and **Date Range**): the first day shown in the calendar, Sunday to Saturday.
 - **From Placeholder** and **To Placeholder** (**Date Range** and **Number Range**): the hints in the two boxes.
