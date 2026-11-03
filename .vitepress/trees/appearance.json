@@ -68,6 +68,42 @@
       "to": "default-design"
     }
   ],
+  "sidebarSections": [
+    {
+      "text": "Colors & Styling",
+      "nodes": [
+        "presets",
+        "typography",
+        "rows-borders",
+        "title-header",
+        "row-colors"
+      ]
+    },
+    {
+      "text": "Search & Pagination",
+      "nodes": [
+        "search",
+        "sorting",
+        "pagination"
+      ]
+    },
+    {
+      "text": "Responsive Layout",
+      "nodes": [
+        "responsive",
+        "sticky",
+        "row-details"
+      ]
+    },
+    {
+      "text": "Export & Custom CSS",
+      "nodes": [
+        "export-print",
+        "default-design",
+        "custom-css"
+      ]
+    }
+  ],
   "branches": [
     {
       "id": "overview",
@@ -139,7 +175,6 @@
           "id": "title-header",
           "label": "Title & Header",
           "link": "/table-title-description-settings",
-          "inGroup": false,
           "changes": "Switches the table title, the description and the header row on or off above and inside the table.",
           "visitors": "A clean table with only the heading text you want shown.",
           "facts": [
@@ -148,7 +183,8 @@
             "Hide Header Row: off by default",
             "Text is edited in Table details"
           ],
-          "ux": "Choose what sits above and inside the table."
+          "ux": "Choose what sits above and inside the table.",
+          "sidebar": "Title & header row"
         },
         {
           "id": "typography",
@@ -334,7 +370,8 @@
           "facts": [
             "Add your own CSS or JS for anything the panel does not cover"
           ],
-          "ux": "Style anything the panel can't reach."
+          "ux": "Style anything the panel can't reach.",
+          "sidebar": "Custom CSS & JS"
         }
       ]
     },
@@ -357,7 +394,8 @@
             "Row settings: color one row's background and text",
             "Cell settings: color one cell; it wins over the row color"
           ],
-          "ux": "Highlight one row or cell instead of the whole table."
+          "ux": "Highlight one row or cell instead of the whole table.",
+          "sidebar": "Row & cell colors"
         }
       ]
     }

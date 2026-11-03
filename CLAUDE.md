@@ -123,6 +123,7 @@ Appearance group in `config.mts`, and do not hand-write HTML on the overview pag
   `ux`, `changes`, `visitors`, `facts`). `ux` is one benefit-led line (about 60 characters, no trailing detail). Set `"inGroup": false` for a page that lives in another sidebar group.
   The `ux` / "what changes / visitors see" copy and the mind-map `facts` live ONLY in the tree; child pages keep their own prose.
   A branch with `"mapOnly": true` appears only in the mind map (not in the journey, sidebar or strip).
+  The **sidebar** order is the reader's journey, not the plugin's tab order: `sidebarSections` (in the tree JSON) lists node ids in nested, labelled sections (Table Design group: Colors & Styling / Search & Pagination / Responsive Layout / Export & Custom CSS). A section may list a page that also lives in another sidebar group. The check script requires every in-group node to appear in exactly one section; branches still mirror the plugin's tabs for the strip, panel and map.
   Keep `facts` short (`Name: options`) and true to the page; the check script does not verify their wording.
 - **Gate:** `node scripts/qa/check-trees.mjs` must print `✓` (links exist, Pro flags match the pages, tasks resolve).
 - **Hub tree (`product.json`, the Introduction page):** `"kind": "hub"` = a site-wide map, not a settings panel:

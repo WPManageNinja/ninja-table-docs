@@ -14,17 +14,41 @@ export function treeById(id: string): DocTree | undefined {
   return trees.find((t) => t.id === id)
 }
 
-/** Sidebar group built from a tree: overview first, then each unique in-group page in tree order. */
+/** Sidebar leaf for a node: label (with `&` escaped for the sidebar) plus the Pro badge. */
+function sidebarLeaf(node: TreeNode) {
+  const label = (node.sidebar ?? node.label).replace(/&/g, '&amp;')
+  const badge = node.pro === true ? ' <span class="nt-pro">Pro</span>' : ''
+  return { text: label + badge, link: node.link }
+}
+
+/**
+ * Sidebar group built from a tree: the overview first, then either the tree's `sidebarSections`
+ * (nested, in reader-journey order) or, when absent, each unique in-group page in branch order.
+ */
 export function treeSidebarGroup(tree: DocTree) {
   if (tree.strip === false) throw new Error(`tree "${tree.id}" has strip:false and does not build a sidebar group`)
+  const overview = { text: tree.sidebarOverviewText, link: tree.overview }
+  if (tree.sidebarSections?.length) {
+    const byId = new Map(tree.branches.flatMap((b) => b.nodes).map((n) => [n.id, n]))
+    const seen = new Set<string>([tree.overview])
+    const sections = tree.sidebarSections.map((section) => {
+      const items = section.nodes.flatMap((id) => {
+        const node = byId.get(id)
+        if (!node) throw new Error(`tree "${tree.id}": sidebar section "${section.text}" lists unknown node "${id}"`)
+        if (seen.has(node.link)) return []
+        seen.add(node.link)
+        return [sidebarLeaf(node)]
+      })
+      return { text: section.text.replace(/&/g, '&amp;'), collapsed: section.collapsed ?? false, items }
+    })
+    return { text: tree.title, collapsed: true, items: [overview, ...sections] }
+  }
   const seen = new Set<string>([tree.overview])
-  const items = [{ text: tree.sidebarOverviewText, link: tree.overview }]
+  const items = [overview]
   for (const node of tree.branches.filter((b) => !b.mapOnly).flatMap((b) => b.nodes)) {
     if (node.inGroup === false || seen.has(node.link)) continue
     seen.add(node.link)
-    const label = (node.sidebar ?? node.label).replace(/&/g, '&amp;')
-    const badge = node.pro === true ? ' <span class="nt-pro">Pro</span>' : ''
-    items.push({ text: label + badge, link: node.link })
+    items.push(sidebarLeaf(node))
   }
   return { text: tree.title, collapsed: true, items }
 }

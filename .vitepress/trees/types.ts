@@ -69,6 +69,12 @@ export interface DocTree {
     path?: string[]
     actions: { text: string; link: string; primary?: boolean }[]
   }
+  /**
+   * Optional nested sidebar sections in reader-journey order (the branches mirror the plugin's tabs,
+   * the sidebar follows the reader's task). Each entry lists node ids; a node may live in another
+   * sidebar group too (e.g. Row & cell colors). When absent the sidebar is flat, in branch order.
+   */
+  sidebarSections?: { text: string; collapsed?: boolean; nodes: string[] }[]
   /** Quick "jump straight to" tiles. `to` is a node id. */
   tasks: { text: string; sub: string; to: string }[]
   branches: TreeBranch[]
