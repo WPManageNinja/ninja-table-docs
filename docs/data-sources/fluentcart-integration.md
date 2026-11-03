@@ -12,10 +12,10 @@ You need FluentCart active. If it isn't, the **FluentCart products** drawer tell
 ## Step 1: Create a FluentCart table
 
 1. Go to **Create Table** and, under **Connect live data**, click **FluentCart products**.
-2. Enter a **Table name**, such as "Men's Shoes".
+2. Enter a **Table name**, such as "Men's Shoes". It starts as "FluentCart products".
 3. Pick the products to show from the **Product category** and **Product brands** lists. Leave a list empty to show products from all of its items.
 4. Turn on **Hide out of stock items** to leave out products with no stock.
-5. Set **Initial Order By**: Product Title, Date, Price or Stock, then choose **A → Z** or **Z → A**. Visitors can still sort the table by any column.
+5. Set **Initial Order By**. It starts on **Default order**. Choose Product Title, Date, Price or Stock to sort, then pick **A → Z** or **Z → A** (**Z → A** is preselected). Visitors can still sort the table by any column.
 6. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable. See [Choose a table engine](/choose-table-engine).
 7. Click **Create table**.
 
@@ -37,7 +37,7 @@ On the **Table Rows** tab, the banner reads **Rows come from FluentCart products
 
 ### Query settings
 
-The same choices as on the Create screen: **Select Products By Category**, **Select Products By Product Brands**, **Hide out of stocks items**, and **Initial order by** (Product Title, Date, Price, Stock) with **Ascending way** or **Descending way**. Click **Save settings**.
+The same choices as on the Create screen: **Select Products By Category**, **Select Products By Product Brands**, **Hide out of stocks items**, and **Initial order by** (Product Title, Date, Price, Stock) with **Ascending way** or **Descending way** (shown once an order is chosen). Click **Save settings**.
 
 <!-- TODO(screenshot): fluentcart-integration-2
   screen: Tables › a FluentCart table › Table Rows › Source settings › Query settings
@@ -50,9 +50,9 @@ The same choices as on the Create screen: **Select Products By Category**, **Sel
 
 ### Appearance
 
-- **Show cart details before table** / **Show cart details after table**: a cart summary above or below the table. It only shows when the visitor's cart isn't empty.
+- **Show cart details before table** / **Show cart details after table**: a cart summary above or below the table. It only shows when the visitor's cart isn't empty. A new table has both on.
 - **Show bulk actions**: adds checkboxes and a **Bulk Actions** menu (**Add to Cart**, **Compare Products**). See [Bulk add to cart & product comparison](/woocommerce-product-comparison-bulk-add-to-cart).
-- **Show go to cart button** and **Show checkout button**: buttons that take the customer to the cart or checkout.
+- **Show go to cart button** and **Show checkout button**: buttons that take the customer to the cart or checkout. A new table has both on, and **Show bulk actions** off.
 - **Cart text** and **Checkout text**: the wording on those buttons.
 
 Click **Save settings**.
