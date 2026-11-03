@@ -62,7 +62,7 @@ Use **Move Column Left / Right** or **Move Row Up / Down** from the menu, or dra
 2. Click each cell you want to join. The toolbar counts them: "1 Cell Picked, Click Another", then "3 Cells Picked".
 3. Click **Merge 3 Cells** (the number matches your picks), or press <kbd>Enter</kbd>. To back out, click **Cancel** or press <kbd>Esc</kbd>.
 
-If the picked cells don't form a rectangle, the toolbar says "Pick Cells That Form A Rectangle" and the merge button stays off until you fix the selection.
+If the picked cells don't form a rectangle, the toolbar says "These Cells Do Not Form A Rectangle" and the merge button stays off until you fix the selection.
 
 ![Merge mode in the canvas toolbar with three cells picked and the Merge 3 Cells button](/images/drag-drop-settings/manage-cells-ninja-tables/5.-Merge-Mode-In-The-Canvas-Toolbar.webp)
 
