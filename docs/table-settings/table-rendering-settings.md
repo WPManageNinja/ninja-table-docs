@@ -25,7 +25,7 @@ You pick the engine when you create a table. What the tab shows later depends on
 - Tables whose rows come from somewhere else (Fluent Forms entries, WP Posts, Custom SQL, FluentCart products) show both engines as cards, so you can switch.
 - Remote CSV, Google Sheets and WooCommerce tables are always drawn by FooTable. The tab shows that the engine is locked.
 
-When you pick a different engine, a warning says **Switching engine only moves your data**. Rows and columns are kept, but the table's design (colors, styling and layout) doesn't carry over, so set it up again in **Appearance**.
+When you pick a different engine, a warning says **Switching engine only moves your data**. Rows and columns are kept, but the table's design (colors, styling and layout) doesn't carry over, so set it up again in **Table Design**.
 
 See [FooTable or DataTables: Choose an Engine](/choose-table-engine) for a full comparison.
 
