@@ -1,6 +1,6 @@
 ---
 title: "Export & Print Buttons"
-description: "Add CSV, Excel and Print buttons to a table so visitors can download the rows they see or print the table, set from the Features tab in Appearance (Pro)."
+description: "Add CSV, Excel and Print buttons to a table so visitors can download the rows they see or print the table, set from the Features tab in Table Design (Pro)."
 ---
 
 # Export & Print Buttons
@@ -12,13 +12,13 @@ This page is about buttons for your visitors. To export a table yourself from th
 ## Add the buttons
 
 1. Go to **Ninja Tables** › **Tables** and open a table.
-2. Click the **Appearance** tab, then the **Features** tab in the settings panel.
+2. Click the **Table Design** tab, then the **Features** tab in the settings panel.
 3. Open **Export & Print**. On the free version it shows a lock box: "Export and print buttons are a Pro feature."
 4. Turn on the switch of each button you want. All are off by default.
 
 ![Export & Print section with the CSV and Excel buttons turned on](/images/table-settings/csv-print-button/1.-Export-Print-Section-With-A-Switch.webp)
 
-Click **Save** at the top of the editor. The button settings are saved together with the rest of the Appearance settings, so one **Save** keeps both.
+Click **Save** at the top of the editor. The button settings are saved together with the rest of the Table Design settings, so one **Save** keeps both.
 
 ## Buttons
 
