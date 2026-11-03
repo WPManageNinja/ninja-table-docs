@@ -22,7 +22,7 @@ Under **Content & style**:
 - **Image Alternative Text** (default "Demo Image"): describes the image for screen readers and search engines. Change it to describe your picture.
 - **Image Link**: make the image clickable. Empty by default.
 - **Open In New Tab**: off by default, unlike the Button element.
-- **Link Rel Attributes**: tick `sponsored`, `nofollow`, `noreferrer` or `noopener`.
+- **Link Rel Attributes**: tick **Sponsored**, **Nofollow**, **Noreferrer** or **Noopener**. None are ticked by default.
 
 ![Settings tab showing the Image element options](/images/drag-drop-elements/image-element/2.-Settings-Tab-Showing-The-Image-Element.webp)
 

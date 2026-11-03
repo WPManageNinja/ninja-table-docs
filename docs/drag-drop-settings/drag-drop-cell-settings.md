@@ -29,6 +29,8 @@ Open the **Settings** tab of the right panel. A breadcrumb at the top shows what
 
 Each color picker has an opacity slider and preset swatches.
 
+When colors overlap, a color set on a single cell (or on the selected cells) always wins over a row or column color. If a cell has both a row color and a column color, the one you set last wins. Clearing a row or column color brings back the other one, or the table-wide colors from **Background** if nothing else is set.
+
 ![Selected cell color pickers and the colored cell on the canvas](/images/drag-drop-settings/manage-cells-ninja-tables/3.-Selected-Cell-Color-Pickers.webp)
 
 ## Highlight Column (Pro)
@@ -39,7 +41,7 @@ Make one column stand out, as in a "most popular" pricing plan. Click the column
 - **Shadow Color** (default `#888888`, with opacity).
 - **Shadow Effect (X-Axis)** (−30 to 30), **Shadow Effect (Y-Axis)** (1–30, default 10) and **Shadow Effect (Blur Radius)** (10–30, default 10): the shape of the shadow.
 
-Turning the highlight on also adjusts **Margin Top** and **Margin Bottom** under **Table Style** in the [table settings](/ninja-tables-drag-and-drop-table-settings), so the shadow isn't cut off. If you then check those values and find they changed, that is why.
+Turning the highlight on, or changing its height or blur radius, also sets **Margin Top** under **Table Style** in the [table settings](/ninja-tables-drag-and-drop-table-settings) to the highlight height plus the blur radius, and **Margin Bottom** to that plus 30, so the shadow isn't cut off. If you then check those values and find they changed, that is why.
 
 ![Highlight column options with height and shadow settings](/images/drag-drop-settings/manage-cells-ninja-tables/4.-Highlight-Column-Options-With-Height.webp)
 

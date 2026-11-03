@@ -5,7 +5,7 @@ description: "Add and style text in a Drag & Drop table cell, editing it right i
 
 # Text Element
 
-The **Text** element holds a heading, a price, a label or a paragraph in a Drag & Drop table cell. It is the most used element, and it is free. Every cell of a table created from scratch starts with an empty Text element (the hint reads "Type the text for this cell").
+The **Text** element holds a heading, a price, a label or a paragraph in a Drag & Drop table cell. It is the most used element, and it is free. Every cell of a table created from scratch starts with an empty Text element, which shows a faint "Add New" hint on the canvas.
 
 To add one, click a cell and click **Text** in the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell. You can also drag it onto a cell, and a cell can hold several elements. Click the text in the cell and start typing.
 
@@ -17,7 +17,7 @@ While you type in the cell, a small toolbar offers **bold**, **italic**, **under
 
 Click the Text element and open the **Settings** tab (titled **Text**). The options sit under **Content & style**:
 
-- **Content**: the text itself. Switch between **Visual** (formatted text) and **HTML** (raw HTML) to edit it either way.
+- **Content** (the box hint reads "Type the text for this cell"): the text itself. Switch between **Visual** (formatted text) and **HTML** (raw HTML) to edit it either way.
 - **Font Color**: leave it empty to use the table's global color.
 - **Font Size** (10–45): 10 means "use the table's global font size", which the slider shows as 15 by default.
 - **Alignment**: **Left**, **Center** (default) or **Right**.
