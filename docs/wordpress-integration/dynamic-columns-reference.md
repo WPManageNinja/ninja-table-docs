@@ -121,6 +121,8 @@ Store data for each product. The **Field value** list depends on the store:
 
 Standard post fields of the product: Post Author, Post Date, Product Title, Product Short Description, Product Long Description and Post Status. WooCommerce tables also offer Post Comment Count.
 
+When **Field value** is **Product Title**, you can turn on **Link to post permalink** to link the title to the product page, and **Open link in new tab** to open it in a new tab.
+
 ## Product Taxonomy
 
 Shows the product's terms in a taxonomy, such as categories, tags, product type, shipping class or brand. The **Field value** list shows the taxonomies registered for products on your site, named after their internal names, for example Product cat, Product tag, Product type, Product shipping class and Product brand.
