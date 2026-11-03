@@ -7,7 +7,7 @@ description: Run your own JavaScript when a Ninja Tables table loads, is filtere
 
 Ninja Tables fires **jQuery events** in the browser at key moments of a table's life: when it is ready, when conditional formatting is applied, when a row popup opens, and when a visitor adds, edits or deletes a row. Listen for them to run your own code, for example to add a class to a cell, load a chart next to the table, or react to a filter.
 
-This page is for developers. Add the code in a theme script, a snippet plugin, or, for one table only, in the table's own **Custom Code** › **JavaScript** box (Pro). See [Custom CSS & JS](/table-styling-css-selector).
+This page is for developers. Add the code in a theme script, a snippet plugin, or, for one table only, in the table's own **Custom CSS/JS** › **JavaScript** box (Pro). See [Custom CSS & JS](/table-styling-css-selector).
 
 ## How events work
 
@@ -30,7 +30,7 @@ Two table engines can draw a table: FooTable and DataTables. Many events fire on
 
 - **`ninja_dt_before_init`** runs just before DataTables starts. It is the last chance to change how it starts. `initData` has `config`, `columnDefs`, `$table`, `responsiveOptions` and `editColOffset`; change `initData.columnDefs` to adjust column definitions.
 - **`ninja_table_loaded`** runs when the table is ready for the visitor. It is the best general-purpose event.
-- **`ninja_table_ready_init`** runs for every table on the page. **`ninja_table_ready_init_table_id_<ID>`** runs for one table only; replace `<ID>` with the table ID, for example `ninja_table_ready_init_table_id_123`. This is the event the table's **Custom Code** › **JavaScript** box is wrapped in, which is why `$table`, `$` and `tableConfig` are available there.
+- **`ninja_table_ready_init`** runs for every table on the page. **`ninja_table_ready_init_table_id_<ID>`** runs for one table only; replace `<ID>` with the table ID, for example `ninja_table_ready_init_table_id_123`. This is the event the table's **Custom CSS/JS** › **JavaScript** box is wrapped in, which is why `$table`, `$` and `tableConfig` are available there.
 - **`ninja_table_loaded_once`** fires on the table element after FooTable has started, once per table.
 - **`ninja_table_all_chunk_loaded`** fires after every chunk of a large chunked table has loaded, about half a second after the last one.
 
@@ -69,11 +69,11 @@ jQuery(document).on('ninja_table_ready_init_table_id_123', function (event, para
 | `after_ft_filtering` | the table element | `(event, ft, filter)` | FooTable |
 | `ninja_table_reset_filter` | the table element | `(event)` | FooTable |
 | `ninja_table_trigger_multi_reset` | `document` | `(event, { frm_element, $table })` | FooTable |
-| `updated_table_filter` | the table element | `(event, { filter, filter_index, selected })` | DataTables |
+| `updated_table_filter` | the table element | `(event, { filter, filter_index, selected })` | Both (custom filters) |
 
 - **`after_ft_filtering`** runs after FooTable applies a search or filter. `filter` holds the active filters.
 - **`ninja_table_reset_filter`** runs when the filters are cleared and the table shows all rows again. **`ninja_table_trigger_multi_reset`** runs once for each multi-select [custom filter](/custom-filters) that is cleared; `frm_element` is the select element.
-- **`updated_table_filter`** runs when a visitor changes a custom filter on a DataTables table. `selected` is the chosen value.
+- **`updated_table_filter`** runs when a visitor changes a [custom filter](/custom-filters), on FooTable and DataTables tables. `selected` is the chosen value.
 
 ## Frontend editing events (Pro)
 
@@ -100,7 +100,7 @@ Each table is wrapped so you can target one table without affecting the others. 
 | Every table | `.ninja_table_wrapper` | `.ninja_table_wrapper` |
 | Pagination (DataTables) | none | `.dataTables_paginate` |
 
-You can also add your own class to the table in **Custom Code** › **Table targeting** and use it in a selector. In **Custom Code** › **CSS**, use `#footable_parent_NT_ID` or `#ninja_dt_parent_NT_ID`: `NT_ID` is replaced with the table ID. More on this in [Custom CSS & JS](/table-styling-css-selector).
+You can also add your own class to the table in **Custom CSS/JS** › **Table Targeting** and use it in a selector. In **Custom CSS/JS** › **CSS**, use `#footable_parent_NT_ID` or `#ninja_dt_parent_NT_ID`: `NT_ID` is replaced with the table ID. More on this in [Custom CSS & JS](/table-styling-css-selector).
 
 ## Full example
 
@@ -116,6 +116,6 @@ jQuery(document).on('ninja-tables-apply-conditional-formatting', function (event
 });
 ```
 
-Add a rule for `.row-overdue` in your theme CSS or in the table's **Custom Code** › **CSS**.
+Add a rule for `.row-overdue` in your theme CSS or in the table's **Custom CSS/JS** › **CSS**.
 
 For the PHP side, see [Hooks & Filters](/hooks-and-filters).
