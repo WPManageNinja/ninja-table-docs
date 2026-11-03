@@ -29,7 +29,7 @@ Ninja Tables creates the copy and opens it straight away, in the editor (or in t
 - The table's columns, settings and design.
 - All of its rows, including tables that use the **DataTables** engine.
 
-The copy gets its own ID and shortcode. It doesn't reuse the original's cached data, so it always shows its own rows. Changes to one table don't affect the other. The copy isn't added to any page, so **Used on** shows **Not embedded** until you embed it. See [Embed a table](/embed-tables).
+The copy is always published, whatever the original's status. It gets its own ID and shortcode. It doesn't reuse the original's cached data, so it always shows its own rows. Changes to one table don't affect the other. The copy isn't added to any page, so **Used on** shows **Not embedded** until you embed it. See [Embed a table](/embed-tables).
 
 ::: tip
 For Fluent Forms entries tables, the **More actions** menu shows a **Fluent Forms entries** link in place of **Duplicate**. It opens the form's entries in Fluent Forms.
