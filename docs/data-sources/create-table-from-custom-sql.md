@@ -36,7 +36,7 @@ The rows are read-only. You can still rename columns, change their types and des
 
 ## Change the query later
 
-On the **Table Rows** tab, the banner reads **Rows come from SQL query**. Click **Source settings**, edit the **Query**, and click **Save and run**. For a remote database, the **Connection details** are in the same drawer.
+On the **Table Rows** tab, the banner reads **Rows come from SQL query**. Click **Source settings**, edit the **Query**, and click **Save and run**. For a remote database, the **Connection details** are in the same drawer. Ninja Tables runs the query again each time you open the **Table Rows** tab and when you save. Fields that are new in the result are added as columns, fields that no longer appear are dropped, and the columns you already set up keep their settings.
 
 <!-- TODO(screenshot): create-table-from-custom-sql-3
   screen: Tables › a Custom SQL table › Table Rows › Source settings
