@@ -14,7 +14,7 @@ Drag & Drop tables don't use this tab. They have their own **Custom JS** setting
 1. Go to **Ninja Tables** › **Tables** and open a table.
 2. Click the **Custom CSS/JS** tab.
 
-![Custom CSS/JS tab with the CSS editor and the Table targeting card](/images/table-management/table-styling-css-selector/1.-Custom-CSS-JS-Tab.webp)
+![Custom CSS/JS tab with the CSS editor and the Table Targeting card](/images/table-management/table-styling-css-selector/1.-Custom-CSS-JS-Tab.webp)
 
 The card has a **CSS** and a **JavaScript** switch at the top. The **Save** button at the top right saves the CSS, the JavaScript and the **Custom CSS class** together, so whichever pane you are on, you will not lose the other.
 
@@ -47,7 +47,9 @@ Broken code can break the table, so test it on a page you can safely reload. Wit
 
 ![JavaScript pane of the Custom CSS/JS tab with a sample script](/images/table-management/table-styling-css-selector/2.-JavaScript-Pane-Of-The-Custom-CSS.webp)
 
-### Table targeting
+### Table Targeting
+
+This card sits beside the editor on the **CSS** pane only. It is not shown on the **JavaScript** pane. The selector example starts with an empty rule (`/* add your css here */`) for you to fill in.
 
 - **Custom CSS class**: a class added to the table so you can style it from your theme. Use letters, numbers, dashes and underscores; other characters are removed as you type. On FooTable it is added to the table itself, on DataTables to the outer wrapper.
 - **Table selector**: a ready-made selector for this table with your class, and a **Copy CSS** button.
@@ -169,7 +171,7 @@ Every table gets CSS classes and an HTML ID you can use for styling. In the exam
 
 ## Making the search bar center aligned
 
-- You can set the search box position in **Appearance** › **Features** › **Search** (Pro). With CSS, center it like this:
+- You can set the search box position under **Table Design** › **Features** › **Search** › **Position** (Pro): **Left**, **Center**, **Right** or **Default**. With CSS, center it like this:
 
 ```css
 #footable_parent_353 table.foo-table tr.footable-filtering form {
