@@ -67,7 +67,7 @@ On the **Table Rows** tab, the banner reads **Rows come from WooCommerce product
 
 These are the same choices as on the Create screen:
 
-- **Select Products By Category**, **Select Products By Product Tags** and **Select Products By Product Type**. Leave a list empty to show products from all of them.
+- **Select Products By Category**, **Select Products By Product Tags** and **Select Products By Product Type**. Leave a list empty to show products from all of them. If your store has no entries for a list, the drawer says "No product metadata available for this type." instead.
 - **Hide out of stocks items**: leave out products with no stock.
 - **Initial order by**: Product Title, Date, Menu Order, Average Rating, Price, Popularity (Sales) or Random, then **Ascending way** or **Descending way**.
 
@@ -111,7 +111,7 @@ Add a column filled from your product data, for example the product SKU:
   blocked: needs a demo WooCommerce store: only 2 placeholder products (lorem-ipsum tags) exist and no saved demo Woo table, so no natural drawer or front-end shot; the only existing Woo tables are DOCTEST-titled
 -->
 
-Other field types include Post Meta, Shortcode / Computed Value or HTML, Featured Image, Post Data and Product Taxonomy. Product Data also offers Product Price, Product Stock Status, Product Quantity input field, Buy Now Button and [Product Average Rating](/woocommerce-product-average-rating-column). See [Dynamic columns reference](/dynamic-columns-reference) for the full list.
+Other field types include Post Meta, Shortcode / Computed Value or HTML, Featured Image, Post Data and Product Taxonomy, plus Advanced Custom Fields (ACF) when the ACF plugin is active. Product Data also offers Product Price, Product Stock Status, Product Quantity input field, Buy Now Button and [Product Average Rating](/woocommerce-product-average-rating-column). See [Dynamic columns reference](/dynamic-columns-reference) for the full list.
 
 ## Customize the table
 
