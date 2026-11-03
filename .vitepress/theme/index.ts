@@ -7,6 +7,7 @@ import Layout from './Layout.vue' // Import new layout file
 import './style.css'
 import './doc-tree.css'
 import './motion.css'
+import './aurora.css'
 
 export default {
   extends: DefaultTheme,

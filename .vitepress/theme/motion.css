@@ -56,6 +56,28 @@ html { scroll-behavior: smooth; }
 .vp-doc .dt-tablist label { transition: color var(--nt-fast), border-color var(--nt-fast), background-color var(--nt-fast); }
 .vp-doc .dt-tabs .dt-panel { animation: nt-fade .28s var(--nt-ease) backwards; }
 
+/* Code groups (the changelog's New Features / Improvements / Security / Bug fixes tabs): the active bar
+   grows out from the middle, the panel slides in, and the first lines follow one after another. */
+.vp-code-group .tabs label { transition: color var(--nt-fast), background-color var(--nt-fast); }
+.vp-code-group .tabs label:hover { background-color: var(--vp-c-default-soft); }
+.vp-code-group .tabs label::after {
+  background-color: var(--vp-code-tab-active-bar-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--nt-med) var(--nt-ease);
+}
+.vp-code-group input:checked + label::after { transform: scaleX(1); }
+@keyframes nt-tab-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes nt-line-in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+.vp-code-group div[class*='language-'].active { animation: nt-tab-in .32s var(--nt-ease) backwards; }
+.vp-code-group div[class*='language-'].active .line { animation: nt-line-in .35s var(--nt-ease) backwards; }
+.vp-code-group div[class*='language-'].active .line:nth-child(2) { animation-delay: .05s; }
+.vp-code-group div[class*='language-'].active .line:nth-child(3) { animation-delay: .1s; }
+.vp-code-group div[class*='language-'].active .line:nth-child(4) { animation-delay: .15s; }
+.vp-code-group div[class*='language-'].active .line:nth-child(5) { animation-delay: .2s; }
+.vp-code-group div[class*='language-'].active .line:nth-child(6) { animation-delay: .25s; }
+.vp-code-group div[class*='language-'].active .line:nth-child(n+7) { animation-delay: .3s; }
+
 /* FAQ and accordion rows: the answer slides open (Chromium/Safari with ::details-content; others snap) */
 @supports selector(::details-content) {
   .vp-doc details::details-content {

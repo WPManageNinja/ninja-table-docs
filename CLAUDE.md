@@ -42,6 +42,10 @@ five checks in *Images → Verifying images* — that is the only gate that catc
 │       ├── Layout.vue           ← DefaultTheme Layout + <Feedback /> in the #doc-footer-before slot
 │       ├── plugin-zoomable.ts   ← markdown-it image-rule override (see Image zoom below)
 │       ├── style.css            ← brand color overrides (teal, see Brand below)
+│       ├── motion.css           ← calm transitions: page enter, sidebar slide, card hover, FAQ/tab fades;
+│                                    off for prefers-reduced-motion and print (sidebar accordion lives in Layout.vue)
+│       ├── aurora.css           ← soft drifting colour-glow page background (fixed layer from Layout.vue #layout-top),
+│                                    frosted nav/sidebar; hidden in print, static for reduced motion
 │       └── components/
 │           ├── Feedback.vue     ← "was this helpful?" widget under every doc page
 │           └── ZoomableImage.vue ← click-to-zoom wrapper every doc image renders through

@@ -72,6 +72,15 @@ watch(
 
 <template>
   <Layout>
+    <template #layout-top>
+      <!-- Decorative aurora background (aurora.css) -->
+      <div class="nt-aurora" aria-hidden="true">
+        <span class="nt-aurora__blob b1"></span>
+        <span class="nt-aurora__blob b2"></span>
+        <span class="nt-aurora__blob b3"></span>
+        <span class="nt-aurora__blob b4"></span>
+      </div>
+    </template>
     <template #doc-before>
       <TreeStrip />
     </template>

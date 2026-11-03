@@ -65,3 +65,12 @@
   font-size: 0.85rem;
   color: var(--vp-c-text-3);
 }
+
+/* Tablet nav: at 768-959px the five top links plus the search button are wider than the screen
+   (the ⋯ menu was pushed 28px off the right edge). Tighten the link padding in that range only. */
+@media (min-width: 768px) and (max-width: 959px) {
+  .VPNavBarMenu .VPNavBarMenuLink { padding: 0 8px !important; }
+  .VPNavBarSearch .VPNavBarSearchButton, .VPNavBarSearch .DocSearch-Button { padding: 0 8px; }
+  .VPNavBarTitle .title { font-size: 15px; }
+  .VPNavBarSearch { margin-left: 0; }
+}
