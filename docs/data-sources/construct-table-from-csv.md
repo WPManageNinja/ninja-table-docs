@@ -25,11 +25,11 @@ The tile is called **Remote CSV / JSON**, but today it reads **CSV files only**.
 
 1. Go to **Create Table** and, under **Connect live data**, click **Remote CSV / JSON**.
 2. Enter a **Table name**.
-3. Paste the file's address into **CSV File URL**. It must start with `https://`.
+3. Paste the file's address into **CSV File URL**. On DataTables it must start with `https://`.
 4. Choose a **Sync Interval** (Every 1 hour by default). You can change it any time.
 5. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable, which fetches the file live. The two work differently (see below). On FooTable the URL field is called **Data source URL** and there is no **Sync Interval**.
 6. Click **Next**.
-7. Under **Select entry fields**, tick the columns you want, or use **Select all**.
+7. Under **Select entry fields**, keep the columns you want. Every column starts ticked. Untick the ones you don't need, or use the checkbox next to the **Select entry fields** title to tick or untick them all. A long list also gets a search box. If no columns are found, you see "No columns found at that URL." under the address field.
 8. Click **Create table**.
 
 ![Remote CSV drawer step 1 with the Data source URL field](/images/data-sources/construct-table-csv/1.-Remote-CSV-Drawer-Step-1.webp)
