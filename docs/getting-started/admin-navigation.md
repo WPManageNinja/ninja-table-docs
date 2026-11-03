@@ -17,7 +17,7 @@ Click **Ninja Tables** in the WordPress admin menu (it reads **Ninja Tables Pro*
 - **Charts**: opens the Charts screen, where you can install the free Ninja Charts plugin. Once Ninja Charts is active, this item opens its chart list.
 - **Get Pro** (orange, free version only): opens the Pro page on wpmanageninja.com.
 - **Activate License** or **Renew License** (orange, Pro only): shows while your license isn't active or has expired, and opens **Settings** › **License**.
-- **Settings**: site-wide settings (General, Global appearance, Permissions, Performance and License).
+- **Settings**: site-wide settings (General, Global appearance, Permissions, Performance and, with Pro active, License).
 - **Help**: documentation, support and community links.
 
 ![WordPress admin menu with the Ninja Tables submenu expanded](/images/getting-started/admin-navigation/1.-WordPress-Admin-Menu-With-The-Ninja.webp)
@@ -78,9 +78,9 @@ A **Welcome to the new Ninja Tables** banner appears at the top of the **Tables*
 | Tools › Global settings (JavaScript errors) | **Settings** › **General** |
 | Tools › Clear cache | **Settings** › **Performance** |
 | Tools › License | **Settings** › **License** |
-| Table › Design Studio | Table › **Appearance** |
+| Table › Design Studio | Table › **Table Design** |
 | Table › Columns | **Table Rows**, the gear on each column |
-| Table › Custom filters (under Columns) | Table › **Custom filters** |
+| Table › Custom filters (under Columns) | Table › **Custom Filter** |
 | Table › Import / Export | **Table Rows** › **Import / export** |
 | Table › Rendering settings & caching | Table › **Table Configuration** |
 | Table › Additional CSS / JS | Table › **Custom CSS/JS** |
@@ -93,7 +93,8 @@ Bookmarks and links from older versions open the right place in the new admin:
 
 - `#/tools` opens **Import**.
 - `#/tools/global_settings`, `#/tools/default_table_appearance`, `#/tools/permission`, `#/tools/performance` and `#/tools/licensing` open the matching **Settings** screen.
-- `#/tables/<ID>/design_studio`, `/configuration`, `/additional_css`, `/filters`, `/import-export` and `/table_editing` open the matching tab of that table.
+- `#/tables/<ID>/design_studio`, `/configuration`, `/additional_css`, `/filters` and `/table_editing` open the matching tab of that table.
+- `#/tables/<ID>/import-export` opens the table's **Import / Export** panel, and `#/tables/<ID>/columns` opens the older Columns page, each on a page of its own (neither is a tab). See [Working in Table Rows](/working-in-table-rows).
 - `#/table_builder_add_table` opens **Create Table** with the **Drag & Drop table** panel open.
 
 You can also open a **Create Table** panel straight from a link by adding `#/create?source=` and the tile's key, for example `#/create?source=upload` or `#/create?source=drag_and_drop`.

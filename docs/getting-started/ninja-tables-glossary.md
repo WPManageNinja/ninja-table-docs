@@ -1,6 +1,6 @@
 ---
 title: "Ninja Tables Glossary"
-description: "Plain-language definitions of the terms used in the Ninja Tables admin and documentation, from Appearance to Used on."
+description: "Plain-language definitions of the terms used in the Ninja Tables admin and documentation, from Table Design to Used on."
 ---
 
 # Ninja Tables Glossary
@@ -14,8 +14,6 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 **Advanced shortcode:** Extra attributes for the `[ninja_tables]` shortcode (Pro) that change how a table shows on one page, such as rows per page or which columns to show. See the [shortcode reference](/shortcode-reference).
 
 **Ajax rendering:** A rendering mode where the table's rows load right after the page. It's fast and suits big tables, but shortcodes typed into cells don't run. Compare Legacy rendering.
-
-**Appearance:** The table editor tab where you style a table with a live preview. It has three tabs: Styling (style library, rows and borders, typography, title and header), Features (search, sorting, pagination, mobile (responsive breakpoint and stackable table), sticky header and column, export and print, and row details) and Colors.
 
 ## B
 
@@ -43,7 +41,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Custom CSS/JS:** The table editor tab for your own CSS, or JavaScript (Pro), scoped to one table.
 
-**Custom filters:** The table editor tab (Pro) for adding dropdown, radio, checkbox, text, date and range filters above a table.
+**Custom Filter:** The table editor tab (Pro) for adding dropdown, radio, checkbox, text, date and range filters above a table.
 
 **Custom SQL query:** A connected table (Pro) built from a read-only SQL query on your WordPress database or a remote database.
 
@@ -63,7 +61,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Excel formula support:** A Transform option (Pro) that computes a cell's value with Excel-style formulas such as `=SUM(...)`. It applies to the whole table.
 
-**Export & print:** The Appearance › Features section (Pro) that adds CSV, Excel and print buttons for visitors.
+**Export & print:** The Table Design › Features section (Pro) that adds CSV, Excel and print buttons for visitors.
 
 ## F
 
@@ -75,7 +73,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **FooTable:** One of the two table engines. It's light and responsive, and good for small tables.
 
-**Frontend editing:** The table editor tab (Pro) that lets chosen user roles add, edit and delete rows from the page.
+**Frontend Editing:** The table editor tab (Pro) that lets chosen user roles add, edit and delete rows from the page.
 
 ## G
 
@@ -125,7 +123,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Merge/split cells:** Combining cells (see Cell merge and Rowspan) or splitting a merged cell back into separate cells.
 
-**Mobile layout:** The Appearance › Features sections for small screens: Responsive Breakpoint folds extra columns into a + drawer, Stackable Table stacks rows as cards, and Others holds the Row details popup.
+**Mobile layout:** The Table Design › Features › Mobile section for small screens: Responsive Breakpoint folds extra columns into a + drawer, and Stackable Table stacks rows as cards.
 
 ## N
 
@@ -149,9 +147,6 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Progress bar element:** A Drag & Drop element that shows a value as a filled bar or circle.
 
-## Q
-
-
 ## R
 
 **Read-only:** A badge in Table Rows on connected tables. Their rows come from the source, so you can't add or edit them in Ninja Tables.
@@ -160,19 +155,19 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Ribbon element:** A Drag & Drop element (Pro) that adds a ribbon or badge, such as "Best seller", to a cell.
 
-**Row and cell settings:** Background and text colors for a single row or cell (Pro), set from the row actions in Table Rows.
+**Row and cell settings:** Background and text colors for a single row or cell (Pro), set with the palette icons on a row and on each cell in Table Rows.
 
-**Row details popup:** An Appearance › Features › Others option that shows a row's full details in a popup.
+**Row details popup:** The Table Design › Features › Row Details option that shows a row's full details in a popup.
 
 **Rowspan:** Merging a cell vertically across two or more rows.
 
 ## S
 
-**Search:** The built-in search box visitors type into to filter rows. Its placeholder and "no results" texts are set in **Appearance** › **Features** › **Search**.
+**Search:** The built-in search box visitors type into to filter rows. Its **Placeholder Text** and **Empty Result Text** are set in **Table Design** › **Features** › **Search**.
 
 **Select field (column type):** A column type (Pro) with a list of set options for each cell.
 
-**Settings:** The site-wide options you open with the gear icon: General, Global appearance, Permissions, Performance and License. See [Settings overview](/tools-and-settings).
+**Settings:** The site-wide options you open with the gear icon: General, Global appearance, Permissions (Pro), Performance and, with Pro active, License. See [Settings overview](/tools-and-settings).
 
 **Shortcode:** The code, such as `[ninja_tables id="123"]`, that you paste into a post or page to show a table. Drag & Drop tables use `[ninja_table_builder id="123"]`.
 
@@ -184,17 +179,19 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Source settings:** The panel that sets which rows a connected table pulls in, opened from the source banner.
 
-**Stackable table:** A mobile layout where each row stacks into a card instead of scrolling sideways. Set it in **Appearance** › **Features** › **Stackable Table**.
+**Stackable table:** A mobile layout where each row stacks into a card instead of scrolling sideways. Set it in **Table Design** › **Features** › **Mobile** › **Stackable Table**.
 
 **Star rating element:** A Drag & Drop element that shows a star rating in a cell.
 
-**Sticky header & column:** Appearance › Features options (Pro) that keep the header row or first column in view while visitors scroll.
+**Sticky header & column:** Table Design › Features options (Pro) that keep the header row or first column in view while visitors scroll.
 
 **Styled list element:** A Drag & Drop element (Pro) for a list with custom icons.
 
 ## T
 
 **Table Configuration:** The table editor tab for the engine, rendering mode (Ajax or Legacy) and caching.
+
+**Table Design:** The table editor tab where you style a table with a live preview. It has three tabs: Styling (style library, rows and borders, typography, title and header), Features (search, sorting, pagination, mobile (responsive breakpoint and stackable table), sticky header and column, export and print, and row details) and Colors.
 
 **Table details:** The dialog you open with the pencil next to a table's name, to edit its title, caption and description.
 

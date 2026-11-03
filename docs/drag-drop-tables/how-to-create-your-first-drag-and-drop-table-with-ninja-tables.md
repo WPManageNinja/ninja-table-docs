@@ -38,7 +38,7 @@ What you get:
 
 - Every CSV cell or JSON value becomes a **Text** element, in a grid as wide as the first row of your data. There is no header styling; add it in the builder.
 - The table is named `Ninja-tables` followed by today's date (for example `Ninja-tables30-10-2026`), because the **Table name** field is not used for imports. Rename it in the builder header afterwards.
-- If the JSON file is a table you exported from the builder with **Export as JSON**, the whole design comes back (elements, settings and responsive layout) and the table keeps its original name. See [Export a Table](/export-ninja-tables-csv-json).
+- If the JSON file is a table you exported from the builder with **Export as JSON**, the whole design comes back (elements, settings and responsive layout) and the table is named from the file (the name saved in the export, which is a lowercase, hyphenated form of the original title). See [Export a Table](/export-ninja-tables-csv-json).
 
 ### From a template
 

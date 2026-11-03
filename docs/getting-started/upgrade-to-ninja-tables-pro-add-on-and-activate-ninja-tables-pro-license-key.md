@@ -48,7 +48,7 @@ Activating the license gives you automatic updates and support. Until you activa
 
 ![Settings License screen with the license key field and Activate button](/images/getting-started/upgrade-ninja-tables/2.-Settings-License-Screen-With-The-License.webp)
 
-Once the key is active, the License screen shows your plan, a status badge (for example **Active**), **Expires** (or **Lifetime**) with the days left, the masked **License key**, **Licensed to** and **Last checked**.
+Once the key is active, the License screen shows your plan, a status badge (for example **Active**), **Expires** (or **Lifetime**) with the days left, the masked **License key**, **Licensed to** and **Last checked**. If the key is wrong, a red message under the field explains why.
 
 ## Manage your license
 
@@ -56,10 +56,10 @@ On **Settings** › **License** you can:
 
 - Click **Refresh** to check the license status again.
 - Click **Deactivate** to free the key, for example before moving the license to another site.
-- Click **Use a different key** to replace the key with a new one.
+- Click **Enter a different key** (under **Have a new license key?**) to open the **Use a different key** form and replace the key.
 - Open **Your account** to manage your purchase on wpmanageninja.com, or **Get Support** to ask for help.
 
-The status badge can read **Active**, **Expired**, **Disabled**, **Invalid**, **Not activated** or **Grace period**. A message under the badge explains what to do:
+While a key is registered, the status badge reads **Active**, **Expired**, **Disabled** or **Grace period**. Before you activate a key, the screen shows only the **Enter the License Key** form. A message above the badge explains what to do:
 
 - **Grace period**: everything keeps working for a short time before updates and support end. Renew before it runs out.
 - **Expired**: updates have stopped. Click **Renew license** to renew it.
@@ -67,5 +67,5 @@ The status badge can read **Active**, **Expired**, **Disabled**, **Invalid**, **
 - **Could not check your license**: the license check failed. Click **Refresh** to try again.
 
 ::: tip
-If the License screen says **Please update Ninja Tables Pro**, your Pro version is older than the free plugin. Update Ninja Tables Pro from **Plugins** › **Installed Plugins**, then open the screen again.
+If the License screen says **Please update Ninja Tables Pro**, your Pro version doesn't support this screen yet. Update Ninja Tables Pro from **Plugins** › **Installed Plugins**, then open the screen again.
 :::

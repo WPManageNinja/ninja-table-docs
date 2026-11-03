@@ -5,7 +5,7 @@ description: "Download a table's rows as CSV or Excel, or the whole table with i
 
 # Export Ninja Tables (CSV/JSON)
 
-You can download any table that stores its own rows as a file: **CSV** or **Excel (.xlsx)** for the rows, or **JSON** for the whole table, including its design and settings. Use an export to back up a table, edit the data in a spreadsheet, or move the table to another Ninja Tables site.
+You can download any table as a file: **CSV** or **Excel (.xlsx)** for the rows, or **JSON** for the whole table, including its design and settings. Use an export to back up a table, edit the data in a spreadsheet, or move the table to another Ninja Tables site.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/qzE6NmZmQrQ" title="Export and Import Tables Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -47,7 +47,7 @@ Tables with 20,000 or more rows are streamed to the file as it's built, instead 
 
 ## Export a connected table
 
-Connected tables, such as WooCommerce, WP Posts, Google Sheets or Custom SQL tables, can be exported too. Their toolbar has an **Export** button (no Import, since the rows come from the source). The file contains the rows as they are right now.
+Connected tables, such as WooCommerce, WP Posts, Google Sheets or Custom SQL tables, can be exported too. Their toolbar has an **Export** button (no Import, since the rows come from the source). A CSV or Excel file contains the rows as they are right now. A JSON export of a connected table holds its columns, settings and source, but not the rows, because they live in the source.
 
 ## Export a Drag & Drop table
 
@@ -55,6 +55,6 @@ In the Drag & Drop builder, click the **More actions** (⋯) button at the top, 
 
 ## Let visitors download the table
 
-The export above is for you in the admin. To add CSV, Excel and print buttons for visitors on your site, use **Appearance** › **Export & print** (Pro). See [Export and print buttons](/csv-and-print-button).
+The export above is for you in the admin. To add CSV, Excel and print buttons for visitors on your site, use **Table Design** › **Export & Print** (Pro). See [Export and print buttons](/csv-and-print-button).
 
 To bring an exported file back in, see [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv) or [Import rows into an existing table](/import-csv-file-to-an-existing-table).

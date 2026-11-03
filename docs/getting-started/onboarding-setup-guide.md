@@ -51,7 +51,7 @@ Click **Continue to design**.
 
 ### Step 3: Pick a look
 
-Step 3 is **Make it look right**. It sets the starting design, and you can change everything later on the **Appearance** tab.
+Step 3 is **Make it look right**. It sets the starting design, and you can change everything later on the **Table Design** tab.
 
 - **Colors**: choose a ready-made color scheme.
 - **Font family**: **Inherit from theme** is the default. The list also has generic families such as serif, sans-serif and monospace.
@@ -97,7 +97,7 @@ The setup and the screens after it remember your choices in your browser, not on
 While your site has only one or two tables, a **Getting started** card sits at the top of the Tables list. It shows how far you are, for example "1 of 3 done · about 3 minutes", with three steps:
 
 - **Create your first table**: done as soon as any table exists.
-- **Pick a design**: done once you save a table's **Appearance** in this browser. **Start** or **Open** takes you to the Appearance tab.
+- **Pick a design**: done once you save a table's design in this browser, or finish the guided setup's look step. **Start** or **Open** takes you to the Table Design tab.
 - **Add it to a page**: done once any table is used on a page. **Start** or **Open** takes you to the table's **Table Rows** tab, where you copy the shortcode.
 
 Click the x to hide the card. It disappears on its own once you have three or more tables.
@@ -152,13 +152,13 @@ Your rows appear in the grid. To change a row later, open its row actions to edi
 
 ### Style your table
 
-Click the **Appearance** tab. The left side shows a live preview of your table; switch it between Desktop, Tablet and Mobile to check each size. The side panel has three tabs:
+Click the **Table Design** tab. The left side shows a live preview of your table; switch it between Desktop, Tablet and Mobile to check each size. The side panel has three tabs:
 
 - **Styling**: open **Style** for stripes, hover and borders, and **Title & Header** to show the table title above the table.
 - **Features**: open **Search**, **Sorting** and **Pagination** to set how visitors find their way around the table.
 - **Colors**: pick a preset color scheme.
 
-Click **Save** at the top when you're happy. See the [Appearance overview](/table-style-settings) for every option.
+Click **Save** at the top when you're happy. See the [Table Design overview](/table-style-settings) for every option.
 
 ### Put the table on a page
 

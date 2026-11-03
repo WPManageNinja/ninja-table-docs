@@ -15,7 +15,7 @@ The top bar shows a **Free** pill and a **Get Pro** button. Pro features are not
 
 - **Pro badge on a tile or option.** On the Create Table screen, Pro tiles carry a **PRO** badge. Locked options in the editor, such as **Custom** colors, carry one too.
 - **A note with Upgrade to Pro.** The panel opens, but its form is locked. For example, the **WP Posts/CPTs** panel says "WP Posts tables are a Pro feature" and **Create table** stays disabled.
-- **A full-tab upsell.** **Custom filters**, **Frontend editing** and the **JavaScript** part of **Custom CSS/JS** show a short description and an **Unlock** button instead of their settings.
+- **A full-tab upsell.** **Custom Filter**, **Frontend Editing** and the **JavaScript** part of **Custom CSS/JS** show a short description and an unlock button (for example **Unlock Custom Filters**) instead of their settings.
 - **A pop-up.** Clicking some locked controls, such as **Sort manually**, opens **Unlock the Ninja Tables Pro features** with **Not now** and **Get Ninja Tables Pro** buttons.
 - **A toast.** A locked Drag & Drop template or element shows a short message, such as "This is a Pro feature."
 
@@ -63,12 +63,12 @@ In the free version you can pick the **Select field**, **Image/File/Lightbox** a
 |---|:-:|:-:|
 | Add, edit, duplicate and delete rows in Table Rows | ✅ | ✅ |
 | Import rows from CSV, export as CSV, Excel or JSON | ✅ | ✅ |
-| **Row settings** and **Cell settings** dialogs (the **Created date** field) | ✅ | ✅ |
-| Row and cell colors | | ✅ |
+| Edit a row's **Created date** | ✅ | ✅ |
+| Row and cell colors (**Row settings** and **Cell settings**) | | ✅ |
 | **Insert row below** | | ✅ |
 | **Sort manually** (drag rows into order) | | ✅ |
 
-## Appearance
+## Table Design
 
 | Feature | Free | Pro |
 |---|:-:|:-:|
@@ -100,8 +100,8 @@ In the free version, the **Custom** colors option opens the upgrade pop-up and t
 | **Rendering Setting** set to **Legacy** | | ✅ |
 | **Custom CSS/JS**: custom CSS class and CSS | ✅ | ✅ |
 | **Custom CSS/JS**: JavaScript | | ✅ |
-| **Custom filters** | | ✅ |
-| **Frontend editing** | | ✅ |
+| **Custom Filter** | | ✅ |
+| **Frontend Editing** | | ✅ |
 
 The default **Rendering Setting** depends on the plan. A new table defaults to **Ajax** in the free version, and to **Legacy** when Pro is active. A table saved while Pro was active keeps **Legacy** if you later turn Pro off, but the option is locked. See [Engine, rendering and caching](/table-rendering-settings).
 
