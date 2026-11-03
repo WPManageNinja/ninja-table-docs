@@ -11,11 +11,11 @@ Tables on the FooTable engine don't use auto sync. They fetch the source live an
 
 ## How auto sync works
 
-- When you create the table, Ninja Tables reads the source as CSV and imports the rows. Big files are imported in chunks in the background.
+- When you create the table, Ninja Tables reads the source as CSV and imports the rows. The first import runs from the table screen, in chunks, with a progress bar. Keep that screen open until it finishes. If you close it early, open the table again and the import carries on.
 - After that, it checks the source again on the **Auto sync** schedule and updates the rows.
-- The sync runs in the background through WordPress's scheduled tasks (WP-Cron), one scheduled task per table. You don't need to keep the admin open. WP-Cron runs when your site gets visits, so on a quiet site a sync can start a little later than scheduled. If a table is overdue, the next visit to a page that shows it schedules the sync.
+- Scheduled syncs run in the background through WordPress's scheduled tasks (WP-Cron), one scheduled task per table. You don't need to keep the admin open. WP-Cron runs when your site gets visits, so on a quiet site a sync can start a little later than scheduled. If a table is overdue, the next visit to a page that shows it schedules the sync.
 - Large sources are imported in chunks over several background runs, so a very big sheet can take more than one run to finish.
-- Each sync replaces all rows of the table with the rows from the source. If the file hasn't changed since the last sync, Ninja Tables skips the import ("Data is already up to date.").
+- Each sync replaces all rows of the table with the rows from the source. A scheduled sync skips the import, without any message, when the file hasn't changed since the last sync. **Sync now** always imports again.
 - Deleting the table cancels its scheduled sync and cleans up any sync that is still running.
 
 ## Requirements for the source
@@ -23,7 +23,7 @@ Tables on the FooTable engine don't use auto sync. They fetch the source live an
 - The URL must be **HTTPS**. Other URLs are rejected with "Please provide a valid HTTPS URL."
 - The server must be able to reach it over the public internet. Private and internal addresses (such as `localhost` or a local network IP) are blocked.
 - It must return CSV text. For Google Sheets, publish the sheet to the web and use the CSV link. A Google Sheets link that is not in CSV form (for example one ending in `/pubhtml`) is converted for you. Ninja Tables does not sign in to Google, so private sheets don't work.
-- Developers can limit the largest file the sync will download. See [Hooks and filters](/hooks-and-filters).
+- The file can be up to 100 MB. Developers can change this limit. See [Hooks and filters](/hooks-and-filters).
 
 ::: tip
 Because the source is read as CSV, links, images and cell formatting from a Google Sheet aren't kept. If you need clickable links or images from the sheet, use the FooTable engine. See [Hyperlinks and images from the sheet](/google-sheets-integration#hyperlinks-and-images-from-the-sheet).
@@ -41,9 +41,9 @@ Open the table and go to **Table Rows**. At the top is a panel titled **You may 
 
 - **Select entry fields**: the source's columns. Tick the ones the table shows, or use **Select all**.
 - The source URL field (**Remote URL…**) with a **Fetch columns** button. Click it after you change the URL, or after you add columns to the source.
-- **Update**: saves the URL and column choices.
+- **Update**: saves the URL and column choices. It stays disabled until at least one column is ticked.
 - **Auto sync**: how often the table syncs. Choose Every 5 minutes, 15 minutes, 30 minutes, 1 hour, 6 hours, 12 hours, 24 hours or 7 days. The new interval is saved as soon as you pick it.
-- **Sync now**: syncs right away, without waiting for the schedule.
+- **Sync now**: syncs right away, without waiting for the schedule. The import runs from this screen, so keep it open until the progress bar finishes.
 
 After the first sync, the panel shows the result of the last sync:
 
@@ -71,8 +71,8 @@ While a sync is running, a bar at the top of the tab shows **Importing data…**
 |---|---|
 | Syncing data from source… | A sync is in progress. |
 | Sync completed successfully. | The rows were updated. |
-| Data is already up to date. | Nothing changed in the source since the last sync. |
-| Sync did not finish within the expected polling window. | The sync is taking longer than the screen waits for. It may still finish in the background. Reload the page later and check **Last sync**. |
+| Interval updated. | The new **Auto sync** schedule was saved. |
+| Sync did not finish within the expected polling window. | The sync is taking longer than the screen waits for. Reload the page: an unfinished import picks up where it stopped. Then check **Last sync**. |
 | Sync failed. / Sync failed to start. | The source couldn't be read. Check that the URL is public and still published, then click **Sync now**. |
 
 ## Tips
