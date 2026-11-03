@@ -34,7 +34,7 @@ If Fluent Forms is installed but out of date, the drawer shows a warning that Fl
 1. Go to **Create Table** and, under **Connect live data**, click **Fluent Forms entries**.
 2. Enter a **Table name**. Picking a form fills it in for you (for example "Contact Form entries"), and you can change it.
 3. Under **Choose form**, select your form. The list shows each form as its ID and title.
-4. Under **Select form fields**, tick the fields you want. Each ticked field becomes a column, in the order you tick them.
+4. Under **Select form fields**, tick the fields you want. Your form's own fields start ticked, and the entry and payment fields start unticked. The list is grouped as **Entry details**, **Form fields** and **Payment**. Each ticked field becomes a column, in the form's field order. You can reorder the columns later in the **Columns** tab.
 5. Set **Entry Status** to **All** (default), **Read** or **Unread**. Read entries are the ones opened in **Fluent Forms › Entries**.
 6. Check **Max records**. It starts at **1000**, so a new table shows at most 1,000 entries. Raise the number, or clear the field to show all entries.
 7. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable. See [Choose a table engine](/choose-table-engine).
@@ -74,7 +74,7 @@ Besides your form fields, the field list offers:
 On the **Table Rows** tab, the banner reads **Rows come from Fluent Forms entries**. Click **Source settings** to open the drawer. Here you can:
 
 - Change the **Form**.
-- Add or remove fields under **Select form fields** (or use **Select all**).
+- Add or remove fields under **Select form fields** (or use **Select all**). Fields you already set up keep their column settings.
 - Change the **Entry type**: All, Read or Unread.
 - Change **Max records**. Keep it empty to show all.
 - Turn on **Show current user submissions only at frontend** (see below).
