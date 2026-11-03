@@ -39,8 +39,9 @@
       "nodes": [
         { "id": "install", "label": "Install & activate", "link": "/how-to-install-and-activate-ninja-tables-plugin", "ux": "Get the free plugin running in about a minute.", "facts": ["From: Plugins › Add New, or a .zip file"] },
         { "id": "license", "label": "Activate your Pro license", "link": "/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key", "ux": "Unlock Pro features, updates and support.", "facts": ["Where: Settings › License"] },
-        { "id": "onboarding", "label": "Guided setup & quick start", "link": "/onboarding-setup-guide", "ux": "Create your first table in three guided steps.", "facts": ["Checklist: Create, Pick a design, Add it to a page"] },
-        { "id": "admin-nav", "label": "Find your way around", "link": "/admin-navigation", "ux": "Learn the top bar, the search and where screens moved.", "facts": ["Search: ⌘K or Ctrl+K", "Theme: Light, Dark, System"] },
+        { "id": "onboarding", "label": "Onboarding", "link": "/ninja-tables-onboarding", "ux": "Create your first table in three guided steps.", "facts": ["Setup: Start, Name, Look", "Checklist: Create, Pick a design, Add it to a page"] },
+        { "id": "quick-start", "label": "Quick start", "link": "/onboarding-setup-guide", "ux": "Build and publish a table by hand in five minutes.", "facts": ["Steps: Create, Columns, Rows, Style, Publish"] },
+        { "id": "admin-nav", "label": "Find your way around", "link": "/admin-navigation", "ux": "Learn the top bar, settings and where screens moved.", "facts": ["Top bar: Tables, Create Table, Import, Settings", "Theme: Light, Dark, System"] },
         { "id": "free-vs-pro", "label": "Free vs Pro", "link": "/free-vs-pro", "ux": "See at a glance which features need Pro.", "facts": ["Every feature, side by side"] }
       ]
     },

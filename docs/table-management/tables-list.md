@@ -9,7 +9,7 @@ The **Tables list** is the home screen of Ninja Tables. It shows every table on 
 
 ## Before you have a table
 
-On a fresh install the list shows the guided setup, a short wizard that helps you create your first table. See [Guided setup](/onboarding-setup-guide). If you click **Skip setup**, the list shows **You don't have any tables yet** with two buttons:
+On a fresh install the list shows the guided setup, a short wizard that helps you create your first table. See [Onboarding](/ninja-tables-onboarding). If you click **Skip setup**, the list shows **You don't have any tables yet** with two buttons:
 
 - **Create a table** opens the Create a table screen. See [Choose a table type](/table-types-overview).
 - **Import** opens the Import screen.
@@ -51,7 +51,7 @@ While your site has only one or two tables, a **Getting started** card sits abov
 | **Used on** | How many posts and pages embed the table, for example **On 2 pages**, or **Not embedded**. |
 | **Shortcode** | The table's shortcode. Click it to copy it. |
 
-Clicking an **ID** or a table name opens the table in the editor. A Drag & Drop table opens in the [Drag & Drop builder](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables) instead. A Fluent Forms table can't be opened while Fluent Forms is inactive, and its name is greyed out.
+Clicking a row (the **ID**, the table name or any blank part of the row) opens the table in the editor; hold <kbd>Ctrl</kbd> or <kbd>Cmd</kbd> to open it in a new tab. The row's buttons and a table whose source plugin is missing keep their own behavior. A Drag & Drop table opens in the [Drag & Drop builder](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables) instead. A Fluent Forms table can't be opened while Fluent Forms is inactive, and its name is greyed out.
 
 Click the **ID** or **Table** column header to sort the list. The first click sorts from highest to lowest.
 
@@ -70,8 +70,6 @@ Hover over **Used on** to see the list of posts and pages that embed the table, 
 - **Search**: click the search icon, or press **/** on your keyboard, and type part of a table's name, its shortcode or its **#ID**. Press **Esc** to close the search.
 
 If nothing matches, the list says **No tables match these filters**. Click **Clear filters** to start again.
-
-You can also press **⌘K** (Mac) or **Ctrl+K** (Windows) anywhere in Ninja Tables to open the command palette, which lists your recent tables and lets you jump to any table or settings screen by name.
 
 ### Rows per page
 

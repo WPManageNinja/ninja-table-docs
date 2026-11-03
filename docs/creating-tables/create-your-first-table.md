@@ -14,7 +14,7 @@ A **Default table** is a table whose rows you type, paste or import yourself. Th
 
 3. In the panel that opens, enter a **Table name**. It's required.
 4. Optionally add a **Description**. The editor lets you add bold and italic text, lists, links and media.
-5. Check the engine line. It is set to **DataTables** (recommended), which suits tables of any size. Click **Change** and pick **FooTable** if you want the lighter classic engine or the Semantic UI / Bootstrap style library. The engine of a Default table can't be changed later; see [choose an engine](/choose-table-engine).
+5. Check the engine line. It is set to **DataTables** (recommended), which suits tables of any size. Click **Change** and pick **FooTable** if you want the lighter classic engine or the Semantic UI / Bootstrap style library. The engine of a Default table can't be changed later; see [choose an engine](/choose-table-engine) and [Create a FooTable](/create-a-footable-table).
 6. Click **Create table**.
 
 ![Default table panel with Table name, Description and the engine line](/images/creating-tables/create-first-table/1.-Default-Table-Panel-With-Table-Name.webp)

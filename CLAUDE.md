@@ -379,10 +379,6 @@ Reusable procedures for this repo are captured as skills in `.claude/skills/` �
 - `audit-ninja-tables-docs` — read-only site-wide quality gate
 - `ninja-tables-deployment` — publishing, dependencies, Node pinning, live checks
 
-**Product videos (not part of the docs site):**
-- `ninja-tables-product-video` — plan, script, build and render promo/launch/feature videos with HyperFrames in the
-  WPManageNinja "layer" style; projects live in `.claude/video/<name>/` (template: `.claude/video/promo-layer/`)
-
 ## Plugin memory (code → docs)
 
 Plugin code is read-only and is what the local site runs: free

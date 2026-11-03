@@ -111,7 +111,8 @@ export default defineConfig({
           { text: 'Free vs Pro', link: '/free-vs-pro' },
           { text: 'Install & activate', link: '/how-to-install-and-activate-ninja-tables-plugin' },
           { text: 'Activate your Pro license', link: '/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key' },
-          { text: 'Guided setup & quick start', link: '/onboarding-setup-guide' },
+          { text: 'Onboarding', link: '/ninja-tables-onboarding' },
+          { text: 'Quick start', link: '/onboarding-setup-guide' },
           { text: 'Find your way around', link: '/admin-navigation' },
           { text: 'Glossary', link: '/ninja-tables-glossary' }
         ]
@@ -123,6 +124,7 @@ export default defineConfig({
           { text: 'All table types at a glance', link: '/table-types-overview' },
           { text: 'Create your first table', link: '/create-your-first-table' },
           { text: 'FooTable or DataTables', link: '/choose-table-engine' },
+          { text: 'Create a FooTable', link: '/create-a-footable-table' },
           { text: 'Import a CSV, Excel or JSON file', link: '/import-table-data-from-a-csv' },
           { text: 'Import a Ninja Tables JSON file', link: '/import-ninja-tables-json' },
           { text: 'Import from TablePress', link: '/import-table-from-tablepress-plugin' }

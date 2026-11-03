@@ -12,7 +12,7 @@ Every Ninja Tables table is drawn on your site by an **engine**: **FooTable** or
 - **Pick DataTables** (the default) for most tables, especially anything that may grow, or when you'll import a very large CSV or Excel file. It loads one page of rows at a time from the server, so big tables stay fast.
 - **Pick FooTable** for small tables, or when you want the Semantic UI or Bootstrap style library. It's light and responsive out of the box, and the engine most older tables use.
 
-If you're not sure, keep DataTables.
+If you're not sure, keep DataTables. To make a FooTable, follow [Create a FooTable](/create-a-footable-table).
 
 ## How the two engines differ
 

@@ -33,8 +33,6 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Column key:** The internal name of a column, used by shortcodes, imports and filters. You set it when you add the column, and it can't change later.
 
-**Command palette:** A quick search you open with ⌘K (Mac) or Ctrl+K (Windows) anywhere in Ninja Tables, to jump to a table or a screen. See [Find your way around](/admin-navigation).
-
 **Conditions (column tab):** Rules (Pro) that change a cell's, row's or column's color, content or CSS class when its value matches, for example "greater than 100". Also called conditional formatting.
 
 **Connected table:** A table whose rows come from somewhere else, such as WordPress posts, WooCommerce, Fluent Forms, a Google Sheet or a SQL query. Its rows are read-only in Ninja Tables. See [How connected tables work](/connected-tables-overview).
@@ -77,13 +75,13 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 ## G
 
-**Getting started checklist:** A card at the top of the Tables list, while the site has one or two tables, with three steps: create a table, pick a design and add it to a page. See [Guided setup and quick start](/onboarding-setup-guide).
+**Getting started checklist:** A card at the top of the Tables list, while the site has one or two tables, with three steps: create a table, pick a design and add it to a page. See [Onboarding](/ninja-tables-onboarding).
 
 **Global appearance:** The Settings section with default styles for new tables. Existing tables don't change.
 
 **Google Sheets integration:** A connected table (Pro) that shows rows from a published Google Sheet.
 
-**Guided setup:** The three-step wizard that opens on the Tables screen when a site has no tables: choose how to start, name the table, pick a look. See [Guided setup and quick start](/onboarding-setup-guide).
+**Guided setup:** The three-step wizard that opens on the Tables screen when a site has no tables: choose how to start, name the table, pick a look. See [Onboarding](/ninja-tables-onboarding).
 
 ## H
 
@@ -215,7 +213,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 ## W
 
-**Welcome banner:** A notice at the top of the Tables list after an update, with **What moved?**, **Find a setting** and **Dismiss** buttons. See [Find your way around](/admin-navigation).
+**Welcome banner:** A notice at the top of the Tables list after an update, with **What moved?** and **Dismiss** buttons. See [Find your way around](/admin-navigation).
 
 **WooCommerce integration:** A connected table (Pro) built from WooCommerce products, with prices, stock and add-to-cart buttons.
 
