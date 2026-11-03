@@ -67,10 +67,10 @@ Pro attributes are ignored when Ninja Tables Pro is not active.
 
 Details that are easy to miss:
 
-- `sf_match="lt"` and `"gt"` compare the cell with the filter value as PHP does, so keep both in the same format (for dates, the same date format). `contains` and `startswith` are case-sensitive.
+- `sf_match="lt"` and `"gt"` compare the cell with the filter value as PHP does, so keep both in the same format (for dates, the same date format). `contains` and `startswith` are case-sensitive on FooTable tables and not case-sensitive on DataTables tables.
 - `logged_in_only` renders nothing for logged-out visitors. Logged-in visitors see the table as usual.
 - `get_filter` can be combined with a `column` address parameter, and `filter_selects` can be overridden from the address. See [Advanced Shortcode](/advanced-shortcode).
-- With the FooTable engine in Ajax rendering, `sf_filter` only hides rows from view and the other rows are still sent to the browser. DataTables tables apply it on the server.
+- `sf_filter` works on DataTables tables (applied on the server) and on FooTable tables set to **Legacy** rendering. On a FooTable table in **Ajax** rendering it has no effect and every row is shown.
 
 If you need to rename the shortcode tag or add your own attributes, see the rendering hooks in [Hooks & Filters](/hooks-and-filters).
 
