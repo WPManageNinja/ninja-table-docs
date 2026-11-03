@@ -24,15 +24,13 @@ Settings has five sections, listed on the left:
 - **Performance**: clear the table cache.
 - **License** (Pro): activate and manage your Ninja Tables Pro license. It only appears when Pro is installed.
 
-Under **Elsewhere**, the same list links to **Import tables** and the **Help center**.
-
 ::: tip Looking for the old Tools page?
 The Tools page has been split. Importing tables is now **Import** in the top bar, and everything else lives in Settings.
 :::
 
 ## Saving changes
 
-General, Global appearance and Permissions share the same footer. As soon as you change something, an **Unsaved changes** badge appears and the **Cancel** and **Save settings** buttons switch on. **Save settings** stores the card and shows **Settings successfully updated**. **Cancel** puts every field back to its last saved value. A smaller **Save settings** button also sits in the card header. Both stay greyed out until something changes.
+General, Global appearance and Permissions share the same footer. **Save settings** stays greyed out until you change something. Then it switches on. Click it to store the card; it shows **Settings successfully updated**. A smaller **Save settings** button also sits in the card header, and both work the same. There is no **Cancel** button and no unsaved-changes badge.
 
 ## General
 
@@ -55,7 +53,7 @@ If a table doesn't load because of a conflict with another plugin or your theme,
 
 ## Global appearance
 
-The card is titled **Global appearance Settings**. New tables start with these settings. Existing tables aren't changed, and every table can still be adjusted in its own **Appearance** tab.
+The card is titled **Global appearance Settings**. New tables start with these settings. Existing tables aren't changed, and every table can still be adjusted in its own **Table Design** tab.
 
 - **Default Table Color**: the color scheme for new tables. Choose from Default, White, Red, Orange, Yellow, Olive, Green, Teal, Blue, Violet, Purple, Pink, Grey or Black.
 - **Default Styling Library**: **Semantic UI** (default), **Bootstrap 4** or **Bootstrap 3**. Semantic UI suits most sites; pick Bootstrap only if your theme already uses it. Below it, a list of switches changes with the library you pick:
