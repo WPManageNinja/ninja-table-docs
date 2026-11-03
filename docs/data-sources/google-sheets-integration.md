@@ -48,7 +48,7 @@ Ninja Tables reads sheets that are published to the web.
 2. Enter a **Table name**.
 3. Paste the link you copied into **Google Sheet CSV URL**. The link must start with `https://`.
 4. Choose a **Sync Interval** (Every 1 hour by default). You can change it any time.
-5. Check the engine line. **DataTables** (recommended) copies the sheet into your database and keeps it in sync. Click **Change** and pick FooTable if you need links or images from the sheet. On FooTable the URL field is called **Data source URL** and there is no **Sync Interval**.
+5. Check the engine line. **DataTables** (recommended) copies the sheet into your database and keeps it in sync. Click **Change** and pick FooTable if you need links or images from the sheet. If the drawer has no engine line, your Pro plugin is out of date: update it to get DataTables sync. On FooTable the URL field is called **Data source URL** and there is no **Sync Interval**.
 6. Click **Next**.
 7. Under **Select entry fields**, tick the columns you want in the table, or use **Select all**.
 8. Click **Create table**.
@@ -100,7 +100,7 @@ The **Table Rows** tab shows a sync panel with the column list, the URL, the **A
 
 - **Google's delay:** after you edit a published sheet, Google can take about 5 minutes to republish it.
 - **FooTable:** Ninja Tables keeps the fetched sheet for the **Caching interval (in minutes)** in **Table Configuration** › **Caching Configuration**. New tables start at 5 minutes. Leave it blank or set it to 0 to cache nothing (every page view fetches the sheet, which is slower).
-- **DataTables:** the table updates on its **Auto sync** schedule, or right away when you click **Sync now**. The sync runs in the background through WordPress's scheduled tasks (WP-Cron), so you don't need to keep the admin open. Intervals run from every 5 minutes to every 7 days. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
+- **DataTables:** the table updates on its **Auto sync** schedule, or right away when you click **Sync now**. Scheduled syncs run in the background through WordPress's scheduled tasks (WP-Cron), so you don't need to keep the admin open. The first import and **Sync now** run from the table screen, so keep it open until the progress bar finishes. Intervals run from every 5 minutes to every 7 days. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
 
 ## Requirements for DataTables sync
 
