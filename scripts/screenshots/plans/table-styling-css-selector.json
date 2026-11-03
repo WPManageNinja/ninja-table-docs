@@ -25,13 +25,14 @@
         "arrows": [
           {
             "target": {
-              "role": "radio",
-              "name": "CSS"
+              "selector": ".nt-tab",
+              "hasText": "Custom CSS"
             },
-            "from": "left",
-            "len": 130
+            "from": "bottom",
+            "len": 120
           }
-        ]
+        ],
+        "crop": "auto"
       }
     },
     {
@@ -52,16 +53,7 @@
       "shot": {
         "name": "2.-JavaScript-Pane-Of-The-Custom-CSS",
         "clip": "app",
-        "arrows": [
-          {
-            "target": {
-              "role": "button",
-              "name": "Save Custom JS"
-            },
-            "from": "top",
-            "len": 110
-          }
-        ]
+        "crop": "auto"
       }
     },
     {
@@ -86,11 +78,9 @@
         "name": "3.-Table-Targeting-Card-With-The-Custom",
         "clip": "app",
         "highlights": [
-          {
-            "role": "button",
-            "name": "Copy CSS"
-          }
-        ]
+          "button:has-text(\"Copy CSS\")"
+        ],
+        "crop": "auto"
       }
     }
   ]

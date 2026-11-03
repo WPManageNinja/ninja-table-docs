@@ -54,13 +54,13 @@
       }
     },
     {
-      "eval": "[...document.querySelectorAll('.nt-setting-row')].find(r=>/Stack Rows As Cards/i.test(r.textContent)).querySelector('.el-switch').click()"
+      "eval": "[...document.querySelectorAll('.nt-setting-row')].find(r=>/Enable Stackable Table/i.test(r.textContent)).querySelector('.el-switch').click()"
     },
     {
       "wait": 700
     },
     {
-      "eval": "document.querySelector('.nt-appearance').scrollTop=0;[...document.querySelectorAll('.nt-ds-subhead')].find(e=>/Stackable/.test(e.textContent)).scrollIntoView()"
+      "eval": "document.querySelector('.nt-appearance').scrollTop=0;[...document.querySelectorAll('.nt-ds-subhead')].find(e=>/Stackable/.test(e.textContent)).scrollIntoView({block:'start'})"
     },
     {
       "wait": 500

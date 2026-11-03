@@ -19,14 +19,6 @@
    "wait": 3500
   },
   {
-   "click": {
-    "text": "Add Row"
-   }
-  },
-  {
-   "wait": 500
-  },
-  {
    "click": "tbody tr:nth-child(2) td.table-data:nth-of-type(3)"
   },
   {
@@ -54,34 +46,21 @@
    "wait": 600
   },
   {
-   "click": ".ntb-panel__body .el-select"
-  },
-  {
-   "wait": 300
-  },
-  {
-   "click": ".el-select-dropdown__item:has-text(\"corner\")"
+   "click": {
+    "text": "Corner"
+   }
   },
   {
    "wait": 500
   },
   {
-   "click": {
-    "selector": ".ntb-panel .el-tabs__item",
-    "hasText": "Text"
+   "fill": {
+    "selector": ".ntb-panel input[type=text], .ntb-panel input:not([type])",
+    "value": "Popular"
    }
   },
   {
    "wait": 400
-  },
-  {
-   "fill": {
-    "selector": ".ribbon-wrapper p[contenteditable]",
-    "value": "Most popular"
-   }
-  },
-  {
-   "wait": 300
   },
   {
    "setColor": {
@@ -90,22 +69,7 @@
    }
   },
   {
-   "wait": 300
-  },
-  {
-   "click": {
-    "selector": ".ntb-panel .el-tabs__item",
-    "hasText": "General"
-   }
-  },
-  {
    "wait": 400
-  },
-  {
-   "eval": "document.querySelector('.ntb-panel__body').scrollTop=0"
-  },
-  {
-   "wait": 300
   },
   {
    "shot": {
@@ -114,45 +78,37 @@
    }
   },
   {
-   "css": ".ntb-body{grid-template-columns:minmax(0,1fr) 520px!important}"
-  },
-  {
-   "wait": 300
-  },
-  {
-   "eval": "document.querySelector('.ntb-panel__body').scrollTop=0"
-  },
-  {
-   "wait": 300
-  },
-  {
    "shot": {
     "name": "2.-Ribbon-General-Options-For-The-Corner",
     "clip": {
-     "x": 920,
-     "y": 104,
-     "width": 520,
-     "height": 796
+     "element": ".ntb-panel",
+     "pad": 0
+    },
+    "crop": {
+     "height": 1100
     }
    }
   },
   {
-   "click": {
-    "selector": ".ntb-panel .el-tabs__item",
-    "hasText": "Background"
+   "wait": 500
+  },
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 1300
    }
   },
   {
-   "wait": 400
+   "wait": 600
   },
   {
    "shot": {
     "name": "3.-Ribbon-Background-Sub-Tab",
     "clip": {
-     "x": 920,
-     "y": 104,
-     "width": 520,
-     "height": 340
+     "x": 1005,
+     "y": 905,
+     "width": 435,
+     "height": 245
     }
    }
   }

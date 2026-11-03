@@ -41,30 +41,12 @@
           "height": 620
         },
         "highlights": [
-          ".ntb-responsive-toggle"
+          ".ntb-responsive-toggle .el-switch"
         ]
       }
     },
     {
       "click": ".ntb-canvas [aria-label=\"Mobile\"]"
-    },
-    {
-      "wait": 600
-    },
-    {
-      "click": {
-        "selector": ".el-collapse-item__header",
-        "hasText": "Mode Options"
-      }
-    },
-    {
-      "wait": 800
-    },
-    {
-      "click": {
-        "selector": ".ntb-panel .el-tabs__item",
-        "hasText": "Mobile"
-      }
     },
     {
       "wait": 800
@@ -88,13 +70,7 @@
       }
     },
     {
-      "click": {
-        "selector": ".el-collapse-item__header",
-        "hasText": "Responsive Settings"
-      }
-    },
-    {
-      "wait": 800
+      "wait": 500
     },
     {
       "shot": {
@@ -104,7 +80,7 @@
           "pad": 0
         },
         "crop": {
-          "height": 1000
+          "height": 1450
         }
       }
     }

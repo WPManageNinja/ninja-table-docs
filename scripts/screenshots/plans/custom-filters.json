@@ -3,7 +3,7 @@
   "outDir": "public/images/table-settings/custom-filters",
   "viewport": {
     "width": 1440,
-    "height": 900
+    "height": 1000
   },
   "steps": [
     {
@@ -29,7 +29,7 @@
     },
     {
       "fill": {
-        "selector": "input[placeholder=\"Enter Filter Label\"]:visible >> nth=0",
+        "selector": "input[placeholder=\"Enter Filter Label\"] >> nth=-1",
         "value": "Department"
       }
     },
@@ -46,11 +46,8 @@
           "x": 720,
           "y": 32,
           "width": 720,
-          "height": 868
-        },
-        "highlights": [
-          ".t-ui"
-        ]
+          "height": 968
+        }
       }
     },
     {
@@ -66,7 +63,7 @@
           "x": 720,
           "y": 32,
           "width": 720,
-          "height": 868
+          "height": 968
         },
         "highlights": [
           ".t-ui"
@@ -81,7 +78,7 @@
     },
     {
       "fill": {
-        "selector": "input[placeholder=\"Enter Filter Label\"] >> nth=1",
+        "selector": "input[placeholder=\"Enter Filter Label\"] >> nth=0",
         "value": "Engineering"
       }
     },
@@ -102,7 +99,7 @@
     },
     {
       "fill": {
-        "selector": "input[placeholder=\"Enter Filter Label\"] >> nth=2",
+        "selector": "input[placeholder=\"Enter Filter Label\"] >> nth=1",
         "value": "Marketing"
       }
     },
@@ -113,7 +110,7 @@
       }
     },
     {
-      "eval": "document.activeElement.blur(); const l=[...document.querySelectorAll('.nt-drawer *')].find(e=>e.children.length==0&&e.textContent.trim()=='Filter Options'); l.parentElement.classList.add('t-opts');"
+      "eval": "document.activeElement.blur(); const l=[...document.querySelectorAll('.nt-drawer *')].find(e=>e.children.length<=1&&e.textContent.trim()=='Filter Options'); (l.closest('.el-form-item')||l.parentElement.parentElement).classList.add('t-opts');"
     },
     {
       "shot": {
@@ -122,7 +119,7 @@
           "x": 720,
           "y": 32,
           "width": 720,
-          "height": 868
+          "height": 968
         },
         "highlights": [
           ".t-opts"

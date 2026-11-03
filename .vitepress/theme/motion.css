@@ -18,14 +18,14 @@ html { scroll-behavior: smooth; }
 
 /* Sidebar: groups slide open and shut, labels nudge on hover, chevron already rotates. */
 .VPSidebarItem .items {
-  display: block;
+  display: block !important;
   overflow: hidden;
   height: auto;
   opacity: 1;
   transition: height var(--nt-med) var(--nt-ease), opacity var(--nt-med) var(--nt-ease), visibility 0s;
 }
 .VPSidebarItem.collapsed .items {
-  display: block; /* theme sets display:none, which cannot animate */
+  display: block !important; /* theme sets display:none (scoped, higher specificity), which cannot animate */
   height: 0;
   opacity: 0;
   visibility: hidden;

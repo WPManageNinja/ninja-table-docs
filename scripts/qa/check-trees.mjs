@@ -40,6 +40,8 @@ for (const t of trees) {
   if (t.strip === false || !config.includes(`treeById('${t.id}')`)) continue
   sidebarLinks.add(t.overview)
   for (const b of t.branches) if (!b.mapOnly) for (const n of b.nodes) if (n.inGroup !== false) sidebarLinks.add(n.link)
+  const byId = new Map(t.branches.flatMap((b) => b.nodes).map((n) => [n.id, n]))
+  for (const s of t.sidebarSections ?? []) for (const nid of s.nodes) if (byId.has(nid)) sidebarLinks.add(byId.get(nid).link)
 }
 
 for (const tree of trees) {
@@ -50,6 +52,23 @@ for (const tree of trees) {
   const links = new Map()
 
   if (tree.kind && !['panel', 'hub'].includes(tree.kind)) err(id, `invalid kind "${tree.kind}"`)
+
+  // Nested sidebar sections: ids must exist, each page once, and every in-group page must be listed.
+  if (tree.sidebarSections) {
+    const byId = new Map(nodes.map((n) => [n.id, n]))
+    const listed = new Set()
+    for (const sec of tree.sidebarSections) {
+      if (!sec.text?.trim() || !Array.isArray(sec.nodes) || !sec.nodes.length) err(id, `sidebar section "${sec.text}" needs text and nodes`)
+      for (const nid of sec.nodes ?? []) {
+        const node = byId.get(nid)
+        if (!node) { err(id, `sidebar section "${sec.text}" lists unknown node "${nid}"`); continue }
+        if (listed.has(node.link)) err(id, `sidebar lists ${node.link} more than once`)
+        listed.add(node.link)
+      }
+    }
+    for (const b of tree.branches) if (!b.mapOnly) for (const n of b.nodes)
+      if (n.inGroup !== false && !listed.has(n.link)) err(id, `node "${n.id}" (${n.link}) is in the group but missing from sidebarSections`)
+  }
 
   const overview = pages.get(tree.overview)
   if (!overview) err(id, `overview page ${tree.overview} not found`)

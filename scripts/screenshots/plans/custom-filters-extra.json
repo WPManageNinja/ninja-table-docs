@@ -35,7 +35,7 @@
       }
     },
     {
-      "eval": "const h=[...document.querySelectorAll('#data-tables-app *')].find(e=>e.children.length==0&&e.textContent.trim()==='Layout'); let c=h; while(c.parentElement && !(c.textContent.includes('Show Filters') && c.getBoundingClientRect().width>600)) c=c.parentElement; c.classList.add('t-layout');"
+      "eval": "const h=[...document.querySelectorAll('#data-tables-app *')].find(e=>e.children.length==0&&e.textContent.trim()==='Show Filters'); let c=h; while(c.parentElement && !(c.textContent.includes('Progressive Filters') && c.getBoundingClientRect().width>600)) c=c.parentElement; c.classList.add('t-layout');"
     },
     {
       "shot": {
@@ -43,13 +43,7 @@
         "clip": {
           "element": ".t-layout",
           "pad": 4
-        },
-        "highlights": [
-          {
-            "row": "Show Filters",
-            "part": "row"
-          }
-        ]
+        }
       }
     },
     {
