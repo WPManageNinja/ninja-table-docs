@@ -25,6 +25,15 @@
       "wait": 500
     },
     {
+      "click": {
+        "role": "tab",
+        "name": "^Colors$"
+      }
+    },
+    {
+      "wait": 800
+    },
+    {
       "shot": {
         "name": "1.-Preset-Scheme-Swatches",
         "clip": {

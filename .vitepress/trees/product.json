@@ -72,11 +72,11 @@
     },
     {
       "id": "appearance",
-      "label": "Appearance tab",
-      "where": "Open a table › Appearance",
+      "label": "Table Design tab",
+      "where": "Open a table › Table Design",
       "goal": "Style the table with a live preview.",
       "nodes": [
-        { "id": "appearance", "label": "Appearance overview", "link": "/table-style-settings", "ref": "appearance", "ux": "Restyle colors, fonts, rows and mobile layout live." }
+        { "id": "appearance", "label": "Table Design overview", "link": "/table-style-settings", "ref": "appearance", "ux": "Restyle colors, fonts, rows and mobile layout live." }
       ]
     },
     {
@@ -85,9 +85,9 @@
       "where": "Open a table › the other editor tabs",
       "goal": "Filters, loading speed, editing on the page and your own code.",
       "nodes": [
-        { "id": "custom-filters", "label": "Custom filters", "link": "/custom-filters", "pro": true, "ux": "Let visitors narrow a table with dropdowns and ranges.", "facts": ["Types: dropdown, radio, checkbox, text, date, number range"] },
+        { "id": "custom-filters", "label": "Custom Filter", "link": "/custom-filters", "pro": true, "ux": "Let visitors narrow a table with dropdowns and ranges.", "facts": ["Types: dropdown, radio, checkbox, text, date, number range"] },
         { "id": "table-config", "label": "Table Configuration", "link": "/table-rendering-settings", "ux": "Keep big tables fast with Ajax loading and caching.", "facts": ["Rendering: Ajax, Legacy (Pro)", "Engine and Caching Configuration"] },
-        { "id": "frontend-editing", "label": "Frontend editing", "link": "/frontend-editing", "pro": true, "ux": "Let logged-in users edit rows right on the page.", "facts": ["Actions: add, edit, delete rows", "Permissions: who can change what"] },
+        { "id": "frontend-editing", "label": "Frontend Editing", "link": "/frontend-editing", "pro": true, "ux": "Let logged-in users edit rows right on the page.", "facts": ["Actions: add, edit, delete rows", "Permissions: who can change what"] },
         { "id": "css-js", "label": "Custom CSS/JS", "link": "/table-styling-css-selector", "pro": "partial", "proNote": "JavaScript is Pro", "ux": "Fine-tune one table with your own CSS.", "facts": ["Selectors: header, rows, columns"] }
       ]
     },

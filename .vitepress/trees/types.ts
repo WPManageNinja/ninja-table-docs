@@ -41,7 +41,7 @@ export interface TreeBranch {
   label: string
   /** Shown only in the mind map: skipped by the journey tree, sidebar and numbering. */
   mapOnly?: boolean
-  /** Where to find it in the plugin, e.g. `Appearance › Colors tab`. */
+  /** Where to find it in the plugin, e.g. `Table Design › Colors tab`. */
   where: string
   goal: string
   nodes: TreeNode[]
@@ -65,7 +65,7 @@ export interface DocTree {
     eyebrow: string
     title: string
     lead: string
-    /** Breadcrumb to the Appearance tab, e.g. Ninja Tables › Tables › Open a table › Appearance. */
+    /** Breadcrumb to the Table Design tab, e.g. Ninja Tables › Tables › Open a table › Table Design. */
     path?: string[]
     actions: { text: string; link: string; primary?: boolean }[]
   }

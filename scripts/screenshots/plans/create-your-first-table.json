@@ -163,18 +163,6 @@
       "wait": 2000
     },
     {
-      "click": {
-        "role": "tab",
-        "name": "^Style$"
-      }
-    },
-    {
-      "click": {
-        "selector": ".nt-ds-sec__btn",
-        "hasText": "Title & Header"
-      }
-    },
-    {
       "wait": 800
     },
     {

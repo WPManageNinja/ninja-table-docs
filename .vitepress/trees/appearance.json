@@ -1,10 +1,11 @@
 {
   "id": "appearance",
-  "title": "Appearance",
+  "title": "Table Design",
+  "mapRoot": "Ninja Tables Table Design",
   "overview": "/table-style-settings",
-  "sidebarOverviewText": "Appearance overview",
+  "sidebarOverviewText": "Table Design overview",
   "hero": {
-    "eyebrow": "Appearance tab",
+    "eyebrow": "Table Design tab",
     "title": "Make your table look the way you want",
     "lead": "Colors, fonts, rows, search, pagination and mobile layout, all in one panel with a live preview. Find a setting below, read what it changes, then open its full guide.",
     "actions": [
@@ -22,7 +23,7 @@
       "Ninja Tables",
       "Tables",
       "Open a table",
-      "Appearance"
+      "Table Design"
     ]
   },
   "tasks": [
@@ -70,9 +71,9 @@
   "branches": [
     {
       "id": "overview",
-      "label": "Appearance tab overview",
+      "label": "Table Design tab overview",
       "mapOnly": true,
-      "where": "Appearance tab",
+      "where": "Table Design tab",
       "goal": "The live preview and the panel around it.",
       "nodes": [
         {
@@ -83,7 +84,6 @@
           "visitors": "Nothing: the preview is for you only.",
           "facts": [
             "Preview Width: Desktop, Tablet and Mobile",
-            "Hide Panel: switch to a full-width preview",
             "Unsaved changes show in the preview until you save"
           ],
           "ux": "See every change before you save it."
@@ -93,7 +93,7 @@
     {
       "id": "colors",
       "label": "Colors",
-      "where": "Appearance › Colors tab",
+      "where": "Table Design › Colors tab",
       "goal": "Set the color mood of the whole table in one click, or take full control.",
       "nodes": [
         {
@@ -132,7 +132,7 @@
     {
       "id": "style",
       "label": "Styling",
-      "where": "Appearance › Styling tab",
+      "where": "Table Design › Styling tab",
       "goal": "Decide what sits above the table, which font it uses and how rows and borders look.",
       "nodes": [
         {
@@ -145,7 +145,7 @@
           "facts": [
             "Show Table Title: off for new tables",
             "Show Table Description: off for new tables",
-            "Show Header Row: on by default",
+            "Hide Header Row: off by default",
             "Text is edited in Table details"
           ],
           "ux": "Choose what sits above and inside the table."
@@ -182,7 +182,7 @@
     {
       "id": "features",
       "label": "Features",
-      "where": "Appearance › Features tab",
+      "where": "Table Design › Features tab",
       "goal": "Decide what visitors can do with the table, and how it behaves on every screen.",
       "nodes": [
         {
@@ -196,7 +196,7 @@
           "facts": [
             "Turn on or off (on by default)",
             "Texts: Placeholder, Empty Result, Dropdown Heading",
-            "Look (Pro): Position, Full Width, Colors",
+            "Look: Position, Full Width (colors are in the Colors tab)",
             "Leave a column out: turn off Searchable in column settings (Pro)"
           ],
           "ux": "Help visitors find the right row in seconds.",
@@ -265,7 +265,7 @@
           "facts": [
             "Responsive drawer: Closed, First Row (Pro), All Rows (Pro)",
             "Toggle Position: First Column, Last Column",
-            "Stack Rows As Cards: you pick the devices",
+            "Enable Stackable Table: you pick the devices",
             "Card Look: Hide Column Headings, Hide Internal Borders"
           ],
           "ux": "Make wide tables comfortable on phones."

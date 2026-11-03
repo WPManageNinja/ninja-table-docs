@@ -111,7 +111,7 @@
           {
             "target": {
               "selector": ".nt-tab",
-              "hasText": "Custom filters"
+              "hasText": "Custom Filter"
             },
             "n": 2,
             "pos": "bottom"
@@ -119,7 +119,7 @@
           {
             "target": {
               "selector": ".nt-tab",
-              "hasText": "Appearance"
+              "hasText": "Table Design"
             },
             "n": 3,
             "pos": "bottom"
