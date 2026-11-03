@@ -32,7 +32,7 @@ Each column has a reference shortcode made from its column key, in the form <cod
 
 Click a row in the **Reference values** list to insert its shortcode into the Transform value box at the cursor.
 
-For **Numeric value** columns, thousand separators are removed before the value is put in, so `1,200` becomes `1200`. Values placed in a link or image address (`href`, `src`) are checked for safety and encoded.
+For **Numeric value** columns, thousand separators are removed before the value is put in, so `1,200` becomes `1200` (and `1.200,5` becomes `1200.5` on a European style column). A numeric result on a European style column is shown with a decimal comma. Values placed in a link or image address (`href`, `src`) are checked for safety and encoded.
 
 You can also use Ninja Tables placeholders such as `{user:display_name}` in the box. They are filled in on the server when the table loads. See [Shortcode reference](/shortcode-reference).
 
@@ -59,9 +59,9 @@ Turn on **Excel formula support** to use spreadsheet formulas. Add the reference
 How formulas are read:
 
 - A formula must start with `=`, as in `=SUM(...)`. Or wrap one or more formulas in `[f]` and `[/f]` inside your HTML, for example <code v-pre>&lt;b&gt;[f]SUM({{row.q1}},{{row.q2}})[/f]&lt;/b&gt; total</code>. Without the `=` or the `[f]` tags, the text is shown as it is.
-- If a formula can't be calculated, the cell shows empty.
-- Click **Show supported formulas** to open the **Supported Excel formulas** dialog: about 100 functions grouped as Math, Logic, Text, Checks, Date & time, Finance and Ninja Tables. Use **Search formulas** to filter, and click a name to insert it. The Ninja Tables group adds `NUMVAL`, which turns text such as `$1,200.50` into a number, and `DATEVAL`, which turns date text into a date value. Functions that are not listed may still run, but they are not recommended or tested for row values.
-- When you save, a formula that starts with `=` is cleaned: it is cut off at 2,000 characters, and risky strings such as `javascript:`, `<script`, `eval(`, `document.`, `window.` and `fetch(` are removed.
+- If a formula can't be calculated, the cell shows empty. A true/false result shows as `TRUE` or `FALSE`.
+- Click **Show supported formulas** to open the **Supported Excel formulas** dialog: about 100 functions grouped as Math, Logic, Text, Checks, Date & time, Finance and Ninja Tables. Use **Search formulas** to filter, and click a name to insert it: it is added as `=NAME()` in an empty box, or as `[f]NAME()[/f]` inside other text. A selection in the box becomes the first argument. The Ninja Tables group adds `NUMVAL`, which turns text such as `$1,200.50` into a number, and `DATEVAL`, which turns date text into a date value. Functions that are not listed may still run, but they are not recommended or tested for row values.
+- When you save with **Excel formula support** on, a formula that starts with `=` is cleaned: it is cut off at 2,000 characters, and risky strings such as `javascript:`, `<script`, `eval(`, `document.`, `window.` and `fetch(` are removed.
 
 ::: warning The formula switch is table-wide and saves at once
 **Excel formula support** applies to every column in this table, not only the one you are editing. It also saves the moment you flip it, without waiting for **Save column**. Excel formulas are marked experimental, so not every formula works.
