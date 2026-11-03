@@ -32,7 +32,7 @@ All three are free. Here is what each panel asks for:
 
 - **Default table**: a **Table name** (required), a **Description** and the engine line. The table is created empty and opens on **Table Rows**.
 - **Upload a file**: an optional **Table name** (the file name is used if you leave it empty), a **Description**, the file, a **File type** (CSV, Excel, JSON or Ninja Tables JSON, picked from the file name), **Large file source** (choose a CSV from the media library), **Convert to UTF-8** and the engine line. See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv) for both options.
-- **Drag & Drop table**: a **Table name**, then **Start with**: **Create From Scratch** (choose 1 to 30 columns and rows; the default is 3 columns and 6 rows), **Import from CSV/JSON**, or **Choose a template**. Click **Next** to continue.
+- **Drag & Drop table**: a **Table name**, then **Start with**: **Create From Scratch** (choose 1 to 30 columns and rows; the default is 3 columns and 6 rows), **Import from CSV/JSON** (a file up to 1 MB, or a URL with Pro), or **Choose a template**. Click **Next** to continue, then **Create table**.
 
 ::: tip
 A Drag & Drop table uses its own shortcode, `[ninja_table_builder id="..."]`, and must be saved once in the builder before it shows on a page.
