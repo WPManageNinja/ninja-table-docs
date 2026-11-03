@@ -46,7 +46,7 @@ Older columns saved with the **File download** option keep it, with its own **Do
 
 ## Add the images
 
-Open the row drawer (**Add data**, or the pencil icon on a row). In the image column's field, click **Image upload** and choose an image from the Media Library. A 100 x 100 preview appears; use **Change** or **Remove** to swap it later. The table uses the Medium image size as the thumbnail by default. For the Iframe lightbox and Link to URL options, also fill in the URL field that appears after you pick the image. Click **Add row** or **Update** to save.
+Open the row drawer (**Add data**, or the pencil icon on a row). In the image column's field, click **Image upload** and choose an image from the Media Library. A 100 x 100 preview appears; use **Change** or **Remove** to swap it later. The table uses the Medium image size as the thumbnail by default. For the Iframe lightbox and Link to URL options, also fill in the URL field next to the image (**Iframe URL (the URL only)** or **Target URL**). Click **Add row** or **Update** to save.
 
 Image cells are not edited inside the grid.
 
