@@ -53,7 +53,7 @@ Post meta, ACF fields and shortcodes aren't in this list. Add those columns afte
 **Conditions** is open by default. Use it to narrow down the posts.
 
 - **Only the logged-in user's posts**: each visitor sees only the posts they wrote. Handy for member areas.
-- **Rules**: click **Add condition**, then choose a **Field**, an **Operator** and a **Value**. The table only shows posts that match every rule. Click **Remove condition** to delete a rule.
+- **Rules**: click **Add condition**, then choose a **Field**, an **Operator** and a **Value**. The table only shows posts that match every rule. Click the trash icon (**Remove condition**) at the end of a rule to delete it.
 
 The **Field** list appears once you pick a post type. It offers ID, Author, Comments, Date, Modified date, Status and your taxonomies:
 

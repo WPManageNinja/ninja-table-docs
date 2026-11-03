@@ -86,7 +86,7 @@ Columns you add here describe the product that was reviewed, not the review. You
 The rows are read-only, can't be sorted by dragging and can't be imported, because they come from WooCommerce. Every other tab of the editor works as usual:
 
 - **Styling**: colors, fonts, search, sorting, pagination and mobile layout. See [Table style settings](/table-style-settings).
-- **Custom filters** (Pro): filter controls above the table. See [Custom filters](/custom-filters).
+- **Custom Filter** (Pro): filter controls above the table. See [Custom filters](/custom-filters).
 - **Table Configuration**: rendering and caching. The **Disable Caching** and **Display Frontend Loader** switches are not shown for reviews tables. See [Table rendering settings](/table-rendering-settings).
 - **Custom CSS/JS**: your own styles and scripts. See [Table styling & CSS selectors](/table-styling-css-selector).
 

@@ -118,7 +118,7 @@ Other field types include Post Meta, Shortcode / Computed Value or HTML, Feature
 The rows are read-only, can't be sorted by dragging and can't be imported, because they come from WooCommerce. The rest of the editor works like any other table:
 
 - Column options (name, type, alignment, conditional formatting) from the column header › **Column settings**. See [Basic column settings](/basic-settings).
-- Colors, fonts, search, pagination and mobile layout in the **Styling** tab. See [Table style settings](/table-style-settings).
+- Colors, fonts, search, pagination and mobile layout in the **Styling** tab of **Table Design**. See [Table style settings](/table-style-settings).
 - [Custom filters](/custom-filters) (Pro), for example a price range or category filter.
 - Your own styles in **Custom CSS/JS**. See [Table styling & CSS selectors](/table-styling-css-selector).
 

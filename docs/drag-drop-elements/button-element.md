@@ -16,7 +16,7 @@ To add one, click a cell and click **Button** in the **Elements** tab. If no sin
 - **Button Text** (default "Button Text"): the words on the button.
 - **URL** (default `https://example.com`): where the button links to.
 - **Open In Another Tab** (on by default).
-- **Link Rel Attributes**: tick `sponsored`, `nofollow`, `noreferrer` or `noopener`, for example for affiliate links. None are ticked by default.
+- **Link Rel Attributes**: tick **Sponsored**, **Nofollow**, **Noreferrer** or **Noopener**, for example for affiliate links. None are ticked by default.
 
 ![Button top block with text, URL and link options](/images/drag-drop-elements/button-element/5.-Button-Top-Block.webp)
 
@@ -25,7 +25,7 @@ To add one, click a cell and click **Button** in the **Elements** tab. If no sin
 - **Background Color** (default `#1E90FF`).
 - **Border Color** (default `#000000`), **Border Size** (0–10, default 0) and **Border Radius** (0–30, default 5).
 - **Full Width** (on by default): stretch the button across the cell. Turn it off to show **Button Size** and **Alignment**.
-- **Button Size**: **S**, **M** (default) or **L**. Only shown when **Full Width** is off.
+- **Button Size**: **S**, **M** (default) or **L**, a fixed button of 60 x 27, 90 x 30 or 120 x 40 pixels. Only shown when **Full Width** is off.
 - **Alignment**: **Left**, **Center** (default) or **Right**. Only shown when **Full Width** is off.
 
 ![Button options with Full Width turned off](/images/drag-drop-elements/button-element/2.-Button-General-Options-With-Full-Width.webp)

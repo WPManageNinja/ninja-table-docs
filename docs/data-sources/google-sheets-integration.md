@@ -122,7 +122,7 @@ On **DataTables**, the sheet is read as CSV, which holds only text. Links, image
 
 On either engine, if a column holds plain URLs (for example `https://example.com/photo.jpg`), you can turn them into links or images with [Transform value](/transform-value) (Pro).
 
-Formatting from the sheet (colors, bold text, fonts) isn't copied on either engine. Style the table in the **Styling** tab instead.
+Formatting from the sheet (colors, bold text, fonts) isn't copied on either engine. Style the table in the **Styling** tab of **Table Design** instead.
 
 ## Tutorial video
 

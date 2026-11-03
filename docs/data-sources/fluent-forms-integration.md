@@ -81,7 +81,7 @@ On the **Table Rows** tab, the banner reads **Rows come from Fluent Forms entrie
 
 Click **Update** to apply the changes. Changing the form or the fields rebuilds the columns.
 
-The rows are read-only, because they come from Fluent Forms. To change an entry, edit it in Fluent Forms. You can still rename columns, change their type and design the table in the **Styling** tab. For a cleaner mobile view, see [Responsive breakpoints](/column-responsive-breakpoints) and [Stackable table](/stackable-table).
+The rows are read-only, because they come from Fluent Forms. To change an entry, edit it in Fluent Forms. You can still rename columns, change their type and design the table in the **Styling** tab of **Table Design**. For a cleaner mobile view, see [Responsive breakpoints](/column-responsive-breakpoints) and [Stackable table](/stackable-table).
 
 <!-- TODO(screenshot): fluent-forms-integration-4
   screen: Tables › a Fluent Forms table › Table Rows › Source settings
