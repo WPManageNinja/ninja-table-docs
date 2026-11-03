@@ -6,6 +6,7 @@ import TreeStrip from './components/TreeStrip.vue' // "You are here" strip for d
 import Layout from './Layout.vue' // Import new layout file
 import './style.css'
 import './doc-tree.css'
+import './motion.css'
 
 export default {
   extends: DefaultTheme,
