@@ -36,4 +36,6 @@ Type the number in the style you chose, for example `1,234.50` for US or `1.234,
 
 Numbers show exactly as you typed them. Ninja Tables adds no thousands separators or decimals for you. To format a number, for example with a currency symbol, use [Transform value](/transform-value).
 
+One exception: when a **European style** column has a Transform value (Pro), a numeric result is shown with a decimal comma, for example `1.234,50`.
+
 ![Table with a numeric column sorted from low to high](/images/field-types/numeric-value/2.-Table-With-A-Numeric-Column-Sorted.webp)
