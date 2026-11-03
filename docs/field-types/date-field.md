@@ -64,7 +64,7 @@ Turn on **Show time** to add a time picker when editing and show the time after 
 
 ## First day of the week
 
-Choose where the week starts in the date picker, from **Sunday** to **Saturday**.
+Choose where the week starts in the date picker, from **Sunday** to **Saturday**. If you don't choose, the week starts on Sunday.
 
 ## Enter values
 
