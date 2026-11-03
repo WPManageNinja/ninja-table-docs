@@ -30,7 +30,7 @@ All eight tiles always show. If WooCommerce or FluentCart isn't active, its draw
 
 Every tile for a Pro source opens its drawer even on the Free plugin, but the drawer shows a notice instead of the form, and **Create table** is disabled:
 
-- **Free plugin:** a panel such as "WP Posts tables are a Pro feature." with a short description, **Upgrade to Pro**, **View documentation** and **Watch video**. WooCommerce products, WooCommerce reviews, Google Sheets, Remote CSV and Custom SQL show the same kind of panel.
+- **Free plugin:** a panel such as "WP Posts tables are a Pro feature." with a short description, **Upgrade to Pro** and **View documentation**. WP Posts, WooCommerce products, WooCommerce reviews and Google Sheets also show **Watch video**. Remote CSV and Custom SQL show the same kind of panel without the video link.
 - **Pro active but out of date:** a yellow warning, "Please update Ninja Tables Pro to the latest version to use ..." (or "Please update to latest version of Ninja Tables Pro to use WooCommerce integration"). Update Ninja Tables Pro from **Plugins** and open the drawer again.
 
 ### Table engine
@@ -66,7 +66,7 @@ Google Sheets and Remote CSV tables that use the **DataTables** engine show a sy
 
 ## The Source settings drawer
 
-The button on the banner opens a large drawer. It always starts with this note: "These settings decide which rows come into the table. Columns, design and features are set in the other tabs."
+The button on the banner opens a large drawer. It holds the settings that decide which rows come into the table. Columns, design and features are set in the other tabs.
 
 What you see inside depends on the source:
 
