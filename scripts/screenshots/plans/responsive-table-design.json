@@ -1,88 +1,82 @@
 {
-  "doc": "docs/drag-drop-settings/responsive-table-design.md",
-  "outDir": "public/images/drag-drop-settings/responsive-table-design",
-  "viewport": {
+ "doc": "docs/drag-drop-settings/responsive-table-design.md",
+ "outDir": "public/images/drag-drop-settings/responsive-table-design",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "viewport": {
     "width": 1440,
-    "height": 900
+    "height": 1100
+   }
   },
-  "steps": [
-    {
-      "viewport": {
-        "width": 1440,
-        "height": 1100
-      }
+  {
+   "admin": "/table_builder_edit_table/{{Website Pricing}}"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "click": ".ntb-panel__tab:has-text(\"Responsive\")"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "click": ".ntb-responsive-toggle .el-switch"
+  },
+  {
+   "wait": 800
+  },
+  {
+   "shot": {
+    "name": "1.-Responsive-Tab-With-The-Enable-Responsive",
+    "clip": {
+     "element": ".ntb-panel",
+     "pad": 0
     },
-    {
-      "admin": "/table_builder_edit_table/{{Website Pricing}}"
+    "crop": {
+     "height": 620
     },
-    {
-      "wait": 2500
+    "highlights": [
+     ".ntb-responsive-toggle .el-switch"
+    ]
+   }
+  },
+  {
+   "click": ".ntb-canvas [aria-label=\"Mobile\"]"
+  },
+  {
+   "wait": 800
+  },
+  {
+   "shot": {
+    "name": "2.-Mode-Options-For-Mobile-With-Cell",
+    "clip": {
+     "element": ".ntb-panel",
+     "pad": 0
     },
-    {
-      "click": ".ntb-panel__tab:has-text(\"Responsive\")"
-    },
-    {
-      "wait": 600
-    },
-    {
-      "click": ".ntb-responsive-toggle .el-switch"
-    },
-    {
-      "wait": 800
-    },
-    {
-      "shot": {
-        "name": "1.-Responsive-Tab-With-The-Enable-Responsive",
-        "clip": {
-          "element": ".ntb-panel",
-          "pad": 0
-        },
-        "crop": {
-          "height": 620
-        },
-        "highlights": [
-          ".ntb-responsive-toggle .el-switch"
-        ]
-      }
-    },
-    {
-      "click": ".ntb-canvas [aria-label=\"Mobile\"]"
-    },
-    {
-      "wait": 800
-    },
-    {
-      "shot": {
-        "name": "2.-Mode-Options-For-Mobile-With-Cell",
-        "clip": {
-          "element": ".ntb-panel",
-          "pad": 0
-        },
-        "crop": {
-          "height": 1300
-        },
-        "highlights": [
-          {
-            "selector": ".ntb-field",
-            "hasText": "Items Per Group"
-          }
-        ]
-      }
-    },
-    {
-      "wait": 500
-    },
-    {
-      "shot": {
-        "name": "3.-Responsive-Settings-For-Mobile-With-Cell",
-        "clip": {
-          "element": ".ntb-panel",
-          "pad": 0
-        },
-        "crop": {
-          "height": 1450
-        }
-      }
+    "crop": {
+     "height": 1300
     }
-  ]
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "shot": {
+    "name": "3.-Responsive-Settings-For-Mobile-With-Cell",
+    "clip": {
+     "element": ".ntb-panel",
+     "pad": 0
+    },
+    "crop": {
+     "height": 1450
+    }
+   }
+  }
+ ]
 }

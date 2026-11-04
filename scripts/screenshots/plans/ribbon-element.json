@@ -19,7 +19,7 @@
    "wait": 3500
   },
   {
-   "click": "tbody tr:nth-child(2) td.table-data:nth-of-type(3)"
+   "click": "tbody tr:nth-child(1) td.table-data:nth-of-type(3)"
   },
   {
    "wait": 300
