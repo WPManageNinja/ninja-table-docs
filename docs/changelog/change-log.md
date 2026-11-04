@@ -7,6 +7,35 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in Ninja Tables.
 
+## Ninja Tables v5.5.0
+
+*Released on November 4, 2026*
+
+::: code-group
+
+```md [🆕 New Features]
+• Added: Fully redesigned admin screens, including the Drag & Drop table builder.
+• Added: Dark mode for the admin.
+• Added: DataTables engine for Fluent Forms, WP Posts, FluentCart and Custom SQL Query tables.
+• Added: Colour picker with opacity and presets.
+```
+
+```md [🔧 Improvements]
+• Improved: Documentation links now point to docs.ninjatables.com.
+• Improved: Accessibility across the admin.
+```
+
+```md [🔒 Security]
+• Security: WP Posts tables only list published posts by default.
+```
+
+```md [🐛 Bug fixes]
+• Fixed: Row hover colour staying on striped rows in coloured FooTable tables.
+• Fixed: Search button invisible on custom-colour tables with no search colour set.
+```
+
+:::
+
 ## Ninja Tables v5.2.18
 
 *Released on October 9, 2026*
