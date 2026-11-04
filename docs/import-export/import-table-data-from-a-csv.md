@@ -12,16 +12,16 @@ To add rows to a table you already have, see [Import rows into an existing table
 ## Import from the Import screen
 
 1. In Ninja Tables, click **Import** in the top bar. The WordPress menu item **Ninja Tables** › **Import** opens the same screen.
-2. Under **1. What are you importing?**, pick the file type:
+2. Under **1. What Are You Importing?**, pick the file type:
    - **CSV**: from Excel, Google Sheets or Numbers.
    - **Excel (.xlsx)**: the first sheet is imported.
    - **JSON**: a list of rows (objects or arrays). The field names of the first row become the columns.
    - **Ninja Tables JSON**: a table exported from Ninja Tables, with its design and settings. See [Import a Ninja Tables JSON file](/import-ninja-tables-json).
-   - **Drag & Drop export**: a JSON or CSV file exported from a Drag & Drop table.
+   - **Exported from Drag & Drop**: a JSON or CSV file exported from a Drag & Drop table.
 
-   Click **Sample CSV** to download `ninja-tables-sample.csv`, an example with the columns Name, Role, Department and Location.
-3. Under **2. Choose the file**, click the upload area to choose your file, or drag and drop it there. The area shows the largest file your server accepts, for example "Up to 300 MB here". A card with the file name and size confirms your choice, and its bin icon removes it.
-4. Pick the **Rendering engine**: **DataTables** (recommended, the default) or **FooTable** (light, good for small tables). The engine can't be changed after the table is created, so see [choose an engine](/choose-table-engine) if you're unsure. Switching engine keeps the file you picked. The engine choice is hidden for **Drag & Drop export**.
+   For **CSV**, **Excel (.xlsx)** and **JSON**, a download button (**Sample CSV**, **Sample Excel** or **Sample JSON**) gives you `ninja-tables-sample.csv`, `.xlsx` or `.json`, an example with the columns Name, Role, Department and Location.
+3. Under **2. Choose the File**, click the upload area to choose your file, or drag and drop it there. The area shows the largest file your server accepts, for example "Up to 300 MB here". A card with the file name and size confirms your choice, and its bin icon removes it.
+4. Pick the **Rendering engine**: **DataTables** (recommended, the default) or **FooTable** (light, good for small tables). The engine can't be changed after the table is created, so see [choose an engine](/choose-table-engine) if you're unsure. Switching engine keeps the file you picked. The engine choice is hidden for **Exported from Drag & Drop**.
 5. For a CSV file, turn on **Convert to UTF-8** only if accented characters arrive garbled. See [Tips for a clean import](#tips-for-a-clean-import).
 6. Click **Import**.
 
@@ -29,7 +29,7 @@ To add rows to a table you already have, see [Import rows into an existing table
 
 Ninja Tables creates the table, imports the rows and opens the new table in the editor. A table imported from a CSV or Excel file is named after the file, including the `.csv` or `.xlsx` ending. A table imported from a plain **JSON** file is named **Temporary table name**, with the description **Temporary table description**. You can rename either one with the pencil next to its name; see [Table title, caption and description](/table-title-description-settings).
 
-The **Create from scratch instead** button at the top of the screen opens the **Create a table** screen if you change your mind.
+The **Create from Scratch Instead** button at the top of the screen opens the **Create a table** screen if you change your mind.
 
 ## Import from the Create a table screen
 
@@ -57,7 +57,7 @@ While the import runs, a progress bar shows **Converting the Excel file**, follo
 
 ## Import large files
 
-The upload limit is your server's maximum upload size, which the Import screen shows under **2. Choose the file**. If your file is bigger:
+The upload limit is your server's maximum upload size, which the Import screen shows under **2. Choose the File**. If your file is bigger:
 
 1. Upload the CSV or Excel file to the WordPress **Media Library** first.
 2. On the Import screen, choose **CSV** or **Excel (.xlsx)** and pick **DataTables** as the rendering engine.
@@ -70,7 +70,7 @@ If an import stops with a message about memory or timing out, try a smaller file
 
 ## Tips for a clean import
 
-The **Tips for a clean import** card on the Import screen lists the basics:
+The **Tips for a Clean Import** card on the Import screen lists the basics:
 
 - Put the column names in the first row.
 - Use one table per file.
