@@ -1,6 +1,6 @@
 ---
 title: "Onboarding: Your First Run in Ninja Tables"
-description: "What you see the first time you open Ninja Tables: the three-step guided setup, the empty state, the Getting started checklist and the welcome banner, and how to use or skip each one."
+description: "What you see the first time you open Ninja Tables: the two-step guided setup, the empty state and the welcome banner, and how to use or skip each one."
 ---
 
 # Onboarding: Your First Run in Ninja Tables
@@ -11,7 +11,6 @@ The first time you open **Ninja Tables**, the plugin helps you get to a publishe
 |---|---|---|
 | [Guided setup](#use-the-guided-setup) | The site has no tables at all | **Skip setup** |
 | [Empty state](#skip-the-setup) | You skipped the setup and still have no tables | Create or import a table |
-| [Getting started checklist](#follow-the-getting-started-checklist) | The site has only one or two tables | The x button |
 | [Welcome banner](#see-the-welcome-banner) | Tables list, until you dismiss it | **Dismiss** |
 
 After onboarding, build and publish a table by hand with the [Quick start](/onboarding-setup-guide).
@@ -71,35 +70,23 @@ The setup and the screens after it remember your choices in your browser, not on
 
 ![Empty state reading You do not have any tables yet](/images/getting-started/ninja-tables-onboarding/4.-Empty-State-No-Tables-Yet.webp)
 
-## Follow the Getting started checklist
-
-While your site has only one or two tables, a **Getting started** card sits at the top of the Tables list. It shows how far you are, for example "1 of 3 done · about 3 minutes", with three steps:
-
-- **Create your first table**: done as soon as any table exists.
-- **Pick a design**: done once you save a table's design in this browser. **Start** or **Open** takes you to the Table Design tab.
-- **Add it to a page**: done once any table is used on a page. **Start** or **Open** takes you to the table's **Table Rows** tab, where you copy the shortcode.
-
-Click the x to hide the card. It disappears on its own once all three steps are done, or once you have three or more tables.
-
-![Getting started checklist with three steps and the welcome banner above the Tables list](/images/getting-started/ninja-tables-onboarding/5.-Getting-Started-Checklist-And-Banner.webp)
-
 ## See the welcome banner
 
 A **Welcome to the new Ninja Tables** banner sits at the top of the **Tables** list until you dismiss it. It tells you that your tables, shortcodes and front end are unchanged, and only the admin screens were reorganized. **What moved?** lists where each old screen lives now, and the x hides the banner. The full map is in [Find your way around](/admin-navigation).
+
+![Welcome banner above the Tables list with the What moved button](/images/getting-started/ninja-tables-onboarding/5.-Welcome-Banner-Above-The-Tables-List.webp)
 
 ## Common questions
 
 ::: faq
 == How do I see the onboarding again on a site that already has tables?
-Add `onboarding` to the Ninja Tables admin address, for example `admin.php?page=ninja_tables&onboarding=1` (it can also go after the `#`). The guided setup and the Getting started card show for that visit, whatever the site has, and your skips and hides are not saved. Click **Skip setup**, or create a table, and the parameter is removed.
+Add `onboarding` to the Ninja Tables admin address, for example `admin.php?page=ninja_tables&onboarding=1` (it can also go after the `#`). The guided setup and the welcome banner show for that visit, whatever the site has, and your skips and hides are not saved. Click **Skip setup**, or create a table, and the parameter is removed.
 == The guided setup doesn't show for me.
 It only shows while the site has no tables, including none in the trash. If you clicked **Skip setup** before, choose **Use the guided setup instead** on the empty screen.
 == Will the setup show again on another computer?
 Yes. Onboarding choices are saved in your browser, not on the site, so another browser or a cleared browser shows them again.
 == Why is my first table a FooTable?
 The guided setup has no engine choice and always creates a FooTable. The **Create Table** screen defaults to DataTables. See [Create a FooTable](/create-a-footable-table) and [FooTable or DataTables](/choose-table-engine).
-== The Getting started card disappeared.
-You hid it with the x, you finished all three steps, or your site now has three or more tables.
 :::
 
 ## Where to go next
