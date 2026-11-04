@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Ninja Tables"
   text: "Complete Documentation"
-  tagline: Easiest Table Builder Plugin in WordPress! Create stunning responsive tables with drag & drop builder, multiple data sources, and advanced customization options.
+  tagline: Easiest Table Builder Plugin for WordPress! Create stunning responsive tables with drag & drop builder, multiple data sources, and advanced customization options.
   actions:
     - theme: brand
       text: Get Started
