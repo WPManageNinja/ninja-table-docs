@@ -26,19 +26,9 @@ On a fresh install the list shows the guided setup, a short wizard that helps yo
   blocked: needs a site with no tables (setup skipped)
 -->
 
-## Getting started checklist and welcome banner
+## Welcome banner
 
-While your site has only one or two tables, a **Getting started** card sits above the list. It tracks three steps: **Create your first table**, **Pick a design** and **Add it to a page**, with a count such as "1 of 3 done". Use **Start** or **Open** on a step to jump to it, and the **×** to hide the card. A **Welcome to the new Ninja Tables** banner can also appear for upgraders, with **What moved?** (a map from the old screens to the new ones), **Find a setting** and **Dismiss**. Both are remembered per browser.
-
-<!-- TODO(screenshot): tables-list-2
-  screen: Tables
-  table: Employee Directory
-  state: Getting started card visible above the list
-  highlight: Getting started card
-  view: admin
-  alt: Tables list with the Getting started checklist above it
-  blocked: card only shows while the site has 1-2 tables; demo site has 17
--->
+A **Welcome to the new Ninja Tables** banner can appear above the list for upgraders. It says your tables, shortcodes and front end are unchanged, and **What moved?** shows where each old screen lives now. Click the **×** to dismiss it. It is remembered per browser. See [Onboarding](/ninja-tables-onboarding).
 
 ## What each column shows
 
@@ -123,4 +113,4 @@ Two empty screens can appear:
 
 ## Promotions in the free version
 
-The free version can show a banner below the list: a Fluent Forms banner when Fluent Forms isn't installed and you have more than two tables, or an upgrade strip reading **Love Ninja Tables? Upgrade to Pro and get more exciting features!** once you have more than three. Neither appears with Ninja Tables Pro.
+The free version can show a banner below the list: a Fluent Forms card ("Collect data in forms, show it in tables", with a **Try It Free** button) when Fluent Forms isn't installed and you have more than two tables, or an upgrade strip reading **Love Ninja Tables? Upgrade to Pro and get more exciting features!** once you have more than three. Neither appears with Ninja Tables Pro.
