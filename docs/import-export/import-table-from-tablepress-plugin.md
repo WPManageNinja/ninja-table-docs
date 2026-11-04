@@ -5,7 +5,7 @@ description: "Move tables from TablePress or Data Tables Generator by Supsystic 
 
 # Import Table from TablePress Plugin
 
-If you've built tables with **TablePress** or **Data Tables Generator by Supsystic**, you can bring them into Ninja Tables without exporting files. The **Import from another plugin** card on the Import screen lists the tables it finds and imports each one with a click.
+If you've built tables with **TablePress** or **Data Tables Generator by Supsystic**, you can bring them into Ninja Tables without exporting files. The **Import from Another Plugin** card on the Import screen lists the tables it finds and imports each one with a click.
 
 ## Before you start
 
@@ -24,7 +24,7 @@ The other plugin must be installed and active on the same site, with at least on
 ## Import a table
 
 1. In Ninja Tables, click **Import** in the top bar.
-2. Find the **Import from another plugin** card on the right. When a supported plugin is active, it says **We found TablePress on this site** (or the Supsystic plugin) with a **Detected** badge, and lists that plugin's tables.
+2. Find the **Import from Another Plugin** card on the right. When a supported plugin is active, it says **We found TablePress on this site** (or the Supsystic plugin) with a **Detected** badge, and lists that plugin's tables.
 3. Click **Import** next to the table you want. The button reads **Importing...** while it works, and only one table imports at a time.
 4. When it's done, the row shows an **Imported** badge. Click **View** to open the new table in Ninja Tables.
 
