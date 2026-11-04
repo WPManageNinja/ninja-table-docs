@@ -64,7 +64,7 @@ The **Field** list appears once you pick a post type. It offers ID, Author, Comm
 | Date, Modified date | The same six as ID | A date and time picker |
 | Author, Status and taxonomies | In, Not In | A multi-select list |
 
-To limit the table to published posts, add a rule with **Status**, **In** and **Published**.
+By default the table lists only published posts. To include other statuses, such as drafts, add a rule with **Status**, **In** and the statuses you want.
 
 ### Order and limit
 
