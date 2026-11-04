@@ -48,7 +48,7 @@ On the [Create a table](/table-types-overview) screen, most panels show an engin
 
 ![Rendering engine cards on the Default table panel](/images/creating-tables/choose-engine/1.-Rendering-Engine-Cards-On-The-Default.webp)
 
-The **Import** screen shows the same **Rendering engine** choice after you pick the file, except for a **Drag & Drop export**. WooCommerce products and reviews tables always use FooTable, and Drag & Drop tables use their own builder, so their panels don't show an engine choice.
+The **Import** screen shows the same **Rendering engine** choice after you pick the file, except for a **Exported from Drag & Drop**. WooCommerce products and reviews tables always use FooTable, and Drag & Drop tables use their own builder, so their panels don't show an engine choice.
 
 ## Can I switch later?
 
