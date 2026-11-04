@@ -45,7 +45,7 @@ Colors for one cell, a selected row or a selected column are in [Cell Settings](
 
 ## Border
 
-- **Table Border** (0–50, default 0) and **Border Color** (default `#000000`).
+- **Table Border** (0–50, default 0), **Table Corner Radius** (0–50, default 0) and **Border Color** (default `#000000`). **Table Corner Radius** rounds the outer corners of the whole table; the cell-level equivalent is in [Cell Settings](/drag-drop-cell-settings#round-corners).
 - **Apply Inner Border** (on by default): borders between cells. When on, set **Header Inner Border** (on by default), **Inner Border Color** (default `#000000`) and **Inner Border Size** (0–50, default 1).
 
 ![Border settings with table border and inner border options](/images/drag-drop-settings/ninja-tables-drag-drop/3.-Border-Settings-With-Table-Border.webp)
