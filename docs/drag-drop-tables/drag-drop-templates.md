@@ -10,10 +10,10 @@ description: "The 15 ready-made Drag & Drop table templates for pricing, compari
 ## Use a template
 
 1. Go to **Ninja Tables** › **Create Table** › **Drag & Drop table**.
-2. Enter a **Table name**, choose **Choose a template** and click **Next**.
-3. Filter by category (**All**, **Pricing**, **Comparison**, **Employee** or **Schedule**), click a template and click **Create table**.
+2. Under **Choose a Template**, filter by category (**All**, **Pricing**, **Comparison**, **Employee** or **Schedule**).
+3. Hover a template for a larger preview, then click it. The table is created straight away, named after the template.
 
-![Template picker showing template cards with PRO badges on the Pro ones](/images/drag-drop-tables/drag-drop-templates/1.-Template-Picker-Showing-Template-Cards.webp)
+![Template picker showing template cards with the Pricing category selected](/images/drag-drop-tables/drag-drop-templates/1.-Template-Picker-Showing-Template-Cards.webp)
 
 The table opens in the builder, where you can change everything. Click **Save** once before adding it to a page; see [Create a Drag & Drop Table](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
 
@@ -32,7 +32,7 @@ Comparison Table Four includes a highlighted column, set with **Highlight column
 
 Pro templates carry a **PRO** badge. The badge shows on these cards even when Ninja Tables Pro is active, so it marks which templates are Pro, not which are locked.
 
-On the free version you can still select a Pro template, but clicking **Create table** shows "This is a Pro feature." and nothing is created. Choose a free template or upgrade to continue.
+On the free version you can still click a Pro template, but it shows "This is a Pro feature." and nothing is created. Choose a free template or upgrade to continue.
 
 ::: tip
 Every template comes with **Enable Responsive Table** turned on, but several have **Use Top Row As Header** turned off for mobile or tablet. Check the **Responsive** tab if a template does not stack the way you expect; see [Mobile & Tablet Layout](/responsive-table-design).
