@@ -43,7 +43,7 @@ You can't change the engine of a Default table after you create it. If you pick 
 3. Under **Rendering engine**, pick **FooTable**.
 4. Finish the import.
 
-A **Drag & Drop export** has no engine choice, because Drag & Drop tables use their own builder. Full steps are in [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
+A **Exported from Drag & Drop** has no engine choice, because Drag & Drop tables use their own builder. Full steps are in [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
 
 ## Use the guided setup
 
