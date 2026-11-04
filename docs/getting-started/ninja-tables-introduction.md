@@ -15,7 +15,7 @@ Pick the one closest to your goal. Each card opens the guide for it.
 
 ## Publish your first table
 
-About five minutes. These are the same steps as the **Getting started** checklist in the plugin.
+About five minutes.
 
 ::: doc-tree product journey
 
