@@ -147,7 +147,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 ## R
 
-**Read-only:** A badge in Table Rows on connected tables. Their rows come from the source, so you can't add or edit them in Ninja Tables.
+**Read-only:** A badge in the "Rows come from…" banner above Table Rows on connected tables. Their rows come from the source, so you can't add or edit them in Ninja Tables.
 
 **Responsive visibility:** A column setting that shows or hides the column on desktop, tablet or mobile.
 
