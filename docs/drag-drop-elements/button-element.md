@@ -45,8 +45,6 @@ Put an icon inside the button. On the free version this section only shows "You 
 - **Icon**: pick one from the library with **Search Icons**, or click **Upload Your Own** to choose an image from the media library. An SVG you upload can take the icon color; a PNG or JPG keeps its own colors.
 - **Icon Position**: left or right of the text.
 
-![Button Icon section with the icon picker](/images/drag-drop-elements/button-element/3.-Button-Icon-Sub-Tab.webp)
-
 ## Hover
 
 Turn on **Button Hover** (off by default) to change the button when a visitor points at it. The other fields appear only when it is on.

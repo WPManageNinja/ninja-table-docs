@@ -24,8 +24,6 @@ Under **Content & style**:
 - **Open In New Tab**: off by default, unlike the Button element.
 - **Link Rel Attributes**: tick **Sponsored**, **Nofollow**, **Noreferrer** or **Noopener**. None are ticked by default.
 
-![Settings tab showing the Image element options](/images/drag-drop-elements/image-element/2.-Settings-Tab-Showing-The-Image-Element.webp)
-
 Under **Content & style**, the **Spacing** section sets the margin and padding around the image; see [Element Spacing](/spacing).
 
 Click **Save** to keep your changes.
