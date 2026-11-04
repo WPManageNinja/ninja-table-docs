@@ -10,8 +10,8 @@ A **Ninja Tables JSON** file holds a whole table: its title, description, column
 ## Import a Ninja Tables JSON file
 
 1. In Ninja Tables, click **Import** in the top bar.
-2. Under **1. What are you importing?**, choose **Ninja Tables JSON** ("From another site. Keeps design & settings.").
-3. Under **2. Choose the file**, click the upload area to choose your JSON file, or drag and drop it there.
+2. Under **1. What Are You Importing?**, choose **Ninja Tables JSON** ("From another site. Keeps design & settings.").
+3. Under **2. Choose the File**, click the upload area to choose your JSON file, or drag and drop it there.
 4. Check the **Rendering engine**. DataTables is selected by default; choose FooTable if you prefer. Switching engine keeps the file you picked.
 5. Click **Import**.
 
@@ -32,7 +32,7 @@ The **DataTables** engine only accepts tables whose rows are stored in Ninja Tab
 A file exported from a Drag & Drop table needs its own option:
 
 1. Click **Import** in the top bar.
-2. Choose **Drag & Drop export** ("JSON or CSV from a Drag & Drop table.").
+2. Choose **Exported from Drag & Drop** ("JSON or CSV from a Drag & Drop table.").
 3. Choose the file and click **Import**.
 
 The new Drag & Drop table opens in the builder. Save it once there before you embed it on a page.
