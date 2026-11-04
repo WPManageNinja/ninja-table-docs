@@ -11,16 +11,14 @@ The **Drag & Drop table** builder lets you design a table visually, cell by cell
 
 1. Go to **Ninja Tables** › **Create Table**.
 2. Under **Start from scratch**, click **Drag & Drop table**. A drawer opens.
-3. Enter a **Table name** (for example "Pricing plans"). It is required, except when you import a file.
-4. Under **Start with**, pick one of the three cards (double-click a card to pick it and move on):
-   - **Create From Scratch**: an empty grid.
-   - **Import from CSV/JSON**: build the table from a file.
-   - **Choose a template**: start from a ready-made design.
-5. Click **Next**.
+3. Choose how to start. The top of the drawer has two cards, **Create From Scratch** and **Import From CSV/JSON**. Below them, **Choose a Template** lists the ready-made designs.
+4. For a scratch or file table, click a card and then **Next**. For a template, just click the template.
 
-![Drag & Drop table drawer with the Table name field and the three Start with cards](/images/drag-drop-tables/create-first-drag-drop/1.-Drag-Drop-Table-Drawer.webp)
+There is no **Table name** field. A template keeps its own name (for example "Pricing Table Two"), a scratch table is named "Table #" followed by its ID (for example "Table #1342"), and a file takes its name from the file. Rename the table in the builder header afterwards.
 
-If you click **Next** without choosing a card, the drawer asks you to "Choose how to start." Use **Previous** on step 2 to go back and change your choice.
+![Drag & Drop table drawer with the two start cards and the template picker](/images/drag-drop-tables/create-first-drag-drop/1.-Drag-Drop-Table-Drawer.webp)
+
+If you click **Next** without choosing a card, the drawer asks you to "Choose how to start." Use **Previous** on step 2 to go back and change your choice. You can also double-click a card to pick it and move on.
 
 ### From scratch
 
@@ -37,12 +35,12 @@ Drop a `.csv` or `.json` file on the upload area, or click **Browse File**. The 
 What you get:
 
 - Every CSV cell or JSON value becomes a **Text** element, in a grid as wide as the first row of your data. There is no header styling; add it in the builder.
-- The table is named `Ninja-tables` followed by today's date (for example `Ninja-tables30-10-2026`), because the **Table name** field is not used for imports. Rename it in the builder header afterwards.
+- The table is named `Ninja-tables` followed by today's date (for example `Ninja-tables30-10-2026`). Rename it in the builder header afterwards.
 - If the JSON file is a table you exported from the builder with **Export as JSON**, the whole design comes back (elements, settings and responsive layout) and the table is named from the file (the name saved in the export, which is a lowercase, hyphenated form of the original title). See [Export a Table](/export-ninja-tables-csv-json).
 
 ### From a template
 
-Pick a category (**All**, **Pricing**, **Comparison**, **Employee** or **Schedule**), click a template, then **Create table**. Some templates need Pro. See [Drag & Drop Templates](/drag-drop-templates) for the full list.
+Pick a category pill (**All**, **Pricing**, **Comparison**, **Employee** or **Schedule**), then click a template. The table is created straight away and opens in the builder, so there is no **Create table** button to press. Hover a template to see a larger preview. Some templates need Pro. See [Drag & Drop Templates](/drag-drop-templates) for the full list.
 
 ![Template picker with the All, Pricing, Comparison, Employee and Schedule category pills](/images/drag-drop-tables/create-first-drag-drop/3.-Template-Picker-With-The-All-Pricing.webp)
 
