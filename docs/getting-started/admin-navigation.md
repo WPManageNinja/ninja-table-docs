@@ -87,7 +87,7 @@ You can also open a **Create Table** panel straight from a link by adding `#/cre
 
 ## Start-up hints are saved per browser
 
-The first-run setup, the welcome banner and the **Getting started** checklist remember what you skipped or hid in your browser, not on the site. If you clear your browser data, or open the admin in another browser, they appear again. See [Onboarding](/ninja-tables-onboarding).
+The first-run setup and the welcome banner remember what you skipped or hid in your browser, not on the site. If you clear your browser data, or open the admin in another browser, they appear again. See [Onboarding](/ninja-tables-onboarding).
 
 ## When a feature needs Pro
 
