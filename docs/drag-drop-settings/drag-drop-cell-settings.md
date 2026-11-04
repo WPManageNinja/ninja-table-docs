@@ -11,10 +11,10 @@ Colors for the header, even rows and odd rows are not here. They are table-wide,
 
 | You select | How | Options you get |
 | --- | --- | --- |
-| One cell | Click the cell | **Cell Background** |
-| Several cells | Click a cell, then hold <kbd>Shift</kbd> and click others | **Selected Cells Background** |
-| A column | Click its letter (**A**, **B**, **C**…) | **Column Background**, **Highlight Column** (Pro), **Column Width** |
-| A row | Click its number (**1**, **2**, **3**…) | **Row Background**, **Row Height** |
+| One cell | Click the cell | **Cell Background**, **Corner radius** |
+| Several cells | Click a cell, then hold <kbd>Shift</kbd> and click others | **Selected Cells Background**, **Corner radius** |
+| A column | Click its letter (**A**, **B**, **C**…) | **Column Background**, **Corner radius**, **Highlight Column** (Pro), **Column Width** |
+| A row | Click its number (**1**, **2**, **3**…) | **Row Background**, **Corner radius**, **Row Height** |
 
 Open the **Settings** tab of the right panel. A breadcrumb at the top shows what you selected, such as **Table › Cell C3**, **Table › Column B**, **Table › Row 3** or **Table › 2 Cells**. Click **Table** to go back to the table settings.
 
@@ -27,11 +27,21 @@ Open the **Settings** tab of the right panel. A breadcrumb at the top shows what
 - **Row Background**: the color of the whole selected row.
 - **Column Background**: the color of the whole selected column.
 
-Each color picker has an opacity slider and preset swatches.
+Each color picker has an opacity slider and preset swatches. The color box shows the real color of the cell, even when it comes from a template, a row or a column. **Clear** empties the color you set on the cell.
 
 When colors overlap, a color set on a single cell (or on the selected cells) always wins over a row or column color. If a cell has both a row color and a column color, the one you set last wins. Clearing a row or column color brings back the other one, or the table-wide colors from **Background** if nothing else is set.
 
 ![Selected cell color pickers and the colored cell on the canvas](/images/drag-drop-settings/manage-cells-ninja-tables/3.-Selected-Cell-Color-Pickers.webp)
+
+## Round corners
+
+Use **Corner radius** (0–50, default 0) to round the corners of what you selected, for example to turn a pricing column into a card:
+
+- **One cell or several cells**: every selected cell gets rounded corners on all four sides.
+- **A column**: only the outer top and bottom corners of the column are rounded.
+- **A row**: only the outer left and right corners of the row are rounded.
+
+Set it back to 0 to remove the rounding. To round the whole table instead, use **Table Corner Radius** in the [table settings](/ninja-tables-drag-and-drop-table-settings).
 
 ## Highlight Column (Pro)
 
