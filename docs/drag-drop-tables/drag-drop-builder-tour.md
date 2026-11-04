@@ -30,7 +30,7 @@ From left to right:
 
 ### What Save does
 
-**Save** writes the table, its settings and the HTML that visitors see. It also returns the preview width to **Desktop**. If your WordPress user can't post unfiltered HTML, Ninja Tables cleans the saved HTML: tags and attributes outside a safe list, which can include custom **HTML** and **Shortcode** elements and some inline styles, may be removed. Script tags are removed for everyone.
+**Save** writes the table, its settings and the HTML that visitors see. The preview stays on the **Tablet** or **Mobile** view you were in. If your WordPress user can't post unfiltered HTML, Ninja Tables cleans the saved HTML: tags and attributes outside a safe list, which can include custom **HTML** and **Shortcode** elements and some inline styles, may be removed. Script tags are removed for everyone.
 
 If you move to another Ninja Tables screen after making edits, you are asked to confirm that "Changes that you made may not be saved". Saving clears the warning. Closing or reloading the browser tab is not guarded. There is no undo or redo in the builder.
 
