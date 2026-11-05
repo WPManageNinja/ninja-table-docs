@@ -1,0 +1,103 @@
+{
+ "doc": "docs/data-sources/fluent-forms-integration.md",
+ "outDir": "public/images/data-sources/fluent-forms-integration",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/create"
+  },
+  {
+   "wait": 2000
+  },
+  {
+   "click": {
+    "text": "Fluent Forms Entries"
+   }
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": ".nt-drawer.open .el-select >> nth=0"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "click": ".el-popper:visible >> text=Contact Form Demo"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "click": {
+    "selector": ".nt-drawer.open label",
+    "hasText": "Your Message"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "eval": "document.activeElement&&document.activeElement.blur()"
+  },
+  {
+   "shot": {
+    "name": "2.-Fluent-Forms-Entries-Drawer-With-Form",
+    "clip": {
+     "x": 720,
+     "y": 32,
+     "width": 720,
+     "height": 868
+    },
+    "highlights": [
+     ".nt-drawer.open input >> nth=-1"
+    ]
+   }
+  },
+  {
+   "fill": {
+    "selector": "input[placeholder^='e.g.']",
+    "value": "DOCSHOT Contact Form entries"
+   }
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Create Table"
+   }
+  },
+  {
+   "wait": 6000
+  },
+  {
+   "shot": {
+    "name": "3.-Table-Rows-Tab-Listing-Fluent-Forms",
+    "clip": "app"
+   }
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Source settings"
+   }
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "shot": {
+    "name": "4.-Source-Settings-Drawer-Of-A-Fluent",
+    "clip": {
+     "x": 720,
+     "y": 32,
+     "width": 720,
+     "height": 868
+    }
+   }
+  }
+ ]
+}
