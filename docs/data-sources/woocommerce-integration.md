@@ -47,7 +47,6 @@ The **Quantity** column shows a number box with plus and minus buttons. It follo
 
 To change a button's wording on a new column, use a **Buy Now Button** column. See [Add new column](#add-new-column).
 
-Developers can show the add to cart button for out-of-stock products, change the cart button text or URL, and change the term lists. See [Hooks and filters](/hooks-and-filters).
 
 ## Change the settings later
 
