@@ -164,8 +164,6 @@ Posts from the last 7 days:
 SELECT * FROM `wp_posts` WHERE post_date >= '{date-7:YYYY-MM-DD}'
 ```
 
-Developers can add their own placeholders or change the final query.
-
 ## Big results and speed
 
 Ninja Tables runs your query on every load of the table, loads the whole result and then cuts it into pages. There is no paging inside the database. A query that returns hundreds of thousands of rows will be slow, so add a `WHERE` or a `LIMIT` to return only what the table needs. If the database can't be reached, the table shows no rows.

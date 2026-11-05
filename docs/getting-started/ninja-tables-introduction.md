@@ -32,8 +32,8 @@ Every Ninja Tables screen shares one top bar. Inside a table, the editor has six
 3. **Import**: create a table from a CSV, Excel or JSON file, or from TablePress.
 4. **Charts**: turn table data into charts with the free [Ninja Charts](/getting-started-with-ninja-charts-free-wordpress-chart-plugin) plugin.
 5. **Help**: documentation, support and community links.
-6. The gear icon › **Settings**: **General**, **Global appearance**, **Permissions** (Pro), **Performance** and, once Pro is active, **License**.
-7. The theme icon: switch the admin between **Light**, **Dark** and **System**.
+6. **Settings**: **General**, **Global appearance**, **Permissions** (Pro), **Performance** and, **License**.
+7. **The theme icon:** switch the admin between **Light**, **Dark** and **System**.
 
 Press <kbd>⌘</kbd> <kbd>K</kbd> or <kbd>Ctrl</kbd> <kbd>K</kbd> to search your tables and settings. [Find your way around](/admin-navigation) has the full tour and what moved.
 
@@ -69,7 +69,7 @@ Full list: [Free vs Pro](/free-vs-pro).
 
 A few conventions run through every page.
 
-- The sidebar follows the order you'll need things: from installing, to publishing, to developer topics.
+- The sidebar follows the order you'll need things: from installing, to publishing, to managing and updating.
 - Search sits at the top right. Press <kbd>/</kbd>, or <kbd>⌘</kbd> <kbd>K</kbd> / <kbd>Ctrl</kbd> <kbd>K</kbd>, to open it. In the docs these keys search the docs; inside the plugin, <kbd>⌘</kbd> <kbd>K</kbd> searches your tables and settings.
 - **(Pro)** and the Pro badge mark features that need Ninja Tables Pro.
 - Tabs on a page show one task done different ways. Every tab prints.
@@ -102,7 +102,6 @@ Yes, in one click from the **Import** screen. See [Import from TablePress](/impo
 Reference pages and help.
 
 - [Glossary](/ninja-tables-glossary)
-- [For developers](/hooks-and-filters)
 - [Shortcode reference](/shortcode-reference)
 - [Changelog](/change-log)
 - [Get support](/how-to-get-support)

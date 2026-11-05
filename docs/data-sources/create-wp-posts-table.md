@@ -147,5 +147,3 @@ Columns built from the query have extra options. Open them from the column heade
 ## Filter by taxonomy from the shortcode
 
 You can limit a WP Posts table to certain terms on a single page with the `post_tax` shortcode attribute, for example `[ninja_tables id="123" post_tax="category=news,events"]`. See [Shortcode reference](/shortcode-reference).
-
-Developers can change the post query, or the list of post types, with filters.

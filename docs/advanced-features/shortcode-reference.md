@@ -105,7 +105,7 @@ A cell that itself contains a `[ninja_table_cell]` shortcode is resolved up to 5
 
 ## Shortcodes inside table cells
 
-Any shortcode you type into a cell, including `[nt_ratings]` and `[nt_icon]`, runs only for tables whose rows are stored in Ninja Tables (typed in, imported or edited on the front end). Tables that read their rows from another source, such as Fluent Forms entries, show the shortcode text as it is. This stops values from outside sources from running code on your site. Developers can change the list of trusted sources with the `ninja_tables_shortcode_trusted_providers` filter.
+Any shortcode you type into a cell, including `[nt_ratings]` and `[nt_icon]`, runs only for tables whose rows are stored in Ninja Tables (typed in, imported or edited on the front end). Tables that read their rows from another source, such as Fluent Forms entries, show the shortcode text as it is. This stops values from outside sources from running code on your site.
 
 ## `[nt_ratings]` and `[nt_icon]`
 

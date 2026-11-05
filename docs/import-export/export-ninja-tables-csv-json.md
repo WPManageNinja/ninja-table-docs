@@ -43,7 +43,7 @@ In a CSV, a cell holding several values (such as a multi-select) is joined with 
 
 ## Large tables
 
-Tables with 20,000 or more rows are streamed to the file as it's built, instead of being loaded into memory first, so a CSV or JSON export of a big table doesn't run out of server memory. You don't need to do anything. Developers can change the 20,000-row threshold with the `ninja_tables_export_stream_threshold` filter.
+Tables with 20,000 or more rows are streamed to the file as it's built, instead of being loaded into memory first, so a CSV or JSON export of a big table doesn't run out of server memory. You don't need to do anything.
 
 ## Export a connected table
 

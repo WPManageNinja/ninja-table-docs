@@ -64,11 +64,6 @@ features:
     details: Turn your table data into charts with the free Ninja Charts plugin.
     link: /getting-started-with-ninja-charts-free-wordpress-chart-plugin
     linkText: "Create Charts"
-  - icon: 🛠️
-    title: For Developers
-    details: Shortcode reference, hooks and filters, and ready-to-use code recipes.
-    link: /hooks-and-filters
-    linkText: "Developer Docs"
   - icon: 📚
     title: Help & Updates
     details: Get support and see what's new in every Ninja Tables release.

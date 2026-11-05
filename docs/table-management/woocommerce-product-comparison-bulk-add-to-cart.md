@@ -75,4 +75,4 @@ If a shopper picks fewer than two products, they see "Please select at least 2 p
 ## Good to know
 
 - Pair bulk actions with the cart summary, **Show go to cart button** and **Show checkout button** in the same **Appearance** section, so shoppers can go straight to checkout after adding products.
-- A WooCommerce bulk add to cart takes up to 100 products at a time. Above that, the shopper sees "You can add at most 100 products to the cart at once." Developers can change this limit with the `ninja_tables_woo_add_to_cart_max_products` filter. See [Hooks and filters](/hooks-and-filters).
+- A WooCommerce bulk add to cart takes up to 100 products at a time. Above that, the shopper sees "You can add at most 100 products to the cart at once."

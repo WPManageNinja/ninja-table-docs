@@ -47,7 +47,6 @@ The **Quantity** column shows a number box with plus and minus buttons. It follo
 
 To change a button's wording on a new column, use a **Buy Now Button** column. See [Add new column](#add-new-column).
 
-
 ## Change the settings later
 
 On the **Table Rows** tab, the banner reads **Rows come from WooCommerce products**. Click **Source settings** to open the drawer. It has three sections: **Query settings**, **Appearance** and **Add new column**.

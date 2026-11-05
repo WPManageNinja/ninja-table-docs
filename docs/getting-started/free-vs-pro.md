@@ -14,10 +14,10 @@ To upgrade, see [Upgrade and activate your Pro license](/upgrade-to-ninja-tables
 The top bar shows a **Free** pill and a **Get Pro** button. Pro features are not hidden; they show up in different ways, depending on the feature:
 
 - **Pro badge on a tile or option.** On the Create Table screen, Pro tiles carry a **PRO** badge. Locked options in the editor, such as **Custom** colors, carry one too.
-- **A note with Upgrade to Pro.** The panel opens, but its form is locked. For example, the **WP Posts/CPTs** panel says "WP Posts tables are a Pro feature" and **Create table** stays disabled.
+- **A note with Upgrade to Pro.** The panel opens, but it shows a lock box instead of its form. For example, the **WP Posts/CPTs** panel says "WP Posts tables are a Pro feature" with an **Upgrade to Pro** button, and there is no form to fill in.
 - **A full-tab upsell.** **Custom Filter**, **Frontend Editing** and the **JavaScript** part of **Custom CSS/JS** show a short description and an unlock button (for example **Unlock Custom Filters**) instead of their settings.
 - **A pop-up.** Clicking some locked controls, such as **Sort manually**, opens **Unlock the Ninja Tables Pro features** with **Not now** and **Get Ninja Tables Pro** buttons.
-- **A toast.** A locked Drag & Drop template or element shows a short message, such as "This is a Pro feature."
+- **A toast or hover note.** A locked Drag & Drop template on the Create screen shows a toast, "This is a Pro feature.", and opens the upgrade page. A locked element or setting in the builder shows the same message in a small hover note with a **Get Pro** button.
 
 The same rules apply in the WordPress menu, where **Get Pro** appears under **Ninja Tables** until Pro is active.
 
@@ -29,7 +29,7 @@ The same rules apply in the WordPress menu, where **Get Pro** appears under **Ni
 | Upload a file: CSV, Excel (.xlsx) or JSON | ✅ | ✅ |
 | Import from the Import screen, Ninja Tables JSON, TablePress or Supsystic | ✅ | ✅ |
 | Drag & Drop table: from scratch, from a CSV or JSON file, or from a free template | ✅ | ✅ |
-| Drag & Drop Pro templates (Pricing Two to Four, Comparison Two to Five, Employee Two and Three) | | ✅ |
+| Drag & Drop Pro templates (Pricing Two to Four, Comparison Two to Five, Employee Two and Three, Product Specs, Stats Dashboard) | | ✅ |
 | Drag & Drop: import from a URL | | ✅ |
 | Fluent Forms entries table | ✅ | ✅ |
 | FluentCart products table, including bulk add to cart and compare | ✅ | ✅ |
@@ -47,15 +47,16 @@ See [All table types at a glance](/table-types-overview).
 | Feature | Free | Pro |
 |---|:-:|:-:|
 | Single line text, Text area, HTML field, Numeric value and Date field columns | ✅ | ✅ |
+| Numeric value **Separator style** (US or European decimals) | | ✅ |
 | Date field with a standard format, **Show time** and **First day of the week** | ✅ | ✅ |
 | Date field with a **Custom** format | | ✅ |
 | Select field, Image/File/Lightbox and Button/Link columns | See below | ✅ |
-| **Advanced** tab: header and content text alignment, **Click to copy** | ✅ | ✅ |
-| **Advanced** tab: column width, extra classes, colors, **Sortable**, **Searchable**, HTML header content | | ✅ |
+| **Advanced tab:** header and content text alignment, **Click to copy** | ✅ | ✅ |
+| **Advanced tab:** column width, extra classes, colors, **Sortable**, **Searchable**, HTML header content | | ✅ |
 | **Conditions** (conditional formatting) | | ✅ |
 | **Transform**, including Excel formula support | | ✅ |
 
-In the free version you can pick the **Select field**, **Image/File/Lightbox** and **Button/Link** types, but they don't do their job. A note appears in the column dialog: Select columns work as plain text, and image and button columns need Pro to work. A new Image or Button/Link column is saved as Single line text.
+In the free version you can pick the **Select field**, **Image/File/Lightbox** and **Button/Link** types, but they don't do their job. A note appears in the column dialog: Select columns work as plain text, and image and button columns need Pro to work. A new Image or Button/Link column is saved as Single line text. Their settings sit behind a Pro lock box: the Select placeholder, the Image click action and download text, and the Button link target, rounded corners, force download, colors and rel attributes. In the row form, Image and Button/Link fields carry a PRO badge and fall back to a plain text input.
 
 ## Rows
 
@@ -65,6 +66,7 @@ In the free version you can pick the **Select field**, **Image/File/Lightbox** a
 | Import rows from CSV, export as CSV, Excel or JSON | ✅ | ✅ |
 | Edit a row's **Created date** | ✅ | ✅ |
 | Row and cell colors (**Row settings** and **Cell settings**) | | ✅ |
+| Image and Button/Link fields in the row form | Plain text input | ✅ |
 | **Insert row below** | | ✅ |
 | **Sort manually** (drag rows into order) | | ✅ |
 
@@ -74,7 +76,8 @@ In the free version you can pick the **Select field**, **Image/File/Lightbox** a
 |---|:-:|:-:|
 | Live preview on Desktop, Tablet and Mobile | ✅ | ✅ |
 | **Styling**: style library, rows and borders, typography, title and header | ✅ | ✅ |
-| Preset color schemes | ✅ | ✅ |
+| Default color scheme (no color) | ✅ | ✅ |
+| Other preset color schemes | | ✅ |
 | **Custom** colors | | ✅ |
 | Search box on or off | ✅ | ✅ |
 | Search box position and full width | | ✅ |
@@ -89,7 +92,7 @@ In the free version you can pick the **Select field**, **Image/File/Lightbox** a
 | Export & Print buttons for visitors | | ✅ |
 | Default look for new tables in **Settings** › **Global appearance** | ✅ | ✅ |
 
-In the free version, the **Custom** colors option opens the upgrade pop-up and the table stays on a preset scheme. A banner above the preview says color customization is a Pro feature.
+In the free version, picking any scheme other than the default, or **Custom**, opens the upgrade pop-up. A banner above the preview says color customization is a Pro feature.
 
 ## Table editor tabs
 
@@ -125,7 +128,7 @@ In the free version, **Permissions** shows a lock box, and **License** doesn't a
 | Merge and split cells, free templates | ✅ | ✅ |
 | Icon, Image, Styled list, Ribbon and Text icon elements | | ✅ |
 | Button icons | | ✅ |
-| Highlight column, sticky header, custom JavaScript | | ✅ |
+| Highlight column, sticky first row and first column, custom JavaScript | | ✅ |
 
 Click or drag a locked element in the free version and a message tells you it is a Pro feature. Nothing is added to the table.
 
@@ -136,10 +139,11 @@ Click or drag a locked element in the free version and a message tells you it is
 | `[ninja_tables]` shortcode with `id`, `filter`, `use_parent_width` and `info` | ✅ | ✅ |
 | `[ninja_table_info]`, `[ninja_table_cell]` and `[ninja_table_builder]` shortcodes | ✅ | ✅ |
 | Ninja Tables block for the block editor, and the classic editor button | ✅ | ✅ |
-| Advanced shortcode attributes, such as rows per page and columns to show | | ✅ |
+| Advanced shortcode attributes, such as `per_page`, `columns`, `limit`, `skip` and `logged_in_only` | | ✅ |
 | Placeholders such as the current user or date in filters | | ✅ |
 | `[nt_ratings]` and `[nt_icon]` shortcodes | | ✅ |
-| Colors tab in the Ninja Tables block | | ✅ |
+| Custom colors in the Ninja Tables block (preset colors are free) | | ✅ |
+| Block options: sorting by visitors, **Hide empty items**, **Hide Labels**, scroll to table top, page size changer, search position and full-width search, sticky first column and header, **Disable Sticky on Mobile** | | ✅ |
 
 See the [shortcode reference](/shortcode-reference) for details.
 
