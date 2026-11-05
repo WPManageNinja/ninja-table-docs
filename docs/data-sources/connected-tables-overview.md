@@ -123,7 +123,7 @@ See [Table rendering settings](/table-rendering-settings) and [Clear table cache
 
 ### Connected tables on DataTables
 
-A connected table on the **DataTables** engine asks the server for its rows live, straight from the source, instead of keeping a copy. A WP Posts table that is set to show only the logged-in user's posts, and a Custom SQL query that uses a visitor placeholder such as `{current_user_id}`, are never shared between visitors, so each visitor sees only their own rows. Developers can read about the related filters in [Hooks and filters](/hooks-and-filters).
+A connected table on the **DataTables** engine asks the server for its rows live, straight from the source, instead of keeping a copy. A WP Posts table that is set to show only the logged-in user's posts, and a Custom SQL query that uses a visitor placeholder such as `{current_user_id}`, are never shared between visitors, so each visitor sees only their own rows.
 
 ## Show the table on your site
 
