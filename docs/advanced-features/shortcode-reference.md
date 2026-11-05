@@ -72,7 +72,6 @@ Details that are easy to miss:
 - `get_filter` can be combined with a `column` address parameter, and `filter_selects` can be overridden from the address. See [Advanced Shortcode](/advanced-shortcode).
 - `sf_filter` works on DataTables tables (applied on the server) and on FooTable tables set to **Legacy** rendering. On a FooTable table in **Ajax** rendering it has no effect and every row is shown.
 
-If you need to rename the shortcode tag or add your own attributes, see the rendering hooks in [Hooks & Filters](/hooks-and-filters).
 
 ## `[ninja_table_builder]`
 
@@ -106,7 +105,7 @@ A cell that itself contains a `[ninja_table_cell]` shortcode is resolved up to 5
 
 ## Shortcodes inside table cells
 
-Any shortcode you type into a cell, including `[nt_ratings]` and `[nt_icon]`, runs only for tables whose rows are stored in Ninja Tables (typed in, imported or edited on the front end). Tables that read their rows from another source, such as Fluent Forms entries, show the shortcode text as it is. This stops values from outside sources from running code on your site. Developers can change the list of trusted sources with the `ninja_tables_shortcode_trusted_providers` filter; see [Hooks & Filters](/hooks-and-filters).
+Any shortcode you type into a cell, including `[nt_ratings]` and `[nt_icon]`, runs only for tables whose rows are stored in Ninja Tables (typed in, imported or edited on the front end). Tables that read their rows from another source, such as Fluent Forms entries, show the shortcode text as it is. This stops values from outside sources from running code on your site. Developers can change the list of trusted sources with the `ninja_tables_shortcode_trusted_providers` filter.
 
 ## `[nt_ratings]` and `[nt_icon]`
 
@@ -150,4 +149,4 @@ Show rows with a `date` column in the last 7 days:
 [ninja_tables id="123" filter="~{date-7:YYYY-MM-DD}:{date:YYYY-MM-DD}" filter_column="date"]
 ```
 
-Custom SQL tables have their own placeholders (`{prefix}`, `{current_user_id}` and others); see [Custom SQL Query](/create-table-from-custom-sql). To run the placeholder parser from your own code, see the `ninja_parse_placeholder` filter in [Hooks & Filters](/hooks-and-filters).
+Custom SQL tables have their own placeholders (`{prefix}`, `{current_user_id}` and others); see [Custom SQL Query](/create-table-from-custom-sql).
