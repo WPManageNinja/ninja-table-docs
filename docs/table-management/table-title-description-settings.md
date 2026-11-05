@@ -49,7 +49,7 @@ You choose per table what visitors see above and inside the table. These switche
 
 Every change shows in the live preview straight away. The title and description are two separate switches, so you can show one without the other.
 
-To make the title or description show by default on new tables, turn on **Table title** or **Table description** under **Show** in **Settings** › **Global appearance**; see [Settings](/guide/table-management/tools-and-settings).
+To make the title or description show by default on new tables, turn on **Table title** or **Table description** under **Show** in **Settings** › **Global Appearance**; see [Settings](/guide/table-management/tools-and-settings).
 
 ## Common questions
 

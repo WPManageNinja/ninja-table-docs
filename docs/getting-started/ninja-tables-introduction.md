@@ -32,7 +32,7 @@ Every Ninja Tables screen shares one top bar. Inside a table, the editor has six
 3. **Import**: create a table from a CSV, Excel or JSON file, or from TablePress.
 4. **Charts**: turn table data into charts with the free [Ninja Charts](/guide/ninja-charts/getting-started-with-ninja-charts-free-wordpress-chart-plugin) plugin.
 5. **Help**: documentation, support and community links.
-6. **Settings**: **General**, **Global appearance**, **Permissions** (Pro), **Performance** and, **License**.
+6. **Settings**: **Global Appearance**, **General**, **Permissions** (Pro), **Performance** and, **License**.
 7. **The theme icon:** switch the admin between **Light**, **Dark** and **System**.
 
 Press <kbd>⌘</kbd> <kbd>K</kbd> or <kbd>Ctrl</kbd> <kbd>K</kbd> to search your tables and settings. [Find your way around](/guide/getting-started/admin-navigation) has the full tour and what moved.

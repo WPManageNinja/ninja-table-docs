@@ -1,6 +1,6 @@
 ---
 title: "Settings Overview"
-description: "A tour of Ninja Tables Settings: General, Global appearance, Permissions, Performance and License, and where the old Tools page options went."
+description: "A tour of Ninja Tables Settings: Global Appearance, General, Permissions, Performance and License, and where the old Tools page options went."
 ---
 
 # Settings Overview
@@ -25,9 +25,9 @@ The Tools page has been split. Importing tables is now **Import** in the top bar
 
 Global Appearance, General and Permissions each have one **Save settings** at the bottom of the page. It stays greyed out until you change something. Then it switches on. Click it to store the page; it shows **Settings successfully updated**. Global Appearance is a long page, so it also has a second **Save settings** in its header, and both work the same. There is no unsaved-changes badge.
 
-## Global appearance
+## Global Appearance
 
-The card is titled **Global appearance Settings**. New tables start with these settings. Existing tables aren't changed, and every table can still be adjusted in its own **Table Design** tab.
+The card is titled **Global Appearance Settings**. New tables start with these settings. Existing tables aren't changed, and every table can still be adjusted in its own **Table Design** tab.
 
 - **Default Table Color**: the color scheme for new tables. Choose from Default, White, Red, Orange, Yellow, Olive, Green, Teal, Blue, Violet, Purple, Pink, Grey or Black.
 - **Default Styling Library**: **Semantic UI** (default), **Bootstrap 4** or **Bootstrap 3**. Semantic UI suits most sites; pick Bootstrap only if your theme already uses it. Below it, a list of switches changes with the library you pick:
@@ -41,7 +41,7 @@ The card is titled **Global appearance Settings**. New tables start with these s
 
 Click **Save settings** when you're done.
 
-![Global appearance settings for new tables](/images/table-management/tools-settings/3.-Global-Appearance-Settings-For-New-Tables.webp)
+![Global Appearance settings for new tables](/images/table-management/tools-settings/3.-Global-Appearance-Settings-For-New-Tables.webp)
 
 To copy the design of a table you've already styled, see [Use a design as the default](/guide/styling-design/use-design-as-default).
 

@@ -45,7 +45,7 @@ Because these use the visitor's device, the exact look differs a little between 
 The size applies to the table text. Between 12 px and 18 px is comfortable for most tables. Very small sizes are hard to read on a phone, so check the **Mobile** preview before you save.
 
 ::: tip
-To set the font for every new table, use the gear icon › **Settings** › **Global appearance**. See [Default Design for New Tables](/guide/styling-design/use-design-as-default).
+To set the font for every new table, use the gear icon › **Settings** › **Global Appearance**. See [Default Design for New Tables](/guide/styling-design/use-design-as-default).
 :::
 
 ## Common questions

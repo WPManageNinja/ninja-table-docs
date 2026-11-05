@@ -56,7 +56,7 @@ With pagination on, the page bar sits under the rows, at the position you chose.
 ![A table on the site with the pagination bar under the rows](/images/styling-design/pagination/2.-Table-On-The-Site.webp)
 
 ::: tip
-To set the starting rows per page for every new table, use the gear icon › **Settings** › **Global appearance**. See [Default Design for New Tables](/guide/styling-design/use-design-as-default). To override the rows per page for one embed, use the `per_page` shortcode attribute (Pro). See [Advanced Shortcode](/guide/advanced-features/advanced-shortcode).
+To set the starting rows per page for every new table, use the gear icon › **Settings** › **Global Appearance**. See [Default Design for New Tables](/guide/styling-design/use-design-as-default). To override the rows per page for one embed, use the `per_page` shortcode attribute (Pro). See [Advanced Shortcode](/guide/advanced-features/advanced-shortcode).
 :::
 
 ## Common questions

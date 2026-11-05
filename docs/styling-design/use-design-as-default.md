@@ -5,14 +5,14 @@ description: "Choose the look every new table starts with, such as color scheme,
 
 # Default Design for New Tables
 
-**Global appearance** sets the starting design of every table you create next. It saves you from repeating the same color, font and pagination choices on each new table. Defaults only affect **new** tables; existing tables are never changed, and you can still adjust any table in its own **Table Design** tab.
+**Global Appearance** sets the starting design of every table you create next. It saves you from repeating the same color, font and pagination choices on each new table. Defaults only affect **new** tables; existing tables are never changed, and you can still adjust any table in its own **Table Design** tab.
 
 There is no "use as default" button inside a table's Table Design tab. Defaults are set in one place only.
 
 1. Click the **gear** icon in the top bar, then **Settings**.
-2. Open **Global appearance**. The card is titled **Global appearance Settings**.
+2. Open **Global Appearance**. The card is titled **Global Appearance Settings**.
 
-![Global appearance settings with the default table color and styling library group](/images/styling-design/use-design-as-default/1.-Global-Appearance-Settings-With-Color-Library.webp)
+![Global Appearance settings with the default table color and styling library group](/images/styling-design/use-design-as-default/1.-Global-Appearance-Settings-With-Color-Library.webp)
 
 ## Default Table Color
 
@@ -34,7 +34,7 @@ Pick the color scheme new tables start with. The schemes are the same as in [Tab
 - **Table description**: off by default.
 - **Hide all borders**: off by default.
 
-![Default font family, font size and show options in Global appearance](/images/styling-design/use-design-as-default/2.-Default-Font-And-Show-Settings.webp)
+![Default font family, font size and show options in Global Appearance](/images/styling-design/use-design-as-default/2.-Default-Font-And-Show-Settings.webp)
 
 ## Default Features
 
@@ -59,7 +59,7 @@ A fresh site starts new tables with this baseline:
 - Pagination on with 20 rows per page.
 - Engine **FooTable**. New tables use the **Legacy** rendering setting when Pro is active and **Ajax** on the free version, see [Engine, Rendering & Caching](/guide/table-settings/table-rendering-settings).
 
-Once you save **Global appearance**, your saved values replace this baseline.
+Once you save **Global Appearance**, your saved values replace this baseline.
 
 ## Related
 

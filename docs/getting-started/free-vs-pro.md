@@ -90,7 +90,7 @@ In the free version you can pick the **Select field**, **Image/File/Lightbox** a
 | Responsive Breakpoint set to **First Row** or **All Rows**, **Hide Empty Values**, **Hide Labels** | | ✅ |
 | Row details popup | ✅ | ✅ |
 | Export & Print buttons for visitors | | ✅ |
-| Default look for new tables in **Settings** › **Global appearance** | ✅ | ✅ |
+| Default look for new tables in **Settings** › **Global Appearance** | ✅ | ✅ |
 
 In the free version, picking any scheme other than the default, or **Custom**, opens the upgrade pop-up. A banner above the preview says color customization is a Pro feature.
 
@@ -113,7 +113,7 @@ The default **Rendering Setting** depends on the plan. A new table defaults to *
 | Feature | Free | Pro |
 |---|:-:|:-:|
 | General (JavaScript error handling) | ✅ | ✅ |
-| Global appearance | ✅ | ✅ |
+| Global Appearance | ✅ | ✅ |
 | Performance (clear caches) | ✅ | ✅ |
 | Permissions (roles that can manage tables, SQL access) | | ✅ |
 | License | | ✅ |

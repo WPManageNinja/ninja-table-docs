@@ -71,7 +71,7 @@ A **Welcome to the new Ninja Tables** banner appears at the top of the **Tables*
 | Table › Rendering settings & caching | Table › **Table Configuration** |
 | Table › Additional CSS / JS | Table › **Custom CSS/JS** |
 
-In the dialog, **Got it** closes it. The **Default appearance** screen is called **Global appearance** in the Settings side menu. See the [Settings overview](/guide/table-management/tools-and-settings).
+In the dialog, **Got it** closes it. The **Default appearance** screen is called **Global Appearance** in the Settings side menu. See the [Settings overview](/guide/table-management/tools-and-settings).
 
 ## Old links still work
 

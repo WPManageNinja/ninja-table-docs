@@ -77,7 +77,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Getting started checklist:** A card at the top of the Tables list, while the site has one or two tables, with three steps: create a table, pick a design and add it to a page. See [Onboarding](/guide/getting-started/ninja-tables-onboarding).
 
-**Global appearance:** The Settings section with default styles for new tables. Existing tables don't change.
+**Global Appearance:** The Settings section with default styles for new tables. Existing tables don't change.
 
 **Google Sheets integration:** A connected table (Pro) that shows rows from a published Google Sheet.
 

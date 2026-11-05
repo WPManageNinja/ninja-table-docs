@@ -41,6 +41,7 @@ To set everything for one column as you create it, click **All options for one c
 - **Column key**: filled in from the name. Use English letters, numbers and `_` only. It's used by shortcodes, imports and filters, and it can't change later.
 - **Type**: Single line text field, Text area, HTML field, Numeric value or Date field. Select field, Image/File/Lightbox and Button/Link also appear in the list, but they need Pro to work. On the free version a note says so. A Select column works as plain text, and a new Image/File/Lightbox or Button/Link column is saved as Single line text.
 - **Responsive visibility**: whether the column is always shown, or hidden on some screen sizes.
+
 Then click **Add column**.
 
 ![Column dialog Basic tab with Column name, Column key, Type and Responsive visibility](/images/creating-tables/create-first-table/3.-Column-Dialog-Basic-Tab-With-Column.webp)
@@ -98,7 +99,7 @@ Click the **Table Design** tab. On the left is a live preview of your table, whi
 
 ![Table Design tab with the live preview and the Colors, Styling and Features tabs](/images/creating-tables/create-first-table/6.-Appearance-Tab-With-The-Live-Preview.webp)
 
-Click **Save** at the top of the editor to keep your changes. See the [Table Design overview](/guide/styling-design/table-style-settings) for every option. To change the starting look of every new table, use **Settings** › **Global appearance**.
+Click **Save** at the top of the editor to keep your changes. See the [Table Design overview](/guide/styling-design/table-style-settings) for every option. To change the starting look of every new table, use **Settings** › **Global Appearance**.
 
 ## Check Table Configuration
 

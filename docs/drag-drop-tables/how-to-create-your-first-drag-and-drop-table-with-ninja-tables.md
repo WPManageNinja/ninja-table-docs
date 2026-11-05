@@ -69,7 +69,7 @@ A tour of everything on the builder screen is in [Drag & Drop Builder Tour](/gui
 3. Paste it into a page or post, or insert the table with the Ninja Tables block, which also supports Drag & Drop tables. See [Add a Table to Your Site](/guide/wordpress-integration/embed-tables).
 
 ::: warning Save once before embedding
-The table on your site is built from the version you last saved in the builder. A new table, including one made from a template or a file, shows only an "Edit Table" link (shown to admins) until you click **Save** in the builder at least once.
+The table on your site is built from the version you last saved in the builder. A template table works on your site straight away, because it saves its design once when it's created. A new table from scratch or a file shows only an "Edit Table" link (shown to admins) until you click **Save** in the builder at least once.
 :::
 
 Click **Preview** in the builder to see the saved table on its own page. If you leave the builder with unsaved edits, your browser asks you to confirm that "Changes that you made may not be saved".

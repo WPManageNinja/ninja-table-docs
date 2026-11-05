@@ -54,4 +54,4 @@ The preview needs at least one column. If the table has none yet, add them in [T
 
 ## Set the starting design for new tables
 
-Table Design changes apply to the open table only. To choose the look every new table starts with, use the gear icon › **Settings** › **Global appearance**. See [Default Design for New Tables](/guide/styling-design/use-design-as-default).
+Table Design changes apply to the open table only. To choose the look every new table starts with, use the gear icon › **Settings** › **Global Appearance**. See [Default Design for New Tables](/guide/styling-design/use-design-as-default).
