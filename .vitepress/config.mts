@@ -291,15 +291,6 @@ export default defineConfig({
         ]
       },
       {
-        text: 'For Developers',
-        collapsed: true,
-        items: [
-          { text: 'Hooks & filters', link: '/hooks-and-filters' },
-          { text: 'JavaScript events', link: '/javascript-events' },
-          { text: 'Code recipes', link: '/developer-code-recipes' }
-        ]
-      },
-      {
         text: 'Help & Updates',
         collapsed: true,
         items: [
