@@ -1,0 +1,160 @@
+{
+ "doc": "docs/advanced-features/frontend-editing.md",
+ "outDir": "public/images/advanced-features/frontend-editing",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/tables/922/table_editing"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "click": ".nt-fe__switch-row .el-switch"
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "eval": "1"
+  },
+  {
+   "shot": {
+    "name": "1.-Frontend-Editing-Tab-With-The-Switch",
+    "clip": {
+     "x": 160,
+     "y": 32,
+     "width": 1280,
+     "height": 868
+    },
+    "highlights": [
+     ".nt-fe__switch-row .el-switch"
+    ]
+   }
+  },
+  {
+   "click": ".nt-fe__role-row .el-select"
+  },
+  {
+   "wait": 700
+  },
+  {
+   "shot": {
+    "name": "2.-Permissions-Card-With-The-Role-Picker",
+    "clip": {
+     "x": 160,
+     "y": 32,
+     "width": 1280,
+     "height": 868
+    },
+    "highlights": [
+     ".nt-fe__role-row .el-select"
+    ]
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": ".nt-fe__titles h2"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": ".el-switch:has(input[aria-label=\"Own data only\"])"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "shot": {
+    "name": "3.-Own-Data-Only-Switch",
+    "clip": {
+     "x": 160,
+     "y": 32,
+     "width": 1280,
+     "height": 868
+    },
+    "highlights": [
+     {
+      "row": "Own data only",
+      "part": "row"
+     }
+    ]
+   }
+  },
+  {
+   "click": ".el-switch:has(input[aria-label=\"Own data only\"])"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "scrollTo": ".nt-fe__columns"
+  },
+  {
+   "wait": 300
+  },
+  {
+   "click": ".el-switch:has(input[aria-label=\"Editable: Name\"])"
+  },
+  {
+   "click": ".el-switch:has(input[aria-label=\"Required: Name\"])"
+  },
+  {
+   "click": ".el-switch:has(input[aria-label=\"Editable: Email\"])"
+  },
+  {
+   "click": ".el-switch:has(input[aria-label=\"Required: Email\"])"
+  },
+  {
+   "fill": {
+    "selector": ".nt-fe__table input[aria-label=\"Default value: Department\"]",
+    "value": "Engineering"
+   }
+  },
+  {
+   "wait": 400
+  },
+  {
+   "shot": {
+    "name": "5.-Columns-Card-With-Editable-Required",
+    "clip": {
+     "element": ".nt-fe__columns",
+     "pad": 16
+    },
+    "highlights": [
+     ".nt-fe__table th:nth-child(2)"
+    ]
+   }
+  },
+  {
+   "scrollTo": ".nt-fe__labels"
+  },
+  {
+   "scrollTo": "input[id=nt-fe-edith]"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "shot": {
+    "name": "4.-Appearance-Card-With-Frontend-Editing-Labels",
+    "clip": {
+     "element": ".nt-card:has(.nt-fe__labels)",
+     "pad": 20
+    },
+    "highlights": [
+     {
+      "row": "Action icon position",
+      "part": "control"
+     }
+    ]
+   }
+  }
+ ]
+}

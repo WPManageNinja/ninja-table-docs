@@ -1,0 +1,134 @@
+{
+ "doc": "docs/table-management/woocommerce-product-comparison-bulk-add-to-cart.md",
+ "outDir": "public/images/table-management/woocommerce-product",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/tables/1343"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Source settings"
+   }
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "click": {
+    "selector": ".nt-source-tabs button",
+    "hasText": "Appearance"
+   }
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "shot": {
+    "name": "1.-Appearance-Section-Of-The-Source-Settings",
+    "clip": {
+     "x": 720,
+     "y": 32,
+     "width": 720,
+     "height": 360
+    },
+    "highlights": [
+     {
+      "selector": "label",
+      "hasText": "Show bulk action"
+     }
+    ]
+   }
+  },
+  {
+   "front": "/docshot-apparel-shop/"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "hideCss": ".wp-block-post-title, h1.wp-block-post-title, .entry-title"
+  },
+  {
+   "click": "tbody tr:nth-child(2) input[type=checkbox]"
+  },
+  {
+   "click": "tbody tr:nth-child(4) input[type=checkbox]"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "shot": {
+    "name": "2.-Product-Table-On-The-Page",
+    "clip": {
+     "x": 100,
+     "y": 120,
+     "width": 1240,
+     "height": 780
+    },
+    "highlights": [
+     {
+      "selector": "select",
+      "hasText": "Bulk Actions"
+     }
+    ]
+   }
+  },
+  {
+   "front": "/docshot-apparel-shop/"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "hideCss": ".wp-block-post-title, h1.wp-block-post-title, .entry-title"
+  },
+  {
+   "click": "tbody tr:nth-child(1) input[type=checkbox]"
+  },
+  {
+   "click": "tbody tr:nth-child(2) input[type=checkbox]"
+  },
+  {
+   "click": "tbody tr:nth-child(4) input[type=checkbox]"
+  },
+  {
+   "eval": "(()=>{const s=[...document.querySelectorAll('select')].find(x=>[...x.options].some(o=>/Compare/.test(o.text)));const o=[...s.options].find(o=>/compare/i.test(o.text));s.value=o.value;s.dispatchEvent(new Event('change',{bubbles:true}));})()"
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Apply"
+   }
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "shot": {
+    "name": "3.-Compare-Products-Pop-Up-Showing-Three",
+    "clip": {
+     "x": 100,
+     "y": 30,
+     "width": 1240,
+     "height": 640
+    },
+    "highlights": [
+     {
+      "selector": "button",
+      "hasText": "Close"
+     }
+    ]
+   }
+  }
+ ],
+ "_note": "Table 1343 (DOCSHOT Apparel Catalog) already has Show bulk action saved ON; do not click the checkbox again."
+}

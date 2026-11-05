@@ -14,14 +14,7 @@ By default, only administrators can create and edit tables. With **Permissions**
 3. Under **Who can manage tables**, tick each role that should have access, or tick **Select all**.
 4. Click **Save settings**.
 
-<!-- TODO(screenshot): define-permission-for-table-users-1
-  screen: Settings › Permissions
-  table: -
-  state: Who can manage tables card with Editor and Shop manager ticked
-  highlight: Role checkboxes
-  view: admin
-  alt: Permissions settings with role checkboxes under Who can manage tables
--->
+![Permissions settings with role checkboxes under Who can manage tables](/images/table-management/define-permission-table/1.-Permissions-Settings-With-Role-Checkboxes-Under.webp)
 
 Administrators always have access, whatever you tick, so Administrator isn't in the list. Subscriber isn't listed either. A role you tick here can create, edit and delete **every** table on the site; there's no per-table permission. Only a WordPress administrator can save changes on this screen.
 
@@ -38,14 +31,7 @@ Once you've ticked at least one role, a **Custom SQL module** card appears below
 
 It's off by default and applies to all the roles ticked above. Administrators can always write SQL queries. The roles and this switch are saved together.
 
-<!-- TODO(screenshot): define-permission-for-table-users-2
-  screen: Settings › Permissions
-  table: -
-  state: Custom SQL module card visible with the warning and the switch on
-  highlight: Let these roles write SQL queries switch
-  view: admin
-  alt: Custom SQL module card with the write SQL queries switch
--->
+![Custom SQL module card with the write SQL queries switch](/images/table-management/define-permission-table/2.-Custom-SQL-Module-Card.webp)
 
 ::: warning
 Users with this permission can run read queries against your database. SQL tables can read any data in it, including user details. Only turn this on for roles you fully trust.

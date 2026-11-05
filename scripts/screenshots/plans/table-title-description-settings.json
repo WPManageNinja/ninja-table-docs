@@ -1,19 +1,20 @@
 {
   "doc": "docs/table-management/table-title-description-settings.md",
   "outDir": "public/images/table-management/table-title-description",
-  "viewport": {"width": 1440, "height": 900},
+  "viewport": { "width": 1440, "height": 900 },
   "steps": [
-    {"viewport": {"width": 1440, "height": 1000}},
-    {"admin": "/tables/{{Quarterly Sales by Store 2026}}/design_studio"},
-    {"wait": 2000},
-    {"css": ".nt-appearance{grid-template-columns:minmax(0,1fr) 520px!important}"},
-    {"click": {"selector": ".nt-appearance__tab", "hasText": "Styling"}},
-    {"wait": 800},
-    {"click": {"selector": ".nt-ds-sec__btn", "hasText": "Title & Header"}},
-    {"wait": 700},
-    {"click": ".el-switch:has(input[aria-label=\"Show Table Title\"])"},
-    {"click": ".el-switch:has(input[aria-label=\"Show Table Description\"])"},
-    {"wait": 500},
-    {"shot": {"name": "1.-Title-And-Header-Section", "clip": {"x": 920, "y": 138, "width": 520, "height": 365}}}
+    { "admin": "/create" },
+    { "wait": 1500 },
+    { "click": { "text": "Default Table" } },
+    { "wait": 1500 },
+    { "fill": { "selector": "input[placeholder^='e.g.']", "value": "Product Catalog" } },
+    { "wait": 300 },
+    { "shot": { "name": "1.-Default-Table-Panel-Showing-The-Table", "clip": { "x": 840, "y": 34, "width": 600, "height": 516 }, "highlights": [".mce-tinymce, .wp-editor-container, .tox-tinymce"] } },
+    { "admin": "/tables/921" },
+    { "wait": 2000 },
+    { "click": ".nt-editor-head__edit" },
+    { "wait": 1000 },
+    { "fillByLabel": { "label": "Table caption", "value": "Prices updated weekly" } },
+    { "shot": { "name": "2.-Table-Details-Dialog-With-The-Title", "clip": { "element": ".nt-modal", "pad": 4 }, "highlights": ["input[placeholder^=\"Enter a table caption\"]"] } }
   ]
 }

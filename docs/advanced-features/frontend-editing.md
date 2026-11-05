@@ -17,29 +17,13 @@ Without Ninja Tables Pro, the tab shows an upgrade panel (**Unlock frontend edit
 2. Click the **Frontend Editing** tab.
 3. Turn on the switch next to **Frontend Editing**.
 
-<!-- TODO(screenshot): frontend-editing-1
-  screen: Tables › Employee Directory › Frontend Editing
-  table: Employee Directory
-  state: Frontend editing switch on, Permissions, Appearance and Columns cards visible
-  highlight: Frontend editing switch
-  view: admin
-  alt: Frontend Editing tab with the switch turned on
-  blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor)
--->
+![Frontend Editing tab with the switch turned on](/images/advanced-features/frontend-editing/1.-Frontend-Editing-Tab-With-The-Switch.webp)
 
 Set the options below and click **Save** at the top of the editor. Turning the switch off saves straight away.
 
 ## Permissions
 
-<!-- TODO(screenshot): frontend-editing-2
-  screen: Tables › Employee Directory › Frontend Editing › Permissions
-  table: Employee Directory
-  state: Permissions card with Who can add & edit open, showing the role list
-  highlight: Who can add & edit
-  view: admin
-  alt: Permissions card with the role picker open
-  blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor); open the Who can add & edit select on the Permissions card
--->
+![Permissions card with the role picker open](/images/advanced-features/frontend-editing/2.-Permissions-Card-With-The-Role-Picker.webp)
 
 - **Who can add & edit**: the roles that get the add and edit buttons. Pick as many roles as you like. Leave it empty for **Administrators only**.
   - **Public Users (Only add data)**: lets visitors who are not logged in add new rows. They can't edit or delete existing rows.
@@ -56,15 +40,7 @@ With **Own data only** on, you can still show every row to everyone, read-only, 
 ```
 :::
 
-<!-- TODO(screenshot): frontend-editing-3
-  screen: Tables › Employee Directory › Frontend Editing › Permissions
-  table: Employee Directory
-  state: Own data only on, with the read-only shortcode note showing
-  highlight: Own data only
-  view: admin
-  alt: Own data only switch with the read-only shortcode
-  blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor); also Own data only = on so the read-only shortcode note shows (set in the UI, can stay unsaved once the switch is on)
--->
+![Own data only switch with the read-only shortcode](/images/advanced-features/frontend-editing/3.-Own-Data-Only-Switch.webp)
 
 ## Appearance
 
@@ -77,15 +53,7 @@ The labels and icons visitors see while editing:
 - **Action icon position**: put the edit and delete icons on the **Left** or **Right** of each row. The default is **Right**.
 - **Always show edit icons**: show the icons all the time. When off, they appear when hovering a row.
 
-<!-- TODO(screenshot): frontend-editing-4
-  screen: Tables › Employee Directory › Frontend Editing › Appearance
-  table: Employee Directory
-  state: Appearance card with the four label fields, Action icon position and Always show edit icons
-  highlight: Action icon position
-  view: admin
-  alt: Appearance card with frontend editing labels and icon options
-  blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor)
--->
+![Appearance card with frontend editing labels and icon options](/images/advanced-features/frontend-editing/4.-Appearance-Card-With-Frontend-Editing-Labels.webp)
 
 ## Columns
 
@@ -95,15 +63,7 @@ The **Columns** card lists every column with its type underneath the name: **Sin
 - **Required**: the column must be filled in before a row can be saved. This is only enforced on columns that are also **Editable**.
 - **Default value**: the value a new row starts with.
 
-<!-- TODO(screenshot): frontend-editing-5
-  screen: Tables › Employee Directory › Frontend Editing › Columns
-  table: Employee Directory
-  state: Columns card with Name and Email set to Editable and Required, Department with a default value
-  highlight: Editable
-  view: admin
-  alt: Columns card with Editable, Required and Default value for each column
-  blocked: blocked: Employee Directory has Frontend editing OFF (saved) and the switch saves immediately when toggled; needs Frontend editing = on saved on table Employee Directory (Pro, own-data-only off, roles e.g. Editor); Name and Email Editable+Required, Department default value (needs saved Columns settings or typed unsaved)
--->
+![Columns card with Editable, Required and Default value for each column](/images/advanced-features/frontend-editing/5.-Columns-Card-With-Editable-Required.webp)
 
 ## On your site
 

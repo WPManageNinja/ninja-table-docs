@@ -1,0 +1,60 @@
+{
+ "doc": "docs/table-management/define-permission-for-table-users.md",
+ "outDir": "public/images/table-management/define-permission-table",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/tools/permission"
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "click": {
+    "selector": ".nt-roles label",
+    "hasText": "Editor"
+   }
+  },
+  {
+   "click": {
+    "selector": ".nt-roles label",
+    "hasText": "Shop Manager"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "shot": {
+    "name": "1.-Permissions-Settings-With-Role-Checkboxes-Under",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     ".nt-roles"
+    ]
+   }
+  },
+  {
+   "click": ".nt-settings-cards .el-switch"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "shot": {
+    "name": "2.-Custom-SQL-Module-Card",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     {
+      "row": "Let these roles write SQL queries",
+      "part": "row"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -13,14 +13,7 @@ Once a chart is saved, show it on your site with its **shortcode**, with the **N
 2. Copy the shortcode from the **ShortCode** column. It looks like `[ninja_charts id="1"]`, where the number is the chart's ID.
 3. Paste it into a page, post or any place that accepts shortcodes (in the block editor, use a **Shortcode** block).
 
-<!-- TODO(screenshot): embed-ninja-charts-1
-  screen: Ninja Tables › Charts
-  table: -
-  state: All Charts list with the ShortCode column of one chart highlighted
-  highlight: ShortCode column
-  view: admin
-  alt: ShortCode column in the All Charts list
--->
+![ShortCode column in the All Charts list](/images/ninja-charts/embed-charts/1.-ShortCode-Column-In-The-All-Charts.webp)
 
 `id` is the only attribute. If the ID doesn't match a chart (for example, the chart was deleted), the page shows "Invalid ShortCode...!".
 
@@ -43,6 +36,7 @@ The shortcode is added where your cursor is.
   highlight: Insert Shortcode button
   view: admin
   alt: Classic editor window for inserting a Ninja Charts shortcode
+  blocked: the classic editor (TinyMCE) is not available on the dev site and no Classic Editor plugin is installed
 -->
 
 ## Use the Ninja Charts block
@@ -52,14 +46,7 @@ The **Ninja Charts** block (in the **Widgets** category) builds a chart right in
 1. In the block editor, click the **+** inserter and add **Ninja Charts**.
 2. Open the block sidebar and work through the panels below.
 
-<!-- TODO(screenshot): embed-ninja-charts-3
-  screen: Posts › Add New (block editor) › Ninja Charts block
-  table: -
-  state: Ninja Charts block inserted with the General and Data Management panels open in the sidebar
-  highlight: Chart type field
-  view: admin
-  alt: Ninja Charts block with its sidebar panels
--->
+![Ninja Charts block with its sidebar panels](/images/ninja-charts/embed-charts/3.-Ninja-Charts-Block-With-Its-Sidebar.webp)
 
 The sidebar panels:
 

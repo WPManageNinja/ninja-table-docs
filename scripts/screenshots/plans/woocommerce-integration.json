@@ -1,0 +1,17 @@
+{"doc":"docs/data-sources/woocommerce-integration.md",
+"outDir":"public/images/data-sources/woocommerce-integration",
+"viewport":{"width":1440,"height":900},
+"steps":[
+{"admin":"/tables/1343"},{"wait":4000},
+{"click":{"role":"button","name":"Source settings"}},{"wait":3000},
+{"click":{"selector":".nt-source-tabs button","hasText":"Appearance"}},{"wait":1500},
+{"shot":{"name":"3.-Appearance-Section-Of-The-WooCommerce-Source","clip":{"x":720,"y":32,"width":720,"height":360},"highlights":[{"selector":"label","hasText":"Show bulk action"}]}},
+{"click":{"selector":".nt-source-tabs button","hasText":"Add new column"}},{"wait":1500},
+{"fill":{"selector":"input[placeholder='e.g. Price']","value":"SKU"}},
+{"fill":{"selector":"input[placeholder='e.g. price']","value":"sku"}},
+{"click":{"text":"Select data type"}},{"wait":800},
+{"click":{"selector":".el-select-dropdown__item","hasText":"Product Data"}},{"wait":800},
+{"click":{"text":"Select Data Attribute"}},{"wait":800},
+{"click":{"selector":".el-select-dropdown__item","hasText":"Product SKU"}},{"wait":800},
+{"shot":{"name":"4.-Add-New-Column-Section-With-Product","clip":{"x":720,"y":32,"width":720,"height":800},"highlights":[{"selector":".nt-field","hasText":"Field value"}]}}
+]}

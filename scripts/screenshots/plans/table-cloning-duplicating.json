@@ -1,0 +1,17 @@
+{
+  "doc": "docs/table-management/table-cloning-duplicating.md",
+  "outDir": "public/images/table-management/table-cloning-duplicating",
+  "viewport": { "width": 1440, "height": 900 },
+  "steps": [
+    { "admin": "/" },
+    { "wait": 2000 },
+    { "click": ".nt-tables__search" },
+    { "fill": { "selector": ".nt-tables__search input", "value": "Product Price List" } },
+    { "wait": 1500 },
+    { "hover": "tr:has-text(\"Current prices and stock\")" },
+    { "click": "tr:has-text(\"Current prices and stock\") [aria-label=\"More actions\"]" },
+    { "wait": 700 },
+    { "eval": "[...document.querySelectorAll('.el-dropdown-menu__item')].filter(e=>e.offsetParent&&e.textContent.trim()==='Duplicate').forEach(e=>e.setAttribute('data-hl','1'))" },
+    { "shot": { "name": "1.-Duplicate-Option-In-A-Table-S", "clip": "app", "crop": {"height": 1000}, "highlights": ["[data-hl]"] } }
+  ]
+}

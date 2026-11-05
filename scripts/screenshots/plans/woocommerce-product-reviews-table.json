@@ -1,0 +1,49 @@
+{
+ "doc": "docs/data-sources/woocommerce-product-reviews-table.md",
+ "outDir": "public/images/data-sources/woocommerce-reviews-table",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "_note": "Only shot 3 is taken. Table 1354 'DOCSHOT Customer Feedback'. Shots 1, 2, 4 blocked: lorem-ipsum product tags in the drawer and no approved reviews.",
+ "steps": [
+  {
+   "admin": "/tables/1354"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Source settings"
+   }
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "click": {
+    "selector": ".nt-source-tabs button",
+    "hasText": "Appearance"
+   }
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "shot": {
+    "name": "3.-Appearance-Section-With-The-Star-Color",
+    "clip": {
+     "x": 720,
+     "y": 32,
+     "width": 720,
+     "height": 300
+    },
+    "highlights": [
+     "div.flex.flex-col:has-text('Filled star color'):not(:has-text('Empty star color'))"
+    ]
+   }
+  }
+ ]
+}

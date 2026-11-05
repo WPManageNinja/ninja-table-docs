@@ -1,0 +1,8 @@
+{"doc":"docs/data-sources/connected-tables-overview.md",
+"outDir":"public/images/data-sources/connected-overview",
+"viewport":{"width":1440,"height":900},
+"steps":[
+{"admin":"/tables/1323"},{"wait":4000},
+{"click":{"role":"button","name":"Source settings"}},{"wait":4000},
+{"shot":{"name":"2.-Source-Banner-Reading-Rows-Come","clip":"app"}}
+]}

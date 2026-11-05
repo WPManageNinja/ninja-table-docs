@@ -7,14 +7,7 @@ description: "A tour of Ninja Tables Settings: General, Global appearance, Permi
 
 **Settings** holds the site-wide options for Ninja Tables. Open it with the **gear** icon in the top bar. Settings for a single table live inside that table's editor instead.
 
-<!-- TODO(screenshot): tools-and-settings-1
-  screen: Settings › General
-  table: -
-  state: Settings open on General with the side navigation visible
-  highlight: Settings side navigation
-  view: admin
-  alt: Ninja Tables Settings with the side navigation listing its sections
--->
+![Ninja Tables Settings with the side navigation listing its sections](/images/table-management/tools-settings/1.-Ninja-Tables-Settings-With-The-Side.webp)
 
 Settings has five sections, listed on the left:
 
@@ -42,14 +35,7 @@ General, Global appearance and Permissions share the same footer. **Save setting
 
 If a table doesn't load because of a conflict with another plugin or your theme, try one of the first two options.
 
-<!-- TODO(screenshot): tools-and-settings-2
-  screen: Settings › General
-  table: -
-  state: Global Javascript Error Handling card with the three radio options
-  highlight: Console Log JS Errors Silently option
-  view: admin
-  alt: General settings showing the JavaScript error handling options
--->
+![General settings showing the JavaScript error handling options](/images/table-management/tools-settings/2.-General-Settings-Showing-The-JavaScript-Error.webp)
 
 ## Global appearance
 
@@ -67,14 +53,7 @@ The card is titled **Global appearance Settings**. New tables start with these s
 
 Click **Save settings** when you're done.
 
-<!-- TODO(screenshot): tools-and-settings-3
-  screen: Settings › Global appearance
-  table: -
-  state: Global appearance card showing color swatches, styling library and the Show and Default Features groups
-  highlight: Default Table Color swatches
-  view: admin
-  alt: Global appearance settings for new tables
--->
+![Global appearance settings for new tables](/images/table-management/tools-settings/3.-Global-Appearance-Settings-For-New-Tables.webp)
 
 To copy the design of a table you've already styled, see [Use a design as the default](/use-design-as-default).
 
@@ -107,11 +86,4 @@ A colored alert above the card explains anything that needs attention:
 - **Could not check your license**: Ninja Tables couldn't reach the license server. The alert shows the message it received. Click **Refresh** to try again.
 - **Please update Ninja Tables Pro**: your Pro version is too old to manage the license here. Update Pro first.
 
-<!-- TODO(screenshot): tools-and-settings-4
-  screen: Settings › License
-  table: -
-  state: License card with an active license showing status, expiry and the license key
-  highlight: Status badge
-  view: admin
-  alt: License settings showing an active Ninja Tables Pro license
--->
+![License settings showing an active Ninja Tables Pro license](/images/table-management/tools-settings/4.-License-Settings-Showing-An-Active-Ninja.webp)

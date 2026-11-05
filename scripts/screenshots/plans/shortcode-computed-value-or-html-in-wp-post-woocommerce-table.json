@@ -1,0 +1,141 @@
+{
+ "doc": "docs/wordpress-integration/shortcode-computed-value-or-html-in-wp-post-woocommerce-table.md",
+ "outDir": "public/images/wordpress-integration/shortcode-computed-value",
+ "viewport": {
+  "width": 1440,
+  "height": 1100
+ },
+ "steps": [
+  {
+   "admin": "/tables/1360"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Source settings"
+   }
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "selector": ".nt-source-tabs button",
+    "hasText": "Add new column"
+   }
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "fill": {
+    "selector": "input[placeholder='e.g. Price']",
+    "value": "Read more"
+   }
+  },
+  {
+   "fill": {
+    "selector": "input[placeholder='e.g. price']",
+    "value": "read_more"
+   }
+  },
+  {
+   "click": {
+    "selector": ".nt-drawer.open .el-select",
+    "hasText": "Select field"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Shortcode"
+   }
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "fill": {
+    "selector": ".nt-drawer.open textarea",
+    "value": "<a href=\"{post.permalink}\">Read more</a>"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "shot": {
+    "name": "1.-Add-New-Column-Section",
+    "clip": {
+     "x": 720,
+     "y": 32,
+     "width": 720,
+     "height": 940
+    },
+    "highlights": [
+     {
+      "selector": ".nt-field",
+      "hasText": "Field value"
+     }
+    ]
+   }
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "close"
+   }
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 760
+   }
+  },
+  {
+   "shot": {
+    "name": "2.-Rows-Grid-With-A-Column-Built",
+    "clip": "app"
+   }
+  },
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   }
+  },
+  {
+   "front": "/docshot-apparel-shop/"
+  },
+  {
+   "wait": 2500
+  },
+  {
+   "hideCss": ".wp-block-post-title, h1.wp-block-post-title, .entry-title"
+  },
+  {
+   "shot": {
+    "name": "3.-Product-Table-On-The-Page",
+    "clip": {
+     "x": 100,
+     "y": 120,
+     "width": 1240,
+     "height": 780
+    }
+   }
+  }
+ ],
+ "_note": "Table 1360 'DOCSHOT Latest Posts' (WP Posts: Title/Author/Date) was created once through Create Table, given a post_author Not In admin condition and a saved 'Read more' column (key read_more, template <a href=\"{post.permalink}\">Read more</a>) through the UI. The plan does not click Add column again. Shot 3 uses table 1343 'DOCSHOT Apparel Catalog' (page 1351 'DOCSHOT Apparel Shop'), where a shortcode column 'Add to cart button' (key cart_button, [add_to_cart id=\"{post.ID}\" show_price=\"false\"]) was added once through the UI."
+}

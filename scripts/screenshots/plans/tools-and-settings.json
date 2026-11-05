@@ -1,11 +1,71 @@
 {
-  "doc": "docs/table-management/tools-and-settings.md",
-  "outDir": "public/images/table-management/tools-settings",
-  "viewport": { "width": 1600, "height": 1100 },
-  "steps": [
-    { "admin": "/tools/global_settings" },
-    { "shot": { "name": "1.-tools-settings-01", "clip": "app", "crop": "auto" } },
-    { "admin": "/tools/default_table_appearance" },
-    { "shot": { "name": "2.-Global-Apperrance-02", "clip": "app", "crop": "auto" } }
-  ]
+ "doc": "docs/table-management/tools-and-settings.md",
+ "outDir": "public/images/table-management/tools-settings",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/tools/global_settings"
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "shot": {
+    "name": "1.-Ninja-Tables-Settings-With-The-Side",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     ".nt-settings__nav"
+    ]
+   }
+  },
+  {
+   "shot": {
+    "name": "2.-General-Settings-Showing-The-JavaScript-Error",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     {
+      "selector": ".el-radio, .el-radio-button, label",
+      "hasText": "Console Log JS Errors Silently"
+     }
+    ]
+   }
+  },
+  {
+   "admin": "/tools/default_table_appearance"
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "shot": {
+    "name": "3.-Global-Appearance-Settings-For-New-Tables",
+    "clip": "app",
+    "crop": "auto"
+   }
+  },
+  {
+   "admin": "/tools/licensing"
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "eval": "const k=document.querySelector('.nt-license__key'); if(k)k.textContent='8f60\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u20228cf2'; document.querySelectorAll('.nt-license__row').forEach(r=>{if(/Licensed to/i.test(r.textContent)){const dd=r.querySelector('dd'); if(dd)dd.innerHTML='Alex Morgan<br><small>al*****@e*****.com</small>';}});"
+  },
+  {
+   "shot": {
+    "name": "4.-License-Settings-Showing-An-Active-Ninja",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     ".nt-license .nt-badge, .nt-license__head .nt-badge"
+    ]
+   }
+  }
+ ]
 }

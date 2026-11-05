@@ -4,7 +4,7 @@
  "adminPage": "ninja-charts",
  "appRoot": "#ninja-charts-app",
  "viewport": {
-  "width": 1440,
+  "width": 1800,
   "height": 900
  },
  "steps": [
@@ -30,13 +30,13 @@
    }
   },
   {
-   "click": ".el-dropdown >> nth=0"
+   "click": "tr .el-dropdown >> nth=0"
   },
   {
    "wait": 800
   },
   {
-   "eval": "document.querySelectorAll('.el-popper.el-tooltip').forEach(e=>e.remove())"
+   "eval": "document.querySelectorAll('.el-popper:not(.el-dropdown__popper)').forEach(e=>e.remove())"
   },
   {
    "shot": {
@@ -44,12 +44,12 @@
     "clip": {
      "x": 170,
      "y": 95,
-     "width": 1270,
-     "height": 520
+     "width": 1630,
+     "height": 420
     },
     "highlights": [
      {
-      "selector": ".el-dropdown-menu__item",
+      "selector": ".el-dropdown-menu__item:visible",
       "hasText": "Export CSV"
      }
     ]
@@ -110,7 +110,7 @@
   },
   {
    "upload": {
-    "file": "/private/tmp/claude-503/-Users-authlab-24-Desktop-WPManageNinja-Docs-ninja-table-docs/db5ad483-4745-45e4-abcd-453b3adb1dc4/scratchpad/ch/traffic.csv"
+    "file": "/private/tmp/claude-503/-Users-authlab-24-Desktop-WPManageNinja-Docs-ninja-table-docs/5293d53e-a523-47f6-9c42-9f35e034c0a3/scratchpad/ch/traffic.csv"
    }
   },
   {

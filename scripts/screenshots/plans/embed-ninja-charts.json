@@ -1,0 +1,71 @@
+{
+ "doc": "docs/ninja-charts/embed-ninja-charts.md",
+ "outDir": "public/images/ninja-charts/embed-charts",
+ "adminPage": "ninja-charts",
+ "appRoot": "#ninja-charts-app",
+ "viewport": {
+  "width": 1800,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/chart-list"
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "eval": "(()=>{const ths=[...document.querySelectorAll('th')];const th=ths.find(t=>t.innerText.trim()==='ShortCode');const tb=document.querySelector('tbody');const a=th.getBoundingClientRect(),b=tb.getBoundingClientRect();const d=document.createElement('div');d.id='nc-hl';d.style.cssText='position:absolute;pointer-events:none;left:'+(a.left+scrollX-8)+'px;top:'+(a.top+scrollY+8)+'px;width:'+(a.width+4)+'px;height:'+(b.bottom-a.top-12)+'px';document.body.appendChild(d);})()"
+  },
+  {
+   "shot": {
+    "name": "1.-ShortCode-Column-In-The-All-Charts",
+    "clip": {
+     "element": ".el-card",
+     "pad": 24
+    },
+    "highlights": [
+     "#nc-hl"
+    ]
+   }
+  },
+  {
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   }
+  },
+  {
+   "front": "/wp-admin/post-new.php",
+   "hideThemeHeader": false,
+   "contentWidth": false,
+   "waitUntil": "load"
+  },
+  {
+   "wait": 5000
+  },
+  {
+   "eval": "(async()=>{try{wp.data.dispatch('core/preferences').set('core/edit-post','welcomeGuide',false);wp.data.dispatch('core/preferences').set('core/edit-post','fullscreenMode',true);}catch(e){}const p=wp.blocks.createBlock('core/paragraph',{content:'Here is how our sales have grown this year.'});const b=wp.blocks.createBlock('ninja-charts/chart-block');wp.data.dispatch('core/block-editor').insertBlocks([p,wp.blocks.createBlock('core/spacer',{height:'70px'}),b]);wp.data.dispatch('core/block-editor').selectBlock(b.clientId);wp.data.dispatch('core/editor').editPost({title:'Quarterly Sales Overview'});})()"
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "hideCss": "#wpadminbar, button.button-primary.button-large, #adminmenumain"
+  },
+  {
+   "shot": {
+    "name": "3.-Ninja-Charts-Block-With-Its-Sidebar",
+    "clip": {
+     "x": 0,
+     "y": 32,
+     "width": 1440,
+     "height": 868
+    },
+    "highlights": [
+     ".interface-complementary-area select >> nth=1"
+    ]
+   }
+  }
+ ]
+}

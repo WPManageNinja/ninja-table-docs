@@ -1,0 +1,97 @@
+{
+ "doc": "docs/data-sources/woocommerce-product-average-rating-column.md",
+ "outDir": "public/images/data-sources/woocommerce-average-rating",
+ "viewport": {
+  "width": 1440,
+  "height": 1150
+ },
+ "steps": [
+  {
+   "admin": "/tables/1343"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Source settings"
+   }
+  },
+  {
+   "wait": 3000
+  },
+  {
+   "click": {
+    "selector": ".nt-source-tabs button",
+    "hasText": "Add new column"
+   }
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "fill": {
+    "selector": "input[placeholder='e.g. Price']",
+    "value": "Avg. rating"
+   }
+  },
+  {
+   "fill": {
+    "selector": "input[placeholder='e.g. price']",
+    "value": "avg_rating"
+   }
+  },
+  {
+   "click": {
+    "text": "Select data type"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Product Data"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "text": "Select Data Attribute"
+   }
+  },
+  {
+   "wait": 800
+  },
+  {
+   "click": {
+    "selector": ".el-select-dropdown__item",
+    "hasText": "Product Average Rating"
+   }
+  },
+  {
+   "wait": 1000
+  },
+  {
+   "shot": {
+    "name": "1.-Add-New-Column-Section",
+    "clip": {
+     "x": 720,
+     "y": 32,
+     "width": 720,
+     "height": 990
+    },
+    "highlights": [
+     {
+      "selector": ".nt-field",
+      "hasText": "Field value"
+     }
+    ]
+   }
+  }
+ ]
+}

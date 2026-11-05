@@ -7,14 +7,7 @@ description: View, edit, duplicate, export, delete and import Ninja Charts from 
 
 The **All Charts** list is where you find, preview, edit, copy, export, delete and import your charts. Open it from **Ninja Tables** › **Charts**. It needs [Ninja Charts](/how-to-install-ninja-charts) to be active, and only users who are allowed to manage Ninja Tables (administrators by default; see [Define Permission for Table Users](/define-permission-for-table-users)) can see charts. Without Ninja Tables, only administrators can.
 
-<!-- TODO(screenshot): manage-ninja-charts-1
-  screen: Ninja Tables › Charts
-  table: -
-  state: All Charts list with three charts, the Import CSV and Add New buttons and the bulk action dropdown visible
-  highlight: Import CSV button
-  view: admin
-  alt: All Charts list with Import CSV, Add New and the bulk action dropdown
--->
+![All Charts list with Import CSV, Add New and the bulk action dropdown](/images/ninja-charts/manage-charts/1.-All-Charts-List-With-Import-CSV.webp)
 
 ## The chart list
 
@@ -52,14 +45,7 @@ The row menu has three export options:
 - **Export PNG**: opens the chart in a new tab and downloads it as a PNG image.
 - **Export PDF**: opens the chart in a new tab and downloads it as a PDF. It isn't available for Google Charts, which shows "PDF export is not available for Google Charts."
 
-<!-- TODO(screenshot): manage-ninja-charts-2
-  screen: Ninja Tables › Charts › row menu
-  table: -
-  state: Row menu open showing Duplicate, Export CSV, Export PNG, Export PDF and Delete
-  highlight: Export CSV item
-  view: admin
-  alt: Chart row menu with Duplicate, three export options and Delete
--->
+![Chart row menu with Duplicate, three export options and Delete](/images/ninja-charts/manage-charts/2.-Chart-Row-Menu-With-Duplicate-Three.webp)
 
 ## Delete charts
 
@@ -89,14 +75,7 @@ The first row of the file must be a header row, followed by at least one data ro
 | Scatter (Chart Js) | `x, y` (both numeric) |
 | Bubble (Chart Js) | `x, y, r` (all numeric) |
 
-<!-- TODO(screenshot): manage-ninja-charts-3
-  screen: Ninja Tables › Charts › Import CSV › Upload CSV
-  table: -
-  state: Upload CSV step with a pie chart CSV loaded and the "3 rows parsed" preview
-  highlight: Import Chart button
-  view: admin
-  alt: Import CSV upload step with a parsed preview
--->
+![Import CSV upload step with a parsed preview](/images/ninja-charts/manage-charts/3.-Import-CSV-Upload-Step.webp)
 
 Limits:
 

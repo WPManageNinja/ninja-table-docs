@@ -13,14 +13,7 @@ description: "Make a copy of a table, with its columns, rows and settings, from 
 2. Find the table and click its **More actions** (⋯) button at the end of the row.
 3. Click **Duplicate**.
 
-<!-- TODO(screenshot): table-cloning-duplicating-1
-  screen: Tables
-  table: Product Price List
-  state: More actions menu open with Duplicate highlighted
-  highlight: Duplicate
-  view: admin
-  alt: Duplicate option in a table's More actions menu
--->
+![Duplicate option in a table's More actions menu](/images/table-management/table-cloning-duplicating/1.-Duplicate-Option-In-A-Table-S.webp)
 
 Ninja Tables creates the copy and opens it straight away, in the editor (or in the Drag & Drop builder for a Drag & Drop table). The copy is named after the original with ( Duplicate ) added to the end, with no space before it. Rename it with the pencil next to its name; see [Table title, caption and description](/table-title-description-settings).
 

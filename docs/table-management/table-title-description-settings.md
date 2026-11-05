@@ -13,14 +13,7 @@ On the [Create a table](/table-types-overview) screen, every panel starts with a
 
 The Default table and Upload a file panels also have a **Description** field. Its editor lets you add bold and italic text, colors, lists, links and media.
 
-<!-- TODO(screenshot): table-title-description-settings-1
-  screen: Tables › New table › Default table
-  table: -
-  state: Default table panel with Table name filled and the Description editor visible
-  highlight: Description field
-  view: admin
-  alt: Default table panel showing the Table name and Description fields
--->
+![Default table panel showing the Table name and Description fields](/images/table-management/table-title-description/1.-Default-Table-Panel-Showing-The-Table.webp)
 
 ## Change them later in Table details
 
@@ -32,14 +25,7 @@ The Default table and Upload a file panels also have a **Description** field. It
    - **Table description**: optional. Extra information about the table, with the same formatting editor.
 4. Click **Update**, or **Cancel** to close the dialog without saving.
 
-<!-- TODO(screenshot): table-title-description-settings-2
-  screen: Tables › Product Price List › Table details dialog
-  table: Product Price List
-  state: Table details dialog open with all three fields visible
-  highlight: Table caption field
-  view: admin
-  alt: Table details dialog with the title, caption and description fields
--->
+![Table details dialog with the title, caption and description fields](/images/table-management/table-title-description/2.-Table-Details-Dialog-With-The-Title.webp)
 
 The description also appears under the table's name in the Tables list, as one line of plain text.
 
