@@ -24,7 +24,7 @@ The switch in the **Sorting** heading is on by default. While it is on, visitors
 
 Turn the switch off and no column heading sorts. The rows stay in your default order.
 
-To stop only one column from being sortable, turn off **Sortable** in that column's **Advanced** settings (Pro). See [Advanced Column Options](/advanced-settings).
+To stop only one column from being sortable, turn off **Sortable** in that column's **Advanced** settings (Pro). See [Advanced Column Options](/guide/column-settings/advanced-settings).
 
 ## Default Order
 
@@ -60,7 +60,7 @@ Use the order you set by dragging rows. This is the choice for a ranking or a ha
 
 1. Click **Manual**. A hint says "Drag rows into order in Table Rows → Sort manually."
 2. Click **Open Table Rows** in the hint.
-3. Drag the rows into the order you want. See [Sort Rows Manually](/rearrangement-of-rows-in-ninja-tables-manual-row-sort).
+3. Drag the rows into the order you want. See [Sort Rows Manually](/guide/table-management/rearrangement-of-rows-in-ninja-tables-manual-row-sort).
 
 On the free version, clicking **Manual** opens the upgrade popup and nothing changes. On Pro, **Manual** is greyed out if the table's data source cannot be ordered by hand. If your Pro plugin is out of date, an upgrade notice shows instead.
 
@@ -72,7 +72,7 @@ Visitor sorting and default order work together. With sorting on, a visitor star
 
 ::: faq
 == Visitors can't click the column headings to sort.
-Check that the switch in the **Sorting** heading is on, and that you clicked **Save**. A column with **Sortable** turned off (Pro) will not sort either. See [Advanced Column Options](/advanced-settings).
+Check that the switch in the **Sorting** heading is on, and that you clicked **Save**. A column with **Sortable** turned off (Pro) will not sort either. See [Advanced Column Options](/guide/column-settings/advanced-settings).
 == I picked a default order but visitors see a different one.
 A visitor who clicks a heading overrides the default for their own view. Reload the page to see your default order again. Also check that you clicked **Save**.
 == Why is Created Date greyed out?
@@ -85,7 +85,7 @@ No. **By Column** sorts by one column. Visitors sort by one column at a time as 
 
 ## Related
 
-- Drag rows into your own order: [Sort Rows Manually](/rearrangement-of-rows-in-ninja-tables-manual-row-sort).
-- Stop one column from sorting, or tune a column: [Advanced Column Options](/advanced-settings).
-- Let visitors search the table: [Search Box](/add-or-remove-search-or-filter-functionality).
-- Split long tables into pages: [Pagination](/pagination).
+- Drag rows into your own order: [Sort Rows Manually](/guide/table-management/rearrangement-of-rows-in-ninja-tables-manual-row-sort).
+- Stop one column from sorting, or tune a column: [Advanced Column Options](/guide/column-settings/advanced-settings).
+- Let visitors search the table: [Search Box](/guide/styling-design/add-or-remove-search-or-filter-functionality).
+- Split long tables into pages: [Pagination](/guide/styling-design/pagination).

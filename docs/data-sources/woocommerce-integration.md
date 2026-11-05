@@ -7,7 +7,7 @@ description: "Build a WooCommerce product table with add to cart, variations, ca
 
 A **WooCommerce products table** (Pro) lists your store's products in a searchable, sortable table with an **Add To Cart** button on every row. It suits wholesale order forms, product catalogs and quick-order pages. The table reads your products live, so prices and stock stay current.
 
-You need WooCommerce active. If it isn't, the **WooCommerce products** drawer tells you to install or activate it. On the Free plugin the drawer shows a Pro notice instead of the form, and if Pro is out of date it asks you to update it. See [How connected tables work](/connected-tables-overview).
+You need WooCommerce active. If it isn't, the **WooCommerce products** drawer tells you to install or activate it. On the Free plugin the drawer shows a Pro notice instead of the form, and if Pro is out of date it asks you to update it. See [How connected tables work](/guide/data-sources/connected-tables-overview).
 
 ## Create a WooCommerce products table
 
@@ -78,7 +78,7 @@ These options add cart features around the table. Click **Save settings** to kee
 - **Show cart details before table** / **Show cart details after table**: a cart summary above or below the table, for example "2 Items | $45.00". It stays hidden until the visitor's cart has something in it.
 - **Show go to cart button** and **Show checkout button**: buttons inside that cart summary that take the customer to the cart or to checkout. They only appear together with the summary, so keep at least one of the two cart details options on.
 - **Cart text** and **Checkout text**: the wording on those buttons. The defaults are "View cart" and "Checkout".
-- **Show bulk action**: adds checkboxes and a **Bulk Actions** menu so customers can add several products to the cart at once or compare them. See [Bulk add to cart & product comparison](/woocommerce-product-comparison-bulk-add-to-cart).
+- **Show bulk action**: adds checkboxes and a **Bulk Actions** menu so customers can add several products to the cart at once or compare them. See [Bulk add to cart & product comparison](/guide/table-management/woocommerce-product-comparison-bulk-add-to-cart).
 
 <!-- TODO(screenshot): woocommerce-integration-3
   screen: Tables › DOCTEST woo › Table Rows › Source settings › Appearance
@@ -109,19 +109,19 @@ Add a column filled from your product data, for example the product SKU:
   blocked: needs a demo WooCommerce store: only 2 placeholder products (lorem-ipsum tags) exist and no saved demo Woo table, so no natural drawer or front-end shot; the only existing Woo tables are DOCTEST-titled
 -->
 
-Other field types include Post Meta, Shortcode / Computed Value or HTML, Featured Image, Post Data and Product Taxonomy, plus Advanced Custom Fields (ACF) when the ACF plugin is active. Product Data also offers Product Price, Product Stock Status, Product Quantity input field, Buy Now Button and [Product Average Rating](/woocommerce-product-average-rating-column). See [Dynamic columns reference](/dynamic-columns-reference) for the full list.
+Other field types include Post Meta, Shortcode / Computed Value or HTML, Featured Image, Post Data and Product Taxonomy, plus Advanced Custom Fields (ACF) when the ACF plugin is active. Product Data also offers Product Price, Product Stock Status, Product Quantity input field, Buy Now Button and [Product Average Rating](/guide/data-sources/woocommerce-product-average-rating-column). See [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference) for the full list.
 
 ## Customize the table
 
 The rows are read-only, can't be sorted by dragging and can't be imported, because they come from WooCommerce. The rest of the editor works like any other table:
 
-- Column options (name, type, alignment, conditional formatting) from the column header › **Column settings**. See [Basic column settings](/basic-settings).
-- Colors, fonts, search, pagination and mobile layout in the **Styling** tab of **Table Design**. See [Table style settings](/table-style-settings).
-- [Custom filters](/custom-filters) (Pro), for example a price range or category filter.
-- Your own styles in **Custom CSS/JS**. See [Table styling & CSS selectors](/table-styling-css-selector).
+- Column options (name, type, alignment, conditional formatting) from the column header › **Column settings**. See [Basic column settings](/guide/column-settings/basic-settings).
+- Colors, fonts, search, pagination and mobile layout in the **Styling** tab of **Table Design**. See [Table style settings](/guide/styling-design/table-style-settings).
+- [Custom filters](/guide/table-settings/custom-filters) (Pro), for example a price range or category filter.
+- Your own styles in **Custom CSS/JS**. See [Table styling & CSS selectors](/guide/table-management/table-styling-css-selector).
 
 In **Table Configuration**, the **Disable Caching** and **Display Frontend Loader** switches are not shown for WooCommerce tables.
 
-Copy the shortcode from the editor header and paste it into a page, or use the Ninja Tables block. See [Embed a table](/embed-tables).
+Copy the shortcode from the editor header and paste it into a page, or use the Ninja Tables block. See [Embed a table](/guide/wordpress-integration/embed-tables).
 
-For a table of product reviews instead of products, see [WooCommerce product reviews table](/woocommerce-product-reviews-table). For FluentCart stores, see [FluentCart integration](/fluentcart-integration).
+For a table of product reviews instead of products, see [WooCommerce product reviews table](/guide/data-sources/woocommerce-product-reviews-table). For FluentCart stores, see [FluentCart integration](/guide/data-sources/fluentcart-integration).

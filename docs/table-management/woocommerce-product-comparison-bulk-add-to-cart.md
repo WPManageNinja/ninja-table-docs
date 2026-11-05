@@ -9,8 +9,8 @@ description: "Let shoppers tick several products in a WooCommerce or FluentCart 
 
 Both features work in:
 
-- **WooCommerce products** tables (Pro). See [WooCommerce integration](/woocommerce-integration).
-- **FluentCart products** tables (Free). See [FluentCart integration](/fluentcart-integration).
+- **WooCommerce products** tables (Pro). See [WooCommerce integration](/guide/data-sources/woocommerce-integration).
+- **FluentCart products** tables (Free). See [FluentCart integration](/guide/data-sources/fluentcart-integration).
 
 ## Turn on bulk actions
 

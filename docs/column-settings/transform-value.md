@@ -34,7 +34,7 @@ Click a row in the **Reference values** list to insert its shortcode into the Tr
 
 For **Numeric value** columns, thousand separators are removed before the value is put in, so `1,200` becomes `1200` (and `1.200,5` becomes `1200.5` on a European style column). A numeric result on a European style column is shown with a decimal comma. Values placed in a link or image address (`href`, `src`) are checked for safety and encoded.
 
-You can also use Ninja Tables placeholders such as `{user:display_name}` in the box. They are filled in on the server when the table loads. See [Shortcode reference](/shortcode-reference).
+You can also use Ninja Tables placeholders such as `{user:display_name}` in the box. They are filled in on the server when the table loads. See [Shortcode reference](/guide/advanced-features/shortcode-reference).
 
 ## Example: turn text into a link
 
@@ -93,4 +93,4 @@ The result column now shows the sum for every row.
 
 ![Result column showing the sum of two columns](/images/column-settings/transform-value/2.-Result-Column-Showing-The-Sum.webp)
 
-For more calculation examples, see [Formulas & calculations](/row-column-data-calculation). To show images and lightboxes from a URL column, see [Image lightbox with Transform](/image-lightbox-using-column-transform-value).
+For more calculation examples, see [Formulas & calculations](/guide/table-management/row-column-data-calculation). To show images and lightboxes from a URL column, see [Image lightbox with Transform](/guide/table-formatting/image-lightbox-using-column-transform-value).

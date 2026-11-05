@@ -5,4 +5,4 @@ description: "The table's search texts (placeholder, no-results message, dropdow
 
 # Language Settings
 
-The old **Language settings** have moved. The search placeholder, the "no results" message and the search dropdown heading are now set in **Table Design** › **Features** › **Search**. See [Search Box](/add-or-remove-search-or-filter-functionality).
+The old **Language settings** have moved. The search placeholder, the "no results" message and the search dropdown heading are now set in **Table Design** › **Features** › **Search**. See [Search Box](/guide/styling-design/add-or-remove-search-or-filter-functionality).

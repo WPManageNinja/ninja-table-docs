@@ -28,7 +28,7 @@ On your site the layout switches at fixed widths, whatever you drag in the previ
 
 ## Enable Responsive Table
 
-**Enable Responsive Table** turns the responsive layout on. It is on for new tables and for every [template](/drag-drop-templates).
+**Enable Responsive Table** turns the responsive layout on. It is on for new tables and for every [template](/guide/drag-drop-tables/drag-drop-templates).
 
 While it is off, the tab shows only the switch and the hint "Enable Responsive Table To Show Mode Options And Responsive Settings. Existing Settings Are Retained." Your earlier settings come back when you switch it on again.
 
@@ -38,9 +38,9 @@ With **Enable Responsive Table** on, pick **Desktop**, **Tablet** or **Mobile** 
 
 - **Disable Responsive Layout**: use the original table layout on this device instead of rearranging cells. The other options for the device are greyed out.
 - **Cell Stacking Order**: stack cells as a **Row** (default) or a **Column**.
-- **Use Top Row As Header**: repeat the first row as a heading in each stacked group (on by default for new tables; several [templates](/drag-drop-templates) start with it off on mobile or tablet). The builder preview follows this switch. On your live site, a table with two or more rows always uses its first row as the header, so the switch only changes how a one-row table stacks.
+- **Use Top Row As Header**: repeat the first row as a heading in each stacked group (on by default for new tables; several [templates](/guide/drag-drop-tables/drag-drop-templates) start with it off on mobile or tablet). The builder preview follows this switch. On your live site, a table with two or more rows always uses its first row as the header, so the switch only changes how a one-row table stacks.
 - **Items Per Group**: how many columns share one header group. The default is 1 on mobile and 2 on tablet. The highest value you can pick depends on the table: the number of rows minus one, the number of cells when **Use Top Row As Header** is off, or the number of columns in a one-row table. In a one-row table with **Use Top Row As Header** on, it is locked.
-- **Group Divider Thickness (Px)**: the space between stacked groups (1–10, default 5). It is locked when the table has only one row, when **Use Top Row As Header** is off, when **Separate Columns/Rows** is on in the [table settings](/ninja-tables-drag-and-drop-table-settings), or when **Items Per Group** is at its highest value.
+- **Group Divider Thickness (Px)**: the space between stacked groups (1–10, default 5). It is locked when the table has only one row, when **Use Top Row As Header** is off, when **Separate Columns/Rows** is on in the [table settings](/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings), or when **Items Per Group** is at its highest value.
 
 The **Desktop** layout shows **Top Row As Header** ("Use The First Row As Table Headings.") and **Static Top Row** ("Keep The First Row Visible While Scrolling."). Both are off and can't be changed; desktop always uses the normal layout.
 

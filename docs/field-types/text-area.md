@@ -19,10 +19,10 @@ The **Text area** column type holds longer text, such as product details, notes 
 ## Enter values
 
 - **In the grid:** click a cell to edit it in a multi-line box. Click away to save.
-- **In the row drawer:** click **Add data**, or the pencil icon on a row. The text box starts 3 lines tall and grows up to 8 lines as you type. Click **Add row** or **Update** to save. See [Working in Table Rows](/working-in-table-rows).
+- **In the row drawer:** click **Add data**, or the pencil icon on a row. The text box starts 3 lines tall and grows up to 8 lines as you type. Click **Add row** or **Update** to save. See [Working in Table Rows](/guide/creating-tables/working-in-table-rows).
 
 ## How it looks on your site
 
-Visitors see the text in the cell. The column is shown as text, not as an HTML field, so use the [HTML field](/html-field) type if you need paragraphs, lists or links. Simple HTML in a text area cell works the same way as in the [Single line text field](/single-line-text-field).
+Visitors see the text in the cell. The column is shown as text, not as an HTML field, so use the [HTML field](/guide/field-types/html-field) type if you need paragraphs, lists or links. Simple HTML in a text area cell works the same way as in the [Single line text field](/guide/field-types/single-line-text-field).
 
 ![Table showing a text area column on the front end](/images/field-types/text-area/1.-Table-Showing-A-Text-Area-Column.webp)

@@ -13,7 +13,7 @@ The first time you open **Ninja Tables**, the plugin helps you get to a publishe
 | [Empty state](#skip-the-setup) | You skipped the setup and still have no tables | Create or import a table |
 | [Welcome banner](#see-the-welcome-banner) | Tables list, until you dismiss it | The x button |
 
-After onboarding, build and publish a table by hand with the [Quick start](/onboarding-setup-guide).
+After onboarding, build and publish a table by hand with the [Quick start](/guide/getting-started/onboarding-setup-guide).
 
 ## Use the guided setup
 
@@ -37,22 +37,22 @@ Step 2 is the last step, and it depends on the card you picked. Everything happe
 **Start blank** shows **Set up your table**:
 
 - **Table name**: for example "Pricing table". If you leave it empty, the table is named **My first table**.
-- **Description**: optional. You can change it later in the table's details; see [Table title, caption and description](/table-title-description-settings).
+- **Description**: optional. You can change it later in the table's details; see [Table title, caption and description](/guide/table-management/table-title-description-settings).
 
-Click **Create your table**. Ninja Tables creates an empty table with the **FooTable** engine and opens it on the **Table Rows** tab. Add your columns next; the steps are in the [Quick start](/onboarding-setup-guide).
+Click **Create your table**. Ninja Tables creates an empty table with the **FooTable** engine and opens it on the **Table Rows** tab. Add your columns next; the steps are in the [Quick start](/guide/getting-started/onboarding-setup-guide).
 
 ![Guided setup step 2 with the Table name and Description fields](/images/getting-started/ninja-tables-onboarding/2.-Guided-Setup-Step-2-Table-Name.webp)
 
 The other cards show the same panel you get on the **Create Table** screen:
 
-- **Upload a file** shows the file panel. See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
-- **Connect a data source** first lists the sources: **WP Posts/CPTs**, **WooCommerce products**, **WooCommerce reviews**, **Fluent Forms entries**, **FluentCart products**, **Google Sheets**, **Remote CSV / JSON** and **Custom SQL query**. Click one to open its panel, and use the back arrow next to the title to pick another source. **Fluent Forms entries** and **FluentCart products** stay in the list when their plugin isn't active, marked **Plugin unavailable**. The WooCommerce cards only appear when WooCommerce is active. Pro sources carry a **Pro** badge on the free version. See [All table types at a glance](/table-types-overview).
-- **Drag & Drop table** shows **Create From Scratch** and **Import From CSV/JSON**, with the ready-made templates below. Click a template and the table is created straight away. See [Create your first Drag & Drop table](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
+- **Upload a file** shows the file panel. See [Import a CSV, Excel or JSON file](/guide/import-export/import-table-data-from-a-csv).
+- **Connect a data source** first lists the sources: **WP Posts/CPTs**, **WooCommerce products**, **WooCommerce reviews**, **Fluent Forms entries**, **FluentCart products**, **Google Sheets**, **Remote CSV / JSON** and **Custom SQL query**. Click one to open its panel, and use the back arrow next to the title to pick another source. **Fluent Forms entries** and **FluentCart products** stay in the list when their plugin isn't active, marked **Plugin unavailable**. The WooCommerce cards only appear when WooCommerce is active. Pro sources carry a **Pro** badge on the free version. See [All table types at a glance](/guide/creating-tables/table-types-overview).
+- **Drag & Drop table** shows **Create From Scratch** and **Import From CSV/JSON**, with the ready-made templates below. Click a template and the table is created straight away. See [Create your first Drag & Drop table](/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
 
 ![Guided setup listing the data sources to connect](/images/getting-started/ninja-tables-onboarding/3.-Guided-Setup-Connect-A-Data-Source.webp)
 
 ::: tip
-The **Start blank** card has no engine choice and always makes a FooTable, while the **Create Table** screen defaults to DataTables. If you want DataTables, click **Skip setup** and use **Create Table** instead. See [Create a FooTable](/create-a-footable-table) and [Choose an Engine](/choose-table-engine).
+The **Start blank** card has no engine choice and always makes a FooTable, while the **Create Table** screen defaults to DataTables. If you want DataTables, click **Skip setup** and use **Create Table** instead. See [Create a FooTable](/guide/creating-tables/create-a-footable-table) and [Choose an Engine](/guide/creating-tables/choose-table-engine).
 :::
 
 Click **Back** to return to step 1. The note under the card says the setup is optional and everything in it can be changed later.
@@ -66,13 +66,13 @@ Click **Skip setup** at the bottom left of the card at any time. The setup is re
 
 To bring the guided setup back, click **Use the guided setup instead** on that screen.
 
-The setup and the screens after it remember your choices in your browser, not on the site. See [Find your way around](/admin-navigation).
+The setup and the screens after it remember your choices in your browser, not on the site. See [Find your way around](/guide/getting-started/admin-navigation).
 
 ![Empty state reading You do not have any tables yet](/images/getting-started/ninja-tables-onboarding/4.-Empty-State-No-Tables-Yet.webp)
 
 ## See the welcome banner
 
-A **Welcome to the new Ninja Tables** banner sits at the top of the **Tables** list until you dismiss it. It tells you that your tables, shortcodes and front end are unchanged, and only the admin screens were reorganized. **What moved?** opens a list of where each old screen lives now (close it with **Got it**), and the x hides the banner. The full map is in [Find your way around](/admin-navigation).
+A **Welcome to the new Ninja Tables** banner sits at the top of the **Tables** list until you dismiss it. It tells you that your tables, shortcodes and front end are unchanged, and only the admin screens were reorganized. **What moved?** opens a list of where each old screen lives now (close it with **Got it**), and the x hides the banner. The full map is in [Find your way around](/guide/getting-started/admin-navigation).
 
 ![Welcome banner above the Tables list with the What moved button](/images/getting-started/ninja-tables-onboarding/5.-Welcome-Banner-Above-The-Tables-List.webp)
 
@@ -86,11 +86,11 @@ It only shows while the site has no tables, including none in the trash. If you 
 == Will the setup show again on another computer?
 Yes. Onboarding choices are saved in your browser, not on the site, so another browser or a cleared browser shows them again.
 == Why is my first table a FooTable?
-The guided setup has no engine choice and always creates a FooTable. The **Create Table** screen defaults to DataTables. See [Create a FooTable](/create-a-footable-table) and [FooTable or DataTables](/choose-table-engine).
+The guided setup has no engine choice and always creates a FooTable. The **Create Table** screen defaults to DataTables. See [Create a FooTable](/guide/creating-tables/create-a-footable-table) and [FooTable or DataTables](/guide/creating-tables/choose-table-engine).
 :::
 
 ## Where to go next
 
-- Build and publish a table by hand: [Quick start](/onboarding-setup-guide)
-- See every table type: [All table types at a glance](/table-types-overview)
-- Learn the admin screens: [Find your way around](/admin-navigation)
+- Build and publish a table by hand: [Quick start](/guide/getting-started/onboarding-setup-guide)
+- See every table type: [All table types at a glance](/guide/creating-tables/table-types-overview)
+- Learn the admin screens: [Find your way around](/guide/getting-started/admin-navigation)

@@ -39,7 +39,7 @@ Clicking the image opens a web page or video (such as a YouTube link) in a light
 Clicking the image takes the visitor to a link. For each row, you add the image and a **Target URL**. Tick **Open link in a new window** to open the link in a new tab.
 
 ::: tip Columns saved with File download
-Older columns saved with the **File download** option keep it, with its own **Download button text / HTML** and **Open link in a new window** options. New columns cannot choose it. To offer downloads, use a [Button/Link](/actionable-button-link) column with **Force download** instead.
+Older columns saved with the **File download** option keep it, with its own **Download button text / HTML** and **Open link in a new window** options. New columns cannot choose it. To offer downloads, use a [Button/Link](/guide/field-types/actionable-button-link) column with **Force download** instead.
 :::
 
 ![Click behavior options for an Image column](/images/field-types/image-file-lightbox/2.-Click-Behavior-Options-For-An-Image.webp)
@@ -54,6 +54,6 @@ Image cells are not edited inside the grid.
 
 ## How it looks on your site
 
-Visitors see the thumbnail in the cell. With **Image lightbox** or **Iframe lightbox**, the thumbnail opens the lightbox; with **Link to URL**, it opens your link. To show images from a column of plain image URLs, such as a Google Sheet, see [Image lightbox using Transform value](/image-lightbox-using-column-transform-value).
+Visitors see the thumbnail in the cell. With **Image lightbox** or **Iframe lightbox**, the thumbnail opens the lightbox; with **Link to URL**, it opens your link. To show images from a column of plain image URLs, such as a Google Sheet, see [Image lightbox using Transform value](/guide/table-formatting/image-lightbox-using-column-transform-value).
 
 ![Table with an Image column and an open lightbox](/images/field-types/image-file-lightbox/2.-Table-With-An-Image-Column.webp)

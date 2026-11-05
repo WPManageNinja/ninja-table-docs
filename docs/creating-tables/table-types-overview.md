@@ -5,14 +5,14 @@ description: "Compare the eleven ways to create a table in Ninja Tables, from a 
 
 # All Table Types at a Glance
 
-The **Create a table** screen lists every kind of table you can build in Ninja Tables. Open it from **Create Table** in the top bar, or the **New table** button on the [Tables list](/tables-list). This page explains what each option does and what its panel asks for, so you can pick the right one before you start.
+The **Create a table** screen lists every kind of table you can build in Ninja Tables. Open it from **Create Table** in the top bar, or the **New table** button on the [Tables list](/guide/table-management/tables-list). This page explains what each option does and what its panel asks for, so you can pick the right one before you start.
 
 ## How the Create a table screen works
 
 The options are grouped into two sections:
 
 - **Start from scratch**: you type, upload or design the content yourself. Ninja Tables stores the rows.
-- **Connect live data**: the rows come from somewhere else, such as WordPress posts, a WooCommerce store or a Google Sheet. The table updates when the source changes, and its rows are read-only in Ninja Tables. See [How connected tables work](/connected-tables-overview).
+- **Connect live data**: the rows come from somewhere else, such as WordPress posts, a WooCommerce store or a Google Sheet. The table updates when the source changes, and its rows are read-only in Ninja Tables. See [How connected tables work](/guide/data-sources/connected-tables-overview).
 
 Click a tile to open its panel on the right. Fill in the panel and click **Create table** (or **Next** for options with two steps). The new table opens in the editor. Click **Cancel** to close a panel without creating anything.
 
@@ -24,14 +24,14 @@ You can also drag a CSV, Excel or JSON file anywhere onto the Create a table scr
 
 | Option | What it's for | Engine | Learn more |
 |---|---|---|---|
-| **Default table** | "Manually create a table." Type or paste your own rows into a spreadsheet-style grid. | DataTables (default) or FooTable, chosen at creation | [Create your first table](/create-your-first-table) |
-| **Upload a file** | "CSV, Excel (.xlsx) or JSON." The columns and rows come from the file. | DataTables (default) or FooTable, chosen at creation | [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv) |
-| **Drag & Drop table** | "Free layout or a ready-made template." Design a layout cell by cell, such as a pricing or comparison table. | Its own builder | [Create a Drag & Drop table](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables) |
+| **Default table** | "Manually create a table." Type or paste your own rows into a spreadsheet-style grid. | DataTables (default) or FooTable, chosen at creation | [Create your first table](/guide/creating-tables/create-your-first-table) |
+| **Upload a file** | "CSV, Excel (.xlsx) or JSON." The columns and rows come from the file. | DataTables (default) or FooTable, chosen at creation | [Import a CSV, Excel or JSON file](/guide/import-export/import-table-data-from-a-csv) |
+| **Drag & Drop table** | "Free layout or a ready-made template." Design a layout cell by cell, such as a pricing or comparison table. | Its own builder | [Create a Drag & Drop table](/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables) |
 
 All three are free. Here is what each panel asks for:
 
 - **Default table**: a **Table name** (required), a **Description** and the engine line. The table is created empty and opens on **Table Rows**.
-- **Upload a file**: an optional **Table name** (the file name is used if you leave it empty), a **Description**, the file, a **File type** (CSV, Excel, JSON or Ninja Tables JSON, picked from the file name), **Large file source** (choose a CSV from the media library), **Convert to UTF-8** and the engine line. See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv) for both options.
+- **Upload a file**: an optional **Table name** (the file name is used if you leave it empty), a **Description**, the file, a **File type** (CSV, Excel, JSON or Ninja Tables JSON, picked from the file name), **Large file source** (choose a CSV from the media library), **Convert to UTF-8** and the engine line. See [Import a CSV, Excel or JSON file](/guide/import-export/import-table-data-from-a-csv) for both options.
 - **Drag & Drop table**: pick **Create From Scratch** (choose 1 to 30 columns and rows; the default is 3 columns and 6 rows) or **Import From CSV/JSON** (a file up to 1 MB, or a URL with Pro), then click **Next** and **Create table**. Or click a template under **Choose a Template**, which creates the table straight away. There is no table name to enter.
 
 ::: tip
@@ -42,14 +42,14 @@ A Drag & Drop table uses its own shortcode, `[ninja_table_builder id="..."]`, an
 
 | Option | What it's for | Engine | Learn more |
 |---|---|---|---|
-| **WP Posts/CPTs** (Pro) | "Posts, pages and custom types." Columns for titles, authors, dates, taxonomies, custom fields and more. | FooTable, can be changed later | [WordPress posts table](/create-wp-posts-table) |
-| **WooCommerce products** (Pro) | "Product catalog with add to cart." Prices, stock and add-to-cart buttons. | FooTable | [WooCommerce products table](/woocommerce-integration) |
-| **WooCommerce reviews** (Pro) | "Product reviews and ratings." | FooTable | [WooCommerce reviews table](/woocommerce-product-reviews-table) |
-| **Fluent Forms entries** | "Live form entries." | DataTables (default) or FooTable, can be changed later | [Fluent Forms entries table](/fluent-forms-integration) |
-| **FluentCart products** | "Products with add to cart." | DataTables (default) or FooTable, can be changed later | [FluentCart products table](/fluentcart-integration) |
-| **Google Sheets** (Pro) | "Synced from a Google Sheet." Rows from a Google Sheet published to the web as CSV. | DataTables (keeps a synced copy, default when offered) or FooTable (reads the sheet live) | [Google Sheets table](/google-sheets-integration) |
-| **Remote CSV / JSON** (Pro) | "Rows from a CSV or JSON URL." Rows from a CSV file at a public URL. | DataTables (keeps a synced copy, default when offered) or FooTable (reads the file live) | [Remote CSV table](/construct-table-from-csv) |
-| **Custom SQL query** (Pro) | "Rows from a database query." A read-only SQL query on your WordPress database or a remote database. | DataTables (default) or FooTable, can be changed later | [Custom SQL table](/create-table-from-custom-sql) |
+| **WP Posts/CPTs** (Pro) | "Posts, pages and custom types." Columns for titles, authors, dates, taxonomies, custom fields and more. | FooTable, can be changed later | [WordPress posts table](/guide/data-sources/create-wp-posts-table) |
+| **WooCommerce products** (Pro) | "Product catalog with add to cart." Prices, stock and add-to-cart buttons. | FooTable | [WooCommerce products table](/guide/data-sources/woocommerce-integration) |
+| **WooCommerce reviews** (Pro) | "Product reviews and ratings." | FooTable | [WooCommerce reviews table](/guide/data-sources/woocommerce-product-reviews-table) |
+| **Fluent Forms entries** | "Live form entries." | DataTables (default) or FooTable, can be changed later | [Fluent Forms entries table](/guide/data-sources/fluent-forms-integration) |
+| **FluentCart products** | "Products with add to cart." | DataTables (default) or FooTable, can be changed later | [FluentCart products table](/guide/data-sources/fluentcart-integration) |
+| **Google Sheets** (Pro) | "Synced from a Google Sheet." Rows from a Google Sheet published to the web as CSV. | DataTables (keeps a synced copy, default when offered) or FooTable (reads the sheet live) | [Google Sheets table](/guide/data-sources/google-sheets-integration) |
+| **Remote CSV / JSON** (Pro) | "Rows from a CSV or JSON URL." Rows from a CSV file at a public URL. | DataTables (keeps a synced copy, default when offered) or FooTable (reads the file live) | [Remote CSV table](/guide/data-sources/construct-table-from-csv) |
+| **Custom SQL query** (Pro) | "Rows from a database query." A read-only SQL query on your WordPress database or a remote database. | DataTables (default) or FooTable, can be changed later | [Custom SQL table](/guide/data-sources/create-table-from-custom-sql) |
 
 Every connected panel starts with a required **Table name**. The rest of each panel:
 
@@ -65,12 +65,12 @@ Some tiles depend on other plugins:
 
 All tiles always show. If the plugin a tile needs (WooCommerce, FluentCart or Fluent Forms) is missing or inactive, its panel says so and offers an **Install or activate** button instead of the form.
 
-On the free version, the Pro tiles carry a **PRO** badge. They still open, but the panel shows a "Pro feature" note with **Upgrade to Pro**, and you can't create the table. See [Free vs Pro](/free-vs-pro).
+On the free version, the Pro tiles carry a **PRO** badge. They still open, but the panel shows a "Pro feature" note with **Upgrade to Pro**, and you can't create the table. See [Free vs Pro](/guide/getting-started/free-vs-pro).
 
 ![WP Posts/CPTs panel on the Create a table screen](/images/creating-tables/types-overview/2.-WP-Posts-CPTs-Panel.webp)
 
 ::: warning
-Despite its name, the **Remote CSV / JSON** tile currently reads CSV files only. A JSON URL is rejected. To show JSON data, [upload the JSON file](/import-table-data-from-a-csv) instead.
+Despite its name, the **Remote CSV / JSON** tile currently reads CSV files only. A JSON URL is rejected. To show JSON data, [upload the JSON file](/guide/import-export/import-table-data-from-a-csv) instead.
 :::
 
 ## Which one should I pick?
@@ -87,7 +87,7 @@ Despite its name, the **Remote CSV / JSON** tile currently reads CSV files only.
 
 Most panels end with an engine line, for example **Engine: DataTables (recommended) · Change**. DataTables is the default and holds up well even when a table runs to thousands of rows. Click **Change** to pick **FooTable** instead (light, responsive out of the box, good for small tables, and the only engine with the Semantic UI / Bootstrap style library).
 
-For tables that store their own rows (Default and Upload a file), the engine can't be changed after the table is created. Google Sheets and Remote CSV show the engine line only when your Pro version supports synced copies. See [FooTable or DataTables: choose an engine](/choose-table-engine).
+For tables that store their own rows (Default and Upload a file), the engine can't be changed after the table is created. Google Sheets and Remote CSV show the engine line only when your Pro version supports synced copies. See [FooTable or DataTables: choose an engine](/guide/creating-tables/choose-table-engine).
 
 ## Open a panel from a link
 

@@ -12,7 +12,7 @@ Every Ninja Tables table is drawn on your site by an **engine**: **FooTable** or
 - **Pick DataTables** (the default) for most tables, especially anything that may grow, or when you'll import a very large CSV or Excel file. It loads one page of rows at a time from the server, so big tables stay fast.
 - **Pick FooTable** for small tables, or when you want the Semantic UI or Bootstrap style library. It's light and responsive out of the box, and the engine most older tables use.
 
-If you're not sure, keep DataTables. To make a FooTable, follow [Create a FooTable](/create-a-footable-table).
+If you're not sure, keep DataTables. To make a FooTable, follow [Create a FooTable](/guide/creating-tables/create-a-footable-table).
 
 ## How the two engines differ
 
@@ -40,7 +40,7 @@ Both engines support search, sorting, pagination, custom filters and the filteri
 
 ## Choose the engine when you create a table
 
-On the [Create a table](/table-types-overview) screen, most panels show an engine line, for example **Engine: DataTables (recommended) · Change**:
+On the [Create a table](/guide/creating-tables/table-types-overview) screen, most panels show an engine line, for example **Engine: DataTables (recommended) · Change**:
 
 1. Click **Change**.
 2. Pick **DataTables** or **FooTable** under **Rendering engine**.
@@ -75,18 +75,18 @@ Switching engine only moves your data. Rows and columns are kept, but the table'
 
 To move a Default or uploaded table to the other engine, rebuild it from an export:
 
-1. Open the table and go to **Table Rows** › **Import / Export** › **Export**. Export it as **CSV**. See [Export a table](/export-ninja-tables-csv-json).
-2. Go to **Import** in the top bar, choose **CSV**, pick the other engine and import the file. See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
+1. Open the table and go to **Table Rows** › **Import / Export** › **Export**. Export it as **CSV**. See [Export a table](/guide/import-export/export-ninja-tables-csv-json).
+2. Go to **Import** in the top bar, choose **CSV**, pick the other engine and import the file. See [Import a CSV, Excel or JSON file](/guide/import-export/import-table-data-from-a-csv).
 3. Set up the columns and **Table Design** of the new table, then replace the old shortcode on your pages with the new one.
 
 ## See which engine a table uses
 
-The [Tables list](/tables-list) has an **Engine** column, and a filter to show only FooTable or only DataTables tables. Inside a table, **Table Configuration** › **Table engine** shows the current engine.
+The [Tables list](/guide/table-management/tables-list) has an **Engine** column, and a filter to show only FooTable or only DataTables tables. Inside a table, **Table Configuration** › **Table engine** shows the current engine.
 
 ![Tables list with the Engine filter and Engine badges](/images/creating-tables/choose-engine/3.-Tables-List-With-The-Engine-Filter.webp)
 
 ## Related
 
-- [Engine, rendering and caching](/table-rendering-settings)
-- [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync)
-- [Custom CSS & JS and CSS selectors](/table-styling-css-selector)
+- [Engine, rendering and caching](/guide/table-settings/table-rendering-settings)
+- [Google Sheets & CSV auto sync](/guide/data-sources/google-sheets-csv-auto-sync)
+- [Custom CSS & JS and CSS selectors](/guide/table-management/table-styling-css-selector)

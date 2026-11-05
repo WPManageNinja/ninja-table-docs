@@ -19,18 +19,18 @@ This page lists every shortcode Ninja Tables provides, each attribute with its d
 | `[nt_icon icon="check"]` | An icon, for use in cells. | Pro |
 | `[ninja_charts id="1"]` | A chart. Comes from the separate Ninja Charts plugin. | Free |
 
-Charts are covered in [Add a Chart to a Page](/embed-ninja-charts).
+Charts are covered in [Add a Chart to a Page](/guide/ninja-charts/embed-ninja-charts).
 
 ## `[ninja_tables]`
 
-The table shortcode. Add attributes inside the brackets; examples and use cases are in [Advanced Shortcode](/advanced-shortcode).
+The table shortcode. Add attributes inside the brackets; examples and use cases are in [Advanced Shortcode](/guide/advanced-features/advanced-shortcode).
 
 ### Free attributes
 
 | Attribute | Default | Purpose |
 |---|---|---|
 | `id` | none | Table ID. Required. |
-| `filter` | none | Show only matching rows. Visitors can still search. Syntax (`AND`, `OR`, `-exclude`, `"phrase"`): [Default Data Filtering Shortcode](/default-data-filtering-shortcode). Placeholders in it need Pro. |
+| `filter` | none | Show only matching rows. Visitors can still search. Syntax (`AND`, `OR`, `-exclude`, `"phrase"`): [Default Data Filtering Shortcode](/guide/advanced-features/default-data-filtering-shortcode). Placeholders in it need Pro. |
 | `use_parent_width` | off | Make the table use its container's width. |
 | `info` | empty | Page-info line after the pagination, for example `info="Page {CP} of {TP}"`. FooTable engine only: it has no effect on DataTables tables. |
 
@@ -51,7 +51,7 @@ Pro attributes are ignored when Ninja Tables Pro is not active.
 | `filter_column` | none | Comma-separated column keys | Apply `filter` to these columns only. |
 | `hide_default_filter` | off | `yes` | Keep rows hidden by `filter` hidden even after a visitor resets the filters. |
 | `get_filter` | none | A query-parameter name | Take the filter from the page address, for example `?dept=Sales`. |
-| `filter_selects` | none | `Filter title=Value\|Other filter=Value` | Pre-select values in the table's [custom filters](/custom-filters). |
+| `filter_selects` | none | `Filter title=Value\|Other filter=Value` | Pre-select values in the table's [custom filters](/guide/table-settings/custom-filters). |
 | `sf_filter` | none | Text or a placeholder | A locked filter value visitors can't clear. Needs `sf_column`. |
 | `sf_column` | none | A column key | The column the locked filter applies to. |
 | `sf_match` | `equal` | `equal`, `contains`, `lt`, `gt`, `startswith` | How `sf_filter` is compared with the cell. |
@@ -59,7 +59,7 @@ Pro attributes are ignored when Ninja Tables Pro is not active.
 | `stack_devices` | `xs,sm` | `xs`, `sm`, `md`, `lg` | Devices that get cards when `stackable` is on. |
 | `post_tax` | none | `taxonomy=term,term\|taxonomy2=term` | Filter a WP Posts or WooCommerce table by taxonomy terms. |
 | `post_tax_field` | `slug` | `slug`, `name`, `term_id` | How the terms in `post_tax` are matched. |
-| `disable_edit` | `no` | `yes` | Turn off [frontend editing](/frontend-editing) for this embed. Applies to tables with built-in rows. |
+| `disable_edit` | `no` | `yes` | Turn off [frontend editing](/guide/advanced-features/frontend-editing) for this embed. Applies to tables with built-in rows. |
 
 ::: warning Use 1 and 0, not "false" or "no"
 `search`, `sorting` and `hide_header` turn on for any value except `0` or an empty value. Writing `search="false"` or `hide_header="no"` turns the feature **on**, not off. Always use `1` to turn on and `0` to turn off.
@@ -69,13 +69,13 @@ Details that are easy to miss:
 
 - `sf_match="lt"` and `"gt"` compare the cell with the filter value as PHP does, so keep both in the same format (for dates, the same date format). `contains` and `startswith` are case-sensitive on FooTable tables and not case-sensitive on DataTables tables.
 - `logged_in_only` renders nothing for logged-out visitors. Logged-in visitors see the table as usual.
-- `get_filter` can be combined with a `column` address parameter, and `filter_selects` can be overridden from the address. See [Advanced Shortcode](/advanced-shortcode).
+- `get_filter` can be combined with a `column` address parameter, and `filter_selects` can be overridden from the address. See [Advanced Shortcode](/guide/advanced-features/advanced-shortcode).
 - `sf_filter` works on DataTables tables (applied on the server) and on FooTable tables set to **Legacy** rendering. On a FooTable table in **Ajax** rendering it has no effect and every row is shown.
 
 
 ## `[ninja_table_builder]`
 
-Shows a [Drag & Drop table](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables). Its only attribute is `id`. Copy it from the shortcode chip in the builder. The table must be published, or nothing is printed. Logged-in table admins also see an **Edit Table** link below the table.
+Shows a [Drag & Drop table](/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables). Its only attribute is `id`. Copy it from the shortcode chip in the builder. The table must be published, or nothing is printed. Logged-in table admins also see an **Edit Table** link below the table.
 
 ## `[ninja_table_info]`
 
@@ -109,11 +109,11 @@ Any shortcode you type into a cell, including `[nt_ratings]` and `[nt_icon]`, ru
 
 ## `[nt_ratings]` and `[nt_icon]`
 
-See [Rating & Icon Shortcodes](/rating-icon-shortcodes).
+See [Rating & Icon Shortcodes](/guide/advanced-features/rating-icon-shortcodes).
 
 ## Placeholders (Pro)
 
-Placeholders are replaced with live values when the page loads. Use them in the `filter` and `sf_filter` shortcode attributes, in [conditional formatting](/conditional-formatting) and [Transform value](/transform-value) rules, and in the values and presets of [custom filters](/custom-filters).
+Placeholders are replaced with live values when the page loads. Use them in the `filter` and `sf_filter` shortcode attributes, in [conditional formatting](/guide/column-settings/conditional-formatting) and [Transform value](/guide/column-settings/transform-value) rules, and in the values and presets of [custom filters](/guide/table-settings/custom-filters).
 
 | Placeholder | Becomes |
 |---|---|
@@ -149,4 +149,4 @@ Show rows with a `date` column in the last 7 days:
 [ninja_tables id="123" filter="~{date-7:YYYY-MM-DD}:{date:YYYY-MM-DD}" filter_column="date"]
 ```
 
-Custom SQL tables have their own placeholders (`{prefix}`, `{current_user_id}` and others); see [Custom SQL Query](/create-table-from-custom-sql).
+Custom SQL tables have their own placeholders (`{prefix}`, `{current_user_id}` and others); see [Custom SQL Query](/guide/data-sources/create-table-from-custom-sql).

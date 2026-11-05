@@ -36,11 +36,11 @@ What you get:
 
 - Every CSV cell or JSON value becomes a **Text** element, in a grid as wide as the first row of your data. There is no header styling; add it in the builder.
 - The table is named `Ninja-tables` followed by today's date (for example `Ninja-tables30-10-2026`). Rename it in the builder header afterwards.
-- If the JSON file is a table you exported from the builder with **Export as JSON**, the whole design comes back (elements, settings and responsive layout) and the table is named from the file (the name saved in the export, which is a lowercase, hyphenated form of the original title). See [Export a Table](/export-ninja-tables-csv-json).
+- If the JSON file is a table you exported from the builder with **Export as JSON**, the whole design comes back (elements, settings and responsive layout) and the table is named from the file (the name saved in the export, which is a lowercase, hyphenated form of the original title). See [Export a Table](/guide/import-export/export-ninja-tables-csv-json).
 
 ### From a template
 
-Pick a category pill (**All**, **Pricing**, **Comparison**, **Employee** or **Schedule**), then click a template. The table is created straight away and opens in the builder, so there is no **Create table** button to press. Hover a template to see a larger preview. Some templates need Pro. See [Drag & Drop Templates](/drag-drop-templates) for the full list.
+Pick a category pill (**All**, **Pricing**, **Comparison**, **Employee** or **Schedule**), then click a template. The table is created straight away and opens in the builder, so there is no **Create table** button to press. Hover a template to see a larger preview. Some templates need Pro. See [Drag & Drop Templates](/guide/drag-drop-tables/drag-drop-templates) for the full list.
 
 ![Template picker with the All, Pricing, Comparison, Employee and Schedule category pills](/images/drag-drop-tables/create-first-drag-drop/3.-Template-Picker-With-The-All-Pricing.webp)
 
@@ -60,13 +60,13 @@ When you click an element and no single cell is selected (nothing selected, or s
 
 Elements in the **General** group are **Text**, **Button**, **Icon** (Pro), **Rating**, **List**, **HTML**, **Shortcode** and **Image** (Pro). The **Advanced** group has **Styled List** (Pro), **Ribbon** (Pro), **Progress** and **Text Icon** (Pro). On the free version, clicking or dragging a Pro element shows "You are using free version of ninja-tables, Upgrade To Pro" and adds nothing.
 
-A tour of everything on the builder screen is in [Drag & Drop Builder Tour](/drag-drop-builder-tour). To add, move or merge rows and columns, see [Rows & Columns](/drag-drop-rows-columns).
+A tour of everything on the builder screen is in [Drag & Drop Builder Tour](/guide/drag-drop-tables/drag-drop-builder-tour). To add, move or merge rows and columns, see [Rows & Columns](/guide/drag-drop-settings/drag-drop-rows-columns).
 
 ## Save and add it to your site
 
 1. Click **Save** in the top-right corner of the builder. A message confirms "Table data saved successfully."
 2. Copy the shortcode from the chip next to the table's name, for example `[ninja_table_builder id="123"]`.
-3. Paste it into a page or post, or insert the table with the Ninja Tables block, which also supports Drag & Drop tables. See [Add a Table to Your Site](/embed-tables).
+3. Paste it into a page or post, or insert the table with the Ninja Tables block, which also supports Drag & Drop tables. See [Add a Table to Your Site](/guide/wordpress-integration/embed-tables).
 
 ::: warning Save once before embedding
 The table on your site is built from the version you last saved in the builder. A new table, including one made from a template or a file, shows only an "Edit Table" link (shown to admins) until you click **Save** in the builder at least once.
@@ -78,6 +78,6 @@ Click **Preview** in the builder to see the saved table on its own page. If you 
 
 ## Next steps
 
-- [Drag & Drop Templates](/drag-drop-templates)
-- [Table Settings](/ninja-tables-drag-and-drop-table-settings)
-- [Mobile & Tablet Layout](/responsive-table-design)
+- [Drag & Drop Templates](/guide/drag-drop-tables/drag-drop-templates)
+- [Table Settings](/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings)
+- [Mobile & Tablet Layout](/guide/drag-drop-settings/responsive-table-design)

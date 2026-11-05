@@ -5,7 +5,7 @@ description: "Change a chart's size, colors, series, axes, title, tooltip, legen
 
 # How to Customize Charts in Ninja Charts
 
-The **Formatting & Preview** step of the chart creator shows your chart and a set of option tabs. Changes show in the preview as you make them. Reopen a saved chart with the pencil icon in the [chart list](/manage-ninja-charts) to change it later.
+The **Formatting & Preview** step of the chart creator shows your chart and a set of option tabs. Changes show in the preview as you make them. Reopen a saved chart with the pencil icon in the [chart list](/guide/ninja-charts/manage-ninja-charts) to change it later.
 
 The tabs depend on the renderer:
 
@@ -75,4 +75,4 @@ The box that appears when a visitor hovers a data point.
 
 **Easing**: the animation curve used when the chart first draws. The default is linear.
 
-Click **Save** (**Update** when you edit a saved chart) when you're done, then [add the chart to a page](/embed-ninja-charts).
+Click **Save** (**Update** when you edit a saved chart) when you're done, then [add the chart to a page](/guide/ninja-charts/embed-ninja-charts).

@@ -9,7 +9,7 @@ Every table has a **title**, and can also have a **caption** and a **description
 
 ## Set the title and description when you create a table
 
-On the [Create a table](/table-types-overview) screen, every panel starts with a **Table name** field. For a Default table it's required. When you upload a file you can leave it empty, and the file name is used.
+On the [Create a table](/guide/creating-tables/table-types-overview) screen, every panel starts with a **Table name** field. For a Default table it's required. When you upload a file you can leave it empty, and the file name is used.
 
 The Default table and Upload a file panels also have a **Description** field. Its editor lets you add bold and italic text, colors, lists, links and media.
 
@@ -17,7 +17,7 @@ The Default table and Upload a file panels also have a **Description** field. It
 
 ## Change them later in Table details
 
-1. Open the table from the [Tables list](/tables-list).
+1. Open the table from the [Tables list](/guide/table-management/tables-list).
 2. Click the pencil icon next to the table's name at the top of the editor. The **Table details** dialog opens.
 3. Edit the fields:
    - **Table title**: required. It identifies your table in the admin. If you leave it empty, Ninja Tables shows **Title is required**.
@@ -45,11 +45,11 @@ You choose per table what visitors see above and inside the table. These switche
 
 - **Show Table Title**: shows the table's title as a heading above the table. The text is the **Table title** from Table details. When the switch is off, no heading is shown and the title stays visible only in the admin. It is off for a new table.
 - **Show Table Description**: shows the table's description in a block above the table, under the title if that is on. The text is the **Table description** from Table details, with its formatting, links and shortcodes. When the switch is off, the description is not shown on your site. It is off for a new table.
-- **Hide Header Row**: hides the row of column names at the top of the table. It is off by default, so the header row shows. When you turn it on, the column names are hidden and the table starts straight with the data. Use that for a plain list. Without the header row, visitors can't see what each column is, so be sure the data explains itself. Header colors from [Table Colors](/table-color-settings) have nothing to paint while the header row is hidden.
+- **Hide Header Row**: hides the row of column names at the top of the table. It is off by default, so the header row shows. When you turn it on, the column names are hidden and the table starts straight with the data. Use that for a plain list. Without the header row, visitors can't see what each column is, so be sure the data explains itself. Header colors from [Table Colors](/guide/styling-design/table-color-settings) have nothing to paint while the header row is hidden.
 
 Every change shows in the live preview straight away. The title and description are two separate switches, so you can show one without the other.
 
-To make the title or description show by default on new tables, turn on **Table title** or **Table description** under **Show** in **Settings** › **Global appearance**; see [Settings](/tools-and-settings).
+To make the title or description show by default on new tables, turn on **Table title** or **Table description** under **Show** in **Settings** › **Global appearance**; see [Settings](/guide/table-management/tools-and-settings).
 
 ## Common questions
 
@@ -66,6 +66,6 @@ No. The caption is output whenever the **Table caption** field has text. See "Ho
 
 ## Related
 
-- The other design options: [Table Design overview](/table-style-settings).
-- Color the header row: [Table Colors](/table-color-settings).
-- Font and size of the text: [Table Fonts](/table-font-settings).
+- The other design options: [Table Design overview](/guide/styling-design/table-style-settings).
+- Color the header row: [Table Colors](/guide/styling-design/table-color-settings).
+- Font and size of the text: [Table Fonts](/guide/styling-design/table-font-settings).

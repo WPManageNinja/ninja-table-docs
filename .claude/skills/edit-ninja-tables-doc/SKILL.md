@@ -22,7 +22,7 @@ Canonical conventions live in `CLAUDE.md` — this skill is the *procedure* for 
 ## Agent Behavior Rules
 
 1. **DO** locate the exact file before editing and confirm it with the user.
-2. **DO** preserve all conventions on every edit: absolute `/<slug>` links (no
+2. **DO** preserve all conventions on every edit: absolute `/guide/<category>/<slug>` links (no
    `.md`, no relative form), `**term**` bold (no inner spaces), no support boilerplate, "(Pro)"
    markers for Pro features.
 3. **DO** keep the frontmatter `title`/H1 in sync — if the display title changes, update both,
@@ -126,13 +126,13 @@ Report:
 ### Locate
 ```
 File by slug:   find docs -name '<slug>.md'
-Sidebar entry:  grep -n "'/<slug>'" .vitepress/config.mts
+Sidebar entry:  grep -n "'/guide/<category>/<slug>'" .vitepress/config.mts
 Image folder:   public/images/<category>/<short-slug>/   (compressed slug — grep, do not guess)
 ```
 
 ### Formats (unchanged from site rules)
 ```
-Cross-link:  [Text](/<slug>)   (never .md, never relative)
+Cross-link:  [Text](/guide/<category>/<slug>)   (never .md, never relative)
 Image ref:   ![Alt](/images/<category>/<short-slug>/<n>.-<Short-Label>.webp)
 Bold:        **term**                           (no inner spaces)
 ```

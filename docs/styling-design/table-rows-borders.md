@@ -15,7 +15,7 @@ The **Style** section of the **Styling** tab controls how the rows and borders o
 
 The switches are grouped under three headings: **Rows**, **Borders** and **Layout**. Next to each switch there is an **(i)** icon. Hover over it to read a one-line description. Every change shows in the live preview straight away. Click **Save** at the top of the editor to keep it.
 
-The panel depends on the table's engine and library, so pick the tab that matches your table. To see which engine a table uses, or to compare them, read [FooTable or DataTables: Choose an Engine](/choose-table-engine).
+The panel depends on the table's engine and library, so pick the tab that matches your table. To see which engine a table uses, or to compare them, read [FooTable or DataTables: Choose an Engine](/guide/creating-tables/choose-table-engine).
 
 ::: tabs
 == FooTable
@@ -37,7 +37,7 @@ DataTables tables have no **Style Library** choice. The section starts straight 
 These switches change how each row and its cells look.
 
 - **Single Line Cells** (Semantic UI only): keeps the text of each cell on one line instead of wrapping it. Tooltip: "A table can specify that its cell contents should remain on a single line, and not wrap." Use it for short values such as codes or prices. A long text then makes the column wider.
-- **Hover Rows**: highlights the row under the visitor's pointer. Tooltip: "Enable a hover state on table rows". It helps readers follow a row across a wide table. You can set the hover color in [Table Colors](/table-color-settings).
+- **Hover Rows**: highlights the row under the visitor's pointer. Tooltip: "Enable a hover state on table rows". It helps readers follow a row across a wide table. You can set the hover color in [Table Colors](/guide/styling-design/table-color-settings).
 - **Striped Rows**: shades every other row. Tooltip: "Add zebra-striping to any table row". Stripes make long tables easier to scan.
 - **Compact Table**: tightens the cells. Tooltip: "Make tables more compact by cutting cell padding in half". It is called **Small Table** in Bootstrap 4 and **Condensed Table** in Bootstrap 3. Use it to fit more rows on the screen.
 - **Vertically Centered Table Cell Contents**: centers the content of each cell between the top and bottom. Tooltip: "Make cell contents vertically centered". It matters most when some cells are taller than others, for example a cell with an image or a long text beside short ones.
@@ -50,7 +50,7 @@ A new table starts with **Hover Rows**, **Striped Rows** and **Vertically Center
 
 These switches draw or remove the lines between cells.
 
-- **Bordered Table**: draws borders on all sides of the table and of every cell. Tooltip: "Borders on all sides of the table and cells". Border colors you set in [Table Colors](/table-color-settings) only show when this is on.
+- **Bordered Table**: draws borders on all sides of the table and of every cell. Tooltip: "Borders on all sides of the table and cells". Border colors you set in [Table Colors](/guide/styling-design/table-color-settings) only show when this is on.
 - **Hide Horizontal Borders**: removes the horizontal lines between the body rows. Tooltip: "This will hide horizontal borders of table body rows".
 - **Hide Vertical Borders**: removes the vertical lines between the cells of the body rows. Tooltip: "This will hide Vertical borders of table body rows" (DataTables: "vertical").
 - **Hide All Borders** (DataTables only): removes every border from the table. Tooltip: "Remove all borders from the table".
@@ -79,14 +79,14 @@ It is shown for FooTable tables only. DataTables tables have one set of styles a
 == Why don't I see Hide All Borders?
 It exists only on DataTables tables. FooTable tables have **Hide Horizontal Borders** and **Hide Vertical Borders** instead.
 == My border color doesn't show.
-A border color only shows when the table has borders. Turn on **Bordered Table**, then set the color in [Table Colors](/table-color-settings).
+A border color only shows when the table has borders. Turn on **Bordered Table**, then set the color in [Table Colors](/guide/styling-design/table-color-settings).
 == Why did my table look different after I changed the library or engine?
 Each library and engine has its own styles, and the switches you set for one are not carried over to the other. Open **Style** again and set the switches you want.
 :::
 
 ## Related
 
-- Color the rows, the hover state and the borders: [Table Colors](/table-color-settings).
-- Color a single row or cell: [Row & Cell Colors](/tables-row-color).
-- Change the font and its size: [Table Fonts](/table-font-settings).
-- Set the library and switches every new table starts with: [Default Design for New Tables](/use-design-as-default).
+- Color the rows, the hover state and the borders: [Table Colors](/guide/styling-design/table-color-settings).
+- Color a single row or cell: [Row & Cell Colors](/guide/styling-design/tables-row-color).
+- Change the font and its size: [Table Fonts](/guide/styling-design/table-font-settings).
+- Set the library and switches every new table starts with: [Default Design for New Tables](/guide/styling-design/use-design-as-default).

@@ -5,7 +5,7 @@ description: "Import a table exported from Ninja Tables as JSON, with its column
 
 # Import Ninja Tables JSON
 
-A **Ninja Tables JSON** file holds a whole table: its title, description, columns, rows, design and settings. Import one to copy a table from another site, restore a backup, or use a downloaded [table template](https://ninjatables.com/free-table-templates/). To create a JSON file, [export a table](/export-ninja-tables-csv-json) as **JSON**.
+A **Ninja Tables JSON** file holds a whole table: its title, description, columns, rows, design and settings. Import one to copy a table from another site, restore a backup, or use a downloaded [table template](https://ninjatables.com/free-table-templates/). To create a JSON file, [export a table](/guide/import-export/export-ninja-tables-csv-json) as **JSON**.
 
 ## Import a Ninja Tables JSON file
 
@@ -45,4 +45,4 @@ The new Drag & Drop table opens in the builder. Save it once there before you em
 The Import screen has two JSON options:
 
 - **Ninja Tables JSON** is a full table exported from Ninja Tables, including its design and settings.
-- **JSON** is a plain list of rows, for example from another app. The field names of the first object become the columns, and it brings in the data only. The new table is called **Temporary table name** until you rename it in its [table details](/table-title-description-settings). See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
+- **JSON** is a plain list of rows, for example from another app. The field names of the first object become the columns, and it brings in the data only. The new table is called **Temporary table name** until you rename it in its [table details](/guide/table-management/table-title-description-settings). See [Import a CSV, Excel or JSON file](/guide/import-export/import-table-data-from-a-csv).

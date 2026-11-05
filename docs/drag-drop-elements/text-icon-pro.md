@@ -30,4 +30,4 @@ To add one, click a cell and click **Text Icon** in the **Advanced** group of th
 
 ![Text Icon Icon sub-tab with the icon options](/images/drag-drop-elements/text-icon/2.-Text-Icon-Icon-Sub-Tab.webp)
 
-Under **Content & style**, the **Spacing** section sets the margin and padding around the element; see [Element Spacing](/spacing). Click **Save** to keep your changes.
+Under **Content & style**, the **Spacing** section sets the margin and padding around the element; see [Element Spacing](/guide/drag-drop-settings/spacing). Click **Save** to keep your changes.

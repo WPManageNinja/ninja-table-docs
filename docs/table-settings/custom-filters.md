@@ -67,7 +67,7 @@ For **Dropdown**, **Value Type** sets where the choices come from. **Radio** and
   - **Parse Comma Separated Words**: split cells like `red, blue` into separate choices.
   - **Disable Automatic Filter Value Sorting**: keep the values in table order. When sorting is on, choose **Sort Dynamic Values** (**Ascending** or **Descending**) and the **Sort Algorithm** (**As Text** or **As Number**).
 
-Values in typed options can contain placeholders such as `{date:Y-m-d}` or `{current_user_role}`, which are replaced with live values when the page loads. See [Placeholders](/shortcode-reference) for the list.
+Values in typed options can contain placeholders such as `{date:Y-m-d}` or `{current_user_role}`, which are replaced with live values when the page loads. See [Placeholders](/guide/advanced-features/shortcode-reference) for the list.
 
 ![Filter Options with a label and a filter value for each choice](/images/table-settings/custom-filters/4.-Filter-Options-With-A-Label.webp)
 
@@ -98,5 +98,5 @@ The layout saves with the **Save** button at the top of the editor.
 
 ## Related
 
-- Pre-filter a table from the shortcode, or from a link: [Default Data Filtering Shortcode](/default-data-filtering-shortcode) and [Advanced Shortcode](/advanced-shortcode), which also covers `filter_selects` to pre-select a filter's value.
-- The search box: [Search Box](/add-or-remove-search-or-filter-functionality).
+- Pre-filter a table from the shortcode, or from a link: [Default Data Filtering Shortcode](/guide/advanced-features/default-data-filtering-shortcode) and [Advanced Shortcode](/guide/advanced-features/advanced-shortcode), which also covers `filter_selects` to pre-select a filter's value.
+- The search box: [Search Box](/guide/styling-design/add-or-remove-search-or-filter-functionality).

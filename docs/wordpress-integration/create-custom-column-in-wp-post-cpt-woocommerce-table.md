@@ -5,7 +5,7 @@ description: "Add, edit and remove extra columns in WP Posts, custom post type, 
 
 # Create Custom Column in WP Post/CPT/WooCommerce Table
 
-A **custom column** adds information that isn't one of the standard post fields: a custom field, an ACF field, the featured image, a product's SKU or a shortcode. You can add custom columns to [WP Posts and custom post type](/create-wp-posts-table) tables (Pro), [WooCommerce](/woocommerce-integration) tables (Pro) and [FluentCart](/fluentcart-integration) tables (Free).
+A **custom column** adds information that isn't one of the standard post fields: a custom field, an ACF field, the featured image, a product's SKU or a shortcode. You can add custom columns to [WP Posts and custom post type](/guide/data-sources/create-wp-posts-table) tables (Pro), [WooCommerce](/guide/data-sources/woocommerce-integration) tables (Pro) and [FluentCart](/guide/data-sources/fluentcart-integration) tables (Free).
 
 ## Add a custom column
 
@@ -33,15 +33,15 @@ The new column appears in the rows grid. Click **Preview** in the editor header 
 
 | You want to show | Field type | Guide |
 |---|---|---|
-| A custom field (including Meta Box, JetEngine, Toolset or Pods fields) | **Post Meta** | [Post meta field](/post-meta-field) |
-| An ACF field | **Advanced Custom Fields (ACF)** | [ACF field integration](/acf-field-integration-with-ninja-tables-column) |
-| The featured image | **Featured Image** | [Featured image](/featured-image) |
-| A link, a button, HTML or a shortcode built from the post's data | **Shortcode / Computed Value or HTML** | [Shortcode / computed value or HTML](/shortcode-computed-value-or-html-in-wp-post-woocommerce-table) |
-| Price, SKU, stock, quantity box, Buy Now button or average rating | **Product Data** | [Dynamic columns reference](/dynamic-columns-reference#product-data) |
-| Author, date, short or long description of a product | **Post Data** | [Dynamic columns reference](/dynamic-columns-reference#post-data) |
-| Product categories, tags, brands or other terms | **Product Taxonomy** | [Dynamic columns reference](/dynamic-columns-reference#product-taxonomy) |
+| A custom field (including Meta Box, JetEngine, Toolset or Pods fields) | **Post Meta** | [Post meta field](/guide/wordpress-integration/post-meta-field) |
+| An ACF field | **Advanced Custom Fields (ACF)** | [ACF field integration](/guide/wordpress-integration/acf-field-integration-with-ninja-tables-column) |
+| The featured image | **Featured Image** | [Featured image](/guide/wordpress-integration/featured-image) |
+| A link, a button, HTML or a shortcode built from the post's data | **Shortcode / Computed Value or HTML** | [Shortcode / computed value or HTML](/guide/wordpress-integration/shortcode-computed-value-or-html-in-wp-post-woocommerce-table) |
+| Price, SKU, stock, quantity box, Buy Now button or average rating | **Product Data** | [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference#product-data) |
+| Author, date, short or long description of a product | **Post Data** | [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference#post-data) |
+| Product categories, tags, brands or other terms | **Product Taxonomy** | [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference#product-taxonomy) |
 
-Product Data, Post Data and Product Taxonomy are only offered on WooCommerce and FluentCart tables. **Advanced Custom Fields (ACF)** appears only when the ACF plugin is active, and not on FluentCart tables. See the [Dynamic columns reference](/dynamic-columns-reference) for every option.
+Product Data, Post Data and Product Taxonomy are only offered on WooCommerce and FluentCart tables. **Advanced Custom Fields (ACF)** appears only when the ACF plugin is active, and not on FluentCart tables. See the [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference) for every option.
 
 On a WooCommerce reviews table, these columns show data of the product that was reviewed, for example its SKU, price or featured image.
 

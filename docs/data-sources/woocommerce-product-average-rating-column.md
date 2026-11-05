@@ -5,7 +5,7 @@ description: "Add a column to a WooCommerce products or reviews table that shows
 
 # WooCommerce Product Average Rating Column
 
-The **Product Average Rating** column (Pro) shows a product's overall average score as stars. In a [reviews table](/woocommerce-product-reviews-table), customers see the single review (for example, 5 stars) next to the product's average (for example, 4.5). In a [products table](/woocommerce-integration), it shows how well each product is rated.
+The **Product Average Rating** column (Pro) shows a product's overall average score as stars. In a [reviews table](/guide/data-sources/woocommerce-product-reviews-table), customers see the single review (for example, 5 stars) next to the product's average (for example, 4.5). In a [products table](/guide/data-sources/woocommerce-integration), it shows how well each product is rated.
 
 ## Add the average rating column
 
@@ -49,4 +49,4 @@ To change these later, open the column header › **Column settings**.
 
 You can also sort products by rating: set **Initial order by** to **Average Rating** in **Source settings** › **Query settings**.
 
-The reviews table's own **Rating** column uses different default colors (gold `#f2c94c` and light grey `#e6e6e6`), set in **Source settings** › **Appearance**. See [WooCommerce product reviews table](/woocommerce-product-reviews-table).
+The reviews table's own **Rating** column uses different default colors (gold `#f2c94c` and light grey `#e6e6e6`), set in **Source settings** › **Appearance**. See [WooCommerce product reviews table](/guide/data-sources/woocommerce-product-reviews-table).

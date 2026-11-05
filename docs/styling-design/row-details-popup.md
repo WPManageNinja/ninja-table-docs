@@ -44,13 +44,13 @@ Check that **Row Details Popup** is on and you clicked **Save**. Click on plain 
 == A column is missing from the pop-up.
 Columns that are hidden on all devices, and columns with an empty value in that row, are left out.
 == What is the difference from the expand toggle on mobile?
-The expand toggle of a [Responsive & Stackable Table](/stackable-table) shows the hidden columns inside the table. The pop-up shows the whole row in a window on any screen size.
+The expand toggle of a [Responsive & Stackable Table](/guide/responsive-design/stackable-table) shows the hidden columns inside the table. The pop-up shows the whole row in a window on any screen size.
 == Can I change the pop-up's title or colors?
-The title is **Row Details**. The pop-up takes the table's own cell styling. For more control, use [Custom CSS & JS](/table-styling-css-selector).
+The title is **Row Details**. The pop-up takes the table's own cell styling. For more control, use [Custom CSS & JS](/guide/table-management/table-styling-css-selector).
 :::
 
 ## Related
 
-- Hide columns on small screens: [Column Responsive Breakpoints](/column-responsive-breakpoints).
-- Stack columns on phones: [Responsive & Stackable Table](/stackable-table).
-- Add an extra CSS class or your own CSS: [Custom CSS & JS](/table-styling-css-selector).
+- Hide columns on small screens: [Column Responsive Breakpoints](/guide/responsive-design/column-responsive-breakpoints).
+- Stack columns on phones: [Responsive & Stackable Table](/guide/responsive-design/stackable-table).
+- Add an extra CSS class or your own CSS: [Custom CSS & JS](/guide/table-management/table-styling-css-selector).

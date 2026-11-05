@@ -83,7 +83,7 @@ C5 SIDEBAR     - Coverage: every docs/<category>/<slug>.md path appears as a lin
                    slug=$(echo "$f" | sed 's#^docs/##; s#\.md$##')
                    grep -q "'/$slug'" .vitepress/config.mts || echo "$f: not in config.mts"
                  done                                                   -> expect no output
-               - Every link in config.mts resolves: for each '/<slug>' found,
+               - Every link in config.mts resolves: for each '/guide/<category>/<slug>' found,
                  the file docs/<category>/<slug>.md must exist.
 
 C6 IMAGES      - Baseline at last audit (2026-08-27): 394 files, 394 unique refs,

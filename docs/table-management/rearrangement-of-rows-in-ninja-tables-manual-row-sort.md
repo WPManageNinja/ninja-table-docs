@@ -19,7 +19,7 @@ Manual sorting is available on tables that keep their own rows. Connected tables
 
 Each drop is saved right away. You don't need to click Save.
 
-The first time you turn it on, Ninja Tables gives every existing row a position and sets the table's default order to **Manual**. You can see this in **Table Design** › **Sorting** › **Default order**, which you can also use to switch manual order on or off. See [Sorting](/sorting).
+The first time you turn it on, Ninja Tables gives every existing row a position and sets the table's default order to **Manual**. You can see this in **Table Design** › **Sorting** › **Default order**, which you can also use to switch manual order on or off. See [Sorting](/guide/styling-design/sorting).
 
 ::: tip Without Pro, or with an old Pro version
 Without Pro, clicking **Sort manually** opens the upgrade dialog. If your Pro plugin is too old to support manual sorting, you see a notice asking you to update Pro. **Insert row below** is gated the same way.
@@ -36,4 +36,4 @@ Without Pro, clicking **Sort manually** opens the upgrade dialog. If your Pro pl
 
 Click **Sort manually** again. The table stops using the manual order. To choose another default order, such as by created date or by a column, go to **Table Design** › **Sorting**.
 
-For more about the grid and toolbar, see [Working in Table Rows](/working-in-table-rows).
+For more about the grid and toolbar, see [Working in Table Rows](/guide/creating-tables/working-in-table-rows).

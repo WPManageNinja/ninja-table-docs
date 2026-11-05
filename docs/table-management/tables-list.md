@@ -9,9 +9,9 @@ The **Tables list** is the home screen of Ninja Tables. It shows every table on 
 
 ## Before you have a table
 
-On a fresh install the list shows the guided setup, a short wizard that helps you create your first table. See [Onboarding](/ninja-tables-onboarding). If you click **Skip setup**, the list shows **You don't have any tables yet** with two buttons:
+On a fresh install the list shows the guided setup, a short wizard that helps you create your first table. See [Onboarding](/guide/getting-started/ninja-tables-onboarding). If you click **Skip setup**, the list shows **You don't have any tables yet** with two buttons:
 
-- **Create a table** opens the Create a table screen. See [Choose a table type](/table-types-overview).
+- **Create a table** opens the Create a table screen. See [Choose a table type](/guide/creating-tables/table-types-overview).
 - **Import** opens the Import screen.
 
 **Use the guided setup instead** brings the wizard back. Ninja Tables remembers that you skipped it in your browser only, so clearing your browser data shows the wizard again.
@@ -28,7 +28,7 @@ On a fresh install the list shows the guided setup, a short wizard that helps yo
 
 ## Welcome banner
 
-A **Welcome to the new Ninja Tables** banner can appear above the list for upgraders. It says your tables, shortcodes and front end are unchanged, and **What moved?** shows where each old screen lives now. Click the **×** to dismiss it. It is remembered per browser. See [Onboarding](/ninja-tables-onboarding).
+A **Welcome to the new Ninja Tables** banner can appear above the list for upgraders. It says your tables, shortcodes and front end are unchanged, and **What moved?** shows where each old screen lives now. Click the **×** to dismiss it. It is remembered per browser. See [Onboarding](/guide/getting-started/ninja-tables-onboarding).
 
 ## What each column shows
 
@@ -37,11 +37,11 @@ A **Welcome to the new Ninja Tables** banner can appear above the list for upgra
 | **ID** | The table's number, used in its shortcode. Click it to open the table. |
 | **Table** | The table's name, with its description underneath (one line of plain text) and a status badge if the table isn't published. Click the name to open the table. The eye icon next to the name opens a **Preview** in a new tab. |
 | **Source** | Where the rows come from: a badge such as **Default**, **Drag & Drop**, **Fluent Forms**, **FluentCart**, **WP Posts**, **WooCommerce**, **Woo Reviews**, **Google Sheets**, **Remote CSV** or **SQL Query**. |
-| **Engine** | **FooTable** or **DataTables**. Hover the badge for a short explanation. See [choose an engine](/choose-table-engine). |
+| **Engine** | **FooTable** or **DataTables**. Hover the badge for a short explanation. See [choose an engine](/guide/creating-tables/choose-table-engine). |
 | **Used on** | How many posts and pages embed the table, for example **On 2 pages**, or **Not embedded**. |
 | **Shortcode** | The table's shortcode. Click it to copy it. |
 
-Clicking a row (the **ID**, the table name or any blank part of the row) opens the table in the editor; hold <kbd>Ctrl</kbd> or <kbd>Cmd</kbd> to open it in a new tab. The row's buttons and a table whose source plugin is missing keep their own behavior. A Drag & Drop table opens in the [Drag & Drop builder](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables) instead. A Fluent Forms table can't be opened while Fluent Forms is inactive, and its name is greyed out.
+Clicking a row (the **ID**, the table name or any blank part of the row) opens the table in the editor; hold <kbd>Ctrl</kbd> or <kbd>Cmd</kbd> to open it in a new tab. The row's buttons and a table whose source plugin is missing keep their own behavior. A Drag & Drop table opens in the [Drag & Drop builder](/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables) instead. A Fluent Forms table can't be opened while Fluent Forms is inactive, and its name is greyed out.
 
 Click the **ID** or **Table** column header to sort the list. The first click sorts from highest to lowest.
 
@@ -71,7 +71,7 @@ Each row ends with two buttons:
 
 - **Edit** (pencil) opens the table in the editor, or a Drag & Drop table in the builder.
 - **More actions** (⋯) opens a menu with:
-  - **Duplicate**: copies the table and opens the copy. See [Duplicate a table](/table-cloning-duplicating). Fluent Forms tables show a **Fluent Forms entries** link here instead.
+  - **Duplicate**: copies the table and opens the copy. See [Duplicate a table](/guide/table-management/table-cloning-duplicating). Fluent Forms tables show a **Fluent Forms entries** link here instead.
   - **Move to trash**: hides the table from your site and moves it to the Trash.
   - **Delete permanently**: deletes the table straight away.
 
@@ -108,7 +108,7 @@ Two empty screens can appear:
 - **No tables**: every table is in the Trash. Click **View trash** to restore one, or **Create a table** to start a new one.
 
 ::: warning
-**Delete permanently** can't be undone. If you might need the table again, [export it as JSON](/export-ninja-tables-csv-json) first.
+**Delete permanently** can't be undone. If you might need the table again, [export it as JSON](/guide/import-export/export-ninja-tables-csv-json) first.
 :::
 
 ## Promotions in the free version

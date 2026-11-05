@@ -5,7 +5,7 @@ description: "Build a Default table step by step: create it, add columns and row
 
 # Create Your First Table
 
-A **Default table** is a table whose rows you type, paste or import yourself. This guide walks through building one from start to finish: create the table, add columns and rows, style it, and put it on a page. For a shorter version, see the [guided setup and quick start](/onboarding-setup-guide).
+A **Default table** is a table whose rows you type, paste or import yourself. This guide walks through building one from start to finish: create the table, add columns and rows, style it, and put it on a page. For a shorter version, see the [guided setup and quick start](/guide/getting-started/onboarding-setup-guide).
 
 ## Create the table
 
@@ -14,7 +14,7 @@ A **Default table** is a table whose rows you type, paste or import yourself. Th
 
 3. In the panel that opens, enter a **Table name**. It's required.
 4. Optionally add a **Description**. The editor lets you add bold and italic text, lists, links and media.
-5. Check the engine line. It is set to **DataTables** (recommended), which suits tables of any size. Click **Change** and pick **FooTable** if you want the lighter classic engine or the Semantic UI / Bootstrap style library. The engine of a Default table can't be changed later; see [choose an engine](/choose-table-engine) and [Create a FooTable](/create-a-footable-table).
+5. Check the engine line. It is set to **DataTables** (recommended), which suits tables of any size. Click **Change** and pick **FooTable** if you want the lighter classic engine or the Semantic UI / Bootstrap style library. The engine of a Default table can't be changed later; see [choose an engine](/guide/creating-tables/choose-table-engine) and [Create a FooTable](/guide/creating-tables/create-a-footable-table).
 6. Click **Create table**.
 
 ![Default table panel with Table name, Description and the engine line](/images/creating-tables/create-first-table/1.-Default-Table-Panel-With-Table-Name.webp)
@@ -23,7 +23,7 @@ The table opens in the editor on the **Table Rows** tab.
 
 ![Table Rows tab of a new table with the Add column button](/images/creating-tables/create-first-table/1.-Table-Rows-Tab-Of-A-New.webp)
 
-The other tiles on the Create a table screen build different kinds of tables, such as tables from a file, WooCommerce products or a SQL query. See [All table types at a glance](/table-types-overview). For a table built from a database query, see [Custom SQL table](/create-table-from-custom-sql).
+The other tiles on the Create a table screen build different kinds of tables, such as tables from a file, WooCommerce products or a SQL query. See [All table types at a glance](/guide/creating-tables/table-types-overview). For a table built from a database query, see [Custom SQL table](/guide/data-sources/create-table-from-custom-sql).
 
 ## Add columns
 
@@ -54,11 +54,11 @@ Click **Add data** in the toolbar. A panel opens with one field per column.
 The toolbar above the grid also has:
 
 - **Search rows**: find rows by any value.
-- **Sort manually** (Pro): drag rows into the order visitors see. See [Sort rows manually](/rearrangement-of-rows-in-ninja-tables-manual-row-sort).
+- **Sort manually** (Pro): drag rows into the order visitors see. See [Sort rows manually](/guide/table-management/rearrangement-of-rows-in-ninja-tables-manual-row-sort).
 - **Compact View**: show more rows on screen.
-- **Import / Export**: add rows from a CSV file, or export the table. See [Import rows into an existing table](/import-csv-file-to-an-existing-table).
+- **Import / Export**: add rows from a CSV file, or export the table. See [Import rows into an existing table](/guide/import-export/import-csv-file-to-an-existing-table).
 
-For everything you can do in the grid, see [Working in Table Rows](/working-in-table-rows).
+For everything you can do in the grid, see [Working in Table Rows](/guide/creating-tables/working-in-table-rows).
 
 ## Edit, duplicate and delete rows
 
@@ -66,7 +66,7 @@ Each row has its own actions at the end of the row:
 
 - **Edit row** opens the row in the side panel, where you can also change its **Created date**. Use **Previous row** and **Next row** to move through the table without closing it.
 - **Row actions** › **Insert row below** (Pro), **Duplicate row** or **Delete row**.
-- **Row settings** (palette icon) sets the row's background and text colors (Pro). Cells have their own **Cell settings**. See [Row and cell colors](/tables-row-color).
+- **Row settings** (palette icon) sets the row's background and text colors (Pro). Cells have their own **Cell settings**. See [Row and cell colors](/guide/styling-design/tables-row-color).
 
 To delete several rows at once, tick them and click **Delete** in the toolbar.
 
@@ -76,9 +76,9 @@ To delete several rows at once, tick them and click **Delete** in the toolbar.
 
 The column dialog has three more tabs:
 
-- **Advanced**: text alignment, **Click to copy**, and (Pro) column width, extra CSS classes, background and text colors, **Sortable**, **Searchable** and HTML header content. See [Advanced column settings](/advanced-settings).
-- **Conditions** (Pro): style a cell, row or column when its value matches a rule, such as "greater than 100". See [Conditional formatting](/conditional-formatting).
-- **Transform** (Pro): change how a value is shown, for example turning plain text into a link, or calculating it with an Excel formula. See [Transform value](/transform-value).
+- **Advanced**: text alignment, **Click to copy**, and (Pro) column width, extra CSS classes, background and text colors, **Sortable**, **Searchable** and HTML header content. See [Advanced column settings](/guide/column-settings/advanced-settings).
+- **Conditions** (Pro): style a cell, row or column when its value matches a rule, such as "greater than 100". See [Conditional formatting](/guide/column-settings/conditional-formatting).
+- **Transform** (Pro): change how a value is shown, for example turning plain text into a link, or calculating it with an Excel formula. See [Transform value](/guide/column-settings/transform-value).
 
 Click **Save column** after changing a column.
 
@@ -92,18 +92,18 @@ Click the **Table Design** tab. On the left is a live preview of your table, whi
 
 ![Table Design tab with the live preview and the Colors, Styling and Features tabs](/images/creating-tables/create-first-table/6.-Appearance-Tab-With-The-Live-Preview.webp)
 
-Click **Save** at the top of the editor to keep your changes. See the [Table Design overview](/table-style-settings) for every option. To change the starting look of every new table, use **Settings** › **Global appearance**.
+Click **Save** at the top of the editor to keep your changes. See the [Table Design overview](/guide/styling-design/table-style-settings) for every option. To change the starting look of every new table, use **Settings** › **Global appearance**.
 
 ## Check Table Configuration
 
-The **Table Configuration** tab controls how the table loads: its engine, whether rows load with **Ajax** or are built into the page (**Legacy**, Pro), and caching. The defaults suit most tables: new tables use **Ajax** on the free version and **Legacy** when Pro is active. See [Engine, rendering and caching](/table-rendering-settings).
+The **Table Configuration** tab controls how the table loads: its engine, whether rows load with **Ajax** or are built into the page (**Legacy**, Pro), and caching. The defaults suit most tables: new tables use **Ajax** on the free version and **Legacy** when Pro is active. See [Engine, rendering and caching](/guide/table-settings/table-rendering-settings).
 
 ![Table Configuration tab with the engine and rendering options](/images/creating-tables/create-first-table/7.-Table-Configuration-Tab-With-The-Engine.webp)
 
 ## Preview and embed the table
 
 - Click **Preview** at the top of the editor to open the table on its own page.
-- Click the shortcode at the top of the editor, for example `[ninja_tables id="123"]`, to copy it. The same shortcode is in the **Shortcode** column of the [Tables list](/tables-list).
+- Click the shortcode at the top of the editor, for example `[ninja_tables id="123"]`, to copy it. The same shortcode is in the **Shortcode** column of the [Tables list](/guide/table-management/tables-list).
 
 Paste the shortcode into any post or page, or add the **Ninja Tables** block in the block editor and search for your table by name.
 
@@ -113,10 +113,10 @@ Paste the shortcode into any post or page, or add the **Ninja Tables** block in 
 The design options in the block's sidebar are saved to the table itself. Changing them changes the table on every page where it's shown, not just this one.
 :::
 
-See [Embed a table](/embed-tables) for the block editor, the classic editor and page builders.
+See [Embed a table](/guide/wordpress-integration/embed-tables) for the block editor, the classic editor and page builders.
 
 ## Next steps
 
-- [Duplicate a table](/table-cloning-duplicating) to reuse its setup.
-- [Add custom filters](/custom-filters) (Pro) above the table.
-- [Let users edit the table from the page](/frontend-editing) (Pro).
+- [Duplicate a table](/guide/table-management/table-cloning-duplicating) to reuse its setup.
+- [Add custom filters](/guide/table-settings/custom-filters) (Pro) above the table.
+- [Let users edit the table from the page](/guide/advanced-features/frontend-editing) (Pro).

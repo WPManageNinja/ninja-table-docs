@@ -49,7 +49,7 @@ Use it as `[table_total id="123" column="amount"]`.
 
 ## Build a computed table from another table
 
-You can fill a table's rows from your own code with the `ninja_tables_get_public_data` filter, which runs for tables drawn by the **FooTable** engine. Set the standings table to FooTable in **Table Configuration** (see [Choose a Table Engine](/choose-table-engine)). This example builds a sports league standings table from a table of match results, so standings never have to be typed by hand.
+You can fill a table's rows from your own code with the `ninja_tables_get_public_data` filter, which runs for tables drawn by the **FooTable** engine. Set the standings table to FooTable in **Table Configuration** (see [Choose a Table Engine](/guide/creating-tables/choose-table-engine)). This example builds a sports league standings table from a table of match results, so standings never have to be typed by hand.
 
 1. Create a **results** table (for example ID `123`) with the column keys `home`, `away`, `home_goals` and `away_goals`.
 2. Create a **standings** table (for example ID `124`) with the column keys `pos`, `team`, `played` and `points`. Leave it empty.
@@ -112,7 +112,7 @@ add_action('my_plugin_scores_updated', function () {
 });
 ```
 
-Visitors can also have every table rebuilt from the gear icon › **Settings** › **Performance**; see [Clear Caches](/clear-table-cache).
+Visitors can also have every table rebuilt from the gear icon › **Settings** › **Performance**; see [Clear Caches](/guide/table-management/clear-table-cache).
 
 ## Export a table to a CSV file on a schedule
 
@@ -177,8 +177,8 @@ jQuery(document).on('ninja_table_loaded', function (event, $table, tableConfig) 
 });
 ```
 
-See [JavaScript Events](/javascript-events) for every event and what it passes.
+See [JavaScript Events](/guide/advanced-features/javascript-events) for every event and what it passes.
 
 ## More hooks
 
-See [Hooks & Filters](/hooks-and-filters) for every action and filter, including what runs when rows are added, updated or deleted.
+See [Hooks & Filters](/guide/advanced-features/hooks-and-filters) for every action and filter, including what runs when rows are added, updated or deleted.

@@ -22,6 +22,6 @@ Under **Content & style**:
 - **Show Rating Value** (off by default): show the score next to the stars, for example "4.5/5".
 - **Alignment**: **Left**, **Center** (default) or **Right**.
 
-Under **Content & style**, the **Spacing** section sets the margin and padding around the rating; see [Element Spacing](/spacing).
+Under **Content & style**, the **Spacing** section sets the margin and padding around the rating; see [Element Spacing](/guide/drag-drop-settings/spacing).
 
 Click **Save** to keep your changes.

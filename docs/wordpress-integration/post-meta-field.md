@@ -5,7 +5,7 @@ description: "Show WordPress custom fields (post meta) in a WP Posts, WooCommerc
 
 # Post Meta Field
 
-The **Post Meta** field type shows a post's custom fields (also called post meta) as a table column. Custom fields hold extra details about a post, such as a price, a location, an event date or a rating. Use it in [WP Posts](/create-wp-posts-table) and [WooCommerce](/woocommerce-integration) tables (Pro) and in [FluentCart](/fluentcart-integration) tables (Free).
+The **Post Meta** field type shows a post's custom fields (also called post meta) as a table column. Custom fields hold extra details about a post, such as a price, a location, an event date or a rating. Use it in [WP Posts](/guide/data-sources/create-wp-posts-table) and [WooCommerce](/guide/data-sources/woocommerce-integration) tables (Pro) and in [FluentCart](/guide/data-sources/fluentcart-integration) tables (Free).
 
 Custom fields are stored as key/value pairs. To show one in a table, you only need its **meta key**.
 
@@ -36,7 +36,7 @@ These plugins store their fields as post meta, so the **Post Meta** field type s
 - **Toolset Types:** the field's slug, with the `wpcf-` prefix (for example `wpcf-price`).
 - **Pods:** the field's **Name** in the pod.
 
-Plugins that store complex values (repeaters, galleries, relations) save them in a format that may not read well in a table. For those, use [Shortcode / Computed Value or HTML](/shortcode-computed-value-or-html-in-wp-post-woocommerce-table) with the plugin's own shortcode. For ACF fields, use the dedicated [ACF field type](/acf-field-integration-with-ninja-tables-column).
+Plugins that store complex values (repeaters, galleries, relations) save them in a format that may not read well in a table. For those, use [Shortcode / Computed Value or HTML](/guide/wordpress-integration/shortcode-computed-value-or-html-in-wp-post-woocommerce-table) with the plugin's own shortcode. For ACF fields, use the dedicated [ACF field type](/guide/wordpress-integration/acf-field-integration-with-ninja-tables-column).
 
 ## Add a Post Meta column
 
@@ -55,10 +55,10 @@ Click **Preview** in the editor header to see the column on the front end. Each 
 
 ## Combine meta values with other content
 
-To show a meta value inside a link, next to other text or as a shortcode parameter, use the **Shortcode / Computed Value or HTML** field type with the `{postmeta.META_KEY}` placeholder, for example `Price: {postmeta.price_note}`. See [Shortcode / computed value or HTML](/shortcode-computed-value-or-html-in-wp-post-woocommerce-table).
+To show a meta value inside a link, next to other text or as a shortcode parameter, use the **Shortcode / Computed Value or HTML** field type with the `{postmeta.META_KEY}` placeholder, for example `Price: {postmeta.price_note}`. See [Shortcode / computed value or HTML](/guide/wordpress-integration/shortcode-computed-value-or-html-in-wp-post-woocommerce-table).
 
 ## Filter rows by a meta value
 
-To show only posts with a certain meta value, use **Meta query** in **Edit query** › **Query settings**. See [WP Posts table](/create-wp-posts-table#meta-query).
+To show only posts with a certain meta value, use **Meta query** in **Edit query** › **Query settings**. See [WP Posts table](/guide/data-sources/create-wp-posts-table#meta-query).
 
-For every other column type, see the [Dynamic columns reference](/dynamic-columns-reference).
+For every other column type, see the [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference).

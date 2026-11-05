@@ -7,7 +7,7 @@ description: "Create a dynamic, searchable, and sortable table of your WooCommer
 
 The **WooCommerce Product Reviews Table** (Pro) turns your customer feedback into a searchable, sortable table. Showing reviews this way builds trust and helps new customers buy with confidence. The table reads the reviews live, so a new review appears as soon as WooCommerce publishes it.
 
-You need Ninja Tables Pro and WooCommerce active. If WooCommerce isn't active, the **WooCommerce reviews** drawer tells you to install or activate it. On the Free plugin the drawer shows a Pro notice instead of the form, and if Pro is out of date it asks you to update it. See [How connected tables work](/connected-tables-overview).
+You need Ninja Tables Pro and WooCommerce active. If WooCommerce isn't active, the **WooCommerce reviews** drawer tells you to install or activate it. On the Free plugin the drawer shows a Pro notice instead of the form, and if Pro is out of date it asks you to update it. See [How connected tables work](/guide/data-sources/connected-tables-overview).
 
 ## Step 1: Create the reviews table
 
@@ -55,7 +55,7 @@ On the **Table Rows** tab, the banner reads **Rows come from WooCommerce reviews
 
 - **Query settings**: change the products (**Select Products Reviews By Category**, **By Product Tags**, **By Product Type**) and the **Reviews status** (All, Approved, Unapproved).
 - **Appearance**: set the **Filled star color** and **Empty star color** of the rating stars to match your brand. The defaults are gold (`#f2c94c`) and light grey (`#e6e6e6`).
-- **Add new column**: add more data about the reviewed product, such as its [average rating](/woocommerce-product-average-rating-column), price, SKU or featured image. See [Dynamic columns reference](/dynamic-columns-reference).
+- **Add new column**: add more data about the reviewed product, such as its [average rating](/guide/data-sources/woocommerce-product-average-rating-column), price, SKU or featured image. See [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference).
 
 Click **Save settings** in each section to apply your changes.
 
@@ -85,16 +85,16 @@ Columns you add here describe the product that was reviewed, not the review. You
 
 The rows are read-only, can't be sorted by dragging and can't be imported, because they come from WooCommerce. Every other tab of the editor works as usual:
 
-- **Styling**: colors, fonts, search, sorting, pagination and mobile layout. See [Table style settings](/table-style-settings).
-- **Custom Filter** (Pro): filter controls above the table. See [Custom filters](/custom-filters).
-- **Table Configuration**: rendering and caching. The **Disable Caching** and **Display Frontend Loader** switches are not shown for reviews tables. See [Table rendering settings](/table-rendering-settings).
-- **Custom CSS/JS**: your own styles and scripts. See [Table styling & CSS selectors](/table-styling-css-selector).
+- **Styling**: colors, fonts, search, sorting, pagination and mobile layout. See [Table style settings](/guide/styling-design/table-style-settings).
+- **Custom Filter** (Pro): filter controls above the table. See [Custom filters](/guide/table-settings/custom-filters).
+- **Table Configuration**: rendering and caching. The **Disable Caching** and **Display Frontend Loader** switches are not shown for reviews tables. See [Table rendering settings](/guide/table-settings/table-rendering-settings).
+- **Custom CSS/JS**: your own styles and scripts. See [Table styling & CSS selectors](/guide/table-management/table-styling-css-selector).
 
-Frontend editing isn't available, because there is nothing to save back to. See [How connected tables work](/connected-tables-overview).
+Frontend editing isn't available, because there is nothing to save back to. See [How connected tables work](/guide/data-sources/connected-tables-overview).
 
 ## Step 3: Show the reviews table
 
-Copy the shortcode from the editor header and paste it into any page or post, or use the Ninja Tables block. See [Embed a table](/embed-tables).
+Copy the shortcode from the editor header and paste it into any page or post, or use the Ninja Tables block. See [Embed a table](/guide/wordpress-integration/embed-tables).
 
 <!-- TODO(screenshot): woocommerce-product-reviews-table-4
   screen: Tables › DOCTEST reviews › Preview
@@ -106,4 +106,4 @@ Copy the shortcode from the editor header and paste it into any page or post, or
   blocked: needs a demo WooCommerce reviews table plus approved sample reviews (none exist; create drawer also shows lorem-ipsum tags)
 -->
 
-For product tables rather than review tables, see [WooCommerce Integration](/woocommerce-integration).
+For product tables rather than review tables, see [WooCommerce Integration](/guide/data-sources/woocommerce-integration).

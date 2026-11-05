@@ -7,7 +7,7 @@ description: "Add CSV, Excel and Print buttons to a table so visitors can downlo
 
 **Export & Print** (Pro) adds buttons to a table on your site, so visitors can download it as a **CSV** or **Excel** file, or **Print** it. You choose which buttons show, what they say, how they look, and where they sit.
 
-This page is about buttons for your visitors. To export a table yourself from the admin, see [Export a Table](/export-ninja-tables-csv-json).
+This page is about buttons for your visitors. To export a table yourself from the admin, see [Export a Table](/guide/import-export/export-ninja-tables-csv-json).
 
 ## Add the buttons
 
@@ -98,6 +98,6 @@ Turn on **Export As Plain Text (strips HTML and links)** in the CSV options.
 
 ## Related
 
-- Export a table yourself from the admin: [Export a Table](/export-ninja-tables-csv-json).
-- Let visitors search the table first: [Search Box](/add-or-remove-search-or-filter-functionality).
-- Color the table: [Table Colors](/table-color-settings).
+- Export a table yourself from the admin: [Export a Table](/guide/import-export/export-ninja-tables-csv-json).
+- Let visitors search the table first: [Search Box](/guide/styling-design/add-or-remove-search-or-filter-functionality).
+- Color the table: [Table Colors](/guide/styling-design/table-color-settings).

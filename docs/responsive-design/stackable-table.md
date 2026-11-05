@@ -20,7 +20,7 @@ Use **Preview Width** › **Mobile** above the preview to check the result. Clic
 
 ## Responsive Breakpoint
 
-Columns you hide on small screens move into a drawer that opens with a **+** button. Choose which columns hide on which devices in each column's **Responsive visibility**. See [Show or Hide Columns on Mobile](/column-responsive-breakpoints). These settings only matter for a table that has at least one column folded into the drawer. A note under the **Responsive Breakpoint** heading tells you how many columns have **Responsive visibility** set ("Works for 2 columns with Responsive visibility set."). With none, it says "Set Responsive visibility from Column settings to use this."
+Columns you hide on small screens move into a drawer that opens with a **+** button. Choose which columns hide on which devices in each column's **Responsive visibility**. See [Show or Hide Columns on Mobile](/guide/responsive-design/column-responsive-breakpoints). These settings only matter for a table that has at least one column folded into the drawer. A note under the **Responsive Breakpoint** heading tells you how many columns have **Responsive visibility** set ("Works for 2 columns with Responsive visibility set."). With none, it says "Set Responsive visibility from Column settings to use this."
 
 - **Responsive drawer**: whether the drawers start open.
   - **Closed** (default): every drawer starts shut. Visitors tap **+** to open one.
@@ -53,7 +53,7 @@ Tick the devices that get cards. On any other screen the table keeps its normal 
 
 With no device ticked, the table is not stacked anywhere.
 
-How a tick behaves depends on the table engine you use. See [Table Rendering Settings](/table-rendering-settings).
+How a tick behaves depends on the table engine you use. See [Table Rendering Settings](/guide/table-settings/table-rendering-settings).
 
 - **DataTables**: a tick means that width and everything narrower. Tick **Laptop** and phones and tablets get cards too.
 - **FooTable**: a tick means that screen size only. Tick **Laptop** alone and only laptop-sized screens get cards, so tick **Mobile Device** as well to cover phones.
@@ -74,7 +74,7 @@ Two optional tweaks for how the cards look:
 A separate switch lets visitors open a row's details in a popup. It is not in the **Mobile** section. Find **Row Details Popup** in the **Row Details** section of the Features tab. Turn it on and a visitor can click a row on the site to see all of its details. It is off by default and free. This helps when many columns are folded away on small screens.
 
 ::: tip
-You can turn on cards for one embed with the `stackable` and `stack_devices` shortcode attributes (Pro). See [Advanced Shortcode](/advanced-shortcode).
+You can turn on cards for one embed with the `stackable` and `stack_devices` shortcode attributes (Pro). See [Advanced Shortcode](/guide/advanced-features/advanced-shortcode).
 :::
 
 ## Common questions
@@ -89,12 +89,12 @@ They are Pro options. On the free version they open the upgrade popup, and the d
 == The cards show no column names.
 Check **Hide Column Headings** under **Card Look**. It hides the names inside the cards. **Hide Labels** (Pro) does the same for the **+** drawer.
 == Where do I choose which columns fold into the drawer?
-In each column's **Responsive visibility** setting. See [Show or Hide Columns on Mobile](/column-responsive-breakpoints).
+In each column's **Responsive visibility** setting. See [Show or Hide Columns on Mobile](/guide/responsive-design/column-responsive-breakpoints).
 :::
 
 ## Related
 
-- Choose which columns hide on which devices: [Show or Hide Columns on Mobile](/column-responsive-breakpoints).
-- Switch the table engine: [Table Rendering Settings](/table-rendering-settings).
-- Set the attributes for one embed: [Advanced Shortcode](/advanced-shortcode).
-- Keep the header or first column in view while scrolling: [Sticky Header & First Column](/other-design-settings).
+- Choose which columns hide on which devices: [Show or Hide Columns on Mobile](/guide/responsive-design/column-responsive-breakpoints).
+- Switch the table engine: [Table Rendering Settings](/guide/table-settings/table-rendering-settings).
+- Set the attributes for one embed: [Advanced Shortcode](/guide/advanced-features/advanced-shortcode).
+- Keep the header or first column in view while scrolling: [Sticky Header & First Column](/guide/styling-design/other-design-settings).

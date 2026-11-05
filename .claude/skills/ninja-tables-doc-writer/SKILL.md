@@ -6,7 +6,7 @@ description: Master voice-and-format guide for writing Ninja Tables end-user doc
 # Ninja Tables Doc Writer: Master Skill
 
 You are writing for **Ninja Tables**, the WordPress table plugin by WPManageNinja (free + Pro). The site
-is VitePress, served at https://docs.ninjatables.com with flat URLs (`/<slug>`). Every rule here was
+is VitePress, served at https://docs.ninjatables.com at `/guide/<category>/<slug>` URLs. Every rule here was
 measured against the current 117 pages (rewritten for the redesigned admin UI, Oct 2026). When the
 current pages and an older habit disagree, the current pages win.
 
@@ -21,7 +21,7 @@ editing or moving files live in `write-ninja-tables-doc`, `edit-ninja-tables-doc
 - Frontmatter with `title` and a real one-sentence `description` (what the reader can do, not a copy of
   the title), then a bare `# H1` identical to `title`.
 - `##` for main sections, `###` for sub-topics. The outline shows H2–H3.
-- Links: flat absolute `[Text](/<slug>)`. Never `.md`, never relative, never `/guide/...`. The target
+- Links: absolute `[Text](/guide/<category>/<slug>)`. Never `.md`, never relative, never the bare `/<slug>`. The target
   slug must exist (`find docs -name '<slug>.md'`).
 - Images: `![Descriptive alt](/images/<category>/<short-slug>/<n>.-<Short-Label>.webp)`. Never external,
   never relative. Produced by the screenshot pipeline (§5), never by hand.

@@ -27,14 +27,14 @@ You pick the engine when you create a table. What the tab shows later depends on
 
 When you pick a different engine, a warning says **Switching engine only moves your data**. Rows and columns are kept, but the table's design (colors, styling and layout) doesn't carry over, so set it up again in **Table Design**.
 
-See [FooTable or DataTables: Choose an Engine](/choose-table-engine) for a full comparison.
+See [FooTable or DataTables: Choose an Engine](/guide/creating-tables/choose-table-engine) for a full comparison.
 
 ## Rendering Setting
 
 **Rendering Setting** decides how the rows are put on the page:
 
 - **Ajax**: rows load right after the page. Fast, and best for big tables. Shortcodes written into cells will not run. Ajax is the default when Ninja Tables Pro is not active.
-- **Legacy** (Pro): rows are built on the server into the page HTML. Use it for merged cells ([colspan](/colspan-cell-merge)), shortcodes inside cells, and better SEO, since the rows are in the page source. Legacy is the default for new tables when Pro is active.
+- **Legacy** (Pro): rows are built on the server into the page HTML. Use it for merged cells ([colspan](/guide/table-formatting/colspan-cell-merge)), shortcodes inside cells, and better SEO, since the rows are in the page source. Legacy is the default for new tables when Pro is active.
 
 In the free version the **Legacy** card is locked; clicking it opens the upgrade popup. A table saved while Pro was active keeps Legacy selected even if Pro is later deactivated.
 
@@ -49,7 +49,7 @@ In the free version the **Legacy** card is locked; clicking it opens the upgrade
 - **DataTables on tables from Fluent Forms, WP Posts, Custom SQL or FluentCart**: there is no server-side paging for these tables. If their rows differ per visitor (for example Fluent Forms "own submissions only", WP Posts "current user's posts only", or Custom SQL using current-user placeholders), Legacy is ignored and Ajax is used, so a cached page never shows one visitor's rows to another.
 
 ::: warning
-Shortcode filters such as `sf_filter` only hide rows from view in **Ajax** mode; the data still reaches the browser. Use **Legacy** if rows must really stay off the page. See [Advanced Shortcode](/advanced-shortcode).
+Shortcode filters such as `sf_filter` only hide rows from view in **Ajax** mode; the data still reaches the browser. Use **Legacy** if rows must really stay off the page. See [Advanced Shortcode](/guide/advanced-features/advanced-shortcode).
 :::
 
 ## Caching Configuration
@@ -69,5 +69,5 @@ Tables from WP Posts, WooCommerce, Fluent Forms, FluentCart and Custom SQL have 
 Click **Save** to keep your changes.
 
 ::: tip
-If a table on your site shows old data, clear the cache from the gear icon › **Settings** › **Performance**. See [Clear Caches](/clear-table-cache).
+If a table on your site shows old data, clear the cache from the gear icon › **Settings** › **Performance**. See [Clear Caches](/guide/table-management/clear-table-cache).
 :::

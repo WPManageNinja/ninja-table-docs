@@ -7,7 +7,7 @@ description: "Style one table with your own CSS, run custom JavaScript after it 
 
 The **Custom CSS/JS** tab lets you style one table with your own CSS, or run your own JavaScript after it loads, without changing your theme or your other tables. Custom CSS is free; **Custom JS** is a Pro feature. This page also lists the CSS selectors you need.
 
-Drag & Drop tables don't use this tab. They have their own **Custom JS** setting in the builder; see [Drag & Drop Table Settings](/ninja-tables-drag-and-drop-table-settings).
+Drag & Drop tables don't use this tab. They have their own **Custom JS** setting in the builder; see [Drag & Drop Table Settings](/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings).
 
 ## Open the Custom CSS/JS tab
 
@@ -167,7 +167,7 @@ Every table gets CSS classes and an HTML ID you can use for styling. In the exam
 }
 ```
 
-- You can also give a column its own class: open the column's settings in **Table Rows**, go to the **Advanced** tab and fill in **Extra classes** (Pro). See [Advanced Column Options](/advanced-settings).
+- You can also give a column its own class: open the column's settings in **Table Rows**, go to the **Advanced** tab and fill in **Extra classes** (Pro). See [Advanced Column Options](/guide/column-settings/advanced-settings).
 
 ## Making the search bar center aligned
 

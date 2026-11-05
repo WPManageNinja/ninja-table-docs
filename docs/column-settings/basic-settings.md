@@ -18,7 +18,7 @@ Columns are managed from the **Table Rows** tab. There is no separate Columns ta
 
 The dialog has four tabs: **Basic**, **Advanced**, **Conditions** (Pro) and **Transform** (Pro). On the free version, a lock icon marks **Conditions** and **Transform**. Click **Add column** (new column) or **Save column** (existing column) when you are done. **Cancel** drops your unsaved changes. The edit drawer also has a **Delete column** link, which asks you to confirm before removing the column and its data.
 
-To learn the rest of the grid, see [Working in Table Rows](/working-in-table-rows).
+To learn the rest of the grid, see [Working in Table Rows](/guide/creating-tables/working-in-table-rows).
 
 ## Column name
 
@@ -40,14 +40,14 @@ Choose the type of data the column holds. The type decides how the cell is edite
 
 | Type | Use it for |
 |---|---|
-| [Single line text field](/single-line-text-field) | Short text, names, codes |
-| [Text area](/text-area) | Longer text on several lines |
-| [HTML field](/html-field) | Links, media and formatted content |
-| [Numeric value](/numeric-value) | Numbers you want to sort and compare as numbers |
-| [Date field](/date-field) | Dates, with an optional time |
-| [Select field](/select-field) (Pro) | A list of choices |
-| [Image/File/Lightbox](/image-file-lightbox) (Pro) | Images, lightboxes and image links. Only on tables that keep their own rows |
-| [Button/Link](/actionable-button-link) (Pro) | A button that opens a link |
+| [Single line text field](/guide/field-types/single-line-text-field) | Short text, names, codes |
+| [Text area](/guide/field-types/text-area) | Longer text on several lines |
+| [HTML field](/guide/field-types/html-field) | Links, media and formatted content |
+| [Numeric value](/guide/field-types/numeric-value) | Numbers you want to sort and compare as numbers |
+| [Date field](/guide/field-types/date-field) | Dates, with an optional time |
+| [Select field](/guide/field-types/select-field) (Pro) | A list of choices |
+| [Image/File/Lightbox](/guide/field-types/image-file-lightbox) (Pro) | Images, lightboxes and image links. Only on tables that keep their own rows |
+| [Button/Link](/guide/field-types/actionable-button-link) (Pro) | A button that opens a link |
 
 When you pick a type, its own settings appear under the **Type** field.
 
@@ -66,8 +66,8 @@ Choose where the column shows on small screens:
 - **Initial Hidden Mobile, Tab and Regular Computers**
 - **Totally hidden on all devices**
 
-Columns that are folded away aren't lost. Visitors tap the **+** button on a row to see them, and you set how that works in **Table Design** › **Features** › **Mobile**. Careful: **Initial Hidden Mobile, Tab and Regular Computers** hides the column at every width, and **Hidden on desktop** does too on FooTable tables, so the column only appears in the **+** drawer. For what each option does on each table engine, see [Show or hide columns on mobile](/column-responsive-breakpoints).
+Columns that are folded away aren't lost. Visitors tap the **+** button on a row to see them, and you set how that works in **Table Design** › **Features** › **Mobile**. Careful: **Initial Hidden Mobile, Tab and Regular Computers** hides the column at every width, and **Hidden on desktop** does too on FooTable tables, so the column only appears in the **+** drawer. For what each option does on each table engine, see [Show or hide columns on mobile](/guide/responsive-design/column-responsive-breakpoints).
 
 ## Extra settings on connected tables
 
-On tables built from WordPress posts, WooCommerce or FluentCart, the Basic tab also shows the source fields for the column (**Dynamic post data** or **Dynamic column data**), so you can choose which post field, meta value or product data it displays. See [Dynamic columns reference](/dynamic-columns-reference).
+On tables built from WordPress posts, WooCommerce or FluentCart, the Basic tab also shows the source fields for the column (**Dynamic post data** or **Dynamic column data**), so you can choose which post field, meta value or product data it displays. See [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference).

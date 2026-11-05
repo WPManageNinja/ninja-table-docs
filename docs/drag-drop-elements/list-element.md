@@ -38,8 +38,8 @@ You can also edit on the canvas. Click an item in the cell to change its text, h
 
 ![List section with the list type and list icon options](/images/drag-drop-elements/list-element/3.-List-Sub-Tab-With-The-List.webp)
 
-Under **Content & style**, the **Spacing** section sets the margin and padding around the list; see [Element Spacing](/spacing).
+Under **Content & style**, the **Spacing** section sets the margin and padding around the list; see [Element Spacing](/guide/drag-drop-settings/spacing).
 
 Click **Save** to keep your changes.
 
-Want your own icons instead of bullets? Use the [Styled List](/styled-list) element (Pro).
+Want your own icons instead of bullets? Use the [Styled List](/guide/drag-drop-elements/styled-list) element (Pro).

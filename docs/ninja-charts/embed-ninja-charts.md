@@ -53,7 +53,7 @@ The sidebar panels:
 - **General**: **Chart engine**, **Chart type** and **Chart title**. Changing the type or engine on a chart with data asks you to confirm ("Change Chart Type?" or "Switch chart engine?").
 - **Data Management**: add and edit the data with **Add Dataset**, **Add Data**, **Add Point**, **Add Ring** or **Add Slice** (the button depends on the chart type), plus edit and delete for each row. Bubble charts have a bubble size label.
 - **Appearance**: **Responsive chart**, width, height and position, **Background color**, border, and font size, style and color.
-- **Title**, **Axes**, **Tooltip** and **Legend**: the same kind of options as the [chart creator tabs](/how-to-customize-charts-in-ninja-charts).
+- **Title**, **Axes**, **Tooltip** and **Legend**: the same kind of options as the [chart creator tabs](/guide/ninja-charts/how-to-customize-charts-in-ninja-charts).
 - **Layout**: padding around the chart.
 - **Animation**: **Startup animation**, **Duration (ms)**, **Easing** and **Trigger**.
 - **Fill**: **Area fill**, **Point style**, **Point fill**, **Line width**, **Straight line** and **Show points**.
@@ -71,4 +71,4 @@ The **Ninja Charts (Legacy)** block shows a chart you already saved. Add it from
 
 ## Check it on your site
 
-Preview a saved chart from the eye icon in the chart list. See [Manage Your Charts](/manage-ninja-charts).
+Preview a saved chart from the eye icon in the chart list. See [Manage Your Charts](/guide/ninja-charts/manage-ninja-charts).

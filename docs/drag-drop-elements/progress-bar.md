@@ -26,6 +26,6 @@ Under **Content & style**:
 
 ![Progress options with the line type selected](/images/drag-drop-elements/progress-bar/2.-Progress-Options-With-The-Line-Type.webp)
 
-Under **Content & style**, the **Spacing** section sets the margin and padding around it; see [Element Spacing](/spacing).
+Under **Content & style**, the **Spacing** section sets the margin and padding around it; see [Element Spacing](/guide/drag-drop-settings/spacing).
 
 Click **Save** to keep your changes.

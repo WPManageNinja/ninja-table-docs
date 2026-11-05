@@ -7,7 +7,7 @@ description: "Show your WordPress posts, pages and custom post types in a search
 
 A **WP Posts table** (Pro) shows your WordPress posts, pages or any custom post type as a searchable, sortable table. It's useful for blogs, resource libraries, member areas and directories. The rows come from a live post query, so new posts appear in the table automatically.
 
-On the Free plugin the **WP Posts/CPTs** drawer shows a Pro notice instead of the form. If Pro is active but out of date, the drawer asks you to update it. See [How connected tables work](/connected-tables-overview).
+On the Free plugin the **WP Posts/CPTs** drawer shows a Pro notice instead of the form. If Pro is active but out of date, the drawer asks you to update it. See [How connected tables work](/guide/data-sources/connected-tables-overview).
 
 ## Create a WP Posts table
 
@@ -45,7 +45,7 @@ The **Columns** list stays empty ("Pick a post type first.") until you tick a po
 Ninja Tables sets each column's type for you: Post ID, Comments, Menu order and the parent post become **Numeric value** columns, the post date columns become **Date** columns formatted as `YYYY-MM-DD`, and everything else is **Single line text**. You can change a column's type later from the column header › **Column settings**. Column headings are generated from the field names, so the date column is headed **Create Date** and the Categories column is headed **Category**. Rename them from the same menu.
 
 ::: tip
-Post meta, ACF fields and shortcodes aren't in this list. Add those columns after you create the table, from **Table Rows** › **Edit query** › **Add new column**. See [Dynamic columns reference](/dynamic-columns-reference).
+Post meta, ACF fields and shortcodes aren't in this list. Add those columns after you create the table, from **Table Rows** › **Edit query** › **Add new column**. See [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference).
 :::
 
 ### Conditions on the Create screen
@@ -134,7 +134,7 @@ Click **Update** to apply the query.
 
 ### Add new column
 
-Use **Add new column** to add columns that aren't plain post fields: Post Meta, Advanced Custom Fields (ACF, only when that plugin is active), Shortcode / Computed Value or HTML, and Featured Image. See [Dynamic columns reference](/dynamic-columns-reference).
+Use **Add new column** to add columns that aren't plain post fields: Post Meta, Advanced Custom Fields (ACF, only when that plugin is active), Shortcode / Computed Value or HTML, and Featured Image. See [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference).
 
 ## Link titles, authors and terms
 
@@ -146,4 +146,4 @@ Columns built from the query have extra options. Open them from the column heade
 
 ## Filter by taxonomy from the shortcode
 
-You can limit a WP Posts table to certain terms on a single page with the `post_tax` shortcode attribute, for example `[ninja_tables id="123" post_tax="category=news,events"]`. See [Shortcode reference](/shortcode-reference).
+You can limit a WP Posts table to certain terms on a single page with the `post_tax` shortcode attribute, for example `[ninja_tables id="123" post_tax="category=news,events"]`. See [Shortcode reference](/guide/advanced-features/shortcode-reference).

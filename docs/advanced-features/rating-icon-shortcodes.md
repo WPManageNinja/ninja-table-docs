@@ -5,10 +5,10 @@ description: "Show star ratings and small icons inside table cells with the [nt_
 
 # Rating & Icon Shortcodes
 
-Ninja Tables Pro includes two small shortcodes for table cells: **`[nt_ratings]`** draws a star rating, and **`[nt_icon]`** repeats an icon. Type them straight into a cell, or build them with [Transform value](/transform-value) from another column.
+Ninja Tables Pro includes two small shortcodes for table cells: **`[nt_ratings]`** draws a star rating, and **`[nt_icon]`** repeats an icon. Type them straight into a cell, or build them with [Transform value](/guide/column-settings/transform-value) from another column.
 
 ::: tip Shortcodes in cells run only for trusted sources
-Shortcodes typed into a cell run for tables whose rows are stored in Ninja Tables (typed in, imported or edited on the front end). Tables that read their rows from another source, such as Fluent Forms entries, show the shortcode text as it is. See [Shortcode Reference](/shortcode-reference).
+Shortcodes typed into a cell run for tables whose rows are stored in Ninja Tables (typed in, imported or edited on the front end). Tables that read their rows from another source, such as Fluent Forms entries, show the shortcode text as it is. See [Shortcode Reference](/guide/advanced-features/shortcode-reference).
 :::
 
 ## Star ratings: `[nt_ratings]`
@@ -40,7 +40,7 @@ The rating value is also written into the cell as hidden text, so the column sti
 
 ### Example: rating from another column
 
-If a column with the key `score` holds a number from 1 to 5, add a **Rating** column and set its [Transform value](/transform-value) to:
+If a column with the key `score` holds a number from 1 to 5, add a **Rating** column and set its [Transform value](/guide/column-settings/transform-value) to:
 
 ```
 [nt_ratings value="{{row.score}}" max="5" color="#f5a623"]
@@ -69,4 +69,4 @@ A plan comparison table can show a green check for included features and a grey 
 [nt_icon icon="remove" color="#9e9e9e"]
 ```
 
-See the [Shortcode Reference](/shortcode-reference) for every Ninja Tables shortcode.
+See the [Shortcode Reference](/guide/advanced-features/shortcode-reference) for every Ninja Tables shortcode.

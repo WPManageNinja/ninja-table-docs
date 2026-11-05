@@ -28,7 +28,7 @@ The 14 schemes are:
 
 **Default**, **White**, **Red**, **Orange**, **Yellow**, **Olive**, **Green**, **Teal**, **Blue**, **Violet**, **Purple**, **Pink**, **Grey** and **Black**.
 
-- **Default** adds no colors of its own. The table follows your theme and the style library you chose in [Rows & Borders](/table-rows-borders). Pick it when your theme already looks the way you want. It is the scheme every new table starts with, and the only one on the free version.
+- **Default** adds no colors of its own. The table follows your theme and the style library you chose in [Rows & Borders](/guide/styling-design/table-rows-borders). Pick it when your theme already looks the way you want. It is the scheme every new table starts with, and the only one on the free version.
 - **The other 13 schemes** (Pro) give you a complete look with one click. Use them when you want a colored header and matching rows without choosing individual colors.
 
 ![Preset color schemes with the Blue scheme selected and the table preview in blue](/images/styling-design/table-color-settings/2.-Preset-Color-Schemes-With-The-Blue.webp)
@@ -47,7 +47,7 @@ Custom colors are split into four sections, one for each part of the table: **Se
 
 ### Search Bar Colors
 
-The search bar is the strip above the table where visitors type to find a row. Turn it on or off, and change its texts, in [Search Box](/add-or-remove-search-or-filter-functionality).
+The search bar is the strip above the table where visitors type to find a row. Turn it on or off, and change its texts, in [Search Box](/guide/styling-design/add-or-remove-search-or-filter-functionality).
 
 ![Search Bar Colors section with Background, Icon and Border fields](/images/styling-design/table-color-settings/3.-Search-Bar-Colors.webp)
 
@@ -65,7 +65,7 @@ The header row holds your column titles. Color it to make the titles stand out f
 - **Text**: the color of the column titles. Pick a color that contrasts with the background so the titles stay easy to read.
 - **Border**: the color of the lines around the header cells.
 
-If the header row is hidden, these colors have nothing to paint. Turn off **Hide Header Row** under **Styling** › **Title & Header** (see [Title, Caption & Description](/table-title-description-settings)).
+If the header row is hidden, these colors have nothing to paint. Turn off **Hide Header Row** under **Styling** › **Title & Header** (see [Title, Caption & Description](/guide/table-management/table-title-description-settings)).
 
 ### Table Body Colors
 
@@ -86,12 +86,12 @@ This section colors the rows of data. It has more options than the others, so it
 While alternate colors are on, they take the place of the plain **Rows** colors for the body rows. Use the **Rows** colors when every row should look the same, and alternate colors when you want stripes.
 
 ::: tip
-A **Border** color only shows when the table has borders. Turn on **Bordered Table** under **Styling** › [Rows & Borders](/table-rows-borders).
+A **Border** color only shows when the table has borders. Turn on **Bordered Table** under **Styling** › [Rows & Borders](/guide/styling-design/table-rows-borders).
 :::
 
 ### Pagination Colors
 
-The pagination bar sits under the table and holds the page numbers. Turn pagination on or off, and set rows per page, in [Pagination](/pagination).
+The pagination bar sits under the table and holds the page numbers. Turn pagination on or off, and set rows per page, in [Pagination](/guide/styling-design/pagination).
 
 ![Pagination Colors section with Background, Active Page and Border fields](/images/styling-design/table-color-settings/6.-Pagination-Colors.webp)
 
@@ -120,18 +120,18 @@ Click **Save** to keep your colors.
 
 ::: faq
 == I set a border color but nothing changed.
-A border color only shows when the table has borders. Turn on **Bordered Table** under **Styling** › [Rows & Borders](/table-rows-borders), then check the color again.
+A border color only shows when the table has borders. Turn on **Bordered Table** under **Styling** › [Rows & Borders](/guide/styling-design/table-rows-borders), then check the color again.
 == My custom colors don't show on my site.
 Check three things. **Custom** must be selected at the top of the Colors tab, because custom colors are applied only in **Custom** mode. You must have clicked **Save**. And Custom colors need Pro: on the free version a color field opens the upgrade popup and changes nothing.
 == What happens to my custom colors when I click Preset?
 While **Preset** is selected the table uses the scheme, and your custom colors are not applied. Select **Custom** again to apply them.
 == Why can't I change the color of one row or one cell?
-Table colors apply to the whole table. To color a single row or cell, use [Row & Cell Colors](/tables-row-color). To color cells by their value, use [Conditional Formatting](/conditional-formatting).
+Table colors apply to the whole table. To color a single row or cell, use [Row & Cell Colors](/guide/styling-design/tables-row-color). To color cells by their value, use [Conditional Formatting](/guide/column-settings/conditional-formatting).
 :::
 
 ## Related
 
-- Color a single row or cell instead of the whole table: [Row & Cell Colors](/tables-row-color).
-- Color a column, or color cells by their value: [Advanced Column Options](/advanced-settings) and [Conditional Formatting](/conditional-formatting).
-- Choose fonts and sizes: [Table Fonts](/table-font-settings).
-- Style the table with your own CSS: [Custom CSS & JS](/table-styling-css-selector).
+- Color a single row or cell instead of the whole table: [Row & Cell Colors](/guide/styling-design/tables-row-color).
+- Color a column, or color cells by their value: [Advanced Column Options](/guide/column-settings/advanced-settings) and [Conditional Formatting](/guide/column-settings/conditional-formatting).
+- Choose fonts and sizes: [Table Fonts](/guide/styling-design/table-font-settings).
+- Style the table with your own CSS: [Custom CSS & JS](/guide/table-management/table-styling-css-selector).

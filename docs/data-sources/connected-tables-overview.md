@@ -35,7 +35,7 @@ Every tile for a Pro source opens its drawer even on the Free plugin, but the dr
 
 ### Table engine
 
-Most drawers end with an engine line, **Engine: DataTables (recommended) · Change**. Click **Change** to choose **DataTables** or **FooTable** (lighter, for small tables). See [Choose a table engine](/choose-table-engine).
+Most drawers end with an engine line, **Engine: DataTables (recommended) · Change**. Click **Change** to choose **DataTables** or **FooTable** (lighter, for small tables). See [Choose a table engine](/guide/creating-tables/choose-table-engine).
 
 - The line appears in the Fluent Forms, FluentCart and Custom SQL drawers, and in the Google Sheets and Remote CSV drawers when the sheet-sync feature is available.
 - The WP Posts, WooCommerce products and WooCommerce reviews drawers have no engine line. Those tables start on FooTable.
@@ -43,12 +43,12 @@ Most drawers end with an engine line, **Engine: DataTables (recommended) · Chan
 
 Each source has its own guide:
 
-- [WP Posts and custom post types](/create-wp-posts-table)
-- [WooCommerce products](/woocommerce-integration) and [WooCommerce reviews](/woocommerce-product-reviews-table)
-- [FluentCart products](/fluentcart-integration)
-- [Fluent Forms entries](/fluent-forms-integration)
-- [Google Sheets](/google-sheets-integration) and [Remote CSV](/construct-table-from-csv)
-- [Custom SQL query](/create-table-from-custom-sql)
+- [WP Posts and custom post types](/guide/data-sources/create-wp-posts-table)
+- [WooCommerce products](/guide/data-sources/woocommerce-integration) and [WooCommerce reviews](/guide/data-sources/woocommerce-product-reviews-table)
+- [FluentCart products](/guide/data-sources/fluentcart-integration)
+- [Fluent Forms entries](/guide/data-sources/fluent-forms-integration)
+- [Google Sheets](/guide/data-sources/google-sheets-integration) and [Remote CSV](/guide/data-sources/construct-table-from-csv)
+- [Custom SQL query](/guide/data-sources/create-table-from-custom-sql)
 
 ## The source banner
 
@@ -61,7 +61,7 @@ Open a connected table and go to the **Table Rows** tab. At the top is the **sou
 If the source hasn't been set up yet, the banner says "Nothing is set up yet. Open the source settings and choose what this table shows." and the button is highlighted.
 
 ::: tip
-Google Sheets and Remote CSV tables that use the **DataTables** engine show a sync panel instead of the banner. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
+Google Sheets and Remote CSV tables that use the **DataTables** engine show a sync panel instead of the banner. See [Google Sheets & CSV auto sync](/guide/data-sources/google-sheets-csv-auto-sync).
 :::
 
 ## The Source settings drawer
@@ -78,7 +78,7 @@ What you see inside depends on the source:
 
 - **Query settings** decides which rows the table shows (post types, categories, filters, order).
 - **Appearance** holds source-specific display options, such as the cart buttons on product tables or the star colors on review tables. The table's general design lives in the **Styling** tab of **Table Design** of the editor.
-- **Add new column** adds a column filled from the source, such as a post meta value, a product SKU or a featured image. See [Dynamic columns reference](/dynamic-columns-reference).
+- **Add new column** adds a column filled from the source, such as a post meta value, a product SKU or a featured image. See [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference).
 
 Save your changes with the button at the bottom of each section (**Save settings**, **Update** or **Save and run**, depending on the source).
 
@@ -100,7 +100,7 @@ The rows grid also has no drag-to-sort and no row import. Everything about the t
 
 - Rename columns, change their type and set column options from the column header › **Column settings**.
 - Design the table in the **Styling** tab of **Table Design**.
-- Add [Custom filters](/custom-filters) (Pro), Custom CSS/JS and performance settings in **Table Configuration**.
+- Add [Custom filters](/guide/table-settings/custom-filters) (Pro), Custom CSS/JS and performance settings in **Table Configuration**.
 
 The **Frontend Editing** tab isn't available for connected tables. It explains: "Only tables that store their own rows can be edited from the front end. This one reads its rows from somewhere else, so there is nothing here to save back to."
 
@@ -110,7 +110,7 @@ How quickly a connected table picks up changes depends on the source:
 
 - **WP Posts, WooCommerce, FluentCart, Fluent Forms and Custom SQL** read from your database each time the table loads, so new posts, products and entries appear on their own.
 - **Google Sheets and Remote CSV on FooTable** are fetched from the URL and kept for the **Caching interval (in minutes)** set in **Table Configuration** (5 minutes by default). Leave it blank or set 0 to cache nothing.
-- **Google Sheets and Remote CSV on DataTables** are copied into your database on a schedule. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
+- **Google Sheets and Remote CSV on DataTables** are copied into your database on a schedule. See [Google Sheets & CSV auto sync](/guide/data-sources/google-sheets-csv-auto-sync).
 
 ### Caching settings are different for connected tables
 
@@ -119,7 +119,7 @@ In **Table Configuration** › **Caching Configuration**, the **Display Frontend
 - **Caching interval (in minutes)** on Google Sheets and Remote CSV tables.
 - **Enable HTML cache** when the table's **Rendering Setting** is **Legacy**.
 
-See [Table rendering settings](/table-rendering-settings) and [Clear table cache](/clear-table-cache).
+See [Table rendering settings](/guide/table-settings/table-rendering-settings) and [Clear table cache](/guide/table-management/clear-table-cache).
 
 ### Connected tables on DataTables
 
@@ -127,4 +127,4 @@ A connected table on the **DataTables** engine asks the server for its rows live
 
 ## Show the table on your site
 
-Copy the shortcode from the editor header, or use the Ninja Tables block. Both work the same for connected tables. See [Embed a table](/embed-tables).
+Copy the shortcode from the editor header, or use the Ninja Tables block. Both work the same for connected tables. See [Embed a table](/guide/wordpress-integration/embed-tables).

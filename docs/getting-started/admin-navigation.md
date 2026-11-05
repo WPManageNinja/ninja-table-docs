@@ -11,7 +11,7 @@ The **Ninja Tables** admin is one app with a top bar and a gear icon for site-wi
 
 Click **Ninja Tables** in the WordPress admin menu (it reads **Ninja Tables Pro** when Pro is active). The menu has these items:
 
-- **Tables**: the [Tables list](/tables-list).
+- **Tables**: the [Tables list](/guide/table-management/tables-list).
 - **Create Table**: the Create a table screen.
 - **Import**: the Import screen.
 - **Charts**: opens the Charts screen, where you can install the free Ninja Charts plugin. Once Ninja Charts is active, this item opens its chart list.
@@ -22,7 +22,7 @@ Click **Ninja Tables** in the WordPress admin menu (it reads **Ninja Tables Pro*
 
 ![WordPress admin menu with the Ninja Tables submenu expanded](/images/getting-started/admin-navigation/1.-WordPress-Admin-Menu-With-The-Ninja.webp)
 
-You need the Ninja Tables admin permission to see the menu. By default that is administrators only; Pro can let other roles manage tables. See [Who can manage tables](/define-permission-for-table-users).
+You need the Ninja Tables admin permission to see the menu. By default that is administrators only; Pro can let other roles manage tables. See [Who can manage tables](/guide/table-management/define-permission-for-table-users).
 
 ## The top bar
 
@@ -30,7 +30,7 @@ Every Ninja Tables screen shares the same top bar:
 
 - **Ninja Tables** and the **plan pill** on the left. The pill reads **Free** or **Pro**. Click the logo or name to go back to the Tables list.
 - **Tables**, **Create Table**, **Import**, **Charts** and **Help** in the middle. The one you are on is highlighted.
-- The **gear** icon opens [Settings](/tools-and-settings). It stays highlighted on any settings screen.
+- The **gear** icon opens [Settings](/guide/table-management/tools-and-settings). It stays highlighted on any settings screen.
 - The **theme** icon switches between light and dark mode.
 - **Get Pro** on the right, on the free version only.
 
@@ -71,7 +71,7 @@ A **Welcome to the new Ninja Tables** banner appears at the top of the **Tables*
 | Table › Rendering settings & caching | Table › **Table Configuration** |
 | Table › Additional CSS / JS | Table › **Custom CSS/JS** |
 
-In the dialog, **Got it** closes it. The **Default appearance** screen is called **Global appearance** in the Settings side menu. See the [Settings overview](/tools-and-settings).
+In the dialog, **Got it** closes it. The **Default appearance** screen is called **Global appearance** in the Settings side menu. See the [Settings overview](/guide/table-management/tools-and-settings).
 
 ## Old links still work
 
@@ -80,15 +80,15 @@ Bookmarks and links from older versions open the right place in the new admin:
 - `#/tools` opens **Import**.
 - `#/tools/global_settings`, `#/tools/default_table_appearance`, `#/tools/permission`, `#/tools/performance` and `#/tools/licensing` open the matching **Settings** screen.
 - `#/tables/<ID>/design_studio`, `/configuration`, `/additional_css`, `/filters` and `/table_editing` open the matching tab of that table.
-- `#/tables/<ID>/import-export` opens the table's **Import / Export** panel, and `#/tables/<ID>/columns` opens the older Columns page, each on a page of its own (neither is a tab). See [Working in Table Rows](/working-in-table-rows).
+- `#/tables/<ID>/import-export` opens the table's **Import / Export** panel, and `#/tables/<ID>/columns` opens the older Columns page, each on a page of its own (neither is a tab). See [Working in Table Rows](/guide/creating-tables/working-in-table-rows).
 - `#/table_builder_add_table` opens **Create Table** with the **Drag & Drop table** panel open.
 
 You can also open a **Create Table** panel straight from a link by adding `#/create?source=` and the tile's key, for example `#/create?source=upload` or `#/create?source=drag_and_drop`.
 
 ## Start-up hints are saved per browser
 
-The first-run setup and the welcome banner remember what you skipped or hid in your browser, not on the site. If you clear your browser data, or open the admin in another browser, they appear again. See [Onboarding](/ninja-tables-onboarding).
+The first-run setup and the welcome banner remember what you skipped or hid in your browser, not on the site. If you clear your browser data, or open the admin in another browser, they appear again. See [Onboarding](/guide/getting-started/ninja-tables-onboarding).
 
 ## When a feature needs Pro
 
-On the free version, locked options show a **Pro** badge or a note with an **Upgrade to Pro** link. Clicking some of them opens an **Unlock the Ninja Tables Pro features** pop-up with two buttons: **Not now**, and **Get Ninja Tables Pro**, which opens the Pro page. See [Free vs Pro](/free-vs-pro) for the full list.
+On the free version, locked options show a **Pro** badge or a note with an **Upgrade to Pro** link. Clicking some of them opens an **Unlock the Ninja Tables Pro features** pop-up with two buttons: **Not now**, and **Get Ninja Tables Pro**, which opens the Pro page. See [Free vs Pro](/guide/getting-started/free-vs-pro) for the full list.

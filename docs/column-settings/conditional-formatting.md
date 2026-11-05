@@ -44,7 +44,7 @@ How they compare:
 - The number and date conditions compare numbers: non-numeric characters are ignored, and the column's **Separator style** (Numeric value) or date format is used to read the value.
 - **Between** is inclusive: a value equal to the minimum or the maximum matches.
 
-Set the column's **Type** to **Numeric value** or **Date field** in the **Basic** tab first, or the extra conditions don't appear. See [Numeric value](/numeric-value) and [Date field](/date-field).
+Set the column's **Type** to **Numeric value** or **Date field** in the **Basic** tab first, or the extra conditions don't appear. See [Numeric value](/guide/field-types/numeric-value) and [Date field](/guide/field-types/date-field).
 
 ### Actions
 
@@ -75,7 +75,7 @@ Click **Save column**, then preview the table.
 2. Click **Save column**.
 3. Open the table's **Custom CSS/JS** tab, write the CSS for `.abc`, and click **Save**.
 
-The style now applies to every matching cell. See [Style a table with CSS selectors](/table-styling-css-selector).
+The style now applies to every matching cell. See [Style a table with CSS selectors](/guide/table-management/table-styling-css-selector).
 
 ## Example: numbers
 
@@ -101,7 +101,7 @@ For example: **If value** **Less than** `{date:MM/DD/YY}` **Then** **Set cell co
 
 ### Other placeholders
 
-The value box also accepts the other Ninja Tables placeholders, such as `{user:field}`, `{usermeta:key}`, `{current_post_id}`, `{current_post_title}` and `{current_user_role}`. They are filled in when the page loads, so a rule can depend on the logged-in user or the page. See [Shortcode reference](/shortcode-reference).
+The value box also accepts the other Ninja Tables placeholders, such as `{user:field}`, `{usermeta:key}`, `{current_post_id}`, `{current_post_title}` and `{current_user_role}`. They are filled in when the page loads, so a rule can depend on the logged-in user or the page. See [Shortcode reference](/guide/advanced-features/shortcode-reference).
 
 ## Example: hide past rows with a row CSS class
 

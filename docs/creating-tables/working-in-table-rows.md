@@ -15,8 +15,8 @@ To open it, go to **Ninja Tables** › **Tables**, click a table, and stay on th
 
 The header above the tabs stays visible while you work:
 
-- **Back arrow**: returns to the [Tables list](/tables-list).
-- **Table title** and its `#ID`: the pencil icon next to it (**Edit table details**) opens the title, caption and description. See [Title, caption & description](/table-title-description-settings).
+- **Back arrow**: returns to the [Tables list](/guide/table-management/tables-list).
+- **Table title** and its `#ID`: the pencil icon next to it (**Edit table details**) opens the title, caption and description. See [Title, caption & description](/guide/table-management/table-title-description-settings).
 - **Shortcode chip**: shows `[ninja_tables id="123"]`. Click it to copy the shortcode.
 - **Preview**: opens the table on a bare page in a new tab, as visitors see it.
 - **Save**: appears only on tabs that have settings to save, such as **Table Design**. The **Table Rows** tab has no Save button, because every cell edit, row and column change saves as soon as you make it.
@@ -27,7 +27,7 @@ The header above the tabs stays visible while you work:
 Each column of your table is a column in the grid, and each row is a row. Rows appear in the order set in **Table Design** › **Sorting** (by created date by default).
 
 - **Edit a cell in place**: click a cell, type, then click outside it to save (or press **Enter** in a single-line cell). This works for text, text area, number, date and select columns. HTML, image and button cells are edited in the row drawer.
-- **Preview in the grid**: when a column has a [Transform value](/transform-value) or a formula (Pro), the grid shows the result, not the raw stored value.
+- **Preview in the grid**: when a column has a [Transform value](/guide/column-settings/transform-value) or a formula (Pro), the grid shows the result, not the raw stored value.
 - **Sort the view**: click a column name. The tooltip shows the next step: **Sort A → Z**, **Sort Z → A**, then **Back to saved order**. On tables that store their own rows, the sort covers every row of the table, not just the current page, and the grid goes back to the first page. On connected tables it only reorders the rows already loaded in the grid (the current page). Text sorts in natural order, so 999 comes before 1000. The sort is never saved and doesn't change what visitors see. It is turned off while **Sort manually** is on.
 - **Select rows**: tick the checkboxes on the left. A **Delete (n)** button appears in the toolbar, with an **x** to clear the selection. Deleting asks you to confirm, then removes all ticked rows for good.
 
@@ -41,11 +41,11 @@ The bar above the grid holds these tools:
 |---|---|
 | **Search rows...** | Searches all rows of the table (not only the page you see) as you type, and shows how many rows match. Press **Enter** to search at once. |
 | **Read-only** | A badge that marks connected tables, whose rows come from another source. |
-| **Sort manually** (Pro) | Turns on drag-to-reorder for rows. See [Sort rows manually](/rearrangement-of-rows-in-ninja-tables-manual-row-sort). |
+| **Sort manually** (Pro) | Turns on drag-to-reorder for rows. See [Sort rows manually](/guide/table-management/rearrangement-of-rows-in-ninja-tables-manual-row-sort). |
 | **Compact View** | Switches between tight and roomy row height in the editor. Compact is on by default. It doesn't change the table on your site. |
 | **Show row ID, author and date** | Adds three read-only columns to the grid: **Row ID**, **Created by** and **Reference date**. Click again to hide them. |
-| **Import / Export** | Opens a dialog to export this table as CSV, Excel (.xlsx) or JSON, or to import rows from a CSV file. See [Export a table](/export-ninja-tables-csv-json) and [Import rows into a table](/import-csv-file-to-an-existing-table). |
-| **Export** (connected tables only) | Opens the export dialog. Connected tables have no Import, because their rows come from the source. See [Export a table](/export-ninja-tables-csv-json). |
+| **Import / Export** | Opens a dialog to export this table as CSV, Excel (.xlsx) or JSON, or to import rows from a CSV file. See [Export a table](/guide/import-export/export-ninja-tables-csv-json) and [Import rows into a table](/guide/import-export/import-csv-file-to-an-existing-table). |
+| **Export** (connected tables only) | Opens the export dialog. Connected tables have no Import, because their rows come from the source. See [Export a table](/guide/import-export/export-ninja-tables-csv-json). |
 | **Add column** | Adds a new column at the end of the table. |
 | **Add data** | Opens the row drawer to add a new row. |
 
@@ -69,13 +69,13 @@ A few extras in the drawer:
 - **Created date**: when you edit a saved row, a **Created date** field sits under the values. It is useful when the table is sorted by created date.
 - If every field is empty, saving shows **Please add at least 1 value to the row**.
 
-Select columns let you type a value that is not in the **Select items** list, and multi-select columns store several values in one cell. Image columns use the WordPress media library. See [Select field](/select-field) and [Image/File/Lightbox](/image-file-lightbox).
+Select columns let you type a value that is not in the **Select items** list, and multi-select columns store several values in one cell. Image columns use the WordPress media library. See [Select field](/guide/field-types/select-field) and [Image/File/Lightbox](/guide/field-types/image-file-lightbox).
 
 ## Row actions
 
 The end of every row has three buttons:
 
-- **Row settings** (palette icon): set this row's **Background** and **Text** colors. This is a Pro feature; on the free version the drawer shows a note that row and cell colors need Pro. See [Row and cell colors](/tables-row-color).
+- **Row settings** (palette icon): set this row's **Background** and **Text** colors. This is a Pro feature; on the free version the drawer shows a note that row and cell colors need Pro. See [Row and cell colors](/guide/styling-design/tables-row-color).
 - **Edit row** (pencil icon): opens the row drawer.
 - **Row actions** (the ⋯ menu):
   - **Insert row below** (Pro): opens the drawer to add a new row right under this one.
@@ -85,14 +85,14 @@ The end of every row has three buttons:
 Each cell also has a small palette icon for **Cell settings** (Pro), where you set the background and text color of that one cell.
 
 ::: tip Where the copy lands
-**Duplicate row** and **Insert row below** put the new row right after the original only when the table is ordered by created date, or by manual order (Pro). When the table is ordered by a column, the new row appears wherever that sort puts it. Check **Table Design** › **Sorting**. See [Sorting](/sorting).
+**Duplicate row** and **Insert row below** put the new row right after the original only when the table is ordered by created date, or by manual order (Pro). When the table is ordered by a column, the new row appears wherever that sort puts it. Check **Table Design** › **Sorting**. See [Sorting](/guide/styling-design/sorting).
 :::
 
 ## Column header menu
 
 Every column header has a gear icon (**Column settings**). Click it for the column menu:
 
-- **Column settings**: opens the **Edit column** drawer with the **Basic**, **Advanced**, **Conditions** (Pro) and **Transform** (Pro) tabs. See [Add and edit a column](/basic-settings).
+- **Column settings**: opens the **Edit column** drawer with the **Basic**, **Advanced**, **Conditions** (Pro) and **Transform** (Pro) tabs. See [Add and edit a column](/guide/column-settings/basic-settings).
 - **Add column left** / **Add column right**: adds a new column next to this one.
 - **Delete column**: removes the column and the data in it, after you confirm.
 - **Bulk delete columns**: shown when the table has more than one column. Tick the columns to remove in the **Delete columns** dialog, then click **Delete (n)**.
@@ -117,7 +117,7 @@ An older full-page column manager is still available at the address `#/tables/<i
 
 Tables that get their rows from another source (WordPress posts, WooCommerce, Fluent Forms, FluentCart, Google Sheets, a remote CSV or a custom SQL query) show a **Read-only** badge in the toolbar. For these tables:
 
-- A **source banner** above the grid says where the rows come from and has a **Source settings** button (**Edit query** for WP Posts tables) to change what the table shows. See [Connected tables overview](/connected-tables-overview).
+- A **source banner** above the grid says where the rows come from and has a **Source settings** button (**Edit query** for WP Posts tables) to change what the table shows. See [Connected tables overview](/guide/data-sources/connected-tables-overview).
 - You can search the rows, switch **Compact View** and click **Export** to download the rows as CSV, Excel or JSON. You can't add, edit, sort or delete rows here. Change the data in its source instead.
 - The grid shows row numbers instead of checkboxes.
 - The column menu has **Column settings** and **Delete column**, but not **Add column left / right** or **Bulk delete columns**.
@@ -126,4 +126,4 @@ Tables that get their rows from another source (WordPress posts, WooCommerce, Fl
 
 The footer under the grid shows the row and column counts, **Showing x–y of z**, and page controls. Use **Rows per page** to show 10, 15, 20 (the default), 50 or 100 rows at a time, or type a page number to jump to it.
 
-This only affects the editor. To set how many rows visitors see per page, use **Table Design** › **Pagination**. See [Pagination](/pagination).
+This only affects the editor. To set how many rows visitors see per page, use **Table Design** › **Pagination**. See [Pagination](/guide/styling-design/pagination).

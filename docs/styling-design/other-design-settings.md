@@ -19,7 +19,7 @@ Every change shows in the live preview. Click **Save** at the top of the editor 
 
 **Sticky Header** is off by default. Turn it on and the table sits in its own scroll box, up to 70% of the screen height. The header row stays pinned to the top of that box while the rows scroll under it. The search bar and pagination stay outside the box, so they don't scroll away.
 
-- The header gets a solid background, so rows never show through it. If you chose a color scheme in [Table Colors](/table-color-settings), the header keeps that color.
+- The header gets a solid background, so rows never show through it. If you chose a color scheme in [Table Colors](/guide/styling-design/table-color-settings), the header keeps that color.
 - The scroll box can be reached with the keyboard. Visitors tab to it, then scroll with the arrow keys.
 - A table with only a few rows doesn't scroll, so there is nothing to pin.
 - It works with both table engines, and keeps working after the visitor sorts, searches or changes page.
@@ -45,7 +45,7 @@ Off by default. Turn it on to switch the sticky header off on screens 767 px wid
 **Sticky First Column** is off by default and works on its own, without **Sticky Header**. While a visitor scrolls a wide table sideways, the first column stays in place, so the row label stays visible next to the data.
 
 - Once the table has scrolled sideways, the pinned cells get an opaque background so the passing columns don't show through. With a color scheme, it uses the scheme's row color.
-- Put the most useful column first, such as a name or product, and use [Column Settings](/basic-settings) to reorder.
+- Put the most useful column first, such as a name or product, and use [Column Settings](/guide/column-settings/basic-settings) to reorder.
 - On the DataTables engine, a row-expand toggle or edit button that sits before the first column is pinned too, ahead of the first data column.
 
 ## Use both together
@@ -62,12 +62,12 @@ That is how the sticky header works. The table scrolls inside a box (70% of the 
 == Top Offset does nothing.
 In the current version the header is pinned inside the table's own box, so the offset isn't needed for a fixed theme menu and has no visible effect. See the tip above.
 == The first column isn't staying put.
-The table must be wider than its container so it can scroll sideways. If every column fits, there is nothing to pin. Check also [Responsive & Stackable Table](/stackable-table): a stacked table has no sideways scroll.
+The table must be wider than its container so it can scroll sideways. If every column fits, there is nothing to pin. Check also [Responsive & Stackable Table](/guide/responsive-design/stackable-table): a stacked table has no sideways scroll.
 :::
 
 ## Related
 
-- Show fewer rows at once: [Pagination](/pagination).
-- Make a table work on phones: [Responsive & Stackable Table](/stackable-table).
-- Choose the header color: [Table Colors](/table-color-settings).
-- Other Features settings: [Search Box](/add-or-remove-search-or-filter-functionality) and [Sorting](/sorting).
+- Show fewer rows at once: [Pagination](/guide/styling-design/pagination).
+- Make a table work on phones: [Responsive & Stackable Table](/guide/responsive-design/stackable-table).
+- Choose the header color: [Table Colors](/guide/styling-design/table-color-settings).
+- Other Features settings: [Search Box](/guide/styling-design/add-or-remove-search-or-filter-functionality) and [Sorting](/guide/styling-design/sorting).

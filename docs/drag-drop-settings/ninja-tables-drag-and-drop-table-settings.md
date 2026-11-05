@@ -41,11 +41,11 @@ These are the only place to set the header, even-row and odd-row colors:
 - **Even Row Background** (default `#dddddd`)
 - **Odd Row Background** (default `#ffffff`)
 
-Colors for one cell, a selected row or a selected column are in [Cell Settings](/drag-drop-cell-settings).
+Colors for one cell, a selected row or a selected column are in [Cell Settings](/guide/drag-drop-settings/drag-drop-cell-settings).
 
 ## Border
 
-- **Table Border** (0–50, default 0), **Table Corner Radius** (0–50, default 0) and **Border Color** (default `#000000`). **Table Corner Radius** rounds the outer corners of the whole table; the cell-level equivalent is in [Cell Settings](/drag-drop-cell-settings#round-corners).
+- **Table Border** (0–50, default 0), **Table Corner Radius** (0–50, default 0) and **Border Color** (default `#000000`). **Table Corner Radius** rounds the outer corners of the whole table; the cell-level equivalent is in [Cell Settings](/guide/drag-drop-settings/drag-drop-cell-settings#round-corners).
 - **Apply Inner Border** (on by default): borders between cells. When on, set **Header Inner Border** (on by default), **Inner Border Color** (default `#000000`) and **Inner Border Size** (0–50, default 1).
 
 ![Border settings with table border and inner border options](/images/drag-drop-settings/ninja-tables-drag-drop/3.-Border-Settings-With-Table-Border.webp)
@@ -79,7 +79,7 @@ On the free version, an info icon beside the heading says "This is a Pro feature
 
 ## Responsive
 
-Mobile and tablet layout is no longer in this list. It has its own **Responsive** tab in the right panel. See [Mobile & Tablet Layout](/responsive-table-design).
+Mobile and tablet layout is no longer in this list. It has its own **Responsive** tab in the right panel. See [Mobile & Tablet Layout](/guide/drag-drop-settings/responsive-table-design).
 
 Click **Save** to keep your changes.
 

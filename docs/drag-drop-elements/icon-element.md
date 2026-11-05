@@ -20,6 +20,6 @@ Under **Content & style**:
 - **Alignment**: **Left**, **Center** (default) or **Right**.
 - **Icon**: pick one from the library with **Search Icons**, or click **Upload Your Own** to choose an image from the media library. The default icon is "ninja-table".
 
-Under **Content & style**, the **Spacing** section sets the margin and padding around the icon; see [Element Spacing](/spacing).
+Under **Content & style**, the **Spacing** section sets the margin and padding around the icon; see [Element Spacing](/guide/drag-drop-settings/spacing).
 
 Click **Save** to keep your changes.

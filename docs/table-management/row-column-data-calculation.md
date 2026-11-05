@@ -11,7 +11,7 @@ In this example, a sales table has three **Numeric value** columns, **Q1**, **Q2
 
 ## Row calculation (Pro)
 
-A fourth column, **Total**, shows the sum of the three quarters in each row. This uses [Transform value](/transform-value) with an Excel formula.
+A fourth column, **Total**, shows the sum of the three quarters in each row. This uses [Transform value](/guide/column-settings/transform-value) with an Excel formula.
 
 1. Go to **Ninja Tables** › **Tables** › your table › **Table Rows**. Click the gear icon on the **Total** column and choose **Column settings**.
 2. Open the **Transform** tab and turn on **Excel formula support** (marked experimental). This switch applies to every column in the table and saves immediately.
@@ -29,7 +29,7 @@ The **Total** column now shows the sum of each row, in the grid and on your site
 
 ![Total column showing the sum of each row](/images/table-management/row-column-data-calculation/2.-Total-Column-Showing-The-Sum.webp)
 
-Other functions work the same way, such as `AVERAGE`, `ROUND` and `IF`. Use `NUMVAL` to turn text such as `$1,200.50` into a number first. See [Transform value](/transform-value) for the formula rules and the list of functions.
+Other functions work the same way, such as `AVERAGE`, `ROUND` and `IF`. Use `NUMVAL` to turn text such as `$1,200.50` into a number first. See [Transform value](/guide/column-settings/transform-value) for the formula rules and the list of functions.
 
 ## Column calculation (Pro)
 

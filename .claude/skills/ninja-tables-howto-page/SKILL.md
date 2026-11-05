@@ -61,7 +61,7 @@ gets you to. Point to the shorter or longer sibling page if one exists.>
 
 ## Next steps            (optional)
 
-- [<Task-first link text>](/<slug>)
+- [<Task-first link text>](/guide/<category>/<slug>)
 ```
 
 ## Rules

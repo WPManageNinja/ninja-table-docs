@@ -10,7 +10,7 @@ Every table has a **shortcode**, and that shortcode is how a table appears on yo
 ## Copy the shortcode
 
 - **In the table editor**: the shortcode chip next to the table's title, for example `[ninja_tables id="123"]`. Click it to copy.
-- **In the Tables list**: the **Shortcode** column. See [The Tables List](/tables-list).
+- **In the Tables list**: the **Shortcode** column. See [The Tables List](/guide/table-management/tables-list).
 
 ![Table editor header with the shortcode chip and the Preview button](/images/wordpress-integration/embed/1.-Table-Editor-Header-With-The-Shortcode.webp)
 
@@ -18,7 +18,7 @@ Drag & Drop tables use a different shortcode, `[ninja_table_builder id="123"]`. 
 
 ## Preview a table before you embed it
 
-Click **Preview** in the table editor, or use the preview option in the Tables list, to open the table on its own themed page. The link looks like `/?ninjatable_preview=123`. Drag & Drop tables preview from the builder's top bar (`/?ninjatable_builder_preview=123`). Only users with the table admin role can open a preview; everyone else gets nothing. The role is set under **Settings** › **Permissions**; see [Define Permission for Table Users](/define-permission-for-table-users).
+Click **Preview** in the table editor, or use the preview option in the Tables list, to open the table on its own themed page. The link looks like `/?ninjatable_preview=123`. Drag & Drop tables preview from the builder's top bar (`/?ninjatable_builder_preview=123`). Only users with the table admin role can open a preview; everyone else gets nothing. The role is set under **Settings** › **Permissions**; see [Define Permission for Table Users](/guide/table-management/define-permission-for-table-users).
 
 ## If a table does not show
 
@@ -52,7 +52,7 @@ The block shows a live preview of the table in the editor. It saves the table's 
 For regular tables the sidebar has three tabs: **Styling**, **Colors** and **Other**.
 
 ::: warning Block settings change the table everywhere
-The settings in the block sidebar are saved to the **table itself**, not to this one block. The save happens when you save or update the post, and only if the user saving it has the table admin role. Once saved, the change shows on every page that shows the table. To show a table differently on one page only, use [shortcode attributes](/advanced-shortcode) instead.
+The settings in the block sidebar are saved to the **table itself**, not to this one block. The save happens when you save or update the post, and only if the user saving it has the table admin role. Once saved, the change shows on every page that shows the table. To show a table differently on one page only, use [shortcode attributes](/guide/advanced-features/advanced-shortcode) instead.
 :::
 
 ### Styling tab
@@ -67,7 +67,7 @@ The settings in the block sidebar are saved to the **table itself**, not to this
   - **Enable Row Details Modal**: opens a row's full details in a popup.
   - **Hide All Borders**.
   - **Hide empty items on responsive breakdown** (Pro) and **Hide Labels on responsive breakdown** (Pro).
-- **Stackable Table Configuration**: **Enable Stackable Table** shows rows as cards. When on, choose **Target Devices** (**Mobile**, **Tablet**, **Laptop**, **Large Devices (iMac)**) and **Stacked Appearance** (**Hide column headings**, **Hide internal borders**). See [Stackable Table](/stackable-table).
+- **Stackable Table Configuration**: **Enable Stackable Table** shows rows as cards. When on, choose **Target Devices** (**Mobile**, **Tablet**, **Laptop**, **Large Devices (iMac)**) and **Stacked Appearance** (**Hide column headings**, **Hide internal borders**). See [Stackable Table](/guide/responsive-design/stackable-table).
 
 ### Colors tab (Pro)
 
@@ -127,8 +127,8 @@ The shortcode works anywhere WordPress runs shortcodes: widget areas, theme temp
 
 ## See where a table is used
 
-The **Used on** column in the [Tables list](/tables-list) shows how many pages and posts embed each table. Click it to see the list. It finds tables placed with the shortcode or the block in page and post content; tables placed in widgets or theme templates aren't counted.
+The **Used on** column in the [Tables list](/guide/table-management/tables-list) shows how many pages and posts embed each table. Click it to see the list. It finds tables placed with the shortcode or the block in page and post content; tables placed in widgets or theme templates aren't counted.
 
 ## Change one embed only
 
-Shortcode attributes change a table on a single page without touching its settings: for example `per_page` (Pro), `columns` (Pro), `filter` or `logged_in_only` (Pro). See [Advanced Shortcode](/advanced-shortcode) and the [Shortcode Reference](/shortcode-reference).
+Shortcode attributes change a table on a single page without touching its settings: for example `per_page` (Pro), `columns` (Pro), `filter` or `logged_in_only` (Pro). See [Advanced Shortcode](/guide/advanced-features/advanced-shortcode) and the [Shortcode Reference](/guide/advanced-features/shortcode-reference).

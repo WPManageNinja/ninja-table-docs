@@ -7,7 +7,7 @@ description: "Color cells, rows and columns, highlight a column, and set row hei
 
 **Cell settings** control the colors and size of the parts of a Drag & Drop table you select: one cell, several cells, a whole column or a whole row. What the **Settings** tab shows depends on what you select.
 
-Colors for the header, even rows and odd rows are not here. They are table-wide, so you set them in [Table Settings](/ninja-tables-drag-and-drop-table-settings) under **Background**.
+Colors for the header, even rows and odd rows are not here. They are table-wide, so you set them in [Table Settings](/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings) under **Background**.
 
 | You select | How | Options you get |
 | --- | --- | --- |
@@ -41,7 +41,7 @@ Use **Corner radius** (0–50, default 0) to round the corners of what you selec
 - **A column**: only the outer top and bottom corners of the column are rounded.
 - **A row**: only the outer left and right corners of the row are rounded.
 
-Set it back to 0 to remove the rounding. To round the whole table instead, use **Table Corner Radius** in the [table settings](/ninja-tables-drag-and-drop-table-settings).
+Set it back to 0 to remove the rounding. To round the whole table instead, use **Table Corner Radius** in the [table settings](/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings).
 
 ## Highlight Column (Pro)
 
@@ -51,7 +51,7 @@ Make one column stand out, as in a "most popular" pricing plan. Click the column
 - **Shadow Color** (default `#888888`, with opacity).
 - **Shadow Effect (X-Axis)** (−30 to 30), **Shadow Effect (Y-Axis)** (1–30, default 10) and **Shadow Effect (Blur Radius)** (10–30, default 10): the shape of the shadow.
 
-Turning the highlight on, or changing its height or blur radius, also sets **Margin Top** under **Table Style** in the [table settings](/ninja-tables-drag-and-drop-table-settings) to the highlight height plus the blur radius, and **Margin Bottom** to that plus 30, so the shadow isn't cut off. If you then check those values and find they changed, that is why.
+Turning the highlight on, or changing its height or blur radius, also sets **Margin Top** under **Table Style** in the [table settings](/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings) to the highlight height plus the blur radius, and **Margin Bottom** to that plus 30, so the shadow isn't cut off. If you then check those values and find they changed, that is why.
 
 ![Highlight column options with height and shadow settings](/images/drag-drop-settings/manage-cells-ninja-tables/4.-Highlight-Column-Options-With-Height.webp)
 
@@ -70,7 +70,7 @@ Turning the highlight on, or changing its height or blur radius, also sets **Mar
 - **Row Height** (50–500, default 50): click the row number, then set the height of that row.
 - **Column Width** (100–1000, default 150): click the column letter, then set the width of that column. When it isn't set, the column uses **Table Cell Min Auto Width** from the table settings.
 
-To merge or split cells, use **Merge** and **Split** in the canvas toolbar; see [Rows & Columns](/drag-drop-rows-columns).
+To merge or split cells, use **Merge** and **Split** in the canvas toolbar; see [Rows & Columns](/guide/drag-drop-settings/drag-drop-rows-columns).
 
 ![Column B selected, with the Column Width option in the Settings tab](/images/drag-drop-settings/manage-cells-ninja-tables/5.-Column-Selected-With-Column-Width.webp)
 

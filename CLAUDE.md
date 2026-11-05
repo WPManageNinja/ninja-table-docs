@@ -3,9 +3,10 @@
 End-user documentation site for the **Ninja Tables** WordPress plugin by WPManageNinja (free +
 Pro table builder). Built with **VitePress 1.6+**, **Vue 3.5**.
 
-> Source folder is `docs/` (renamed from `guide/` on 2026-10-29). Pages are served at flat URLs
-> `/<slug>` through `rewrites` in `.vitepress/config.mts` (`'docs/:category/:slug.md': ':slug.md'`).
-> Page/nav/sidebar links are `/<slug>`. Image paths in markdown are `/images/...` (root `public/`).
+> Source folder is `docs/` (renamed from `guide/` on 2026-10-29). Pages are served at
+> `/guide/<category>/<slug>` through `rewrites` in `.vitepress/config.mts`
+> (`'docs/:category/:slug.md': 'guide/:category/:slug.md'`). Page/nav/sidebar links are
+> `/guide/<category>/<slug>`. Image paths in markdown are `/images/...` (root `public/`).
 
 ## Commands
 
@@ -68,22 +69,21 @@ page is `docs/<category>/<slug>.md`, one level deep. The 18 categories:
 
 (`public/images/` is assets, not a category.)
 
-## URL convention — flat URLs (rewrite-flattened site)
+## URL convention — `/guide/<category>/<slug>`
 
-On disk: `docs/<category>/<slug>.md` → In browser: `/<slug>` (e.g.
-`https://docs.ninjatables.com/ninja-tables-introduction`). `rewrites` in `.vitepress/config.mts`
-(`'docs/:category/:slug.md': ':slug.md'`) hides the category folder and `cleanUrls: true`
-strips `.html`. Consequences:
+On disk: `docs/<category>/<slug>.md` → In browser: `/guide/<category>/<slug>` (e.g.
+`https://docs.ninjatables.com/guide/getting-started/ninja-tables-introduction`). `rewrites` in
+`.vitepress/config.mts` (`'docs/:category/:slug.md': 'guide/:category/:slug.md'`) maps the folder and
+`cleanUrls: true` strips `.html`. These are the same URLs the live site has always used. Consequences:
 
-- **Every slug must be unique across all category folders** (two `pricing.md` files would collide).
-- Moving a page to another category folder does NOT change its URL; renaming the slug does.
-- All internal cross-links (markdown, sidebar, nav, `index.md`) use the flat absolute form:
-  - ✅ `[Link Text](/<slug>)`
-  - ❌ `[Link Text](/guide/<category>/<slug>)` (old pre-2026-10 form, now 404s)
-  - ❌ `[Link Text](/<slug>.md)` (no `.md`)
+- Moving a page to another category folder or renaming its slug **changes its URL**: rewrite inbound
+  links, rename its featured card, and add a host redirect for the old URL.
+- Keep slugs unique across category folders.
+- All internal cross-links (markdown, sidebar, nav, `index.md`, tree JSON) use the absolute form:
+  - ✅ `[Link Text](/guide/<category>/<slug>)`
+  - ❌ `[Link Text](/<slug>)` (flat form, 404s)
+  - ❌ `[Link Text](/guide/<category>/<slug>.md)` (no `.md`)
   - ❌ `[Link Text](./slug)` or `[Link Text](../category/slug)` (no relative links)
-- The old `/guide/<category>/<slug>` URLs need host-level 301 redirects to `/<slug>`
-  (the plugin and search engines still point at them).
 
 ## Sidebar — mandatory step when adding/renaming docs
 
@@ -104,7 +104,7 @@ reader's task, not by its folder:
 Sidebar labels are short, task-first and don't repeat the H1 (`'Date'`, `'Duplicate a table'`,
 `'Add & edit a column'`). Pointer pages for merged topics stay on disk but are hidden from the sidebar.
 
-Leaf entry shape: `{ text: 'Page Title', link: '/<slug>' }` (no `.md`). The top
+Leaf entry shape: `{ text: 'Page Title', link: '/guide/<category>/<slug>' }` (no `.md`). The top
 `nav` array separately duplicates 2 of these links (User Guide → getting-started intro, Changelog)
 plus Home and an external Website link — that's intentional, not a bug, so an audit checking
 sidebar coverage should check presence, not exact 1:1 count parity with `nav` included.
@@ -292,7 +292,7 @@ width, a 16:9 ratio, and the same 16px vertical margins as a doc image:
 4. Bullet lists for steps/feature lists; numbered lists only when strict sequence matters.
 5. Bold important terms/UI labels with no inner whitespace inside markers (`**Save**`, never
    `**Save** button` split as `**Save **button` — CommonMark renders inner-space bold literally).
-6. Cross-references always use the absolute form: `[Descriptive Text](/<slug>)`.
+6. Cross-references always use the absolute form: `[Descriptive Text](/guide/<category>/<slug>)`.
 7. Pro-only features: add "(Pro)" after the feature name on first use.
 8. No support-boilerplate closers (e.g. "contact our support team"). Link to the relevant
    `wordpress-integration`/`table-management` page instead if a related doc exists.

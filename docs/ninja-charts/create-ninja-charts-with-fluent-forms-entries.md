@@ -5,7 +5,7 @@ description: "Turn Fluent Forms submissions into a chart with Ninja Charts, for 
 
 # How to Create Ninja Charts with Fluent Forms Entries
 
-A chart built from **Fluent Forms** entries is a dynamic chart: it updates as new submissions arrive. It's a good fit for polls, surveys and ratings. You need Fluent Forms and [Ninja Charts](/how-to-install-ninja-charts) active.
+A chart built from **Fluent Forms** entries is a dynamic chart: it updates as new submissions arrive. It's a good fit for polls, surveys and ratings. You need Fluent Forms and [Ninja Charts](/guide/ninja-charts/how-to-install-ninja-charts) active.
 
 ## Create the chart
 
@@ -13,7 +13,7 @@ A chart built from **Fluent Forms** entries is a dynamic chart: it updates as ne
 2. Enter a **Chart Name**, choose the **Chart Renderer** and a chart type. Click **Next**.
 3. On the **Data Source** step, choose **Fluent Forms**.
 4. In the **Data** field that appears, pick the form.
-5. Click **Next** and choose what to plot in [Data Range](/how-to-use-data-range-picker-in-ninja-charts).
+5. Click **Next** and choose what to plot in [Data Range](/guide/ninja-charts/how-to-use-data-range-picker-in-ninja-charts).
 
 <!-- TODO(screenshot): create-ninja-charts-with-fluent-forms-entries-1
   screen: Ninja Tables › Charts › Add New › Data Source
@@ -40,8 +40,8 @@ Free-text fields (names, messages) don't suit pie or radar charts. Only some fie
 
 ## Filter by date
 
-When the form has entries with dates, the **Date range picker** in [Data Range](/how-to-use-data-range-picker-in-ninja-charts) lets the chart show only entries from a period.
+When the form has entries with dates, the **Date range picker** in [Data Range](/guide/ninja-charts/how-to-use-data-range-picker-in-ninja-charts) lets the chart show only entries from a period.
 
 ## Finish the chart
 
-Style it in [Formatting & Preview](/how-to-customize-charts-in-ninja-charts), then save it and copy the shortcode. See [Add a Chart to a Page](/embed-ninja-charts).
+Style it in [Formatting & Preview](/guide/ninja-charts/how-to-customize-charts-in-ninja-charts), then save it and copy the shortcode. See [Add a Chart to a Page](/guide/ninja-charts/embed-ninja-charts).

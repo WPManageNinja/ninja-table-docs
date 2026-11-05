@@ -24,7 +24,7 @@ In the free version, the Permissions screen shows **Permissions are a Pro featur
 
 ## Let roles write SQL queries
 
-Once you've ticked at least one role, a **Custom SQL module** card appears below. It controls whether those roles can build [Custom SQL tables](/create-table-from-custom-sql):
+Once you've ticked at least one role, a **Custom SQL module** card appears below. It controls whether those roles can build [Custom SQL tables](/guide/data-sources/create-table-from-custom-sql):
 
 1. Turn on **Let these roles write SQL queries**.
 2. Click **Save settings**.
@@ -39,5 +39,5 @@ Users with this permission can run read queries against your database. SQL table
 
 ## Related
 
-- [Let users edit a table from the page](/frontend-editing) (Pro). Frontend editing has its own role settings per table, for visitors who edit rows on your site rather than in the admin.
-- [Settings overview](/tools-and-settings)
+- [Let users edit a table from the page](/guide/advanced-features/frontend-editing) (Pro). Frontend editing has its own role settings per table, for visitors who edit rows on your site rather than in the admin.
+- [Settings overview](/guide/table-management/tools-and-settings)

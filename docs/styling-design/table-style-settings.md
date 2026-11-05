@@ -47,9 +47,9 @@ The preview is drawn by your active theme, the way visitors will see it, includi
 Click **Save** at the top of the editor to keep your changes. Table Design settings and the Export & Print buttons are saved together.
 
 ::: tip
-The preview needs at least one column. If the table has none yet, add them in [Table Rows](/working-in-table-rows) first.
+The preview needs at least one column. If the table has none yet, add them in [Table Rows](/guide/creating-tables/working-in-table-rows) first.
 :::
 
 ## Set the starting design for new tables
 
-Table Design changes apply to the open table only. To choose the look every new table starts with, use the gear icon › **Settings** › **Global appearance**. See [Default Design for New Tables](/use-design-as-default).
+Table Design changes apply to the open table only. To choose the look every new table starts with, use the gear icon › **Settings** › **Global appearance**. See [Default Design for New Tables](/guide/styling-design/use-design-as-default).

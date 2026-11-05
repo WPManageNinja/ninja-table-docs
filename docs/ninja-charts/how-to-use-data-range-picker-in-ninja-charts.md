@@ -19,10 +19,10 @@ The **Data Range** step of the chart creator decides which parts of your data en
 
 ![Data Range step with column lists, Number of Items, Data order and Pick Items](/images/ninja-charts/data-range-picker-ninja/1.-Data-Range-Step-With-Column-Lists.webp)
 
-Some columns can't be charted as they are. If the creator says "Please update your table column data type", change that column's type in the table or choose another column. Column types that are counted into categories (such as Select fields and radio buttons) are described in [Ninja Tables data](/create-ninja-charts-with-ninja-tables-data) and [Fluent Forms entries](/create-ninja-charts-with-fluent-forms-entries).
+Some columns can't be charted as they are. If the creator says "Please update your table column data type", change that column's type in the table or choose another column. Column types that are counted into categories (such as Select fields and radio buttons) are described in [Ninja Tables data](/guide/ninja-charts/create-ninja-charts-with-ninja-tables-data) and [Fluent Forms entries](/guide/ninja-charts/create-ninja-charts-with-fluent-forms-entries).
 
 ## Manual charts
 
-A manual chart has no columns to pick. Add the data yourself with **Add New Column** and **Add Data**. See [Create a Chart Manually](/how-to-create-chart-manually-in-ninja-charts).
+A manual chart has no columns to pick. Add the data yourself with **Add New Column** and **Add Data**. See [Create a Chart Manually](/guide/ninja-charts/how-to-create-chart-manually-in-ninja-charts).
 
-You land on **Formatting & Preview** after **Next**. See [Customize a Chart](/how-to-customize-charts-in-ninja-charts).
+You land on **Formatting & Preview** after **Next**. See [Customize a Chart](/guide/ninja-charts/how-to-customize-charts-in-ninja-charts).

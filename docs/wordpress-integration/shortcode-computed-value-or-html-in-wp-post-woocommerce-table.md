@@ -5,7 +5,7 @@ description: "Build table cells from HTML, post placeholders and shortcodes in W
 
 # Shortcode / Computed Value or HTML in WP Post / Woocommerce Table
 
-The **Shortcode / Computed Value or HTML** field type builds each cell from a template. The template can mix HTML, placeholders for the row's post data and any WordPress shortcode. Use it for buttons, custom links, formatted values or output from other plugins. It works in [WP Posts](/create-wp-posts-table) and [WooCommerce](/woocommerce-integration) tables (Pro), and in a simpler form in [FluentCart](/fluentcart-integration) tables (Free).
+The **Shortcode / Computed Value or HTML** field type builds each cell from a template. The template can mix HTML, placeholders for the row's post data and any WordPress shortcode. Use it for buttons, custom links, formatted values or output from other plugins. It works in [WP Posts](/guide/data-sources/create-wp-posts-table) and [WooCommerce](/guide/data-sources/woocommerce-integration) tables (Pro), and in a simpler form in [FluentCart](/guide/data-sources/fluentcart-integration) tables (Free).
 
 ## Add the column
 
@@ -99,4 +99,4 @@ FluentCart tables support `{post.FIELD}`, `{post.permalink}` and `{postmeta.META
 - A product table already has an **Add To Cart** button in its Buy column. Use a shortcode column only when you want a second button or different markup.
 - To change the template later, open the column header › **Column settings**.
 
-For every other column type, see the [Dynamic columns reference](/dynamic-columns-reference).
+For every other column type, see the [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference).

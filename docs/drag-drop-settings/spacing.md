@@ -37,5 +37,5 @@ Click the **lock** icon to link the sides, so changing one value changes all fou
 Click **Save** to keep your changes.
 
 ::: tip
-For space between all cells, use **Cell Padding** under **Layout** in the [table settings](/ninja-tables-drag-and-drop-table-settings). For space above and below the whole table, use **Table Style** › **Margin Top** / **Margin Bottom**.
+For space between all cells, use **Cell Padding** under **Layout** in the [table settings](/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings). For space above and below the whole table, use **Table Style** › **Margin Top** / **Margin Bottom**.
 :::

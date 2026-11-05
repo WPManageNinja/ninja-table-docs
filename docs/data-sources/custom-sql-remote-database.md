@@ -5,7 +5,7 @@ description: "Build a Ninja Tables table from a SELECT query on a MySQL database
 
 # Custom SQL: Connect a Remote Database
 
-A [Custom SQL query](/create-table-from-custom-sql) table (Pro) can read from a MySQL or MariaDB database on another server, not just from your WordPress database. Use it to show data from another application, an older site or a reporting database, without copying the data into WordPress.
+A [Custom SQL query](/guide/data-sources/create-table-from-custom-sql) table (Pro) can read from a MySQL or MariaDB database on another server, not just from your WordPress database. Use it to show data from another application, an older site or a reporting database, without copying the data into WordPress.
 
 ## Before you start
 
@@ -32,11 +32,11 @@ Two settings on the remote side are important:
 
 ![Custom SQL drawer with Remote/External SQL selected and the connection fields](/images/data-sources/custom-sql-remote-database/1.-Custom-SQL-Drawer-With-Remote-External.webp)
 
-Ninja Tables connects to the remote database, runs the query and builds the columns from the result. The query must be a read-only `SELECT`, with the same rules as a local one. See [What queries are allowed](/create-table-from-custom-sql#what-queries-are-allowed).
+Ninja Tables connects to the remote database, runs the query and builds the columns from the result. The query must be a read-only `SELECT`, with the same rules as a local one. See [What queries are allowed](/guide/data-sources/create-table-from-custom-sql#what-queries-are-allowed).
 
 If the connection or the query fails, an error explains why instead of breaking the page. A wrong host, port, user or password gives "Provided SQL Connection details is not valid" with the database's own message, and a query error shows as **SQL error**. On the front end, a table whose connection fails shows no rows.
 
-Each time the table loads, Ninja Tables connects again and reads the whole result, so keep the query narrow with a `WHERE` or a `LIMIT`. See [Big results and speed](/create-table-from-custom-sql#big-results-and-speed).
+Each time the table loads, Ninja Tables connects again and reads the whole result, so keep the query narrow with a `WHERE` or a `LIMIT`. See [Big results and speed](/guide/data-sources/create-table-from-custom-sql#big-results-and-speed).
 
 ## Change the connection or the query
 
@@ -54,7 +54,7 @@ On the **Table Rows** tab, click **Source settings** on the **Rows come from SQL
 
 ## The {prefix} placeholder on a remote database
 
-All [placeholders](/create-table-from-custom-sql#dynamic-placeholders) work on remote databases, including `{current_user_id}`, `{current_user_role}` and the date placeholders. Their values come from your WordPress site, and they are escaped for the remote connection. `{prefix}` is the table prefix of the remote connection, and it is `wp_` by default. If the remote database uses another prefix, write the full table name in your query instead.
+All [placeholders](/guide/data-sources/create-table-from-custom-sql#dynamic-placeholders) work on remote databases, including `{current_user_id}`, `{current_user_role}` and the date placeholders. Their values come from your WordPress site, and they are escaped for the remote connection. `{prefix}` is the table prefix of the remote connection, and it is `wp_` by default. If the remote database uses another prefix, write the full table name in your query instead.
 
 ## Troubleshooting
 
@@ -62,7 +62,7 @@ All [placeholders](/create-table-from-custom-sql#dynamic-placeholders) work on r
 |---|---|
 | Access denied for user … @ … | Add the IP shown in the message to the remote host's Remote MySQL allow list, and check the username and password. |
 | Can't connect to the server | Check **DB host** and **DB host port**. Don't use `localhost`. Make sure the remote server accepts outside connections on that port. |
-| Only SELECT queries are allowed | Remove any statement that changes data. See [What queries are allowed](/create-table-from-custom-sql#what-queries-are-allowed). |
+| Only SELECT queries are allowed | Remove any statement that changes data. See [What queries are allowed](/guide/data-sources/create-table-from-custom-sql#what-queries-are-allowed). |
 | The table is empty | Run the same query in the remote database's tool (such as phpMyAdmin) to check that it returns rows. |
 
 Like every SQL table, remote SQL tables can only be created and edited by administrators, or by roles allowed under the gear icon › **Settings** › **Permissions** › **Let these roles write SQL queries**.

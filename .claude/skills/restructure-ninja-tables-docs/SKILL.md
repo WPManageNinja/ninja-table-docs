@@ -2,7 +2,7 @@
 name: restructure-ninja-tables-docs
 description: 'Perform STRUCTURAL operations on Ninja Tables docs while protecting reference integrity: rename a doc (change its slug/URL), move a doc to another category, delete a doc, merge two docs, or reorder the sidebar. Always rewrites inbound links, moves the image folder, and updates .vitepress/config.mts. USE FOR: rename this doc, change the slug, change the URL of, move X to another category, delete this doc, remove this page, merge these two docs, reorder the sidebar, change the order of pages. DO NOT USE FOR: content/wording edits (use edit-ninja-tables-doc), creating a brand-new page (use write-ninja-tables-doc), or read-only audits (use audit-ninja-tables-docs).'
 license: MIT
-compatibility: 'VitePress repo using docs/<category>/<slug>.md layout with a hand-maintained nested sidebar inline in .vitepress/config.mts and cleanUrls + rewrites (flat URLs: /<slug>, category hidden). Requires git, Node + npm to run docs:build.'
+compatibility: 'VitePress repo using docs/<category>/<slug>.md layout with a hand-maintained nested sidebar inline in .vitepress/config.mts and cleanUrls + rewrites (flat URLs: /guide/<category>/<slug>, category hidden). Requires git, Node + npm to run docs:build.'
 metadata:
   project: ninja-table-docs
   canonical-rules: CLAUDE.md
@@ -13,7 +13,7 @@ metadata:
 # Restructure Ninja Tables Docs
 
 Structural changes are high-risk because **the file path is the public URL** (category included):
-renaming, moving, or deleting a doc breaks every inbound `/<slug>` link, can
+renaming, moving, or deleting a doc breaks every inbound `/guide/<category>/<slug>` link, can
 orphan an image folder, and desyncs the sidebar. This skill makes those changes safely. Canonical
 conventions live in `CLAUDE.md`.
 
@@ -55,7 +55,7 @@ Record as `OPERATION`.
 
 ### 1.2 Identifiers (by operation)
 - **rename:** `OLD_SLUG`, `NEW_SLUG`, `CATEGORY` (verify new is unique:
-  `find docs -name '<new>.md'  — must be unique across ALL categories, URLs are flat`)
+  `find docs -name '<new>.md'  — should stay unique across ALL categories`)
 - **move-category:** `SLUG`, `OLD_CATEGORY`, `NEW_CATEGORY`, target sidebar group
 - **delete:** `SLUG` (+ category)
 - **merge:** `FROM_SLUG`, `INTO_SLUG` (+ categories; content of FROM is folded into INTO, then
@@ -65,7 +65,7 @@ Record as `OPERATION`.
 Resolve current path(s) with `find docs -name '<slug>.md'`. Record all.
 
 ### 1.3 Inbound link survey
-Run `grep -rln '](/<slug>)' docs index.md` for each affected path and show the
+Run `grep -rln '](/guide/<category>/<slug>)' docs index.md` for each affected path and show the
 user the count + file list, so the blast radius is visible before confirming.
 
 ### 1.4 Confirm
@@ -111,8 +111,8 @@ MOVE-CATEGORY (slug same, folder changes):
   1. git mv docs/<OLD_CAT>/<SLUG>.md docs/<NEW_CAT>/<SLUG>.md
   2. git mv <IMG_DIR> public/images/<NEW_CAT>/<SHORT_SLUG>   (if IMG_DIR exists)
   3. In the moved file, rewrite local image refs .../<OLD_CAT>/<SHORT_SLUG>/ -> .../<NEW_CAT>/<SHORT_SLUG>/
-  4. No link rewrite needed: URLs are flat (/<SLUG>), so moving category does NOT change the URL
-     (only the sidebar group and the image folder move)
+  4. Moving category CHANGES the URL (/guide/<OLD_CAT>/<SLUG> -> /guide/<NEW_CAT>/<SLUG>): rewrite every inbound link,
+     rename the featured card, and add a host redirect for the old URL
   5. .vitepress/config.mts: move the {text,link} entry into the new group, link updated
   6. Update feature-memory chunk's doc_page if applicable
   7. BUILD
@@ -162,14 +162,14 @@ Report:
 ### Survey & locate
 ```
 File by slug:    find docs -name '<slug>.md'
-Inbound links:   grep -rln '](/<slug>)' docs index.md
+Inbound links:   grep -rln '](/guide/<category>/<slug>)' docs index.md
 Image folder:    public/images/<category>/<short-slug>/   (grep the page's refs; do not guess)
-Sidebar entry:   grep -n "'/<slug>'" .vitepress/config.mts
+Sidebar entry:   grep -n "'/guide/<category>/<slug>'" .vitepress/config.mts
 ```
 
 ### Rules of thumb
 ```
-URL = /<slug>   -> category is NOT part of the URL (rewrites flatten it); slugs must be unique
+URL = /guide/<category>/<slug>   -> category IS part of the URL; keep slugs unique
 move-category                    -> link CHANGES too (category is in the path)
 rename (slug change)             -> link CHANGES + all inbound links must be rewritten
 ```

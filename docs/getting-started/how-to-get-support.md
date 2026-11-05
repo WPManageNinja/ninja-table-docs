@@ -42,5 +42,5 @@ The more detail you give, the faster the team can help. Include:
 You'll find your plugin versions under **Plugins** › **Installed Plugins**, and your WordPress version under **Dashboard** › **Updates**.
 
 ::: tip
-If a table on your site shows old data, try [clearing the caches](/clear-table-cache) first. If you use Pro and haven't activated your license yet, see [Activate your Pro license](/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key).
+If a table on your site shows old data, try [clearing the caches](/guide/table-management/clear-table-cache) first. If you use Pro and haven't activated your license yet, see [Activate your Pro license](/guide/getting-started/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key).
 :::

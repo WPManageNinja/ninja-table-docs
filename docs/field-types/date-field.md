@@ -5,7 +5,7 @@ description: "Use the Date field column type to pick dates from a calendar, choo
 
 # Date Field
 
-The **Date field** column type stores dates. When you edit a cell, a calendar date picker opens, and the date shows in the format you choose. Date columns also sort by date and work with date rules in [Conditional formatting](/conditional-formatting). The type is free; the **Custom** date format needs Pro.
+The **Date field** column type stores dates. When you edit a cell, a calendar date picker opens, and the date shows in the format you choose. Date columns also sort by date and work with date rules in [Conditional formatting](/guide/column-settings/conditional-formatting). The type is free; the **Custom** date format needs Pro.
 
 ## Set a column to Date field
 
@@ -69,7 +69,7 @@ Choose where the week starts in the date picker, from **Sunday** to **Saturday**
 ## Enter values
 
 - **In the grid:** click a cell and pick a day from the calendar.
-- **In the row drawer:** click **Add data**, or the pencil icon on a row, and pick a day in the column's date field. Click **Add row** or **Update** to save. See [Working in Table Rows](/working-in-table-rows).
+- **In the row drawer:** click **Add data**, or the pencil icon on a row, and pick a day in the column's date field. Click **Add row** or **Update** to save. See [Working in Table Rows](/guide/creating-tables/working-in-table-rows).
 
 ![Calendar date picker open on a Date field cell](/images/field-types/date-field/3.-Calendar-Date-Picker-Open.webp)
 

@@ -24,7 +24,7 @@ The tab is split into four groups: Display, Colors, Behavior and Header.
   1. Type a class name in **Extra classes**, for example `test`, and click **Save column**.
   2. Open the **Custom CSS/JS** tab, add your CSS for `.test`, and click **Save**.
 
-See [Style a table with CSS selectors](/table-styling-css-selector) for the selector to use. The same class is also what the [rowspan](/rowspan) method relies on.
+See [Style a table with CSS selectors](/guide/table-management/table-styling-css-selector) for the selector to use. The same class is also what the [rowspan](/guide/table-formatting/rowspan) method relies on.
 
 ![Column with a fixed width and custom styling on the site](/images/column-settings/advanced-settings/1.-Column-With-A-Fixed-Width.webp)
 
@@ -32,11 +32,11 @@ See [Style a table with CSS selectors](/table-styling-css-selector) for the sele
 
 Set a **Background color** and a **Text color** for the whole column. They apply to the heading and the cells of that column.
 
-To color single rows or cells instead, see [Row and cell colors](/tables-row-color). To color by value, see [Conditional formatting](/conditional-formatting).
+To color single rows or cells instead, see [Row and cell colors](/guide/styling-design/tables-row-color). To color by value, see [Conditional formatting](/guide/column-settings/conditional-formatting).
 
 ## Behavior
 
-- **Sortable** (Pro): on by default. When on, visitors can click the heading to sort the table by this column. Turn it off to remove the sort icon and sorting for this column only. Sorting for the whole table is set in **Table Design** › **Sorting**. See [Sorting](/sorting).
+- **Sortable** (Pro): on by default. When on, visitors can click the heading to sort the table by this column. Turn it off to remove the sort icon and sorting for this column only. Sorting for the whole table is set in **Table Design** › **Sorting**. See [Sorting](/guide/styling-design/sorting).
 - **Searchable** (Pro): on by default. When on, this column is included when visitors use the search box. Turn it off to leave the column out of search results. On FooTable tables it is also left out of the **Search in** dropdown.
 - **Click to copy**: off by default. When on, visitors can click a cell in this column to copy its value. Useful for coupon codes, phone numbers or IDs.
 

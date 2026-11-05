@@ -16,12 +16,12 @@ There is no "use as default" button inside a table's Table Design tab. Defaults 
 
 ## Default Table Color
 
-Pick the color scheme new tables start with. The schemes are the same as in [Table Colors](/table-color-settings): **Default**, **White**, **Red**, **Orange**, **Yellow**, **Olive**, **Green**, **Teal**, **Blue**, **Violet**, **Purple**, **Pink**, **Grey** and **Black**. The default is **Default**, which follows your theme.
+Pick the color scheme new tables start with. The schemes are the same as in [Table Colors](/guide/styling-design/table-color-settings): **Default**, **White**, **Red**, **Orange**, **Yellow**, **Olive**, **Green**, **Teal**, **Blue**, **Violet**, **Purple**, **Pink**, **Grey** and **Black**. The default is **Default**, which follows your theme.
 
 ## Default Styling Library
 
 - **Styling library**: **Semantic UI** (default), **Bootstrap 4** or **Bootstrap 3**. Semantic UI suits most sites; pick Bootstrap only if your theme already uses it.
-- Style switches: they change with the library, the same lists as on [Rows & Borders](/table-rows-borders).
+- Style switches: they change with the library, the same lists as on [Rows & Borders](/guide/styling-design/table-rows-borders).
 
 ## Default Font setting
 
@@ -57,11 +57,11 @@ A fresh site starts new tables with this baseline:
 - Title and description hidden, header row shown.
 - Search and sorting on, sorted by created date with the oldest first.
 - Pagination on with 20 rows per page.
-- Engine **FooTable**. New tables use the **Legacy** rendering setting when Pro is active and **Ajax** on the free version, see [Engine, Rendering & Caching](/table-rendering-settings).
+- Engine **FooTable**. New tables use the **Legacy** rendering setting when Pro is active and **Ajax** on the free version, see [Engine, Rendering & Caching](/guide/table-settings/table-rendering-settings).
 
 Once you save **Global appearance**, your saved values replace this baseline.
 
 ## Related
 
-- [Table Design Overview](/table-style-settings)
-- [Settings Overview](/tools-and-settings)
+- [Table Design Overview](/guide/styling-design/table-style-settings)
+- [Settings Overview](/guide/table-management/tools-and-settings)

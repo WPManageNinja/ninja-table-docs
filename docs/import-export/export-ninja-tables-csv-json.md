@@ -13,7 +13,7 @@ You can download any table as a file: **CSV** or **Excel (.xlsx)** for the rows,
 
 ## Export a table
 
-1. Open the table from the [Tables list](/tables-list). It opens on the **Table Rows** tab.
+1. Open the table from the [Tables list](/guide/table-management/tables-list). It opens on the **Table Rows** tab.
 2. Click **Import / Export** in the toolbar. The **Import / Export** dialog opens on **Export**, with the **Export This Table** card.
 
 ![Import / Export dialog open on the Export tab](/images/import-export/export-ninja-tables-csv/1.-Import-Export-Dialog-Open.webp)
@@ -29,7 +29,7 @@ You can download any table as a file: **CSV** or **Excel (.xlsx)** for the rows,
 |---|---|---|
 | **CSV** | The rows, with column names in the first row | Edit the data in a spreadsheet, or import it elsewhere |
 | **Excel (.xlsx)** | The rows, as a ready-to-open spreadsheet | Share the data with people who use Excel, Google Sheets or Numbers |
-| **JSON** | The whole table: columns, rows, design and settings | Back up the table, or [import it](/import-ninja-tables-json) into another Ninja Tables site without setting it up again |
+| **JSON** | The whole table: columns, rows, design and settings | Back up the table, or [import it](/guide/import-export/import-ninja-tables-json) into another Ninja Tables site without setting it up again |
 
 In a CSV, a cell holding several values (such as a multi-select) is joined with a comma and a space. Cells that start with a character a spreadsheet could read as a formula are made safe, so opening the file can't run a formula.
 
@@ -55,6 +55,6 @@ In the Drag & Drop builder, click the **More actions** (⋯) button at the top, 
 
 ## Let visitors download the table
 
-The export above is for you in the admin. To add CSV, Excel and print buttons for visitors on your site, use **Table Design** › **Export & Print** (Pro). See [Export and print buttons](/csv-and-print-button).
+The export above is for you in the admin. To add CSV, Excel and print buttons for visitors on your site, use **Table Design** › **Export & Print** (Pro). See [Export and print buttons](/guide/table-settings/csv-and-print-button).
 
-To bring an exported file back in, see [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv) or [Import rows into an existing table](/import-csv-file-to-an-existing-table).
+To bring an exported file back in, see [Import a CSV, Excel or JSON file](/guide/import-export/import-table-data-from-a-csv) or [Import rows into an existing table](/guide/import-export/import-csv-file-to-an-existing-table).

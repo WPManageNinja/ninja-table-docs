@@ -30,14 +30,14 @@ These three fields are the table's search wording. They replaced the old **Langu
 - **Position** (Pro): **Left**, **Center**, **Right** or **Default**.
 - **Full Width** (Pro): the search box takes the full width above the table.
 
-To change the search box colors, open the **Colors** tab, choose **Custom**, and use **Search Bar Colors** (see [Table Colors](/table-color-settings)).
+To change the search box colors, open the **Colors** tab, choose **Custom**, and use **Search Bar Colors** (see [Table Colors](/guide/styling-design/table-color-settings)).
 
 Click **Save** to keep your changes.
 
 ## Leave a column out of the search
 
-By default every column is searched. To leave one out, open the column's settings in **Table Rows**, go to the **Advanced** tab and turn off **Searchable** (Pro). See [Advanced Column Options](/advanced-settings).
+By default every column is searched. To leave one out, open the column's settings in **Table Rows**, go to the **Advanced** tab and turn off **Searchable** (Pro). See [Advanced Column Options](/guide/column-settings/advanced-settings).
 
 ## Need dropdown filters?
 
-The search box searches text. To give visitors dropdowns, checkboxes or date and number ranges, use [Custom Filters](/custom-filters) (Pro). The **Search** section has a **Custom Filters** link that jumps straight to that tab.
+The search box searches text. To give visitors dropdowns, checkboxes or date and number ranges, use [Custom Filters](/guide/table-settings/custom-filters) (Pro). The **Search** section has a **Custom Filters** link that jumps straight to that tab.

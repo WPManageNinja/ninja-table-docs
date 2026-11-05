@@ -2,7 +2,7 @@
 name: write-ninja-tables-doc
 description: 'Create a NEW Ninja Tables end-user documentation page in this VitePress site, correctly placed in a category folder and wired into the hand-maintained nested sidebar in .vitepress/config.mts. Optionally converts pasted HTML or raw markdown source into a clean doc. USE FOR: add a doc, write a new doc page, create a doc for X, document this feature, write a guide for, new documentation page, turn this content into a doc, import this article. DO NOT USE FOR: editing an existing page (use edit-ninja-tables-doc), renaming/moving/deleting a page or reordering the sidebar (use restructure-ninja-tables-docs), site-wide quality checks (use audit-ninja-tables-docs), deciding whether a plugin feature is already documented (use check-ninja-tables-feature-coverage), or non-docs markdown like README.md / CLAUDE.md.'
 license: MIT
-compatibility: 'VitePress repo using docs/<category>/<slug>.md layout with a hand-maintained nested sidebar inline in .vitepress/config.mts and cleanUrls + rewrites (flat URLs: /<slug>, slug must be unique across categories). Requires Node + npm to run docs:build.'
+compatibility: 'VitePress repo using docs/<category>/<slug>.md layout with a hand-maintained nested sidebar inline in .vitepress/config.mts and cleanUrls + rewrites (flat URLs: /guide/<category>/<slug>, slug must be unique across categories). Requires Node + npm to run docs:build.'
 metadata:
   project: ninja-table-docs
   canonical-rules: CLAUDE.md
@@ -29,7 +29,7 @@ and verify with a clean build. Canonical conventions live in `CLAUDE.md` — thi
 2. **DO** place the file at `docs/<category>/<slug>.md` inside an existing category folder.
 3. **DO** include YAML frontmatter (`title`, `description`) and make the line after it a bare
    `# H1` matching `title`.
-4. **DO** use the absolute cross-link form `/<slug>` everywhere (no `.md`).
+4. **DO** use the absolute cross-link form `/guide/<category>/<slug>` everywhere (no `.md`).
 5. **DO** add the page to the correct nested group in `.vitepress/config.mts`'s `sidebar` array
    (mandatory — VitePress does NOT auto-discover pages), preserving `collapsed: true` on groups
    that already have it.
@@ -137,7 +137,7 @@ Summarize and wait for confirmation before proceeding:
                 (bold feature name on first use)
               - ## sections, ### sub-topics
               - bullets for steps; numbered lists only for strict sequences
-              - cross-links as /<slug> ONLY (no .md, no relative form)
+              - cross-links as /guide/<category>/<slug> ONLY (no .md, no relative form)
               - mark Pro features "(Pro)" if IS_PRO
               - NO support boilerplate
               If SOURCE_CONTENT: convert it (strip wrapper HTML, fix bold whitespace).
@@ -179,12 +179,12 @@ Report:
 ### Paths & formats
 ```
 File:        docs/<category>/<slug>.md
-URL:         /<slug>              (rewrites hide the category; slug must be unique)
-Cross-link:  [Text](/<slug>)       (never .md, never relative ./ or ../)
+URL:         /guide/<category>/<slug>              (rewrites map docs/ to guide/)
+Cross-link:  [Text](/guide/<category>/<slug>)       (never .md, never relative ./ or ../)
 Image on disk:  public/images/<category>/<short-slug>/<n>.-<Short-Label>.webp
 Image ref:      /images/<category>/<short-slug>/<n>.-<Short-Label>.webp   (never /docs/public/...)
 Video embed:    <div class="video-embed"> + youtube.com/embed/<ID> iframe   (see CLAUDE.md)
-Sidebar:     { text: '<Title>', link: '/<slug>' }   in the correct nested group
+Sidebar:     { text: '<Title>', link: '/guide/<category>/<slug>' }   in the correct nested group
 Bold:        **term**                          (no inner spaces)
 Build:       npm run docs:build
 ```
@@ -198,6 +198,6 @@ Group names:   read .vitepress/config.mts sidebar array (or CLAUDE.md's summary)
 ### Key Principles
 1. **Category folder always** — never a bare file under `docs/`.
 2. **Sidebar is mandatory** — a doc not in `.vitepress/config.mts`'s sidebar is invisible.
-3. **URLs are flat (`/<slug>`)** — rewrites hide the category, so the slug must be unique across ALL categories.
+3. **URLs are `/guide/<category>/<slug>`** — `rewrites` maps `docs/` to `guide/`. Keep slugs unique across categories.
 4. **Cross-check the feature-memory index** when documenting a plugin feature.
 5. **Green build or it's not done.**

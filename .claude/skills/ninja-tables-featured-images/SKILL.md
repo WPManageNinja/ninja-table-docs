@@ -23,9 +23,9 @@ npm run featured:regenerate   # re-render every card (only after changing the ge
 
 `card = <served page path without .md, "/" replaced by "--"> + ".png"`
 
-The served path is the path **after** `rewrites`. This site flattens `docs/<category>/<slug>.md` to
-`<slug>.md`, so the card is simply `<slug>.png` (e.g. `docs/table-settings/pagination.md` →
-`pagination.png`). The home page is `index.png`.
+The served path is the path **after** `rewrites`. This site serves `docs/<category>/<slug>.md` as
+`guide/<category>/<slug>.md`, so the card is `guide--<category>--<slug>.png` (e.g. `docs/table-settings/pagination.md` →
+`guide--table-settings--pagination.png`). The home page is `index.png`.
 
 The rule lives in `cardNameFor()` / `servedPath()` in `scripts/generate-featured-images.mjs` and in
 `featuredImageFor()` in `.vitepress/config.mts`. Change one, change the other. The script fails loudly if

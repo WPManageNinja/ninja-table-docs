@@ -38,4 +38,4 @@ How the **+** drawer behaves is set for the whole table in **Table Design** › 
 - **Hide Empty Values** (Pro): leave empty cells out of the drawer.
 - **Hide Labels** (Pro): show values without their column names.
 
-Prefer each row as a card instead? See [Responsive & Stackable Table](/stackable-table).
+Prefer each row as a card instead? See [Responsive & Stackable Table](/guide/responsive-design/stackable-table).

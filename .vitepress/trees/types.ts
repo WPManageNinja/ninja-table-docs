@@ -8,7 +8,7 @@ export interface TreeNode {
   id: string
   /** Name shown in the tree and the strip. */
   label: string
-  /** Absolute flat URL, e.g. `/table-font-settings`. */
+  /** Absolute URL, e.g. `/guide/styling-design/table-font-settings`. */
   link: string
   /** Short sidebar label when it differs from `label`. */
   sidebar?: string

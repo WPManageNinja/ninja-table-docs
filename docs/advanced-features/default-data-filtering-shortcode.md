@@ -7,7 +7,7 @@ description: "Show only matching rows by adding a filter to the table shortcode,
 
 The **default data filtering shortcode** shows only the rows you want, by adding a `filter` to the table shortcode. Visitors see the filtered rows as soon as the page loads, without searching. The `filter` attribute is part of the free version.
 
-For example, if a table lists hundreds of movies and one page should only show adventure films, add `filter="Adventure"` to that page's shortcode. Visitors can still use the [search box](/add-or-remove-search-or-filter-functionality) on top of the filter.
+For example, if a table lists hundreds of movies and one page should only show adventure films, add `filter="Adventure"` to that page's shortcode. Visitors can still use the [search box](/guide/styling-design/add-or-remove-search-or-filter-functionality) on top of the filter.
 
 ## Add a filter to a shortcode
 
@@ -93,9 +93,9 @@ Adding `&column=department,office` to the link replaces `filter_column` for that
 
 ## Use live values (Pro)
 
-Placeholders in the `filter` text, such as `{current_user_role}` or `{date:Y-m-d}`, are replaced when the page loads. See [Placeholders](/shortcode-reference).
+Placeholders in the `filter` text, such as `{current_user_role}` or `{date:Y-m-d}`, are replaced when the page loads. See [Placeholders](/guide/advanced-features/shortcode-reference).
 
 ## Related
 
-- All shortcode options, including `hide_default_filter`, `filter_selects` and locked column filters with `sf_filter`: [Advanced Shortcode](/advanced-shortcode).
-- Let visitors filter with dropdowns and ranges instead: [Custom Filters](/custom-filters).
+- All shortcode options, including `hide_default_filter`, `filter_selects` and locked column filters with `sf_filter`: [Advanced Shortcode](/guide/advanced-features/advanced-shortcode).
+- Let visitors filter with dropdowns and ranges instead: [Custom Filters](/guide/table-settings/custom-filters).

@@ -13,7 +13,7 @@ To add one, click a cell and click **Styled List** in the **Advanced** group of 
 
 ## Add and remove items
 
-Click an item to edit its text. Styled List has no **Items** box (unlike [List](/list-element)), so edit on the canvas. Hover over an item and click its **copy** icon to add another item, or its **delete** icon to remove it. These icons only show in the Desktop preview.
+Click an item to edit its text. Styled List has no **Items** box (unlike [List](/guide/drag-drop-elements/list-element)), so edit on the canvas. Hover over an item and click its **copy** icon to add another item, or its **delete** icon to remove it. These icons only show in the Desktop preview.
 
 ## General
 
@@ -33,6 +33,6 @@ Click an item to edit its text. Styled List has no **Items** box (unlike [List](
 
 ![Styled List Icon sub-tab with the icon picker](/images/drag-drop-elements/styled-list/2.-Styled-List-Icon-Sub-Tab.webp)
 
-Under **Content & style**, the **Spacing** section sets the margin and padding around the list; see [Element Spacing](/spacing). Click **Save** to keep your changes.
+Under **Content & style**, the **Spacing** section sets the margin and padding around the list; see [Element Spacing](/guide/drag-drop-settings/spacing). Click **Save** to keep your changes.
 
-For a plain bulleted or numbered list, use the free [List element](/list-element).
+For a plain bulleted or numbered list, use the free [List element](/guide/drag-drop-elements/list-element).

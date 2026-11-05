@@ -5,7 +5,7 @@ description: "A reference of every field type you can use for extra columns in W
 
 # Dynamic Columns Reference: Every Field Type for Posts and Product Tables
 
-A **dynamic column** is a column that Ninja Tables fills from each row's post or product, such as a custom field, a featured image, a price or a shortcode. This page lists every field type for each source and the options each type has. For a step-by-step walkthrough, see [Create custom columns](/create-custom-column-in-wp-post-cpt-woocommerce-table).
+A **dynamic column** is a column that Ninja Tables fills from each row's post or product, such as a custom field, a featured image, a price or a shortcode. This page lists every field type for each source and the options each type has. For a step-by-step walkthrough, see [Create custom columns](/guide/wordpress-integration/create-custom-column-in-wp-post-cpt-woocommerce-table).
 
 ## Where to add a dynamic column
 
@@ -49,7 +49,7 @@ Shows the value of an ACF field. This type only appears in the list when the Adv
 
 A field that holds a list is shown as comma-separated text, and a list of groups is separated by semicolons. Values are cleaned the way WordPress cleans post content, so basic HTML such as links and bold text is kept and scripts are removed.
 
-See [ACF field integration](/acf-field-integration-with-ninja-tables-column).
+See [ACF field integration](/guide/wordpress-integration/acf-field-integration-with-ninja-tables-column).
 
 ## Post Meta
 
@@ -59,7 +59,7 @@ Shows any custom field (post meta) stored with the post or product.
 
 Basic HTML in the value is kept and scripts are removed. A post without that key shows an empty cell.
 
-This also works for fields made with Meta Box, JetEngine, Toolset, Pods and similar plugins, because they store their values as post meta. See [Post meta field](/post-meta-field).
+This also works for fields made with Meta Box, JetEngine, Toolset, Pods and similar plugins, because they store their values as post meta. See [Post meta field](/guide/wordpress-integration/post-meta-field).
 
 ## Shortcode / Computed Value or HTML
 
@@ -82,7 +82,7 @@ The result runs through WordPress, so any shortcode in the template is executed.
 
 On **FluentCart** tables, a placeholder only works when it is the whole field value, for example just `{post.post_title}` or `{postmeta.my_key}`. To mix text, HTML and shortcodes, write them without placeholders.
 
-See [Shortcode / computed value or HTML](/shortcode-computed-value-or-html-in-wp-post-woocommerce-table).
+See [Shortcode / computed value or HTML](/guide/wordpress-integration/shortcode-computed-value-or-html-in-wp-post-woocommerce-table).
 
 ## Featured Image
 
@@ -92,7 +92,7 @@ Shows the post's or product's featured image.
 - **WP Posts tables**: turn on **Link to post permalink**, then **Open link in new tab** if you want a new tab.
 - **WooCommerce and FluentCart tables**: under **When clicked**, choose **Lightbox**, **Product page** or **Nothing**. **Open link in new tab** appears for **Product page**.
 
-See [Featured image](/featured-image).
+See [Featured image](/guide/wordpress-integration/featured-image).
 
 ## Product Data
 
@@ -111,11 +111,11 @@ Store data for each product. The **Field value** list depends on the store:
 | Product SKU | ✅ | – |
 | Product Average Rating | ✅ | – |
 
-- **Buy Now Button** adds a **Buy now button text** field. Its default text is the product's own add-to-cart text. The cell depends on the product, see [WooCommerce integration](/woocommerce-integration#the-buy-column).
+- **Buy Now Button** adds a **Buy now button text** field. Its default text is the product's own add-to-cart text. The cell depends on the product, see [WooCommerce integration](/guide/data-sources/woocommerce-integration#the-buy-column).
 - **Product Quantity input field** shows WooCommerce's quantity box with plus and minus buttons, and follows the product's minimum, maximum and step. It is empty for external and grouped products, for products that can't be bought, and for out-of-stock products.
 - **Product Stock Status** shows In Stock, Out of Stock or On Backorder.
 - **Product Price** shows the price the way WooCommerce shows it, so sale prices and price ranges look the same as in your shop.
-- **Product Average Rating** adds **Filled star color**, **Empty star color**, **No review text** and **Show rating value**. See [Product average rating column](/woocommerce-product-average-rating-column).
+- **Product Average Rating** adds **Filled star color**, **Empty star color**, **No review text** and **Show rating value**. See [Product average rating column](/guide/data-sources/woocommerce-product-average-rating-column).
 
 ## Post Data
 
@@ -144,4 +144,4 @@ The columns you pick when you create a WP Posts table also have link options, se
 - **Author**: **Link to author permalink**, and **Make author a table filter**, which appears once the link is on.
 - **Taxonomies**: **Link to taxonomy**, **Taxonomy separator**, **Make taxonomies as table filter**, and **Open link in new tab**.
 
-See [WP Posts table](/create-wp-posts-table).
+See [WP Posts table](/guide/data-sources/create-wp-posts-table).

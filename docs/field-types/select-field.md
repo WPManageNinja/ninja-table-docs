@@ -5,7 +5,7 @@ description: "Use the Select field column type (Pro) to pick each cell's value f
 
 # Select Field
 
-The **Select field** column type (Pro) gives a column a dropdown of suggested choices. Instead of typing, editors pick a value, so values stay consistent. For example, *Yes* / *No*, or *In stock* / *Out of stock*. The same list can feed [Custom filters](/custom-filters).
+The **Select field** column type (Pro) gives a column a dropdown of suggested choices. Instead of typing, editors pick a value, so values stay consistent. For example, *Yes* / *No*, or *In stock* / *Out of stock*. The same list can feed [Custom filters](/guide/table-settings/custom-filters).
 
 On the free version you can still choose this type, but the column works as plain text and a note says **Select fields are a Pro feature**. The item and placeholder boxes are disabled.
 
@@ -47,6 +47,6 @@ The dropdown accepts a typed value that is not in **Select items**, and saves it
 
 ## How it looks on your site
 
-Visitors see the chosen text in the cell. With Pro active, the table also keeps the list so [Custom filters](/custom-filters) can offer the same choices.
+Visitors see the chosen text in the cell. With Pro active, the table also keeps the list so [Custom filters](/guide/table-settings/custom-filters) can offer the same choices.
 
 ![Table with a Select field column on the front end](/images/field-types/select-field/3.-Table-With-A-Select-Field-Column.webp)

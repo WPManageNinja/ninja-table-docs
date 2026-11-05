@@ -7,7 +7,7 @@ description: "Developer reference of the WordPress actions and filters Ninja Tab
 
 Ninja Tables provides WordPress **actions** and **filters** so developers can change how tables render, which rows reach the browser, who can manage tables, what happens when rows change, and how connected sources behave. Add the code to your child theme's `functions.php`, a code-snippets plugin or an mu-plugin.
 
-Hooks marked **(Pro)** only run when Ninja Tables Pro is active. A name ending in `<ID>`, `<provider>` or `<library>` is a family of hooks: replace the part in angle brackets with the table ID, the data source name or the engine. For events in the browser, see [JavaScript Events](/javascript-events). For complete working code, see [Developer Code Recipes](/developer-code-recipes).
+Hooks marked **(Pro)** only run when Ninja Tables Pro is active. A name ending in `<ID>`, `<provider>` or `<library>` is a family of hooks: replace the part in angle brackets with the table ID, the data source name or the engine. For events in the browser, see [JavaScript Events](/guide/advanced-features/javascript-events). For complete working code, see [Developer Code Recipes](/guide/advanced-features/developer-code-recipes).
 
 ## Rendering and shortcodes
 
@@ -157,13 +157,13 @@ add_action('ninja_table_after_add_item', function ($rowId, $tableId, $attributes
 | `ninja_table_delete_row_data_<provider>` | action | `$rowId`, `$tableId` | Delete a row for a data source other than the built-in one. |
 | `ninja_edit_select_placeholder` | filter | `$text`, and the column details | The placeholder text of a select field in the row editor. |
 
-See [Frontend Editing](/frontend-editing) for the feature itself.
+See [Frontend Editing](/guide/advanced-features/frontend-editing) for the feature itself.
 
 ## Placeholders
 
 | Hook | Type | Parameters | Purpose |
 |---|---|---|---|
-| `ninja_parse_placeholder` (Pro) | filter | `$string` | Replaces `{date:…}`, `{user:…}` and the other [placeholders](/shortcode-reference#placeholders-pro) in a string. Call it to use the same placeholders in your own code, or hook it to add your own. |
+| `ninja_parse_placeholder` (Pro) | filter | `$string` | Replaces `{date:…}`, `{user:…}` and the other [placeholders](/guide/advanced-features/shortcode-reference#placeholders-pro) in a string. Call it to use the same placeholders in your own code, or hook it to add your own. |
 
 ## WP Posts and WooCommerce tables (Pro)
 
@@ -267,7 +267,7 @@ add_filter('ninja_table_post_table_args', function ($args, $data) {
 
 ## Ninja Charts
 
-These hooks belong to the free [Ninja Charts](/getting-started-with-ninja-charts-free-wordpress-chart-plugin) plugin, not Ninja Tables. Prefixes: `ntm` = charts from Ninja Tables data, `ffm` = charts from Fluent Forms entries, `manual` = charts with typed-in data.
+These hooks belong to the free [Ninja Charts](/guide/ninja-charts/getting-started-with-ninja-charts-free-wordpress-chart-plugin) plugin, not Ninja Tables. Prefixes: `ntm` = charts from Ninja Tables data, `ffm` = charts from Fluent Forms entries, `manual` = charts with typed-in data.
 
 | Hook | Type | Arguments | What it does |
 |---|---|---|---|

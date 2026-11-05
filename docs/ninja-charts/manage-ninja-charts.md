@@ -5,7 +5,7 @@ description: View, edit, duplicate, export, delete and import Ninja Charts from 
 
 # Manage Your Charts
 
-The **All Charts** list is where you find, preview, edit, copy, export, delete and import your charts. Open it from **Ninja Tables** › **Charts**. It needs [Ninja Charts](/how-to-install-ninja-charts) to be active, and only users who are allowed to manage Ninja Tables (administrators by default; see [Define Permission for Table Users](/define-permission-for-table-users)) can see charts. Without Ninja Tables, only administrators can.
+The **All Charts** list is where you find, preview, edit, copy, export, delete and import your charts. Open it from **Ninja Tables** › **Charts**. It needs [Ninja Charts](/guide/ninja-charts/how-to-install-ninja-charts) to be active, and only users who are allowed to manage Ninja Tables (administrators by default; see [Define Permission for Table Users](/guide/table-management/define-permission-for-table-users)) can see charts. Without Ninja Tables, only administrators can.
 
 ![All Charts list with Import CSV, Add New and the bulk action dropdown](/images/ninja-charts/manage-charts/1.-All-Charts-List-With-Import-CSV.webp)
 
@@ -18,7 +18,7 @@ Each chart is one row:
 - **Render Engine**: **Chart Js** or **Google Charts**.
 - **Data Source**: Manual, Ninja Table or Fluent Forms.
 - **Chart Type**: for example Bar or Pie.
-- **ShortCode**: the `[ninja_charts id="N"]` shortcode to paste into a page. See [Add a Chart to a Page](/embed-ninja-charts).
+- **ShortCode**: the `[ninja_charts id="N"]` shortcode to paste into a page. See [Add a Chart to a Page](/guide/ninja-charts/embed-ninja-charts).
 - **Actions**: preview, edit and the row menu.
 
 Above the list, the **Search** box finds a chart by name.
@@ -28,7 +28,7 @@ The list shows 10 charts per page. With no charts yet, you see a welcome screen 
 ## Preview and edit a chart
 
 - Click the eye icon in **Actions** to preview the chart on your site.
-- Click the pencil icon to edit it. The **Edit Chart** screen is the same creator you used to build the chart, filled with its current settings. See [Customize a Chart](/how-to-customize-charts-in-ninja-charts).
+- Click the pencil icon to edit it. The **Edit Chart** screen is the same creator you used to build the chart, filled with its current settings. See [Customize a Chart](/guide/ninja-charts/how-to-customize-charts-in-ninja-charts).
 
 ## Duplicate a chart
 

@@ -5,13 +5,13 @@ description: "Turn a column of image URLs, for example from Google Sheets, into 
 
 # Image Lightbox Using Column Transform Value
 
-If your table has a column of image URLs, for example from a connected Google Sheet, the cells show the links as plain text. With [Transform value](/transform-value) (Pro) you can show each URL as an image and open it in a lightbox when clicked.
+If your table has a column of image URLs, for example from a connected Google Sheet, the cells show the links as plain text. With [Transform value](/guide/column-settings/transform-value) (Pro) you can show each URL as an image and open it in a lightbox when clicked.
 
-For tables that keep their own rows, the [Image/File/Lightbox](/image-file-lightbox) column type does this without any code.
+For tables that keep their own rows, the [Image/File/Lightbox](/guide/field-types/image-file-lightbox) column type does this without any code.
 
 ## Example table
 
-This example uses a Google Sheet about car models with two columns: **Name** and **Image**. The Image column holds image URLs. When you [connect the Google Sheet](/google-sheets-integration), the columns come in automatically, but the image links show as text.
+This example uses a Google Sheet about car models with two columns: **Name** and **Image**. The Image column holds image URLs. When you [connect the Google Sheet](/guide/data-sources/google-sheets-integration), the columns come in automatically, but the image links show as text.
 
 <!-- TODO(screenshot): image-lightbox-using-column-transform-value-1
   blocked: no Google Sheets demo table with an image URL column
@@ -63,5 +63,5 @@ Preview the table. The images now open in a lightbox when clicked.
 -->
 
 ::: tip Use FooTable for this method
-The `nt_has_lightbox` class loads the lightbox on **FooTable** tables. On **DataTables** tables the class doesn't load the lightbox by itself, so the images show but may not open in a lightbox. See [FooTable or DataTables](/choose-table-engine).
+The `nt_has_lightbox` class loads the lightbox on **FooTable** tables. On **DataTables** tables the class doesn't load the lightbox by itself, so the images show but may not open in a lightbox. See [FooTable or DataTables](/guide/creating-tables/choose-table-engine).
 :::

@@ -55,6 +55,6 @@ Turn on **Button Hover** (off by default) to change the button when a visitor po
 
 ![Button Hover section with the hover options](/images/drag-drop-elements/button-element/4.-Button-Hover-Sub-Tab.webp)
 
-Under **Content & style**, the **Spacing** section sets the margin and padding around the button; see [Element Spacing](/spacing).
+Under **Content & style**, the **Spacing** section sets the margin and padding around the button; see [Element Spacing](/guide/drag-drop-settings/spacing).
 
 Click **Save** to keep your changes.

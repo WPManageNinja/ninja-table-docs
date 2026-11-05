@@ -86,7 +86,7 @@ Category folders are **flat** — every page is `docs/<category>/<slug>.md`, exa
 
 ## Writing Conventions
 
-A page lives at `docs/<category>/<slug>.md` and is served at `/<slug>` (a `rewrites` rule hides the category folder; `cleanUrls` strips `.html`). Slugs must be unique across categories.
+A page lives at `docs/<category>/<slug>.md` and is served at `/guide/<category>/<slug>` (a `rewrites` rule maps `docs/` to `guide/`; `cleanUrls` strips `.html`). Keep slugs unique across categories.
 
 Every page starts with frontmatter, followed by a bare `# H1` matching the title:
 

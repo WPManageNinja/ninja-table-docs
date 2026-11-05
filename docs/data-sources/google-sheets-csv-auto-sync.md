@@ -5,7 +5,7 @@ description: "Keep a Google Sheets or Remote CSV table on the DataTables engine 
 
 # Google Sheets & CSV Auto Sync with the DataTables Engine
 
-When you create a [Google Sheets](/google-sheets-integration) or [Remote CSV](/construct-table-from-csv) table on the **DataTables** engine, Ninja Tables copies the rows into your own database and refreshes the copy on a schedule. This **auto sync** (Pro) keeps large sheets fast: visitors read the rows from your site, not from Google or the remote server.
+When you create a [Google Sheets](/guide/data-sources/google-sheets-integration) or [Remote CSV](/guide/data-sources/construct-table-from-csv) table on the **DataTables** engine, Ninja Tables copies the rows into your own database and refreshes the copy on a schedule. This **auto sync** (Pro) keeps large sheets fast: visitors read the rows from your site, not from Google or the remote server.
 
 Tables on the FooTable engine don't use auto sync. They fetch the source live and cache it for the **Caching interval** set in **Table Configuration**.
 
@@ -26,7 +26,7 @@ Tables on the FooTable engine don't use auto sync. They fetch the source live an
 - The file can be up to 100 MB.
 
 ::: tip
-Because the source is read as CSV, links, images and cell formatting from a Google Sheet aren't kept. If you need clickable links or images from the sheet, use the FooTable engine. See [Hyperlinks and images from the sheet](/google-sheets-integration#hyperlinks-and-images-from-the-sheet).
+Because the source is read as CSV, links, images and cell formatting from a Google Sheet aren't kept. If you need clickable links or images from the sheet, use the FooTable engine. See [Hyperlinks and images from the sheet](/guide/data-sources/google-sheets-integration#hyperlinks-and-images-from-the-sheet).
 :::
 
 ## Set the schedule when you create the table

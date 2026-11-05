@@ -49,4 +49,4 @@ Ninja Charts updates like any other plugin: when an update is available, click *
 
 ## Next steps
 
-- [Getting Started with Ninja Charts](/getting-started-with-ninja-charts-free-wordpress-chart-plugin)
+- [Getting Started with Ninja Charts](/guide/ninja-charts/getting-started-with-ninja-charts-free-wordpress-chart-plugin)

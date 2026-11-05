@@ -9,20 +9,20 @@ description: "Make a copy of a table, with its columns, rows and settings, from 
 
 ## Duplicate a table
 
-1. Go to the [Tables list](/tables-list) (**Tables** in the top bar).
+1. Go to the [Tables list](/guide/table-management/tables-list) (**Tables** in the top bar).
 2. Find the table and click its **More actions** (⋯) button at the end of the row.
 3. Click **Duplicate**.
 
 ![Duplicate option in a table's More actions menu](/images/table-management/table-cloning-duplicating/1.-Duplicate-Option-In-A-Table-S.webp)
 
-Ninja Tables creates the copy and opens it straight away, in the editor (or in the Drag & Drop builder for a Drag & Drop table). The copy is named after the original with ( Duplicate ) added to the end, with no space before it. Rename it with the pencil next to its name; see [Table title, caption and description](/table-title-description-settings).
+Ninja Tables creates the copy and opens it straight away, in the editor (or in the Drag & Drop builder for a Drag & Drop table). The copy is named after the original with ( Duplicate ) added to the end, with no space before it. Rename it with the pencil next to its name; see [Table title, caption and description](/guide/table-management/table-title-description-settings).
 
 ## What gets copied
 
 - The table's columns, settings and design.
 - All of its rows, including tables that use the **DataTables** engine.
 
-The copy is always published, whatever the original's status. It gets its own ID and shortcode. It doesn't reuse the original's cached data, so it always shows its own rows. Changes to one table don't affect the other. The copy isn't added to any page, so **Used on** shows **Not embedded** until you embed it. See [Embed a table](/embed-tables).
+The copy is always published, whatever the original's status. It gets its own ID and shortcode. It doesn't reuse the original's cached data, so it always shows its own rows. Changes to one table don't affect the other. The copy isn't added to any page, so **Used on** shows **Not embedded** until you embed it. See [Embed a table](/guide/wordpress-integration/embed-tables).
 
 ::: tip
 For Fluent Forms entries tables, the **More actions** menu shows a **Fluent Forms entries** link in place of **Duplicate**. It opens the form's entries in Fluent Forms.

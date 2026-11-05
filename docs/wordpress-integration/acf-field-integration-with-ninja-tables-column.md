@@ -5,7 +5,7 @@ description: "Show Advanced Custom Fields (ACF) values as columns in a WP Posts 
 
 # ACF Field Integration: Advanced Custom Fields in Ninja Tables
 
-The **Advanced Custom Fields (ACF)** field type (Pro) shows the value of an ACF field as a table column. Use it in [WP Posts](/create-wp-posts-table) and [WooCommerce](/woocommerce-integration) tables to display extra details you store with ACF, such as a book's author, an event's venue or a product's warranty.
+The **Advanced Custom Fields (ACF)** field type (Pro) shows the value of an ACF field as a table column. Use it in [WP Posts](/guide/data-sources/create-wp-posts-table) and [WooCommerce](/guide/data-sources/woocommerce-integration) tables to display extra details you store with ACF, such as a book's author, an event's venue or a product's warranty.
 
 The ACF field type only appears in the **Field type** list when the Advanced Custom Fields plugin is active.
 
@@ -77,7 +77,7 @@ Click **Preview** in the editor header. The new column shows each post's ACF val
 
 ## Use ACF values inside other content
 
-To put an ACF value inside a link, next to other text or in a shortcode, use the **Shortcode / Computed Value or HTML** field type with the `{acf.FIELD_NAME}` placeholder, for example `<a href="{post.permalink}">{acf.book_author}</a>`. See [Shortcode / computed value or HTML](/shortcode-computed-value-or-html-in-wp-post-woocommerce-table).
+To put an ACF value inside a link, next to other text or in a shortcode, use the **Shortcode / Computed Value or HTML** field type with the `{acf.FIELD_NAME}` placeholder, for example `<a href="{post.permalink}">{acf.book_author}</a>`. See [Shortcode / computed value or HTML](/guide/wordpress-integration/shortcode-computed-value-or-html-in-wp-post-woocommerce-table).
 
 ## Good to know
 
@@ -88,4 +88,4 @@ To put an ACF value inside a link, next to other text or in a shortcode, use the
 - ACF values keep basic HTML (links, bold text) and lose scripts.
 - On a WooCommerce reviews table, the ACF field is read from the product that was reviewed.
 
-For other custom field plugins, see [Post meta field](/post-meta-field). For every column type, see the [Dynamic columns reference](/dynamic-columns-reference).
+For other custom field plugins, see [Post meta field](/guide/wordpress-integration/post-meta-field). For every column type, see the [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference).

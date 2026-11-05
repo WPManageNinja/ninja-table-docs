@@ -7,7 +7,7 @@ description: "A side-by-side list of what the free Ninja Tables plugin includes 
 
 The free **Ninja Tables** plugin covers what you need to build, style and publish tables. **Ninja Tables Pro** is an add-on that adds live data sources, more column options, extra design controls and tools such as custom filters and frontend editing. This page lists what is in each, so you can tell at a glance whether a feature needs Pro.
 
-To upgrade, see [Upgrade and activate your Pro license](/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key).
+To upgrade, see [Upgrade and activate your Pro license](/guide/getting-started/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key).
 
 ## How Pro features look in the free version
 
@@ -40,7 +40,7 @@ The same rules apply in the WordPress menu, where **Get Pro** appears under **Ni
 | Remote CSV table | | ✅ |
 | Custom SQL query table, including a remote database | | ✅ |
 
-See [All table types at a glance](/table-types-overview).
+See [All table types at a glance](/guide/creating-tables/table-types-overview).
 
 ## Columns
 
@@ -106,7 +106,7 @@ In the free version, picking any scheme other than the default, or **Custom**, o
 | **Custom Filter** | | ✅ |
 | **Frontend Editing** | | ✅ |
 
-The default **Rendering Setting** depends on the plan. A new table defaults to **Ajax** in the free version, and to **Legacy** when Pro is active. A table saved while Pro was active keeps **Legacy** if you later turn Pro off, but the option is locked. See [Engine, rendering and caching](/table-rendering-settings).
+The default **Rendering Setting** depends on the plan. A new table defaults to **Ajax** in the free version, and to **Legacy** when Pro is active. A table saved while Pro was active keeps **Legacy** if you later turn Pro off, but the option is locked. See [Engine, rendering and caching](/guide/table-settings/table-rendering-settings).
 
 ## Settings
 
@@ -145,12 +145,12 @@ Click or drag a locked element in the free version and a message tells you it is
 | Custom colors in the Ninja Tables block (preset colors are free) | | ✅ |
 | Block options: sorting by visitors, **Hide empty items**, **Hide Labels**, scroll to table top, page size changer, search position and full-width search, sticky first column and header, **Disable Sticky on Mobile** | | ✅ |
 
-See the [shortcode reference](/shortcode-reference) for details.
+See the [shortcode reference](/guide/advanced-features/shortcode-reference) for details.
 
 ## Tables list
 
-Everything on the [Tables list](/tables-list) is free: search, source and engine filters, **Duplicate**, the trash, and the **Used on** column.
+Everything on the [Tables list](/guide/table-management/tables-list) is free: search, source and engine filters, **Duplicate**, the trash, and the **Used on** column.
 
 ## Charts
 
-[Ninja Charts](/getting-started-with-ninja-charts-free-wordpress-chart-plugin) is a separate free plugin. It works with both the free and Pro versions of Ninja Tables.
+[Ninja Charts](/guide/ninja-charts/getting-started-with-ninja-charts-free-wordpress-chart-plugin) is a separate free plugin. It works with both the free and Pro versions of Ninja Tables.

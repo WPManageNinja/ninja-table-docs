@@ -7,7 +7,7 @@ description: "Create a new table from a CSV, Excel (.xlsx) or JSON file using th
 
 If your data is already in a spreadsheet or another system, you can turn it into a Ninja Tables table in one step. **Import** creates a new table from a **CSV**, **Excel (.xlsx)** or **JSON** file: the first row becomes the columns and every other row becomes a table row. This guide covers both ways to import a file and the things to check first.
 
-To add rows to a table you already have, see [Import rows into an existing table](/import-csv-file-to-an-existing-table) instead.
+To add rows to a table you already have, see [Import rows into an existing table](/guide/import-export/import-csv-file-to-an-existing-table) instead.
 
 ## Import from the Import screen
 
@@ -16,18 +16,18 @@ To add rows to a table you already have, see [Import rows into an existing table
    - **CSV**: from Excel, Google Sheets or Numbers.
    - **Excel (.xlsx)**: the first sheet is imported.
    - **JSON**: a list of rows (objects or arrays). The field names of the first row become the columns.
-   - **Ninja Tables JSON**: a table exported from Ninja Tables, with its design and settings. See [Import a Ninja Tables JSON file](/import-ninja-tables-json).
+   - **Ninja Tables JSON**: a table exported from Ninja Tables, with its design and settings. See [Import a Ninja Tables JSON file](/guide/import-export/import-ninja-tables-json).
    - **Exported from Drag & Drop**: a JSON or CSV file exported from a Drag & Drop table.
 
    For **CSV**, **Excel (.xlsx)** and **JSON**, a download button (**Sample CSV**, **Sample Excel** or **Sample JSON**) gives you `ninja-tables-sample.csv`, `.xlsx` or `.json`, an example with the columns Name, Role, Department and Location.
 3. Under **2. Choose the File**, click the upload area to choose your file, or drag and drop it there. The area shows the largest file your server accepts, for example "Up to 300 MB here". A card with the file name and size confirms your choice, and its bin icon removes it.
-4. Pick the **Rendering engine**: **DataTables** (recommended, the default) or **FooTable** (light, good for small tables). The engine can't be changed after the table is created, so see [choose an engine](/choose-table-engine) if you're unsure. Switching engine keeps the file you picked. The engine choice is hidden for **Exported from Drag & Drop**.
+4. Pick the **Rendering engine**: **DataTables** (recommended, the default) or **FooTable** (light, good for small tables). The engine can't be changed after the table is created, so see [choose an engine](/guide/creating-tables/choose-table-engine) if you're unsure. Switching engine keeps the file you picked. The engine choice is hidden for **Exported from Drag & Drop**.
 5. For a CSV file, turn on **Convert to UTF-8** only if accented characters arrive garbled. See [Tips for a clean import](#tips-for-a-clean-import).
 6. Click **Import**.
 
 ![Import screen with the file type cards, rendering engine and a chosen CSV file](/images/import-export/import-table-data-csv/1.-Import-Screen-With-The-File-Type.webp)
 
-Ninja Tables creates the table, imports the rows and opens the new table in the editor. A table imported from a CSV or Excel file is named after the file, including the `.csv` or `.xlsx` ending. A table imported from a plain **JSON** file is named **Temporary table name**, with the description **Temporary table description**. You can rename either one with the pencil next to its name; see [Table title, caption and description](/table-title-description-settings).
+Ninja Tables creates the table, imports the rows and opens the new table in the editor. A table imported from a CSV or Excel file is named after the file, including the `.csv` or `.xlsx` ending. A table imported from a plain **JSON** file is named **Temporary table name**, with the description **Temporary table description**. You can rename either one with the pencil next to its name; see [Table title, caption and description](/guide/table-management/table-title-description-settings).
 
 The **Create from Scratch Instead** button at the top of the screen opens the **Create a table** screen if you change your mind.
 

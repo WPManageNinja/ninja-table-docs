@@ -8,7 +8,7 @@ description: "Merge neighboring cells or column headings into one wider cell by 
 **Colspan** joins neighboring cells in a row into one wider cell. Type `#colspan#` in a cell and it merges with the cell to its left. Use it for section headings inside a table, a group heading over several columns, or a total that spans the last few cells.
 
 ::: warning Needs FooTable with Legacy rendering (Pro)
-Cells are only merged when the table uses the **FooTable** engine and **Legacy** rendering. Set this in **Ninja Tables** › **Tables** › your table › **Table Configuration** › **Rendering Setting** › **Legacy**. New tables start on **Legacy** when Pro is active. See [Table rendering settings](/table-rendering-settings).
+Cells are only merged when the table uses the **FooTable** engine and **Legacy** rendering. Set this in **Ninja Tables** › **Tables** › your table › **Table Configuration** › **Rendering Setting** › **Legacy**. New tables start on **Legacy** when Pro is active. See [Table rendering settings](/guide/table-settings/table-rendering-settings).
 
 With **Ajax** rendering, or on a **DataTables** table, cells that contain `#colspan#` are removed from the table, but the cell next to them doesn't widen to fill the space.
 :::
@@ -34,4 +34,4 @@ You can also merge a column heading with the one before it. Open the column's **
 
 ![#colspan# typed as a column name](/images/table-formatting/colspan-cell-merge/3.-Colspan-Typed-As-A-Column-Name.webp)
 
-To merge cells that sit on top of each other instead, see [Rowspan/Merge rows](/rowspan).
+To merge cells that sit on top of each other instead, see [Rowspan/Merge rows](/guide/table-formatting/rowspan).

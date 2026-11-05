@@ -49,8 +49,8 @@ description: "Install the free Ninja Tables plugin from the WordPress plugin dir
 
 Activation doesn't redirect you anywhere. Click **Ninja Tables** in the WordPress admin menu to open the plugin. The menu also has **Tables**, **Create Table**, **Import**, **Charts**, **Settings** and **Help**.
 
-Because you have no tables yet, Ninja Tables opens a two-step **guided setup**. Pick how you want to start (a blank table, a file, a data source or a Drag & Drop table), then finish the table in step 2. To skip it, click **Skip setup**; you land on a plain screen with **Create a table** and **Import** buttons instead. See [Onboarding](/ninja-tables-onboarding).
+Because you have no tables yet, Ninja Tables opens a two-step **guided setup**. Pick how you want to start (a blank table, a file, a data source or a Drag & Drop table), then finish the table in step 2. To skip it, click **Skip setup**; you land on a plain screen with **Create a table** and **Import** buttons instead. See [Onboarding](/guide/getting-started/ninja-tables-onboarding).
 
 ![Guided setup step 1 with four start cards and Skip setup](/images/getting-started/ninja-tables-onboarding/1.-Guided-Setup-Step-1-Start-Cards.webp)
 
-To unlock the Pro features, see [Upgrade and activate your Pro license](/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key). To find your way around the admin, see [Find your way around](/admin-navigation).
+To unlock the Pro features, see [Upgrade and activate your Pro license](/guide/getting-started/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key). To find your way around the admin, see [Find your way around](/guide/getting-started/admin-navigation).

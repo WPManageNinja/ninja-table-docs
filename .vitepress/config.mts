@@ -41,7 +41,7 @@ export default defineConfig({
   cleanUrls: true,
   // Serve docs/<category>/<slug>.md at /<slug>: the category folder is hidden from the URL
   rewrites: {
-    'docs/:category/:slug.md': ':slug.md',
+    'docs/:category/:slug.md': 'guide/:category/:slug.md',
   },
   srcExclude: ['README.md', 'CLAUDE.md', 'REDESIGN-PLAN.md', '.claude/**/*.md', 'scripts/**/*.md'],
   head: [
@@ -96,10 +96,10 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'User Guide', link: '/ninja-tables-introduction' },
-      { text: 'Changelog', link: '/change-log' },
+      { text: 'User Guide', link: '/guide/getting-started/ninja-tables-introduction' },
+      { text: 'Changelog', link: '/guide/changelog/change-log' },
       { text: 'Website', link: 'https://ninjatables.com/' },
-      { text: 'Support', link: '/how-to-get-support' }
+      { text: 'Support', link: '/guide/getting-started/how-to-get-support' }
     ],
 
     sidebar: [
@@ -107,66 +107,66 @@ export default defineConfig({
         text: 'Get Started',
         collapsed: false,
         items: [
-          { text: 'Introduction', link: '/ninja-tables-introduction' },
-          { text: 'Free vs Pro', link: '/free-vs-pro' },
-          { text: 'Install & activate', link: '/how-to-install-and-activate-ninja-tables-plugin' },
-          { text: 'Activate your Pro license', link: '/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key' },
-          { text: 'Onboarding', link: '/ninja-tables-onboarding' },
-          { text: 'Quick start', link: '/onboarding-setup-guide' },
-          { text: 'Find your way around', link: '/admin-navigation' },
-          { text: 'Glossary', link: '/ninja-tables-glossary' }
+          { text: 'Introduction', link: '/guide/getting-started/ninja-tables-introduction' },
+          { text: 'Free vs Pro', link: '/guide/getting-started/free-vs-pro' },
+          { text: 'Install & activate', link: '/guide/getting-started/how-to-install-and-activate-ninja-tables-plugin' },
+          { text: 'Activate your Pro license', link: '/guide/getting-started/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key' },
+          { text: 'Onboarding', link: '/guide/getting-started/ninja-tables-onboarding' },
+          { text: 'Quick start', link: '/guide/getting-started/onboarding-setup-guide' },
+          { text: 'Find your way around', link: '/guide/getting-started/admin-navigation' },
+          { text: 'Glossary', link: '/guide/getting-started/ninja-tables-glossary' }
         ]
       },
       {
         text: 'Create a Table',
         collapsed: false,
         items: [
-          { text: 'All table types at a glance', link: '/table-types-overview' },
-          { text: 'Create your first table', link: '/create-your-first-table' },
-          { text: 'FooTable or DataTables', link: '/choose-table-engine' },
-          { text: 'Create a FooTable', link: '/create-a-footable-table' },
-          { text: 'Import a CSV, Excel or JSON file', link: '/import-table-data-from-a-csv' },
-          { text: 'Import a Ninja Tables JSON file', link: '/import-ninja-tables-json' },
-          { text: 'Import from TablePress', link: '/import-table-from-tablepress-plugin' }
+          { text: 'All table types at a glance', link: '/guide/creating-tables/table-types-overview' },
+          { text: 'Create your first table', link: '/guide/creating-tables/create-your-first-table' },
+          { text: 'FooTable or DataTables', link: '/guide/creating-tables/choose-table-engine' },
+          { text: 'Create a FooTable', link: '/guide/creating-tables/create-a-footable-table' },
+          { text: 'Import a CSV, Excel or JSON file', link: '/guide/import-export/import-table-data-from-a-csv' },
+          { text: 'Import a Ninja Tables JSON file', link: '/guide/import-export/import-ninja-tables-json' },
+          { text: 'Import from TablePress', link: '/guide/import-export/import-table-from-tablepress-plugin' }
         ]
       },
       {
         text: 'Add & Edit Rows',
         collapsed: true,
         items: [
-          { text: 'Work in Table Rows', link: '/working-in-table-rows' },
-          { text: 'Row & cell colors', link: '/tables-row-color' },
-          { text: 'Sort rows manually', link: '/rearrangement-of-rows-in-ninja-tables-manual-row-sort' },
-          { text: 'Import rows into a table', link: '/import-csv-file-to-an-existing-table' }
+          { text: 'Work in Table Rows', link: '/guide/creating-tables/working-in-table-rows' },
+          { text: 'Row & cell colors', link: '/guide/styling-design/tables-row-color' },
+          { text: 'Sort rows manually', link: '/guide/table-management/rearrangement-of-rows-in-ninja-tables-manual-row-sort' },
+          { text: 'Import rows into a table', link: '/guide/import-export/import-csv-file-to-an-existing-table' }
         ]
       },
       {
         text: 'Columns',
         collapsed: true,
         items: [
-          { text: 'Add & edit a column', link: '/basic-settings' },
+          { text: 'Add & edit a column', link: '/guide/column-settings/basic-settings' },
           {
             text: 'Column types',
             collapsed: true,
             items: [
-              { text: 'Single line text', link: '/single-line-text-field' },
-              { text: 'Text area', link: '/text-area' },
-              { text: 'HTML', link: '/html-field' },
-              { text: 'Number', link: '/numeric-value' },
-              { text: 'Date', link: '/date-field' },
-              { text: 'Select', link: '/select-field' },
-              { text: 'Button/Link', link: '/actionable-button-link' },
-              { text: 'Image, file & lightbox', link: '/image-file-lightbox' }
+              { text: 'Single line text', link: '/guide/field-types/single-line-text-field' },
+              { text: 'Text area', link: '/guide/field-types/text-area' },
+              { text: 'HTML', link: '/guide/field-types/html-field' },
+              { text: 'Number', link: '/guide/field-types/numeric-value' },
+              { text: 'Date', link: '/guide/field-types/date-field' },
+              { text: 'Select', link: '/guide/field-types/select-field' },
+              { text: 'Button/Link', link: '/guide/field-types/actionable-button-link' },
+              { text: 'Image, file & lightbox', link: '/guide/field-types/image-file-lightbox' }
             ]
           },
-          { text: 'Show or hide columns on mobile', link: '/column-responsive-breakpoints' },
-          { text: 'Advanced column options', link: '/advanced-settings' },
-          { text: 'Conditional formatting', link: '/conditional-formatting' },
-          { text: 'Transform value', link: '/transform-value' },
-          { text: 'Image lightbox with Transform', link: '/image-lightbox-using-column-transform-value' },
-          { text: 'Formulas & calculations', link: '/row-column-data-calculation' },
-          { text: 'Merge cells (colspan)', link: '/colspan-cell-merge' },
-          { text: 'Merge rows (rowspan)', link: '/rowspan' }
+          { text: 'Show or hide columns on mobile', link: '/guide/responsive-design/column-responsive-breakpoints' },
+          { text: 'Advanced column options', link: '/guide/column-settings/advanced-settings' },
+          { text: 'Conditional formatting', link: '/guide/column-settings/conditional-formatting' },
+          { text: 'Transform value', link: '/guide/column-settings/transform-value' },
+          { text: 'Image lightbox with Transform', link: '/guide/table-formatting/image-lightbox-using-column-transform-value' },
+          { text: 'Formulas & calculations', link: '/guide/table-management/row-column-data-calculation' },
+          { text: 'Merge cells (colspan)', link: '/guide/table-formatting/colspan-cell-merge' },
+          { text: 'Merge rows (rowspan)', link: '/guide/table-formatting/rowspan' }
         ]
       },
       // Built from .vitepress/trees/appearance.json: edit the tree, not this group.
@@ -175,127 +175,127 @@ export default defineConfig({
         text: 'Filters & Frontend Editing',
         collapsed: true,
         items: [
-          { text: 'Custom filters', link: '/custom-filters' },
-          { text: 'Filter rows with a shortcode', link: '/default-data-filtering-shortcode' },
-          { text: 'Frontend editing', link: '/frontend-editing' }
+          { text: 'Custom filters', link: '/guide/table-settings/custom-filters' },
+          { text: 'Filter rows with a shortcode', link: '/guide/advanced-features/default-data-filtering-shortcode' },
+          { text: 'Frontend editing', link: '/guide/advanced-features/frontend-editing' }
         ]
       },
       {
         text: 'Add Tables to Your Site',
         collapsed: true,
         items: [
-          { text: 'Embed a table', link: '/embed-tables' },
-          { text: 'Shortcode reference', link: '/shortcode-reference' },
-          { text: 'Advanced shortcode options', link: '/advanced-shortcode' },
-          { text: 'Rating & icon shortcodes', link: '/rating-icon-shortcodes' }
+          { text: 'Embed a table', link: '/guide/wordpress-integration/embed-tables' },
+          { text: 'Shortcode reference', link: '/guide/advanced-features/shortcode-reference' },
+          { text: 'Advanced shortcode options', link: '/guide/advanced-features/advanced-shortcode' },
+          { text: 'Rating & icon shortcodes', link: '/guide/advanced-features/rating-icon-shortcodes' }
         ]
       },
       {
         text: 'Speed & Custom Code',
         collapsed: true,
         items: [
-          { text: 'Engine, rendering & caching', link: '/table-rendering-settings' },
-          { text: 'Clear caches', link: '/clear-table-cache' },
-          { text: 'Custom CSS & JS', link: '/table-styling-css-selector' }
+          { text: 'Engine, rendering & caching', link: '/guide/table-settings/table-rendering-settings' },
+          { text: 'Clear caches', link: '/guide/table-management/clear-table-cache' },
+          { text: 'Custom CSS & JS', link: '/guide/table-management/table-styling-css-selector' }
         ]
       },
       {
         text: 'Show Live Data',
         collapsed: true,
         items: [
-          { text: 'How connected tables work', link: '/connected-tables-overview' },
-          { text: 'WordPress posts & custom post types', link: '/create-wp-posts-table' },
+          { text: 'How connected tables work', link: '/guide/data-sources/connected-tables-overview' },
+          { text: 'WordPress posts & custom post types', link: '/guide/data-sources/create-wp-posts-table' },
           {
             text: 'Custom columns for posts & products',
             collapsed: true,
             items: [
-              { text: 'All column types', link: '/dynamic-columns-reference' },
-              { text: 'Post meta & custom fields', link: '/post-meta-field' },
-              { text: 'ACF fields', link: '/acf-field-integration-with-ninja-tables-column' },
-              { text: 'Featured image', link: '/featured-image' },
-              { text: 'Shortcodes & computed values', link: '/shortcode-computed-value-or-html-in-wp-post-woocommerce-table' },
-              { text: 'Add a custom column', link: '/create-custom-column-in-wp-post-cpt-woocommerce-table' }
+              { text: 'All column types', link: '/guide/wordpress-integration/dynamic-columns-reference' },
+              { text: 'Post meta & custom fields', link: '/guide/wordpress-integration/post-meta-field' },
+              { text: 'ACF fields', link: '/guide/wordpress-integration/acf-field-integration-with-ninja-tables-column' },
+              { text: 'Featured image', link: '/guide/wordpress-integration/featured-image' },
+              { text: 'Shortcodes & computed values', link: '/guide/wordpress-integration/shortcode-computed-value-or-html-in-wp-post-woocommerce-table' },
+              { text: 'Add a custom column', link: '/guide/wordpress-integration/create-custom-column-in-wp-post-cpt-woocommerce-table' }
             ]
           },
-          { text: 'WooCommerce products', link: '/woocommerce-integration' },
-          { text: 'Bulk add to cart & compare', link: '/woocommerce-product-comparison-bulk-add-to-cart' },
-          { text: 'WooCommerce reviews', link: '/woocommerce-product-reviews-table' },
-          { text: 'Average rating column', link: '/woocommerce-product-average-rating-column' },
-          { text: 'FluentCart products', link: '/fluentcart-integration' },
-          { text: 'Fluent Forms entries', link: '/fluent-forms-integration' },
-          { text: 'Google Sheets', link: '/google-sheets-integration' },
-          { text: 'Google Sheets & CSV auto sync', link: '/google-sheets-csv-auto-sync' },
-          { text: 'Remote CSV', link: '/construct-table-from-csv' },
-          { text: 'Custom SQL query', link: '/create-table-from-custom-sql' },
-          { text: 'Connect a remote database', link: '/custom-sql-remote-database' }
+          { text: 'WooCommerce products', link: '/guide/data-sources/woocommerce-integration' },
+          { text: 'Bulk add to cart & compare', link: '/guide/table-management/woocommerce-product-comparison-bulk-add-to-cart' },
+          { text: 'WooCommerce reviews', link: '/guide/data-sources/woocommerce-product-reviews-table' },
+          { text: 'Average rating column', link: '/guide/data-sources/woocommerce-product-average-rating-column' },
+          { text: 'FluentCart products', link: '/guide/data-sources/fluentcart-integration' },
+          { text: 'Fluent Forms entries', link: '/guide/data-sources/fluent-forms-integration' },
+          { text: 'Google Sheets', link: '/guide/data-sources/google-sheets-integration' },
+          { text: 'Google Sheets & CSV auto sync', link: '/guide/data-sources/google-sheets-csv-auto-sync' },
+          { text: 'Remote CSV', link: '/guide/data-sources/construct-table-from-csv' },
+          { text: 'Custom SQL query', link: '/guide/data-sources/create-table-from-custom-sql' },
+          { text: 'Connect a remote database', link: '/guide/data-sources/custom-sql-remote-database' }
         ]
       },
       {
         text: 'Drag & Drop Builder',
         collapsed: true,
         items: [
-          { text: 'Create a Drag & Drop table', link: '/how-to-create-your-first-drag-and-drop-table-with-ninja-tables' },
-          { text: 'Templates', link: '/drag-drop-templates' },
-          { text: 'Builder tour', link: '/drag-drop-builder-tour' },
-          { text: 'Rows & columns', link: '/drag-drop-rows-columns' },
-          { text: 'Cell settings', link: '/drag-drop-cell-settings' },
+          { text: 'Create a Drag & Drop table', link: '/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables' },
+          { text: 'Templates', link: '/guide/drag-drop-tables/drag-drop-templates' },
+          { text: 'Builder tour', link: '/guide/drag-drop-tables/drag-drop-builder-tour' },
+          { text: 'Rows & columns', link: '/guide/drag-drop-settings/drag-drop-rows-columns' },
+          { text: 'Cell settings', link: '/guide/drag-drop-settings/drag-drop-cell-settings' },
           {
             text: 'Elements',
             collapsed: true,
             items: [
-              { text: 'Text', link: '/text-element' },
-              { text: 'Button', link: '/button-element' },
-              { text: 'Icon (Pro)', link: '/icon-element' },
-              { text: 'Image (Pro)', link: '/image-element' },
-              { text: 'List', link: '/list-element' },
-              { text: 'Styled List (Pro)', link: '/styled-list' },
-              { text: 'Rating', link: '/star-rating-element-in-ninja-tables-drag-and-drop' },
-              { text: 'Progress', link: '/progress-bar' },
-              { text: 'Ribbon (Pro)', link: '/ribbon-element' },
-              { text: 'Text Icon (Pro)', link: '/text-icon-pro' },
-              { text: 'HTML', link: '/html-element' },
-              { text: 'Shortcode', link: '/shortcode-element' }
+              { text: 'Text', link: '/guide/drag-drop-elements/text-element' },
+              { text: 'Button', link: '/guide/drag-drop-elements/button-element' },
+              { text: 'Icon (Pro)', link: '/guide/drag-drop-elements/icon-element' },
+              { text: 'Image (Pro)', link: '/guide/drag-drop-elements/image-element' },
+              { text: 'List', link: '/guide/drag-drop-elements/list-element' },
+              { text: 'Styled List (Pro)', link: '/guide/drag-drop-elements/styled-list' },
+              { text: 'Rating', link: '/guide/drag-drop-elements/star-rating-element-in-ninja-tables-drag-and-drop' },
+              { text: 'Progress', link: '/guide/drag-drop-elements/progress-bar' },
+              { text: 'Ribbon (Pro)', link: '/guide/drag-drop-elements/ribbon-element' },
+              { text: 'Text Icon (Pro)', link: '/guide/drag-drop-elements/text-icon-pro' },
+              { text: 'HTML', link: '/guide/drag-drop-elements/html-element' },
+              { text: 'Shortcode', link: '/guide/drag-drop-elements/shortcode-element' }
             ]
           },
-          { text: 'Table settings', link: '/ninja-tables-drag-and-drop-table-settings' },
-          { text: 'Element spacing', link: '/spacing' },
-          { text: 'Mobile & tablet layout', link: '/responsive-table-design' }
+          { text: 'Table settings', link: '/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings' },
+          { text: 'Element spacing', link: '/guide/drag-drop-settings/spacing' },
+          { text: 'Mobile & tablet layout', link: '/guide/drag-drop-settings/responsive-table-design' }
         ]
       },
       {
         text: 'Manage Tables & Settings',
         collapsed: true,
         items: [
-          { text: 'The Tables list', link: '/tables-list' },
-          { text: 'Title, caption & description', link: '/table-title-description-settings' },
-          { text: 'Duplicate a table', link: '/table-cloning-duplicating' },
-          { text: 'Export a table', link: '/export-ninja-tables-csv-json' },
-          { text: 'Settings overview', link: '/tools-and-settings' },
-          { text: 'Who can manage tables', link: '/define-permission-for-table-users' }
+          { text: 'The Tables list', link: '/guide/table-management/tables-list' },
+          { text: 'Title, caption & description', link: '/guide/table-management/table-title-description-settings' },
+          { text: 'Duplicate a table', link: '/guide/table-management/table-cloning-duplicating' },
+          { text: 'Export a table', link: '/guide/import-export/export-ninja-tables-csv-json' },
+          { text: 'Settings overview', link: '/guide/table-management/tools-and-settings' },
+          { text: 'Who can manage tables', link: '/guide/table-management/define-permission-for-table-users' }
         ]
       },
       {
         text: 'Charts',
         collapsed: true,
         items: [
-          { text: 'Install Ninja Charts', link: '/how-to-install-ninja-charts' },
-          { text: 'Getting started with Ninja Charts', link: '/getting-started-with-ninja-charts-free-wordpress-chart-plugin' },
-          { text: 'Charts from Ninja Tables data', link: '/create-ninja-charts-with-ninja-tables-data' },
-          { text: 'Charts from Fluent Forms', link: '/create-ninja-charts-with-fluent-forms-entries' },
-          { text: 'Manual charts', link: '/how-to-create-chart-manually-in-ninja-charts' },
-          { text: 'Dynamic charts', link: '/how-to-create-dynamic-charts-with-ninja-charts' },
-          { text: 'Data range picker', link: '/how-to-use-data-range-picker-in-ninja-charts' },
-          { text: 'Customize charts', link: '/how-to-customize-charts-in-ninja-charts' },
-          { text: 'Manage charts', link: '/manage-ninja-charts' },
-          { text: 'Add a chart to a page', link: '/embed-ninja-charts' }
+          { text: 'Install Ninja Charts', link: '/guide/ninja-charts/how-to-install-ninja-charts' },
+          { text: 'Getting started with Ninja Charts', link: '/guide/ninja-charts/getting-started-with-ninja-charts-free-wordpress-chart-plugin' },
+          { text: 'Charts from Ninja Tables data', link: '/guide/ninja-charts/create-ninja-charts-with-ninja-tables-data' },
+          { text: 'Charts from Fluent Forms', link: '/guide/ninja-charts/create-ninja-charts-with-fluent-forms-entries' },
+          { text: 'Manual charts', link: '/guide/ninja-charts/how-to-create-chart-manually-in-ninja-charts' },
+          { text: 'Dynamic charts', link: '/guide/ninja-charts/how-to-create-dynamic-charts-with-ninja-charts' },
+          { text: 'Data range picker', link: '/guide/ninja-charts/how-to-use-data-range-picker-in-ninja-charts' },
+          { text: 'Customize charts', link: '/guide/ninja-charts/how-to-customize-charts-in-ninja-charts' },
+          { text: 'Manage charts', link: '/guide/ninja-charts/manage-ninja-charts' },
+          { text: 'Add a chart to a page', link: '/guide/ninja-charts/embed-ninja-charts' }
         ]
       },
       {
         text: 'Help & Updates',
         collapsed: true,
         items: [
-          { text: 'How to get support', link: '/how-to-get-support' },
-          { text: 'Changelog', link: '/change-log' }
+          { text: 'How to get support', link: '/guide/getting-started/how-to-get-support' },
+          { text: 'Changelog', link: '/guide/changelog/change-log' }
         ]
       }
     ]

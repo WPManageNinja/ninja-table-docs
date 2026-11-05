@@ -13,8 +13,7 @@ description: Use when publishing Ninja Tables docs changes, adding or updating a
   sibling FluentCart docs deploy with **Cloudflare Pages auto-building on every push to `master`**, and
   this site is assumed to work the same way. There is no workflow file in this repo; the build config lives
   on the hosting side. **Confirm with the user before relying on this**, and record the answer here.
-- Old `/guide/<category>/<slug>` URLs need host-level 301s to `/<slug>` (see CLAUDE.md). Those live on
-  the hosting side, not in this repo.
+- Pages are served at `/guide/<category>/<slug>`, the same URLs the live site has always used, so no site-wide redirects are needed.
 
 ## Publish workflow
 
@@ -25,7 +24,7 @@ description: Use when publishing Ninja Tables docs changes, adding or updating a
 3. Verify live with a marker unique to the change, not by eyeballing. A new static asset is the cleanest:
    ```bash
    curl -s -o /dev/null -w '%{http_code}\n' https://docs.ninjatables.com/<new-asset-path>   # 404 → 200
-   curl -s https://docs.ninjatables.com/<slug> | grep -o '<expected text>'
+   curl -s https://docs.ninjatables.com/guide/<category>/<slug> | grep -o '<expected text>'
    ```
 4. Not live after ~30 minutes usually means the remote build failed; logs are only on the hosting
    dashboard. Diagnose from the repo with the checklist below.

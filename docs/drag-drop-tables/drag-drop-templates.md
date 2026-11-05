@@ -15,7 +15,7 @@ description: "The 15 ready-made Drag & Drop table templates for pricing, compari
 
 ![Template picker showing template cards with the Pricing category selected](/images/drag-drop-tables/drag-drop-templates/1.-Template-Picker-Showing-Template-Cards.webp)
 
-The table opens in the builder, where you can change everything. Click **Save** once before adding it to a page; see [Create a Drag & Drop Table](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
+The table opens in the builder, where you can change everything. Click **Save** once before adding it to a page; see [Create a Drag & Drop Table](/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
 
 ## Available templates
 
@@ -26,7 +26,7 @@ The table opens in the builder, where you can change everything. Click **Save** 
 | **Employee** | Employee Table One | Employee Table Two, Three |
 | **Schedule** | Schedule Table One, Two, Three | None |
 
-Comparison Table Four includes a highlighted column, set with **Highlight column** in [Cell Settings](/drag-drop-cell-settings).
+Comparison Table Four includes a highlighted column, set with **Highlight column** in [Cell Settings](/guide/drag-drop-settings/drag-drop-cell-settings).
 
 ## Pro templates
 
@@ -35,5 +35,5 @@ Pro templates carry a **PRO** badge. The badge shows on these cards even when Ni
 On the free version you can still click a Pro template, but it shows "This is a Pro feature." and nothing is created. Choose a free template or upgrade to continue.
 
 ::: tip
-Every template comes with **Enable Responsive Table** turned on, but several have **Use Top Row As Header** turned off for mobile or tablet. Check the **Responsive** tab if a template does not stack the way you expect; see [Mobile & Tablet Layout](/responsive-table-design).
+Every template comes with **Enable Responsive Table** turned on, but several have **Use Top Row As Header** turned off for mobile or tablet. Check the **Responsive** tab if a template does not stack the way you expect; see [Mobile & Tablet Layout](/guide/drag-drop-settings/responsive-table-design).
 :::

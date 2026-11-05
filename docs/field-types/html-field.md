@@ -22,7 +22,7 @@ HTML cells can hold links, media or any formatted content. Only people you trust
 
 ## Enter content
 
-HTML cells are not edited inside the grid. Open the row drawer instead: click **Add data** for a new row, or the pencil icon on an existing row. The HTML column shows the WordPress editor (full width), where you can format text, add links and insert media. Click **Add row** or **Update** to save. See [Working in Table Rows](/working-in-table-rows).
+HTML cells are not edited inside the grid. Open the row drawer instead: click **Add data** for a new row, or the pencil icon on an existing row. The HTML column shows the WordPress editor (full width), where you can format text, add links and insert media. Click **Add row** or **Update** to save. See [Working in Table Rows](/guide/creating-tables/working-in-table-rows).
 
 ![Row drawer showing the WordPress editor for an HTML column](/images/field-types/html-field/1.-Row-Drawer-Showing-The-WordPress-Editor.webp)
 

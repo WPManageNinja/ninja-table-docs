@@ -5,9 +5,9 @@ description: "Add rows from a CSV file to a table you already have, or replace a
 
 # Import CSV File to an Existing Table
 
-**Import Rows** adds the rows from a CSV file to a table that already exists, keeping its columns, design and settings. You can add the new rows after the existing ones, or replace every row in the table. To create a new table from a file instead, see [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
+**Import Rows** adds the rows from a CSV file to a table that already exists, keeping its columns, design and settings. You can add the new rows after the existing ones, or replace every row in the table. To create a new table from a file instead, see [Import a CSV, Excel or JSON file](/guide/import-export/import-table-data-from-a-csv).
 
-Import works on tables that store their own rows (Default tables and tables created from a file). Connected tables, such as WooCommerce or Google Sheets tables, can't take imported rows: they only have an **Export** button. This per-table import reads CSV only. For JSON or Excel files, use the [global Import screen](/import-table-data-from-a-csv), which creates a new table.
+Import works on tables that store their own rows (Default tables and tables created from a file). Connected tables, such as WooCommerce or Google Sheets tables, can't take imported rows: they only have an **Export** button. This per-table import reads CSV only. For JSON or Excel files, use the [global Import screen](/guide/import-export/import-table-data-from-a-csv), which creates a new table.
 
 ## Before you start: match the columns
 
@@ -30,7 +30,7 @@ The **Sample header structure** table at the bottom of the Import panel also sho
 
 ### Check a column's order and name
 
-To check which column is which, look at the column headers in **Table Rows** left to right. To see a column's **Column name** and **Column key**, click its gear icon and choose **Column settings**. See [Add and edit a column](/basic-settings).
+To check which column is which, look at the column headers in **Table Rows** left to right. To see a column's **Column name** and **Column key**, click its gear icon and choose **Column settings**. See [Add and edit a column](/guide/column-settings/basic-settings).
 
 ## Import the rows
 
@@ -47,7 +47,7 @@ To check which column is which, look at the column headers in **Table Rows** lef
 When the import finishes, you see **Successfully uploaded data.** (**Successfully imported N rows.** on DataTables tables), and the new rows appear in the grid when you close the dialog.
 
 ::: warning
-**Replace existing data** can't be undone. If you might need the old rows, [export the table](/export-ninja-tables-csv-json) first.
+**Replace existing data** can't be undone. If you might need the old rows, [export the table](/guide/import-export/export-ninja-tables-csv-json) first.
 :::
 
 ## Troubleshooting

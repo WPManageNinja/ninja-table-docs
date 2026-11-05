@@ -7,11 +7,11 @@ description: "Change how one embed of a table looks and behaves with shortcode a
 
 Shortcode attributes change how a table behaves **in one place only**, without touching the table's own settings. Use them to show the same table differently on different pages: fewer columns here, a fixed filter there, logged-in visitors only somewhere else.
 
-Most attributes need Ninja Tables Pro; without Pro they are ignored. They work on both the FooTable and DataTables engines, except `info`, which only works on FooTable. For the complete list with defaults, see the [Shortcode Reference](/shortcode-reference).
+Most attributes need Ninja Tables Pro; without Pro they are ignored. They work on both the FooTable and DataTables engines, except `info`, which only works on FooTable. For the complete list with defaults, see the [Shortcode Reference](/guide/advanced-features/shortcode-reference).
 
 ## Basic usage
 
-Every table has a shortcode. Copy it from the shortcode chip in the table editor, or from the **Shortcode** column in the [Tables list](/tables-list):
+Every table has a shortcode. Copy it from the shortcode chip in the table editor, or from the **Shortcode** column in the [Tables list](/guide/table-management/tables-list):
 
 ```
 [ninja_tables id="123"]
@@ -30,7 +30,7 @@ Add attributes inside the brackets:
 | Attribute | What it does |
 |---|---|
 | `id` | The table ID. Required. |
-| `filter` | Show only rows matching this text. Supports `AND`, `OR`, `-exclude` and `"exact phrase"`. See [Default Data Filtering Shortcode](/default-data-filtering-shortcode). |
+| `filter` | Show only rows matching this text. Supports `AND`, `OR`, `-exclude` and `"exact phrase"`. See [Default Data Filtering Shortcode](/guide/advanced-features/default-data-filtering-shortcode). |
 | `use_parent_width` | Make the table use its container's width. |
 | `info` | FooTable only. Show a page-info line after the pagination, for example `info="Page {CP} of {TP}"`. Placeholders: `{CP}` current page, `{TP}` total pages, `{PF}` first row number shown, `{PL}` last row number shown, `{TR}` total rows. DataTables tables ignore it and always show their own "Showing 1 to 25 of 1,200 entries" line. |
 
@@ -49,12 +49,12 @@ Add attributes inside the brackets:
 | `filter_column` | Apply `filter` to these columns only. | Comma-separated column keys |
 | `hide_default_filter` | Keep rows hidden by `filter` hidden even after a visitor resets the filters. | `yes` |
 | `get_filter` | Filter from a URL query value, for example `get_filter="dept"` filters by `?dept=Sales`. | A query-parameter name |
-| `filter_selects` | Pre-select values in the table's [custom filters](/custom-filters). | `Filter title=Value\|Other filter=Value` |
+| `filter_selects` | Pre-select values in the table's [custom filters](/guide/table-settings/custom-filters). | `Filter title=Value\|Other filter=Value` |
 | `sf_filter`, `sf_column`, `sf_match` | A fixed ("locked") filter on one column that visitors can't clear. `sf_match`: `equal` (default), `contains`, `lt`, `gt` or `startswith`. | See below |
-| `stackable` | Stack rows as cards on small screens for this embed. See [Stackable Table](/stackable-table). | `yes` |
+| `stackable` | Stack rows as cards on small screens for this embed. See [Stackable Table](/guide/responsive-design/stackable-table). | `yes` |
 | `stack_devices` | Devices that get cards when `stackable="yes"`. | `xs` (mobile), `sm` (tablet), `md` (laptop), `lg` (large); default `xs,sm` |
 | `post_tax`, `post_tax_field` | Filter a WP Posts or WooCommerce table by taxonomy terms. | See below |
-| `disable_edit` | Turn off [frontend editing](/frontend-editing) for this embed (read-only). | `yes` |
+| `disable_edit` | Turn off [frontend editing](/guide/advanced-features/frontend-editing) for this embed (read-only). | `yes` |
 
 ::: warning Use 1 and 0 for search, sorting and hide_header
 These three attributes turn on for any value except `0` or empty. `search="false"`, `sorting="no"` and `hide_header="off"` all turn the feature **on**. Use `1` to turn on and `0` to turn off.
@@ -77,7 +77,7 @@ These three attributes turn on for any value except `0` or empty. `search="false
 Rows whose `category` column equals **Shoes** are shown; visitors can't remove this filter. Change the comparison with `sf_match`: `contains` matches part of the cell, `startswith` matches the beginning (both are case-sensitive on FooTable and not case-sensitive on DataTables), and `lt` and `gt` compare the cell with the value. Keep both in the same format, for example the same date format.
 
 ::: warning
-`sf_filter` has no effect on a **FooTable** table in **Ajax** rendering: every row is still shown. It works on the **DataTables** engine (the filter is applied on the server and signed, so visitors can't change it) and on FooTable tables set to **Legacy** rendering (Pro) in **Table Configuration**. See [Engine, Rendering & Caching](/table-rendering-settings).
+`sf_filter` has no effect on a **FooTable** table in **Ajax** rendering: every row is still shown. It works on the **DataTables** engine (the filter is applied on the server and signed, so visitors can't change it) and on FooTable tables set to **Legacy** rendering (Pro) in **Table Configuration**. See [Engine, Rendering & Caching](/guide/table-settings/table-rendering-settings).
 :::
 
 ### Filter a posts or products table by taxonomy
@@ -86,7 +86,7 @@ Rows whose `category` column equals **Shoes** are shown; visitors can't remove t
 [ninja_tables id="123" post_tax="category=news,events|post_tag=featured"]
 ```
 
-Separate taxonomies with `|` and terms with commas. Terms are matched by slug; set `post_tax_field="name"` or `post_tax_field="term_id"` to match by name or ID instead. This works with [WP Posts](/create-wp-posts-table) and [WooCommerce](/woocommerce-integration) tables.
+Separate taxonomies with `|` and terms with commas. Terms are matched by slug; set `post_tax_field="name"` or `post_tax_field="term_id"` to match by name or ID instead. This works with [WP Posts](/guide/data-sources/create-wp-posts-table) and [WooCommerce](/guide/data-sources/woocommerce-integration) tables.
 
 ### Filter by date
 
@@ -111,7 +111,7 @@ filter="{gt}{date:M/D/YYYY}" filter_column="date"
 filter="{lt}{date:M/D/YYYY}" filter_column="date"
 ```
 
-All placeholders are listed in the [Shortcode Reference](/shortcode-reference).
+All placeholders are listed in the [Shortcode Reference](/guide/advanced-features/shortcode-reference).
 
 ## Filter from the page address
 
@@ -135,7 +135,7 @@ Open the page as `/team/?dept=Sales` and the table shows the rows that match **S
 
 ### Pre-select custom filters with `?filter_selects=`
 
-If a table has [custom filters](/custom-filters), `filter_selects` pre-selects their values. Write each pair as `Filter title=Value` and separate pairs with `|`:
+If a table has [custom filters](/guide/table-settings/custom-filters), `filter_selects` pre-selects their values. Write each pair as `Filter title=Value` and separate pairs with `|`:
 
 ```
 [ninja_tables id="123" filter_selects="Category=Shoes|Size=42"]
@@ -175,4 +175,4 @@ For tables that store their own rows, use `row_id`: the row's ID, shown in **Tab
 
 ![Table Rows tab with the row ID column visible](/images/advanced-features/advanced-shortcode/1.-Table-Rows-Tab-With-The-Row.webp)
 
-See the [Shortcode Reference](/shortcode-reference) for every shortcode in one place.
+See the [Shortcode Reference](/guide/advanced-features/shortcode-reference) for every shortcode in one place.

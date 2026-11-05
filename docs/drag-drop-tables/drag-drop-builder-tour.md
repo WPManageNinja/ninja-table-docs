@@ -7,7 +7,7 @@ description: "A guide to the Drag & Drop builder screen: the header, the canvas 
 
 The **Drag & Drop builder** is where you design a Drag & Drop table. This page walks through each part of the screen so you know where everything is.
 
-Open it by [creating a Drag & Drop table](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables), or by clicking **Edit** on a Drag & Drop table in the **Tables** list (use the **Drag & Drop** tab there to find them). If a table can't be opened, for example because it was deleted, you see "That table could not be loaded. It may have been deleted." and return to the list.
+Open it by [creating a Drag & Drop table](/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables), or by clicking **Edit** on a Drag & Drop table in the **Tables** list (use the **Drag & Drop** tab there to find them). If a table can't be opened, for example because it was deleted, you see "That table could not be loaded. It may have been deleted." and return to the list.
 
 ![The Drag & Drop builder with the header, canvas toolbar, table canvas and right panel](/images/drag-drop-tables/drag-drop-builder-tour/1.-Drag-Drop-Builder-With-The-Header.webp)
 
@@ -26,7 +26,7 @@ From left to right:
 ### Export as CSV or JSON
 
 - **Export As CSV** downloads the text of each cell. It has no colors, settings or layout; if a cell holds several elements, their text is joined.
-- **Export As JSON** downloads the full design: elements, settings, responsive layout and the saved table. You can import it again on this or another site from the Drag & Drop drawer, and the whole design comes back. See [Create a Drag & Drop Table](/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
+- **Export As JSON** downloads the full design: elements, settings, responsive layout and the saved table. You can import it again on this or another site from the Drag & Drop drawer, and the whole design comes back. See [Create a Drag & Drop Table](/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
 
 ### What Save does
 
@@ -37,7 +37,7 @@ If you move to another Ninja Tables screen after making edits, you are asked to 
 ## The canvas toolbar
 
 - **Selection**: shows what is selected, such as "Click A Cell To Edit It", "Cell C1", "Column B", "Row 3", "2 Cells Selected" or "Previewing On Mobile".
-- **Merge** and **Split**: **Merge** starts merge mode, where you click the cells to join, or merges cells you already selected. **Split** separates a merged cell. They work in **Desktop** view only. See [Rows & Columns](/drag-drop-rows-columns).
+- **Merge** and **Split**: **Merge** starts merge mode, where you click the cells to join, or merges cells you already selected. **Split** separates a merged cell. They work in **Desktop** view only. See [Rows & Columns](/guide/drag-drop-settings/drag-drop-rows-columns).
 - **Zoom**: 50%, 75%, 100% (default), 125% or 150%.
 - **Preview Width**: **Desktop**, **Tablet** or **Mobile**. In tablet and mobile view you can only look at the responsive result; editing is done in desktop view.
 
@@ -45,7 +45,7 @@ If you move to another Ninja Tables screen after making edits, you are asked to 
 
 When **Tablet** or **Mobile** is active and the responsive layout is on for that device, a **Preview Width** row above the table lets you drag the slider or type a width in px to test how the table behaves: mobile from 300 to 699 px (it starts at 400 px) and tablet from 700 to 1023 px.
 
-The slider is a test tool. On your live site the layout switches at fixed widths: mobile at 700 px or narrower, tablet from 701 to 1023 px, and desktop at 1024 px or wider. See [Mobile & Tablet Layout](/responsive-table-design).
+The slider is a test tool. On your live site the layout switches at fixed widths: mobile at 700 px or narrower, tablet from 701 to 1023 px, and desktop at 1024 px or wider. See [Mobile & Tablet Layout](/guide/drag-drop-settings/responsive-table-design).
 
 ![Canvas toolbar with the Desktop, Tablet and Mobile preview buttons, Mobile selected](/images/drag-drop-tables/drag-drop-builder-tour/2.-Canvas-Toolbar-With-The-Desktop-Tablet.webp)
 
@@ -58,7 +58,7 @@ The table is shown on a sheet, with column letters (**A**, **B**, **C**…) abov
 - A cell can hold several elements, stacked from top to bottom.
 - **Text** can be edited right in the cell. The small toolbar has bold, italic, underline, strikethrough, link and unlink. Button labels have bold, italic, underline and strikethrough only.
 - Click a **column letter** or **row number** to select the whole column or row. The **chevron** beside it opens its menu, and you can drag the letter or number to move the whole column or row.
-- Below the table, **Add Row** and **Add Column** add rows and columns. See [Rows & Columns](/drag-drop-rows-columns).
+- Below the table, **Add Row** and **Add Column** add rows and columns. See [Rows & Columns](/guide/drag-drop-settings/drag-drop-rows-columns).
 
 Names differ slightly by place: the Elements tab says **Text Icon**, the chip in a cell says "Text With Icon", and the settings panel says "Text Icon"; **HTML** shows as "Custom HTML" in its settings, **Rating** as "Star Rating" and **Styled List** as "Stylist List".
 
@@ -81,21 +81,21 @@ At the top, a hint reads "Select A Cell First, Or Drag An Element Onto Any Cell"
 
 What it shows depends on what you selected. A breadcrumb (**Table › Cell › Element**) lets you move up a level.
 
-- **Nothing selected**: the table settings. See [Drag & Drop Table Settings](/ninja-tables-drag-and-drop-table-settings).
-- **A cell, several cells, a column or a row**: colors, plus column highlight and width for a column, or row height for a row. See [Cell Settings](/drag-drop-cell-settings).
-- **An element**: that element's options under **Content & Style**, such as its text, colors and size, plus [spacing](/spacing).
+- **Nothing selected**: the table settings. See [Drag & Drop Table Settings](/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings).
+- **A cell, several cells, a column or a row**: colors, plus column highlight and width for a column, or row height for a row. See [Cell Settings](/guide/drag-drop-settings/drag-drop-cell-settings).
+- **An element**: that element's options under **Content & Style**, such as its text, colors and size, plus [spacing](/guide/drag-drop-settings/spacing).
 
 ![Settings tab with the Table, Cell and Element breadcrumb above the element options](/images/drag-drop-tables/drag-drop-builder-tour/4.-Settings-Tab-With-The-Table-Cell.webp)
 
 ### Responsive tab
 
-Turn on **Enable Responsive Table** to show a **Desktop** / **Tablet** / **Mobile** switch (the same one as in the canvas toolbar) and the layout and spacing options of the device you pick, which control how the table looks on tablets and phones. When it is off, the tab only shows a hint: "Enable Responsive Table To Show Mode Options And Responsive Settings. Existing Settings Are Retained." See [Mobile & Tablet Layout](/responsive-table-design).
+Turn on **Enable Responsive Table** to show a **Desktop** / **Tablet** / **Mobile** switch (the same one as in the canvas toolbar) and the layout and spacing options of the device you pick, which control how the table looks on tablets and phones. When it is off, the tab only shows a hint: "Enable Responsive Table To Show Mode Options And Responsive Settings. Existing Settings Are Retained." See [Mobile & Tablet Layout](/guide/drag-drop-settings/responsive-table-design).
 
 ![Responsive tab with Enable Responsive Table on and the device switch with its options](/images/drag-drop-tables/drag-drop-builder-tour/5.-Responsive-Tab-With-Enable-Responsive-Table.webp)
 
 ## On your site
 
-Embed the table with its shortcode or the Ninja Tables block. Logged-in admins also see an **Edit Table** link under each table that jumps back to the builder. See [Add a Table to Your Site](/embed-tables).
+Embed the table with its shortcode or the Ninja Tables block. Logged-in admins also see an **Edit Table** link under each table that jumps back to the builder. See [Add a Table to Your Site](/guide/wordpress-integration/embed-tables).
 
 ::: faq
 == Why can't I edit in Tablet or Mobile preview?

@@ -33,7 +33,7 @@ The other choices are generic font families. Each one tells the visitor's browse
 - **Cursive**: a handwriting style font.
 - **Fantasy**: a decorative font.
 
-Because these use the visitor's device, the exact look differs a little between Windows, macOS, Android and iOS. The list has no Google fonts or custom font uploads, and no choice is Pro: it is the same on the free and Pro versions. To use a specific font, load it on your site and set it in your own CSS (see [Custom CSS & JS](/table-styling-css-selector)).
+Because these use the visitor's device, the exact look differs a little between Windows, macOS, Android and iOS. The list has no Google fonts or custom font uploads, and no choice is Pro: it is the same on the free and Pro versions. To use a specific font, load it on your site and set it in your own CSS (see [Custom CSS & JS](/guide/table-management/table-styling-css-selector)).
 
 ## Font Size
 
@@ -45,24 +45,24 @@ Because these use the visitor's device, the exact look differs a little between 
 The size applies to the table text. Between 12 px and 18 px is comfortable for most tables. Very small sizes are hard to read on a phone, so check the **Mobile** preview before you save.
 
 ::: tip
-To set the font for every new table, use the gear icon › **Settings** › **Global appearance**. See [Default Design for New Tables](/use-design-as-default).
+To set the font for every new table, use the gear icon › **Settings** › **Global appearance**. See [Default Design for New Tables](/guide/styling-design/use-design-as-default).
 :::
 
 ## Common questions
 
 ::: faq
 == Can I use a Google font or my own font?
-Not from this list. **Font Family** offers **Inherit From Theme** and generic families only. Load your font on your site and apply it with CSS, as described in [Custom CSS & JS](/table-styling-css-selector).
+Not from this list. **Font Family** offers **Inherit From Theme** and generic families only. Load your font on your site and apply it with CSS, as described in [Custom CSS & JS](/guide/table-management/table-styling-css-selector).
 == The font on my site didn't change.
 Check that you clicked **Save**. If **Font Family** is **Inherit From Theme**, the table copies your theme, so changing the theme's font changes the table too.
 == Why does the font look different on another device?
 The generic families use the font the visitor's device provides for that kind, so the look can vary between devices. **Inherit From Theme** follows your theme's font instead.
 == Does the font size change the header and the pagination too?
-The size is set for the table as a whole. To style a single part, such as the header, use the options in [Table Colors](/table-color-settings) or your own CSS.
+The size is set for the table as a whole. To style a single part, such as the header, use the options in [Table Colors](/guide/styling-design/table-color-settings) or your own CSS.
 :::
 
 ## Related
 
-- Change the colors of the table text, header and rows: [Table Colors](/table-color-settings).
-- Row stripes, borders and cell spacing: [Rows & Borders](/table-rows-borders).
-- Style the table with your own CSS: [Custom CSS & JS](/table-styling-css-selector).
+- Change the colors of the table text, header and rows: [Table Colors](/guide/styling-design/table-color-settings).
+- Row stripes, borders and cell spacing: [Rows & Borders](/guide/styling-design/table-rows-borders).
+- Style the table with your own CSS: [Custom CSS & JS](/guide/table-management/table-styling-css-selector).

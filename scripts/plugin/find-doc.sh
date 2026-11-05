@@ -9,7 +9,7 @@ DOCS_DIR="$DOCS_ROOT/docs"
 
 echo "Searching docs/ for: $PATTERN"
 echo ""
-echo "--- Filename matches (served at /<slug>) ---"
+echo "--- Filename matches (served at /guide/<category>/<slug>) ---"
 find "$DOCS_DIR" -type f -name "*.md" -iname "*$(echo "$PATTERN" | tr ' ' '-')*" | sed "s|$DOCS_ROOT/||" || true
 echo ""
 echo "--- Content matches (count  file) ---"

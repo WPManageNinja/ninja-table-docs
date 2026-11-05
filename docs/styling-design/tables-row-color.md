@@ -7,7 +7,7 @@ description: "Give a single row or cell its own background and text color from R
 
 **Row settings** and **Cell settings** (Pro) let you color one row or one cell, for example to highlight a featured plan or a sold-out product. You set a background color and a text color, and they show both in the editor grid and on your site.
 
-To color a whole column instead, use the column's **Advanced** tab. See [Advanced settings](/advanced-settings). To color rows or cells automatically based on their values, see [Conditional formatting](/conditional-formatting).
+To color a whole column instead, use the column's **Advanced** tab. See [Advanced settings](/guide/column-settings/advanced-settings). To color rows or cells automatically based on their values, see [Conditional formatting](/guide/column-settings/conditional-formatting).
 
 Row and cell colors are only available on tables that keep their own rows.
 

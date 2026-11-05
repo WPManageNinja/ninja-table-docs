@@ -37,7 +37,7 @@ If Fluent Forms is installed but out of date, the drawer shows a warning that Fl
 4. Under **Select form fields**, tick the fields you want. Your form's own fields start ticked, and the entry and payment fields start unticked. The list is grouped as **Entry details**, **Form fields** and **Payment**. Each ticked field becomes a column, in the form's field order. You can reorder the columns later in the **Columns** tab.
 5. Set **Entry Status** to **All** (default), **Read** or **Unread**. Read entries are the ones opened in **Fluent Forms › Entries**.
 6. Check **Max records**. It starts at **1000**, so a new table shows at most 1,000 entries. Raise the number, or clear the field to show all entries.
-7. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable. See [Choose a table engine](/choose-table-engine).
+7. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable. See [Choose a table engine](/guide/creating-tables/choose-table-engine).
 8. Click **Create table**.
 
 <!-- TODO(screenshot): fluent-forms-integration-2
@@ -81,7 +81,7 @@ On the **Table Rows** tab, the banner reads **Rows come from Fluent Forms entrie
 
 Click **Update** to apply the changes. Changing the form or the fields rebuilds the columns.
 
-The rows are read-only, because they come from Fluent Forms. To change an entry, edit it in Fluent Forms. You can still rename columns, change their type and design the table in the **Styling** tab of **Table Design**. For a cleaner mobile view, see [Responsive breakpoints](/column-responsive-breakpoints) and [Stackable table](/stackable-table).
+The rows are read-only, because they come from Fluent Forms. To change an entry, edit it in Fluent Forms. You can still rename columns, change their type and design the table in the **Styling** tab of **Table Design**. For a cleaner mobile view, see [Responsive breakpoints](/guide/responsive-design/column-responsive-breakpoints) and [Stackable table](/guide/responsive-design/stackable-table).
 
 <!-- TODO(screenshot): fluent-forms-integration-4
   screen: Tables › a Fluent Forms table › Table Rows › Source settings
@@ -116,6 +116,6 @@ This option is only in **Source settings**, not on the Create screen. Turn it on
 
 ## Show the table
 
-Copy the shortcode from the editor header and paste it into any page or post, or use the Ninja Tables block. See [Embed a table](/embed-tables).
+Copy the shortcode from the editor header and paste it into any page or post, or use the Ninja Tables block. See [Embed a table](/guide/wordpress-integration/embed-tables).
 
-To turn the same entries into a chart, see [Create charts from Fluent Forms entries](/create-ninja-charts-with-fluent-forms-entries).
+To turn the same entries into a chart, see [Create charts from Fluent Forms entries](/guide/ninja-charts/create-ninja-charts-with-fluent-forms-entries).

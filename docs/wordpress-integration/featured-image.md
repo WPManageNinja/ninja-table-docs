@@ -5,7 +5,7 @@ description: "Show each post's or product's featured image in a WP Posts, WooCom
 
 # Featured Image
 
-The **Featured Image** field type shows each post's or product's featured image as a table column. Use it in [WP Posts](/create-wp-posts-table) and [WooCommerce](/woocommerce-integration) tables (Pro) and in [FluentCart](/fluentcart-integration) tables (Free). WooCommerce and FluentCart tables already include an Image column when you create them, so you only need this for extra image columns or other sizes.
+The **Featured Image** field type shows each post's or product's featured image as a table column. Use it in [WP Posts](/guide/data-sources/create-wp-posts-table) and [WooCommerce](/guide/data-sources/woocommerce-integration) tables (Pro) and in [FluentCart](/guide/data-sources/fluentcart-integration) tables (Free). WooCommerce and FluentCart tables already include an Image column when you create them, so you only need this for extra image columns or other sizes.
 
 ## Add a featured image column
 
@@ -38,6 +38,6 @@ Click **Preview** in the editor header. Each row shows its post's featured image
 
 ## Use the image URL in your own HTML
 
-On WP Posts and WooCommerce tables, the `{post.featured_image_url}` placeholder gives the image's URL. Use it with the **Shortcode / Computed Value or HTML** field type to build your own markup, for example `<img src="{post.featured_image_url}" alt="{post.post_title}" width="80">`. See [Shortcode / computed value or HTML](/shortcode-computed-value-or-html-in-wp-post-woocommerce-table).
+On WP Posts and WooCommerce tables, the `{post.featured_image_url}` placeholder gives the image's URL. Use it with the **Shortcode / Computed Value or HTML** field type to build your own markup, for example `<img src="{post.featured_image_url}" alt="{post.post_title}" width="80">`. See [Shortcode / computed value or HTML](/guide/wordpress-integration/shortcode-computed-value-or-html-in-wp-post-woocommerce-table).
 
 To change the image size or link later, open the column header › **Column settings**.

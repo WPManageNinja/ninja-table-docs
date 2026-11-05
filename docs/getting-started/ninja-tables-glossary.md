@@ -5,13 +5,13 @@ description: "Plain-language definitions of the terms used in the Ninja Tables a
 
 # Ninja Tables Glossary
 
-This glossary explains the terms you'll see in the Ninja Tables admin and in these docs. Features marked (Pro) need [Ninja Tables Pro](/free-vs-pro).
+This glossary explains the terms you'll see in the Ninja Tables admin and in these docs. Features marked (Pro) need [Ninja Tables Pro](/guide/getting-started/free-vs-pro).
 
 ## A
 
 **Advanced (column tab):** The column dialog tab for alignment, width, extra CSS classes, colors, Sortable, Searchable, Click to copy and HTML header content. Most options are Pro.
 
-**Advanced shortcode:** Extra attributes for the `[ninja_tables]` shortcode (Pro) that change how a table shows on one page, such as rows per page or which columns to show. See the [shortcode reference](/shortcode-reference).
+**Advanced shortcode:** Extra attributes for the `[ninja_tables]` shortcode (Pro) that change how a table shows on one page, such as rows per page or which columns to show. See the [shortcode reference](/guide/advanced-features/shortcode-reference).
 
 **Ajax rendering:** A rendering mode where the table's rows load right after the page. It's fast and suits big tables, but shortcodes typed into cells don't run. Compare Legacy rendering.
 
@@ -35,7 +35,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Conditions (column tab):** Rules (Pro) that change a cell's, row's or column's color, content or CSS class when its value matches, for example "greater than 100". Also called conditional formatting.
 
-**Connected table:** A table whose rows come from somewhere else, such as WordPress posts, WooCommerce, Fluent Forms, a Google Sheet or a SQL query. Its rows are read-only in Ninja Tables. See [How connected tables work](/connected-tables-overview).
+**Connected table:** A table whose rows come from somewhere else, such as WordPress posts, WooCommerce, Fluent Forms, a Google Sheet or a SQL query. Its rows are read-only in Ninja Tables. See [How connected tables work](/guide/data-sources/connected-tables-overview).
 
 **Custom CSS/JS:** The table editor tab for your own CSS, or JavaScript (Pro), scoped to one table.
 
@@ -45,7 +45,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 ## D
 
-**DataTables:** One of the two table engines. It loads one page of rows at a time from the server, so it holds up well for tables with thousands of rows. See [choose an engine](/choose-table-engine).
+**DataTables:** One of the two table engines. It loads one page of rows at a time from the server, so it holds up well for tables with thousands of rows. See [choose an engine](/guide/creating-tables/choose-table-engine).
 
 **Data filtering shortcode:** Shortcode attributes that show only matching rows of a table, without visitors needing to search or filter.
 
@@ -75,13 +75,13 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 ## G
 
-**Getting started checklist:** A card at the top of the Tables list, while the site has one or two tables, with three steps: create a table, pick a design and add it to a page. See [Onboarding](/ninja-tables-onboarding).
+**Getting started checklist:** A card at the top of the Tables list, while the site has one or two tables, with three steps: create a table, pick a design and add it to a page. See [Onboarding](/guide/getting-started/ninja-tables-onboarding).
 
 **Global appearance:** The Settings section with default styles for new tables. Existing tables don't change.
 
 **Google Sheets integration:** A connected table (Pro) that shows rows from a published Google Sheet.
 
-**Guided setup:** The two-step wizard that opens on the Tables screen when a site has no tables: choose how to start, then finish the table. See [Onboarding](/ninja-tables-onboarding).
+**Guided setup:** The two-step wizard that opens on the Tables screen when a site has no tables: choose how to start, then finish the table. See [Onboarding](/guide/getting-started/ninja-tables-onboarding).
 
 ## H
 
@@ -133,15 +133,15 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Pagination:** Splitting a long table's rows across pages.
 
-**Performance:** The Settings section with buttons to clear the Ninja Tables cache and ask caching plugins to clear theirs. See [Clear caches](/clear-table-cache).
+**Performance:** The Settings section with buttons to clear the Ninja Tables cache and ask caching plugins to clear theirs. See [Clear caches](/guide/table-management/clear-table-cache).
 
 **Permissions:** The Settings section (Pro) where you choose which user roles can manage tables, and whether they can write SQL queries.
 
-**Plan pill:** The **Free** or **Pro** label next to the Ninja Tables name in the top bar. See [Find your way around](/admin-navigation).
+**Plan pill:** The **Free** or **Pro** label next to the Ninja Tables name in the top bar. See [Find your way around](/guide/getting-started/admin-navigation).
 
 **Post meta field:** A column for WP Posts and WooCommerce tables that shows a custom field value, including fields from ACF, Meta Box, JetEngine, Toolset and Pods.
 
-**Pro:** The paid add-on that unlocks extra data sources, column types, design options and tools. See [Free vs Pro](/free-vs-pro).
+**Pro:** The paid add-on that unlocks extra data sources, column types, design options and tools. See [Free vs Pro](/guide/getting-started/free-vs-pro).
 
 **Progress bar element:** A Drag & Drop element that shows a value as a filled bar or circle.
 
@@ -165,7 +165,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Select field (column type):** A column type (Pro) with a list of set options for each cell.
 
-**Settings:** The site-wide options you open with the gear icon: General, Global appearance, Permissions (Pro), Performance and, with Pro active, License. See [Settings overview](/tools-and-settings).
+**Settings:** The site-wide options you open with the gear icon: General, Global appearance, Permissions (Pro), Performance and, with Pro active, License. See [Settings overview](/guide/table-management/tools-and-settings).
 
 **Shortcode:** The code, such as `[ninja_tables id="123"]`, that you paste into a post or page to show a table. Drag & Drop tables use `[ninja_table_builder id="123"]`.
 
@@ -193,13 +193,13 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Table details:** The dialog you open with the pencil next to a table's name, to edit its title, caption and description.
 
-**Table duplicating:** Making a copy of a table, with its columns, rows and settings, from the Tables list. See [Duplicate a table](/table-cloning-duplicating).
+**Table duplicating:** Making a copy of a table, with its columns, rows and settings, from the Tables list. See [Duplicate a table](/guide/table-management/table-cloning-duplicating).
 
 **Table ID:** The unique number of each table, used in its shortcode.
 
 **Table Rows:** The first table editor tab, a spreadsheet-style grid where you add and edit rows and columns, and import or export rows with **Import / Export**.
 
-**TablePress migration:** Importing tables from the TablePress plugin into Ninja Tables. See [Import from TablePress](/import-table-from-tablepress-plugin).
+**TablePress migration:** Importing tables from the TablePress plugin into Ninja Tables. See [Import from TablePress](/guide/import-export/import-table-from-tablepress-plugin).
 
 **Text icon element:** A Drag & Drop element (Pro) that pairs an icon with text in one cell.
 
@@ -213,7 +213,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 ## W
 
-**Welcome banner:** A notice at the top of the Tables list after an update, with **What moved?** and **Dismiss** buttons. See [Find your way around](/admin-navigation).
+**Welcome banner:** A notice at the top of the Tables list after an update, with **What moved?** and **Dismiss** buttons. See [Find your way around](/guide/getting-started/admin-navigation).
 
 **WooCommerce integration:** A connected table (Pro) built from WooCommerce products, with prices, stock and add-to-cart buttons.
 

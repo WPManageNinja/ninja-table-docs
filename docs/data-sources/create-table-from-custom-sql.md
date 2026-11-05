@@ -14,8 +14,8 @@ Only read-only `SELECT` queries are allowed, and only administrators can write t
 1. Go to **Create Table** and, under **Connect live data**, click **Custom SQL query**.
 2. Enter a **Table name**.
 3. Write your query in **Custom SQL Query**, for example `SELECT * FROM wp_buyers_table`. The query is passed to the WordPress `$wpdb->get_results()` function.
-4. Leave **SQL Connection Type** on **Default WP SQL Table** to query this site's database. To query another database, choose **Remote/External SQL**. See [Connect a remote database](/custom-sql-remote-database).
-5. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable. See [Choose a table engine](/choose-table-engine).
+4. Leave **SQL Connection Type** on **Default WP SQL Table** to query this site's database. To query another database, choose **Remote/External SQL**. See [Connect a remote database](/guide/data-sources/custom-sql-remote-database).
+5. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable. See [Choose a table engine](/guide/creating-tables/choose-table-engine).
 6. Click **Create table**.
 
 ![Custom SQL query drawer with a SELECT query](/images/data-sources/create-table-custom-sql/1.-Custom-SQL-Query-Drawer.webp)
@@ -172,4 +172,4 @@ Ninja Tables runs your query on every load of the table, loads the whole result 
 
 SQL tables can read any data in your database, so Custom SQL is limited to **Administrators** by default. Other users see: "For security reason, Custom SQL module is enabled only for Administrator user role." They can view the data and change other settings, but can't change the query.
 
-To let other roles write queries, go to the gear icon › **Settings** › **Permissions**. Tick the roles under **Who can manage tables**, then turn on **Let these roles write SQL queries** under **Custom SQL module**. Only do this for roles you fully trust. See [Define permission for table users](/define-permission-for-table-users).
+To let other roles write queries, go to the gear icon › **Settings** › **Permissions**. Tick the roles under **Who can manage tables**, then turn on **Let these roles write SQL queries** under **Custom SQL module**. Only do this for roles you fully trust. See [Define permission for table users](/guide/table-management/define-permission-for-table-users).

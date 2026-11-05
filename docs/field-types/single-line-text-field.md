@@ -19,7 +19,7 @@ The **Single line text field** is the default column type. Use it for short text
 ## Enter values
 
 - **In the grid:** click a cell and type. Press **Enter** or click away to save the cell.
-- **In the row drawer:** click **Add data**, or the pencil icon on a row, and type in the column's text box. Click **Add row** or **Update** to save. See [Working in Table Rows](/working-in-table-rows).
+- **In the row drawer:** click **Add data**, or the pencil icon on a row, and type in the column's text box. Click **Add row** or **Update** to save. See [Working in Table Rows](/guide/creating-tables/working-in-table-rows).
 
 ## How it looks on your site
 
@@ -27,6 +27,6 @@ Visitors see the text as typed. A single line text cell can also hold simple HTM
 
 ![Table with a single line text cell showing formatted HTML](/images/field-types/single-line-text-field/1.-Table-With-A-Single-Line-Text.webp)
 
-For links, images, lists or formatted text, use the [HTML field](/html-field) type, which gives you the WordPress editor.
+For links, images, lists or formatted text, use the [HTML field](/guide/field-types/html-field) type, which gives you the WordPress editor.
 
 You can change a column's type at any time. The column key stays the same.

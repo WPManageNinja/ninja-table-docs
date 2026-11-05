@@ -5,7 +5,7 @@ description: "Ninja Charts is a free companion plugin that turns Ninja Tables da
 
 # Introduction: Getting Started with Ninja Charts
 
-**Ninja Charts** is a free WordPress chart plugin. It turns a Ninja Tables table, Fluent Forms entries or data you type in into a responsive chart, and gives you a shortcode to show it on any page. [Install it](/how-to-install-ninja-charts) first if you haven't.
+**Ninja Charts** is a free WordPress chart plugin. It turns a Ninja Tables table, Fluent Forms entries or data you type in into a responsive chart, and gives you a shortcode to show it on any page. [Install it](/guide/ninja-charts/how-to-install-ninja-charts) first if you haven't.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/v-mU6LIb7jQ" title="Getting Started with Ninja Charts Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -18,7 +18,7 @@ Every chart uses one of two renderers, and the chart types you can pick depend o
 - **Chart Js** (12 types): Line, Pie, Bar, Horizontal Bar, Bubble, Doughnut, Scatter, Area, Combo, Radar, Polar and Funnel.
 - **Google Charts** (10 types): Line, Pie, Bar, Horizontal Bar, Bubble, Doughnut, Scatter, Area, Combo and Histogram. Radar, Polar and Funnel are not available.
 
-Chart Js has more design options (Layout and Animations tabs). See [Customize a Chart](/how-to-customize-charts-in-ninja-charts).
+Chart Js has more design options (Layout and Animations tabs). See [Customize a Chart](/guide/ninja-charts/how-to-customize-charts-in-ninja-charts).
 
 ## Create a chart
 
@@ -34,14 +34,14 @@ Go to **Ninja Tables** › **Charts**, then click **Add New**. The creator has f
 
 Pick the path that matches your data:
 
-- [Charts from Ninja Tables data](/create-ninja-charts-with-ninja-tables-data)
-- [Charts from Fluent Forms entries](/create-ninja-charts-with-fluent-forms-entries)
-- [Charts from data you type in](/how-to-create-chart-manually-in-ninja-charts)
-- [The full walkthrough for dynamic charts](/how-to-create-dynamic-charts-with-ninja-charts)
+- [Charts from Ninja Tables data](/guide/ninja-charts/create-ninja-charts-with-ninja-tables-data)
+- [Charts from Fluent Forms entries](/guide/ninja-charts/create-ninja-charts-with-fluent-forms-entries)
+- [Charts from data you type in](/guide/ninja-charts/how-to-create-chart-manually-in-ninja-charts)
+- [The full walkthrough for dynamic charts](/guide/ninja-charts/how-to-create-dynamic-charts-with-ninja-charts)
 
 ## See all your charts
 
-**Ninja Tables** › **Charts** lists every chart with its renderer, data source, type and shortcode. See [Manage Your Charts](/manage-ninja-charts).
+**Ninja Tables** › **Charts** lists every chart with its renderer, data source, type and shortcode. See [Manage Your Charts](/guide/ninja-charts/manage-ninja-charts).
 
 ![All Charts list showing the ID, title, renderer, data source, chart type and shortcode](/images/ninja-charts/getting-started-ninja-charts/2.-All-Charts-List-Showing-The-ID.webp)
 
@@ -49,4 +49,4 @@ When you have no charts yet, the page shows a welcome screen with **Create a new
 
 ## Next steps
 
-- [Add a Chart to a Page](/embed-ninja-charts)
+- [Add a Chart to a Page](/guide/ninja-charts/embed-ninja-charts)

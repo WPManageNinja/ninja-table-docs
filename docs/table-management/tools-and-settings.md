@@ -55,11 +55,11 @@ Click **Save settings** when you're done.
 
 ![Global appearance settings for new tables](/images/table-management/tools-settings/3.-Global-Appearance-Settings-For-New-Tables.webp)
 
-To copy the design of a table you've already styled, see [Use a design as the default](/use-design-as-default).
+To copy the design of a table you've already styled, see [Use a design as the default](/guide/styling-design/use-design-as-default).
 
 ## Permissions
 
-By default only administrators can manage tables. With Pro you can tick other roles under **Who can manage tables**, and let them write SQL queries for Custom SQL tables. The role list leaves out Administrator (always allowed) and Subscriber. See [Define user role permissions](/define-permission-for-table-users).
+By default only administrators can manage tables. With Pro you can tick other roles under **Who can manage tables**, and let them write SQL queries for Custom SQL tables. The role list leaves out Administrator (always allowed) and Subscriber. See [Define user role permissions](/guide/table-management/define-permission-for-table-users).
 
 In the free version this section shows **Permissions are a Pro feature** with an upgrade link.
 
@@ -70,11 +70,11 @@ The card is titled **Clear caches**. Ninja Tables caches tables so pages stay fa
 - **Clear table cache** rebuilds every table the next time it's viewed.
 - **Clear external caches** asks the popular caching plugins on your site to flush their caches too.
 
-See [Clear caches](/clear-table-cache).
+See [Clear caches](/guide/table-management/clear-table-cache).
 
 ## License
 
-This section appears once Ninja Tables Pro is installed. Paste your license key under **Enter the License Key** and click **Activate** to get Pro updates and support. See [Activate your Pro license](/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key).
+This section appears once Ninja Tables Pro is installed. Paste your license key under **Enter the License Key** and click **Activate** to get Pro updates and support. See [Activate your Pro license](/guide/getting-started/upgrade-to-ninja-tables-pro-add-on-and-activate-ninja-tables-pro-license-key).
 
 Once a key is active, the card shows the product and plan, a status badge (**Active**, **Expired**, **Disabled**, **Invalid**, **Not activated** or **Grace period**), **Expires** (or **Lifetime**) with how many days are left, the masked **License key**, **Licensed to**, and when the license was **Last checked**. The links **Refresh**, **Your account** and **Get Support** sit below, with a **Deactivate** button. To switch keys, click **Enter a different key**.
 

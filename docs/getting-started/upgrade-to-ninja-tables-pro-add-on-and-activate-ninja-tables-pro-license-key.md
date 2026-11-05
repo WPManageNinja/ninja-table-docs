@@ -5,7 +5,7 @@ description: "Buy Ninja Tables Pro, install the add-on next to the free plugin, 
 
 # Upgrade and Activate Ninja Tables Pro License Key
 
-**Ninja Tables Pro** is an add-on that unlocks the Pro features, such as connected data sources, custom filters and frontend editing. It runs on top of the free Ninja Tables plugin, so keep the free plugin installed and active. To see what Pro adds, read [Free vs Pro](/free-vs-pro).
+**Ninja Tables Pro** is an add-on that unlocks the Pro features, such as connected data sources, custom filters and frontend editing. It runs on top of the free Ninja Tables plugin, so keep the free plugin installed and active. To see what Pro adds, read [Free vs Pro](/guide/getting-started/free-vs-pro).
 
 ## Buy and download Ninja Tables Pro
 

@@ -16,7 +16,7 @@ How the table keeps up with the sheet depends on the engine you pick when you cr
 | Links and images in cells | Kept | Not kept (plain text only) |
 | Best for | Small and medium sheets, sheets with links or images | Large sheets with thousands of rows |
 
-DataTables is the default (recommended). Pick FooTable if your sheet has links or images in cells. See [Choose a table engine](/choose-table-engine) for more about the two engines.
+DataTables is the default (recommended). Pick FooTable if your sheet has links or images in cells. See [Choose a table engine](/guide/creating-tables/choose-table-engine) for more about the two engines.
 
 ::: warning No Google sign-in
 Ninja Tables does not connect to your Google account. There is no sign-in, no permission screen and no API key. It reads a sheet that you have **published to the web**, so anyone with the link can read it. Do not publish a sheet that holds private data.
@@ -94,13 +94,13 @@ On the **Table Rows** tab, the banner reads **Rows come from Google Sheet**. Cli
 
 ### On DataTables
 
-The **Table Rows** tab shows a sync panel with the column list, the URL, the **Auto sync** schedule, **Sync now** and the result of the last sync. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
+The **Table Rows** tab shows a sync panel with the column list, the URL, the **Auto sync** schedule, **Sync now** and the result of the last sync. See [Google Sheets & CSV auto sync](/guide/data-sources/google-sheets-csv-auto-sync).
 
 ## How fast changes show up
 
 - **Google's delay:** after you edit a published sheet, Google can take about 5 minutes to republish it.
 - **FooTable:** Ninja Tables keeps the fetched sheet for the **Caching interval (in minutes)** in **Table Configuration** › **Caching Configuration**. New tables start at 5 minutes. Leave it blank or set it to 0 to cache nothing (every page view fetches the sheet, which is slower).
-- **DataTables:** the table updates on its **Auto sync** schedule, or right away when you click **Sync now**. Scheduled syncs run in the background through WordPress's scheduled tasks (WP-Cron), so you don't need to keep the admin open. The first import and **Sync now** run from the table screen, so keep it open until the progress bar finishes. Intervals run from every 5 minutes to every 7 days. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
+- **DataTables:** the table updates on its **Auto sync** schedule, or right away when you click **Sync now**. Scheduled syncs run in the background through WordPress's scheduled tasks (WP-Cron), so you don't need to keep the admin open. The first import and **Sync now** run from the table screen, so keep it open until the progress bar finishes. Intervals run from every 5 minutes to every 7 days. See [Google Sheets & CSV auto sync](/guide/data-sources/google-sheets-csv-auto-sync).
 
 ## Requirements for DataTables sync
 
@@ -113,14 +113,14 @@ The **Table Rows** tab shows a sync panel with the column list, the URL, the **A
 
 Links and images in your sheet only carry over on the **FooTable** engine.
 
-- **Hyperlinks:** set the column's type to **[HTML field](/html-field)**. Open the column header › **Column settings**, change **Type** to **HTML field** and save. Links from the sheet become clickable.
+- **Hyperlinks:** set the column's type to **[HTML field](/guide/field-types/html-field)**. Open the column header › **Column settings**, change **Type** to **HTML field** and save. Links from the sheet become clickable.
 - **Images:** add images to cells in Google Sheets with **Insert** › **Image** › **Insert image in cell**, and set the column type to **HTML field**. The images show in the table.
 
 ::: warning DataTables tables get plain text
 On **DataTables**, the sheet is read as CSV, which holds only text. Links, images and cell formatting are lost. If you need them, create the table with FooTable.
 :::
 
-On either engine, if a column holds plain URLs (for example `https://example.com/photo.jpg`), you can turn them into links or images with [Transform value](/transform-value) (Pro).
+On either engine, if a column holds plain URLs (for example `https://example.com/photo.jpg`), you can turn them into links or images with [Transform value](/guide/column-settings/transform-value) (Pro).
 
 Formatting from the sheet (colors, bold text, fonts) isn't copied on either engine. Style the table in the **Styling** tab of **Table Design** instead.
 
@@ -130,4 +130,4 @@ Formatting from the sheet (colors, bold text, fonts) isn't copied on either engi
   <iframe src="https://www.youtube.com/embed/-eO4-F5sowo" title="Google Sheets Integration Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-For any other CSV file on the web, see [Remote CSV](/construct-table-from-csv).
+For any other CSV file on the web, see [Remote CSV](/guide/data-sources/construct-table-from-csv).

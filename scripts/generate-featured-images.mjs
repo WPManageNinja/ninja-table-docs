@@ -96,9 +96,9 @@ const PALETTE = {
   ]
 }
 
-// Mirrors the config's rewrite `docs/:category/:slug.md` -> `:slug.md`.
+// Mirrors the config's rewrite `docs/:category/:slug.md` -> `guide/:category/:slug.md`.
 function servedPath(rel) {
-  return rel.replace(/^docs\/[^/]+\//, '')
+  return rel.replace(/^docs\//, 'guide/')
 }
 
 // =========================================================================

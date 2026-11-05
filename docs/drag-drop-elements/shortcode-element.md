@@ -12,7 +12,7 @@ The **Shortcode** element shows the output of any WordPress shortcode inside a D
 1. Copy the shortcode from the other plugin, for example a Fluent Forms form shortcode.
 2. In the builder, click a cell and click **Shortcode** in the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell.
 3. Click the element and paste the shortcode into the **Shortcode** box in the **Settings** tab (the hint reads "Enter a WordPress shortcode"). The new element starts with the text `[Shortcode]`.
-4. Set the **Alignment**: **Left**, **Center** (default) or **Right**. If needed, set the [spacing](/spacing).
+4. Set the **Alignment**: **Left**, **Center** (default) or **Right**. If needed, set the [spacing](/guide/drag-drop-settings/spacing).
 5. Click **Save**.
 
 ![Shortcode settings with a form shortcode pasted in the box](/images/drag-drop-elements/shortcode-element/1.-Shortcode-Settings-With-A-Form-Shortcode.webp)

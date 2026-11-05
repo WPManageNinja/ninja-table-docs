@@ -16,7 +16,7 @@ You need FluentCart active. If it isn't, the **FluentCart products** drawer tell
 3. Pick the products to show from the **Product category** and **Product brands** lists. Leave a list empty to show products from all of its items.
 4. Turn on **Hide out of stock items** to leave out products with no stock.
 5. Set **Initial Order By**. It starts on **Default order**. Choose Product Title, Date, Price or Stock to sort, then pick **A → Z** or **Z → A** (**Z → A** is preselected). Visitors can still sort the table by any column.
-6. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable. See [Choose a table engine](/choose-table-engine).
+6. Check the engine line. **DataTables** (recommended) is the default. Click **Change** to use FooTable. See [Choose a table engine](/guide/creating-tables/choose-table-engine).
 7. Click **Create table**.
 
 ![FluentCart products drawer with category, stock and order options](/images/data-sources/fluentcart-integration/1.-FluentCart-Products-Drawer-With-Category-Stock.webp)
@@ -51,7 +51,7 @@ The same choices as on the Create screen: **Select Products By Category**, **Sel
 ### Appearance
 
 - **Show cart details before table** / **Show cart details after table**: a cart summary above or below the table. It only shows when the visitor's cart isn't empty. A new table has both on.
-- **Show bulk actions**: adds checkboxes and a **Bulk Actions** menu (**Add to Cart**, **Compare Products**). See [Bulk add to cart & product comparison](/woocommerce-product-comparison-bulk-add-to-cart).
+- **Show bulk actions**: adds checkboxes and a **Bulk Actions** menu (**Add to Cart**, **Compare Products**). See [Bulk add to cart & product comparison](/guide/table-management/woocommerce-product-comparison-bulk-add-to-cart).
 - **Show go to cart button** and **Show checkout button**: buttons that take the customer to the cart or checkout. A new table has both on, and **Show bulk actions** off.
 - **Cart text** and **Checkout text**: the wording on those buttons.
 
@@ -84,21 +84,21 @@ Add a column filled from your product data. For example, to show the short descr
   alt: Add new column section with a Post Data field type
 -->
 
-The **Product Data** field type offers Product Price, Product Price Range, Product Variations, Product Stock, Product Quantity input field, Buy Now Button and Stock Availability. You can also use Post Meta, Shortcode / Computed Value or HTML, Featured Image and Product Taxonomy. See [Dynamic columns reference](/dynamic-columns-reference).
+The **Product Data** field type offers Product Price, Product Price Range, Product Variations, Product Stock, Product Quantity input field, Buy Now Button and Stock Availability. You can also use Post Meta, Shortcode / Computed Value or HTML, Featured Image and Product Taxonomy. See [Dynamic columns reference](/guide/wordpress-integration/dynamic-columns-reference).
 
 ### Other table settings
 
 The rows are read-only, because they come from FluentCart. The other tabs work as usual:
 
-- **Styling**: colors, fonts, search, sorting, pagination and mobile layout. See [Table style settings](/table-style-settings).
-- **Table Configuration**: engine, rendering and caching. See [Table rendering settings](/table-rendering-settings).
-- **Custom CSS/JS**: your own styles. See [Table styling & CSS selectors](/table-styling-css-selector).
+- **Styling**: colors, fonts, search, sorting, pagination and mobile layout. See [Table style settings](/guide/styling-design/table-style-settings).
+- **Table Configuration**: engine, rendering and caching. See [Table rendering settings](/guide/table-settings/table-rendering-settings).
+- **Custom CSS/JS**: your own styles. See [Table styling & CSS selectors](/guide/table-management/table-styling-css-selector).
 
-Some general table features, such as custom colors and custom filters, are Pro. See [Free vs Pro](/free-vs-pro).
+Some general table features, such as custom colors and custom filters, are Pro. See [Free vs Pro](/guide/getting-started/free-vs-pro).
 
 ## Step 3: Show the table
 
-Copy the shortcode from the editor header and paste it into any page or post, or use the Ninja Tables block. See [Embed a table](/embed-tables).
+Copy the shortcode from the editor header and paste it into any page or post, or use the Ninja Tables block. See [Embed a table](/guide/wordpress-integration/embed-tables).
 
 <!-- TODO(screenshot): fluentcart-integration-5
   screen: A page with the FluentCart table shortcode

@@ -5,4 +5,4 @@ description: "This guide has moved: keeping links and images from Google Sheets 
 
 # Hyperlinks from Google Sheets
 
-This topic now lives in the Google Sheets guide. See [Hyperlinks and images from the sheet](/google-sheets-integration#hyperlinks-and-images-from-the-sheet) in [Google Sheets Integration](/google-sheets-integration). Links and images only carry over on tables that use the FooTable engine.
+This topic now lives in the Google Sheets guide. See [Hyperlinks and images from the sheet](/guide/data-sources/google-sheets-integration#hyperlinks-and-images-from-the-sheet) in [Google Sheets Integration](/guide/data-sources/google-sheets-integration). Links and images only carry over on tables that use the FooTable engine.

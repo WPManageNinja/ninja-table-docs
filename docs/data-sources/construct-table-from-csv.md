@@ -7,10 +7,10 @@ description: "Build a table from a CSV file at a public URL with the Remote CSV 
 
 **Remote CSV** (Pro) builds a table from a CSV (comma-separated values) file that lives at a public web address. Use it when another system, website or service publishes its data as a CSV file. When the file changes, the table follows.
 
-For Google Sheets, use the dedicated [Google Sheets integration](/google-sheets-integration) instead.
+For Google Sheets, use the dedicated [Google Sheets integration](/guide/data-sources/google-sheets-integration) instead.
 
 ::: warning CSV only
-The tile is called **Remote CSV / JSON**, but today it reads **CSV files only**. The field is labeled "A CSV or JSON file URL", yet a JSON URL is rejected with "Expected CSV but received invalid data type from the given url." To show JSON data, convert it to CSV first, or upload the JSON file with **Create Table** › **Upload a file**. See [Import a CSV, Excel or JSON file](/import-table-data-from-a-csv).
+The tile is called **Remote CSV / JSON**, but today it reads **CSV files only**. The field is labeled "A CSV or JSON file URL", yet a JSON URL is rejected with "Expected CSV but received invalid data type from the given url." To show JSON data, convert it to CSV first, or upload the JSON file with **Create Table** › **Upload a file**. See [Import a CSV, Excel or JSON file](/guide/import-export/import-table-data-from-a-csv).
 :::
 
 ## Before you start
@@ -19,7 +19,7 @@ The tile is called **Remote CSV / JSON**, but today it reads **CSV files only**.
 - The server hosting the file must report it as CSV. A content type that contains "csv" works, and so does `application/octet-stream` or `application/binary`. A plain `text/plain` response works only when the address ends in `.csv`. Anything else is rejected as "invalid data type".
 - The first row must hold the column headers. Rows with a different number of cells than the header row are skipped.
 - On FooTable the file is requested with a short time limit (10 seconds for the column list, 20 seconds for the rows), so a slow server may fail to load.
-- On **DataTables**, the address must start with `https://`, and private or internal addresses (such as `localhost` or a local network IP) are blocked. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
+- On **DataTables**, the address must start with `https://`, and private or internal addresses (such as `localhost` or a local network IP) are blocked. See [Google Sheets & CSV auto sync](/guide/data-sources/google-sheets-csv-auto-sync).
 
 ## Create the table
 
@@ -54,7 +54,7 @@ Ninja Tables opens the new table on the **Table Rows** tab with the file's data 
 ## Change the URL or the columns
 
 - **FooTable:** on the **Table Rows** tab, the banner reads **Rows come from Remote CSV or JSON**. Click **Source settings**, change the **Source URL** if needed, click **Fetch columns**, tick the columns under **Select entry fields** and click **Update**.
-- **DataTables:** the **Table Rows** tab shows a sync panel with the URL, the columns, the **Auto sync** schedule and **Sync now**. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
+- **DataTables:** the **Table Rows** tab shows a sync panel with the URL, the columns, the **Auto sync** schedule and **Sync now**. See [Google Sheets & CSV auto sync](/guide/data-sources/google-sheets-csv-auto-sync).
 
 ## How fast changes show up
 
@@ -64,4 +64,4 @@ On DataTables, the table updates on its **Auto sync** schedule, or right away wh
 
 ## Customize the table
 
-Everything else works like other tables: rename columns and change their types from the column header › **Column settings**, design the table in **Styling**, and add [Custom filters](/custom-filters) (Pro). To turn plain URLs in the file into links or images, use [Transform value](/transform-value) (Pro).
+Everything else works like other tables: rename columns and change their types from the column header › **Column settings**, design the table in **Styling**, and add [Custom filters](/guide/table-settings/custom-filters) (Pro). To turn plain URLs in the file into links or images, use [Transform value](/guide/column-settings/transform-value) (Pro).

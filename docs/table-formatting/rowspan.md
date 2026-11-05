@@ -7,7 +7,7 @@ description: "Merge cells with the same value in neighboring rows into one tall 
 
 **Rowspan** merges cells that sit on top of each other into one tall cell. With this method, neighboring rows that have the same value in a column are merged automatically, for example a *Gender* or *Category* column with repeated values.
 
-Unlike [Colspan](/colspan-cell-merge), there is no `#rowspan#` keyword. Rowspan uses a short script in **Custom JS** and the **Extra classes** column option, both Pro features.
+Unlike [Colspan](/guide/table-formatting/colspan-cell-merge), there is no `#rowspan#` keyword. Rowspan uses a short script in **Custom JS** and the **Extra classes** column option, both Pro features.
 
 ## Merge table rows
 
@@ -24,4 +24,4 @@ Preview the table. Neighboring rows with the same value in that column now share
 
 ![Neighboring rows with the same value merged into one cell](/images/table-formatting/rowspan/1.-Neighboring-Rows-With-The-Same-Value.webp)
 
-For the field itself, see [Advanced settings](/advanced-settings).
+For the field itself, see [Advanced settings](/guide/column-settings/advanced-settings).

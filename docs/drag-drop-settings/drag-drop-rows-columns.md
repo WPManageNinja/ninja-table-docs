@@ -18,7 +18,7 @@ Below the table, the add bar has two split buttons:
 
 ## Select a column or row
 
-Click a column letter (**A**, **B**, **C**…) or a row number (**1**, **2**, **3**…) to select the whole column or row. The **Settings** tab then shows its color and size options. See [Cell Settings](/drag-drop-cell-settings).
+Click a column letter (**A**, **B**, **C**…) or a row number (**1**, **2**, **3**…) to select the whole column or row. The **Settings** tab then shows its color and size options. See [Cell Settings](/guide/drag-drop-settings/drag-drop-cell-settings).
 
 ## The column and row menus
 
@@ -74,7 +74,7 @@ If the picked cells don't form a rectangle, the toolbar says "These Cells Do Not
 
 ## Row height and column width
 
-Select the row or column, then set the size in [Cell Settings](/drag-drop-cell-settings).
+Select the row or column, then set the size in [Cell Settings](/guide/drag-drop-settings/drag-drop-cell-settings).
 
 Click **Save** to keep your changes.
 

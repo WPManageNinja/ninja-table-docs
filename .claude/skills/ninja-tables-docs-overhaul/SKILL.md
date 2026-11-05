@@ -169,7 +169,7 @@ For each page in LEDGER order, mark it `in-progress`, then:
    outcome stated at the end.
 5. **Format**: frontmatter `title` + real `description`, H1 = title, opening 1–3 sentences with the
    bold feature name and "(Pro)", H2/H3 outline from the specialist template, numbered lists only for
-   strict sequences, `**Exact Label**` bold, flat `/<slug>` links (check each target exists), at most
+   strict sequences, `**Exact Label**` bold, absolute `/guide/<category>/<slug>` links (check each target exists), at most
    two `::: tip` / `::: warning` for data loss, security or surprising behaviour.
 6. **Strip screenshots** (§5) and place placeholders where a reader needs to see the screen.
 7. **Record** in the LEDGER: Code ✓, Live ✓, feature numbers covered, placeholder count, open questions,

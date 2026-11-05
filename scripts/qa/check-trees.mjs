@@ -12,14 +12,14 @@ const docsDir = join(root, 'docs')
 const config = readFileSync(join(root, '.vitepress', 'config.mts'), 'utf8')
 
 // The page whose quick start is built from a tree's `journey` (see CLAUDE.md, Doc trees).
-const INTRO = '/ninja-tables-introduction'
+const INTRO = '/guide/getting-started/ninja-tables-introduction'
 
-// slug -> file path (slugs are unique site-wide, see CLAUDE.md)
+// served URL (/guide/<category>/<slug>) -> file path
 const pages = new Map()
 for (const cat of readdirSync(docsDir, { withFileTypes: true })) {
   if (!cat.isDirectory()) continue
   for (const f of readdirSync(join(docsDir, cat.name))) {
-    if (f.endsWith('.md')) pages.set('/' + f.slice(0, -3), join(docsDir, cat.name, f))
+    if (f.endsWith('.md')) pages.set(`/guide/${cat.name}/${f.slice(0, -3)}`, join(docsDir, cat.name, f))
   }
 }
 

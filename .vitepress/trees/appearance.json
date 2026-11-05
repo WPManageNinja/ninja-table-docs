@@ -2,7 +2,7 @@
   "id": "appearance",
   "title": "Table Design",
   "mapRoot": "Ninja Tables Table Design",
-  "overview": "/table-style-settings",
+  "overview": "/guide/styling-design/table-style-settings",
   "sidebarOverviewText": "Table Design overview",
   "hero": {
     "eyebrow": "Table Design tab",
@@ -11,12 +11,12 @@
     "actions": [
       {
         "text": "Start with colors",
-        "link": "/table-color-settings",
+        "link": "/guide/styling-design/table-color-settings",
         "primary": true
       },
       {
         "text": "Set a default design",
-        "link": "/use-design-as-default"
+        "link": "/guide/styling-design/use-design-as-default"
       }
     ],
     "path": [
@@ -115,7 +115,7 @@
         {
           "id": "live-preview",
           "label": "Live preview options",
-          "link": "/table-style-settings#the-live-preview",
+          "link": "/guide/styling-design/table-style-settings#the-live-preview",
           "changes": "The preview shows the table the way visitors will see it.",
           "visitors": "Nothing: the preview is for you only.",
           "facts": [
@@ -135,7 +135,7 @@
         {
           "id": "presets",
           "label": "Preset color schemes",
-          "link": "/table-color-settings",
+          "link": "/guide/styling-design/table-color-settings",
           "sidebar": "Colors",
           "pro": "partial",
           "proNote": "Free: Default only",
@@ -150,7 +150,7 @@
         {
           "id": "custom-colors",
           "label": "Custom colors",
-          "link": "/table-color-settings",
+          "link": "/guide/styling-design/table-color-settings",
           "pro": true,
           "changes": "Lets you set the background, text and border of the search bar, header, body rows and footer one by one. You can also color odd and even rows differently.",
           "visitors": "Exactly your brand colors, including a different color for rows under the pointer.",
@@ -174,7 +174,7 @@
         {
           "id": "title-header",
           "label": "Title & Header",
-          "link": "/table-title-description-settings",
+          "link": "/guide/table-management/table-title-description-settings",
           "changes": "Switches the table title, the description and the header row on or off above and inside the table.",
           "visitors": "A clean table with only the heading text you want shown.",
           "facts": [
@@ -189,7 +189,7 @@
         {
           "id": "typography",
           "label": "Typography",
-          "link": "/table-font-settings",
+          "link": "/guide/styling-design/table-font-settings",
           "sidebar": "Fonts",
           "changes": "Changes the font family and the font size of the table text. The default, **Inherit From Theme**, copies your site font.",
           "visitors": "Text that matches your site, or stands out from it on purpose.",
@@ -202,7 +202,7 @@
         {
           "id": "rows-borders",
           "label": "Rows & Borders",
-          "link": "/table-rows-borders",
+          "link": "/guide/styling-design/table-rows-borders",
           "changes": "Turns row stripes, hover highlight, borders and row spacing on or off. The options depend on the table engine and style library.",
           "visitors": "Rows that are easier to scan: zebra stripes, a highlighted row under the pointer, tighter or roomier cells.",
           "facts": [
@@ -224,7 +224,7 @@
         {
           "id": "search",
           "label": "Search",
-          "link": "/add-or-remove-search-or-filter-functionality",
+          "link": "/guide/styling-design/add-or-remove-search-or-filter-functionality",
           "sidebar": "Search box",
           "group": "Find and browse",
           "changes": "Adds a search box above the table. Visitors type a word and only matching rows stay visible. You control its wording, and on Pro its position and colors.",
@@ -241,7 +241,7 @@
         {
           "id": "sorting",
           "label": "Sorting",
-          "link": "/sorting",
+          "link": "/guide/styling-design/sorting",
           "group": "Find and browse",
           "changes": "Lets visitors click a column heading to sort by it. **Default Order** sets the order rows appear in before anyone clicks.",
           "visitors": "Clickable headings, and a table that opens already ordered the way you chose.",
@@ -257,7 +257,7 @@
         {
           "id": "pagination",
           "label": "Pagination",
-          "link": "/pagination",
+          "link": "/guide/styling-design/pagination",
           "group": "Find and browse",
           "changes": "Splits a long table into pages instead of one long scroll. You set the rows per page and where the page numbers sit.",
           "visitors": "Page numbers under the table, with a limited number of rows at a time.",
@@ -275,7 +275,7 @@
         {
           "id": "sticky",
           "label": "Sticky Header & Column",
-          "link": "/other-design-settings",
+          "link": "/guide/styling-design/other-design-settings",
           "sidebar": "Sticky header & first column",
           "pro": true,
           "group": "Keep it readable",
@@ -293,7 +293,7 @@
         {
           "id": "responsive",
           "label": "Responsive & Stackable Table",
-          "link": "/stackable-table",
+          "link": "/guide/responsive-design/stackable-table",
           "sidebar": "Responsive & stackable table",
           "group": "Keep it readable",
           "changes": "Decides what a wide table does on a small screen. Columns can fold into a **+** drawer, rows can turn into cards, and a click can open the details of a row in a popup.",
@@ -309,7 +309,7 @@
         {
           "id": "row-details",
           "label": "Row Details Popup",
-          "link": "/row-details-popup",
+          "link": "/guide/styling-design/row-details-popup",
           "group": "Keep it readable",
           "changes": "Makes every row clickable. A click opens a pop-up with all of that row's columns as label and value pairs.",
           "visitors": "A pop-up with the whole row, so they don't scroll sideways to read it. Esc, the × button or a click outside closes it.",
@@ -324,7 +324,7 @@
         {
           "id": "export-print",
           "label": "Export & Print",
-          "link": "/csv-and-print-button",
+          "link": "/guide/table-settings/csv-and-print-button",
           "sidebar": "Export & print buttons",
           "pro": true,
           "group": "Take the data",
@@ -350,7 +350,7 @@
         {
           "id": "default-design",
           "label": "Default design for new tables",
-          "link": "/use-design-as-default",
+          "link": "/guide/styling-design/use-design-as-default",
           "sidebar": "Default design for new tables",
           "changes": "Sets the starting color, library, font, title, search, sorting and pagination of tables you create from now on. Tables you already have are never changed.",
           "visitors": "New tables that already look on-brand the moment they are created.",
@@ -363,7 +363,7 @@
         {
           "id": "custom-css",
           "label": "Custom CSS",
-          "link": "/table-styling-css-selector",
+          "link": "/guide/table-management/table-styling-css-selector",
           "inGroup": false,
           "changes": "Adds your own styles for anything the panel does not cover.",
           "visitors": "A table styled beyond the built-in options.",
@@ -385,7 +385,7 @@
         {
           "id": "row-colors",
           "label": "Row & cell colors",
-          "link": "/tables-row-color",
+          "link": "/guide/styling-design/tables-row-color",
           "pro": true,
           "inGroup": false,
           "changes": "Colors a single row or cell.",

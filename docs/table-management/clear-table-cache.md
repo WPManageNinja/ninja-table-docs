@@ -53,8 +53,8 @@ Each table also has its own cache options in **Table Configuration** › **Cachi
 - **Caching interval (in minutes)**: for Remote CSV and Google Sheets tables, how long to keep the fetched data before reading the source again.
 - **Enable HTML cache** (Pro): for tables using Legacy rendering, caches the table's finished HTML for the number of minutes you set under **HTML caching interval (in minutes)**.
 
-See [Engine, rendering and caching](/table-rendering-settings) for the full list.
+See [Engine, rendering and caching](/guide/table-settings/table-rendering-settings) for the full list.
 
 ::: tip
-A Google Sheets or Remote CSV table on FooTable shows changes from its source only after its caching interval has passed. To see a change straight away, click **Clear table cache**. On DataTables, these tables keep a synced copy that updates on its own schedule instead; see [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
+A Google Sheets or Remote CSV table on FooTable shows changes from its source only after its caching interval has passed. To see a change straight away, click **Clear table cache**. On DataTables, these tables keep a synced copy that updates on its own schedule instead; see [Google Sheets & CSV auto sync](/guide/data-sources/google-sheets-csv-auto-sync).
 :::

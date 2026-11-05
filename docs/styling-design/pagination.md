@@ -47,7 +47,7 @@ Turn this on and the page scrolls back to the top of the table every time a visi
 
 ## Pagination colors
 
-The colors of the page bar live in the **Colors** tab, in the **Pagination Colors** section: **Background**, **Active Page** and **Border**. Custom colors are Pro. See [Table Colors](/table-color-settings).
+The colors of the page bar live in the **Colors** tab, in the **Pagination Colors** section: **Background**, **Active Page** and **Border**. Custom colors are Pro. See [Table Colors](/guide/styling-design/table-color-settings).
 
 ## What visitors see
 
@@ -56,7 +56,7 @@ With pagination on, the page bar sits under the rows, at the position you chose.
 ![A table on the site with the pagination bar under the rows](/images/styling-design/pagination/2.-Table-On-The-Site.webp)
 
 ::: tip
-To set the starting rows per page for every new table, use the gear icon › **Settings** › **Global appearance**. See [Default Design for New Tables](/use-design-as-default). To override the rows per page for one embed, use the `per_page` shortcode attribute (Pro). See [Advanced Shortcode](/advanced-shortcode).
+To set the starting rows per page for every new table, use the gear icon › **Settings** › **Global appearance**. See [Default Design for New Tables](/guide/styling-design/use-design-as-default). To override the rows per page for one embed, use the `per_page` shortcode attribute (Pro). See [Advanced Shortcode](/guide/advanced-features/advanced-shortcode).
 :::
 
 ## Common questions
@@ -69,12 +69,12 @@ Check that the switch in the **Pagination** heading is on. With it off, the tabl
 == The page bar is on the wrong side.
 Use **Look** › **Position** and pick **Left**, **Center** or **Right**.
 == How do I change the color of the page numbers?
-Colors are in the **Colors** tab, under **Pagination Colors**. See [Table Colors](/table-color-settings).
+Colors are in the **Colors** tab, under **Pagination Colors**. See [Table Colors](/guide/styling-design/table-color-settings).
 :::
 
 ## Related
 
-- Set the page bar colors: [Table Colors](/table-color-settings).
-- Order the rows before they are split into pages: [Sorting](/sorting).
-- Set rows per page for every new table: [Default Design for New Tables](/use-design-as-default).
-- Show a limited number of rows in one embed: [Advanced Shortcode](/advanced-shortcode).
+- Set the page bar colors: [Table Colors](/guide/styling-design/table-color-settings).
+- Order the rows before they are split into pages: [Sorting](/guide/styling-design/sorting).
+- Set rows per page for every new table: [Default Design for New Tables](/guide/styling-design/use-design-as-default).
+- Show a limited number of rows in one embed: [Advanced Shortcode](/guide/advanced-features/advanced-shortcode).

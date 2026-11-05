@@ -62,7 +62,7 @@ description: "<One real sentence: what the user can change here and why.>"
 Click **Save** to keep your changes.
 
 ::: tip
-<One related setting or shortcode override, with a link: see [Text](/<slug>).>
+<One related setting or shortcode override, with a link: see [Text](/guide/<category>/<slug>).>
 :::
 ```
 

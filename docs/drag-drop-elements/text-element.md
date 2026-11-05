@@ -25,10 +25,10 @@ Click the Text element and open the **Settings** tab (titled **Text**). The opti
 
 ![Settings tab showing the Text element options](/images/drag-drop-elements/text-element/2.-Settings-Tab-Showing-The-Text-Element.webp)
 
-Under **Content & style**, the **Spacing** section sets the margin and padding around the text; see [Element Spacing](/spacing).
+Under **Content & style**, the **Spacing** section sets the margin and padding around the text; see [Element Spacing](/guide/drag-drop-settings/spacing).
 
 Click **Save** to keep your changes.
 
 ::: tip
-To set the default font, size and color for the whole table, use **Table Style** (called **Global style** in older versions) in the [table settings](/ninja-tables-drag-and-drop-table-settings). For cell colors, see [Cell Settings](/drag-drop-cell-settings).
+To set the default font, size and color for the whole table, use **Table Style** (called **Global style** in older versions) in the [table settings](/guide/drag-drop-settings/ninja-tables-drag-and-drop-table-settings). For cell colors, see [Cell Settings](/guide/drag-drop-settings/drag-drop-cell-settings).
 :::
