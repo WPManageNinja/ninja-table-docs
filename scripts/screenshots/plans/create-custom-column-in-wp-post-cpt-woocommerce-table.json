@@ -1,11 +1,63 @@
-{"doc":"docs/wordpress-integration/create-custom-column-in-wp-post-cpt-woocommerce-table.md",
-"outDir":"public/images/wordpress-integration/create-custom-column-wp",
-"viewport":{"width":1440,"height":1150},
-"steps":[
-{"admin":"/tables/1323"},{"wait":4000},
-{"click":{"role":"button","name":"Source settings"}},{"wait":4000},
-{"click":{"selector":".nt-source-tabs button","hasText":"Add new column"}},{"wait":1500},
-{"fill":{"selector":"input[placeholder='e.g. Price']","value":"Reading time"}},
-{"fill":{"selector":"input[placeholder='e.g. price']","value":"reading_time"}},
-{"shot":{"name":"1.-Add-New-Column-Section","clip":{"x":720,"y":32,"width":720,"height":760},"highlights":[".nt-dyn-col"]}}
-]}
+{
+ "doc": "docs/wordpress-integration/create-custom-column-in-wp-post-cpt-woocommerce-table.md",
+ "outDir": "public/images/wordpress-integration/create-custom-column-wp",
+ "viewport": {
+  "width": 1440,
+  "height": 1150
+ },
+ "steps": [
+  {
+   "admin": "/tables/1323"
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "role": "button",
+    "name": "Source settings"
+   }
+  },
+  {
+   "wait": 4000
+  },
+  {
+   "click": {
+    "selector": ".nt-source-tabs button",
+    "hasText": "Add new column"
+   }
+  },
+  {
+   "wait": 1500
+  },
+  {
+   "fill": {
+    "selector": "input[placeholder='e.g. Price']",
+    "value": "Reading time"
+   }
+  },
+  {
+   "fill": {
+    "selector": "input[placeholder='e.g. price']",
+    "value": "reading_time"
+   }
+  },
+  {
+   "eval": "document.activeElement&&document.activeElement.blur()"
+  },
+  {
+   "shot": {
+    "name": "1.-Add-New-Column-Section",
+    "clip": {
+     "x": 720,
+     "y": 32,
+     "width": 720,
+     "height": 690
+    },
+    "highlights": [
+     ".nt-dyn-col"
+    ]
+   }
+  }
+ ]
+}
