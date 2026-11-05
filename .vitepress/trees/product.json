@@ -155,17 +155,6 @@
         { "id": "charts-from-table", "label": "Charts from Ninja Tables data", "link": "/create-ninja-charts-with-ninja-tables-data", "ux": "Turn any table into a bar, line or pie chart." },
         { "id": "charts-embed", "label": "Add a chart to a page", "link": "/embed-ninja-charts", "ux": "Show a chart with its shortcode or block." }
       ]
-    },
-    {
-      "id": "developers",
-      "label": "For developers",
-      "where": "PHP and JavaScript",
-      "goal": "Change how tables behave with your own code.",
-      "nodes": [
-        { "id": "hooks", "label": "Hooks & filters", "link": "/hooks-and-filters", "ux": "Change rendering, data and permissions from PHP.", "facts": ["WordPress actions and filters"] },
-        { "id": "js-events", "label": "JavaScript events", "link": "/javascript-events", "ux": "Run your own code when a table loads or changes." },
-        { "id": "recipes", "label": "Code recipes", "link": "/developer-code-recipes", "ux": "Copy working PHP examples for common jobs.", "facts": ["Examples: read rows, totals, scheduled CSV export"] }
-      ]
     }
   ]
 }
