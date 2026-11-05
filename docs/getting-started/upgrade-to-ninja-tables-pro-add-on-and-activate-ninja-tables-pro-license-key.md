@@ -7,6 +7,10 @@ description: "Buy Ninja Tables Pro, install the add-on next to the free plugin, 
 
 **Ninja Tables Pro** is an add-on that unlocks the Pro features, such as connected data sources, custom filters and frontend editing. It runs on top of the free Ninja Tables plugin, so keep the free plugin installed and active. To see what Pro adds, read [Free vs Pro](/guide/getting-started/free-vs-pro).
 
+::: tip Keep Pro up to date
+If Ninja Tables Pro is older than 5.5.0, the admin shows a notice with an **Update Ninja Tables Pro** link, because some Pro features may not work until you update.
+:::
+
 ## Buy and download Ninja Tables Pro
 
 1. Go to the [Ninja Tables Pro page on wpmanageninja.com](https://wpmanageninja.com/downloads/ninja-tables-pro-add-on/) and buy a plan. You can also click **Get Pro** in the Ninja Tables top bar, or **Get Pro** under **Ninja Tables** in the WordPress admin menu. Both show only while Pro isn't active.

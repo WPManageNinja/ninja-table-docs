@@ -26,16 +26,13 @@ A panel opens on the right:
 
 ### Add your first column
 
-The table opens on the **Table Rows** tab. Its shortcode, for example `[ninja_tables id="158"]`, is shown at the top. The table has no columns yet, so click **Add column**.
-
-The column dialog opens on its **Basic** tab:
+The table opens on the **Table Rows** tab. Its shortcode, for example `[ninja_tables id="158"]`, is shown at the top. The table has no columns yet, so the tab shows **Add your columns**, with one line per column:
 
 - **Column name**: the header visitors see, for example "Plan".
-- **Column key**: filled in from the name. It's used by shortcodes, imports and filters, and can't be changed later.
 - **Type**: what the column holds, such as Single line text, Numeric value or Date field.
 - **Responsive visibility**: whether the column is shown or hidden on smaller screens.
 
-Click **Add column** to save it. Repeat for each column you need, for example "Price" and "Features". See [column basic settings](/guide/column-settings/basic-settings) for every option.
+Press <kbd>Enter</kbd> for a new line and name each column you need, for example "Price" and "Features". You can also paste a list of names. Then click **Create 3 columns**; the button shows the number you've named. See [column basic settings](/guide/column-settings/basic-settings) for every option.
 
 ### Add your rows
 

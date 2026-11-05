@@ -12,9 +12,9 @@ The **Drag & Drop table** builder lets you design a table visually, cell by cell
 1. Go to **Ninja Tables** › **Create Table**.
 2. Under **Start from scratch**, click **Drag & Drop table**. A drawer opens.
 3. Choose how to start. The top of the drawer has two cards, **Create From Scratch** and **Import From CSV/JSON**. Below them, **Choose a Template** lists the ready-made designs.
-4. For a scratch or file table, click a card and then **Next**. For a template, just click the template.
+4. Click a card or a template to select it, then click **Next**. Clicking only selects, so a stray click doesn't create a table.
 
-There is no **Table name** field. A template keeps its own name (for example "Pricing Table Two"), a scratch table is named "Table #" followed by its ID (for example "Table #1342"), and a file takes its name from the file. Rename the table in the builder header afterwards.
+The name depends on how you start. A template asks for a **Table Name** on the next step, pre-filled from its category (for example "Pricing table"). A scratch table has an optional **Table Name** field; left empty, it's named "Table #" followed by its ID (for example "Table #1342"). A file takes its name from the file. You can rename any table in the builder header afterwards.
 
 ![Drag & Drop table drawer with the two start cards and the template picker](/images/drag-drop-tables/create-first-drag-drop/1.-Drag-Drop-Table-Drawer.webp)
 
@@ -22,7 +22,7 @@ If you click **Next** without choosing a card, the drawer asks you to "Choose ho
 
 ### From scratch
 
-Set the number of **columns** with the number box above the grid and the number of **rows** with the box beside it. Use the **−** and **+** buttons or type a number (1 to 30 each). The default is 6 rows × 3 columns, and the caption under the grid (for example "6 rows × 3 columns") shows the size. Click **Create table**.
+Optionally type a **Table Name**. Set the number of **columns** with the number box above the grid and the number of **rows** with the box beside it. Use the **−** and **+** buttons or type a number (1 to 30 each). The default is 6 rows × 3 columns, and the caption under the grid (for example "6 rows × 3 columns") shows the size. Click **Create Table**.
 
 Every cell starts with an empty **Text** element, ready to type in.
 
@@ -30,7 +30,7 @@ Every cell starts with an empty **Text** element, ready to type in.
 
 ### From a CSV or JSON file
 
-Drop a `.csv` or `.json` file on the upload area, or click **Browse File**. The file must be smaller than 1 MB; other types and larger files are refused with a message. The chosen file appears as a chip with its name and size, and **Remove** lets you pick a different one. With Pro you can instead paste a link under **From a URL**; it is switched off while a file is chosen. Click **Create table**.
+Drop a `.csv` or `.json` file on the upload area, or click **Browse File**. The file must be smaller than 1 MB; other types and larger files are refused with a message. The chosen file appears as a chip with its name and size, and **Remove** lets you pick a different one. With Pro you can instead paste a link under **From a URL**; it is switched off while a file is chosen. Click **Create Table**.
 
 What you get:
 
@@ -40,7 +40,7 @@ What you get:
 
 ### From a template
 
-Pick a category pill (**All**, **Pricing**, **Comparison**, **Employee** or **Schedule**), then click a template. The table is created straight away and opens in the builder, so there is no **Create table** button to press. Hover a template to see a larger preview. Some templates need Pro. See [Drag & Drop Templates](/guide/drag-drop-tables/drag-drop-templates) for the full list.
+Pick a category pill (**All**, **Pricing**, **Comparison**, **Employee**, **Schedule**, **Specification** or **Stats**), then click a template to select it. Hover a template to see a larger preview. Click **Next**, check the **Table Name**, and click **Create Table**. You can also double-click a template to go straight to the name step. Some templates need Pro. See [Drag & Drop Templates](/guide/drag-drop-tables/drag-drop-templates) for the full list.
 
 ![Template picker with the All, Pricing, Comparison, Employee and Schedule category pills](/images/drag-drop-tables/create-first-drag-drop/3.-Template-Picker-With-The-All-Pricing.webp)
 

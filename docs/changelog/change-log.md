@@ -16,13 +16,23 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 ```md [🆕 New Features]
 • Added: Fully redesigned admin screens, including the Drag & Drop table builder.
 • Added: Dark mode for the admin.
+• Added: 5 more Drag & Drop table templates.
 • Added: DataTables engine for Fluent Forms, WP Posts, FluentCart and Custom SQL Query tables.
 • Added: Colour picker with opacity and presets.
+• Added: Admin notice when Ninja Tables Pro is older than 5.5.0, with a link to update it.
+• Added: Add several columns at once to a new table: name, type and visibility per line, or paste a list.
+• Added: Optional email tips and usage sharing, on the Tables and Help pages. It replaces the old opt-in pop-up.
 ```
 
 ```md [🔧 Improvements]
 • Improved: Documentation links now point to docs.ninjatables.com.
 • Improved: Accessibility across the admin.
+• Improved: Leaving a table tab with unsaved changes now asks first.
+• Improved: The Table Design preview shows the real desktop, tablet and mobile layouts.
+• Improved: Drag & Drop templates: pick a template first, then name the table.
+• Improved: Permissions list customer and member roles apart, with a warning.
+• Improved: Settings open on Global Appearance, with one Save button per page.
+• Improved: Table editor and Tables list layout on 1024px screens.
 ```
 
 ```md [🔒 Security]
@@ -32,6 +42,9 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 ```md [🐛 Bug fixes]
 • Fixed: Row hover colour staying on striped rows in coloured FooTable tables.
 • Fixed: Search button invisible on custom-colour tables with no search colour set.
+• Fixed: Add to cart and quantity in the admin rows grid of WooCommerce tables no longer act.
+• Fixed: The Edit Table link no longer shows inside table previews.
+• Fixed: Space between DataTables pagination and cart buttons in FluentCart tables.
 ```
 
 :::

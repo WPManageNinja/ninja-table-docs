@@ -42,9 +42,11 @@ The settings panel has three tabs: **Styling**, **Features** and **Colors**. It 
 
 The preview is drawn by your active theme, the way visitors will see it, including your theme's fonts and styles. Unsaved changes show in the preview until you save or leave the page.
 
-- **Preview Width**: switch between **Desktop**, **Tablet** and **Mobile** to check each screen size.
+- **Preview Width**: switch between **Desktop**, **Tablet** and **Mobile**. Each one renders at its real width (1280, 768 or 480 px) and is scaled to fit the pane, with the width and scale shown in the corner of the preview (for example **1280 px · 62%**). On a small screen the desktop table looks small, but its layout is the real one.
 
-Click **Save** at the top of the editor to keep your changes. Table Design settings and the Export & Print buttons are saved together.
+The preview doesn't show the **Edit Table** link that admins see under tables on live pages.
+
+Click **Save** at the top of the editor to keep your changes. A small dot on the button means there are unsaved changes, and leaving the tab asks first. Table Design settings and the Export & Print buttons are saved together.
 
 ::: tip
 The preview needs at least one column. If the table has none yet, add them in [Table Rows](/guide/creating-tables/working-in-table-rows) first.

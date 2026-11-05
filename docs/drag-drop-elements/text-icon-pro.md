@@ -9,6 +9,8 @@ The **Text Icon** element (Pro) shows a short piece of text with an icon beside 
 
 To add one, click a cell and click **Text Icon** in the **Advanced** group of the **Elements** tab. If no single cell is selected, it goes into the last (bottom-right) cell. The name changes by place: the tile says **Text Icon**, the chip in the cell says "Text with icon" and the Settings tab says "Text Icon". Click it to set its options in the **Settings** tab, which has three sub-tabs: **General**, **Text** and **Icon**.
 
+The text stays beside its icon when it wraps onto a second line. This layout applies to elements added from version 5.5.0 on; elements already in a table keep their layout.
+
 ![Text Icon elements in a Drag & Drop table](/images/drag-drop-elements/text-icon/1.-Text-Icon-Elements-In-A-Drag.webp)
 
 ## General

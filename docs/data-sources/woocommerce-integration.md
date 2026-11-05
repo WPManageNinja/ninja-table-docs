@@ -49,6 +49,8 @@ To change a button's wording on a new column, use a **Buy Now Button** column. S
 
 ## Change the settings later
 
+The quantity boxes and **Add to cart** buttons in the **Table Rows** grid are only a preview and don't do anything there; they work on your site.
+
 On the **Table Rows** tab, the banner reads **Rows come from WooCommerce products**. Click **Source settings** to open the drawer. It has three sections: **Query settings**, **Appearance** and **Add new column**.
 
 <!-- TODO(screenshot): woocommerce-integration-2

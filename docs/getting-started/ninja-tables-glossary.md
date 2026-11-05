@@ -165,7 +165,7 @@ This glossary explains the terms you'll see in the Ninja Tables admin and in the
 
 **Select field (column type):** A column type (Pro) with a list of set options for each cell.
 
-**Settings:** The site-wide options you open with the gear icon: General, Global appearance, Permissions (Pro), Performance and, with Pro active, License. See [Settings overview](/guide/table-management/tools-and-settings).
+**Settings:** The site-wide options you open with the gear icon: Global Appearance, General, Permissions (Pro), Performance and, with Pro active, License. See [Settings overview](/guide/table-management/tools-and-settings).
 
 **Shortcode:** The code, such as `[ninja_tables id="123"]`, that you paste into a post or page to show a table. Drag & Drop tables use `[ninja_table_builder id="123"]`.
 

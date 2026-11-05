@@ -17,7 +17,7 @@ Click **Ninja Tables** in the WordPress admin menu (it reads **Ninja Tables Pro*
 - **Charts**: opens the Charts screen, where you can install the free Ninja Charts plugin. Once Ninja Charts is active, this item opens its chart list.
 - **Get Pro** (orange, free version only): opens the Pro page on wpmanageninja.com.
 - **Activate License** or **Renew License** (orange, Pro only): shows while your license isn't active or has expired, and opens **Settings** › **License**.
-- **Settings**: site-wide settings (General, Global appearance, Permissions, Performance and, with Pro active, License).
+- **Settings**: site-wide settings (Global Appearance, General, Permissions, Performance and, with Pro active, License).
 - **Help**: documentation, support and community links.
 
 ![WordPress admin menu with the Ninja Tables submenu expanded](/images/getting-started/admin-navigation/1.-WordPress-Admin-Menu-With-The-Ninja.webp)
@@ -30,7 +30,7 @@ Every Ninja Tables screen shares the same top bar:
 
 - **Ninja Tables** and the **plan pill** on the left. The pill reads **Free** or **Pro**. Click the logo or name to go back to the Tables list.
 - **Tables**, **Create Table**, **Import**, **Charts** and **Help** in the middle. The one you are on is highlighted.
-- The **gear** icon opens [Settings](/guide/table-management/tools-and-settings). It stays highlighted on any settings screen.
+- The **gear** icon opens [Settings](/guide/table-management/tools-and-settings) on **Global Appearance**. It stays highlighted on any settings screen.
 - The **theme** icon switches between light and dark mode.
 - **Get Pro** on the right, on the free version only.
 
@@ -49,7 +49,7 @@ Your choice is saved in your browser and is shared with the other Fluent plugins
 A **Welcome to the new Ninja Tables** banner appears at the top of the **Tables** list until you dismiss it. Your tables, shortcodes and the way tables look on your site are unchanged; only the admin screens were reorganized. The banner has two buttons:
 
 - **What moved?** opens a map of old screens and their new homes.
-- **Dismiss** (the x) hides the banner.
+- **Dismiss** (the x) hides the banner for everyone on the site.
 
 ![Welcome to the new Ninja Tables banner with the What moved button and Dismiss](/images/getting-started/admin-navigation/4.-Welcome-To-The-New-Ninja-Tables.webp)
 
@@ -59,7 +59,7 @@ A **Welcome to the new Ninja Tables** banner appears at the top of the **Tables*
 |---|---|
 | Add Table (pop-up) | **Create Table** page |
 | Tools › Import | **Import** (top bar) |
-| Tools › Default appearance | **Settings** (gear) › **Default appearance** |
+| Tools › Default appearance | **Settings** (gear) › **Global Appearance** |
 | Tools › Permissions | **Settings** › **Permissions** |
 | Tools › Global settings (JavaScript errors) | **Settings** › **General** |
 | Tools › Clear cache | **Settings** › **Performance** |
@@ -85,9 +85,9 @@ Bookmarks and links from older versions open the right place in the new admin:
 
 You can also open a **Create Table** panel straight from a link by adding `#/create?source=` and the tile's key, for example `#/create?source=upload` or `#/create?source=drag_and_drop`.
 
-## Start-up hints are saved per browser
+## Start-up hints
 
-The first-run setup and the welcome banner remember what you skipped or hid in your browser, not on the site. If you clear your browser data, or open the admin in another browser, they appear again. See [Onboarding](/guide/getting-started/ninja-tables-onboarding).
+The first-run setup remembers that you skipped it in your browser, not on the site. If you clear your browser data, or open the admin in another browser, it appears again. The welcome banner is different: once anyone dismisses it, it stays closed for the whole site. See [Onboarding](/guide/getting-started/ninja-tables-onboarding).
 
 ## When a feature needs Pro
 

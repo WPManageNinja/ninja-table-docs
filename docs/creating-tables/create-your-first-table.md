@@ -27,15 +27,21 @@ The other tiles on the Create a table screen build different kinds of tables, su
 
 ## Add columns
 
-A new table has no columns, so the grid shows **Add column**.
+A new table has no columns, so the tab shows **Add your columns**, with one line per column:
 
-1. Click **Add column**.
-2. On the **Basic** tab, fill in:
-   - **Column name**: the header visitors see.
-   - **Column key**: filled in from the name. Use English letters, numbers and `_` only. It's used by shortcodes, imports and filters, and it can't change later.
-   - **Type**: Single line text field, Text area, HTML field, Numeric value or Date field. Select field, Image/File/Lightbox and Button/Link also appear in the list, but they need Pro to work. On the free version a note says so. A Select column works as plain text, and a new Image/File/Lightbox or Button/Link column is saved as Single line text.
-   - **Responsive visibility**: whether the column is always shown, or hidden on some screen sizes.
-3. Click **Add column**.
+1. Type a **Column name** on each line, and pick its **Type** and **Responsive visibility**.
+2. Press <kbd>Enter</kbd> or click **Add another** for a new line. To fill several lines at once, paste a list of names (one per line) or a header row from a spreadsheet.
+3. Click **Create column**. With several lines, the button reads **Create 3 columns**, with the number you've named.
+
+You can change these, and every other column setting, later from the gear on the column.
+
+To set everything for one column as you create it, click **All options for one column**. On the **Basic** tab, fill in:
+
+- **Column name**: the header visitors see.
+- **Column key**: filled in from the name. Use English letters, numbers and `_` only. It's used by shortcodes, imports and filters, and it can't change later.
+- **Type**: Single line text field, Text area, HTML field, Numeric value or Date field. Select field, Image/File/Lightbox and Button/Link also appear in the list, but they need Pro to work. On the free version a note says so. A Select column works as plain text, and a new Image/File/Lightbox or Button/Link column is saved as Single line text.
+- **Responsive visibility**: whether the column is always shown, or hidden on some screen sizes.
+Then click **Add column**.
 
 ![Column dialog Basic tab with Column name, Column key, Type and Responsive visibility](/images/creating-tables/create-first-table/3.-Column-Dialog-Basic-Tab-With-Column.webp)
 

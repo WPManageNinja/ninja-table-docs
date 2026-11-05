@@ -26,9 +26,13 @@ On a fresh install the list shows the guided setup, a short wizard that helps yo
   blocked: needs a site with no tables (setup skipped)
 -->
 
+## Help us make Ninja Tables better
+
+The list can show an optional card, also on the **Help** page. On free sites it offers tips by email: enter your name and email and click **Count me in**, then confirm by email. **Share anonymous usage data** is a separate choice. **What we collect** lists exactly what's sent; it never includes the data inside your tables. Click **No thanks** to close the card.
+
 ## Welcome banner
 
-A **Welcome to the new Ninja Tables** banner can appear above the list for upgraders. It says your tables, shortcodes and front end are unchanged, and **What moved?** shows where each old screen lives now. Click the **×** to dismiss it. It is remembered per browser. See [Onboarding](/guide/getting-started/ninja-tables-onboarding).
+A **Welcome to the new Ninja Tables** banner can appear above the list for upgraders. It says your tables, shortcodes and front end are unchanged, and **What moved?** shows where each old screen lives now. Click the **×** to dismiss it. Once anyone dismisses it, it stays closed for the whole site. See [Onboarding](/guide/getting-started/ninja-tables-onboarding).
 
 ## What each column shows
 
@@ -40,6 +44,8 @@ A **Welcome to the new Ninja Tables** banner can appear above the list for upgra
 | **Engine** | **FooTable** or **DataTables**. Hover the badge for a short explanation. See [choose an engine](/guide/creating-tables/choose-table-engine). |
 | **Used on** | How many posts and pages embed the table, for example **On 2 pages**, or **Not embedded**. |
 | **Shortcode** | The table's shortcode. Click it to copy it. |
+
+On screens up to 1280 px wide, the list hides **Source** and **Engine** so that **Shortcode** and the row buttons stay visible. The icon by each title still shows the source.
 
 Clicking a row (the **ID**, the table name or any blank part of the row) opens the table in the editor; hold <kbd>Ctrl</kbd> or <kbd>Cmd</kbd> to open it in a new tab. The row's buttons and a table whose source plugin is missing keep their own behavior. A Drag & Drop table opens in the [Drag & Drop builder](/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables) instead. A Fluent Forms table can't be opened while Fluent Forms is inactive, and its name is greyed out.
 

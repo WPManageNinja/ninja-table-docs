@@ -47,7 +47,7 @@ The other cards show the same panel you get on the **Create Table** screen:
 
 - **Upload a file** shows the file panel. See [Import a CSV, Excel or JSON file](/guide/import-export/import-table-data-from-a-csv).
 - **Connect a data source** first lists the sources: **WP Posts/CPTs**, **WooCommerce products**, **WooCommerce reviews**, **Fluent Forms entries**, **FluentCart products**, **Google Sheets**, **Remote CSV / JSON** and **Custom SQL query**. Click one to open its panel, and use the back arrow next to the title to pick another source. **Fluent Forms entries** and **FluentCart products** stay in the list when their plugin isn't active, marked **Plugin unavailable**. The WooCommerce cards only appear when WooCommerce is active. Pro sources carry a **Pro** badge on the free version. See [All table types at a glance](/guide/creating-tables/table-types-overview).
-- **Drag & Drop table** shows **Create From Scratch** and **Import From CSV/JSON**, with the ready-made templates below. Click a template and the table is created straight away. See [Create your first Drag & Drop table](/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
+- **Drag & Drop table** shows **Create From Scratch** and **Import From CSV/JSON**, with the ready-made templates below. Click a template to select it, click **Next**, name the table, then click **Create Table**. See [Create your first Drag & Drop table](/guide/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables).
 
 ![Guided setup listing the data sources to connect](/images/getting-started/ninja-tables-onboarding/3.-Guided-Setup-Connect-A-Data-Source.webp)
 
@@ -72,7 +72,7 @@ The setup and the screens after it remember your choices in your browser, not on
 
 ## See the welcome banner
 
-A **Welcome to the new Ninja Tables** banner sits at the top of the **Tables** list until you dismiss it. It tells you that your tables, shortcodes and front end are unchanged, and only the admin screens were reorganized. **What moved?** opens a list of where each old screen lives now (close it with **Got it**), and the x hides the banner. The full map is in [Find your way around](/guide/getting-started/admin-navigation).
+A **Welcome to the new Ninja Tables** banner sits at the top of the **Tables** list until you dismiss it. It tells you that your tables, shortcodes and front end are unchanged, and only the admin screens were reorganized. **What moved?** opens a list of where each old screen lives now (close it with **Got it**), and the x hides the banner for everyone on the site. The full map is in [Find your way around](/guide/getting-started/admin-navigation).
 
 ![Welcome banner above the Tables list with the What moved button](/images/getting-started/ninja-tables-onboarding/5.-Welcome-Banner-Above-The-Tables-List.webp)
 

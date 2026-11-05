@@ -5,14 +5,14 @@ description: "A tour of Ninja Tables Settings: General, Global appearance, Permi
 
 # Settings Overview
 
-**Settings** holds the site-wide options for Ninja Tables. Open it with the **gear** icon in the top bar. Settings for a single table live inside that table's editor instead.
+**Settings** holds the site-wide options for Ninja Tables. Open it with the **gear** icon in the top bar, or the **Settings** item in the WordPress menu. It opens on **Global Appearance**. Settings for a single table live inside that table's editor instead.
 
 ![Ninja Tables Settings with the side navigation listing its sections](/images/table-management/tools-settings/1.-Ninja-Tables-Settings-With-The-Side.webp)
 
 Settings has five sections, listed on the left:
 
+- **Global Appearance**: the starting design for new tables.
 - **General**: how Ninja Tables handles JavaScript errors on your pages.
-- **Global appearance**: the starting design for new tables.
 - **Permissions** (Pro): which roles can manage tables.
 - **Performance**: clear the table cache.
 - **License** (Pro): activate and manage your Ninja Tables Pro license. It only appears when Pro is installed.
@@ -23,19 +23,7 @@ The Tools page has been split. Importing tables is now **Import** in the top bar
 
 ## Saving changes
 
-General, Global appearance and Permissions share the same footer. **Save settings** stays greyed out until you change something. Then it switches on. Click it to store the card; it shows **Settings successfully updated**. A smaller **Save settings** button also sits in the card header, and both work the same. There is no **Cancel** button and no unsaved-changes badge.
-
-## General
-
-**Global Javascript Error Handling** sets what Ninja Tables does when another script on the page throws an error on your pages. It applies to all tables.
-
-- **Console Log JS Errors Silently**: Ninja Tables catches the error so the table keeps working, and writes it to the browser console.
-- **Handle Error But don't Log**: Ninja Tables catches the error without logging it.
-- **Don't Handle Global Javascript Errors (Default)**: errors are left to the browser.
-
-If a table doesn't load because of a conflict with another plugin or your theme, try one of the first two options.
-
-![General settings showing the JavaScript error handling options](/images/table-management/tools-settings/2.-General-Settings-Showing-The-JavaScript-Error.webp)
+Global Appearance, General and Permissions each have one **Save settings** at the bottom of the page. It stays greyed out until you change something. Then it switches on. Click it to store the page; it shows **Settings successfully updated**. Global Appearance is a long page, so it also has a second **Save settings** in its header, and both work the same. There is no unsaved-changes badge.
 
 ## Global appearance
 
@@ -56,6 +44,18 @@ Click **Save settings** when you're done.
 ![Global appearance settings for new tables](/images/table-management/tools-settings/3.-Global-Appearance-Settings-For-New-Tables.webp)
 
 To copy the design of a table you've already styled, see [Use a design as the default](/guide/styling-design/use-design-as-default).
+
+## General
+
+**Global Javascript Error Handling** sets what Ninja Tables does when another script on the page throws an error on your pages. It applies to all tables.
+
+- **Console Log JS Errors Silently**: Ninja Tables catches the error so the table keeps working, and writes it to the browser console.
+- **Handle Error But don't Log**: Ninja Tables catches the error without logging it.
+- **Don't Handle Global Javascript Errors (Default)**: errors are left to the browser.
+
+If a table doesn't load because of a conflict with another plugin or your theme, try one of the first two options.
+
+![General settings showing the JavaScript error handling options](/images/table-management/tools-settings/2.-General-Settings-Showing-The-JavaScript-Error.webp)
 
 ## Permissions
 

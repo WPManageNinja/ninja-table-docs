@@ -11,14 +11,16 @@ By default, only administrators can create and edit tables. With **Permissions**
 
 1. In Ninja Tables, click the **gear** icon in the top bar to open **Settings**.
 2. Click **Permissions**.
-3. Under **Who can manage tables**, tick each role that should have access, or tick **Select all**.
+3. Under **Who can manage tables**, tick each role that should have access.
 4. Click **Save settings**.
 
 ![Permissions settings with role checkboxes under Who can manage tables](/images/table-management/define-permission-table/1.-Permissions-Settings-With-Role-Checkboxes-Under.webp)
 
 Administrators always have access, whatever you tick, so Administrator isn't in the list. Subscriber isn't listed either. A role you tick here can create, edit and delete **every** table on the site; there's no per-table permission. Only a WordPress administrator can save changes on this screen.
 
-Like every settings card, **Save settings** switches on when you change a box and applies the roles. If you untick every role, only administrators can manage tables again.
+Roles that can't write posts, such as **Customer**, are listed apart under **Roles for customers and members**. They usually belong to shoppers or site members, so leave them unticked unless you trust every user who has them. If you tick one, a warning names it: "Every user with these roles can edit and delete all tables".
+
+The page has one **Save settings** button, under both cards. It switches on when you change something and saves the roles and the SQL switch together. If you untick every role, only administrators can manage tables again.
 
 In the free version, the Permissions screen shows **Permissions are a Pro feature**, and only administrators can manage tables.
 

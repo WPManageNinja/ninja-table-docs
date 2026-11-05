@@ -19,7 +19,8 @@ The header above the tabs stays visible while you work:
 - **Table title** and its `#ID`: the pencil icon next to it (**Edit table details**) opens the title, caption and description. See [Title, caption & description](/guide/table-management/table-title-description-settings).
 - **Shortcode chip**: shows `[ninja_tables id="123"]`. Click it to copy the shortcode.
 - **Preview**: opens the table on a bare page in a new tab, as visitors see it.
-- **Save**: appears only on tabs that have settings to save, such as **Table Design**. The **Table Rows** tab has no Save button, because every cell edit, row and column change saves as soon as you make it.
+- **Save**: appears only on tabs that have settings to save, such as **Table Design**. A small dot on the button means you have unsaved changes. If you switch tabs with unsaved changes, Ninja Tables asks "You have unsaved changes. Leave without saving them?", and reloading or closing the browser tab shows your browser's leave prompt.
+- **Changes save automatically**: takes the place of **Save** on **Table Rows** and the full-page columns screen, because every cell edit, row and column change saves as soon as you make it.
 - **Get Pro**: an upgrade link, shown only when Pro is not active.
 
 ## The grid
@@ -31,7 +32,7 @@ Each column of your table is a column in the grid, and each row is a row. Rows a
 - **Sort the view**: click a column name. The tooltip shows the next step: **Sort A → Z**, **Sort Z → A**, then **Back to saved order**. On tables that store their own rows, the sort covers every row of the table, not just the current page, and the grid goes back to the first page. On connected tables it only reorders the rows already loaded in the grid (the current page). Text sorts in natural order, so 999 comes before 1000. The sort is never saved and doesn't change what visitors see. It is turned off while **Sort manually** is on.
 - **Select rows**: tick the checkboxes on the left. A **Delete (n)** button appears in the toolbar, with an **x** to clear the selection. Deleting asks you to confirm, then removes all ticked rows for good.
 
-If a table has no columns yet, the tab shows **To get started please add table columns** with an **Add column** button. If it has columns but no rows, click **Add first row**. When a search finds nothing, the grid says **No rows match** and offers **Clear search**.
+If a table has no columns yet, the tab shows **Add your columns**, where you can name several columns at once. See [Create your first table](/guide/creating-tables/create-your-first-table#add-columns). If it has columns but no rows, click **Add first row**. When a search finds nothing, the grid says **No rows match** and offers **Clear search**.
 
 ## The toolbar
 

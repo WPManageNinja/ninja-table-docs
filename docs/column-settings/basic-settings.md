@@ -12,6 +12,7 @@ The **Basic** tab of the column dialog sets what a column is: its name, its key,
 Columns are managed from the **Table Rows** tab. There is no separate Columns tab.
 
 - **Add a new column**: go to **Ninja Tables** › **Tables** › your table › **Table Rows** and click **Add column** in the toolbar. To place it next to an existing column, click that column's gear icon and choose **Add column left** or **Add column right**. The **New column** drawer opens.
+- **Add several columns at once**: in the **New column** drawer, click **Add several at once**. Name each column and pick its type and responsive visibility, one per line, then click **Create columns**.
 - **Edit a column**: click the gear icon on the column header and choose **Column settings**. The **Edit column** drawer opens with the column name under the title.
 
 ![Edit column drawer with the Basic, Advanced, Conditions and Transform tabs](/images/column-settings/basic-settings/1.-Edit-Column-Drawer-With-The-Basic.webp)
