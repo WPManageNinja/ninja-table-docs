@@ -23,7 +23,7 @@ Tables on the FooTable engine don't use auto sync. They fetch the source live an
 - The URL must be **HTTPS**. Other URLs are rejected with "Please provide a valid HTTPS URL."
 - The server must be able to reach it over the public internet. Private and internal addresses (such as `localhost` or a local network IP) are blocked.
 - It must return CSV text. For Google Sheets, publish the sheet to the web and use the CSV link. A Google Sheets link that is not in CSV form (for example one ending in `/pubhtml`) is converted for you. Ninja Tables does not sign in to Google, so private sheets don't work.
-- The file can be up to 100 MB. Developers can change this limit. See [Hooks and filters](/hooks-and-filters).
+- The file can be up to 100 MB.
 
 ::: tip
 Because the source is read as CSV, links, images and cell formatting from a Google Sheet aren't kept. If you need clickable links or images from the sheet, use the FooTable engine. See [Hyperlinks and images from the sheet](/google-sheets-integration#hyperlinks-and-images-from-the-sheet).
