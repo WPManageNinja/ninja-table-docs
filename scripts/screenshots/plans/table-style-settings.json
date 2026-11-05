@@ -1,52 +1,45 @@
 {
-  "doc": "docs/styling-design/table-style-settings.md",
-  "outDir": "public/images/styling-design/table-style-settings",
-  "viewport": {
-    "width": 1440,
-    "height": 900
+ "doc": "docs/styling-design/table-style-settings.md",
+ "outDir": "public/images/styling-design/table-style-settings",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/tables/{{Product Price List}}/design_studio"
   },
-  "steps": [
-    {
-      "admin": "/tables/{{Product Price List}}/design_studio"
+  {
+   "wait": 1500
+  },
+  {
+   "shot": {
+    "name": "1.-Appearance-Tab-With-The-Live-Preview",
+    "clip": "app"
+   }
+  },
+  {
+   "eval": "[...document.querySelectorAll('.nt-setting-row')].find(r=>/Compact Table/i.test(r.textContent)).querySelector('.el-switch').click()"
+  },
+  {
+   "wait": 700
+  },
+  {
+   "shot": {
+    "name": "2.-Save-Button-With-Unsaved-Dot",
+    "clip": {
+     "x": 160,
+     "y": 32,
+     "width": 1280,
+     "height": 150
     },
-    {
-      "wait": 1500
-    },
-    {
-      "shot": {
-        "name": "1.-Appearance-Tab-With-The-Live-Preview",
-        "clip": "app"
-      }
-    },
-    {
-      "click": {
-        "role": "tab",
-        "name": "^Style$"
-      }
-    },
-    {
-      "click": {
-        "selector": ".nt-ds-sec__btn",
-        "hasText": "Rows & Borders"
-      }
-    },
-    {
-      "scrollTo": {
-        "selector": ".nt-ds-sec__btn",
-        "hasText": "Rows & Borders"
-      }
-    },
-    {
-      "shot": {
-        "name": "2.-Rows-Borders-Section-With-The-Style",
-        "clip": "app",
-        "highlights": [
-          {
-            "row": "Style Library",
-            "part": "row"
-          }
-        ]
-      }
-    }
-  ]
+    "highlights": [
+     {
+      "role": "button",
+      "name": "Save"
+     }
+    ]
+   }
+  }
+ ]
 }

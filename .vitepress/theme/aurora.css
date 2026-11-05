@@ -59,7 +59,13 @@
 @keyframes nt-drift-c { from { transform: translate3d(-4vw, 0, 0) scale(.96); } to { transform: translate3d(5vw, 3vw, 0) scale(1.1); } }
 
 /* Frosted glass for the nav and sidebar (colour shows through, text stays readable). */
-.VPNav .VPNavBar, .VPNav .VPNavBar .content-body, .VPLocalNav { -webkit-backdrop-filter: blur(14px) saturate(1.1); backdrop-filter: blur(14px) saturate(1.1); }
+.VPNav .VPNavBar, .VPLocalNav { -webkit-backdrop-filter: blur(14px) saturate(1.1); backdrop-filter: blur(14px) saturate(1.1); }
+/* One surface for the whole bar. The nav content box stops at the layout max-width, so tinting and
+   blurring it as well doubled the colour inside its box and left vertical seams on wide screens. */
+@media (min-width: 960px) {
+  .VPNav .VPNavBar:not(.home.top) { background-color: var(--vp-nav-bg-color); }
+  .VPNav .VPNavBar:not(.home.top) .content-body { background-color: transparent; }
+}
 .VPSidebar { -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
 
 @media (max-width: 760px) {

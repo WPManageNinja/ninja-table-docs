@@ -221,7 +221,7 @@
       }
     },
     {
-      "admin": "/tables/{{Pricing Plans (empty)}}"
+      "admin": "/tables/1362"
     },
     {
       "wait": 2500
@@ -231,13 +231,10 @@
         "name": "1.-Table-Rows-Tab-Of-A-New",
         "clip": "app",
         "highlights": [
-          {
-            "role": "button",
-            "name": "Add column"
-          }
+          ".nt-quick-cols-card"
         ],
         "crop": {
-          "height": 900
+          "height": 1200
         }
       }
     }

@@ -16,7 +16,9 @@
    "shot": {
     "name": "1.-Ninja-Tables-Settings-With-The-Side",
     "clip": "app",
-    "crop": "auto",
+    "crop": {
+     "height": 1050
+    },
     "highlights": [
      ".nt-settings__nav"
     ]
@@ -26,7 +28,9 @@
    "shot": {
     "name": "2.-General-Settings-Showing-The-JavaScript-Error",
     "clip": "app",
-    "crop": "auto",
+    "crop": {
+     "height": 1050
+    },
     "highlights": [
      {
       "selector": ".el-radio, .el-radio-button, label",

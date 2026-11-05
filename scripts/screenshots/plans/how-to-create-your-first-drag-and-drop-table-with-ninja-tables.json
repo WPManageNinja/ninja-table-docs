@@ -1,116 +1,190 @@
 {
- "doc": "docs/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables.md",
- "outDir": "public/images/drag-drop-tables/create-first-drag-drop",
- "viewport": {
-  "width": 1440,
-  "height": 900
- },
- "steps": [
-  {
-   "viewport": {
+  "doc": "docs/drag-drop-tables/how-to-create-your-first-drag-and-drop-table-with-ninja-tables.md",
+  "outDir": "public/images/drag-drop-tables/create-first-drag-drop",
+  "viewport": {
     "width": 1440,
-    "height": 1000
-   }
+    "height": 900
   },
-  {
-   "admin": "/create?source=drag_and_drop"
-  },
-  {
-   "wait": 2500
-  },
-  {
-   "shot": {
-    "name": "1.-Drag-Drop-Table-Drawer",
-    "clip": "app",
-    "highlights": [
-     ".nt-dd-sources"
-    ]
-   }
-  },
-  {
-   "click": {
-    "selector": ".nt-dd-source",
-    "hasText": "Create From Scratch"
-   }
-  },
-  {
-   "click": ".el-drawer__footer .nt-btn--primary"
-  },
-  {
-   "wait": 800
-  },
-  {
-   "shot": {
-    "name": "2.-Create-From-Scratch-Step",
-    "clip": "app",
-    "highlights": [
-     ".nt-ddb__cols",
-     ".nt-ddb__rows"
-    ]
-   }
-  },
-  {
-   "eval": "document.querySelector('.el-drawer__footer .nt-btn--secondary').click()"
-  },
-  {
-   "wait": 800
-  },
-  {
-   "eval": "document.querySelector('.el-drawer__body').scrollTop = 330"
-  },
-  {
-   "wait": 500
-  },
-  {
-   "shot": {
-    "name": "3.-Template-Picker-With-The-All-Pricing",
-    "clip": "app",
-    "highlights": [
-     ".nt-dd-create__templates .nt-segmented"
-    ]
-   }
-  },
-  {
-   "admin": "/table_builder_edit_table/{{Website Pricing}}"
-  },
-  {
-   "wait": 2500
-  },
-  {
-   "click": ".ntb-sheet .table-data"
-  },
-  {
-   "click": {
-    "selector": ".ntb-panel__tab",
-    "hasText": "Elements"
-   }
-  },
-  {
-   "shot": {
-    "name": "4.-Builder-With-A-Cell-Selected",
-    "clip": "app",
-    "crop": "auto",
-    "highlights": [
-     {
-      "selector": ".ntb-panel__tab",
-      "hasText": "Elements"
-     }
-    ]
-   }
-  },
-  {
-   "front": "{{page:Website Pricing}}/"
-  },
-  {
-   "shot": {
-    "name": "5.-Saved-Drag-Drop-Pricing-Table-Shown",
-    "clip": {
-     "x": 0,
-     "y": 100,
-     "width": 1440,
-     "height": 640
+  "steps": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "admin": "/create?source=drag_and_drop"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": {
+        "selector": ".nt-dd-picker__tpl",
+        "hasText": "Pricing Table One"
+      }
+    },
+    {
+      "wait": 500
+    },
+    {
+      "hover": ".el-drawer__header"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "shot": {
+        "name": "1.-Drag-Drop-Table-Drawer",
+        "clip": "app",
+        "highlights": [
+          {
+            "selector": ".nt-dd-picker__tpl",
+            "hasText": "Pricing Table One"
+          }
+        ]
+      }
+    },
+    {
+      "click": {
+        "selector": ".nt-dd-source",
+        "hasText": "Create From Scratch"
+      }
+    },
+    {
+      "click": ".el-drawer__footer .nt-btn--primary"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "fillByLabel": {
+        "label": "Table Name",
+        "value": "Pricing Plans"
+      }
+    },
+    {
+      "wait": 300
+    },
+    {
+      "eval": "(function(){var l=[...document.querySelectorAll('.el-drawer label')].find(e=>/Table Name/.test(e.textContent));var p=l.parentElement;p.setAttribute('data-hl','nm')})()"
+    },
+    {
+      "shot": {
+        "name": "2.-Create-From-Scratch-Step",
+        "clip": "app",
+        "highlights": [
+          "[data-hl=\"nm\"]"
+        ]
+      }
+    },
+    {
+      "eval": "document.querySelector('.el-drawer__footer .nt-btn--secondary').click()"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "eval": "document.querySelector('.el-drawer__body').scrollTop = 250"
+    },
+    {
+      "wait": 500
+    },
+    {
+      "hover": ".el-drawer__header"
+    },
+    {
+      "wait": 400
+    },
+    {
+      "shot": {
+        "name": "3.-Template-Picker-With-The-All-Pricing",
+        "clip": "app",
+        "highlights": [
+          ".nt-dd-create__templates .nt-segmented"
+        ]
+      }
+    },
+    {
+      "admin": "/tables"
+    },
+    {
+      "wait": 1500
+    },
+    {
+      "admin": "/create?source=drag_and_drop"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": {
+        "selector": ".nt-dd-picker__tpl",
+        "hasText": "Pricing Table One"
+      }
+    },
+    {
+      "wait": 400
+    },
+    {
+      "click": ".el-drawer__footer .nt-btn--primary"
+    },
+    {
+      "wait": 800
+    },
+    {
+      "eval": "(function(){var l=[...document.querySelectorAll('.el-drawer label')].find(e=>/Table Name/.test(e.textContent));var p=l.parentElement;p.setAttribute('data-hl','nm')})()"
+    },
+    {
+      "shot": {
+        "name": "6.-Template-Table-Name-Step",
+        "clip": "app",
+        "highlights": [
+          "[data-hl=\"nm\"]"
+        ]
+      }
+    },
+    {
+      "admin": "/table_builder_edit_table/{{Website Pricing}}"
+    },
+    {
+      "wait": 2500
+    },
+    {
+      "click": ".ntb-sheet .table-data"
+    },
+    {
+      "click": {
+        "selector": ".ntb-panel__tab",
+        "hasText": "Elements"
+      }
+    },
+    {
+      "shot": {
+        "name": "4.-Builder-With-A-Cell-Selected",
+        "clip": "app",
+        "crop": "auto",
+        "highlights": [
+          {
+            "selector": ".ntb-panel__tab",
+            "hasText": "Elements"
+          }
+        ]
+      }
+    },
+    {
+      "front": "{{page:Website Pricing}}/"
+    },
+    {
+      "shot": {
+        "name": "5.-Saved-Drag-Drop-Pricing-Table-Shown",
+        "clip": {
+          "x": 0,
+          "y": 100,
+          "width": 1440,
+          "height": 640
+        }
+      }
     }
-   }
-  }
- ]
+  ]
 }

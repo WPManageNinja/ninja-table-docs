@@ -15,6 +15,8 @@ Columns are managed from the **Table Rows** tab. There is no separate Columns ta
 - **Add several columns at once**: in the **New column** drawer, click **Add several at once**. Name each column and pick its type and responsive visibility, one per line, then click **Create columns**.
 - **Edit a column**: click the gear icon on the column header and choose **Column settings**. The **Edit column** drawer opens with the column name under the title.
 
+![New columns drawer with Add several at once, three column names typed and Create columns at the bottom](/images/column-settings/basic-settings/3.-Add-Several-Columns-At-Once.webp)
+
 ![Edit column drawer with the Basic, Advanced, Conditions and Transform tabs](/images/column-settings/basic-settings/1.-Edit-Column-Drawer-With-The-Basic.webp)
 
 The dialog has four tabs: **Basic**, **Advanced**, **Conditions** (Pro) and **Transform** (Pro). On the free version, a lock icon marks **Conditions** and **Transform**. Click **Add column** (new column) or **Save column** (existing column) when you are done. **Cancel** drops your unsaved changes. The edit drawer also has a **Delete column** link, which asks you to confirm before removing the column and its data.

@@ -21,7 +21,7 @@ A **Default table** is a table whose rows you type, paste or import yourself. Th
 
 The table opens in the editor on the **Table Rows** tab.
 
-![Table Rows tab of a new table with the Add column button](/images/creating-tables/create-first-table/1.-Table-Rows-Tab-Of-A-New.webp)
+![Table Rows tab of a new table with the Add your columns form](/images/creating-tables/create-first-table/1.-Table-Rows-Tab-Of-A-New.webp)
 
 The other tiles on the Create a table screen build different kinds of tables, such as tables from a file, WooCommerce products or a SQL query. See [All table types at a glance](/guide/creating-tables/table-types-overview). For a table built from a database query, see [Custom SQL table](/guide/data-sources/create-table-from-custom-sql).
 

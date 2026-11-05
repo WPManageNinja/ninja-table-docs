@@ -20,6 +20,8 @@ Administrators always have access, whatever you tick, so Administrator isn't in 
 
 Roles that can't write posts, such as **Customer**, are listed apart under **Roles for customers and members**. They usually belong to shoppers or site members, so leave them unticked unless you trust every user who has them. If you tick one, a warning names it: "Every user with these roles can edit and delete all tables".
 
+![Warning shown after ticking the Customer role, before saving](/images/table-management/define-permission-table/3.-Customer-Role-Warning.webp)
+
 The page has one **Save settings** button, under both cards. It switches on when you change something and saves the roles and the SQL switch together. If you untick every role, only administrators can manage tables again.
 
 In the free version, the Permissions screen shows **Permissions are a Pro feature**, and only administrators can manage tables.

@@ -16,7 +16,7 @@ The **Drag & Drop table** builder lets you design a table visually, cell by cell
 
 The name depends on how you start. A template asks for a **Table Name** on the next step, pre-filled from its category (for example "Pricing table"). A scratch table has an optional **Table Name** field; left empty, it's named "Table #" followed by its ID (for example "Table #1342"). A file takes its name from the file. You can rename any table in the builder header afterwards.
 
-![Drag & Drop table drawer with the two start cards and the template picker](/images/drag-drop-tables/create-first-drag-drop/1.-Drag-Drop-Table-Drawer.webp)
+![Drag & Drop table drawer with a template selected and the Next button visible](/images/drag-drop-tables/create-first-drag-drop/1.-Drag-Drop-Table-Drawer.webp)
 
 If you click **Next** without choosing a card, the drawer asks you to "Choose how to start." Use **Previous** on step 2 to go back and change your choice. You can also double-click a card to pick it and move on.
 
@@ -42,7 +42,9 @@ What you get:
 
 Pick a category pill (**All**, **Pricing**, **Comparison**, **Employee**, **Schedule**, **Specification** or **Stats**), then click a template to select it. Hover a template to see a larger preview. Click **Next**, check the **Table Name**, and click **Create Table**. You can also double-click a template to go straight to the name step. Some templates need Pro. See [Drag & Drop Templates](/guide/drag-drop-tables/drag-drop-templates) for the full list.
 
-![Template picker with the All, Pricing, Comparison, Employee and Schedule category pills](/images/drag-drop-tables/create-first-drag-drop/3.-Template-Picker-With-The-All-Pricing.webp)
+![Template picker with the All, Pricing, Comparison, Employee, Schedule, Specification and Stats category pills](/images/drag-drop-tables/create-first-drag-drop/3.-Template-Picker-With-The-All-Pricing.webp)
+
+![Table Name step shown after choosing a template and clicking Next](/images/drag-drop-tables/create-first-drag-drop/6.-Template-Table-Name-Step.webp)
 
 Ninja Tables shows "Table created successfully." (or "Imported successfully." for a file) and opens the new table in the builder.
 

@@ -1,65 +1,118 @@
 {
-  "doc": "docs/column-settings/basic-settings.md",
-  "outDir": "public/images/column-settings/basic-settings",
-  "viewport": {
-    "width": 1440,
-    "height": 900
+ "doc": "docs/column-settings/basic-settings.md",
+ "outDir": "public/images/column-settings/basic-settings",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "steps": [
+  {
+   "admin": "/tables/{{Product Price List}}"
   },
-  "steps": [
-    {
-      "admin": "/tables/{{Product Price List}}"
+  {
+   "wait": 1500
+  },
+  {
+   "click": "th:has-text(\"Price ($)\") .nt-sheet__colset"
+  },
+  {
+   "wait": 400
+  },
+  {
+   "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "shot": {
+    "name": "1.-Edit-Column-Drawer-With-The-Basic",
+    "clip": {
+     "x": 720,
+     "y": 32,
+     "width": 720,
+     "height": 540
     },
-    {
-      "wait": 1500
+    "highlights": [
+     {
+      "selector": ".nt-col-tabs__tab",
+      "hasText": "Basic"
+     }
+    ]
+   }
+  },
+  {
+   "click": ".nt-drawer .el-select"
+  },
+  {
+   "wait": 600
+  },
+  {
+   "shot": {
+    "name": "2.-Type-Dropdown-With-The-Eight-Column",
+    "clip": {
+     "x": 720,
+     "y": 32,
+     "width": 720,
+     "height": 610
     },
-    {
-      "click": "th:has-text(\"Price ($)\") .nt-sheet__colset"
-    },
-    {
-      "wait": 400
-    },
-    {
-      "click": ".el-dropdown-menu__item:visible:has-text(\"Column settings\")"
-    },
-    {
-      "wait": 1200
-    },
-    {
-      "shot": {
-        "name": "1.-Edit-Column-Drawer-With-The-Basic",
-        "clip": {
-          "x": 720,
-          "y": 32,
-          "width": 720,
-          "height": 540
-        },
-        "highlights": [
-          {
-            "selector": ".nt-col-tabs__tab",
-            "hasText": "Basic"
-          }
-        ]
-      }
-    },
-    {
-      "click": ".nt-drawer .el-select"
-    },
-    {
-      "wait": 600
-    },
-    {
-      "shot": {
-        "name": "2.-Type-Dropdown-With-The-Eight-Column",
-        "clip": {
-          "x": 720,
-          "y": 32,
-          "width": 720,
-          "height": 610
-        },
-        "highlights": [
-          ".nt-drawer .el-select"
-        ]
-      }
-    }
-  ]
+    "highlights": [
+     ".nt-drawer .el-select"
+    ]
+   }
+  },
+  {
+   "admin": "/"
+  },
+  {
+   "wait": 1200
+  },
+  {
+   "admin": "/tables/{{Product Price List}}"
+  },
+  {
+   "wait": 1800
+  },
+  {
+   "click": "button:visible:has-text(\"Add column\") >> nth=0"
+  },
+  {
+   "wait": 900
+  },
+  {
+   "click": {
+    "text": "Add several at once"
+   }
+  },
+  {
+   "wait": 700
+  },
+  {
+   "fill": {
+    "selector": ".nt-drawer input[placeholder=\"e.g. Name\"]",
+    "value": "Brand"
+   }
+  },
+  {
+   "fill": {
+    "selector": ".nt-drawer input[placeholder=\"e.g. Email\"]",
+    "value": "Warranty"
+   }
+  },
+  {
+   "fill": {
+    "selector": ".nt-drawer input[placeholder=\"e.g. Phone\"]",
+    "value": "Weight"
+   }
+  },
+  {
+   "shot": {
+    "name": "3.-Add-Several-Columns-At-Once",
+    "clip": "app",
+    "highlights": [
+     ".nt-drawer .nt-quick-cols"
+    ]
+   }
+  }
+ ]
 }

@@ -28,7 +28,19 @@
    "wait": 800
   },
   {
-   "eval": "document.querySelector('.el-drawer__body').scrollTop = 330"
+   "eval": "document.querySelector('.el-drawer__body').scrollTop = 250"
+  },
+  {
+   "wait": 500
+  },
+  {
+   "click": {
+    "selector": ".nt-dd-picker__tpl",
+    "hasText": "Pricing Table Two"
+   }
+  },
+  {
+   "hover": ".el-drawer__header"
   },
   {
    "wait": 500

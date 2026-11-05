@@ -48,6 +48,8 @@ The preview doesn't show the **Edit Table** link that admins see under tables on
 
 Click **Save** at the top of the editor to keep your changes. A small dot on the button means there are unsaved changes, and leaving the tab asks first. Table Design settings and the Export & Print buttons are saved together.
 
+![Save button with an orange dot showing unsaved changes](/images/styling-design/table-style-settings/2.-Save-Button-With-Unsaved-Dot.webp)
+
 ::: tip
 The preview needs at least one column. If the table has none yet, add them in [Table Rows](/guide/creating-tables/working-in-table-rows) first.
 :::

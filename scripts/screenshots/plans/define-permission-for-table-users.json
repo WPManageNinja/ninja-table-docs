@@ -55,6 +55,25 @@
      }
     ]
    }
+  },
+  {
+   "click": {
+    "selector": ".nt-roles label",
+    "hasText": "Customer"
+   }
+  },
+  {
+   "wait": 500
+  },
+  {
+   "shot": {
+    "name": "3.-Customer-Role-Warning",
+    "clip": "app",
+    "crop": "auto",
+    "highlights": [
+     ".nt-roles .nt-alert"
+    ]
+   }
   }
  ]
 }
