@@ -9,7 +9,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 
 ## Ninja Tables v5.5.0
 
-*Released on November 4, 2026*
+*Released on November 5, 2026*
 
 ::: code-group
 
