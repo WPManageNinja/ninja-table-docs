@@ -118,4 +118,4 @@ This option is only in **Source settings**, not on the Create screen. Turn it on
 
 Copy the shortcode from the editor header and paste it into any page or post, or use the Ninja Tables block. See [Embed a table](/embed-tables).
 
-Developers can change the entry status, page size and order with the Fluent Forms filters listed in [Hooks and filters](/hooks-and-filters). To turn the same entries into a chart, see [Create charts from Fluent Forms entries](/create-ninja-charts-with-fluent-forms-entries).
+To turn the same entries into a chart, see [Create charts from Fluent Forms entries](/create-ninja-charts-with-fluent-forms-entries).
