@@ -18,7 +18,7 @@ The tile is called **Remote CSV / JSON**, but today it reads **CSV files only**.
 - The file must be reachable without a login, at a public URL.
 - The server hosting the file must report it as CSV. A content type that contains "csv" works, and so does `application/octet-stream` or `application/binary`. A plain `text/plain` response works only when the address ends in `.csv`. Anything else is rejected as "invalid data type".
 - The first row must hold the column headers. Rows with a different number of cells than the header row are skipped.
-- On FooTable the file is requested with a short time limit (10 seconds for the column list, 20 seconds for the rows), so a slow server may fail to load. Developers can change the limit with a filter listed in [Hooks and filters](/hooks-and-filters).
+- On FooTable the file is requested with a short time limit (10 seconds for the column list, 20 seconds for the rows), so a slow server may fail to load.
 - On **DataTables**, the address must start with `https://`, and private or internal addresses (such as `localhost` or a local network IP) are blocked. See [Google Sheets & CSV auto sync](/google-sheets-csv-auto-sync).
 
 ## Create the table
