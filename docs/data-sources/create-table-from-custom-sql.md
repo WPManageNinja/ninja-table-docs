@@ -164,7 +164,7 @@ Posts from the last 7 days:
 SELECT * FROM `wp_posts` WHERE post_date >= '{date-7:YYYY-MM-DD}'
 ```
 
-Developers can add their own placeholders or change the final query. See [Hooks and filters](/hooks-and-filters).
+Developers can add their own placeholders or change the final query.
 
 ## Big results and speed
 
