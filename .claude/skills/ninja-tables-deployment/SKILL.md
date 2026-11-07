@@ -13,7 +13,9 @@ description: Use when publishing Ninja Tables docs changes, adding or updating a
   sibling FluentCart docs deploy with **Cloudflare Pages auto-building on every push to `master`**, and
   this site is assumed to work the same way. There is no workflow file in this repo; the build config lives
   on the hosting side. **Confirm with the user before relying on this**, and record the answer here.
-- Pages are served at `/guide/<category>/<slug>`, the same URLs the live site has always used, so no site-wide redirects are needed.
+- Pages are served at `/guide/<category>/<slug>`. The plugin (5.5.0+) links to old flat URLs (`/basic-settings`), so
+  `public/_redirects` (Cloudflare Pages format, copied to `dist/`) 301s each one to its `/guide/` page. If a plugin
+  release adds a new help link, add both the slash and no-slash form there and check it live after deploy.
 
 ## Publish workflow
 
