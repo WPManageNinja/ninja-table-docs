@@ -9,39 +9,37 @@ A chart built from **Fluent Forms** entries is a dynamic chart: it updates as ne
 
 ## Create the chart
 
-1. Go to **Ninja Tables** › **Charts**, then click **Add New**.
-2. Enter a **Chart Name**, choose the **Chart Renderer** and a chart type. Click **Next**.
-3. On the **Data Source** step, choose **Fluent Forms**.
-4. In the **Data** field that appears, pick the form.
-5. Click **Next** and choose what to plot in [Data Range](/guide/ninja-charts/how-to-use-data-range-picker-in-ninja-charts).
+1. Go to **Ninja Tables** › **Charts** and click **New Chart**.
+2. Enter a **Chart name**.
+3. Under **Where is your data?**, choose **Fluent Forms**, then pick the form.
+4. Check the **Data needed** guide, then choose the render engine and a chart type.
+5. Click **Continue to builder**.
 
-<!-- TODO(screenshot): create-ninja-charts-with-fluent-forms-entries-1
-  screen: Ninja Tables › Charts › Add New › Data Source
-  table: -
-  state: Fluent Forms selected as the data source and the Data dropdown showing a form
-  highlight: Data field
-  view: admin
-  alt: Data Source step with Fluent Forms selected and a form chosen
-  blocked: Fluent Forms is not installed on the dev site
--->
+The **Fluent Forms** card is always listed. Without Fluent Forms, or without any forms, the screen asks you to create a form first ("Please create a form in Fluent Forms first.").
 
-The **Fluent Forms** option is always listed, but it only has forms to pick when Fluent Forms is installed.
+![Create a chart screen with Fluent Forms selected and a form chosen](/images/ninja-charts/create-ninja-charts-fluent/1.-Create-A-Chart-Screen-With-Fluent.webp)
 
 ## Pick fields that fit the chart
 
-Some form fields are counted into categories instead of plotted as raw values, so the chart shows how many people chose each answer:
+On the **Data** tab, **What should the chart show?** offers two goals:
 
-- Radio, Checkbox, Select and Multiple select fields
-- Country fields
-- Ratings, Score and Net promoter score fields
-- The `method` and `agreement` field types
+- **Count answers**: how many people chose each answer. Choose a **Question to count**. The choice fields are Radio, Checkbox, Select, Multi-select, Country, Rating, Score, Net promoter score, Payment method and Agreement.
+- **Show numbers**: a number from each entry, named by a text, email, link or date field. Number, Range slider and Quantity fields can be measured.
 
-Free-text fields (names, messages) don't suit pie or radar charts. Only some field types are offered in the Data Range step, for example text, email, number, radio, checkbox, select, multiple select, date, URL, country, ratings, net promoter score, range slider, phone and quantity fields. Choose a field type that matches the chart, or the chart can't be built.
+The **Fields for this chart** list says how many fields each part needs and how many your form has. If the form can't fill the chart, a message says so, for example "To count answers, add a choice field to the form." Free-text answers are all different, so they can't be counted. For polls and surveys, **Count answers** with a pie or bar chart is usually the best fit. Scatter, bubble, combo and histogram charts can't count answers.
 
-## Filter by date
+![Data panel with Count answers chosen for a Fluent Forms chart](/images/ninja-charts/create-ninja-charts-fluent/2.-Data-Panel-With-Count-Answers-Chosen.webp)
 
-When the form has entries with dates, the **Date range picker** in [Data Range](/guide/ninja-charts/how-to-use-data-range-picker-in-ninja-charts) lets the chart show only entries from a period.
+## Limit entries by date
+
+Under **Rows in chart**, choose **Date range** and pick a start and end date (or a shortcut such as **Last month**). Only entries submitted between those dates are charted. The other choices are **All rows**, **Limit rows** and **Choose rows**; see [Choose Your Chart Data](/guide/ninja-charts/how-to-use-data-range-picker-in-ninja-charts).
+
+![Rows in chart with the Date range option for a Fluent Forms chart](/images/ninja-charts/create-ninja-charts-fluent/3.-Rows-In-Chart-With-The-Date.webp)
+
+## Edit the form from the builder
+
+**Selected form** names your form. Its entries are read-only here, so click **Edit form** to open it in the Fluent Forms editor in a new tab. **Change source** switches to another form or source.
 
 ## Finish the chart
 
-Style it in [Formatting & Preview](/guide/ninja-charts/how-to-customize-charts-in-ninja-charts), then save it and copy the shortcode. See [Add a Chart to a Page](/guide/ninja-charts/embed-ninja-charts).
+Style it in [Customize a Chart](/guide/ninja-charts/how-to-customize-charts-in-ninja-charts), click **Save**, and copy the shortcode. See [Add a Chart to a Page](/guide/ninja-charts/embed-ninja-charts).
