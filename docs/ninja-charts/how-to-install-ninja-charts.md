@@ -10,26 +10,28 @@ Charts in Ninja Tables come from **Ninja Charts**, a separate free plugin. It ca
 ## Install from Ninja Tables (one click)
 
 1. Go to **Ninja Tables** › **Charts**.
-2. The page shows "Ninja Charts is not installed yet". Click **Install Ninja Charts**.
+2. The page shows "Turn any table into a chart" with a short list of steps. Click **Install Ninja Charts**.
 
 <!-- TODO(screenshot): how-to-install-ninja-charts-1
   screen: Ninja Tables › Charts (Ninja Charts not installed)
   table: -
-  state: Charts screen with the "Ninja Charts is not installed yet" card and the Install Ninja Charts button
+  state: Charts screen with the "Turn any table into a chart" card and the Install Ninja Charts button
   highlight: Install Ninja Charts button
   view: admin
   alt: Charts screen with the Install Ninja Charts button
-  blocked: Ninja Charts is already installed on the dev site, so the "not installed" card cannot be shown
+  blocked: Ninja Charts is already installed on the dev site, so the install card cannot be shown
 -->
 
 Ninja Tables downloads, installs and activates Ninja Charts, then opens the chart list. Your user needs permission to install plugins (administrators have it).
 
-Once Ninja Charts is active, **Ninja Tables** › **Charts** opens the chart list. Click **Add New** there to build a chart.
+Once Ninja Charts is active, **Ninja Tables** › **Charts** opens the chart list. Click **New Chart** there to build a chart.
 
 ## Install from the Plugins screen
 
 1. Go to **Plugins** › **Add New Plugin** in WordPress.
 2. Search for "Ninja Charts", click **Install Now**, then click **Activate**.
+
+Without Ninja Tables, the plugin adds its own **Ninja Charts** menu with **Charts**, **Add Chart** and **Get help**.
 
 You can also download the `.zip` file from WordPress.org and upload it with **Upload Plugin** on the same screen.
 
