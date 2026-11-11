@@ -1,36 +1,36 @@
 ---
 title: "Introduction: Getting Started with Ninja Charts"
-description: "Ninja Charts is a free companion plugin that turns Ninja Tables data, Fluent Forms entries or manual data into interactive charts."
+description: "Ninja Charts is a free companion plugin that turns Ninja Tables data, Fluent Forms entries, a CSV file or typed-in data into interactive charts."
 ---
 
 # Introduction: Getting Started with Ninja Charts
 
-**Ninja Charts** is a free WordPress chart plugin. It turns a Ninja Tables table, Fluent Forms entries or data you type in into a responsive chart, and gives you a shortcode to show it on any page. [Install it](/guide/ninja-charts/how-to-install-ninja-charts) first if you haven't.
+**Ninja Charts** is a free WordPress chart plugin. It turns a Ninja Tables table, Fluent Forms entries, a CSV file or data you type in into a responsive chart, and gives you a shortcode to show it on any page. [Install it](/guide/ninja-charts/how-to-install-ninja-charts) first if you haven't.
 
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/v-mU6LIb7jQ" title="Getting Started with Ninja Charts Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-## Renderers and chart types
+## Render engines and chart types
 
-Every chart uses one of two renderers, and the chart types you can pick depend on it.
+Every chart is drawn by one of two render engines, and the chart types you can pick depend on it.
 
-- **Chart Js** (12 types): Line, Pie, Bar, Horizontal Bar, Bubble, Doughnut, Scatter, Area, Combo, Radar, Polar and Funnel.
-- **Google Charts** (10 types): Line, Pie, Bar, Horizontal Bar, Bubble, Doughnut, Scatter, Area, Combo and Histogram. Radar, Polar and Funnel are not available.
+- **Chart.js** (12 types): Bar, Horizontal bar, Line, Area, Pie, Doughnut, Polar area, Radar, Bubble, Scatter, Combo and Funnel.
+- **Google Charts** (10 types): Line, Pie, Column, Horizontal bar, Bubble, Doughnut, Scatter, Area, Combo and Histogram. Radar, Polar area and Funnel are not available.
 
-Chart Js has more design options (Layout and Animations tabs). See [Customize a Chart](/guide/ninja-charts/how-to-customize-charts-in-ninja-charts).
+If you switch engines on the create screen, the chart type changes to the matching one where there is one (Bar becomes Column, for example) and to a bar or column chart where there isn't. Chart.js has more design options. See [Customize a Chart](/guide/ninja-charts/how-to-customize-charts-in-ninja-charts).
 
 ## Create a chart
 
-Go to **Ninja Tables** › **Charts**, then click **Add New**. The creator has five steps:
+1. Go to **Ninja Tables** › **Charts** and click **New Chart**. The **Create a chart** screen opens.
+2. Enter a **Chart name**.
+3. Under **Where is your data?**, choose **Manual**, **Ninja Tables**, **Fluent Forms** or **Upload a CSV**. For a table or a form, pick it in the list that appears. A **Data needed** guide shows which columns or fields the chosen chart type uses.
+4. Under **What do you want to show?**, choose the render engine (**Chart.js** or **Google Charts**) and a chart type.
+5. Click **Continue to builder**. For a CSV file the button reads **Continue to import**.
 
-1. **Chart Title & Type**: name the chart, choose the renderer and pick a chart type.
-2. **Data Source**: choose **Manual Input**, **Ninja Tables** or **Fluent Forms**.
-3. **Data Range**: choose which columns and rows to plot.
-4. **Formatting & Preview**: style the chart and see it update live.
-5. **Save & Get Shortcode**: copy the generated shortcode.
+The builder opens with a live preview and a sidebar with **Data**, **Design** and **Responsive**. Click **Save** to keep the chart and get its shortcode.
 
-![Chart creator step 1 with the chart renderer and chart type cards](/images/ninja-charts/getting-started-ninja-charts/1.-Chart-Creator-Step-1.webp)
+![Create a chart screen with the data source cards, Data needed guide and chart type picker](/images/ninja-charts/getting-started-ninja-charts/1.-Create-A-Chart-Screen.webp)
 
 Pick the path that matches your data:
 
@@ -38,14 +38,13 @@ Pick the path that matches your data:
 - [Charts from Fluent Forms entries](/guide/ninja-charts/create-ninja-charts-with-fluent-forms-entries)
 - [Charts from data you type in](/guide/ninja-charts/how-to-create-chart-manually-in-ninja-charts)
 - [The full walkthrough for dynamic charts](/guide/ninja-charts/how-to-create-dynamic-charts-with-ninja-charts)
+- [Choose your chart data](/guide/ninja-charts/how-to-use-data-range-picker-in-ninja-charts)
 
 ## See all your charts
 
-**Ninja Tables** › **Charts** lists every chart with its renderer, data source, type and shortcode. See [Manage Your Charts](/guide/ninja-charts/manage-ninja-charts).
+**Ninja Tables** › **Charts** lists every chart you have made. See [Manage Your Charts](/guide/ninja-charts/manage-ninja-charts).
 
-![All Charts list showing the ID, title, renderer, data source, chart type and shortcode](/images/ninja-charts/getting-started-ninja-charts/2.-All-Charts-List-Showing-The-ID.webp)
-
-When you have no charts yet, the page shows a welcome screen with **Create a new chart** and **Import CSV** options.
+![Charts list with the New Chart button](/images/ninja-charts/getting-started-ninja-charts/2.-Charts-List-With-The-New-Chart.webp)
 
 ## Next steps
 
