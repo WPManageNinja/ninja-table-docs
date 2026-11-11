@@ -287,7 +287,8 @@ export default defineConfig({
           { text: 'Data range picker', link: '/guide/ninja-charts/how-to-use-data-range-picker-in-ninja-charts' },
           { text: 'Customize charts', link: '/guide/ninja-charts/how-to-customize-charts-in-ninja-charts' },
           { text: 'Manage charts', link: '/guide/ninja-charts/manage-ninja-charts' },
-          { text: 'Add a chart to a page', link: '/guide/ninja-charts/embed-ninja-charts' }
+          { text: 'Add a chart to a page', link: '/guide/ninja-charts/embed-ninja-charts' },
+          { text: 'Hooks, filters and access', link: '/guide/ninja-charts/ninja-charts-hooks-and-access' }
         ]
       },
       {
