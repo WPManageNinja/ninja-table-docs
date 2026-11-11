@@ -7,6 +7,28 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in Ninja Tables.
 
+## Ninja Tables v5.5.1
+
+*Released on November 10, 2026*
+
+::: code-group
+
+```md [🔧 Improvements]
+• Improved: Import of TablePress and Supsystic tables.
+• Improved: Row details modal.
+```
+
+```md [🔒 Security]
+• Security: Hardened table imports (Supsystic data, file paths, JSON rows and meta keys).
+• Security: Editing custom JavaScript now requires the unfiltered HTML capability.
+```
+
+```md [🐛 Bug fixes]
+• Fixed: #colspan# now merges cells in DataTables tables and FooTable Ajax tables.
+```
+
+:::
+
 ## Ninja Tables v5.5.0
 
 *Released on November 5, 2026*
