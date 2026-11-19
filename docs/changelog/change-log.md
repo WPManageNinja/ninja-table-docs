@@ -7,6 +7,28 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in Ninja Tables.
 
+## Ninja Tables v5.5.2
+
+*Released on November 19, 2026*
+
+::: code-group
+
+```md [🆕 New Features]
+• Added: Run shortcodes in cells option per table.
+```
+
+```md [🔧 Improvements]
+• Improved: Gutenberg block design.
+```
+
+```md [🐛 Bug fixes]
+• Fixed: Date and number column sorting.
+• Fixed: Tables render in the Elementor editor.
+• Fixed: Missing source fields when editing Google Sheet and CSV tables.
+```
+
+:::
+
 ## Ninja Tables v5.5.1
 
 *Released on November 10, 2026*
