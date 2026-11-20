@@ -7,6 +7,34 @@ description: "Stay updated with the latest improvements, new features, bug fixes
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in Ninja Tables.
 
+## Ninja Tables v5.5.3
+
+*Released on November 20, 2026*
+
+::: code-group
+
+```md [🆕 New Features]
+• Added: Ninja Forms, Gravity Forms and WPForms entries as table sources (Pro).
+• Added: DataTables engine for WooCommerce product tables.
+```
+
+```md [🔧 Improvements]
+• Improved: The table block shows a note instead of an empty preview for users who can't manage tables.
+```
+
+```md [🔒 Security]
+• Security: Fixed a crafted block or admin link that could delete a table. Admin REST URLs are now validated and never sent as JSONP.
+• Security: The Gutenberg block lists only published tables, and only to users who can write posts.
+```
+
+```md [🐛 Bug fixes]
+• Fixed: CSV and Excel exports of source tables now contain plain text.
+• Fixed: Special characters in DataTables text cells and locked filters.
+• Fixed: FluentCart table cart bar now updates when the cart changes in the FluentCart drawer.
+```
+
+:::
+
 ## Ninja Tables v5.5.2
 
 *Released on November 19, 2026*
